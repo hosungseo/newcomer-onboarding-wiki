@@ -1,0 +1,93 @@
+id: gate-첫출장정산
+version: 2026-04-15
+trigger: "출장 또는 부임을 처음 처리하는데 이 이동이 어떤 유형인지 / 무엇을 증빙해야 하는지 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "출장비가 수당인지 별도 정산인지부터 헷갈린다", goto: A}
+    - {label: "근무지내 / 근무지외 국내출장 구분이 애매하다", goto: B}
+    - {label: "자가용·통행료·주차료·증빙이 궁금하다", leaf: C-자가용증빙}
+    - {label: "국외출장 상한·선금·사후정산", leaf: D-국외출장}
+    - {label: "e-사람에서 여비 정산을 어떻게 보나", goto: E}
+    - {label: "전혀 모름 — 전체 유형 분류부터", leaf: Z-유형분류}
+
+nodes:
+  # ─────────── A. 급여 vs 여비 ───────────
+  A:
+    question: "어디에서 내려가고 싶나?"
+    options:
+      - {label: "보수 큰 틀에서 여비 위치 잡기", leaf: A-보수속여비}
+      - {label: "여비 자체 개괄로 바로", leaf: A-여비개괄}
+      - {label: "수당과의 차이가 핵심", leaf: A-수당과여비}
+      - {label: "모름", leaf: A-보수속여비}
+
+  # ─────────── B. 국내출장 유형 ───────────
+  B:
+    question: "어느 유형?"
+    options:
+      - {label: "근무지내 국내출장 (4시간 미만/이상)", leaf: B-근무지내}
+      - {label: "근무지외 국내출장 (운임·숙박비·식비·일비)", leaf: B-근무지외}
+      - {label: "부임·이전·가족여비·상시출장", leaf: B-부임상시}
+      - {label: "모름 — 유형 전체 분류", leaf: Z-유형분류}
+
+  # ─────────── E. e-사람 정산 ───────────
+  E:
+    question: "어디가 막히나?"
+    options:
+      - {label: "e-사람 시스템 자체를 모른다", leaf: E-e사람개념}
+      - {label: "여비 신청·정산 플로우가 감이 안 온다", leaf: E-여비정산플로우}
+      - {label: "증빙(영수증·승차권·통행기록) 처리", leaf: E-증빙처리}
+      - {label: "모름", leaf: E-여비정산플로우}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A. 보수 vs 여비
+  A-보수속여비:
+    notes: [concept-공무원-보수, concept-공무원-여비]
+    exits: {shallow: null, deeper: A-여비개괄, sideways: B}
+  A-여비개괄:
+    notes: [concept-공무원-여비]
+    exits: {shallow: A-보수속여비, deeper: B, sideways: B}
+  A-수당과여비:
+    notes: [concept-공무원-수당, concept-공무원-여비]
+    exits: {shallow: A-보수속여비, deeper: A-여비개괄, sideways: B}
+
+  # B. 국내출장 유형
+  B-근무지내:
+    notes: [concept-공무원-여비]
+    exits: {shallow: null, deeper: B-근무지외, sideways: C-자가용증빙}
+  B-근무지외:
+    notes: [concept-공무원-여비]
+    exits: {shallow: B-근무지내, deeper: D-국외출장, sideways: C-자가용증빙}
+  B-부임상시:
+    notes: [concept-공무원-여비]
+    exits: {shallow: B-근무지외, deeper: null, sideways: B}
+
+  # C. 자가용·증빙
+  C-자가용증빙:
+    notes: [concept-공무원-여비]
+    exits: {shallow: null, deeper: E-증빙처리, sideways: B}
+
+  # D. 국외출장
+  D-국외출장:
+    notes: [concept-공무원-여비]
+    exits: {shallow: B-근무지외, deeper: E-여비정산플로우, sideways: B}
+
+  # E. e-사람
+  E-e사람개념:
+    notes: [concept-정부업무시스템-e사람, source-인사혁신처-e사람-국문소개자료]
+    exits: {shallow: null, deeper: E-여비정산플로우, sideways: E}
+  E-여비정산플로우:
+    notes: [concept-공무원-여비, concept-정부업무시스템-e사람]
+    exits: {shallow: E-e사람개념, deeper: E-증빙처리, sideways: E}
+  E-증빙처리:
+    notes: [concept-공무원-여비]
+    exits: {shallow: E-여비정산플로우, deeper: null, sideways: C-자가용증빙}
+
+  # Z
+  Z-유형분류:
+    notes: [concept-공무원-여비, concept-공무원-보수]
+    exits: {shallow: null, deeper: B, sideways: root}
+
+subgates: []

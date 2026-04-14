@@ -1,0 +1,121 @@
+id: gate-임용후첫달
+version: 2026-04-15
+trigger: "임용 후 첫 달, 국가인재원 신규자 과정에서 뭘 먼저 읽어야 할지 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "국가인재원 교육운영 큰 틀부터 잡고 싶다", leaf: A-운영계획}
+    - {label: "공직가치·국정과제 모듈", leaf: B-공직가치}
+    - {label: "예산·재정 실무 모듈", leaf: C-예산재정}
+    - {label: "인사제도 모듈", leaf: D-인사제도}
+    - {label: "입법절차 모듈", leaf: E-입법}
+    - {label: "보고서 작성 모듈", leaf: F-보고서}
+    - {label: "AI 활용·업무시스템 모듈", goto: G}
+    - {label: "소통협업·민원대응 모듈", leaf: H-소통민원}
+    - {label: "인사·복무·문서처리 실무 질문이 먼저", leaf: X-실무입구}
+    - {label: "전혀 모름 — common-core 허브부터", leaf: Z-허브}
+
+nodes:
+  # ─────── G. AI · 업무시스템 ───────
+  G:
+    question: "어느 시스템·모듈에 가까운가?"
+    options:
+      - {label: "AI 활용 (행안부 AI·데이터 축)", leaf: G-AI}
+      - {label: "업무시스템 일반 (e사람·dBrain)", leaf: G-시스템}
+      - {label: "e사람 (인사기록 시스템)", leaf: G-e사람}
+      - {label: "모름 — 시스템 큰 틀부터", leaf: G-시스템}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A. 운영계획
+  A-운영계획:
+    notes:
+      - source-국가공무원인재개발원-2026-교육운영계획
+      - source-국가공무원인재개발원-2026-04월-교육과정-안내
+      - hub-국가인재원-공통실무모듈
+    exits: {shallow: Z-허브, deeper: B-공직가치, sideways: D-인사제도}
+
+  # B. 공직가치
+  B-공직가치:
+    notes:
+      - section-국가인재원-신규자과정-공직가치와국정과제
+    exits: {shallow: A-운영계획, deeper: D-인사제도, sideways: F-보고서}
+
+  # C. 예산·재정
+  C-예산재정:
+    notes:
+      - section-국가인재원-신규자과정-예산과재정
+      - process-신규자-예산이해-기본흐름
+    exits: {shallow: A-운영계획, deeper: E-입법, sideways: D-인사제도}
+
+  # D. 인사제도
+  D-인사제도:
+    # deeper → gate-첫인사복무와문서처리 (sibling — same batch)
+    notes:
+      - section-국가인재원-신규자과정-인사제도
+      - concept-신규공무원-인사적응-핵심축
+    exits: {shallow: A-운영계획, deeper: gate-첫인사복무와문서처리, sideways: B-공직가치}
+
+  # E. 입법
+  E-입법:
+    notes:
+      - section-국가인재원-신규자과정-입법절차
+      - process-정부입법-신규자-기본흐름
+      - process-정부입법-입법예고
+    exits: {shallow: A-운영계획, deeper: C-예산재정, sideways: F-보고서}
+
+  # F. 보고서
+  F-보고서:
+    notes:
+      - section-국가인재원-신규자과정-보고서작성
+      - faq-보고서-작성은-승진에서-왜-붙나
+    exits: {shallow: A-운영계획, deeper: X-실무입구, sideways: B-공직가치}
+
+  # G. AI · 시스템
+  G-AI:
+    notes:
+      - section-국가인재원-신규자과정-AI활용
+      - concept-신규공무원-AI적응-핵심축
+      - concept-행정안전부-인공지능정부실-AI데이터디지털서비스연결축
+    exits: {shallow: G-시스템, deeper: G-e사람, sideways: H-소통민원}
+  G-시스템:
+    notes:
+      - section-국가인재원-신규자과정-업무시스템
+      - concept-정부업무시스템-e사람
+      - concept-정부업무시스템-dBrain
+    exits: {shallow: A-운영계획, deeper: G-e사람, sideways: G-AI}
+  G-e사람:
+    notes:
+      - concept-정부업무시스템-e사람
+      - section-국가인재원-신규자과정-업무시스템
+    exits: {shallow: G-시스템, deeper: D-인사제도, sideways: G-AI}
+
+  # H. 소통·민원
+  H-소통민원:
+    notes:
+      - section-국가인재원-신규자과정-소통협업과민원대응
+      - concept-정부업무시스템-국민신문고
+      - process-국민신문고-민원상담에서민원신청까지
+    exits: {shallow: A-운영계획, deeper: X-실무입구, sideways: F-보고서}
+
+  # X. 실무 입구 (sibling gates)
+  X-실무입구:
+    # deeper → gate-첫인사복무와문서처리 and gate-첫휴직승진출장교육 (same batch)
+    notes:
+      - newcomer-path-첫인사복무와문서처리-2026-04
+      - newcomer-path-첫휴직승진출장교육질문-2026-04
+      - faq-신규공무원의-첫실무질문-인사복무와문서처리
+    exits: {shallow: Z-허브, deeper: gate-첫인사복무와문서처리, sideways: D-인사제도}
+
+  # Z. 허브
+  Z-허브:
+    notes:
+      - hub-국가인재원-공통실무모듈
+      - hub-국가인재원-common-core-연결지도
+      - source-whitelist-common-core-2026-04
+    exits: {shallow: null, deeper: A-운영계획, sideways: root}
+
+subgates:
+  - gate-첫인사복무와문서처리
+  - gate-첫휴직승진출장교육

@@ -1,0 +1,207 @@
+id: gate-첫문서처리
+version: 2026-04-15
+trigger: "방금 문서처리 관련 일을 받았는데 뭘 해야 할지 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "기안문을 처음 써야 한다", goto: A}
+    - {label: "기안 중인데 뭘 어떻게 써야 할지 막혔다", goto: B}
+    - {label: "검토·협조 / 결재 단계가 헷갈린다", goto: C}
+    - {label: "결재는 끝났다 — 다음이 뭔지 모른다", goto: D}
+    - {label: "서명(이미지/문자/행정전자) 이슈가 있다", goto: E}
+    - {label: "공무직·비공무원 계정 / 권한 문제", goto: F}
+    - {label: "전혀 모름 — 뭐부터 봐야 할지 모르겠다", leaf: Z-전체흐름}
+
+nodes:
+  # ─────────── A. 기안 시작 ───────────
+  A:
+    question: "너는 지금 어떤 신분인가?"
+    options:
+      - {label: "정규 공무원", goto: A.2}
+      - {label: "공무직 / 임기제", leaf: F-기안가능범위}
+      - {label: "비공무원 (외부)", leaf: F-계정부여보안}
+      - {label: "모름", leaf: F-기안가능범위}
+  A.2:
+    question: "온나라 / 문서관리카드 시스템 접속 가능한가?"
+    options:
+      - {label: "예, 접속됨", goto: A.3}
+      - {label: "아니오, 계정·인증 문제", leaf: A-인증관리센터}
+      - {label: "모름 — 시스템 자체를 모른다", leaf: A-e사람개념}
+  A.3:
+    question: "기안을 어디서 시작하는지 아는가?"
+    options:
+      - {label: "예, 진행할 수 있다", leaf: A-기안프로세스}
+      - {label: "아니오 / 모름", leaf: A-기안어디서시작}
+
+  # ─────────── B. 기안 중 막힘 ───────────
+  B:
+    question: "지금 정확히 어느 지점에서 막혔나?"
+    options:
+      - {label: "보고근거·보고내용을 어디에 요약해 쓰나", leaf: B-보고근거요약}
+      - {label: "문서관리카드 기안이 일반 기안과 뭐가 다른가", leaf: B-문서관리카드}
+      - {label: "보고서 작성 자체가 안 잡힌다", leaf: B-보고서작성모듈}
+      - {label: "모름 — 전체 흐름부터 다시", leaf: B-기안전체흐름}
+
+  # ─────────── C. 중간 단계 ───────────
+  C:
+    question: "지금 단계는?"
+    options:
+      - {label: "다른 부서 의견 받아야 하나 (검토·협조)", leaf: C-검토협조}
+      - {label: "결재가 정확히 뭔지 헷갈린다", leaf: C-결재의미}
+      - {label: "결재 끝나면 바로 효력 생기나?", leaf: C-성립과효력}
+      - {label: "모름 — 중간 단계 전체 흐름", leaf: C-중간단계전체}
+
+  # ─────────── D. 결재 후 ───────────
+  D:
+    question: "문서 유형이 무엇인가?"
+    options:
+      - {label: "내부결재 (내부용)", leaf: D-내부결재등록}
+      - {label: "대외 공문 (전자문서 발송)", leaf: D-전자문서도달}
+      - {label: "고시·공고", leaf: D-공고효력발생}
+      - {label: "모름", leaf: D-문서등록기본}
+
+  # ─────────── E. 서명 ───────────
+  E:
+    question: "어떤 서명을 마주쳤나?"
+    options:
+      - {label: "스캔된 이미지 형태의 서명", leaf: E-전자이미지서명}
+      - {label: "이름이 타자로 찍힌 서명", leaf: E-전자문자서명}
+      - {label: "시스템이 생성한 암호화 서명", leaf: E-행정전자서명}
+      - {label: "셋 차이를 한 번에 정리하고 싶다", leaf: E-세서명차이}
+      - {label: "모름 / 인증 구조까지 깊게 궁금", leaf: E-인증심화진입}
+
+  # ─────────── F. 공무직·비공무원 계정 ───────────
+  F:
+    question: "구체적으로 무엇이 걸리나?"
+    options:
+      - {label: "기안 자격이 있는가 (공무직·임기제)", leaf: F-기안가능범위}
+      - {label: "계정을 줘도 되나 / 보안조치", leaf: F-계정부여보안}
+      - {label: "접근 기간·권한 범위 제한 이유", leaf: F-기간권한범위}
+      - {label: "보안서약서가 왜 필요한가", leaf: F-보안서약서}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A
+  A-인증관리센터:
+    notes: [concept-행정문서-인증관리센터, faq-인증관리센터는-무엇을-하나]
+    exits: {shallow: null, deeper: E-인증심화진입, sideways: A.3}
+  A-e사람개념:
+    notes: [concept-정부업무시스템-e사람, source-인사혁신처-e사람-국문소개자료]
+    exits: {shallow: null, deeper: A-기안어디서시작, sideways: A}
+  A-기안프로세스:
+    notes: [process-행정문서-기안, process-행정문서-기안에서결재까지]
+    exits: {shallow: null, deeper: B, sideways: C}
+  A-기안어디서시작:
+    notes: [faq-기안은-어디서-시작하나, process-행정문서-기안]
+    exits: {shallow: null, deeper: B-기안전체흐름, sideways: B}
+
+  # B
+  B-보고근거요약:
+    notes:
+      - concept-행정문서-보고근거-요약기재
+      - faq-관련근거는-기안문에-어떻게-쓴나
+    exits: {shallow: null, deeper: process-행정문서-기안, sideways: B}
+  B-문서관리카드:
+    notes:
+      - concept-행정문서-문서관리카드-기안
+      - faq-문서관리카드로-기안하면-무엇이-달라지나
+    exits: {shallow: null, deeper: process-행정문서-기안, sideways: B}
+  B-보고서작성모듈:
+    notes: [section-국가인재원-신규자과정-보고서작성, faq-보고서-작성은-승진에서-왜-붙나]
+    exits: {shallow: null, deeper: B-기안전체흐름, sideways: C}
+  B-기안전체흐름:
+    notes: [process-행정문서-기안에서결재까지]
+    exits: {shallow: null, deeper: C, sideways: A.3}
+
+  # C
+  C-검토협조:
+    notes: [process-행정문서-검토및협조]
+    exits: {shallow: null, deeper: C-결재의미, sideways: C}
+  C-결재의미:
+    notes: [process-행정문서-결재]
+    exits: {shallow: null, deeper: C-성립과효력, sideways: D}
+  C-성립과효력:
+    notes:
+      - concept-행정문서-성립과효력
+      - faq-문서는-언제-성립하고-언제-효력이-생기나
+    exits: {shallow: null, deeper: D-전자문서도달, sideways: D}
+  C-중간단계전체:
+    notes: [process-행정문서-기안에서결재까지]
+    exits: {shallow: null, deeper: C-검토협조, sideways: D}
+
+  # D
+  D-내부결재등록:
+    notes: [process-행정문서-문서등록, concept-행정문서-문서등록번호]
+    exits: {shallow: null, deeper: concept-행정문서-성립과효력, sideways: D}
+  D-전자문서도달:
+    notes:
+      - concept-행정문서-전자문서-도달
+      - faq-전자문서는-언제-도달한-것으로-보나
+      - process-행정문서-문서등록
+    exits: {shallow: null, deeper: E-세서명차이, sideways: D}
+  D-공고효력발생:
+    notes:
+      - concept-행정문서-공고문서-효력발생
+      - faq-공고문서는-언제부터-효력이-생기나
+    exits: {shallow: null, deeper: concept-행정문서-성립과효력, sideways: D}
+  D-문서등록기본:
+    notes:
+      - process-행정문서-문서등록
+      - concept-행정문서-문서등록번호
+      - faq-문서등록번호는-언제-붙나
+    exits: {shallow: null, deeper: C-성립과효력, sideways: D}
+
+  # E
+  E-전자이미지서명:
+    notes: [concept-행정문서-전자이미지서명, faq-전자이미지서명은-무엇인가]
+    exits: {shallow: null, deeper: E-세서명차이, sideways: E}
+  E-전자문자서명:
+    notes:
+      - concept-행정문서-전자문자서명
+      - concept-행정문서-전자문자서명과행정전자서명-차이
+      - faq-전자문자서명은-무엇인가
+    exits: {shallow: null, deeper: E-행정전자서명, sideways: E}
+  E-행정전자서명:
+    notes:
+      - concept-행정문서-행정전자서명
+      - faq-행정전자서명은-무엇을-보장하나
+    exits: {shallow: null, deeper: E-인증심화진입, sideways: E}
+  E-세서명차이:
+    notes:
+      - concept-행정문서-전자이미지서명
+      - concept-행정문서-전자문자서명
+      - concept-행정문서-전자문자서명과행정전자서명-차이
+      - concept-행정문서-행정전자서명
+    exits: {shallow: null, deeper: E-인증심화진입, sideways: D}
+  E-인증심화진입:
+    notes: [concept-행정문서-인증관리센터]
+    exits: {shallow: E-세서명차이, deeper: gate-첫문서처리-인증심화, sideways: E}
+
+  # F
+  F-기안가능범위:
+    notes:
+      - concept-행정문서-공무직과임기제-기안가능범위
+      - faq-공무직도-기안할-수-있나
+    exits: {shallow: null, deeper: F-계정부여보안, sideways: A}
+  F-계정부여보안:
+    notes:
+      - concept-행정문서-비공무원-계정부여와보안조치
+      - faq-공무직에게-업무관리시스템-계정을-줄-수-있나
+    exits: {shallow: null, deeper: F-기간권한범위, sideways: F}
+  F-기간권한범위:
+    notes:
+      - concept-행정문서-비공무원-계정접근기간과권한범위
+      - faq-접근기간과-권한범위는-왜-따로-정하나
+    exits: {shallow: F-계정부여보안, deeper: F-보안서약서, sideways: F}
+  F-보안서약서:
+    notes: [concept-행정문서-보안서약서, faq-보안서약서는-왜-필요한가]
+    exits: {shallow: F-계정부여보안, deeper: null, sideways: F}
+
+  # Z
+  Z-전체흐름:
+    notes: [process-행정문서-기안에서결재까지, hub-행정안전부]
+    exits: {shallow: null, deeper: B-기안전체흐름, sideways: root}
+
+subgates:
+  - gate-첫문서처리-인증심화

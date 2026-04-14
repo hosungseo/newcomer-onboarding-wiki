@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>신규공무원 적응 위키 — 관문</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif;
+         max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
+  h1 { font-size: 1.3rem; }
+  .q { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; font-weight: 600; }
+  .opt { display: block; width: 100%; text-align: left; padding: 0.75rem 1rem;
+         margin: 0.4rem 0; border: 1px solid #888; border-radius: 6px;
+         background: transparent; color: inherit; cursor: pointer; font-size: 1rem; }
+  .opt:hover { background: rgba(128,128,128,0.15); }
+  .notes { margin: 1rem 0; padding: 1rem; border-left: 3px solid #4a90e2;
+           background: rgba(74,144,226,0.08); }
+  .notes a { display: block; padding: 0.2rem 0; color: inherit; }
+  .exits { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
+  .exits button { padding: 0.5rem 0.9rem; border: 1px solid #888;
+                  border-radius: 6px; background: transparent; color: inherit;
+                  cursor: pointer; font-size: 0.9rem; }
+  .crumb { font-size: 0.85rem; color: #888; margin-bottom: 1rem; }
+  select { padding: 0.5rem; font-size: 1rem; background: transparent; color: inherit; }
+  .err { color: #c33; }
+</style>
+</head>
+<body>
+<h1>신규공무원 적응 위키 — 관문</h1>
+<p>상황을 고르면 그에 맞는 지침 묶음으로 안내합니다. 질문으로 시작하세요.</p>
+
+<label>관문 선택:
+  <select id="gate-picker"></select>
+</label>
+
+<div id="app"></div>
+
+<script type="module">
+import { parse } from 'https://cdn.jsdelivr.net/npm/yaml@2.5.0/browser/index.js';
+
+const REPO_RAW = 'https://raw.githubusercontent.com/hosungseo/newcomer-onboarding-wiki/main';
+const GATE_LIST_API = 'https://api.github.com/repos/hosungseo/newcomer-onboarding-wiki/contents/gates';
+
+const app = document.getElementById('app');
+const picker = document.getElementById('gate-picker');
+let currentGate = null;
+let history = [];
+
+async function loadGateList() {
+  const r = await fetch(GATE_LIST_API);
+  const files = await r.json();
+  const gates = files.filter(f => f.name.endsWith('.yaml') && !f.name.includes('-인증심화') && !f.name.includes('-심화'));
+  for (const g of gates) {
+    const opt = document.createElement('option');
+    opt.value = g.name;
+    opt.textContent = g.name.replace(/^gate-/, '').replace(/\.yaml$/, '');
+    picker.appendChild(opt);
+  }
+  picker.onchange = () => loadGate(picker.value);
+  if (gates.length) loadGate(gates[0].name);
+}
+
+async function loadGate(file) {
+  const r = await fetch(`${REPO_RAW}/gates/${file}`);
+  currentGate = parse(await r.text());
+  history = [];
+  render({ kind: 'entry' });
+}
+
+function resolve(target) {
+  if (target == null) return null;
+  if (target === 'root') return { kind: 'entry' };
+  if (currentGate.nodes?.[target]) return { kind: 'node', id: target };
+  if (currentGate.leaves?.[target]) return { kind: 'leaf', id: target };
+  if (/^(concept|process|source|faq|section|hub|newcomer-path)-/.test(target))
+    return { kind: 'note', id: target };
+  if (/^gate-/.test(target))
+    return { kind: 'subgate', id: target };
+  return null;
+}
+
+function render(state) {
+  app.innerHTML = '';
+  const crumb = document.createElement('div');
+  crumb.className = 'crumb';
+  crumb.textContent = history.length ? `지나온 길: ${history.map(h => h.label || h.id).join(' › ')}` : '';
+  app.appendChild(crumb);
+
+  if (state.kind === 'entry') {
+    renderQuestion(currentGate.entry_question);
+  } else if (state.kind === 'node') {
+    renderQuestion(currentGate.nodes[state.id], state.id);
+  } else if (state.kind === 'leaf') {
+    renderLeaf(state.id);
+  } else if (state.kind === 'note') {
+    renderNote(state.id);
+  } else if (state.kind === 'subgate') {
+    // swap gate
+    loadGate(`${state.id}.yaml`);
+  }
+}
+
+function renderQuestion(q, nodeId) {
+  const h = document.createElement('div');
+  h.className = 'q';
+  h.textContent = q.text;
+  app.appendChild(h);
+  for (const o of q.options) {
+    const b = document.createElement('button');
+    b.className = 'opt';
+    b.textContent = o.label;
+    b.onclick = () => {
+      history.push({ label: o.label });
+      const next = resolve(o.goto ?? o.leaf);
+      if (next) render(next);
+      else { app.innerHTML = `<p class="err">경로 미해결: ${o.goto ?? o.leaf}</p>`; }
+    };
+    app.appendChild(b);
+  }
+  addBack();
+}
+
+function renderLeaf(id) {
+  const leaf = currentGate.leaves[id];
+  const h = document.createElement('div');
+  h.className = 'q';
+  h.textContent = `→ ${id}`;
+  app.appendChild(h);
+
+  const nd = document.createElement('div');
+  nd.className = 'notes';
+  nd.innerHTML = '<strong>읽어야 할 노트</strong>';
+  for (const n of leaf.notes) {
+    const a = document.createElement('a');
+    a.href = `${REPO_RAW}/${n}.md`;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.textContent = `📄 ${n}`;
+    nd.appendChild(a);
+  }
+  app.appendChild(nd);
+
+  const ex = document.createElement('div');
+  ex.className = 'exits';
+  const mk = (label, target) => {
+    if (target == null) return;
+    const b = document.createElement('button');
+    b.textContent = label;
+    b.onclick = () => {
+      history.push({ label });
+      const next = resolve(target);
+      if (next) render(next);
+    };
+    ex.appendChild(b);
+  };
+  mk('↑ 더 얕게', leaf.exits.shallow);
+  mk('↓ 더 깊게', leaf.exits.deeper);
+  mk('↔ 옆으로', leaf.exits.sideways);
+  app.appendChild(ex);
+  addBack();
+}
+
+function renderNote(id) {
+  app.innerHTML = `<div class="q">직접 노트 참조</div>
+    <div class="notes"><a href="${REPO_RAW}/${id}.md" target="_blank">📄 ${id}</a></div>`;
+  addBack();
+}
+
+function addBack() {
+  const wrap = document.createElement('div');
+  wrap.className = 'exits';
+  const restart = document.createElement('button');
+  restart.textContent = '⟲ 처음으로';
+  restart.onclick = () => { history = []; render({ kind: 'entry' }); };
+  wrap.appendChild(restart);
+  if (history.length) {
+    const back = document.createElement('button');
+    back.textContent = '← 뒤로';
+    back.onclick = () => { history.pop(); render({ kind: 'entry' }); };
+    wrap.appendChild(back);
+  }
+  app.appendChild(wrap);
+}
+
+loadGateList();
+</script>
+</body>
+</html>

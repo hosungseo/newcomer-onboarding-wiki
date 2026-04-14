@@ -1,0 +1,12 @@
+{
+  "name": "newcomer-wiki-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "yaml": "^2.5.0"
+  },
+  "scripts": {
+    "validate": "node validate-gates.mjs"
+  }
+}

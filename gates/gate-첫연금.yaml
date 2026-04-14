@@ -1,0 +1,63 @@
+id: gate-첫연금
+version: 2026-04-15
+trigger: "공무원연금이 얼마를 내고 언제부터 받는지, 재직기간이 어떻게 계산되는지 모르겠다"
+
+entry_question:
+  text: "연금 질문에서 가장 가까운 것은?"
+  options:
+    - {label: "공무원연금 제도 개요부터", leaf: A-제도개요}
+    - {label: "기여금 9% / 연금액 수준", leaf: B-기여금}
+    - {label: "재직기간 산정 (군복무·재임용·종전경력)", leaf: C-재직기간}
+    - {label: "휴직이 연금 재직기간에 어떻게 반영되나", goto: D}
+    - {label: "언제부터 받나 / 조기퇴직연금·일시금", leaf: E-개시연령}
+    - {label: "전혀 모름 — 보수 구조 속 연금 위치부터", leaf: Z-보수속연금}
+
+nodes:
+  # ─────────── D. 휴직과 재직기간 ───────────
+  D:
+    question: "어느 쪽을 먼저 보고 싶나?"
+    options:
+      - {label: "휴직 자체의 종류·처리", leaf: D-휴직개괄}
+      - {label: "휴직이 연금상 재직기간에 포함되는지", leaf: D-휴직과재직기간}
+      - {label: "휴직과 승진경력 인정은 별개인가", leaf: D-휴직승진경력}
+      - {label: "모름", leaf: D-휴직과재직기간}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A. 제도 개요
+  A-제도개요:
+    notes: [concept-공무원-연금, concept-공무원-보수]
+    exits: {shallow: Z-보수속연금, deeper: B-기여금, sideways: C-재직기간}
+
+  # B. 기여금
+  B-기여금:
+    notes: [concept-공무원-연금]
+    exits: {shallow: A-제도개요, deeper: E-개시연령, sideways: C-재직기간}
+
+  # C. 재직기간
+  C-재직기간:
+    notes: [concept-공무원-연금]
+    exits: {shallow: A-제도개요, deeper: D-휴직과재직기간, sideways: E-개시연령}
+
+  # D. 휴직 경로
+  D-휴직개괄:
+    notes: [concept-공무원-휴직]
+    exits: {shallow: null, deeper: D-휴직과재직기간, sideways: D}
+  D-휴직과재직기간:
+    notes: [concept-공무원-연금, concept-공무원-휴직]
+    exits: {shallow: C-재직기간, deeper: D-휴직승진경력, sideways: D}
+  D-휴직승진경력:
+    notes: [concept-공무원-휴직과승진경력인정, concept-공무원-휴직]
+    exits: {shallow: D-휴직과재직기간, deeper: null, sideways: D}
+
+  # E. 개시연령·일시금
+  E-개시연령:
+    notes: [concept-공무원-연금]
+    exits: {shallow: A-제도개요, deeper: null, sideways: C-재직기간}
+
+  # Z
+  Z-보수속연금:
+    notes: [concept-공무원-보수, concept-공무원-연금]
+    exits: {shallow: null, deeper: A-제도개요, sideways: root}
+
+subgates: []
