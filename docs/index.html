@@ -35,6 +35,10 @@
 </label>
 
 <div id="app"></div>
+<p style="margin-top:2rem;font-size:0.8rem;color:#888">
+  피드백 로그는 브라우저에 저장됩니다.
+  <a href="#" onclick="exportGateLog();return false">내려받기(JSON)</a>
+</p>
 
 <script type="module">
 import { parse } from 'https://cdn.jsdelivr.net/npm/yaml@2.5.0/browser/index.js';
@@ -46,6 +50,24 @@ const app = document.getElementById('app');
 const picker = document.getElementById('gate-picker');
 let currentGate = null;
 let history = [];
+let currentGateFile = null;
+
+// Feedback logging — stored in localStorage, exportable as JSON
+const LOG_KEY = 'gate-feedback-log';
+function log(event) {
+  const entry = { ts: Date.now(), gate: currentGateFile, ...event };
+  const arr = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
+  arr.push(entry);
+  localStorage.setItem(LOG_KEY, JSON.stringify(arr.slice(-500))); // cap 500
+}
+function exportLog() {
+  const blob = new Blob([localStorage.getItem(LOG_KEY) || '[]'], {type: 'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `gate-log-${new Date().toISOString().slice(0,10)}.json`;
+  a.click();
+}
+window.exportGateLog = exportLog;
 
 async function loadGateList() {
   const r = await fetch(GATE_LIST_API);
@@ -64,7 +86,9 @@ async function loadGateList() {
 async function loadGate(file) {
   const r = await fetch(`${REPO_RAW}/gates/${file}`);
   currentGate = parse(await r.text());
+  currentGateFile = file;
   history = [];
+  log({ type: 'gate_open' });
   render({ kind: 'entry' });
 }
 
@@ -112,6 +136,7 @@ function renderQuestion(q, nodeId) {
     b.textContent = o.label;
     b.onclick = () => {
       history.push({ label: o.label });
+      log({ type: 'choose', node: nodeId || 'entry', label: o.label, target: o.goto ?? o.leaf });
       const next = resolve(o.goto ?? o.leaf);
       if (next) render(next);
       else { app.innerHTML = `<p class="err">경로 미해결: ${o.goto ?? o.leaf}</p>`; }
@@ -123,10 +148,23 @@ function renderQuestion(q, nodeId) {
 
 function renderLeaf(id) {
   const leaf = currentGate.leaves[id];
+  log({ type: 'reach_leaf', leaf: id });
   const h = document.createElement('div');
   h.className = 'q';
   h.textContent = `→ ${id}`;
   app.appendChild(h);
+
+  // Feedback buttons
+  const fb = document.createElement('div');
+  fb.className = 'exits';
+  fb.style.marginTop = '0.5rem';
+  for (const [emoji, tag] of [['👍 맞음','hit'], ['🤷 애매','mid'], ['👎 다름','miss']]) {
+    const b = document.createElement('button');
+    b.textContent = emoji;
+    b.onclick = () => { log({ type: 'feedback', leaf: id, tag }); b.textContent = '✓ 기록됨'; b.disabled = true; };
+    fb.appendChild(b);
+  }
+  app.appendChild(fb);
 
   const nd = document.createElement('div');
   nd.className = 'notes';
