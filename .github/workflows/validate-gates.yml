@@ -1,0 +1,17 @@
+name: Validate Gates
+on:
+  pull_request:
+    paths: ['gates/**', 'scripts/**', '*.md']
+  push:
+    branches: [main]
+    paths: ['gates/**', 'scripts/**', '*.md']
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: cd scripts && npm install --no-audit --no-fund
+      - run: cd scripts && node validate-gates.mjs
