@@ -1,0 +1,131 @@
+{
+  "downloads": [
+    {
+      "title": "예산안편성지침 및 기준 2002",
+      "bsid": "200041082418",
+      "detail_url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200041082418&rc_ritem_no=&sitePage=",
+      "viewer_url": "https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200041082418&gubun=search",
+      "filename": "기획예산처_예산안편성지침_및_기준_2002.pdf",
+      "archive_id": "0004724068",
+      "download_url": "https://theme.archives.go.kr/viewer/common/getArchWebViewerPdfDown.do?archiveId=0004724068&singleData=N&waterMark=N",
+      "saved_file": "기획예산처_예산안편성지침_및_기준_2002.pdf",
+      "bytes": 5028721,
+      "sha256": "a4284a37a8112e0cbbe459604c2164a05e49d794289623fe3073e00f0af5d6a5",
+      "content_type": "application/octet-stream;charset=UTF-8",
+      "content_disposition": "attachment; filename=0004724068.pdf;",
+      "downloaded_at": "2026-04-13T12:56:24"
+    },
+    {
+      "title": "세출예산집행지침 2001",
+      "bsid": "200041084350",
+      "detail_url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200041084350&rc_ritem_no=&sitePage=",
+      "viewer_url": "https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200041084350&gubun=search",
+      "filename": "기획예산처_세출예산집행지침_2001.pdf",
+      "archive_id": "0001209130",
+      "download_url": "https://theme.archives.go.kr/viewer/common/getArchWebViewerPdfDown.do?archiveId=0001209130&singleData=N&waterMark=N",
+      "saved_file": "기획예산처_세출예산집행지침_2001.pdf",
+      "bytes": 1967079,
+      "sha256": "16e387c8dbcd0a320ef046fb31617e9a989dfbcc3e82c17541c94cae7f015866",
+      "content_type": "application/octet-stream;charset=UTF-8",
+      "content_disposition": "attachment; filename=0001209130.pdf;",
+      "downloaded_at": "2026-04-13T12:56:25"
+    },
+    {
+      "title": "공공기금운용계획서 2001",
+      "bsid": "200041086405",
+      "detail_url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200041086405&rc_ritem_no=&sitePage=",
+      "viewer_url": "https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200041086405&gubun=search",
+      "filename": "기획예산처_공공기금운용계획서_2001.pdf",
+      "archive_id": "0001209127",
+      "download_url": "https://theme.archives.go.kr/viewer/common/getArchWebViewerPdfDown.do?archiveId=0001209127&singleData=N&waterMark=N",
+      "saved_file": "기획예산처_공공기금운용계획서_2001.pdf",
+      "bytes": 10589220,
+      "sha256": "4a8d395b264427a615525c9e5d75aa49a22acd8aad4ee272ec2a097e6ffeab62",
+      "content_type": "application/octet-stream;charset=UTF-8",
+      "content_disposition": "attachment; filename=0001209127.pdf;",
+      "downloaded_at": "2026-04-13T12:56:26"
+    },
+    {
+      "title": "기금운용계획 작성지침 2002",
+      "bsid": "200041086745",
+      "detail_url": "https://www.archives.go.kr/next/newsearch/showDetailPopup.do?rc_code=1310377&rc_rfile_no=200041086745&rc_ritem_no=&sitePage=",
+      "viewer_url": "https://theme.archives.go.kr/viewer/common/archWebViewer.do?bsid=200041086745&gubun=search",
+      "filename": "기획예산처_기금운용계획_작성지침_2002.pdf",
+      "archive_id": "0001209129",
+      "download_url": "https://theme.archives.go.kr/viewer/common/getArchWebViewerPdfDown.do?archiveId=0001209129&singleData=N&waterMark=N",
+      "saved_file": "기획예산처_기금운용계획_작성지침_2002.pdf",
+      "bytes": 1162706,
+      "sha256": "780a477876af283a60b21bdcca3ade7a586cfe1ba0caad7334fc2e791310a43b",
+      "content_type": "application/octet-stream;charset=UTF-8",
+      "content_disposition": "attachment; filename=0001209129.pdf;",
+      "downloaded_at": "2026-04-13T12:56:27"
+    }
+  ],
+  "availability": [
+    {
+      "title": "예산안편성지침 및 기준 2002",
+      "rc_rfile_no": "200041082418",
+      "online": "Y"
+    },
+    {
+      "title": "공공기금운용계획서 2001",
+      "rc_rfile_no": "200041086405",
+      "online": "Y"
+    },
+    {
+      "title": "세출예산집행지침 2001",
+      "rc_rfile_no": "200041084350",
+      "online": "Y"
+    },
+    {
+      "title": "기금운용계획 작성지침 2002",
+      "rc_rfile_no": "200041086745",
+      "online": "Y"
+    },
+    {
+      "title": "공공기금운용계획서 2002",
+      "rc_rfile_no": "200041090580",
+      "online": "Y-viewer-but-pdf-500"
+    },
+    {
+      "title": "예산개요 참고자료 2003",
+      "rc_rfile_no": "200700462815",
+      "online": "N"
+    },
+    {
+      "title": "예산개요 2004",
+      "rc_rfile_no": "200700463084",
+      "online": "N"
+    },
+    {
+      "title": "예산개요 2003",
+      "rc_rfile_no": "200700463230",
+      "online": "N"
+    },
+    {
+      "title": "예산안편성지침 및 기준 2004",
+      "rc_rfile_no": "200700029846",
+      "online": "N"
+    },
+    {
+      "title": "2002년도 세출예산집행지침",
+      "rc_rfile_no": "201003405808",
+      "online": "N"
+    },
+    {
+      "title": "2002년도 예산배정 및 자금계획",
+      "rc_rfile_no": "201003405813",
+      "online": "N"
+    },
+    {
+      "title": "연도별 정부투자기관 예산편성지침",
+      "rc_rfile_no": "201003405814",
+      "online": "N"
+    },
+    {
+      "title": "총사업비 심의자료",
+      "rc_rfile_no": "201003405815",
+      "online": "N"
+    }
+  ]
+}
