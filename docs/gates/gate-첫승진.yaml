@@ -1,0 +1,131 @@
+id: gate-첫승진
+version: 2026-04-15
+trigger: "승진이 어떻게 이뤄지는지 — 자동인지, 무엇이 반영되는지, 명부와 심사·역량평가가 어떻게 이어지는지 모르겠다"
+
+entry_question:
+  text: "지금 가장 가까운 질문은?"
+  options:
+    - {label: "승진이 자동인지부터 헷갈린다", leaf: A-승진개괄}
+    - {label: "무엇이 명부에 반영되나 (근평·경력·가점)", goto: B}
+    - {label: "명부 자체 / 명부조정 / 심사 배수범위", goto: C}
+    - {label: "근속승진과 일반승진의 차이", leaf: D-근속승진}
+    - {label: "특별승진 / 추서승진 / 명예퇴직 특별승진", goto: E}
+    - {label: "휴직·육아휴직이 승진경력에 어떻게 반영되나", leaf: F-휴직승진경력}
+    - {label: "과장급·고위공무원단의 역량평가", leaf: G-역량평가}
+    - {label: "전혀 모름 — 성과관리 큰 틀부터", leaf: Z-성과관리}
+
+nodes:
+  # ─────────── B. 명부 재료 ───────────
+  B:
+    question: "어떤 재료?"
+    options:
+      - {label: "근무성적평가", leaf: B-근평}
+      - {label: "경력평정", leaf: B-경력평정}
+      - {label: "가점평정 (자격증·전문직위·특수지)", leaf: B-가점평정}
+      - {label: "모름 — 세 재료 한 번에", leaf: B-세재료}
+
+  # ─────────── C. 명부·심사 구조 ───────────
+  C:
+    question: "어느 지점?"
+    options:
+      - {label: "승진후보자명부가 무엇으로 정해지나", leaf: C-명부}
+      - {label: "명부는 언제/왜 조정되나", leaf: C-명부조정}
+      - {label: "1명 결원인데 왜 N명까지 심사하나 (배수범위)", leaf: C-배수범위}
+      - {label: "5급 승진심사 총결원 계산", leaf: C-총결원}
+      - {label: "모름 — 명부 전체 흐름", leaf: C-명부}
+
+  # ─────────── E. 특별승진 계열 ───────────
+  E:
+    question: "어느 쪽?"
+    options:
+      - {label: "특별승진이 어떤 경우 가능한가", leaf: E-특별승진개괄}
+      - {label: "명예퇴직 특별승진", leaf: E-명예퇴직특승}
+      - {label: "공무상 사망 → 추서승진", leaf: E-추서승진}
+      - {label: "절차·공적설명·30%·역량면접 심화", leaf: E-특승심화진입}
+      - {label: "모름", leaf: E-특별승진개괄}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A
+  A-승진개괄:
+    notes: [concept-공무원-승진, concept-공무원-성과관리]
+    exits: {shallow: Z-성과관리, deeper: B-세재료, sideways: C}
+
+  # B. 명부 재료
+  B-근평:
+    notes: [concept-공무원-근무성적평가, concept-공무원-승진]
+    exits: {shallow: null, deeper: C-명부, sideways: B}
+  B-경력평정:
+    notes: [concept-공무원-경력평정, concept-공무원-승진]
+    exits: {shallow: null, deeper: C-명부, sideways: B}
+  B-가점평정:
+    notes: [concept-공무원-가점평정, concept-공무원-승진후보자명부]
+    exits: {shallow: null, deeper: C-명부, sideways: B}
+  B-세재료:
+    notes:
+      - concept-공무원-근무성적평가
+      - concept-공무원-경력평정
+      - concept-공무원-가점평정
+    exits: {shallow: A-승진개괄, deeper: C-명부, sideways: C}
+
+  # C. 명부·심사
+  C-명부:
+    notes: [concept-공무원-승진후보자명부, concept-공무원-승진]
+    exits: {shallow: B-세재료, deeper: C-명부조정, sideways: C}
+  C-명부조정:
+    notes: [concept-공무원-명부조정, concept-공무원-승진후보자명부]
+    exits: {shallow: C-명부, deeper: C-배수범위, sideways: C}
+  C-배수범위:
+    notes:
+      - concept-공무원-일반승진심사-배수범위
+      - concept-공무원-승진후보자명부
+      - concept-공무원-승진
+    exits: {shallow: C-명부, deeper: C-총결원, sideways: C}
+  C-총결원:
+    notes:
+      - concept-공무원-5급승진심사-총결원계산
+      - concept-공무원-일반승진심사-배수범위
+    exits: {shallow: C-배수범위, deeper: null, sideways: C}
+
+  # D
+  D-근속승진:
+    notes: [concept-공무원-근속승진, concept-공무원-승진]
+    exits: {shallow: A-승진개괄, deeper: E-특별승진개괄, sideways: C}
+
+  # E. 특별승진 계열
+  E-특별승진개괄:
+    notes: [concept-공무원-특별승진, concept-공무원-승진]
+    exits: {shallow: null, deeper: E-특승심화진입, sideways: E}
+  E-명예퇴직특승:
+    notes: [concept-공무원-명예퇴직특별승진, concept-공무원-특별승진]
+    exits: {shallow: E-특별승진개괄, deeper: E-특승심화진입, sideways: E}
+  E-추서승진:
+    notes:
+      - concept-공무원-추서승진
+      - concept-공무원-재해유족급여
+      - concept-공무원-특별승진
+    exits: {shallow: E-특별승진개괄, deeper: null, sideways: E}
+  E-특승심화진입:
+    notes: [process-공무원-특별승진-절차, concept-공무원-특별승진]
+    exits: {shallow: E-특별승진개괄, deeper: gate-첫승진-특별승진심화, sideways: E}
+
+  # F
+  F-휴직승진경력:
+    notes:
+      - concept-공무원-휴직과승진경력인정
+      - concept-공무원-경력평정
+      - concept-공무원-승진후보자명부
+    exits: {shallow: B-경력평정, deeper: null, sideways: C}
+
+  # G
+  G-역량평가:
+    notes: [concept-공무원-역량평가, concept-공무원-승진]
+    exits: {shallow: A-승진개괄, deeper: null, sideways: E}
+
+  # Z
+  Z-성과관리:
+    notes: [concept-공무원-성과관리, concept-공무원-승진]
+    exits: {shallow: null, deeper: A-승진개괄, sideways: root}
+
+subgates:
+  - gate-첫승진-특별승진심화

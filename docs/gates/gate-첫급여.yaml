@@ -1,0 +1,84 @@
+id: gate-첫급여
+version: 2026-04-15
+trigger: "급여명세를 처음 봤는데 봉급·수당·복지포인트·여비가 어떻게 얽혀 있는지 모르겠다"
+
+entry_question:
+  text: "지금 가장 헷갈리는 것은?"
+  options:
+    - {label: "월급이 봉급 + 수당인지부터 헷갈린다", goto: A}
+    - {label: "수당 항목이 매월/비정기로 왜 다른지 궁금하다", leaf: B-수당}
+    - {label: "복지포인트가 돈처럼 보이는데 월급은 아니다", goto: C}
+    - {label: "출장비·부임비도 급여의 일부인가", goto: D}
+    - {label: "전혀 모름 — 전체 보상 구조부터", leaf: Z-전체구조}
+
+nodes:
+  # ─────────── A. 보수 큰 틀 ───────────
+  A:
+    question: "어디에 초점을 두고 싶나?"
+    options:
+      - {label: "보수 = 봉급 + 수당 구조 개괄", leaf: A-보수개괄}
+      - {label: "수당 시기·요건으로 바로", leaf: B-수당}
+      - {label: "복지포인트와의 차이까지", leaf: C-복지개괄}
+      - {label: "모름 — 전체 구조부터", leaf: Z-전체구조}
+
+  # ─────────── C. 맞춤형 복지 ───────────
+  C:
+    question: "복지포인트 어디가 궁금한가?"
+    options:
+      - {label: "복지포인트·기본항목·자율항목 개념", leaf: C-복지개괄}
+      - {label: "자율항목 카드청구·영수증청구 구조", leaf: C-자율항목청구}
+      - {label: "왜 월급과 별개로 취급되는지", leaf: C-복지vs보수}
+      - {label: "모름", leaf: C-복지개괄}
+
+  # ─────────── D. 여비 ───────────
+  D:
+    question: "출장비 어떤 쪽?"
+    options:
+      - {label: "여비가 급여·수당과 층위가 다른가", leaf: D-여비층위}
+      - {label: "출장 유형·증빙 전반", leaf: D-여비개괄}
+      - {label: "여비 상세는 출장정산 게이트로", leaf: D-출장정산진입}
+      - {label: "모름", leaf: D-여비층위}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A
+  A-보수개괄:
+    notes: [concept-공무원-보수, concept-공무원-수당]
+    exits: {shallow: null, deeper: B-수당, sideways: C}
+
+  # B
+  B-수당:
+    notes: [concept-공무원-수당, concept-공무원-보수]
+    exits: {shallow: A-보수개괄, deeper: C-복지vs보수, sideways: D}
+
+  # C
+  C-복지개괄:
+    notes: [concept-공무원-맞춤형복지, concept-공무원-보수]
+    exits: {shallow: null, deeper: C-자율항목청구, sideways: A}
+  C-자율항목청구:
+    notes: [concept-공무원-맞춤형복지]
+    exits: {shallow: C-복지개괄, deeper: null, sideways: C}
+  C-복지vs보수:
+    notes: [concept-공무원-맞춤형복지, concept-공무원-보수]
+    exits: {shallow: C-복지개괄, deeper: C-자율항목청구, sideways: A}
+
+  # D
+  D-여비층위:
+    notes: [concept-공무원-여비, concept-공무원-보수]
+    exits: {shallow: A-보수개괄, deeper: D-여비개괄, sideways: D}
+  D-여비개괄:
+    notes: [concept-공무원-여비]
+    exits: {shallow: D-여비층위, deeper: gate-첫출장정산, sideways: D}
+  D-출장정산진입:
+    notes: [concept-공무원-여비]
+    exits: {shallow: D-여비개괄, deeper: gate-첫출장정산, sideways: D}
+
+  # Z
+  Z-전체구조:
+    notes:
+      - concept-공무원-보수
+      - concept-공무원-수당
+      - concept-공무원-맞춤형복지
+    exits: {shallow: null, deeper: A-보수개괄, sideways: root}
+
+subgates: []

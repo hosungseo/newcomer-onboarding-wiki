@@ -1,0 +1,101 @@
+id: gate-첫복귀
+version: 2026-04-15
+trigger: "휴직·재해 뒤 복귀를 앞두고 있는데 뭐부터 봐야 할지 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "휴직 끝나면 자동으로 돌아가는지부터 헷갈린다", leaf: A-자동복귀여부}
+    - {label: "복직 전 절차·증빙이 무엇인지 감이 안 온다", goto: B}
+    - {label: "질병·공무상 재해 뒤 직무복귀가 궁금하다", goto: C}
+    - {label: "복귀 후 승진경력·인사반영이 궁금하다", goto: D}
+    - {label: "전혀 모름 — 복무·복귀 큰 틀부터", leaf: Z-전체흐름}
+
+nodes:
+  # ─────────── B. 복직 절차 ───────────
+  B:
+    question: "어떤 유형의 휴직에서 복귀하나?"
+    options:
+      - {label: "육아·가사·유학 등 일반 휴직", leaf: B-일반복직}
+      - {label: "질병·공무상 부상 뒤 복직", goto: C}
+      - {label: "어떤 제출·확인이 필요한지 공통 흐름", leaf: B-복직공통}
+      - {label: "모름", leaf: B-복직공통}
+
+  # ─────────── C. 재해성 복귀 ───────────
+  C:
+    question: "재해 관련 복귀에서 무엇이 걸리나?"
+    options:
+      - {label: "원직무·적합직무 복귀 절차 자체", leaf: C-직무복귀}
+      - {label: "재해보상 제도와 어떻게 이어지나", leaf: C-재해보상연결}
+      - {label: "재해성 복귀에 휴직이 어떻게 연결되나", leaf: C-휴직연결}
+      - {label: "모름", leaf: C-직무복귀}
+
+  # ─────────── D. 복귀 후 인사 ───────────
+  D:
+    question: "복귀 후 어떤 질문이 걸리나?"
+    options:
+      - {label: "휴직기간의 승진경력 인정 여부", leaf: D-승진경력인정}
+      - {label: "승진 전체 질문으로 확장", leaf: D-승진entry}
+      - {label: "복귀 전 절차를 먼저 확인", leaf: B-복직공통}
+      - {label: "모름", leaf: D-승진경력인정}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A
+  A-자동복귀여부:
+    notes:
+      - concept-공무원-휴직
+      - concept-공무원-복무
+    exits: {shallow: null, deeper: B-복직공통, sideways: D-승진경력인정}
+
+  # B
+  B-복직공통:
+    notes:
+      - concept-공무원-복무
+      - concept-공무원-휴직
+    exits: {shallow: A-자동복귀여부, deeper: B-일반복직, sideways: C-직무복귀}
+  B-일반복직:
+    notes:
+      - concept-공무원-휴직
+      - concept-공무원-복무
+    exits: {shallow: B-복직공통, deeper: D-승진경력인정, sideways: C}
+
+  # C
+  C-직무복귀:
+    notes:
+      - process-공무원-재해후-직무복귀
+      - faq-재해후-직무복귀는-어떻게-읽나
+    exits: {shallow: B-복직공통, deeper: C-재해보상연결, sideways: C-휴직연결}
+  C-재해보상연결:
+    notes:
+      - concept-공무원-재해보상
+      - process-공무원-재해후-직무복귀
+    exits: {shallow: C-직무복귀, deeper: gate-첫재해보상, sideways: C-휴직연결}
+  C-휴직연결:
+    notes:
+      - concept-공무원-휴직
+      - process-공무원-재해후-직무복귀
+    exits: {shallow: C-직무복귀, deeper: D-승진경력인정, sideways: B-복직공통}
+
+  # D
+  D-승진경력인정:
+    notes:
+      - concept-공무원-휴직과승진경력인정
+      - faq-휴직은-승진경력에-어떻게-반영되나
+      - concept-공무원-휴직
+    exits: {shallow: A-자동복귀여부, deeper: D-승진entry, sideways: B-일반복직}
+  D-승진entry:
+    notes:
+      - newcomer-path-첫승진질문-2026-04
+      - concept-공무원-승진
+    exits: {shallow: D-승진경력인정, deeper: null, sideways: B-복직공통}
+
+  # Z
+  Z-전체흐름:
+    notes:
+      - newcomer-path-첫복귀질문-2026-04
+      - concept-공무원-복무
+      - concept-공무원-휴직
+    exits: {shallow: null, deeper: B-복직공통, sideways: root}
+
+subgates: []

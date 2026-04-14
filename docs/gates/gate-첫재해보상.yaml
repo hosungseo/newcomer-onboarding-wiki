@@ -1,0 +1,138 @@
+id: gate-첫재해보상
+version: 2026-04-15
+trigger: "방금 재해보상 관련 일을 마주했는데 뭐부터 봐야 할지 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "이 사고·질병이 공무상 재해로 인정되는지부터 헷갈린다", goto: A}
+    - {label: "출퇴근길 사고가 공무상 재해가 되는지 궁금하다", leaf: B-출퇴근재해}
+    - {label: "어떤 급여(요양·재활·장해·유족)를 받을 수 있는지 궁금하다", goto: C}
+    - {label: "청구를 어디에, 무슨 서류로 해야 하는지 모르겠다", goto: D}
+    - {label: "공무상 사망 — 유족급여·추서승진이 어떻게 이어지나", goto: E}
+    - {label: "치료 후 복귀·재활·휴직 연결이 궁금하다", goto: F}
+    - {label: "전혀 모름 — 재해보상 전체 틀부터", leaf: Z-전체흐름}
+
+nodes:
+  # ─────────── A. 인정 범위 ───────────
+  A:
+    question: "헷갈리는 지점은?"
+    options:
+      - {label: "공무상 재해의 일반적 인정 기준", leaf: A-재해보상기본}
+      - {label: "출퇴근 중 사고 인정 여부", leaf: B-출퇴근재해}
+      - {label: "인정되면 어떤 급여로 이어지는지", leaf: C-급여구분}
+      - {label: "모름", leaf: A-재해보상기본}
+
+  # ─────────── C. 급여 종류 ───────────
+  C:
+    question: "어떤 급여가 궁금한가?"
+    options:
+      - {label: "요양급여 / 재활급여 / 장해급여 차이", leaf: C-급여구분}
+      - {label: "유족급여(순직·위험직무순직·장해유족연금)", leaf: E-유족급여구분}
+      - {label: "급여 청구 절차", leaf: D-청구서류}
+      - {label: "모름", leaf: C-급여구분}
+
+  # ─────────── D. 청구 ───────────
+  D:
+    question: "청구에서 무엇이 걸리나?"
+    options:
+      - {label: "어디에 내고 무슨 서류가 필요한가", leaf: D-청구서류}
+      - {label: "심의회·공무원연금공단은 각각 뭘 하나", leaf: D-심의구조}
+      - {label: "인정 기준을 다시 보고 싶다", leaf: A-재해보상기본}
+      - {label: "모름", leaf: D-청구서류}
+
+  # ─────────── E. 유족 ───────────
+  E:
+    question: "무엇이 궁금한가?"
+    options:
+      - {label: "유족급여 종류와 구분", leaf: E-유족급여구분}
+      - {label: "추서승진과 유족급여 연결", leaf: E-추서연결}
+      - {label: "청구 절차로 바로", leaf: D-청구서류}
+      - {label: "모름", leaf: E-유족급여구분}
+
+  # ─────────── F. 복귀·재활 ───────────
+  F:
+    question: "복귀와 관련해 무엇이 걸리나?"
+    options:
+      - {label: "원직무·적합직무 복귀 절차", leaf: F-직무복귀}
+      - {label: "재해로 쉴 때 휴직과 연결", leaf: F-휴직연결}
+      - {label: "복귀 후 전체 질문은 어디로", leaf: F-복귀entry}
+      - {label: "모름", leaf: F-직무복귀}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A
+  A-재해보상기본:
+    notes:
+      - concept-공무원-재해보상
+      - faq-신규공무원의-첫재해보상질문
+    exits: {shallow: null, deeper: C-급여구분, sideways: B-출퇴근재해}
+
+  # B
+  B-출퇴근재해:
+    notes:
+      - concept-공무원-출퇴근재해
+      - faq-출퇴근사고는-언제-공무상재해가-되나
+      - concept-공무원-재해보상
+    exits: {shallow: A-재해보상기본, deeper: D-청구서류, sideways: A}
+
+  # C
+  C-급여구분:
+    notes:
+      - concept-공무원-재해보상
+      - concept-공무원-보수
+    exits: {shallow: A-재해보상기본, deeper: D-청구서류, sideways: E-유족급여구분}
+
+  # D
+  D-청구서류:
+    notes:
+      - process-공무원-재해보상-청구
+      - faq-재해보상은-어떻게-청구하나
+      - concept-공무원-재해보상
+    exits: {shallow: C-급여구분, deeper: D-심의구조, sideways: F-직무복귀}
+  D-심의구조:
+    notes:
+      - process-공무원-재해보상-청구
+      - concept-공무원-재해보상
+    exits: {shallow: D-청구서류, deeper: null, sideways: D}
+
+  # E
+  E-유족급여구분:
+    notes:
+      - concept-공무원-재해유족급여
+      - faq-재해유족급여는-어떤-경우-받나
+      - concept-공무원-재해보상
+    exits: {shallow: C-급여구분, deeper: E-추서연결, sideways: D-청구서류}
+  E-추서연결:
+    notes:
+      - concept-공무원-추서승진
+      - faq-추서승진은-어떤-경우-가능한가
+      - concept-공무원-재해유족급여
+    exits: {shallow: E-유족급여구분, deeper: null, sideways: D-청구서류}
+
+  # F
+  F-직무복귀:
+    notes:
+      - process-공무원-재해후-직무복귀
+      - faq-재해후-직무복귀는-어떻게-읽나
+    exits: {shallow: null, deeper: F-휴직연결, sideways: D-청구서류}
+  F-휴직연결:
+    notes:
+      - concept-공무원-휴직
+      - concept-공무원-재해보상
+    exits: {shallow: F-직무복귀, deeper: gate-첫복귀, sideways: F}
+  F-복귀entry:
+    notes:
+      - newcomer-path-첫복귀질문-2026-04
+      - process-공무원-재해후-직무복귀
+    exits: {shallow: F-직무복귀, deeper: gate-첫복귀, sideways: F}
+
+  # Z
+  Z-전체흐름:
+    notes:
+      - newcomer-path-첫재해보상질문-2026-04
+      - concept-공무원-재해보상
+      - hub-인사혁신처
+    exits: {shallow: null, deeper: A-재해보상기본, sideways: root}
+
+subgates: []

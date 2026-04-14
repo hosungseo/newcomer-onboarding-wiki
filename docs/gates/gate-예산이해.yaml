@@ -1,0 +1,47 @@
+id: gate-예산이해
+version: 2026-04-15
+trigger: "예산·재정 기본을 잡아야 하는데 어디서부터 볼지 모르겠다"
+
+entry_question:
+  text: "지금 어디에 초점을 두고 싶나?"
+  options:
+    - {label: "신규자 기본 흐름부터", leaf: A-기본흐름}
+    - {label: "나라살림 개요(예산 전체 그림)", leaf: B-나라살림}
+    - {label: "예산안편성지침·기준", leaf: C-편성지침}
+    - {label: "신규자과정 예산·재정 강의 정리", leaf: D-인재원예산재정}
+    - {label: "전혀 모름 — 전체부터", leaf: Z-전체흐름}
+
+nodes: {}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  A-기본흐름:
+    notes:
+      - process-신규자-예산이해-기본흐름
+      - section-국가인재원-신규자과정-예산과재정
+    exits: {shallow: null, deeper: B-나라살림, sideways: D-인재원예산재정}
+
+  B-나라살림:
+    notes:
+      - source-기획재정부-2024-나라살림-예산개요
+      - process-신규자-예산이해-기본흐름
+    exits: {shallow: A-기본흐름, deeper: C-편성지침, sideways: D-인재원예산재정}
+
+  C-편성지침:
+    notes: [source-기획재정부-예산안편성지침-및-기준]
+    exits: {shallow: B-나라살림, deeper: null, sideways: A-기본흐름}
+
+  D-인재원예산재정:
+    notes:
+      - section-국가인재원-신규자과정-예산과재정
+      - process-신규자-예산이해-기본흐름
+    exits: {shallow: A-기본흐름, deeper: B-나라살림, sideways: C-편성지침}
+
+  Z-전체흐름:
+    notes:
+      - process-신규자-예산이해-기본흐름
+      - source-기획재정부-2024-나라살림-예산개요
+      - section-국가인재원-신규자과정-예산과재정
+    exits: {shallow: null, deeper: A-기본흐름, sideways: root}
+
+subgates: []

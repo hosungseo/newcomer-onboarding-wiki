@@ -1,0 +1,64 @@
+id: gate-민원응대
+version: 2026-04-15
+trigger: "민원을 받았는데 어떻게 응대·처리해야 할지 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "국민신문고가 뭔지부터 잡고 싶다", goto: A}
+    - {label: "민원상담과 민원신청이 어떻게 다른지 모르겠다", leaf: B-상담에서신청}
+    - {label: "민원 응대 태도·소통을 어떻게 잡나", leaf: C-소통과대응}
+    - {label: "민원이 행안부 어느 조직과 연결되는지 궁금", leaf: D-행안부연결}
+    - {label: "유사 민원·사례를 찾고 싶다", leaf: E-사례검색}
+    - {label: "전혀 모름 — 전체 흐름부터", leaf: Z-전체흐름}
+
+nodes:
+  A:
+    question: "어느 지점이 먼저 걸리나?"
+    options:
+      - {label: "국민신문고 시스템 자체가 뭔가", leaf: A-국민신문고개념}
+      - {label: "로그인·접근이 막혔다", leaf: A-로그인}
+      - {label: "자주 묻는 질문으로 빠르게 훑고 싶다", leaf: A-FAQ}
+      - {label: "모름", leaf: A-국민신문고개념}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  A-국민신문고개념:
+    notes:
+      - concept-정부업무시스템-국민신문고
+      - source-국민권익위원회-국민신문고
+    exits: {shallow: null, deeper: B-상담에서신청, sideways: D-행안부연결}
+  A-로그인:
+    notes: [source-국민권익위원회-국민신문고-로그인안내]
+    exits: {shallow: A-국민신문고개념, deeper: B-상담에서신청, sideways: A}
+  A-FAQ:
+    notes: [source-국민권익위원회-국민신문고-자주하는질문]
+    exits: {shallow: A-국민신문고개념, deeper: E-사례검색, sideways: A}
+
+  B-상담에서신청:
+    notes:
+      - process-국민신문고-민원상담에서민원신청까지
+      - source-국민권익위원회-국민신문고-민원상담안내
+    exits: {shallow: A-국민신문고개념, deeper: C-소통과대응, sideways: E-사례검색}
+
+  C-소통과대응:
+    notes: [section-국가인재원-신규자과정-소통협업과민원대응]
+    exits: {shallow: null, deeper: D-행안부연결, sideways: B-상담에서신청}
+
+  D-행안부연결:
+    notes:
+      - concept-행정안전부-참여혁신조직실-문서민원정보공개연결축
+      - faq-행정문서와민원정보공개는-행안부-어느-조직과-가까운가
+    exits: {shallow: null, deeper: gate-정보공개청구, sideways: C-소통과대응}
+
+  E-사례검색:
+    notes: [source-국민권익위원회-국민신문고-민원사례검색]
+    exits: {shallow: A-FAQ, deeper: B-상담에서신청, sideways: A}
+
+  Z-전체흐름:
+    notes:
+      - process-국민신문고-민원상담에서민원신청까지
+      - concept-정부업무시스템-국민신문고
+    exits: {shallow: null, deeper: A, sideways: root}
+
+subgates: []
