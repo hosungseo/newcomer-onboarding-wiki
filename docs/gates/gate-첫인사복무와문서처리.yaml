@@ -1,0 +1,91 @@
+id: gate-첫인사복무와문서처리
+version: 2026-04-15
+trigger: "임용 초반에 인사·복무·문서처리 중 뭘 먼저 봐야 할지 모르겠다"
+
+entry_question:
+  text: "지금 네 질문이 가장 가까운 영역은?"
+  options:
+    - {label: "연가·병가·특별휴가 (휴가)", leaf: A-휴가}
+    - {label: "시차출퇴근·재택·집약근무 (유연근무)", leaf: B-유연근무}
+    - {label: "월급·수당 항목이 헷갈린다", goto: C}
+    - {label: "근무성적평가·성과관리가 궁금하다", leaf: D-평가}
+    - {label: "기안·검토·결재·등록 (문서처리)", leaf: E-문서처리입구}
+    - {label: "결재 끝난 문서 등록·등록번호", leaf: F-문서등록}
+    - {label: "전혀 모름 — 인사적응 큰 틀부터", leaf: Z-핵심축}
+
+nodes:
+  # ─────── C. 보수·수당 ───────
+  C:
+    question: "정확히 어느 쪽이 궁금한가?"
+    options:
+      - {label: "수당 항목 분해 (매월/비정기)", leaf: C-수당}
+      - {label: "보수 전체 구조부터", leaf: C-보수}
+      - {label: "급여 전반 실무질문 입구", leaf: C-첫급여}
+      - {label: "모름 — 보수 큰 틀부터", leaf: C-보수}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A. 휴가
+  A-휴가:
+    notes:
+      - concept-공무원-휴가
+      - concept-공무원-복무
+    exits: {shallow: Z-핵심축, deeper: B-유연근무, sideways: D-평가}
+
+  # B. 유연근무
+  B-유연근무:
+    notes:
+      - concept-공무원-유연근무
+      - concept-공무원-복무
+    exits: {shallow: Z-핵심축, deeper: A-휴가, sideways: C-보수}
+
+  # C. 보수·수당
+  C-수당:
+    notes:
+      - concept-공무원-수당
+      - concept-공무원-보수
+    exits: {shallow: C-보수, deeper: C-첫급여, sideways: D-평가}
+  C-보수:
+    notes:
+      - concept-공무원-보수
+      - concept-공무원-수당
+    exits: {shallow: Z-핵심축, deeper: C-수당, sideways: C-첫급여}
+  C-첫급여:
+    notes:
+      - newcomer-path-첫급여질문-2026-04
+      - faq-신규공무원의-첫급여질문
+    exits: {shallow: C-보수, deeper: gate-첫급여, sideways: D-평가}
+
+  # D. 평가
+  D-평가:
+    notes:
+      - concept-공무원-근무성적평가
+      - concept-공무원-성과관리
+    exits: {shallow: Z-핵심축, deeper: null, sideways: A-휴가}
+
+  # E. 문서처리 입구
+  E-문서처리입구:
+    notes:
+      - newcomer-path-첫문서처리질문-2026-04
+      - faq-신규공무원의-첫문서처리질문
+    exits: {shallow: Z-핵심축, deeper: gate-첫문서처리, sideways: F-문서등록}
+
+  # F. 문서등록
+  F-문서등록:
+    notes:
+      - process-행정문서-문서등록
+      - concept-행정문서-문서등록번호
+      - faq-문서등록번호는-언제-붙나
+    exits: {shallow: E-문서처리입구, deeper: gate-첫문서처리, sideways: E-문서처리입구}
+
+  # Z. 전체 큰 틀
+  Z-핵심축:
+    notes:
+      - concept-신규공무원-인사적응-핵심축
+      - hub-인사혁신처
+      - hub-행정안전부
+    exits: {shallow: null, deeper: A-휴가, sideways: root}
+
+subgates:
+  - gate-첫문서처리
+  - gate-첫급여

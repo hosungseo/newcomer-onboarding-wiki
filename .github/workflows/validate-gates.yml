@@ -15,3 +15,12 @@ jobs:
         with: { node-version: '20' }
       - run: cd scripts && npm install --no-audit --no-fund
       - run: cd scripts && node validate-gates.mjs
+      - name: Rebuild gates index
+        run: cd scripts && node build-gates-index.mjs
+      - name: Check docs/gates.json is up to date
+        run: |
+          if ! git diff --quiet docs/gates.json docs/gates/; then
+            echo "::error::docs/gates.json or docs/gates/*.yaml is out of date. Run 'npm --prefix scripts run build-index' locally and commit."
+            git diff --stat docs/
+            exit 1
+          fi

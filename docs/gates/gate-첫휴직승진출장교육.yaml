@@ -1,0 +1,91 @@
+id: gate-첫휴직승진출장교육
+version: 2026-04-15
+trigger: "첫 적응기를 지나고 휴직·승진·출장정산·교육훈련 중 어디부터 봐야 할지 모르겠다"
+
+entry_question:
+  text: "지금 네 질문이 가장 가까운 영역은?"
+  options:
+    - {label: "육아·질병·가사휴직 (장기 이탈)", leaf: A-휴직}
+    - {label: "승진 — 평가·경력·명부·심사", leaf: B-승진}
+    - {label: "출장 증빙·여비 정산", leaf: C-출장}
+    - {label: "교육훈련·인재개발", leaf: D-교육}
+    - {label: "휴직 후 복귀 실무", leaf: E-복귀}
+    - {label: "재해보상·공무상재해", leaf: F-재해}
+    - {label: "연금 — 퇴직·기여·수령", leaf: G-연금}
+    - {label: "전혀 모름 — 인사적응 큰 틀부터", leaf: Z-핵심축}
+
+nodes: {}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A. 휴직
+  A-휴직:
+    notes:
+      - concept-공무원-휴직
+      - concept-공무원-복무
+      - concept-공무원-휴직과승진경력인정
+    exits: {shallow: Z-핵심축, deeper: E-복귀, sideways: B-승진}
+
+  # B. 승진
+  B-승진:
+    notes:
+      - concept-공무원-승진
+      - concept-공무원-경력평정
+      - newcomer-path-첫승진질문-2026-04
+    exits: {shallow: Z-핵심축, deeper: gate-첫승진, sideways: D-교육}
+
+  # C. 출장
+  C-출장:
+    notes:
+      - concept-공무원-여비
+      - concept-공무원-보수
+      - newcomer-path-첫출장정산질문-2026-04
+    exits: {shallow: Z-핵심축, deeper: gate-첫출장정산, sideways: D-교육}
+
+  # D. 교육
+  D-교육:
+    notes:
+      - concept-공무원-인재개발
+      - concept-정부업무시스템-e사람
+      - hub-국가인재원-공통실무모듈
+    exits: {shallow: Z-핵심축, deeper: gate-첫교육훈련, sideways: B-승진}
+
+  # E. 복귀
+  E-복귀:
+    notes:
+      - newcomer-path-첫복귀질문-2026-04
+      - process-공무원-재해후-직무복귀
+      - faq-재해후-직무복귀는-어떻게-읽나
+    exits: {shallow: A-휴직, deeper: gate-첫복귀, sideways: F-재해}
+
+  # F. 재해
+  F-재해:
+    notes:
+      - concept-공무원-재해보상
+      - process-공무원-재해보상-청구
+      - newcomer-path-첫재해보상질문-2026-04
+    exits: {shallow: Z-핵심축, deeper: gate-첫재해보상, sideways: E-복귀}
+
+  # G. 연금
+  G-연금:
+    notes:
+      - concept-공무원-연금
+      - newcomer-path-첫연금질문-2026-04
+      - faq-신규공무원의-첫연금질문
+    exits: {shallow: Z-핵심축, deeper: gate-첫연금, sideways: F-재해}
+
+  # Z. 핵심축
+  Z-핵심축:
+    notes:
+      - concept-신규공무원-인사적응-핵심축
+      - hub-인사혁신처
+      - hub-국가인재원-공통실무모듈
+    exits: {shallow: null, deeper: A-휴직, sideways: root}
+
+subgates:
+  - gate-첫출장정산
+  - gate-첫교육훈련
+  - gate-첫복귀
+  - gate-첫재해보상
+  - gate-첫연금
+  - gate-첫승진

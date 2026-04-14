@@ -1,0 +1,82 @@
+id: gate-첫문서처리-인증심화
+version: 2026-04-15
+trigger: "행정전자서명 / 인증기관 / 위탁 구조의 역사와 연혁이 궁금하다"
+note: "실무 신규자는 거의 안 타는 경로. 연구·업무 담당자용."
+
+entry_question:
+  text: "어디가 궁금한가?"
+  options:
+    - {label: "인증관리센터 vs 인증기관 — 역할 차이", leaf: 차이}
+    - {label: "제89조 위탁 구조 — 기준·수탁기관", goto: 위탁}
+    - {label: "고시·지침 연혁 — 2005/2008/2010/2014", goto: 연혁}
+    - {label: "전자정부법 시행령 28조·29조 관계", leaf: 시행령28_29}
+
+nodes:
+  위탁:
+    question: "어느 층위?"
+    options:
+      - {label: "제89조 위탁기준 자체", leaf: 제89조기준}
+      - {label: "제89조 위탁기관이 무엇인지", leaf: 제89조위탁기관}
+      - {label: "수탁기관이 어디인지 (관보 고시)", leaf: 수탁기관고시}
+      - {label: "인증기관과 위탁기관 연결 구조", leaf: 인증기관_위탁기관_관계}
+  연혁:
+    question: "어느 시점?"
+    options:
+      - {label: "2005 ↔ 2008 조정 포인트", leaf: y2005_2008}
+      - {label: "2010 인증업무지침 연결", leaf: y2010}
+      - {label: "2014 지침 개정 의미", leaf: y2014}
+      - {label: "행안부 인증기관 추가지정 의미", leaf: 행안부추가지정}
+      - {label: "지역정보개발원 전문기관 지정 의미", leaf: 지역정보개발원}
+
+leaves:
+  차이:
+    notes:
+      - concept-행정문서-인증관리센터와인증기관-차이
+      - faq-인증관리센터와-인증기관은-무엇이-다른가
+    exits: {shallow: null, deeper: 인증기관_위탁기관_관계, sideways: 위탁}
+  제89조기준:
+    notes: [concept-행정문서-제89조-인증업무위탁기준, faq-제89조-위탁기준은-무엇인가]
+    exits: {shallow: null, deeper: 수탁기관고시, sideways: 위탁}
+  제89조위탁기관:
+    notes: [faq-제89조-위탁기관은-어떻게-읽나, concept-행정문서-인증기관과제89조위탁기관-관계]
+    exits: {shallow: null, deeper: 제89조기준, sideways: 위탁}
+  수탁기관고시:
+    notes:
+      - concept-행정문서-행정전자서명-수탁기관관보고시
+      - faq-행정전자서명-수탁기관은-어디서-확인하나
+    exits: {shallow: null, deeper: y2005_2008, sideways: 위탁}
+  인증기관_위탁기관_관계:
+    notes: [concept-행정문서-인증기관과제89조위탁기관-관계]
+    exits: {shallow: 차이, deeper: 제89조기준, sideways: 연혁}
+  시행령28_29:
+    notes:
+      - concept-행정문서-전자정부법시행령-제28조와제29조-관계
+      - faq-전자정부법-시행령-제28조와-제29조는-무엇이-다른가
+    exits: {shallow: null, deeper: 차이, sideways: 위탁}
+  y2005_2008:
+    notes:
+      - concept-행정문서-행정전자서명-위탁기관-2005와2008-조정포인트
+      - faq-행정전자서명-위탁기관은-2005와2008에-무엇이-달라졌나
+    exits: {shallow: null, deeper: y2010, sideways: 연혁}
+  y2010:
+    notes:
+      - concept-행정문서-행정전자서명-2010인증업무지침과위탁기관고시-연결
+      - faq-2010-인증업무지침은-위탁기관고시와-어떻게-이어지나
+    exits: {shallow: y2005_2008, deeper: y2014, sideways: 연혁}
+  y2014:
+    notes:
+      - concept-행정문서-행정전자서명-2014인증업무지침개정-의미
+      - faq-2014-인증업무지침-개정은-무엇을-바꿨나
+    exits: {shallow: y2010, deeper: 행안부추가지정, sideways: 연혁}
+  행안부추가지정:
+    notes:
+      - concept-행정문서-행정안전부-인증기관-추가지정-의미
+      - faq-행정안전부는-왜-인증기관으로-추가지정됐나
+    exits: {shallow: null, deeper: 지역정보개발원, sideways: 연혁}
+  지역정보개발원:
+    notes:
+      - concept-행정문서-지역정보개발원-행정전자서명-전문기관-지정-의미
+      - faq-지역정보개발원은-왜-행정전자서명-전문기관으로-지정됐나
+    exits: {shallow: 행안부추가지정, deeper: null, sideways: 연혁}
+
+subgates: []

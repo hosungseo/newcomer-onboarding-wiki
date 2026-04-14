@@ -1,0 +1,167 @@
+{
+  "version": "2026-04-14",
+  "gates": [
+    {
+      "file": "gate-민원응대.yaml",
+      "id": "gate-민원응대",
+      "version": "2026-04-15",
+      "trigger": "민원을 받았는데 어떻게 응대·처리해야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 6,
+      "leafCount": 8
+    },
+    {
+      "file": "gate-예산이해.yaml",
+      "id": "gate-예산이해",
+      "version": "2026-04-15",
+      "trigger": "예산·재정 기본을 잡아야 하는데 어디서부터 볼지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 5,
+      "leafCount": 5
+    },
+    {
+      "file": "gate-임용후첫달.yaml",
+      "id": "gate-임용후첫달",
+      "version": "2026-04-15",
+      "trigger": "임용 후 첫 달, 국가인재원 신규자 과정에서 뭘 먼저 읽어야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 10,
+      "leafCount": 12
+    },
+    {
+      "file": "gate-정보공개청구.yaml",
+      "id": "gate-정보공개청구",
+      "version": "2026-04-15",
+      "trigger": "정보공개청구가 들어왔거나 대응해야 하는데 뭘 해야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 7,
+      "leafCount": 8
+    },
+    {
+      "file": "gate-정부입법.yaml",
+      "id": "gate-정부입법",
+      "version": "2026-04-15",
+      "trigger": "법령 제·개정 업무에 관여하게 됐는데 입법 절차가 어떻게 돌아가는지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 7,
+      "leafCount": 7
+    },
+    {
+      "file": "gate-조달계약.yaml",
+      "id": "gate-조달계약",
+      "version": "2026-04-15",
+      "trigger": "물품·용역을 조달하거나 계약을 진행해야 하는데 어떻게 시작할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 4,
+      "leafCount": 5
+    },
+    {
+      "file": "gate-첫교육훈련.yaml",
+      "id": "gate-첫교육훈련",
+      "version": "2026-04-15",
+      "trigger": "교육훈련 관련해서 뭘 모르는지부터 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 8,
+      "leafCount": 10
+    },
+    {
+      "file": "gate-첫급여.yaml",
+      "id": "gate-첫급여",
+      "version": "2026-04-15",
+      "trigger": "급여명세를 처음 봤는데 봉급·수당·복지포인트·여비가 어떻게 얽혀 있는지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 5,
+      "leafCount": 9
+    },
+    {
+      "file": "gate-첫문서처리.yaml",
+      "id": "gate-첫문서처리",
+      "version": "2026-04-15",
+      "trigger": "방금 문서처리 관련 일을 받았는데 뭘 해야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 7,
+      "leafCount": 26
+    },
+    {
+      "file": "gate-첫문서처리-인증심화.yaml",
+      "id": "gate-첫문서처리-인증심화",
+      "version": "2026-04-15",
+      "trigger": "행정전자서명 / 인증기관 / 위탁 구조의 역사와 연혁이 궁금하다",
+      "isSubgate": true,
+      "entryOptions": 4,
+      "leafCount": 11
+    },
+    {
+      "file": "gate-첫복귀.yaml",
+      "id": "gate-첫복귀",
+      "version": "2026-04-15",
+      "trigger": "휴직·재해 뒤 복귀를 앞두고 있는데 뭐부터 봐야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 5,
+      "leafCount": 9
+    },
+    {
+      "file": "gate-첫승진.yaml",
+      "id": "gate-첫승진",
+      "version": "2026-04-15",
+      "trigger": "승진이 어떻게 이뤄지는지 — 자동인지, 무엇이 반영되는지, 명부와 심사·역량평가가 어떻게 이어지는지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 8,
+      "leafCount": 17
+    },
+    {
+      "file": "gate-첫승진-특별승진심화.yaml",
+      "id": "gate-첫승진-특별승진심화",
+      "version": "2026-04-15",
+      "trigger": "특별승진의 절차·공적설명·30% 운영기준·역량면접·직무수행계획서·보고서·사전예고예외까지 깊게 알고 싶다",
+      "isSubgate": true,
+      "entryOptions": 7,
+      "leafCount": 7
+    },
+    {
+      "file": "gate-첫연금.yaml",
+      "id": "gate-첫연금",
+      "version": "2026-04-15",
+      "trigger": "공무원연금이 얼마를 내고 언제부터 받는지, 재직기간이 어떻게 계산되는지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 6,
+      "leafCount": 8
+    },
+    {
+      "file": "gate-첫인사복무와문서처리.yaml",
+      "id": "gate-첫인사복무와문서처리",
+      "version": "2026-04-15",
+      "trigger": "임용 초반에 인사·복무·문서처리 중 뭘 먼저 봐야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 7,
+      "leafCount": 9
+    },
+    {
+      "file": "gate-첫재해보상.yaml",
+      "id": "gate-첫재해보상",
+      "version": "2026-04-15",
+      "trigger": "방금 재해보상 관련 일을 마주했는데 뭐부터 봐야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 7,
+      "leafCount": 11
+    },
+    {
+      "file": "gate-첫출장정산.yaml",
+      "id": "gate-첫출장정산",
+      "version": "2026-04-15",
+      "trigger": "출장 또는 부임을 처음 처리하는데 이 이동이 어떤 유형인지 / 무엇을 증빙해야 하는지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 6,
+      "leafCount": 12
+    },
+    {
+      "file": "gate-첫휴직승진출장교육.yaml",
+      "id": "gate-첫휴직승진출장교육",
+      "version": "2026-04-15",
+      "trigger": "첫 적응기를 지나고 휴직·승진·출장정산·교육훈련 중 어디부터 봐야 할지 모르겠다",
+      "isSubgate": false,
+      "entryOptions": 8,
+      "leafCount": 8
+    }
+  ]
+}

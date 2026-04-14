@@ -1,0 +1,64 @@
+id: gate-정보공개청구
+version: 2026-04-15
+trigger: "정보공개청구가 들어왔거나 대응해야 하는데 뭘 해야 할지 모르겠다"
+
+entry_question:
+  text: "지금 가장 막히는 지점은?"
+  options:
+    - {label: "정보공개 자체 개념이 잡히지 않는다", leaf: A-정보공개란}
+    - {label: "청구 기본 흐름을 훑고 싶다", leaf: B-기본흐름}
+    - {label: "정보공개포털에서 어떻게 시작하나", goto: C}
+    - {label: "수수료가 어떻게 매겨지나", leaf: D-수수료}
+    - {label: "행안부 어느 조직이 담당인가", leaf: E-행안부연결}
+    - {label: "자주 묻는 질문부터 훑고 싶다", leaf: F-FAQ}
+    - {label: "전혀 모름 — 전체부터", leaf: Z-전체흐름}
+
+nodes:
+  C:
+    question: "포털에서 어디가 걸리나?"
+    options:
+      - {label: "포털 자체 구조", leaf: C-포털}
+      - {label: "로그인·인증", leaf: C-로그인}
+      - {label: "모름", leaf: C-포털}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  A-정보공개란:
+    notes: [source-행정안전부-정보공개란]
+    exits: {shallow: null, deeper: B-기본흐름, sideways: E-행안부연결}
+
+  B-기본흐름:
+    notes:
+      - process-정보공개청구-신규자-기본흐름
+      - source-행정안전부-정보공개란
+    exits: {shallow: A-정보공개란, deeper: C-포털, sideways: D-수수료}
+
+  C-포털:
+    notes: [source-행정안전부-정보공개포털]
+    exits: {shallow: B-기본흐름, deeper: C-로그인, sideways: F-FAQ}
+  C-로그인:
+    notes: [source-행정안전부-정보공개청구-로그인안내]
+    exits: {shallow: C-포털, deeper: B-기본흐름, sideways: C}
+
+  D-수수료:
+    notes: [source-행정안전부-정보공개-수수료안내]
+    exits: {shallow: B-기본흐름, deeper: F-FAQ, sideways: C-포털}
+
+  E-행안부연결:
+    notes:
+      - concept-행정안전부-참여혁신조직실-문서민원정보공개연결축
+      - faq-행정문서와민원정보공개는-행안부-어느-조직과-가까운가
+    exits: {shallow: null, deeper: gate-민원응대, sideways: A-정보공개란}
+
+  F-FAQ:
+    notes: [source-행정안전부-정보공개-자주묻는질문]
+    exits: {shallow: B-기본흐름, deeper: D-수수료, sideways: C-포털}
+
+  Z-전체흐름:
+    notes:
+      - process-정보공개청구-신규자-기본흐름
+      - source-행정안전부-정보공개란
+      - source-행정안전부-정보공개포털
+    exits: {shallow: null, deeper: B-기본흐름, sideways: root}
+
+subgates: []

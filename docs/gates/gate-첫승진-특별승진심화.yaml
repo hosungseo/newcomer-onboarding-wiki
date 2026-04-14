@@ -1,0 +1,60 @@
+id: gate-첫승진-특별승진심화
+version: 2026-04-15
+trigger: "특별승진의 절차·공적설명·30% 운영기준·역량면접·직무수행계획서·보고서·사전예고예외까지 깊게 알고 싶다"
+note: "신규자 ROOT 경로는 아님. 특별승진 담당·후보자 맥락에서 타는 심화 경로."
+
+entry_question:
+  text: "어디가 궁금한가?"
+  options:
+    - {label: "전체 절차 흐름", leaf: 절차}
+    - {label: "30% 운영기준", leaf: 운영기준30}
+    - {label: "공적설명절차", leaf: 공적설명}
+    - {label: "역량면접", leaf: 역량면접}
+    - {label: "직무수행계획서 작성", leaf: 직무계획서}
+    - {label: "보고서 작성", leaf: 보고서}
+    - {label: "사전예고되지 않은 비유형 공적", leaf: 사전예고예외}
+
+nodes: {}
+
+leaves:
+  절차:
+    notes: [process-공무원-특별승진-절차, concept-공무원-특별승진]
+    exits: {shallow: null, deeper: 운영기준30, sideways: 공적설명}
+  운영기준30:
+    notes:
+      - concept-공무원-특별승진-30퍼센트운영기준
+      - process-공무원-특별승진-절차
+      - concept-공무원-특별승진
+    exits: {shallow: 절차, deeper: 공적설명, sideways: 사전예고예외}
+  공적설명:
+    notes:
+      - concept-공무원-특별승진-공적설명절차
+      - faq-공적설명절차는-무엇을-하나
+      - process-공무원-특별승진-절차
+    exits: {shallow: 절차, deeper: 보고서, sideways: 직무계획서}
+  역량면접:
+    notes:
+      - concept-공무원-특별승진-역량면접
+      - faq-역량면접은-승진에서-왜-붙나
+      - concept-공무원-역량평가
+    exits: {shallow: 절차, deeper: 직무계획서, sideways: 보고서}
+  직무계획서:
+    notes:
+      - concept-공무원-특별승진-직무수행계획서작성
+      - faq-직무수행계획서-작성은-승진에서-왜-붙나
+      - process-공무원-특별승진-절차
+    exits: {shallow: 역량면접, deeper: 보고서, sideways: 공적설명}
+  보고서:
+    notes:
+      - concept-공무원-특별승진-보고서작성
+      - faq-보고서-작성은-승진에서-왜-붙나
+      - concept-공무원-특별승진-직무수행계획서작성
+    exits: {shallow: 직무계획서, deeper: null, sideways: 공적설명}
+  사전예고예외:
+    notes:
+      - concept-공무원-특별승진-사전예고예외
+      - faq-사전예고되지-않은-비유형-공적도-특별승진이-가능한가
+      - process-공무원-특별승진-절차
+    exits: {shallow: 운영기준30, deeper: null, sideways: 절차}
+
+subgates: []

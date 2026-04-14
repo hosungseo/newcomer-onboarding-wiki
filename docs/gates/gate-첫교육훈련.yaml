@@ -1,0 +1,101 @@
+id: gate-첫교육훈련
+version: 2026-04-15
+trigger: "교육훈련 관련해서 뭘 모르는지부터 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "교육 종류(기본·전문·기타·자기개발)의 큰 틀부터", leaf: A-인재개발큰틀}
+    - {label: "신규자 기본교육이 뭐고 어디서 받는지 궁금", goto: B}
+    - {label: "자기개발학습이 무엇이고 어떻게 운영되나", leaf: C-자기개발학습}
+    - {label: "역량평가가 뭐고 왜 따로 중요한가", leaf: D-역량평가}
+    - {label: "국가인재원과 부처 직장교육의 차이", leaf: B-국가인재원vs부처}
+    - {label: "교육 기록·성적이 인사(승진 등)에 연결되는지", goto: E}
+    - {label: "e-사람과 교육훈련은 왜 같이 봐야 하나", leaf: E-e사람연결}
+    - {label: "전혀 모름 — 교육훈련 전체 entry", leaf: Z-전체흐름}
+
+nodes:
+  # ─────────── B. 기본교육 ───────────
+  B:
+    question: "무엇부터 보고 싶은가?"
+    options:
+      - {label: "신규자 기본교육 개념과 선교육·후보직 구조", leaf: B-기본교육개념}
+      - {label: "국가인재원 신규자과정이 실제 뭘 가르치나", leaf: B-국가인재원과정}
+      - {label: "부처 직장교육과의 차이", leaf: B-국가인재원vs부처}
+      - {label: "모름", leaf: B-기본교육개념}
+
+  # ─────────── E. 인사연결 ───────────
+  E:
+    question: "어느 연결이 궁금한가?"
+    options:
+      - {label: "교육훈련 기록이 인사에 어떻게 반영되나", leaf: E-인사반영}
+      - {label: "자기개발학습 시간이 승진에 연결되나", leaf: E-자기개발승진}
+      - {label: "역량평가와 상위직 임용 연결", leaf: D-역량평가}
+      - {label: "모름", leaf: E-인사반영}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  # A
+  A-인재개발큰틀:
+    notes:
+      - concept-공무원-인재개발
+    exits: {shallow: null, deeper: B-기본교육개념, sideways: C-자기개발학습}
+
+  # B
+  B-기본교육개념:
+    notes:
+      - concept-공무원-기본교육
+      - faq-기본교육은-무엇이고-어떻게-받나
+    exits: {shallow: A-인재개발큰틀, deeper: B-국가인재원과정, sideways: B-국가인재원vs부처}
+  B-국가인재원과정:
+    notes:
+      - hub-국가인재원-공통실무모듈
+      - hub-국가인재원-common-core-연결지도
+      - newcomer-path-임용후첫달-국가인재원-2026-04
+    exits: {shallow: B-기본교육개념, deeper: C-자기개발학습, sideways: B-국가인재원vs부처}
+  B-국가인재원vs부처:
+    notes:
+      - concept-공무원-기본교육
+      - hub-국가인재원-공통실무모듈
+    exits: {shallow: B-기본교육개념, deeper: E-인사반영, sideways: B-국가인재원과정}
+
+  # C
+  C-자기개발학습:
+    notes:
+      - concept-공무원-자기개발학습
+      - faq-자기개발학습은-어떻게-운영되나
+    exits: {shallow: A-인재개발큰틀, deeper: E-자기개발승진, sideways: D-역량평가}
+
+  # D
+  D-역량평가:
+    notes:
+      - concept-공무원-역량평가
+      - faq-역량평가는-교육훈련과-어떻게-이어지나
+    exits: {shallow: A-인재개발큰틀, deeper: concept-공무원-승진, sideways: C-자기개발학습}
+
+  # E
+  E-인사반영:
+    notes:
+      - concept-공무원-인재개발
+      - concept-정부업무시스템-e사람
+    exits: {shallow: A-인재개발큰틀, deeper: E-e사람연결, sideways: E-자기개발승진}
+  E-자기개발승진:
+    notes:
+      - concept-공무원-자기개발학습
+      - concept-공무원-승진
+    exits: {shallow: C-자기개발학습, deeper: D-역량평가, sideways: E-인사반영}
+  E-e사람연결:
+    notes:
+      - concept-정부업무시스템-e사람
+      - concept-공무원-인재개발
+    exits: {shallow: E-인사반영, deeper: null, sideways: E-자기개발승진}
+
+  # Z
+  Z-전체흐름:
+    notes:
+      - newcomer-path-첫교육훈련질문-2026-04
+      - concept-공무원-인재개발
+      - hub-국가인재원-공통실무모듈
+    exits: {shallow: null, deeper: A-인재개발큰틀, sideways: root}
+
+subgates: []
