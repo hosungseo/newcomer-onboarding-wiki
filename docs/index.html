@@ -4,41 +4,245 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>신규공무원 적응 위키 — 관문</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
-  :root { color-scheme: light dark; }
-  body { font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', sans-serif;
-         max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; }
-  h1 { font-size: 1.3rem; }
-  .q { font-size: 1.1rem; margin: 1.5rem 0 0.5rem; font-weight: 600; }
-  .opt { display: block; width: 100%; text-align: left; padding: 0.75rem 1rem;
-         margin: 0.4rem 0; border: 1px solid #888; border-radius: 6px;
-         background: transparent; color: inherit; cursor: pointer; font-size: 1rem; }
-  .opt:hover { background: rgba(128,128,128,0.15); }
-  .notes { margin: 1rem 0; padding: 1rem; border-left: 3px solid #4a90e2;
-           background: rgba(74,144,226,0.08); }
-  .notes a { display: block; padding: 0.2rem 0; color: inherit; }
-  .exits { display: flex; gap: 0.5rem; margin-top: 1rem; flex-wrap: wrap; }
-  .exits button { padding: 0.5rem 0.9rem; border: 1px solid #888;
-                  border-radius: 6px; background: transparent; color: inherit;
-                  cursor: pointer; font-size: 0.9rem; }
-  .crumb { font-size: 0.85rem; color: #888; margin-bottom: 1rem; }
-  select { padding: 0.5rem; font-size: 1rem; background: transparent; color: inherit; }
-  .err { color: #c33; }
+/* Toss-inspired theme (styleseed) */
+:root {
+  --brand: #721FE5;
+  --brand-tint: #F0E8FF;
+  --bg: #FAFAFA;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --text-2: #6A6A6A;
+  --text-3: #9B9B9B;
+  --border: rgba(0,0,0,0.08);
+  --surface-muted: #F3F3F5;
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.04);
+  --shadow-hover: 0 4px 12px rgba(0,0,0,0.06);
+  --ease: cubic-bezier(0.4,0,0.2,1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand: #9B5FFF;
+    --brand-tint: rgba(155,95,255,0.12);
+    --bg: #0f0f10;
+    --card: #1a1a1c;
+    --text: #EDEDED;
+    --text-2: #A0A0A0;
+    --text-3: #6A6A6A;
+    --border: rgba(255,255,255,0.08);
+    --surface-muted: #242426;
+    --shadow: none;
+    --shadow-hover: none;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: 'ss06', 'ss07';
+}
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 20px 80px; }
+
+/* Header */
+header {
+  position: sticky; top: 0; z-index: 10;
+  background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+.head-inner {
+  max-width: 680px; margin: 0 auto; padding: 14px 20px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+}
+.logo { font-weight: 700; font-size: 15px; letter-spacing: -0.01em; }
+.logo .dot { color: var(--brand); }
+.spacer { flex: 1; }
+select.gate-picker {
+  appearance: none;
+  font: inherit; font-size: 14px;
+  padding: 8px 32px 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--card) url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' stroke='%236A6A6A' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>") no-repeat right 12px center;
+  color: var(--text);
+  cursor: pointer;
+  transition: border-color 200ms var(--ease);
+}
+select.gate-picker:hover { border-color: var(--brand); }
+
+/* Hero */
+.hero { padding: 8px 0 20px; }
+.hero h1 {
+  font-size: 26px; font-weight: 700; margin: 0 0 8px;
+  letter-spacing: -0.02em; line-height: 1.3;
+}
+.hero p { color: var(--text-2); margin: 0; font-size: 15px; }
+
+/* Crumb */
+.crumb {
+  font-size: 12px; color: var(--text-3);
+  margin-bottom: 16px; display: flex; flex-wrap: wrap; gap: 6px;
+  min-height: 18px;
+}
+.crumb span.chip {
+  background: var(--surface-muted); padding: 3px 10px;
+  border-radius: 999px; color: var(--text-2);
+}
+
+/* Question */
+.q {
+  font-size: 18px; font-weight: 600;
+  letter-spacing: -0.01em; line-height: 1.4;
+  margin: 0 0 16px;
+}
+
+/* Option cards */
+.opts { display: flex; flex-direction: column; gap: 8px; }
+.opt {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px;
+  width: 100%; text-align: left;
+  padding: 16px 18px;
+  font: inherit; font-size: 15px; font-weight: 500;
+  color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 180ms var(--ease);
+}
+.opt::after {
+  content: ''; width: 16px; height: 16px; flex: none;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><path d='M6 3l5 5-5 5' stroke='%239B9B9B' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>") center/contain no-repeat;
+  transition: transform 180ms var(--ease);
+}
+.opt:hover {
+  border-color: var(--brand);
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-1px);
+}
+.opt:hover::after { transform: translateX(3px); }
+.opt:active { transform: translateY(0); }
+
+/* Leaf view */
+.leaf-header {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px; border-radius: 999px;
+  background: var(--brand-tint); color: var(--brand);
+  font-size: 12px; font-weight: 600; margin-bottom: 12px;
+}
+.leaf-title { font-size: 20px; font-weight: 700; letter-spacing: -0.02em; margin: 0 0 18px; }
+
+.notes-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px; margin-bottom: 16px;
+  box-shadow: var(--shadow);
+}
+.notes-label {
+  font-size: 12px; font-weight: 600; color: var(--text-3);
+  text-transform: uppercase; letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+.note {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text); text-decoration: none;
+  font-size: 14px;
+  transition: color 180ms var(--ease);
+}
+.note:last-child { border-bottom: none; }
+.note:hover { color: var(--brand); }
+.note-icon {
+  width: 28px; height: 28px; flex: none;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--surface-muted); border-radius: 8px;
+  font-size: 13px;
+}
+.note-title { flex: 1; min-width: 0; word-break: break-all; }
+.note-ext { color: var(--text-3); font-size: 12px; flex: none; }
+
+/* Feedback */
+.feedback {
+  display: flex; gap: 6px; margin-bottom: 20px;
+  padding: 12px; background: var(--surface-muted);
+  border-radius: var(--radius); font-size: 13px; color: var(--text-2);
+  align-items: center;
+}
+.feedback .fb-label { flex: 1; font-weight: 500; }
+.fb-btn {
+  font: inherit; font-size: 13px;
+  padding: 6px 12px; border-radius: 999px;
+  border: 1px solid var(--border); background: var(--card);
+  color: var(--text); cursor: pointer;
+  transition: all 180ms var(--ease);
+}
+.fb-btn:hover { border-color: var(--brand); color: var(--brand); }
+.fb-btn:disabled { opacity: 0.6; cursor: default; }
+
+/* Exits (navigation bar) */
+.nav-bar {
+  display: flex; gap: 8px; flex-wrap: wrap; margin-top: 20px;
+}
+.nav-btn {
+  font: inherit; font-size: 13px; font-weight: 500;
+  padding: 10px 16px; border-radius: var(--radius-sm);
+  border: 1px solid var(--border); background: var(--card);
+  color: var(--text-2); cursor: pointer;
+  transition: all 180ms var(--ease);
+}
+.nav-btn:hover { border-color: var(--brand); color: var(--brand); }
+.nav-btn.primary { background: var(--brand); color: white; border-color: var(--brand); }
+.nav-btn.primary:hover { opacity: 0.9; color: white; }
+
+/* Footer */
+footer { margin-top: 48px; font-size: 12px; color: var(--text-3); text-align: center; }
+footer a { color: var(--text-3); text-decoration: underline; }
+
+.err { color: #d4183d; padding: 16px; background: #fee; border-radius: var(--radius); }
+
+/* Fade-in */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+#app > * { animation: fadeUp 240ms var(--ease) both; }
 </style>
 </head>
 <body>
-<h1>신규공무원 적응 위키 — 관문</h1>
-<p>상황을 고르면 그에 맞는 지침 묶음으로 안내합니다. 질문으로 시작하세요.</p>
 
-<label>관문 선택:
-  <select id="gate-picker"></select>
-</label>
+<header>
+  <div class="head-inner">
+    <div class="logo">신규공무원 적응 위키<span class="dot">.</span></div>
+    <div class="spacer"></div>
+    <select id="gate-picker" class="gate-picker" aria-label="관문 선택"></select>
+  </div>
+</header>
 
-<div id="app"></div>
-<p style="margin-top:2rem;font-size:0.8rem;color:#888">
-  피드백 로그는 브라우저에 저장됩니다.
-  <a href="#" onclick="exportGateLog();return false">내려받기(JSON)</a>
-</p>
+<div class="wrap">
+  <section class="hero">
+    <h1>상황을 고르면 답으로 안내합니다</h1>
+    <p>공무원이 되자마자 가장 헷갈리는 것들 — 한 번의 질문이면 충분합니다.</p>
+  </section>
+
+  <div class="crumb" id="crumb"></div>
+  <div id="app"></div>
+
+  <footer>
+    <p>피드백은 브라우저에 저장됩니다 · <a href="#" onclick="exportGateLog();return false">로그 내보내기</a> · <a href="https://github.com/hosungseo/newcomer-onboarding-wiki" target="_blank">GitHub</a></p>
+  </footer>
+</div>
 
 <script type="module">
 import { parse } from 'https://cdn.jsdelivr.net/npm/yaml@2.5.0/browser/index.js';
@@ -47,32 +251,34 @@ const REPO_RAW = 'https://raw.githubusercontent.com/hosungseo/newcomer-onboardin
 const GATE_LIST_API = 'https://api.github.com/repos/hosungseo/newcomer-onboarding-wiki/contents/gates';
 
 const app = document.getElementById('app');
+const crumbEl = document.getElementById('crumb');
 const picker = document.getElementById('gate-picker');
 let currentGate = null;
-let history = [];
 let currentGateFile = null;
+let history = [];
 
-// Feedback logging — stored in localStorage, exportable as JSON
+// Feedback logging
 const LOG_KEY = 'gate-feedback-log';
 function log(event) {
   const entry = { ts: Date.now(), gate: currentGateFile, ...event };
   const arr = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
   arr.push(entry);
-  localStorage.setItem(LOG_KEY, JSON.stringify(arr.slice(-500))); // cap 500
+  localStorage.setItem(LOG_KEY, JSON.stringify(arr.slice(-500)));
 }
-function exportLog() {
+window.exportGateLog = () => {
   const blob = new Blob([localStorage.getItem(LOG_KEY) || '[]'], {type: 'application/json'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
   a.download = `gate-log-${new Date().toISOString().slice(0,10)}.json`;
   a.click();
-}
-window.exportGateLog = exportLog;
+};
 
 async function loadGateList() {
   const r = await fetch(GATE_LIST_API);
   const files = await r.json();
-  const gates = files.filter(f => f.name.endsWith('.yaml') && !f.name.includes('-인증심화') && !f.name.includes('-심화'));
+  const gates = files
+    .filter(f => f.name.endsWith('.yaml') && !f.name.includes('심화'))
+    .sort((a,b) => a.name.localeCompare(b.name, 'ko'));
   for (const g of gates) {
     const opt = document.createElement('option');
     opt.value = g.name;
@@ -84,6 +290,7 @@ async function loadGateList() {
 }
 
 async function loadGate(file) {
+  app.innerHTML = `<div class="q">불러오는 중…</div>`;
   const r = await fetch(`${REPO_RAW}/gates/${file}`);
   currentGate = parse(await r.text());
   currentGateFile = file;
@@ -99,126 +306,160 @@ function resolve(target) {
   if (currentGate.leaves?.[target]) return { kind: 'leaf', id: target };
   if (/^(concept|process|source|faq|section|hub|newcomer-path)-/.test(target))
     return { kind: 'note', id: target };
-  if (/^gate-/.test(target))
-    return { kind: 'subgate', id: target };
+  if (/^gate-/.test(target)) return { kind: 'subgate', id: target };
   return null;
 }
 
-function render(state) {
-  app.innerHTML = '';
-  const crumb = document.createElement('div');
-  crumb.className = 'crumb';
-  crumb.textContent = history.length ? `지나온 길: ${history.map(h => h.label || h.id).join(' › ')}` : '';
-  app.appendChild(crumb);
-
-  if (state.kind === 'entry') {
-    renderQuestion(currentGate.entry_question);
-  } else if (state.kind === 'node') {
-    renderQuestion(currentGate.nodes[state.id], state.id);
-  } else if (state.kind === 'leaf') {
-    renderLeaf(state.id);
-  } else if (state.kind === 'note') {
-    renderNote(state.id);
-  } else if (state.kind === 'subgate') {
-    // swap gate
-    loadGate(`${state.id}.yaml`);
+function renderCrumb() {
+  crumbEl.innerHTML = '';
+  if (!history.length) return;
+  for (const h of history) {
+    const s = document.createElement('span');
+    s.className = 'chip';
+    s.textContent = h.label || h.id;
+    crumbEl.appendChild(s);
   }
 }
 
+function render(state) {
+  renderCrumb();
+  app.innerHTML = '';
+  if (state.kind === 'entry') renderQuestion(currentGate.entry_question);
+  else if (state.kind === 'node') renderQuestion(currentGate.nodes[state.id], state.id);
+  else if (state.kind === 'leaf') renderLeaf(state.id);
+  else if (state.kind === 'note') renderNote(state.id);
+  else if (state.kind === 'subgate') loadGate(`${state.id}.yaml`);
+}
+
+function noteIcon(id) {
+  const prefix = id.split('-')[0];
+  return ({ concept: '💡', process: '⚙️', source: '📄', faq: '❓', section: '📑', hub: '🧭', 'newcomer': '🚪' })[prefix] || '📄';
+}
+
 function renderQuestion(q, nodeId) {
-  const h = document.createElement('div');
+  const h = document.createElement('h2');
   h.className = 'q';
   h.textContent = q.text;
   app.appendChild(h);
+  const list = document.createElement('div');
+  list.className = 'opts';
   for (const o of q.options) {
     const b = document.createElement('button');
     b.className = 'opt';
-    b.textContent = o.label;
+    b.innerHTML = `<span>${o.label}</span>`;
     b.onclick = () => {
       history.push({ label: o.label });
       log({ type: 'choose', node: nodeId || 'entry', label: o.label, target: o.goto ?? o.leaf });
       const next = resolve(o.goto ?? o.leaf);
       if (next) render(next);
-      else { app.innerHTML = `<p class="err">경로 미해결: ${o.goto ?? o.leaf}</p>`; }
+      else app.innerHTML = `<div class="err">경로 미해결: ${o.goto ?? o.leaf}</div>`;
     };
-    app.appendChild(b);
+    list.appendChild(b);
   }
-  addBack();
+  app.appendChild(list);
+  addNav();
 }
 
 function renderLeaf(id) {
   const leaf = currentGate.leaves[id];
   log({ type: 'reach_leaf', leaf: id });
-  const h = document.createElement('div');
-  h.className = 'q';
-  h.textContent = `→ ${id}`;
-  app.appendChild(h);
 
-  // Feedback buttons
+  const badge = document.createElement('div');
+  badge.className = 'leaf-header';
+  badge.textContent = `✓ ${id}`;
+  app.appendChild(badge);
+
+  const title = document.createElement('h2');
+  title.className = 'leaf-title';
+  title.textContent = '여기서 읽으세요';
+  app.appendChild(title);
+
+  const card = document.createElement('div');
+  card.className = 'notes-card';
+  card.innerHTML = '<div class="notes-label">관련 노트</div>';
+  for (const n of leaf.notes) {
+    const a = document.createElement('a');
+    a.className = 'note';
+    a.href = `${REPO_RAW}/${n}.md`;
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.innerHTML = `
+      <span class="note-icon">${noteIcon(n)}</span>
+      <span class="note-title">${n}</span>
+      <span class="note-ext">↗</span>
+    `;
+    card.appendChild(a);
+  }
+  app.appendChild(card);
+
+  // Feedback
   const fb = document.createElement('div');
-  fb.className = 'exits';
-  fb.style.marginTop = '0.5rem';
-  for (const [emoji, tag] of [['👍 맞음','hit'], ['🤷 애매','mid'], ['👎 다름','miss']]) {
+  fb.className = 'feedback';
+  fb.innerHTML = '<span class="fb-label">도움이 됐나요?</span>';
+  for (const [emoji, tag, label] of [['👍','hit','맞음'],['🤷','mid','애매'],['👎','miss','다름']]) {
     const b = document.createElement('button');
-    b.textContent = emoji;
-    b.onclick = () => { log({ type: 'feedback', leaf: id, tag }); b.textContent = '✓ 기록됨'; b.disabled = true; };
+    b.className = 'fb-btn';
+    b.textContent = `${emoji} ${label}`;
+    b.onclick = () => {
+      log({ type: 'feedback', leaf: id, tag });
+      b.textContent = '✓ 기록됨'; b.disabled = true;
+      fb.querySelectorAll('.fb-btn').forEach(x => { if (x !== b) x.disabled = true; });
+    };
     fb.appendChild(b);
   }
   app.appendChild(fb);
 
-  const nd = document.createElement('div');
-  nd.className = 'notes';
-  nd.innerHTML = '<strong>읽어야 할 노트</strong>';
-  for (const n of leaf.notes) {
-    const a = document.createElement('a');
-    a.href = `${REPO_RAW}/${n}.md`;
-    a.target = '_blank';
-    a.rel = 'noopener';
-    a.textContent = `📄 ${n}`;
-    nd.appendChild(a);
-  }
-  app.appendChild(nd);
-
-  const ex = document.createElement('div');
-  ex.className = 'exits';
-  const mk = (label, target) => {
+  // Exits
+  const nav = document.createElement('div');
+  nav.className = 'nav-bar';
+  const mk = (label, target, primary) => {
     if (target == null) return;
     const b = document.createElement('button');
+    b.className = 'nav-btn' + (primary ? ' primary' : '');
     b.textContent = label;
     b.onclick = () => {
       history.push({ label });
       const next = resolve(target);
       if (next) render(next);
     };
-    ex.appendChild(b);
+    nav.appendChild(b);
   };
   mk('↑ 더 얕게', leaf.exits.shallow);
-  mk('↓ 더 깊게', leaf.exits.deeper);
+  mk('↓ 더 깊게', leaf.exits.deeper, true);
   mk('↔ 옆으로', leaf.exits.sideways);
-  app.appendChild(ex);
-  addBack();
+  app.appendChild(nav);
+  addNav(true);
 }
 
 function renderNote(id) {
-  app.innerHTML = `<div class="q">직접 노트 참조</div>
-    <div class="notes"><a href="${REPO_RAW}/${id}.md" target="_blank">📄 ${id}</a></div>`;
-  addBack();
+  const card = document.createElement('div');
+  card.className = 'notes-card';
+  card.innerHTML = `<div class="notes-label">직접 노트</div>`;
+  const a = document.createElement('a');
+  a.className = 'note'; a.href = `${REPO_RAW}/${id}.md`;
+  a.target = '_blank'; a.rel = 'noopener';
+  a.innerHTML = `<span class="note-icon">${noteIcon(id)}</span><span class="note-title">${id}</span><span class="note-ext">↗</span>`;
+  card.appendChild(a);
+  app.appendChild(card);
+  addNav();
 }
 
-function addBack() {
-  const wrap = document.createElement('div');
-  wrap.className = 'exits';
-  const restart = document.createElement('button');
-  restart.textContent = '⟲ 처음으로';
-  restart.onclick = () => { history = []; render({ kind: 'entry' }); };
-  wrap.appendChild(restart);
+function addNav(minimal) {
+  const nav = document.createElement('div');
+  nav.className = 'nav-bar';
   if (history.length) {
     const back = document.createElement('button');
+    back.className = 'nav-btn';
     back.textContent = '← 뒤로';
     back.onclick = () => { history.pop(); render({ kind: 'entry' }); };
-    wrap.appendChild(back);
+    nav.appendChild(back);
   }
-  app.appendChild(wrap);
+  const restart = document.createElement('button');
+  restart.className = 'nav-btn';
+  restart.textContent = '⟲ 처음부터';
+  restart.onclick = () => { history = []; render({ kind: 'entry' }); };
+  nav.appendChild(restart);
+  if (!minimal || history.length) app.appendChild(nav);
 }
 
 loadGateList();
