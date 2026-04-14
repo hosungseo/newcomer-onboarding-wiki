@@ -1,0 +1,1309 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>신규공무원 적응 위키 · Graph View</title>
+<meta name="description" content="마크다운 노트들이 어떻게 서로 연결되는지 한 화면에서 보는 Obsidian 스타일 그래프 뷰">
+<meta property="og:title" content="신규공무원 적응 위키 · Graph View">
+<meta property="og:description" content="노트 간 참조 연결을 Obsidian graph view처럼 탐색합니다">
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<style>
+:root {
+  --bg: #09090b;
+  --bg-2: #111114;
+  --panel: rgba(17, 17, 20, 0.78);
+  --panel-strong: rgba(22, 22, 27, 0.94);
+  --text: #f5f7fb;
+  --text-2: rgba(245,247,251,0.72);
+  --text-3: rgba(245,247,251,0.42);
+  --border: rgba(255,255,255,0.08);
+  --grid: rgba(255,255,255,0.03);
+  --brand: #9b5fff;
+  --brand-2: #c7a2ff;
+  --concept: #a78bfa;
+  --process: #2dd4bf;
+  --source: #f59e0b;
+  --faq: #38bdf8;
+  --hub: #f472b6;
+  --path: #34d399;
+  --section: #fb7185;
+  --raw: #64748b;
+  --readme: #f97316;
+  --manifest: #22c55e;
+  --scouting: #eab308;
+  --note: #cbd5e1;
+  --shadow: 0 20px 60px rgba(0,0,0,0.35);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; height: 100%; }
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, 'Apple SD Gothic Neo', sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(1200px 700px at 18% 12%, rgba(155,95,255,0.20), transparent 60%),
+    radial-gradient(900px 520px at 84% 10%, rgba(56,189,248,0.10), transparent 58%),
+    radial-gradient(1000px 800px at 50% 90%, rgba(255,255,255,0.04), transparent 65%),
+    linear-gradient(180deg, #060608 0%, #0a0a0d 100%);
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+button, input { font: inherit; }
+
+.shell {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: grab;
+}
+canvas.dragging { cursor: grabbing; }
+
+.topbar {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  right: 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 5;
+  pointer-events: none;
+}
+.topbar > * { pointer-events: auto; }
+.brand {
+  min-width: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: rgba(12,12,16,0.72);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+  box-shadow: var(--shadow);
+}
+.brand .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #efe4ff 0%, var(--brand-2) 38%, var(--brand) 100%);
+  box-shadow: 0 0 18px rgba(155,95,255,0.62);
+}
+.brand-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.brand-copy strong {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.brand-copy span {
+  font-size: 12px;
+  color: var(--text-3);
+  white-space: nowrap;
+}
+
+.chip-link,
+.chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-radius: 999px;
+  background: rgba(12,12,16,0.72);
+  border: 1px solid var(--border);
+  color: var(--text-2);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), color 180ms var(--ease), background 180ms var(--ease);
+  backdrop-filter: blur(16px) saturate(150%);
+  -webkit-backdrop-filter: blur(16px) saturate(150%);
+}
+.chip-link:hover,
+.chip-btn:hover {
+  transform: translateY(-1px);
+  color: var(--text);
+  border-color: rgba(155,95,255,0.38);
+  background: rgba(18,16,27,0.88);
+}
+.top-spacer { flex: 1; }
+
+.panel {
+  position: absolute;
+  z-index: 4;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  backdrop-filter: blur(18px) saturate(150%);
+  -webkit-backdrop-filter: blur(18px) saturate(150%);
+  box-shadow: var(--shadow);
+}
+
+.left-panel {
+  top: 84px;
+  left: 18px;
+  width: min(360px, calc(100vw - 36px));
+  max-height: calc(100vh - 120px);
+  overflow: auto;
+  padding: 18px;
+}
+.right-panel {
+  top: 84px;
+  right: 18px;
+  width: min(360px, calc(100vw - 36px));
+  max-height: calc(100vh - 120px);
+  overflow: auto;
+  padding: 18px;
+}
+.panel::-webkit-scrollbar { width: 10px; }
+.panel::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.12);
+  border-radius: 999px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+.panel-title {
+  margin: 0 0 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--text-3);
+}
+.panel-headline {
+  margin: 0 0 14px;
+  font-size: 24px;
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+}
+.panel-copy {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.search-wrap {
+  margin: 18px 0 14px;
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px 0 42px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  color: var(--text);
+  outline: none;
+  transition: border-color 180ms var(--ease), background 180ms var(--ease), box-shadow 180ms var(--ease);
+}
+.search-input:focus {
+  border-color: rgba(155,95,255,0.5);
+  background: rgba(255,255,255,0.06);
+  box-shadow: 0 0 0 4px rgba(155,95,255,0.1);
+}
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  opacity: 0.72;
+}
+.search-results {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+}
+.result-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), background 180ms var(--ease);
+}
+.result-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(155,95,255,0.3);
+  background: rgba(155,95,255,0.08);
+}
+.result-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+.result-kind {
+  font-size: 11px;
+  border-radius: 999px;
+  padding: 4px 8px;
+  background: rgba(255,255,255,0.07);
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.result-title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+.result-meta {
+  font-size: 12px;
+  color: var(--text-3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.search-empty {
+  font-size: 13px;
+  color: var(--text-3);
+  padding: 6px 4px 2px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 16px 0 18px;
+}
+.stat {
+  padding: 12px 12px 11px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.stat-label {
+  display: block;
+  font-size: 11px;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 7px;
+}
+.stat-value {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.kind-section {
+  margin-top: 16px;
+}
+.kind-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.kind-chip {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-2);
+  padding: 8px 11px;
+  border-radius: 999px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), background 180ms var(--ease), color 180ms var(--ease);
+}
+.kind-chip:hover {
+  transform: translateY(-1px);
+  color: var(--text);
+  border-color: rgba(255,255,255,0.15);
+}
+.kind-chip.active {
+  color: var(--text);
+  border-color: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.07);
+}
+.kind-chip .swatch {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 12px currentColor;
+}
+.kind-chip .count {
+  font-size: 11px;
+  color: var(--text-3);
+}
+.toggle-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+.toggle-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-2);
+  padding: 9px 12px;
+  cursor: pointer;
+}
+.toggle-btn.active {
+  color: var(--text);
+  border-color: rgba(155,95,255,0.38);
+  background: rgba(155,95,255,0.12);
+}
+.help-list {
+  margin: 16px 0 0;
+  padding-left: 18px;
+  color: var(--text-2);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.help-list li + li { margin-top: 4px; }
+
+.inspector-empty {
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.node-title {
+  margin: 0 0 8px;
+  font-size: 26px;
+  line-height: 1.12;
+  letter-spacing: -0.04em;
+}
+.node-kind-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.node-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.05);
+  font-size: 12px;
+  color: var(--text-2);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.node-kind .swatch {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.node-path {
+  font-size: 12px;
+  color: var(--text-3);
+  word-break: break-all;
+}
+.node-summary {
+  margin: 14px 0 16px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-2);
+}
+.action-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.action-btn,
+.action-link {
+  padding: 10px 13px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), background 180ms var(--ease);
+}
+.action-btn:hover,
+.action-link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(155,95,255,0.38);
+  background: rgba(155,95,255,0.08);
+}
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.meta-card {
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.meta-card strong {
+  display: block;
+  font-size: 19px;
+  letter-spacing: -0.03em;
+}
+.meta-card span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  color: var(--text-3);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.neighbor-section + .neighbor-section {
+  margin-top: 18px;
+}
+.neighbor-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.neighbor-btn {
+  width: 100%;
+  text-align: left;
+  padding: 12px 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+  color: var(--text);
+  cursor: pointer;
+}
+.neighbor-btn:hover {
+  border-color: rgba(155,95,255,0.3);
+  background: rgba(155,95,255,0.08);
+}
+.neighbor-btn small {
+  display: block;
+  margin-top: 4px;
+  color: var(--text-3);
+  font-size: 12px;
+}
+
+.hud {
+  position: absolute;
+  left: 18px;
+  bottom: 18px;
+  padding: 10px 14px;
+  z-index: 4;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(12,12,16,0.68);
+  color: var(--text-2);
+  font-size: 12px;
+  display: inline-flex;
+  gap: 10px;
+  align-items: center;
+  backdrop-filter: blur(14px) saturate(150%);
+}
+.hud-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--brand);
+  box-shadow: 0 0 14px rgba(155,95,255,0.55);
+}
+
+.mobile-inspector-toggle {
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .left-panel {
+    width: min(320px, calc(100vw - 36px));
+  }
+  .right-panel {
+    width: min(320px, calc(100vw - 36px));
+  }
+}
+
+@media (max-width: 900px) {
+  .topbar {
+    top: 14px;
+    left: 14px;
+    right: 14px;
+    flex-wrap: wrap;
+  }
+  .top-spacer { display: none; }
+  .left-panel {
+    top: 130px;
+    left: 14px;
+    right: 14px;
+    width: auto;
+    max-height: 40vh;
+  }
+  .right-panel {
+    top: auto;
+    left: 14px;
+    right: 14px;
+    bottom: 70px;
+    width: auto;
+    max-height: 34vh;
+  }
+  .hud {
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    justify-content: center;
+  }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <canvas id="graph-canvas"></canvas>
+
+  <div class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <div class="brand-copy">
+        <strong>Markdown Graph View</strong>
+        <span>Obsidian처럼 노트 연결을 한 화면에서 읽기</span>
+      </div>
+    </div>
+    <a class="chip-link" href="./index.html">← 관문으로</a>
+    <button class="chip-btn" id="fit-btn">화면 맞춤</button>
+    <button class="chip-btn" id="reset-btn">레이아웃 리셋</button>
+    <div class="top-spacer"></div>
+    <a class="chip-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki" target="_blank" rel="noopener">GitHub</a>
+  </div>
+
+  <aside class="panel left-panel">
+    <p class="panel-title">Local Graph</p>
+    <h1 class="panel-headline">노트들이 어떤 선으로 이어지는지 바로 보이게.</h1>
+    <p class="panel-copy">`[[wikilink]]`, 내부 `.md` 링크, 그리고 본문 안 backtick `.md` 참조까지 읽어서 그래프를 그립니다. 기본은 퍼머넌트 note 중심이고, 필요할 때 raw source layer도 펼칠 수 있습니다.</p>
+
+    <div class="search-wrap">
+      <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="5.8" stroke="currentColor" stroke-width="1.5" opacity="0.9"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <input id="search-input" class="search-input" type="search" placeholder="파일명, 제목, 경로로 검색">
+      <div id="search-results" class="search-results"></div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><span class="stat-label">Visible Nodes</span><span class="stat-value" id="stat-visible-nodes">0</span></div>
+      <div class="stat"><span class="stat-label">Visible Links</span><span class="stat-value" id="stat-visible-links">0</span></div>
+      <div class="stat"><span class="stat-label">Scale</span><span class="stat-value" id="stat-zoom">1.00×</span></div>
+    </div>
+
+    <div class="kind-section">
+      <p class="panel-title">Kinds</p>
+      <div class="kind-grid" id="kind-grid"></div>
+      <div class="toggle-row">
+        <button class="toggle-btn" id="raw-toggle">raw layer 표시</button>
+      </div>
+    </div>
+
+    <ul class="help-list">
+      <li>휠로 확대/축소, 드래그로 이동</li>
+      <li>노드를 클릭하면 오른쪽 inspector가 열립니다</li>
+      <li>색은 note 종류를, 크기는 연결 정도를 뜻합니다</li>
+      <li>검색하면 해당 노드로 카메라가 바로 이동합니다</li>
+    </ul>
+  </aside>
+
+  <aside class="panel right-panel" id="inspector">
+    <p class="panel-title">Inspector</p>
+    <div id="inspector-empty" class="inspector-empty">
+      중앙 그래프에서 노드를 하나 찍으면 여기서 제목, 경로, 연결 수, 이웃 노트, GitHub 원문 링크를 바로 볼 수 있습니다.
+    </div>
+    <div id="inspector-body" style="display:none"></div>
+  </aside>
+
+  <div class="hud">
+    <span class="hud-dot"></span>
+    <span>Graph view · drag to pan · wheel to zoom · click to inspect</span>
+  </div>
+</div>
+
+<script type="module">
+import * as d3 from 'https://cdn.jsdelivr.net/npm/d3@7/+esm';
+
+const DATA_URL = './graph-data.json';
+const REPO_BLOB = 'https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main';
+
+const canvas = document.getElementById('graph-canvas');
+const context = canvas.getContext('2d');
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+const kindGrid = document.getElementById('kind-grid');
+const rawToggle = document.getElementById('raw-toggle');
+const fitBtn = document.getElementById('fit-btn');
+const resetBtn = document.getElementById('reset-btn');
+const inspectorBody = document.getElementById('inspector-body');
+const inspectorEmpty = document.getElementById('inspector-empty');
+const leftPanel = document.querySelector('.left-panel');
+const rightPanel = document.querySelector('.right-panel');
+const statVisibleNodes = document.getElementById('stat-visible-nodes');
+const statVisibleLinks = document.getElementById('stat-visible-links');
+const statZoom = document.getElementById('stat-zoom');
+
+const COLOR_BY_KIND = {
+  concept: '#a78bfa',
+  process: '#2dd4bf',
+  source: '#f59e0b',
+  faq: '#38bdf8',
+  hub: '#f472b6',
+  path: '#34d399',
+  section: '#fb7185',
+  raw: '#64748b',
+  readme: '#f97316',
+  manifest: '#22c55e',
+  scouting: '#eab308',
+  gate: '#60a5fa',
+  note: '#cbd5e1',
+};
+
+const LABEL_BY_KIND = {
+  concept: 'concept',
+  process: 'process',
+  source: 'source',
+  faq: 'faq',
+  hub: 'hub',
+  path: 'path',
+  section: 'section',
+  raw: 'raw',
+  readme: 'readme',
+  manifest: 'manifest',
+  scouting: 'scouting',
+  gate: 'gate',
+  note: 'note',
+};
+
+const state = {
+  data: null,
+  allNodes: [],
+  allLinks: [],
+  visibleNodes: [],
+  visibleLinks: [],
+  nodeLookup: new Map(),
+  neighborMap: new Map(),
+  selectedId: null,
+  hoveredId: null,
+  includeRaw: false,
+  activeKinds: new Set(),
+  query: '',
+  transform: d3.zoomIdentity,
+  simulation: null,
+  positionCache: new Map(),
+};
+
+let width = 0;
+let height = 0;
+let devicePixelRatioValue = Math.max(1, window.devicePixelRatio || 1);
+
+function githubUrl(relativePath) {
+  return `${REPO_BLOB}/${relativePath.split('/').map(encodeURIComponent).join('/')}`;
+}
+
+function radius(node) {
+  const base = Math.max(2.5, Math.min(12, 2.8 + Math.sqrt(node.degree || 0) * 1.3));
+  if (node.id === state.selectedId) return base + 2.2;
+  if (node.id === state.hoveredId) return base + 1.4;
+  return base;
+}
+
+function initKinds(nodes) {
+  const orderedKinds = [...new Set(nodes.map(node => node.kind))];
+  state.activeKinds = new Set(orderedKinds.filter(kind => kind !== 'raw'));
+}
+
+function buildNodes(rawNodes) {
+  return rawNodes.map(node => {
+    const cached = state.positionCache.get(node.id);
+    return {
+      ...node,
+      x: cached?.x,
+      y: cached?.y,
+      vx: 0,
+      vy: 0,
+    };
+  });
+}
+
+function filteredGraph() {
+  const visibleNodes = buildNodes(
+    state.allNodes.filter(node => {
+      if (!state.includeRaw && node.isRaw) return false;
+      return state.activeKinds.has(node.kind);
+    })
+  );
+  const visibleSet = new Set(visibleNodes.map(node => node.id));
+  const visibleLinks = state.allLinks
+    .filter(link => visibleSet.has(link.source) && visibleSet.has(link.target))
+    .map(link => ({ ...link }));
+  return { visibleNodes, visibleLinks };
+}
+
+function rebuildNeighborMap() {
+  const map = new Map();
+  for (const node of state.visibleNodes) map.set(node.id, { inbound: [], outbound: [] });
+  for (const link of state.visibleLinks) {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    if (!map.has(sourceId) || !map.has(targetId)) continue;
+    map.get(sourceId).outbound.push(targetId);
+    map.get(targetId).inbound.push(sourceId);
+  }
+  state.neighborMap = map;
+}
+
+function rebuildGraph() {
+  const { visibleNodes, visibleLinks } = filteredGraph();
+  state.visibleNodes = visibleNodes;
+  state.visibleLinks = visibleLinks;
+  state.nodeLookup = new Map(visibleNodes.map(node => [node.id, node]));
+
+  if (state.selectedId && !state.nodeLookup.has(state.selectedId)) state.selectedId = null;
+  if (state.hoveredId && !state.nodeLookup.has(state.hoveredId)) state.hoveredId = null;
+
+  state.simulation?.stop();
+  state.simulation = d3.forceSimulation(visibleNodes)
+    .force('link', d3.forceLink(visibleLinks).id(d => d.id).distance(link => {
+      const source = typeof link.source === 'object' ? link.source : state.nodeLookup.get(link.source);
+      const target = typeof link.target === 'object' ? link.target : state.nodeLookup.get(link.target);
+      if (source?.isRaw || target?.isRaw) return 26;
+      if (source?.kind === target?.kind) return 48;
+      return 74;
+    }).strength(link => {
+      const source = typeof link.source === 'object' ? link.source : state.nodeLookup.get(link.source);
+      const target = typeof link.target === 'object' ? link.target : state.nodeLookup.get(link.target);
+      return source?.isRaw || target?.isRaw ? 0.14 : 0.26;
+    }))
+    .force('charge', d3.forceManyBody().strength(node => node.isRaw ? -18 : -54 - Math.min(node.degree * 2.2, 24)))
+    .force('center', d3.forceCenter(width / 2, height / 2))
+    .force('collision', d3.forceCollide().radius(node => radius(node) + (node.isRaw ? 2 : 5)).iterations(2))
+    .force('x', d3.forceX(width / 2).strength(0.012))
+    .force('y', d3.forceY(height / 2).strength(0.012))
+    .alpha(1)
+    .alphaDecay(0.045)
+    .on('tick', () => {
+      for (const node of state.visibleNodes) {
+        state.positionCache.set(node.id, { x: node.x, y: node.y });
+      }
+      draw();
+    });
+
+  rebuildNeighborMap();
+  updateInspector();
+  updateStats();
+  renderKindChips();
+  updateSearchResults();
+  fitGraph(0);
+}
+
+function setCanvasSize() {
+  width = window.innerWidth;
+  height = window.innerHeight;
+  devicePixelRatioValue = Math.max(1, window.devicePixelRatio || 1);
+  canvas.width = Math.round(width * devicePixelRatioValue);
+  canvas.height = Math.round(height * devicePixelRatioValue);
+  canvas.style.width = `${width}px`;
+  canvas.style.height = `${height}px`;
+  context.setTransform(devicePixelRatioValue, 0, 0, devicePixelRatioValue, 0, 0);
+  draw();
+}
+
+function updateStats() {
+  statVisibleNodes.textContent = state.visibleNodes.length.toLocaleString('ko-KR');
+  statVisibleLinks.textContent = state.visibleLinks.length.toLocaleString('ko-KR');
+  statZoom.textContent = `${state.transform.k.toFixed(2)}×`;
+  rawToggle.classList.toggle('active', state.includeRaw);
+}
+
+function renderKindChips() {
+  const counts = new Map();
+  for (const node of state.allNodes) {
+    if (!state.includeRaw && node.isRaw && node.kind === 'raw') continue;
+    counts.set(node.kind, (counts.get(node.kind) || 0) + 1);
+  }
+  const kinds = [...new Set(state.allNodes.map(node => node.kind))].filter(kind => state.includeRaw || kind !== 'raw');
+  kindGrid.innerHTML = '';
+  for (const kind of kinds) {
+    const button = document.createElement('button');
+    button.className = 'kind-chip';
+    button.classList.toggle('active', state.activeKinds.has(kind));
+    button.innerHTML = `<span class="swatch" style="background:${COLOR_BY_KIND[kind] || COLOR_BY_KIND.note}; color:${COLOR_BY_KIND[kind] || COLOR_BY_KIND.note}"></span><span>${LABEL_BY_KIND[kind] || kind}</span><span class="count">${(counts.get(kind) || 0).toLocaleString('ko-KR')}</span>`;
+    button.onclick = () => {
+      if (state.activeKinds.has(kind)) {
+        if (state.activeKinds.size === 1) return;
+        state.activeKinds.delete(kind);
+      } else {
+        state.activeKinds.add(kind);
+      }
+      rebuildGraph();
+    };
+    kindGrid.appendChild(button);
+  }
+}
+
+function getSelectedNeighborSet() {
+  const bucket = state.neighborMap.get(state.selectedId);
+  if (!bucket) return new Set();
+  return new Set([...bucket.inbound, ...bucket.outbound]);
+}
+
+function getHoveredNeighborSet() {
+  const bucket = state.neighborMap.get(state.hoveredId);
+  if (!bucket) return new Set();
+  return new Set([...bucket.inbound, ...bucket.outbound]);
+}
+
+function drawBackground() {
+  context.save();
+  context.setTransform(1, 0, 0, 1, 0, 0);
+  const gradient = context.createRadialGradient(width * 0.2, height * 0.18, 0, width * 0.2, height * 0.18, Math.max(width, height) * 0.75);
+  gradient.addColorStop(0, 'rgba(155,95,255,0.10)');
+  gradient.addColorStop(1, 'rgba(9,9,11,0)');
+  context.fillStyle = '#09090b';
+  context.fillRect(0, 0, width, height);
+  context.fillStyle = gradient;
+  context.fillRect(0, 0, width, height);
+  context.strokeStyle = 'rgba(255,255,255,0.025)';
+  context.lineWidth = 1;
+  const gridSize = 64;
+  for (let x = (state.transform.x % gridSize); x < width; x += gridSize) {
+    context.beginPath();
+    context.moveTo(x, 0);
+    context.lineTo(x, height);
+    context.stroke();
+  }
+  for (let y = (state.transform.y % gridSize); y < height; y += gridSize) {
+    context.beginPath();
+    context.moveTo(0, y);
+    context.lineTo(width, y);
+    context.stroke();
+  }
+  context.restore();
+}
+
+function draw() {
+  if (!state.data) return;
+  drawBackground();
+
+  const selectedNeighbors = getSelectedNeighborSet();
+  const hoveredNeighbors = getHoveredNeighborSet();
+
+  context.save();
+  context.translate(state.transform.x, state.transform.y);
+  context.scale(state.transform.k, state.transform.k);
+
+  for (const link of state.visibleLinks) {
+    const source = typeof link.source === 'object' ? link.source : state.nodeLookup.get(link.source);
+    const target = typeof link.target === 'object' ? link.target : state.nodeLookup.get(link.target);
+    if (!source || !target) continue;
+
+    const isSelectedLink = state.selectedId && (source.id === state.selectedId || target.id === state.selectedId || (selectedNeighbors.has(source.id) && selectedNeighbors.has(target.id)));
+    const isHoveredLink = state.hoveredId && (source.id === state.hoveredId || target.id === state.hoveredId || (hoveredNeighbors.has(source.id) && hoveredNeighbors.has(target.id)));
+
+    context.beginPath();
+    context.moveTo(source.x, source.y);
+    context.lineTo(target.x, target.y);
+    context.lineWidth = isSelectedLink ? 1.6 : isHoveredLink ? 1.15 : 0.7;
+    context.strokeStyle = isSelectedLink
+      ? 'rgba(199,162,255,0.55)'
+      : isHoveredLink
+        ? 'rgba(255,255,255,0.24)'
+        : source.isRaw || target.isRaw
+          ? 'rgba(255,255,255,0.08)'
+          : 'rgba(255,255,255,0.11)';
+    context.stroke();
+  }
+
+  for (const node of state.visibleNodes) {
+    const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
+    const nodeRadius = radius(node);
+    const isSelected = node.id === state.selectedId;
+    const isHovered = node.id === state.hoveredId;
+    const isNeighbor = selectedNeighbors.has(node.id) || hoveredNeighbors.has(node.id);
+
+    if (isSelected || isHovered) {
+      context.beginPath();
+      context.arc(node.x, node.y, nodeRadius + 6, 0, Math.PI * 2);
+      context.fillStyle = isSelected ? 'rgba(155,95,255,0.20)' : 'rgba(255,255,255,0.12)';
+      context.fill();
+    }
+
+    if (isNeighbor && !isSelected && !isHovered) {
+      context.beginPath();
+      context.arc(node.x, node.y, nodeRadius + 3.5, 0, Math.PI * 2);
+      context.fillStyle = 'rgba(199,162,255,0.09)';
+      context.fill();
+    }
+
+    context.beginPath();
+    context.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
+    context.fillStyle = color;
+    context.globalAlpha = node.isRaw ? 0.7 : 0.96;
+    context.fill();
+    context.globalAlpha = 1;
+
+    context.beginPath();
+    context.arc(node.x, node.y, Math.max(1.3, nodeRadius * 0.38), 0, Math.PI * 2);
+    context.fillStyle = 'rgba(255,255,255,0.92)';
+    context.fill();
+  }
+
+  const labeledNodes = state.visibleNodes.filter(node => node.id === state.selectedId || node.id === state.hoveredId || selectedNeighbors.has(node.id));
+  context.font = '12px Pretendard Variable, Pretendard, sans-serif';
+  context.textBaseline = 'middle';
+  for (const node of labeledNodes.slice(0, 18)) {
+    const label = node.title.length > 26 ? `${node.title.slice(0, 25)}…` : node.title;
+    const textX = node.x + radius(node) + 8;
+    const textY = node.y;
+    context.fillStyle = 'rgba(8,8,10,0.84)';
+    const metrics = context.measureText(label);
+    const boxWidth = metrics.width + 12;
+    context.beginPath();
+    context.roundRect(textX - 6, textY - 11, boxWidth, 22, 10);
+    context.fill();
+    context.fillStyle = 'rgba(245,247,251,0.92)';
+    context.fillText(label, textX, textY);
+  }
+
+  context.restore();
+}
+
+function findNodeAt(clientX, clientY) {
+  const rect = canvas.getBoundingClientRect();
+  const sx = clientX - rect.left;
+  const sy = clientY - rect.top;
+  const wx = state.transform.invertX(sx);
+  const wy = state.transform.invertY(sy);
+  let best = null;
+  let bestDistance = Infinity;
+  for (const node of state.visibleNodes) {
+    const dx = wx - node.x;
+    const dy = wy - node.y;
+    const distance = Math.sqrt(dx * dx + dy * dy);
+    if (distance <= radius(node) + 6 && distance < bestDistance) {
+      best = node;
+      bestDistance = distance;
+    }
+  }
+  return best;
+}
+
+function updateSearchResults() {
+  const query = state.query.trim().toLowerCase();
+  const nodes = [...state.visibleNodes];
+  if (!query) {
+    const featured = nodes
+      .sort((a, b) => (b.degree || 0) - (a.degree || 0))
+      .slice(0, 6);
+    searchResults.innerHTML = featured.map(node => renderResult(node)).join('');
+    bindResultButtons(featured);
+    return;
+  }
+
+  const results = nodes
+    .map(node => {
+      const haystack = `${node.title} ${node.file} ${node.path} ${node.summary || ''}`.toLowerCase();
+      const idx = haystack.indexOf(query);
+      return { node, score: idx === -1 ? Infinity : idx + node.title.length * 0.01 - (node.degree || 0) * 0.25 };
+    })
+    .filter(item => Number.isFinite(item.score))
+    .sort((a, b) => a.score - b.score)
+    .slice(0, 8)
+    .map(item => item.node);
+
+  if (!results.length) {
+    searchResults.innerHTML = '<div class="search-empty">일치하는 노트를 찾지 못했습니다.</div>';
+    return;
+  }
+
+  searchResults.innerHTML = results.map(node => renderResult(node)).join('');
+  bindResultButtons(results);
+}
+
+function renderResult(node) {
+  return `
+    <button class="result-btn" data-id="${encodeURIComponent(node.id)}">
+      <div class="result-top">
+        <span class="result-kind">${LABEL_BY_KIND[node.kind] || node.kind}</span>
+        <span class="result-title">${escapeHtml(node.title)}</span>
+      </div>
+      <div class="result-meta">${escapeHtml(node.path)}</div>
+    </button>
+  `;
+}
+
+function bindResultButtons(results) {
+  for (const button of searchResults.querySelectorAll('.result-btn')) {
+    button.onclick = () => {
+      const id = decodeURIComponent(button.dataset.id);
+      const node = state.nodeLookup.get(id);
+      if (!node) return;
+      selectNode(id, true);
+    };
+  }
+}
+
+function escapeHtml(value) {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function updateInspector() {
+  const node = state.selectedId ? state.nodeLookup.get(state.selectedId) : null;
+  if (!node) {
+    rightPanel.style.display = window.innerWidth <= 900 ? 'none' : '';
+    inspectorEmpty.style.display = '';
+    inspectorBody.style.display = 'none';
+    inspectorBody.innerHTML = '';
+    return;
+  }
+
+  rightPanel.style.display = '';
+
+  const neighbors = state.neighborMap.get(node.id) || { inbound: [], outbound: [] };
+  const outbound = neighbors.outbound.map(id => state.nodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
+  const inbound = neighbors.inbound.map(id => state.nodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
+  const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
+
+  inspectorEmpty.style.display = 'none';
+  inspectorBody.style.display = '';
+  inspectorBody.innerHTML = `
+    <h2 class="node-title">${escapeHtml(node.title)}</h2>
+    <div class="node-kind-row">
+      <span class="node-kind"><span class="swatch" style="background:${color}"></span>${escapeHtml(LABEL_BY_KIND[node.kind] || node.kind)}</span>
+      <span class="node-path">${escapeHtml(node.path)}</span>
+    </div>
+    <p class="node-summary">${escapeHtml(node.summary || '요약이 아직 없습니다.')}</p>
+    <div class="action-row">
+      <button class="action-btn" id="focus-node-btn">노드 중앙으로</button>
+      <a class="action-link" href="${githubUrl(node.path)}" target="_blank" rel="noopener">GitHub 원문 열기</a>
+    </div>
+    <div class="meta-grid">
+      <div class="meta-card"><strong>${(node.degree || 0).toLocaleString('ko-KR')}</strong><span>Total links</span></div>
+      <div class="meta-card"><strong>${(neighbors.outbound.length || 0).toLocaleString('ko-KR')}</strong><span>Outbound</span></div>
+      <div class="meta-card"><strong>${(neighbors.inbound.length || 0).toLocaleString('ko-KR')}</strong><span>Inbound</span></div>
+    </div>
+    <div class="neighbor-section">
+      <p class="panel-title">References out</p>
+      <div class="neighbor-list" id="outbound-list"></div>
+    </div>
+    <div class="neighbor-section">
+      <p class="panel-title">Backlinks in</p>
+      <div class="neighbor-list" id="inbound-list"></div>
+    </div>
+  `;
+
+  const focusBtn = inspectorBody.querySelector('#focus-node-btn');
+  focusBtn.onclick = () => zoomToNode(node, 1.45);
+
+  const outboundList = inspectorBody.querySelector('#outbound-list');
+  const inboundList = inspectorBody.querySelector('#inbound-list');
+  renderNeighborButtons(outboundList, outbound, 'outbound 연결이 없습니다.');
+  renderNeighborButtons(inboundList, inbound, 'backlink가 아직 없습니다.');
+}
+
+function renderNeighborButtons(container, items, emptyMessage) {
+  if (!items.length) {
+    container.innerHTML = `<div class="search-empty">${emptyMessage}</div>`;
+    return;
+  }
+  container.innerHTML = items.map(node => `
+    <button class="neighbor-btn" data-id="${encodeURIComponent(node.id)}">
+      ${escapeHtml(node.title)}
+      <small>${escapeHtml(node.path)}</small>
+    </button>
+  `).join('');
+  for (const button of container.querySelectorAll('.neighbor-btn')) {
+    button.onclick = () => {
+      const id = decodeURIComponent(button.dataset.id);
+      selectNode(id, true);
+    };
+  }
+}
+
+function getFocusRect() {
+  const pad = 20;
+  if (window.innerWidth > 900) {
+    const leftRect = leftPanel.getBoundingClientRect();
+    const rightRect = rightPanel.getBoundingClientRect();
+    const x = leftRect.right + pad;
+    const widthAvailable = Math.max(160, rightRect.left - pad - x);
+    const y = 96;
+    const heightAvailable = Math.max(180, height - y - 86);
+    return {
+      x,
+      y,
+      width: widthAvailable,
+      height: heightAvailable,
+      cx: x + widthAvailable / 2,
+      cy: y + heightAvailable / 2,
+    };
+  }
+
+  const topRect = leftPanel.getBoundingClientRect();
+  const bottomRect = rightPanel.getBoundingClientRect();
+  const x = 18;
+  const widthAvailable = Math.max(200, width - 36);
+  const y = topRect.bottom + pad;
+  const heightAvailable = Math.max(120, bottomRect.top - pad - y);
+  return {
+    x,
+    y,
+    width: widthAvailable,
+    height: heightAvailable,
+    cx: x + widthAvailable / 2,
+    cy: y + heightAvailable / 2,
+  };
+}
+
+function zoomToNode(node, scale = 1.35, duration = 480) {
+  const focus = getFocusRect();
+  const target = d3.zoomIdentity
+    .translate(focus.cx, focus.cy)
+    .scale(scale)
+    .translate(-node.x, -node.y);
+
+  d3.select(canvas)
+    .transition()
+    .duration(duration)
+    .ease(d3.easeCubicOut)
+    .call(zoomBehavior.transform, target);
+}
+
+function fitGraph(duration = 560) {
+  if (!state.visibleNodes.length) return;
+  const focus = getFocusRect();
+  const padding = 48;
+  const minX = d3.min(state.visibleNodes, d => d.x) ?? 0;
+  const maxX = d3.max(state.visibleNodes, d => d.x) ?? width;
+  const minY = d3.min(state.visibleNodes, d => d.y) ?? 0;
+  const maxY = d3.max(state.visibleNodes, d => d.y) ?? height;
+  const graphWidth = Math.max(1, maxX - minX);
+  const graphHeight = Math.max(1, maxY - minY);
+  const scale = Math.max(0.22, Math.min(1.4, Math.min((focus.width - padding * 2) / graphWidth, (focus.height - padding * 2) / graphHeight)));
+  const tx = focus.cx - scale * (minX + graphWidth / 2);
+  const ty = focus.cy - scale * (minY + graphHeight / 2);
+  const target = d3.zoomIdentity.translate(tx, ty).scale(scale);
+  const selection = d3.select(canvas);
+  if (duration > 0) {
+    selection.transition().duration(duration).ease(d3.easeCubicOut).call(zoomBehavior.transform, target);
+  } else {
+    selection.call(zoomBehavior.transform, target);
+  }
+}
+
+function selectNode(id, focus = false) {
+  state.selectedId = id;
+  updateInspector();
+  draw();
+  if (focus) {
+    const node = state.nodeLookup.get(id);
+    if (node) zoomToNode(node);
+  }
+}
+
+const zoomBehavior = d3.zoom()
+  .scaleExtent([0.22, 5.2])
+  .on('start', () => canvas.classList.add('dragging'))
+  .on('end', () => canvas.classList.remove('dragging'))
+  .on('zoom', event => {
+    state.transform = event.transform;
+    updateStats();
+    draw();
+  });
+
+d3.select(canvas).call(zoomBehavior).on('dblclick.zoom', null);
+
+canvas.addEventListener('mousemove', event => {
+  const node = findNodeAt(event.clientX, event.clientY);
+  const nextHovered = node?.id || null;
+  if (nextHovered !== state.hoveredId) {
+    state.hoveredId = nextHovered;
+    draw();
+  }
+});
+canvas.addEventListener('mouseleave', () => {
+  if (state.hoveredId) {
+    state.hoveredId = null;
+    draw();
+  }
+});
+canvas.addEventListener('click', event => {
+  const node = findNodeAt(event.clientX, event.clientY);
+  if (!node) {
+    state.selectedId = null;
+    updateInspector();
+    draw();
+    return;
+  }
+  selectNode(node.id);
+});
+
+searchInput.addEventListener('input', event => {
+  state.query = event.target.value || '';
+  updateSearchResults();
+});
+searchInput.addEventListener('keydown', event => {
+  if (event.key !== 'Enter') return;
+  const first = searchResults.querySelector('.result-btn');
+  if (!first) return;
+  first.click();
+});
+
+rawToggle.addEventListener('click', () => {
+  state.includeRaw = !state.includeRaw;
+  if (state.includeRaw) state.activeKinds.add('raw');
+  else state.activeKinds.delete('raw');
+  rebuildGraph();
+});
+fitBtn.addEventListener('click', () => fitGraph());
+resetBtn.addEventListener('click', () => {
+  state.positionCache.clear();
+  rebuildGraph();
+});
+
+window.addEventListener('resize', () => {
+  setCanvasSize();
+  updateInspector();
+  if (state.simulation) {
+    state.simulation.force('center', d3.forceCenter(width / 2, height / 2));
+    state.simulation.alpha(0.12).restart();
+  }
+  fitGraph(0);
+});
+
+const response = await fetch(DATA_URL);
+if (!response.ok) {
+  document.body.innerHTML = `<div style="padding:32px;color:white;font-family:Pretendard Variable, sans-serif">graph-data.json을 불러오지 못했습니다. 먼저 <code>npm --prefix scripts run build-graph</code>를 실행해 주세요.</div>`;
+  throw new Error('Failed to load graph data');
+}
+state.data = await response.json();
+state.allNodes = state.data.nodes;
+state.allLinks = state.data.links;
+initKinds(state.allNodes);
+setCanvasSize();
+rebuildGraph();
+updateInspector();
+updateSearchResults();
+</script>
+</body>
+</html>

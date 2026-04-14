@@ -17,10 +17,12 @@ jobs:
       - run: cd scripts && node validate-gates.mjs
       - name: Rebuild gates index
         run: cd scripts && node build-gates-index.mjs
-      - name: Check docs/gates.json is up to date
+      - name: Rebuild graph data
+        run: cd scripts && node build-graph-data.mjs
+      - name: Check generated docs assets are up to date
         run: |
-          if ! git diff --quiet docs/gates.json docs/gates/; then
-            echo "::error::docs/gates.json or docs/gates/*.yaml is out of date. Run 'npm --prefix scripts run build-index' locally and commit."
+          if ! git diff --quiet docs/gates.json docs/gates/ docs/graph-data.json; then
+            echo "::error::Generated docs assets are out of date. Run 'npm --prefix scripts run build-index' and 'npm --prefix scripts run build-graph' locally and commit."
             git diff --stat docs/
             exit 1
           fi

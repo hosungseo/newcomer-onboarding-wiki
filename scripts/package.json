@@ -9,6 +9,7 @@
   "scripts": {
     "validate": "node validate-gates.mjs",
     "build-index": "node build-gates-index.mjs",
-    "ci": "node validate-gates.mjs && node build-gates-index.mjs"
+    "build-graph": "node build-graph-data.mjs",
+    "ci": "node validate-gates.mjs && node build-gates-index.mjs && node build-graph-data.mjs"
   }
 }
