@@ -1,0 +1,50 @@
+id: gate-조달계약
+version: 2026-04-15
+trigger: "물품·용역을 조달하거나 계약을 진행해야 하는데 어떻게 시작할지 모르겠다"
+
+entry_question:
+  text: "지금 네 상황에 가장 가까운 것은?"
+  options:
+    - {label: "계약 방법(경쟁·수의 등) 구분부터 모른다", leaf: A-계약방법구분}
+    - {label: "조달청 계약방법 공식안내를 보고 싶다", leaf: B-조달청계약방법}
+    - {label: "내자구매(국내 물품구매)를 해야 한다", goto: C}
+    - {label: "전혀 모름 — 전체부터", leaf: Z-전체흐름}
+
+nodes:
+  C:
+    question: "내자구매 어디가 걸리나?"
+    options:
+      - {label: "신규자 기본 흐름부터", leaf: C-기본흐름}
+      - {label: "조달청 업무처리절차 공식안내", leaf: C-업무처리절차}
+      - {label: "모름", leaf: C-기본흐름}
+
+# ═══════════════ LEAVES ═══════════════
+leaves:
+  A-계약방법구분:
+    notes: [concept-조달계약-기본방법-구분]
+    exits: {shallow: null, deeper: B-조달청계약방법, sideways: C-기본흐름}
+
+  B-조달청계약방법:
+    notes:
+      - source-조달청-계약방법
+      - concept-조달계약-기본방법-구분
+    exits: {shallow: A-계약방법구분, deeper: C-기본흐름, sideways: C-업무처리절차}
+
+  C-기본흐름:
+    notes:
+      - process-내자구매-신규자-기본흐름
+      - concept-조달계약-기본방법-구분
+    exits: {shallow: A-계약방법구분, deeper: C-업무처리절차, sideways: B-조달청계약방법}
+  C-업무처리절차:
+    notes:
+      - source-조달청-내자구매-업무처리절차
+      - process-내자구매-신규자-기본흐름
+    exits: {shallow: C-기본흐름, deeper: null, sideways: B-조달청계약방법}
+
+  Z-전체흐름:
+    notes:
+      - concept-조달계약-기본방법-구분
+      - process-내자구매-신규자-기본흐름
+    exits: {shallow: null, deeper: C-기본흐름, sideways: root}
+
+subgates: []
