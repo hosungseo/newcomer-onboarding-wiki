@@ -36,6 +36,7 @@
 - `source-기획재정부-2024-나라살림-예산개요.md`
 - `source-기획재정부-예산안편성지침-및-기준.md`
 - `process-신규자-예산이해-기본흐름.md`
+- `newcomer-path-첫법제예산계약질문-2026-04.md`
 - `concept-정부업무시스템-dBrain.md`
 
 ## 기관 기준 핵심 source

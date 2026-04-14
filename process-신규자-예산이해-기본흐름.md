@@ -42,3 +42,4 @@
 ## 연결 노트
 - `section-국가인재원-신규자과정-예산과재정.md`
 - `hub-국가인재원-common-core-연결지도.md`
+- `newcomer-path-첫법제예산계약질문-2026-04.md`

@@ -6,6 +6,8 @@
   - `concept-행정문서-인증관리센터.md`
 - parent source notes:
   - `source-행정안전부-2025-행정업무운영-편람.md`
+  - `source-전자정부법.md`
+  - `source-전자정부법-시행령.md`
 - source pages:
   - `https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878`
   - `http://www.law.go.kr/DRF/lawService.do?OC=ghtjd10855&target=law&MST=268103&type=HTML`
@@ -14,6 +16,8 @@
   - `raw/2026-04-13-mois-pilot/2025_행정업무운영_편람.pdf`
   - `raw/2026-04-13-mois-pilot/2025_행정업무운영_편람.hwpx`
   - `raw/2026-04-14-egov-signature-articles/전자정부법-제29조_전자정부법시행령-제28조_제29조.md`
+  - `raw/2026-04-14-document-law-sources/전자정부법_전자문서와_행정전자서명_핵심조문.md`
+  - `raw/2026-04-14-document-law-sources/전자정부법_시행령_전자적결재와_행정전자서명_핵심조문.md`
 - scope: 행정전자서명 문맥에서 `전자정부법 시행령 제28조`와 `제29조`가 어떻게 이어지는지 newcomer가 빠르게 이해하는 것
 - reference year: 2025-2026
 

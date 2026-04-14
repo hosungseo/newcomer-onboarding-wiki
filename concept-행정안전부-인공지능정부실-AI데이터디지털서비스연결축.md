@@ -9,16 +9,19 @@
   - `source-행정안전부-직제.md`
   - `source-행정안전부-직제-시행규칙.md`
   - `source-행정안전부-조직과기능.md`
+  - `source-행정안전부-인공지능정부실-주요업무.md`
 - source pages:
   - `https://www.law.go.kr/DRF/lawService.do?OC=ghtjd10855&target=law&MST=260379&type=HTML`
   - `https://www.law.go.kr/DRF/lawService.do?OC=ghtjd10855&target=law&MST=283519&type=HTML`
   - `https://www.law.go.kr/DRF/lawService.do?OC=ghtjd10855&target=law&MST=283569&type=HTML`
   - `https://www.mois.go.kr/frt/sub/a07/orgranFunction/screen.do`
+  - `https://www.mois.go.kr/frt/sub/a06/b04/egovMainBusiness/screen.do`
 - raw paths:
   - `raw/2026-04-13-government-organization-act/정부조직법_행정안전부_제34조.md`
   - `raw/2026-04-13-institution-provenance/행정안전부_직제_2026-02-19.md`
   - `raw/2026-04-13-institution-provenance/행정안전부_직제시행규칙_2026-02-19.md`
   - `raw/2026-04-14-mois-org-function/행정안전부_조직과기능_page.md`
+  - `raw/2026-04-14-mois-main-business/행정안전부_인공지능정부실_주요업무_page.md`
   - `raw/2026-04-14-mois-ai-government/인공지능정부실_AI데이터디지털서비스_rules.md`
 - scope: newcomer wiki의 AI 적응·업무시스템·디지털정부 note 묶음을 행정안전부 `인공지능정부실` 기준으로 다시 읽는 것
 - reference year: 2026-04

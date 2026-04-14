@@ -6,11 +6,19 @@
   - `concept-행정문서-행정전자서명.md`
 - parent source notes:
   - `source-행정안전부-2025-행정업무운영-편람.md`
+  - `source-행정업무의-운영-및-혁신에-관한-규정.md`
+  - `source-행정업무의-운영-및-혁신에-관한-규정-시행규칙.md`
+  - `source-전자정부법.md`
+  - `source-전자정부법-시행령.md`
 - source page: `https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878`
 - raw paths:
   - `raw/2026-04-13-mois-pilot/2025_행정업무운영_편람.pdf`
   - `raw/2026-04-13-mois-pilot/2025_행정업무운영_편람.hwpx`
   - `raw/2026-04-14-egov-signature-bridge/전자문자서명_행정전자서명_차이_rules.md`
+  - `raw/2026-04-14-document-law-sources/행정업무의_운영_및_혁신에_관한_규정_핵심조문.md`
+  - `raw/2026-04-14-document-law-sources/행정업무의_운영_및_혁신에_관한_규정_시행규칙_핵심조문.md`
+  - `raw/2026-04-14-document-law-sources/전자정부법_전자문서와_행정전자서명_핵심조문.md`
+  - `raw/2026-04-14-document-law-sources/전자정부법_시행령_전자적결재와_행정전자서명_핵심조문.md`
 - scope: 전자문자서명과 행정전자서명이 어떻게 다르고 왜 newcomer가 구분해서 읽어야 하는지 빠르게 이해하는 것
 - reference year: 2025
 
