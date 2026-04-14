@@ -106,6 +106,30 @@ header {
   text-transform: uppercase; letter-spacing: 0.08em;
   margin: 28px 0 12px;
 }
+.search-wrap { margin: 20px 0 4px; position: relative; }
+.search-input {
+  width: 100%; padding: 12px 42px 12px 44px;
+  font: inherit; font-size: 15px; color: var(--text);
+  background: var(--card);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: border-color 180ms var(--ease), box-shadow 180ms var(--ease);
+}
+.search-input:focus { outline: none; border-color: var(--brand); box-shadow: var(--shadow-hover); }
+.search-icon {
+  position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px;
+  background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'><circle cx='9' cy='9' r='6' stroke='%239B9B9B' stroke-width='1.6' fill='none'/><path d='M14 14l4 4' stroke='%239B9B9B' stroke-width='1.6' stroke-linecap='round'/></svg>") center/contain no-repeat;
+  pointer-events: none;
+}
+.search-clear {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+  width: 24px; height: 24px; border: none; background: var(--muted);
+  border-radius: 50%; color: var(--text-2); font-size: 14px; cursor: pointer;
+  display: none; align-items: center; justify-content: center;
+}
+.search-clear.show { display: inline-flex; }
+.search-empty { color: var(--text-3); font-size: 13px; padding: 20px 4px; text-align: center; }
 .gate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
 .gate-card {
   text-align: left; width: 100%; padding: 16px 18px;
@@ -218,6 +242,12 @@ header {
 }
 .fb-btn:hover { border-color: var(--brand); color: var(--brand); }
 .fb-btn:disabled { opacity: 0.5; cursor: default; }
+.fb-issue {
+  font-size: 12px; color: var(--text-3);
+  background: none; border: none; cursor: pointer; text-decoration: underline;
+  padding: 0; flex-basis: 100%; text-align: left;
+}
+.fb-issue:hover { color: var(--brand); }
 
 /* Nav bar */
 .nav-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
@@ -267,6 +297,7 @@ footer a { color: var(--text-3); }
   <footer>
     <p>공개자료 기반 · 피드백은 브라우저에 저장됩니다<br>
     <a href="#" onclick="exportGateLog();return false">로그 내보내기</a> ·
+    <a href="#" onclick="submitLogToIssue();return false">모은 피드백을 이슈로 제출</a> ·
     <a href="https://github.com/hosungseo/newcomer-onboarding-wiki" target="_blank" rel="noopener">GitHub</a></p>
   </footer>
 </div>
@@ -308,6 +339,54 @@ window.exportGateLog = () => {
   a.href = URL.createObjectURL(blob);
   a.download = `gate-log-${new Date().toISOString().slice(0,10)}.json`;
   a.click();
+};
+
+const ISSUES_URL = 'https://github.com/hosungseo/newcomer-onboarding-wiki/issues/new';
+function openIssue({ leaf } = {}) {
+  const gate = currentGate?.id || '(unknown)';
+  const path = pathStack.map(p => p.label || '—').join(' › ');
+  const title = leaf ? `[gate:${gate}] leaf ${leaf} — ` : `[gate:${gate}] `;
+  const body = [
+    `**관문:** \`${gate}\``,
+    leaf ? `**리프:** \`${leaf}\`` : null,
+    `**따라온 경로:** ${path || '(직접 진입)'}`,
+    `**페이지 URL:** ${location.href}`,
+    '',
+    '### 무엇이 부정확·누락됐나요',
+    '(여기에 적어주세요)',
+    '',
+    '### 기대하는 안내',
+    '(여기에 적어주세요)',
+  ].filter(Boolean).join('\n');
+  const params = new URLSearchParams({ title, body, labels: 'gate-feedback' });
+  window.open(`${ISSUES_URL}?${params.toString()}`, '_blank', 'noopener');
+}
+window.openGateIssue = openIssue;
+
+window.submitLogToIssue = () => {
+  const arr = JSON.parse(localStorage.getItem(LOG_KEY) || '[]');
+  const negatives = arr.filter(e => e.type === 'feedback' && (e.tag === 'miss' || e.tag === 'mid'));
+  if (!arr.length) { alert('아직 기록된 피드백이 없습니다.'); return; }
+  const title = `[gate-feedback] 누적 ${arr.length}건 (부정적 ${negatives.length}건)`;
+  const summary = negatives.slice(0, 20).map(e =>
+    `- ${new Date(e.ts).toISOString().slice(0,10)} · ${e.gate} · ${e.leaf} · ${e.tag}`
+  ).join('\n') || '(부정적 피드백 없음)';
+  const body = [
+    `## 누적 피드백 요약`,
+    ``,
+    `- 총 이벤트: ${arr.length}`,
+    `- 부정적(miss/mid): ${negatives.length}`,
+    ``,
+    `### 최근 부정적 피드백 (최대 20개)`,
+    summary,
+    ``,
+    `### 전체 로그 (JSON)`,
+    '```json',
+    JSON.stringify(arr.slice(-50), null, 2),
+    '```',
+  ].join('\n');
+  const params = new URLSearchParams({ title, body, labels: 'gate-feedback,batch' });
+  window.open(`${ISSUES_URL}?${params.toString()}`, '_blank', 'noopener');
 };
 
 // ---------- bootstrap ----------
@@ -359,25 +438,89 @@ function renderLanding() {
   app.appendChild(hero);
 
   const main = gateIndex.filter(g => !g.isSubgate);
-  const sec = document.createElement('div');
-  sec.innerHTML = `<div class="section-title">관문 (${main.length})</div>`;
-  app.appendChild(sec);
+
+  // Search input
+  const sw = document.createElement('div');
+  sw.className = 'search-wrap';
+  sw.innerHTML = `
+    <span class="search-icon" aria-hidden="true"></span>
+    <input id="gate-search" class="search-input" type="search" placeholder="상황·키워드로 검색 (예: 기안, 출장비, 휴직)" autocomplete="off">
+    <button class="search-clear" id="search-clear" aria-label="지우기">✕</button>
+  `;
+  app.appendChild(sw);
+
+  const secLabel = document.createElement('div');
+  secLabel.className = 'section-title';
+  secLabel.id = 'gate-count-label';
+  secLabel.textContent = `관문 (${main.length})`;
+  app.appendChild(secLabel);
 
   const grid = document.createElement('div');
   grid.className = 'gate-grid';
-  for (const g of main) {
-    const card = document.createElement('button');
-    card.className = 'gate-card';
-    const shortId = g.id.replace(/^gate-/, '');
-    card.innerHTML = `
-      <div class="title">${shortId}</div>
-      <div class="trigger">${g.trigger}</div>
-      <div class="meta">리프 ${g.leafCount}개 · 진입 옵션 ${g.entryOptions}</div>
-    `;
-    card.onclick = () => { location.hash = encodeURIComponent(g.id); };
-    grid.appendChild(card);
-  }
+  grid.id = 'gate-grid';
   app.appendChild(grid);
+
+  const emptyEl = document.createElement('div');
+  emptyEl.className = 'search-empty';
+  emptyEl.id = 'search-empty';
+  emptyEl.style.display = 'none';
+  emptyEl.textContent = '일치하는 관문이 없습니다.';
+  app.appendChild(emptyEl);
+
+  const input = sw.querySelector('#gate-search');
+  const clearBtn = sw.querySelector('#search-clear');
+
+  function renderCards(query) {
+    const q = (query || '').trim().toLowerCase();
+    grid.innerHTML = '';
+    let filtered = main;
+    if (q) {
+      filtered = main
+        .map(g => ({ g, score: scoreGate(g, q) }))
+        .filter(x => x.score > 0)
+        .sort((a, b) => b.score - a.score || a.g.priority - b.g.priority)
+        .map(x => x.g);
+    }
+    secLabel.textContent = q ? `검색 결과 (${filtered.length})` : `관문 (${main.length})`;
+    emptyEl.style.display = filtered.length === 0 ? 'block' : 'none';
+    for (const g of filtered) {
+      const card = document.createElement('button');
+      card.className = 'gate-card';
+      const shortId = g.id.replace(/^gate-/, '');
+      const trig = q ? highlight(g.trigger, q) : escapeHtml(g.trigger);
+      const title = q ? highlight(shortId, q) : escapeHtml(shortId);
+      card.innerHTML = `
+        <div class="title">${title}</div>
+        <div class="trigger">${trig}</div>
+        <div class="meta">리프 ${g.leafCount}개 · 진입 옵션 ${g.entryOptions}</div>
+      `;
+      card.onclick = () => { location.hash = encodeURIComponent(g.id); };
+      grid.appendChild(card);
+    }
+    clearBtn.classList.toggle('show', !!q);
+  }
+
+  input.addEventListener('input', (e) => renderCards(e.target.value));
+  clearBtn.onclick = () => { input.value = ''; input.focus(); renderCards(''); };
+  renderCards('');
+}
+
+function scoreGate(g, q) {
+  let score = 0;
+  const id = g.id.toLowerCase();
+  const trig = (g.trigger || '').toLowerCase();
+  const all = g.searchText || '';
+  if (id.includes(q)) score += 10;
+  if (trig.includes(q)) score += 6;
+  if (all.includes(q)) score += 2;
+  return score;
+}
+function escapeHtml(s) { return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c])); }
+function highlight(s, q) {
+  const h = escapeHtml(s);
+  if (!q) return h;
+  const re = new RegExp(escapeHtml(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&'), 'gi');
+  return h.replace(re, m => `<mark style="background:var(--brand-tint);color:var(--brand);padding:0 2px;border-radius:3px">${m}</mark>`);
 }
 
 // ---------- load ----------
@@ -617,6 +760,11 @@ function renderLeaf(id) {
     };
     fb.appendChild(b);
   }
+  const issue = document.createElement('button');
+  issue.className = 'fb-issue';
+  issue.textContent = '→ 이 안내가 부정확·누락됐다면 이슈로 제출';
+  issue.onclick = () => openIssue({ leaf: id });
+  fb.appendChild(issue);
   app.appendChild(fb);
 
   // Exit nav with target labels
