@@ -1313,7 +1313,8 @@ function getHoveredNeighborSet() {
 
 function drawBackground() {
   context.save();
-  context.setTransform(1, 0, 0, 1, 0, 0);
+  context.setTransform(devicePixelRatioValue, 0, 0, devicePixelRatioValue, 0, 0);
+  context.clearRect(0, 0, width, height);
   const gradient = context.createRadialGradient(width * 0.2, height * 0.18, 0, width * 0.2, height * 0.18, Math.max(width, height) * 0.75);
   gradient.addColorStop(0, 'rgba(155,95,255,0.10)');
   gradient.addColorStop(1, 'rgba(9,9,11,0)');
