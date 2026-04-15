@@ -786,8 +786,8 @@ canvas.dragging { cursor: grabbing; }
       <button class="toggle-btn" id="depth-2">2-hop</button>
     </div>
     <div class="toggle-row">
-      <button class="toggle-btn active" id="preset-all">all layers</button>
-      <button class="toggle-btn" id="preset-knowledge">knowledge</button>
+      <button class="toggle-btn" id="preset-all">all layers</button>
+      <button class="toggle-btn active" id="preset-knowledge">knowledge</button>
       <button class="toggle-btn" id="preset-sources">sources</button>
     </div>
 
@@ -916,7 +916,7 @@ const state = {
   hoveredId: null,
   includeRaw: false,
   activeKinds: new Set(),
-  activePreset: 'all',
+  activePreset: 'knowledge',
   evidenceFilter: 'all',
   graphMode: 'global',
   localDepth: 1,
@@ -940,7 +940,7 @@ const INITIAL_URL_STATE = (() => {
     query: params.get('q') || '',
     mode: params.get('mode') === 'local' ? 'local' : 'global',
     depth: params.get('depth') === '2' ? 2 : 1,
-    preset: params.get('preset') || 'all',
+    preset: params.get('preset') || 'knowledge',
     raw: params.get('raw') === '1',
     evidence: params.get('why') === 'out' ? 'out' : params.get('why') === 'in' ? 'in' : 'all',
     kinds: (params.get('kinds') || '').split(',').map(v => v.trim()).filter(Boolean),
@@ -1007,7 +1007,7 @@ function syncUrlState() {
   if (state.localDepth !== 1) params.set('depth', String(state.localDepth));
   else params.delete('depth');
 
-  if (state.activePreset !== 'all') params.set('preset', state.activePreset);
+  if (state.activePreset !== 'knowledge') params.set('preset', state.activePreset);
   else params.delete('preset');
 
   if (state.activePreset === 'custom') {
@@ -1349,6 +1349,7 @@ function draw() {
   const hasSelected = Boolean(state.selectedId);
   const hasHovered = Boolean(state.hoveredId);
   const pulse = hasSelected ? (Math.sin((state.animationTime || performance.now()) / 420) + 1) / 2 : 0;
+  const sourceFocused = state.activePreset === 'sources';
 
   context.save();
   context.translate(state.transform.x, state.transform.y);
@@ -1380,9 +1381,11 @@ function draw() {
           : isMuted
             ? 'rgba(255,255,255,0.008)'
             : secondaryLink
-              ? nearHovered
-                ? 'rgba(255,255,255,0.05)'
-                : 'rgba(255,255,255,0.014)'
+              ? sourceFocused
+                ? (nearHovered ? 'rgba(255,255,255,0.14)' : 'rgba(255,255,255,0.085)')
+                : nearHovered
+                  ? 'rgba(255,255,255,0.05)'
+                  : 'rgba(255,255,255,0.014)'
               : 'rgba(255,255,255,0.05)';
     context.stroke();
   }
@@ -1404,7 +1407,7 @@ function draw() {
         : isMuted
           ? (secondary ? 0.028 : 0.12)
           : secondary
-            ? (revealSecondary ? 0.5 : 0.16)
+            ? (sourceFocused ? (revealSecondary ? 0.72 : 0.52) : (revealSecondary ? 0.5 : 0.16))
             : 0.88;
 
     if (isSelected) {
@@ -1425,7 +1428,9 @@ function draw() {
       context.beginPath();
       context.arc(node.x, node.y, nodeRadius + (secondary ? 1.2 : 2.2), 0, Math.PI * 2);
       context.fillStyle = secondary
-        ? (hasSelected ? 'rgba(199,162,255,0.045)' : 'rgba(255,255,255,0.035)')
+        ? (sourceFocused
+            ? (hasSelected ? 'rgba(199,162,255,0.09)' : 'rgba(255,255,255,0.07)')
+            : (hasSelected ? 'rgba(199,162,255,0.045)' : 'rgba(255,255,255,0.035)'))
         : (hasSelected ? 'rgba(199,162,255,0.08)' : 'rgba(199,162,255,0.05)');
       context.fill();
     }
@@ -1440,7 +1445,9 @@ function draw() {
     if (!secondary || isSelected || isHovered || revealSecondary) {
       context.beginPath();
       context.arc(node.x, node.y, Math.max(0.6, nodeRadius * (secondary ? 0.16 : 0.22)), 0, Math.PI * 2);
-      context.fillStyle = secondary ? 'rgba(255,255,255,0.58)' : 'rgba(255,255,255,0.82)';
+      context.fillStyle = secondary
+        ? (sourceFocused ? 'rgba(255,255,255,0.72)' : 'rgba(255,255,255,0.58)')
+        : 'rgba(255,255,255,0.82)';
       context.fill();
     }
     context.restore();
