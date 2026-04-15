@@ -208,6 +208,7 @@ function extractRefs(node) {
   return refs;
 }
 
+// Preserve representative reference strings per edge so the graph UI can explain why two notes are connected.
 const edgeMap = new Map();
 for (const node of nodes) {
   const refs = extractRefs(node);
