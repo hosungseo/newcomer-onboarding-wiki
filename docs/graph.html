@@ -368,6 +368,10 @@ canvas.dragging { cursor: grabbing; }
   border-color: rgba(155,95,255,0.38);
   background: rgba(155,95,255,0.12);
 }
+.toggle-btn:disabled {
+  opacity: 0.48;
+  cursor: not-allowed;
+}
 .help-list {
   margin: 16px 0 0;
   padding-left: 18px;
@@ -422,6 +426,20 @@ canvas.dragging { cursor: grabbing; }
   font-size: 14px;
   line-height: 1.6;
   color: var(--text-2);
+}
+.preview-card {
+  margin: 0 0 16px;
+  padding: 14px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.preview-body {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 13px;
+  line-height: 1.65;
+  white-space: pre-line;
 }
 .action-row {
   display: flex;
@@ -609,6 +627,8 @@ canvas.dragging { cursor: grabbing; }
       <p class="panel-title">Kinds</p>
       <div class="kind-grid" id="kind-grid"></div>
       <div class="toggle-row">
+        <button class="toggle-btn active" id="mode-global">global graph</button>
+        <button class="toggle-btn" id="mode-local">local graph</button>
         <button class="toggle-btn" id="raw-toggle">raw layer 표시</button>
       </div>
     </div>
@@ -616,6 +636,7 @@ canvas.dragging { cursor: grabbing; }
     <ul class="help-list">
       <li>휠로 확대/축소, 드래그로 이동</li>
       <li>노드를 클릭하면 오른쪽 inspector가 열립니다</li>
+      <li>local graph는 선택한 노드의 1-hop 연결만 남깁니다</li>
       <li>색은 note 종류를, 크기는 연결 정도를 뜻합니다</li>
       <li>검색하면 해당 노드로 카메라가 바로 이동합니다</li>
     </ul>
@@ -647,6 +668,8 @@ const searchInput = document.getElementById('search-input');
 const searchResults = document.getElementById('search-results');
 const kindGrid = document.getElementById('kind-grid');
 const rawToggle = document.getElementById('raw-toggle');
+const globalModeBtn = document.getElementById('mode-global');
+const localModeBtn = document.getElementById('mode-local');
 const fitBtn = document.getElementById('fit-btn');
 const resetBtn = document.getElementById('reset-btn');
 const inspectorBody = document.getElementById('inspector-body');
@@ -693,14 +716,20 @@ const state = {
   data: null,
   allNodes: [],
   allLinks: [],
+  baseNodes: [],
+  baseLinks: [],
   visibleNodes: [],
   visibleLinks: [],
+  baseNodeLookup: new Map(),
   nodeLookup: new Map(),
+  baseNeighborMap: new Map(),
   neighborMap: new Map(),
   selectedId: null,
   hoveredId: null,
   includeRaw: false,
   activeKinds: new Set(),
+  graphMode: 'global',
+  localDepth: 1,
   query: '',
   transform: d3.zoomIdentity,
   simulation: null,
@@ -740,31 +769,71 @@ function buildNodes(rawNodes) {
   });
 }
 
-function filteredGraph() {
-  const visibleNodes = buildNodes(
-    state.allNodes.filter(node => {
-      if (!state.includeRaw && node.isRaw) return false;
-      return state.activeKinds.has(node.kind);
-    })
-  );
-  const visibleSet = new Set(visibleNodes.map(node => node.id));
-  const visibleLinks = state.allLinks
-    .filter(link => visibleSet.has(link.source) && visibleSet.has(link.target))
-    .map(link => ({ ...link }));
-  return { visibleNodes, visibleLinks };
-}
-
-function rebuildNeighborMap() {
+function buildNeighborMap(nodes, links) {
   const map = new Map();
-  for (const node of state.visibleNodes) map.set(node.id, { inbound: [], outbound: [] });
-  for (const link of state.visibleLinks) {
+  for (const node of nodes) map.set(node.id, { inbound: [], outbound: [] });
+  for (const link of links) {
     const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
     const targetId = typeof link.target === 'object' ? link.target.id : link.target;
     if (!map.has(sourceId) || !map.has(targetId)) continue;
     map.get(sourceId).outbound.push(targetId);
     map.get(targetId).inbound.push(sourceId);
   }
-  state.neighborMap = map;
+  return map;
+}
+
+function expandLocalIds(startId, links, depth = 1) {
+  const adjacency = new Map();
+  for (const link of links) {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    if (!adjacency.has(sourceId)) adjacency.set(sourceId, new Set());
+    if (!adjacency.has(targetId)) adjacency.set(targetId, new Set());
+    adjacency.get(sourceId).add(targetId);
+    adjacency.get(targetId).add(sourceId);
+  }
+
+  const visited = new Set([startId]);
+  let frontier = new Set([startId]);
+  for (let step = 0; step < depth; step += 1) {
+    const next = new Set();
+    for (const id of frontier) {
+      for (const neighborId of adjacency.get(id) || []) {
+        if (visited.has(neighborId)) continue;
+        visited.add(neighborId);
+        next.add(neighborId);
+      }
+    }
+    frontier = next;
+  }
+  return visited;
+}
+
+function filteredGraph() {
+  const baseNodes = buildNodes(
+    state.allNodes.filter(node => {
+      if (!state.includeRaw && node.isRaw) return false;
+      return state.activeKinds.has(node.kind);
+    })
+  );
+  const baseSet = new Set(baseNodes.map(node => node.id));
+  const baseLinks = state.allLinks
+    .filter(link => baseSet.has(link.source) && baseSet.has(link.target))
+    .map(link => ({ ...link }));
+
+  state.baseNodes = baseNodes;
+  state.baseLinks = baseLinks;
+  state.baseNodeLookup = new Map(baseNodes.map(node => [node.id, node]));
+  state.baseNeighborMap = buildNeighborMap(baseNodes, baseLinks);
+
+  if (state.graphMode !== 'local' || !state.selectedId || !state.baseNodeLookup.has(state.selectedId)) {
+    return { visibleNodes: baseNodes, visibleLinks: baseLinks };
+  }
+
+  const visibleIds = expandLocalIds(state.selectedId, baseLinks, state.localDepth);
+  const visibleNodes = baseNodes.filter(node => visibleIds.has(node.id));
+  const visibleLinks = baseLinks.filter(link => visibleIds.has(link.source) && visibleIds.has(link.target));
+  return { visibleNodes, visibleLinks };
 }
 
 function rebuildGraph() {
@@ -773,7 +842,8 @@ function rebuildGraph() {
   state.visibleLinks = visibleLinks;
   state.nodeLookup = new Map(visibleNodes.map(node => [node.id, node]));
 
-  if (state.selectedId && !state.nodeLookup.has(state.selectedId)) state.selectedId = null;
+  if (state.selectedId && !state.baseNodeLookup.has(state.selectedId)) state.selectedId = null;
+  if (state.graphMode === 'local' && !state.selectedId) state.graphMode = 'global';
   if (state.hoveredId && !state.nodeLookup.has(state.hoveredId)) state.hoveredId = null;
 
   state.simulation?.stop();
@@ -803,7 +873,7 @@ function rebuildGraph() {
       draw();
     });
 
-  rebuildNeighborMap();
+  state.neighborMap = buildNeighborMap(visibleNodes, visibleLinks);
   updateInspector();
   updateStats();
   renderKindChips();
@@ -828,6 +898,9 @@ function updateStats() {
   statVisibleLinks.textContent = state.visibleLinks.length.toLocaleString('ko-KR');
   statZoom.textContent = `${state.transform.k.toFixed(2)}×`;
   rawToggle.classList.toggle('active', state.includeRaw);
+  globalModeBtn.classList.toggle('active', state.graphMode === 'global');
+  localModeBtn.classList.toggle('active', state.graphMode === 'local');
+  localModeBtn.disabled = !state.selectedId;
 }
 
 function renderKindChips() {
@@ -1005,7 +1078,7 @@ function findNodeAt(clientX, clientY) {
 
 function updateSearchResults() {
   const query = state.query.trim().toLowerCase();
-  const nodes = [...state.visibleNodes];
+  const nodes = [...(state.graphMode === 'local' ? state.baseNodes : state.visibleNodes)];
   if (!query) {
     const featured = nodes
       .sort((a, b) => (b.degree || 0) - (a.degree || 0))
@@ -1051,7 +1124,7 @@ function bindResultButtons(results) {
   for (const button of searchResults.querySelectorAll('.result-btn')) {
     button.onclick = () => {
       const id = decodeURIComponent(button.dataset.id);
-      const node = state.nodeLookup.get(id);
+      const node = state.baseNodeLookup.get(id) || state.nodeLookup.get(id);
       if (!node) return;
       selectNode(id, true);
     };
@@ -1068,21 +1141,23 @@ function escapeHtml(value) {
 }
 
 function updateInspector() {
-  const node = state.selectedId ? state.nodeLookup.get(state.selectedId) : null;
+  const node = state.selectedId ? (state.baseNodeLookup.get(state.selectedId) || state.nodeLookup.get(state.selectedId)) : null;
   if (!node) {
     rightPanel.style.display = window.innerWidth <= 900 ? 'none' : '';
     inspectorEmpty.style.display = '';
     inspectorBody.style.display = 'none';
     inspectorBody.innerHTML = '';
+    updateStats();
     return;
   }
 
   rightPanel.style.display = '';
 
-  const neighbors = state.neighborMap.get(node.id) || { inbound: [], outbound: [] };
-  const outbound = neighbors.outbound.map(id => state.nodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
-  const inbound = neighbors.inbound.map(id => state.nodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
+  const neighbors = state.baseNeighborMap.get(node.id) || { inbound: [], outbound: [] };
+  const outbound = neighbors.outbound.map(id => state.baseNodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
+  const inbound = neighbors.inbound.map(id => state.baseNodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
   const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
+  const preview = node.preview || node.summary || '미리보기 텍스트가 아직 없습니다.';
 
   inspectorEmpty.style.display = 'none';
   inspectorBody.style.display = '';
@@ -1093,8 +1168,13 @@ function updateInspector() {
       <span class="node-path">${escapeHtml(node.path)}</span>
     </div>
     <p class="node-summary">${escapeHtml(node.summary || '요약이 아직 없습니다.')}</p>
+    <div class="preview-card">
+      <p class="panel-title">Preview</p>
+      <p class="preview-body">${escapeHtml(preview)}</p>
+    </div>
     <div class="action-row">
       <button class="action-btn" id="focus-node-btn">노드 중앙으로</button>
+      <button class="action-btn" id="toggle-mode-btn">${state.graphMode === 'local' ? '전체 그래프로' : '로컬 그래프로'}</button>
       <a class="action-link" href="${githubUrl(node.path)}" target="_blank" rel="noopener">GitHub 원문 열기</a>
     </div>
     <div class="meta-grid">
@@ -1115,10 +1195,19 @@ function updateInspector() {
   const focusBtn = inspectorBody.querySelector('#focus-node-btn');
   focusBtn.onclick = () => zoomToNode(node, 1.45);
 
+  const toggleModeBtn = inspectorBody.querySelector('#toggle-mode-btn');
+  toggleModeBtn.onclick = () => {
+    state.graphMode = state.graphMode === 'local' ? 'global' : 'local';
+    rebuildGraph();
+    const nextNode = state.nodeLookup.get(node.id) || state.baseNodeLookup.get(node.id);
+    if (nextNode) zoomToNode(nextNode, state.graphMode === 'local' ? 1.8 : 1.35);
+  };
+
   const outboundList = inspectorBody.querySelector('#outbound-list');
   const inboundList = inspectorBody.querySelector('#inbound-list');
   renderNeighborButtons(outboundList, outbound, 'outbound 연결이 없습니다.');
   renderNeighborButtons(inboundList, inbound, 'backlink가 아직 없습니다.');
+  updateStats();
 }
 
 function renderNeighborButtons(container, items, emptyMessage) {
@@ -1213,10 +1302,19 @@ function fitGraph(duration = 560) {
 
 function selectNode(id, focus = false) {
   state.selectedId = id;
+  if (state.graphMode === 'local') {
+    rebuildGraph();
+    if (focus) {
+      const node = state.nodeLookup.get(id) || state.baseNodeLookup.get(id);
+      if (node) zoomToNode(node, 1.8);
+    }
+    return;
+  }
+
   updateInspector();
   draw();
   if (focus) {
-    const node = state.nodeLookup.get(id);
+    const node = state.nodeLookup.get(id) || state.baseNodeLookup.get(id);
     if (node) zoomToNode(node);
   }
 }
@@ -1251,6 +1349,11 @@ canvas.addEventListener('click', event => {
   const node = findNodeAt(event.clientX, event.clientY);
   if (!node) {
     state.selectedId = null;
+    if (state.graphMode === 'local') {
+      state.graphMode = 'global';
+      rebuildGraph();
+      return;
+    }
     updateInspector();
     draw();
     return;
@@ -1274,6 +1377,17 @@ rawToggle.addEventListener('click', () => {
   if (state.includeRaw) state.activeKinds.add('raw');
   else state.activeKinds.delete('raw');
   rebuildGraph();
+});
+globalModeBtn.addEventListener('click', () => {
+  state.graphMode = 'global';
+  rebuildGraph();
+});
+localModeBtn.addEventListener('click', () => {
+  if (!state.selectedId) return;
+  state.graphMode = 'local';
+  rebuildGraph();
+  const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+  if (node) zoomToNode(node, 1.8);
 });
 fitBtn.addEventListener('click', () => fitGraph());
 resetBtn.addEventListener('click', () => {

@@ -69,6 +69,37 @@ function extractSummary(text) {
   return (lines[0] || '').replace(/`/g, '').slice(0, 180);
 }
 
+function cleanPreviewLine(line) {
+  return line
+    .trim()
+    .replace(/\[\[([^\]|#]+)(?:#[^\]|]+)?(?:\|[^\]]+)?\]\]/g, '$1')
+    .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+    .replace(/`([^`]+)`/g, '$1')
+    .replace(/^>\s?/, '')
+    .replace(/^[-*+]\s+/, '• ')
+    .replace(/^\d+\.\s+/, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function extractPreview(text) {
+  const lines = text
+    .split(/\r?\n/)
+    .map(cleanPreviewLine)
+    .filter(Boolean)
+    .filter(line => line !== '---')
+    .filter(line => !line.startsWith('#'))
+    .filter(line => !line.startsWith('- type:'))
+    .filter(line => !line.startsWith('- institution:'))
+    .filter(line => !line.startsWith('- source page:'))
+    .filter(line => !line.startsWith('- reference year:'))
+    .filter(line => !line.startsWith('id:'))
+    .filter(line => !line.startsWith('title:'))
+    .slice(0, 6);
+
+  return lines.join('\n').slice(0, 900);
+}
+
 function slugify(rel) {
   return stripMd(path.posix.basename(rel));
 }
@@ -85,6 +116,7 @@ const nodes = mdFiles.map(rel => {
     file: path.posix.basename(rel),
     title: extractTitle(text, rel),
     summary: extractSummary(text),
+    preview: extractPreview(text),
     kind: classify(rel),
     isRaw: rel.startsWith('raw/'),
     dir: path.posix.dirname(rel),
@@ -213,6 +245,7 @@ const payload = {
     file: node.file,
     title: node.title,
     summary: node.summary,
+    preview: node.preview,
     kind: node.kind,
     isRaw: node.isRaw,
     degreeIn: inbound.get(node.id) || 0,
