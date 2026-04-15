@@ -521,10 +521,20 @@ canvas.dragging { cursor: grabbing; }
   gap: 8px;
 }
 .evidence-item {
+  width: 100%;
+  text-align: left;
   padding: 12px 13px;
   border-radius: 14px;
   border: 1px solid rgba(255,255,255,0.06);
   background: rgba(255,255,255,0.03);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), background 180ms var(--ease);
+}
+.evidence-item:hover {
+  transform: translateY(-1px);
+  border-color: rgba(155,95,255,0.28);
+  background: rgba(155,95,255,0.08);
 }
 .evidence-meta {
   display: flex;
@@ -864,6 +874,12 @@ const state = {
 
 const INITIAL_URL_STATE = (() => {
   const params = new URL(window.location.href).searchParams;
+  const rawTx = params.get('tx');
+  const rawTy = params.get('ty');
+  const rawZ = params.get('z');
+  const tx = rawTx == null ? NaN : Number(rawTx);
+  const ty = rawTy == null ? NaN : Number(rawTy);
+  const z = rawZ == null ? NaN : Number(rawZ);
   return {
     selected: params.get('selected') || '',
     query: params.get('q') || '',
@@ -872,9 +888,11 @@ const INITIAL_URL_STATE = (() => {
     preset: params.get('preset') || 'all',
     raw: params.get('raw') === '1',
     kinds: (params.get('kinds') || '').split(',').map(v => v.trim()).filter(Boolean),
+    camera: Number.isFinite(tx) && Number.isFinite(ty) && Number.isFinite(z) && z > 0 ? { tx, ty, z } : null,
   };
 })();
 let isRestoringUrlState = false;
+let pendingUrlSyncTimer = null;
 
 let width = 0;
 let height = 0;
@@ -941,8 +959,26 @@ function syncUrlState() {
   if (state.includeRaw) params.set('raw', '1');
   else params.delete('raw');
 
+  if (Number.isFinite(state.transform.x) && Number.isFinite(state.transform.y) && Number.isFinite(state.transform.k)) {
+    params.set('tx', state.transform.x.toFixed(2));
+    params.set('ty', state.transform.y.toFixed(2));
+    params.set('z', state.transform.k.toFixed(4));
+  } else {
+    params.delete('tx');
+    params.delete('ty');
+    params.delete('z');
+  }
+
   const next = `${url.pathname}${params.toString() ? `?${params.toString()}` : ''}${url.hash}`;
   history.replaceState(null, '', next);
+}
+
+function scheduleUrlSync() {
+  if (pendingUrlSyncTimer) window.clearTimeout(pendingUrlSyncTimer);
+  pendingUrlSyncTimer = window.setTimeout(() => {
+    pendingUrlSyncTimer = null;
+    syncUrlState();
+  }, 120);
 }
 
 function restoreUrlState() {
@@ -1149,6 +1185,17 @@ function focusSelectedNodeAfterRestore() {
   const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
   if (!node) return;
   zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.35, 0);
+}
+
+function restoreViewportAfterLoad() {
+  if (INITIAL_URL_STATE.camera) {
+    const target = d3.zoomIdentity
+      .translate(INITIAL_URL_STATE.camera.tx, INITIAL_URL_STATE.camera.ty)
+      .scale(INITIAL_URL_STATE.camera.z);
+    d3.select(canvas).call(zoomBehavior.transform, target);
+    return;
+  }
+  focusSelectedNodeAfterRestore();
 }
 
 function renderKindChips() {
@@ -1507,6 +1554,7 @@ function buildWhyConnected(nodeId) {
       const targetId = typeof link.target === 'object' ? link.target.id : link.target;
       return {
         direction: 'out',
+        otherId: targetId,
         otherNode: state.baseNodeLookup.get(targetId),
         type: link.type,
         count: link.count || 1,
@@ -1521,6 +1569,7 @@ function buildWhyConnected(nodeId) {
       const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
       return {
         direction: 'in',
+        otherId: sourceId,
         otherNode: state.baseNodeLookup.get(sourceId),
         type: link.type,
         count: link.count || 1,
@@ -1536,14 +1585,14 @@ function renderWhyConnected(items) {
   }
 
   return items.map(item => `
-    <div class="evidence-item">
+    <button class="evidence-item" type="button" data-id="${encodeURIComponent(item.otherId)}">
       <div class="evidence-meta">
         <span class="evidence-dir">${item.direction === 'out' ? 'out →' : 'in ←'}</span>
         <span class="evidence-type">${escapeHtml(LINK_TYPE_LABEL[item.type] || item.type)}${item.count > 1 ? ` ×${item.count}` : ''}</span>
         <span class="evidence-title">${escapeHtml(item.otherNode.title)}</span>
       </div>
       <code class="evidence-code">${escapeHtml(item.refText)}</code>
-    </div>
+    </button>
   `).join('');
 }
 
@@ -1646,6 +1695,13 @@ function updateInspector() {
       copyLinkBtn.classList.remove('success');
     }, 1200);
   };
+
+  for (const button of inspectorBody.querySelectorAll('.evidence-item[data-id]')) {
+    button.onclick = () => {
+      const id = decodeURIComponent(button.dataset.id);
+      selectNode(id, true);
+    };
+  }
 
   const outboundList = inspectorBody.querySelector('#outbound-list');
   const inboundList = inspectorBody.querySelector('#inbound-list');
@@ -1773,6 +1829,7 @@ const zoomBehavior = d3.zoom()
     state.transform = event.transform;
     updateStats();
     draw();
+    scheduleUrlSync();
   });
 
 d3.select(canvas).call(zoomBehavior).on('dblclick.zoom', null);
@@ -1950,7 +2007,7 @@ setCanvasSize();
 rebuildGraph();
 updateInspector();
 updateSearchResults();
-focusSelectedNodeAfterRestore();
+restoreViewportAfterLoad();
 syncUrlState();
 </script>
 </body>
