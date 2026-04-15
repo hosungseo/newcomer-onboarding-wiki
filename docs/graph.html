@@ -234,6 +234,11 @@ canvas.dragging { cursor: grabbing; }
   gap: 8px;
   margin-top: 10px;
 }
+.search-result-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+}
 .result-btn {
   width: 100%;
   text-align: left;
@@ -249,6 +254,21 @@ canvas.dragging { cursor: grabbing; }
   transform: translateY(-1px);
   border-color: rgba(155,95,255,0.3);
   background: rgba(155,95,255,0.08);
+}
+.result-local-btn {
+  min-width: 68px;
+  padding: 0 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(155,95,255,0.18);
+  background: rgba(155,95,255,0.08);
+  color: var(--text);
+  cursor: pointer;
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), background 180ms var(--ease);
+}
+.result-local-btn:hover {
+  transform: translateY(-1px);
+  border-color: rgba(199,162,255,0.42);
+  background: rgba(155,95,255,0.16);
 }
 .result-top {
   display: flex;
@@ -469,6 +489,24 @@ canvas.dragging { cursor: grabbing; }
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
   margin-bottom: 18px;
+}
+.relation-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: -4px 0 18px;
+}
+.relation-chip {
+  padding: 8px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-2);
+  font-size: 12px;
+}
+.relation-chip strong {
+  color: var(--text);
+  font-weight: 700;
 }
 .meta-card {
   padding: 10px 12px;
@@ -1209,15 +1247,23 @@ function updateSearchResults() {
   bindResultButtons(results);
 }
 
+function openNodeInLocal(id) {
+  state.graphMode = 'local';
+  selectNode(id, true);
+}
+
 function renderResult(node) {
   return `
-    <button class="result-btn" data-id="${encodeURIComponent(node.id)}">
-      <div class="result-top">
-        <span class="result-kind">${LABEL_BY_KIND[node.kind] || node.kind}</span>
-        <span class="result-title">${escapeHtml(node.title)}</span>
-      </div>
-      <div class="result-meta">${escapeHtml(node.path)}</div>
-    </button>
+    <div class="search-result-row">
+      <button class="result-btn" data-id="${encodeURIComponent(node.id)}">
+        <div class="result-top">
+          <span class="result-kind">${LABEL_BY_KIND[node.kind] || node.kind}</span>
+          <span class="result-title">${escapeHtml(node.title)}</span>
+        </div>
+        <div class="result-meta">${escapeHtml(node.path)}</div>
+      </button>
+      <button class="result-local-btn" data-local-id="${encodeURIComponent(node.id)}">local</button>
+    </div>
   `;
 }
 
@@ -1228,6 +1274,14 @@ function bindResultButtons(results) {
       const node = state.baseNodeLookup.get(id) || state.nodeLookup.get(id);
       if (!node) return;
       selectNode(id, true);
+    };
+  }
+  for (const button of searchResults.querySelectorAll('.result-local-btn')) {
+    button.onclick = () => {
+      const id = decodeURIComponent(button.dataset.localId);
+      const node = state.baseNodeLookup.get(id) || state.nodeLookup.get(id);
+      if (!node) return;
+      openNodeInLocal(id);
     };
   }
 }
@@ -1257,6 +1311,15 @@ function updateInspector() {
   const neighbors = state.baseNeighborMap.get(node.id) || { inbound: [], outbound: [] };
   const outbound = neighbors.outbound.map(id => state.baseNodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
   const inbound = neighbors.inbound.map(id => state.baseNodeLookup.get(id)).filter(Boolean).sort((a, b) => a.title.localeCompare(b.title, 'ko')).slice(0, 18);
+  const relatedNodes = [...new Set([...neighbors.outbound, ...neighbors.inbound])]
+    .map(id => state.baseNodeLookup.get(id))
+    .filter(Boolean);
+  const relationKinds = [...relatedNodes.reduce((map, relatedNode) => {
+    map.set(relatedNode.kind, (map.get(relatedNode.kind) || 0) + 1);
+    return map;
+  }, new Map()).entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko'))
+    .slice(0, 5);
   const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
   const preview = node.preview || node.summary || '미리보기 텍스트가 아직 없습니다.';
 
@@ -1282,6 +1345,11 @@ function updateInspector() {
       <div class="meta-card"><strong>${(node.degree || 0).toLocaleString('ko-KR')}</strong><span>Total links</span></div>
       <div class="meta-card"><strong>${(neighbors.outbound.length || 0).toLocaleString('ko-KR')}</strong><span>Outbound</span></div>
       <div class="meta-card"><strong>${(neighbors.inbound.length || 0).toLocaleString('ko-KR')}</strong><span>Inbound</span></div>
+    </div>
+    <div class="relation-summary">
+      ${relationKinds.length
+        ? relationKinds.map(([kind, count]) => `<span class="relation-chip"><strong>${escapeHtml(LABEL_BY_KIND[kind] || kind)}</strong> ${count}</span>`).join('')
+        : '<span class="relation-chip">연결된 이웃이 아직 없습니다.</span>'}
     </div>
     <div class="neighbor-section">
       <p class="panel-title">References out</p>
@@ -1474,8 +1542,7 @@ searchInput.addEventListener('keydown', event => {
   if (!first) return;
   if (state.query.trim()) {
     const id = decodeURIComponent(first.dataset.id);
-    state.graphMode = 'local';
-    selectNode(id, true);
+    openNodeInLocal(id);
     return;
   }
   first.click();
