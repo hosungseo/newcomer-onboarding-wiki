@@ -964,10 +964,10 @@ function isSecondaryKind(kind) {
 
 function radius(node) {
   let base = 1.8 + Math.sqrt(node.degree || 0) * 0.72;
-  if (isSecondaryKind(node.kind)) base *= 0.72;
-  base = Math.max(1.45, Math.min(7.8, base));
-  if (node.id === state.selectedId) return base + 1.6;
-  if (node.id === state.hoveredId) return base + 0.9;
+  if (isSecondaryKind(node.kind)) base *= 0.62;
+  base = Math.max(1.2, Math.min(7.4, base));
+  if (node.id === state.selectedId) return base + 1.4;
+  if (node.id === state.hoveredId) return base + 0.8;
   return base;
 }
 
@@ -1361,6 +1361,7 @@ function draw() {
     const secondaryLink = isSecondaryKind(source.kind) || isSecondaryKind(target.kind);
     const touchesSelected = hasSelected && (source.id === state.selectedId || target.id === state.selectedId);
     const nearSelected = hasSelected && (selectedNeighbors.has(source.id) || selectedNeighbors.has(target.id));
+    const nearHovered = hasHovered && (hoveredNeighbors.has(source.id) || hoveredNeighbors.has(target.id));
     const isSelectedLink = touchesSelected || (hasSelected && selectedNeighbors.has(source.id) && selectedNeighbors.has(target.id));
     const isHoveredLink = hasHovered && (source.id === state.hoveredId || target.id === state.hoveredId || (hoveredNeighbors.has(source.id) && hoveredNeighbors.has(target.id)));
     const isMuted = hasSelected && !isSelectedLink && !nearSelected;
@@ -1368,18 +1369,20 @@ function draw() {
     context.beginPath();
     context.moveTo(source.x, source.y);
     context.lineTo(target.x, target.y);
-    context.lineWidth = touchesSelected ? 1.35 + pulse * 0.35 : isSelectedLink ? 1.0 : isHoveredLink ? 0.8 : 0.45;
+    context.lineWidth = touchesSelected ? 1.25 + pulse * 0.28 : isSelectedLink ? 0.92 : isHoveredLink ? 0.72 : 0.42;
     context.strokeStyle = touchesSelected
-      ? `rgba(212,186,255,${(0.52 + pulse * 0.16).toFixed(3)})`
+      ? `rgba(212,186,255,${(0.5 + pulse * 0.14).toFixed(3)})`
       : isSelectedLink
-        ? `rgba(199,162,255,${(0.24 + pulse * 0.08).toFixed(3)})`
+        ? `rgba(199,162,255,${(0.22 + pulse * 0.08).toFixed(3)})`
         : isHoveredLink
-          ? 'rgba(255,255,255,0.14)'
+          ? 'rgba(255,255,255,0.12)'
           : isMuted
-            ? 'rgba(255,255,255,0.01)'
+            ? 'rgba(255,255,255,0.008)'
             : secondaryLink
-              ? 'rgba(255,255,255,0.028)'
-              : 'rgba(255,255,255,0.055)';
+              ? nearHovered
+                ? 'rgba(255,255,255,0.05)'
+                : 'rgba(255,255,255,0.014)'
+              : 'rgba(255,255,255,0.05)';
     context.stroke();
   }
 
@@ -1391,16 +1394,17 @@ function draw() {
     const isNeighbor = selectedNeighbors.has(node.id);
     const isHoverNeighbor = hoveredNeighbors.has(node.id);
     const secondary = isSecondaryKind(node.kind);
+    const revealSecondary = secondary && (isNeighbor || isHoverNeighbor || isHovered || isSelected);
     const isMuted = hasSelected && !isSelected && !isNeighbor;
     const alpha = isSelected
       ? 1
       : isHovered
         ? 0.96
         : isMuted
-          ? (secondary ? 0.04 : 0.12)
+          ? (secondary ? 0.028 : 0.12)
           : secondary
-            ? 0.34
-            : 0.9;
+            ? (revealSecondary ? 0.5 : 0.16)
+            : 0.88;
 
     if (isSelected) {
       context.save();
@@ -1416,10 +1420,12 @@ function draw() {
       context.arc(node.x, node.y, nodeRadius + 3.5, 0, Math.PI * 2);
       context.fillStyle = 'rgba(255,255,255,0.08)';
       context.fill();
-    } else if ((isNeighbor || isHoverNeighbor) && !secondary) {
+    } else if (isNeighbor || isHoverNeighbor) {
       context.beginPath();
-      context.arc(node.x, node.y, nodeRadius + 2.2, 0, Math.PI * 2);
-      context.fillStyle = hasSelected ? 'rgba(199,162,255,0.08)' : 'rgba(199,162,255,0.05)';
+      context.arc(node.x, node.y, nodeRadius + (secondary ? 1.2 : 2.2), 0, Math.PI * 2);
+      context.fillStyle = secondary
+        ? (hasSelected ? 'rgba(199,162,255,0.045)' : 'rgba(255,255,255,0.035)')
+        : (hasSelected ? 'rgba(199,162,255,0.08)' : 'rgba(199,162,255,0.05)');
       context.fill();
     }
 
@@ -1430,10 +1436,10 @@ function draw() {
     context.fillStyle = color;
     context.fill();
 
-    if (!secondary || isSelected || isHovered) {
+    if (!secondary || isSelected || isHovered || revealSecondary) {
       context.beginPath();
-      context.arc(node.x, node.y, Math.max(0.7, nodeRadius * 0.22), 0, Math.PI * 2);
-      context.fillStyle = 'rgba(255,255,255,0.82)';
+      context.arc(node.x, node.y, Math.max(0.6, nodeRadius * (secondary ? 0.16 : 0.22)), 0, Math.PI * 2);
+      context.fillStyle = secondary ? 'rgba(255,255,255,0.58)' : 'rgba(255,255,255,0.82)';
       context.fill();
     }
     context.restore();
@@ -1448,7 +1454,7 @@ function draw() {
   }
 
   const labeledNodes = hasSelected
-    ? state.visibleNodes.filter(node => node.id === state.selectedId || (!isSecondaryKind(node.kind) && selectedNeighbors.has(node.id)) || node.id === state.hoveredId)
+    ? state.visibleNodes.filter(node => node.id === state.selectedId || (!isSecondaryKind(node.kind) && selectedNeighbors.has(node.id)) || (node.id === state.hoveredId && !isSecondaryKind(node.kind)))
     : state.visibleNodes.filter(node => node.id === state.hoveredId && !isSecondaryKind(node.kind));
   context.font = '11px Pretendard Variable, Pretendard, sans-serif';
   context.textBaseline = 'middle';
