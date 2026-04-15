@@ -629,6 +629,8 @@ canvas.dragging { cursor: grabbing; }
       <div class="toggle-row">
         <button class="toggle-btn active" id="mode-global">global graph</button>
         <button class="toggle-btn" id="mode-local">local graph</button>
+        <button class="toggle-btn" id="depth-1">1-hop</button>
+        <button class="toggle-btn" id="depth-2">2-hop</button>
         <button class="toggle-btn" id="raw-toggle">raw layer 표시</button>
       </div>
     </div>
@@ -636,7 +638,7 @@ canvas.dragging { cursor: grabbing; }
     <ul class="help-list">
       <li>휠로 확대/축소, 드래그로 이동</li>
       <li>노드를 클릭하면 오른쪽 inspector가 열립니다</li>
-      <li>local graph는 선택한 노드의 1-hop 연결만 남깁니다</li>
+      <li>local graph는 선택한 노드의 1-hop / 2-hop 연결만 남길 수 있습니다</li>
       <li>색은 note 종류를, 크기는 연결 정도를 뜻합니다</li>
       <li>검색하면 해당 노드로 카메라가 바로 이동합니다</li>
     </ul>
@@ -670,6 +672,8 @@ const kindGrid = document.getElementById('kind-grid');
 const rawToggle = document.getElementById('raw-toggle');
 const globalModeBtn = document.getElementById('mode-global');
 const localModeBtn = document.getElementById('mode-local');
+const depth1Btn = document.getElementById('depth-1');
+const depth2Btn = document.getElementById('depth-2');
 const graphModeKicker = document.getElementById('graph-mode-kicker');
 const fitBtn = document.getElementById('fit-btn');
 const resetBtn = document.getElementById('reset-btn');
@@ -734,6 +738,7 @@ const state = {
   query: '',
   transform: d3.zoomIdentity,
   simulation: null,
+  animationTime: 0,
   positionCache: new Map(),
 };
 
@@ -846,6 +851,7 @@ function rebuildGraph() {
   if (state.selectedId && !state.baseNodeLookup.has(state.selectedId)) state.selectedId = null;
   if (state.graphMode === 'local' && !state.selectedId) state.graphMode = 'global';
   if (state.hoveredId && !state.nodeLookup.has(state.hoveredId)) state.hoveredId = null;
+  syncPulseLoop();
 
   state.simulation?.stop();
   state.simulation = d3.forceSimulation(visibleNodes)
@@ -894,6 +900,22 @@ function setCanvasSize() {
   draw();
 }
 
+let pulseTimer = null;
+function syncPulseLoop() {
+  if (state.selectedId) {
+    if (pulseTimer) return;
+    pulseTimer = setInterval(() => {
+      state.animationTime = performance.now();
+      draw();
+    }, 33);
+    return;
+  }
+  if (pulseTimer) {
+    clearInterval(pulseTimer);
+    pulseTimer = null;
+  }
+}
+
 function updateStats() {
   statVisibleNodes.textContent = state.visibleNodes.length.toLocaleString('ko-KR');
   statVisibleLinks.textContent = state.visibleLinks.length.toLocaleString('ko-KR');
@@ -902,6 +924,11 @@ function updateStats() {
   globalModeBtn.classList.toggle('active', state.graphMode === 'global');
   localModeBtn.classList.toggle('active', state.graphMode === 'local');
   localModeBtn.disabled = !state.selectedId;
+  const depthEnabled = Boolean(state.selectedId) && state.graphMode === 'local';
+  depth1Btn.classList.toggle('active', depthEnabled && state.localDepth === 1);
+  depth2Btn.classList.toggle('active', depthEnabled && state.localDepth === 2);
+  depth1Btn.disabled = !state.selectedId;
+  depth2Btn.disabled = !state.selectedId;
   graphModeKicker.textContent = state.graphMode === 'local' ? 'Local Graph' : 'Global Graph';
 }
 
@@ -979,6 +1006,7 @@ function draw() {
   const hoveredNeighbors = getHoveredNeighborSet();
   const hasSelected = Boolean(state.selectedId);
   const hasHovered = Boolean(state.hoveredId);
+  const pulse = hasSelected ? (Math.sin((state.animationTime || performance.now()) / 380) + 1) / 2 : 0;
 
   context.save();
   context.translate(state.transform.x, state.transform.y);
@@ -998,11 +1026,11 @@ function draw() {
     context.beginPath();
     context.moveTo(source.x, source.y);
     context.lineTo(target.x, target.y);
-    context.lineWidth = touchesSelected ? 2.3 : isSelectedLink ? 1.65 : isHoveredLink ? 1.15 : 0.75;
+    context.lineWidth = touchesSelected ? 2.2 + pulse * 0.65 : isSelectedLink ? 1.65 : isHoveredLink ? 1.15 : 0.75;
     context.strokeStyle = touchesSelected
-      ? 'rgba(212,186,255,0.92)'
+      ? `rgba(212,186,255,${(0.72 + pulse * 0.22).toFixed(3)})`
       : isSelectedLink
-        ? 'rgba(199,162,255,0.54)'
+        ? `rgba(199,162,255,${(0.42 + pulse * 0.14).toFixed(3)})`
         : isHoveredLink
           ? 'rgba(255,255,255,0.28)'
           : isMuted
@@ -1033,11 +1061,11 @@ function draw() {
 
     if (isSelected) {
       context.save();
-      context.shadowColor = 'rgba(155,95,255,0.55)';
-      context.shadowBlur = 24;
+      context.shadowColor = `rgba(155,95,255,${(0.38 + pulse * 0.26).toFixed(3)})`;
+      context.shadowBlur = 18 + pulse * 16;
       context.beginPath();
-      context.arc(node.x, node.y, nodeRadius + 7.5, 0, Math.PI * 2);
-      context.fillStyle = 'rgba(155,95,255,0.22)';
+      context.arc(node.x, node.y, nodeRadius + 7.5 + pulse * 2.8, 0, Math.PI * 2);
+      context.fillStyle = `rgba(155,95,255,${(0.14 + pulse * 0.12).toFixed(3)})`;
       context.fill();
       context.restore();
     } else if (isHovered) {
@@ -1067,9 +1095,9 @@ function draw() {
 
     if (isSelected) {
       context.beginPath();
-      context.arc(node.x, node.y, nodeRadius + 1.8, 0, Math.PI * 2);
-      context.strokeStyle = 'rgba(245,247,251,0.84)';
-      context.lineWidth = 1.2;
+      context.arc(node.x, node.y, nodeRadius + 1.8 + pulse * 0.9, 0, Math.PI * 2);
+      context.strokeStyle = `rgba(245,247,251,${(0.7 + pulse * 0.18).toFixed(3)})`;
+      context.lineWidth = 1.1 + pulse * 0.6;
       context.stroke();
     }
   }
@@ -1344,6 +1372,7 @@ function fitGraph(duration = 560) {
 
 function selectNode(id, focus = false) {
   state.selectedId = id;
+  syncPulseLoop();
   if (state.graphMode === 'local') {
     rebuildGraph();
     if (focus) {
@@ -1391,6 +1420,7 @@ canvas.addEventListener('click', event => {
   const node = findNodeAt(event.clientX, event.clientY);
   if (!node) {
     state.selectedId = null;
+    syncPulseLoop();
     if (state.graphMode === 'local') {
       state.graphMode = 'global';
       rebuildGraph();
@@ -1430,6 +1460,22 @@ localModeBtn.addEventListener('click', () => {
   rebuildGraph();
   const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
   if (node) zoomToNode(node, 1.8);
+});
+depth1Btn.addEventListener('click', () => {
+  if (!state.selectedId) return;
+  state.localDepth = 1;
+  state.graphMode = 'local';
+  rebuildGraph();
+  const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+  if (node) zoomToNode(node, 1.8);
+});
+depth2Btn.addEventListener('click', () => {
+  if (!state.selectedId) return;
+  state.localDepth = 2;
+  state.graphMode = 'local';
+  rebuildGraph();
+  const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+  if (node) zoomToNode(node, 1.55);
 });
 fitBtn.addEventListener('click', () => fitGraph());
 resetBtn.addEventListener('click', () => {
