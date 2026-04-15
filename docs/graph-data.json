@@ -1,8 +1,8 @@
 {
   "repo": "hosungseo/newcomer-onboarding-wiki",
   "stats": {
-    "nodes": 424,
-    "links": 2802,
+    "nodes": 422,
+    "links": 2785,
     "rawNodes": 118
   },
   "nodes": [
@@ -1108,9 +1108,9 @@
       "preview": "• type: concept\n• derived from:\n• source-정부조직법-행정안전부.md\n• source-행정안전부-직제.md\n• source-행정안전부-직제-시행규칙.md\n• source-행정안전부-조직도.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 25,
+      "degreeIn": 24,
       "degreeOut": 69,
-      "degree": 94
+      "degree": 93
     },
     {
       "id": "concept-행정안전부-인공지능정부실-AI데이터디지털서비스연결축.md",
@@ -1136,9 +1136,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정안전부-기능과조직단위-연결축.md\n• hub-행정안전부.md\n• parent source notes:\n• source-정부조직법-행정안전부.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 20,
-      "degreeOut": 27,
-      "degree": 47
+      "degreeIn": 18,
+      "degreeOut": 25,
+      "degree": 43
     },
     {
       "id": "concept-행정안전부-재난안전관리본부-안전재난복구비상대비연결축.md",
@@ -1209,20 +1209,6 @@
       "degreeIn": 5,
       "degreeOut": 12,
       "degree": 17
-    },
-    {
-      "id": "concept-행정안전부-지방행정지원-업무축.md",
-      "path": "concept-행정안전부-지방행정지원-업무축.md",
-      "slug": "concept-행정안전부-지방행정지원-업무축",
-      "file": "concept-행정안전부-지방행정지원-업무축.md",
-      "title": "concept — 행정안전부 지방행정지원 업무축",
-      "summary": "- derived from:",
-      "preview": "• type: concept\n• derived from:\n• concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md\n• hub-행정안전부.md\n• parent source notes:\n• source-행정안전부-자치혁신실-주요업무.md",
-      "kind": "concept",
-      "isRaw": false,
-      "degreeIn": 4,
-      "degreeOut": 7,
-      "degree": 11
     },
     {
       "id": "concept-행정안전부-지역발전지원-업무축.md",
@@ -2051,20 +2037,6 @@
       "degree": 11
     },
     {
-      "id": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "path": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "slug": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나",
-      "file": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "title": "FAQ — 지방행정지원 note는 행안부 어느 조직과 연결되나",
-      "summary": "지방행정지원 관련 note를 행정안전부 안에서 어디에 놓아야 하는지 빠르게 찾게 해 주는 소형 FAQ다.",
-      "preview": "지방행정지원 관련 note를 행정안전부 안에서 어디에 놓아야 하는지 빠르게 찾게 해 주는 소형 FAQ다.\n• 지방행정지원을 막연한 지원업무가 아니라 행정안전부의 실제 업무축으로 다시 읽게 한다.\n• 자치혁신실과 지방행정지원을 가장 짧게 연결한다.\n• 이후 지방행정지원 세부 note가 늘어나더라도 기관축 진입점을 고정한다.\n**한 줄 답:** 가장 가까운 축은 자치혁신실이다.\n• concept-행정안전부-지방행정지원-업무축.md",
-      "kind": "faq",
-      "isRaw": false,
-      "degreeIn": 2,
-      "degreeOut": 5,
-      "degree": 7
-    },
-    {
       "id": "faq-지역정보개발원은-왜-행정전자서명-전문기관으로-지정됐나.md",
       "path": "faq-지역정보개발원은-왜-행정전자서명-전문기관으로-지정됐나.md",
       "slug": "faq-지역정보개발원은-왜-행정전자서명-전문기관으로-지정됐나",
@@ -2201,8 +2173,8 @@
       "kind": "faq",
       "isRaw": false,
       "degreeIn": 3,
-      "degreeOut": 10,
-      "degree": 13
+      "degreeOut": 9,
+      "degree": 12
     },
     {
       "id": "faq-행정안전부는-왜-인증기관으로-추가지정됐나.md",
@@ -2368,9 +2340,9 @@
       "preview": "• type: hub\n• institution: 행정안전부\n• based on:\n• source-정부조직법-행정안전부.md\n• source-행정안전부-직제.md\n• source-행정안전부-직제-시행규칙.md",
       "kind": "hub",
       "isRaw": false,
-      "degreeIn": 47,
-      "degreeOut": 106,
-      "degree": 153
+      "degreeIn": 45,
+      "degreeOut": 104,
+      "degree": 149
     },
     {
       "id": "link-manifest-행정안전부-인사혁신처-기획재정부-2026-04.md",
@@ -3166,9 +3138,9 @@
       "preview": "• source page: https://www.law.go.kr/DRF/lawService.do?OC=ghtjd10855&target=law&MST=260379&type=HTML\n• capture method: law.go.kr DRF XML fetch\n• capture date: 2026-04-13\n• law version: 2024-06-27 공포본\n제34조(행정안전부)\n① 행정안전부장관은 국무회의의 서무, 법령 및 조약의 공포, 정부조직과 정원, 상훈, 정부혁신, 행정능률, 전자정부, 정부청사의 관리, 지방자치제도, 지방자치단체의 사무지원ㆍ재정ㆍ세제, 낙후지역 등 지원, 지방자치단체간 분쟁조정, 선거ㆍ국민투표의 지원, 안전 및 재난에 관한 정책의 수립ㆍ총괄ㆍ조정, 비상대비, 민방위 및 방재에 관한 사무를 관장한다.",
       "kind": "raw",
       "isRaw": true,
-      "degreeIn": 13,
+      "degreeIn": 12,
       "degreeOut": 0,
-      "degree": 13
+      "degree": 12
     },
     {
       "id": "raw/2026-04-13-government-organization-act/MANIFEST.md",
@@ -3964,9 +3936,9 @@
       "preview": "• source page: https://www.mois.go.kr/frt/sub/a06/b06/localAdministrationMainBis/screen.do\n• page title: 자치혁신실 > 주요업무\n• parent institution: 행정안전부\n• 상위 실: 자치혁신실\n• 직접 노출된 주요 업무/세부 서비스:\n• 공무원 노사관계",
       "kind": "raw",
       "isRaw": true,
-      "degreeIn": 11,
+      "degreeIn": 10,
       "degreeOut": 0,
-      "degree": 11
+      "degree": 10
     },
     {
       "id": "raw/2026-04-14-mois-main-business/행정안전부_지방재정경제실_주요업무_page.md",
@@ -5266,9 +5238,9 @@
       "preview": "• type: source\n• institution: 행정안전부\n• document title: 정부조직법 제34조(행정안전부)\n• source page: https://www.law.go.kr/DRF/lawService.do?OC=ghtjd10855&target=law&MST=260379&type=HTML\n• raw path: raw/2026-04-13-government-organization-act/정부조직법_행정안전부_제34조.md\n• reference year: 2024-06-27 공포본 기준",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 16,
+      "degreeIn": 14,
       "degreeOut": 1,
-      "degree": 17
+      "degree": 15
     },
     {
       "id": "source-조달청-계약방법.md",
@@ -5532,9 +5504,9 @@
       "preview": "• type: source\n• institution: 행정안전부\n• document title: 자치혁신실 주요업무\n• source page: https://www.mois.go.kr/frt/sub/a06/b06/localAdministrationMainBis/screen.do\n• raw paths:\n• raw/2026-04-14-mois-main-business/행정안전부_자치혁신실_주요업무_page.md",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 16,
+      "degreeIn": 14,
       "degreeOut": 15,
-      "degree": 31
+      "degree": 29
     },
     {
       "id": "source-행정안전부-재난대비훈련.md",
@@ -15858,30 +15830,6 @@
     },
     {
       "source": "concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md",
-      "target": "concept-행정안전부-지방행정지원-업무축.md",
-      "type": "backtick-ref",
-      "count": 2,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`concept-행정안전부-지방행정지원-업무축.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md",
-      "target": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "type": "backtick-ref",
-      "count": 2,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md",
       "target": "concept-행정안전부-지방소멸대응-업무축.md",
       "type": "backtick-ref",
       "count": 2,
@@ -16789,90 +16737,6 @@
         {
           "type": "backtick-ref",
           "refText": "`raw/2026-04-14-mois-main-business/행정안전부_지방재정경제실_주요업무_page.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-지방행정지원-업무축.md",
-      "target": "concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-지방행정지원-업무축.md",
-      "target": "hub-행정안전부.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`hub-행정안전부.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-지방행정지원-업무축.md",
-      "target": "source-행정안전부-자치혁신실-주요업무.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`source-행정안전부-자치혁신실-주요업무.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-지방행정지원-업무축.md",
-      "target": "source-정부조직법-행정안전부.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`source-정부조직법-행정안전부.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-지방행정지원-업무축.md",
-      "target": "raw/2026-04-14-mois-main-business/행정안전부_자치혁신실_주요업무_page.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`raw/2026-04-14-mois-main-business/행정안전부_자치혁신실_주요업무_page.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-지방행정지원-업무축.md",
-      "target": "raw/2026-04-13-government-organization-act/정부조직법_행정안전부_제34조.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`raw/2026-04-13-government-organization-act/정부조직법_행정안전부_제34조.md`"
-        }
-      ]
-    },
-    {
-      "source": "concept-행정안전부-지방행정지원-업무축.md",
-      "target": "concept-행정안전부-기능과조직단위-연결축.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`concept-행정안전부-기능과조직단위-연결축.md`"
         }
       ]
     },
@@ -22553,66 +22417,6 @@
       ]
     },
     {
-      "source": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "target": "concept-행정안전부-지방행정지원-업무축.md",
-      "type": "backtick-ref",
-      "count": 5,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`concept-행정안전부-지방행정지원-업무축.md`"
-        }
-      ]
-    },
-    {
-      "source": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "target": "concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md`"
-        }
-      ]
-    },
-    {
-      "source": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "target": "source-행정안전부-자치혁신실-주요업무.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`source-행정안전부-자치혁신실-주요업무.md`"
-        }
-      ]
-    },
-    {
-      "source": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "target": "hub-행정안전부.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`hub-행정안전부.md`"
-        }
-      ]
-    },
-    {
-      "source": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "target": "source-정부조직법-행정안전부.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`source-정부조직법-행정안전부.md`"
-        }
-      ]
-    },
-    {
       "source": "faq-지역정보개발원은-왜-행정전자서명-전문기관으로-지정됐나.md",
       "target": "concept-행정문서-지역정보개발원-행정전자서명-전문기관-지정-의미.md",
       "type": "backtick-ref",
@@ -23329,18 +23133,6 @@
         {
           "type": "backtick-ref",
           "refText": "`concept-행정안전부-행정구역-업무축.md`"
-        }
-      ]
-    },
-    {
-      "source": "faq-행정안전부-기능-note는-어느-조직과-연결되나.md",
-      "target": "concept-행정안전부-지방행정지원-업무축.md",
-      "type": "backtick-ref",
-      "count": 3,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`concept-행정안전부-지방행정지원-업무축.md`"
         }
       ]
     },
@@ -26725,30 +26517,6 @@
         {
           "type": "backtick-ref",
           "refText": "`process-특수상황지역-개발-기본흐름.md`"
-        }
-      ]
-    },
-    {
-      "source": "hub-행정안전부.md",
-      "target": "concept-행정안전부-지방행정지원-업무축.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`concept-행정안전부-지방행정지원-업무축.md`"
-        }
-      ]
-    },
-    {
-      "source": "hub-행정안전부.md",
-      "target": "faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`faq-지방행정지원-note는-행안부-어느-조직과-연결되나.md`"
         }
       ]
     },
