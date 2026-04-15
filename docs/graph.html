@@ -512,6 +512,62 @@ canvas.dragging { cursor: grabbing; }
   color: var(--text);
   font-weight: 700;
 }
+.evidence-section {
+  margin: 0 0 18px;
+}
+.evidence-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.evidence-item {
+  padding: 12px 13px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+}
+.evidence-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.evidence-dir,
+.evidence-type {
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.evidence-dir {
+  color: var(--text);
+  background: rgba(155,95,255,0.14);
+  border: 1px solid rgba(155,95,255,0.18);
+}
+.evidence-type {
+  color: var(--text-2);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.evidence-title {
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 600;
+}
+.evidence-code {
+  display: block;
+  margin-top: 7px;
+  padding: 8px 10px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.22);
+  color: var(--text-2);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .meta-card {
   padding: 10px 12px;
   border-radius: 14px;
@@ -766,6 +822,12 @@ const LABEL_BY_KIND = {
   scouting: 'scouting',
   gate: 'gate',
   note: 'note',
+};
+
+const LINK_TYPE_LABEL = {
+  wikilink: 'wikilink',
+  'md-link': 'md-link',
+  'backtick-ref': 'backtick-ref',
 };
 
 const PRESET_KINDS = {
@@ -1431,6 +1493,60 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;');
 }
 
+function buildWhyConnected(nodeId) {
+  const relatedLinks = state.baseLinks.filter(link => {
+    const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+    const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+    return sourceId === nodeId || targetId === nodeId;
+  });
+  const outbound = relatedLinks
+    .filter(link => (typeof link.source === 'object' ? link.source.id : link.source) === nodeId)
+    .sort((a, b) => (b.count || 1) - (a.count || 1))
+    .slice(0, 3)
+    .map(link => {
+      const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+      return {
+        direction: 'out',
+        otherNode: state.baseNodeLookup.get(targetId),
+        type: link.type,
+        count: link.count || 1,
+        refText: link.evidence?.[0]?.refText || targetId,
+      };
+    });
+  const inbound = relatedLinks
+    .filter(link => (typeof link.target === 'object' ? link.target.id : link.target) === nodeId)
+    .sort((a, b) => (b.count || 1) - (a.count || 1))
+    .slice(0, 3)
+    .map(link => {
+      const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+      return {
+        direction: 'in',
+        otherNode: state.baseNodeLookup.get(sourceId),
+        type: link.type,
+        count: link.count || 1,
+        refText: link.evidence?.[0]?.refText || sourceId,
+      };
+    });
+  return [...outbound, ...inbound].filter(item => item.otherNode);
+}
+
+function renderWhyConnected(items) {
+  if (!items.length) {
+    return '<div class="search-empty">대표 연결 근거를 아직 찾지 못했습니다.</div>';
+  }
+
+  return items.map(item => `
+    <div class="evidence-item">
+      <div class="evidence-meta">
+        <span class="evidence-dir">${item.direction === 'out' ? 'out →' : 'in ←'}</span>
+        <span class="evidence-type">${escapeHtml(LINK_TYPE_LABEL[item.type] || item.type)}${item.count > 1 ? ` ×${item.count}` : ''}</span>
+        <span class="evidence-title">${escapeHtml(item.otherNode.title)}</span>
+      </div>
+      <code class="evidence-code">${escapeHtml(item.refText)}</code>
+    </div>
+  `).join('');
+}
+
 function updateInspector() {
   const node = state.selectedId ? (state.baseNodeLookup.get(state.selectedId) || state.nodeLookup.get(state.selectedId)) : null;
   if (!node) {
@@ -1456,6 +1572,7 @@ function updateInspector() {
   }, new Map()).entries()]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko'))
     .slice(0, 5);
+  const whyConnected = buildWhyConnected(node.id);
   const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
   const preview = node.preview || node.summary || '미리보기 텍스트가 아직 없습니다.';
 
@@ -1487,6 +1604,10 @@ function updateInspector() {
       ${relationKinds.length
         ? relationKinds.map(([kind, count]) => `<span class="relation-chip"><strong>${escapeHtml(LABEL_BY_KIND[kind] || kind)}</strong> ${count}</span>`).join('')
         : '<span class="relation-chip">연결된 이웃이 아직 없습니다.</span>'}
+    </div>
+    <div class="evidence-section">
+      <p class="panel-title">Why connected</p>
+      <div class="evidence-list">${renderWhyConnected(whyConnected)}</div>
     </div>
     <div class="neighbor-section">
       <p class="panel-title">References out</p>

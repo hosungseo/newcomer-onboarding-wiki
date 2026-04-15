@@ -192,17 +192,17 @@ function extractRefs(node) {
 
   for (const match of text.matchAll(/\[\[([^\]]+)\]\]/g)) {
     const resolved = resolveTarget(match[1], node.id);
-    if (resolved) refs.push({ target: resolved, type: 'wikilink' });
+    if (resolved) refs.push({ target: resolved, type: 'wikilink', refText: match[0] });
   }
 
   for (const match of text.matchAll(/\[[^\]]+\]\(([^)]+\.md[^)]*)\)/g)) {
     const resolved = resolveTarget(match[1], node.id);
-    if (resolved) refs.push({ target: resolved, type: 'md-link' });
+    if (resolved) refs.push({ target: resolved, type: 'md-link', refText: match[0] });
   }
 
   for (const match of text.matchAll(/`([^`\n]+\.md)`/g)) {
     const resolved = resolveTarget(match[1], node.id);
-    if (resolved) refs.push({ target: resolved, type: 'backtick-ref' });
+    if (resolved) refs.push({ target: resolved, type: 'backtick-ref', refText: match[0] });
   }
 
   return refs;
@@ -218,7 +218,16 @@ for (const node of nodes) {
         source: node.id,
         target: ref.target,
         type: ref.type,
+        count: 1,
+        evidence: [{ type: ref.type, refText: ref.refText }],
       });
+      continue;
+    }
+
+    const edge = edgeMap.get(key);
+    edge.count += 1;
+    if (!edge.evidence.some(item => item.refText === ref.refText)) {
+      edge.evidence.push({ type: ref.type, refText: ref.refText });
     }
   }
 }
