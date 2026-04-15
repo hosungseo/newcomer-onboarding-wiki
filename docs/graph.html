@@ -159,15 +159,15 @@ canvas.dragging { cursor: grabbing; }
 .left-panel {
   top: 84px;
   left: 18px;
-  width: min(360px, calc(100vw - 36px));
-  max-height: calc(100vh - 120px);
+  width: min(300px, calc(100vw - 36px));
+  max-height: calc(100vh - 138px);
   overflow: auto;
-  padding: 18px;
+  padding: 16px;
 }
 .right-panel {
   top: 84px;
   right: 18px;
-  width: min(360px, calc(100vw - 36px));
+  width: min(340px, calc(100vw - 36px));
   max-height: calc(100vh - 120px);
   overflow: auto;
   padding: 18px;
@@ -232,7 +232,9 @@ canvas.dragging { cursor: grabbing; }
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-top: 10px;
+  margin-top: 8px;
+  max-height: 220px;
+  overflow: auto;
 }
 .search-result-row {
   display: grid;
@@ -304,33 +306,60 @@ canvas.dragging { cursor: grabbing; }
 }
 
 .stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
-  margin: 16px 0 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 16px;
 }
 .stat {
-  padding: 12px 12px 11px;
-  border-radius: 16px;
+  min-width: 0;
+  padding: 9px 11px;
+  border-radius: 999px;
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.05);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 .stat-label {
-  display: block;
-  font-size: 11px;
+  display: inline-block;
+  font-size: 10px;
   color: var(--text-3);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 7px;
 }
 .stat-value {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .kind-section {
   margin-top: 16px;
+}
+.control-fold {
+  margin-top: 14px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding-top: 14px;
+}
+.control-fold summary {
+  list-style: none;
+  cursor: pointer;
+  color: var(--text-2);
+  font-size: 13px;
+  user-select: none;
+}
+.control-fold summary::-webkit-details-marker { display: none; }
+.control-fold summary::after {
+  content: '＋';
+  float: right;
+  color: var(--text-3);
+}
+.control-fold[open] summary::after {
+  content: '－';
+}
+.control-body {
+  margin-top: 12px;
 }
 .kind-grid {
   display: flex;
@@ -393,11 +422,11 @@ canvas.dragging { cursor: grabbing; }
   cursor: not-allowed;
 }
 .help-list {
-  margin: 16px 0 0;
+  margin: 12px 0 0;
   padding-left: 18px;
   color: var(--text-2);
-  font-size: 13px;
-  line-height: 1.6;
+  font-size: 12px;
+  line-height: 1.55;
 }
 .help-list li + li { margin-top: 4px; }
 
@@ -675,7 +704,7 @@ canvas.dragging { cursor: grabbing; }
 
 @media (max-width: 1100px) {
   .left-panel {
-    width: min(320px, calc(100vw - 36px));
+    width: min(280px, calc(100vw - 36px));
   }
   .right-panel {
     width: min(320px, calc(100vw - 36px));
@@ -735,8 +764,8 @@ canvas.dragging { cursor: grabbing; }
 
   <aside class="panel left-panel">
     <p class="panel-title" id="graph-mode-kicker">Global Graph</p>
-    <h1 class="panel-headline">노트들이 어떤 선으로 이어지는지 바로 보이게.</h1>
-    <p class="panel-copy">`[[wikilink]]`, 내부 `.md` 링크, 그리고 본문 안 backtick `.md` 참조까지 읽어서 그래프를 그립니다. 기본은 퍼머넌트 note 중심이고, 필요할 때 raw source layer도 펼칠 수 있습니다.</p>
+    <h1 class="panel-headline">연결 구조를 한눈에.</h1>
+    <p class="panel-copy">검색이나 노드 선택으로 시작하고, 필요할 때만 필터를 펼쳐 쓰는 쪽으로 정리했습니다.</p>
 
     <div class="search-wrap">
       <svg class="search-icon" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="9" r="5.8" stroke="currentColor" stroke-width="1.5" opacity="0.9"/><path d="M13.5 13.5L18 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
@@ -750,34 +779,40 @@ canvas.dragging { cursor: grabbing; }
       <div class="stat"><span class="stat-label">Scale</span><span class="stat-value" id="stat-zoom">1.00×</span></div>
     </div>
 
-    <div class="kind-section">
-      <p class="panel-title">Kinds</p>
-      <div class="kind-grid" id="kind-grid"></div>
-      <div class="toggle-row">
-        <button class="toggle-btn active" id="mode-global">global graph</button>
-        <button class="toggle-btn" id="mode-local">local graph</button>
-        <button class="toggle-btn" id="depth-1">1-hop</button>
-        <button class="toggle-btn" id="depth-2">2-hop</button>
-        <button class="toggle-btn" id="raw-toggle">raw layer 표시</button>
-      </div>
-      <div class="toggle-row">
-        <button class="toggle-btn active" id="preset-all">all layers</button>
-        <button class="toggle-btn" id="preset-knowledge">knowledge</button>
-        <button class="toggle-btn" id="preset-sources">sources</button>
-      </div>
+    <div class="toggle-row">
+      <button class="toggle-btn active" id="mode-global">global graph</button>
+      <button class="toggle-btn" id="mode-local">local graph</button>
+      <button class="toggle-btn" id="depth-1">1-hop</button>
+      <button class="toggle-btn" id="depth-2">2-hop</button>
+    </div>
+    <div class="toggle-row">
+      <button class="toggle-btn active" id="preset-all">all layers</button>
+      <button class="toggle-btn" id="preset-knowledge">knowledge</button>
+      <button class="toggle-btn" id="preset-sources">sources</button>
     </div>
 
-    <ul class="help-list">
-      <li>휠로 확대/축소, 드래그로 이동</li>
-      <li>노드를 클릭하면 오른쪽 inspector가 열립니다</li>
-      <li>local graph는 선택한 노드의 1-hop / 2-hop 연결만 남길 수 있습니다</li>
-      <li>색은 note 종류를, 크기는 연결 정도를 뜻합니다</li>
-      <li>검색 후 Enter를 누르면 바로 local graph로 들어갑니다</li>
-      <li><code>/</code> 검색, <code>Esc</code> 해제, <code>L</code> 로컬 토글, <code>1</code>/<code>2</code> hop 변경, <code>F</code> 현재 선택 다시 맞춤</li>
-    </ul>
+    <details class="control-fold">
+      <summary>고급 필터와 도움말</summary>
+      <div class="control-body">
+        <div class="kind-section">
+          <p class="panel-title">Kinds</p>
+          <div class="kind-grid" id="kind-grid"></div>
+          <div class="toggle-row">
+            <button class="toggle-btn" id="raw-toggle">raw layer 표시</button>
+          </div>
+        </div>
+
+        <ul class="help-list">
+          <li>휠로 확대/축소, 드래그로 이동</li>
+          <li>노드를 클릭하면 inspector가 열립니다</li>
+          <li>검색 후 Enter를 누르면 바로 local graph로 들어갑니다</li>
+          <li><code>/</code> 검색, <code>Esc</code> 해제, <code>L</code> 로컬 토글, <code>1</code>/<code>2</code> hop 변경, <code>F</code> 현재 선택 다시 맞춤</li>
+        </ul>
+      </div>
+    </details>
   </aside>
 
-  <aside class="panel right-panel" id="inspector">
+  <aside class="panel right-panel" id="inspector" style="display:none">
     <p class="panel-title">Inspector</p>
     <div id="inspector-empty" class="inspector-empty">
       중앙 그래프에서 노드를 하나 찍으면 여기서 제목, 경로, 연결 수, 이웃 노트, GitHub 원문 링크를 바로 볼 수 있습니다.
@@ -1443,11 +1478,7 @@ function updateSearchResults() {
   const query = state.query.trim().toLowerCase();
   const nodes = [...(state.graphMode === 'local' ? state.baseNodes : state.visibleNodes)];
   if (!query) {
-    const featured = nodes
-      .sort((a, b) => (b.degree || 0) - (a.degree || 0))
-      .slice(0, 6);
-    searchResults.innerHTML = featured.map(node => renderResult(node)).join('');
-    bindResultButtons(featured);
+    searchResults.innerHTML = '<div class="search-empty">검색하거나 그래프에서 노드를 찍어 시작하세요.</div>';
     return;
   }
 
@@ -1634,7 +1665,7 @@ function renderWhyConnected(items) {
 function updateInspector() {
   const node = state.selectedId ? (state.baseNodeLookup.get(state.selectedId) || state.nodeLookup.get(state.selectedId)) : null;
   if (!node) {
-    rightPanel.style.display = window.innerWidth <= 900 ? 'none' : '';
+    rightPanel.style.display = 'none';
     inspectorEmpty.style.display = '';
     inspectorBody.style.display = 'none';
     inspectorBody.innerHTML = '';
@@ -1781,9 +1812,11 @@ function getFocusRect() {
   const pad = 20;
   if (window.innerWidth > 900) {
     const leftRect = leftPanel.getBoundingClientRect();
-    const rightRect = rightPanel.getBoundingClientRect();
+    const rightVisible = rightPanel.style.display !== 'none';
+    const rightRect = rightVisible ? rightPanel.getBoundingClientRect() : null;
     const x = leftRect.right + pad;
-    const widthAvailable = Math.max(160, rightRect.left - pad - x);
+    const rightEdge = rightVisible && rightRect ? rightRect.left - pad : width - 18;
+    const widthAvailable = Math.max(220, rightEdge - x);
     const y = 96;
     const heightAvailable = Math.max(180, height - y - 86);
     return {
@@ -1797,11 +1830,13 @@ function getFocusRect() {
   }
 
   const topRect = leftPanel.getBoundingClientRect();
-  const bottomRect = rightPanel.getBoundingClientRect();
+  const rightVisible = rightPanel.style.display !== 'none';
+  const bottomRect = rightVisible ? rightPanel.getBoundingClientRect() : null;
   const x = 18;
   const widthAvailable = Math.max(200, width - 36);
   const y = topRect.bottom + pad;
-  const heightAvailable = Math.max(120, bottomRect.top - pad - y);
+  const bottomEdge = rightVisible && bottomRect ? bottomRect.top - pad : height - 86;
+  const heightAvailable = Math.max(120, bottomEdge - y);
   return {
     x,
     y,
