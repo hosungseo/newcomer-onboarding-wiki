@@ -607,7 +607,7 @@ canvas.dragging { cursor: grabbing; }
   </div>
 
   <aside class="panel left-panel">
-    <p class="panel-title">Local Graph</p>
+    <p class="panel-title" id="graph-mode-kicker">Global Graph</p>
     <h1 class="panel-headline">노트들이 어떤 선으로 이어지는지 바로 보이게.</h1>
     <p class="panel-copy">`[[wikilink]]`, 내부 `.md` 링크, 그리고 본문 안 backtick `.md` 참조까지 읽어서 그래프를 그립니다. 기본은 퍼머넌트 note 중심이고, 필요할 때 raw source layer도 펼칠 수 있습니다.</p>
 
@@ -670,6 +670,7 @@ const kindGrid = document.getElementById('kind-grid');
 const rawToggle = document.getElementById('raw-toggle');
 const globalModeBtn = document.getElementById('mode-global');
 const localModeBtn = document.getElementById('mode-local');
+const graphModeKicker = document.getElementById('graph-mode-kicker');
 const fitBtn = document.getElementById('fit-btn');
 const resetBtn = document.getElementById('reset-btn');
 const inspectorBody = document.getElementById('inspector-body');
@@ -901,6 +902,7 @@ function updateStats() {
   globalModeBtn.classList.toggle('active', state.graphMode === 'global');
   localModeBtn.classList.toggle('active', state.graphMode === 'local');
   localModeBtn.disabled = !state.selectedId;
+  graphModeKicker.textContent = state.graphMode === 'local' ? 'Local Graph' : 'Global Graph';
 }
 
 function renderKindChips() {
@@ -975,6 +977,8 @@ function draw() {
 
   const selectedNeighbors = getSelectedNeighborSet();
   const hoveredNeighbors = getHoveredNeighborSet();
+  const hasSelected = Boolean(state.selectedId);
+  const hasHovered = Boolean(state.hoveredId);
 
   context.save();
   context.translate(state.transform.x, state.transform.y);
@@ -985,20 +989,27 @@ function draw() {
     const target = typeof link.target === 'object' ? link.target : state.nodeLookup.get(link.target);
     if (!source || !target) continue;
 
-    const isSelectedLink = state.selectedId && (source.id === state.selectedId || target.id === state.selectedId || (selectedNeighbors.has(source.id) && selectedNeighbors.has(target.id)));
-    const isHoveredLink = state.hoveredId && (source.id === state.hoveredId || target.id === state.hoveredId || (hoveredNeighbors.has(source.id) && hoveredNeighbors.has(target.id)));
+    const touchesSelected = hasSelected && (source.id === state.selectedId || target.id === state.selectedId);
+    const nearSelected = hasSelected && (selectedNeighbors.has(source.id) || selectedNeighbors.has(target.id));
+    const isSelectedLink = touchesSelected || (hasSelected && selectedNeighbors.has(source.id) && selectedNeighbors.has(target.id));
+    const isHoveredLink = hasHovered && (source.id === state.hoveredId || target.id === state.hoveredId || (hoveredNeighbors.has(source.id) && hoveredNeighbors.has(target.id)));
+    const isMuted = hasSelected && !isSelectedLink && !nearSelected;
 
     context.beginPath();
     context.moveTo(source.x, source.y);
     context.lineTo(target.x, target.y);
-    context.lineWidth = isSelectedLink ? 1.6 : isHoveredLink ? 1.15 : 0.7;
-    context.strokeStyle = isSelectedLink
-      ? 'rgba(199,162,255,0.55)'
-      : isHoveredLink
-        ? 'rgba(255,255,255,0.24)'
-        : source.isRaw || target.isRaw
-          ? 'rgba(255,255,255,0.08)'
-          : 'rgba(255,255,255,0.11)';
+    context.lineWidth = touchesSelected ? 2.3 : isSelectedLink ? 1.65 : isHoveredLink ? 1.15 : 0.75;
+    context.strokeStyle = touchesSelected
+      ? 'rgba(212,186,255,0.92)'
+      : isSelectedLink
+        ? 'rgba(199,162,255,0.54)'
+        : isHoveredLink
+          ? 'rgba(255,255,255,0.28)'
+          : isMuted
+            ? 'rgba(255,255,255,0.02)'
+            : source.isRaw || target.isRaw
+              ? 'rgba(255,255,255,0.07)'
+              : 'rgba(255,255,255,0.11)';
     context.stroke();
   }
 
@@ -1007,49 +1018,80 @@ function draw() {
     const nodeRadius = radius(node);
     const isSelected = node.id === state.selectedId;
     const isHovered = node.id === state.hoveredId;
-    const isNeighbor = selectedNeighbors.has(node.id) || hoveredNeighbors.has(node.id);
+    const isNeighbor = selectedNeighbors.has(node.id);
+    const isHoverNeighbor = hoveredNeighbors.has(node.id);
+    const isMuted = hasSelected && !isSelected && !isNeighbor;
+    const alpha = isSelected
+      ? 1
+      : isHovered
+        ? 1
+        : isMuted
+          ? (node.isRaw ? 0.06 : 0.14)
+          : node.isRaw
+            ? 0.68
+            : 0.96;
 
-    if (isSelected || isHovered) {
+    if (isSelected) {
+      context.save();
+      context.shadowColor = 'rgba(155,95,255,0.55)';
+      context.shadowBlur = 24;
+      context.beginPath();
+      context.arc(node.x, node.y, nodeRadius + 7.5, 0, Math.PI * 2);
+      context.fillStyle = 'rgba(155,95,255,0.22)';
+      context.fill();
+      context.restore();
+    } else if (isHovered) {
       context.beginPath();
       context.arc(node.x, node.y, nodeRadius + 6, 0, Math.PI * 2);
-      context.fillStyle = isSelected ? 'rgba(155,95,255,0.20)' : 'rgba(255,255,255,0.12)';
+      context.fillStyle = 'rgba(255,255,255,0.12)';
       context.fill();
-    }
-
-    if (isNeighbor && !isSelected && !isHovered) {
+    } else if (isNeighbor || isHoverNeighbor) {
       context.beginPath();
       context.arc(node.x, node.y, nodeRadius + 3.5, 0, Math.PI * 2);
-      context.fillStyle = 'rgba(199,162,255,0.09)';
+      context.fillStyle = hasSelected ? 'rgba(199,162,255,0.12)' : 'rgba(199,162,255,0.09)';
       context.fill();
     }
 
+    context.save();
+    context.globalAlpha = alpha;
     context.beginPath();
     context.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
     context.fillStyle = color;
-    context.globalAlpha = node.isRaw ? 0.7 : 0.96;
     context.fill();
-    context.globalAlpha = 1;
 
     context.beginPath();
     context.arc(node.x, node.y, Math.max(1.3, nodeRadius * 0.38), 0, Math.PI * 2);
     context.fillStyle = 'rgba(255,255,255,0.92)';
     context.fill();
+    context.restore();
+
+    if (isSelected) {
+      context.beginPath();
+      context.arc(node.x, node.y, nodeRadius + 1.8, 0, Math.PI * 2);
+      context.strokeStyle = 'rgba(245,247,251,0.84)';
+      context.lineWidth = 1.2;
+      context.stroke();
+    }
   }
 
-  const labeledNodes = state.visibleNodes.filter(node => node.id === state.selectedId || node.id === state.hoveredId || selectedNeighbors.has(node.id));
+  const labeledNodes = hasSelected
+    ? state.visibleNodes.filter(node => node.id === state.selectedId || selectedNeighbors.has(node.id) || node.id === state.hoveredId)
+    : state.visibleNodes.filter(node => node.id === state.hoveredId);
   context.font = '12px Pretendard Variable, Pretendard, sans-serif';
   context.textBaseline = 'middle';
   for (const node of labeledNodes.slice(0, 18)) {
     const label = node.title.length > 26 ? `${node.title.slice(0, 25)}…` : node.title;
     const textX = node.x + radius(node) + 8;
     const textY = node.y;
-    context.fillStyle = 'rgba(8,8,10,0.84)';
+    context.fillStyle = hasSelected && node.id !== state.selectedId && !selectedNeighbors.has(node.id)
+      ? 'rgba(8,8,10,0.54)'
+      : 'rgba(8,8,10,0.84)';
     const metrics = context.measureText(label);
     const boxWidth = metrics.width + 12;
     context.beginPath();
     context.roundRect(textX - 6, textY - 11, boxWidth, 22, 10);
     context.fill();
-    context.fillStyle = 'rgba(245,247,251,0.92)';
+    context.fillStyle = 'rgba(245,247,251,0.94)';
     context.fillText(label, textX, textY);
   }
 
