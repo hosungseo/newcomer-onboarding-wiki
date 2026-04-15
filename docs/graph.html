@@ -591,6 +591,14 @@ canvas.dragging { cursor: grabbing; }
   border-color: rgba(155,95,255,0.38);
   background: rgba(155,95,255,0.12);
 }
+.evidence-filter-count {
+  margin-left: 6px;
+  font-size: 11px;
+  color: var(--text-3);
+}
+.evidence-filter-btn.active .evidence-filter-count {
+  color: var(--text-2);
+}
 .evidence-list {
   display: flex;
   flex-direction: column;
@@ -1672,6 +1680,19 @@ function filterWhyConnected(items) {
   return next;
 }
 
+function buildWhyTypeCounts(items) {
+  const counts = {
+    all: items.length,
+    wikilink: 0,
+    'md-link': 0,
+    'backtick-ref': 0,
+  };
+  for (const item of items) {
+    if (Object.prototype.hasOwnProperty.call(counts, item.type)) counts[item.type] += 1;
+  }
+  return counts;
+}
+
 function buildWhyConnected(nodeId) {
   const relatedLinks = state.baseLinks.filter(link => {
     const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
@@ -1777,7 +1798,9 @@ function updateInspector() {
   }, new Map()).entries()]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko'))
     .slice(0, 5);
-  const whyConnected = filterWhyConnected(buildWhyConnected(node.id));
+  const allWhyConnected = buildWhyConnected(node.id);
+  const whyConnected = filterWhyConnected(allWhyConnected);
+  const whyTypeCounts = buildWhyTypeCounts(allWhyConnected);
   const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
   const preview = node.preview || node.summary || '미리보기 텍스트가 아직 없습니다.';
 
@@ -1822,10 +1845,10 @@ function updateInspector() {
         <button class="evidence-filter-btn ${state.evidenceFilter === 'in' ? 'active' : ''}" id="why-filter-in">in</button>
       </div>
       <div class="evidence-toolbar">
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'all' ? 'active' : ''}" id="why-type-all">all types</button>
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'wikilink' ? 'active' : ''}" id="why-type-wikilink">wikilink</button>
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'md-link' ? 'active' : ''}" id="why-type-md-link">md-link</button>
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'backtick-ref' ? 'active' : ''}" id="why-type-backtick-ref">backtick</button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'all' ? 'active' : ''}" id="why-type-all">all types <span class="evidence-filter-count">${whyTypeCounts.all}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'wikilink' ? 'active' : ''}" id="why-type-wikilink">wikilink <span class="evidence-filter-count">${whyTypeCounts.wikilink}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'md-link' ? 'active' : ''}" id="why-type-md-link">md-link <span class="evidence-filter-count">${whyTypeCounts['md-link']}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'backtick-ref' ? 'active' : ''}" id="why-type-backtick-ref">backtick <span class="evidence-filter-count">${whyTypeCounts['backtick-ref']}</span></button>
       </div>
       <div class="evidence-list">${renderWhyConnected(whyConnected)}</div>
     </div>
