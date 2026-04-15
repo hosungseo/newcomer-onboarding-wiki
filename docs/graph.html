@@ -958,10 +958,16 @@ function githubUrl(relativePath) {
   return `${REPO_BLOB}/${relativePath.split('/').map(encodeURIComponent).join('/')}`;
 }
 
+function isSecondaryKind(kind) {
+  return kind === 'source' || kind === 'manifest' || kind === 'scouting' || kind === 'readme' || kind === 'raw';
+}
+
 function radius(node) {
-  const base = Math.max(2.5, Math.min(12, 2.8 + Math.sqrt(node.degree || 0) * 1.3));
-  if (node.id === state.selectedId) return base + 2.2;
-  if (node.id === state.hoveredId) return base + 1.4;
+  let base = 1.8 + Math.sqrt(node.degree || 0) * 0.72;
+  if (isSecondaryKind(node.kind)) base *= 0.72;
+  base = Math.max(1.45, Math.min(7.8, base));
+  if (node.id === state.selectedId) return base + 1.6;
+  if (node.id === state.hoveredId) return base + 0.9;
   return base;
 }
 
@@ -971,7 +977,7 @@ function initKinds(nodes) {
 }
 
 function localZoomScale() {
-  return state.localDepth === 2 ? 1.55 : 1.8;
+  return state.localDepth === 2 ? 1.18 : 1.32;
 }
 
 function applyPreset(name) {
@@ -1162,19 +1168,26 @@ function rebuildGraph() {
     .force('link', d3.forceLink(visibleLinks).id(d => d.id).distance(link => {
       const source = typeof link.source === 'object' ? link.source : state.nodeLookup.get(link.source);
       const target = typeof link.target === 'object' ? link.target : state.nodeLookup.get(link.target);
-      if (source?.isRaw || target?.isRaw) return 26;
-      if (source?.kind === target?.kind) return 48;
-      return 74;
+      if (source?.isRaw || target?.isRaw) return 22;
+      if (isSecondaryKind(source?.kind) || isSecondaryKind(target?.kind)) return 34;
+      if (source?.kind === target?.kind) return 56;
+      return 88;
     }).strength(link => {
       const source = typeof link.source === 'object' ? link.source : state.nodeLookup.get(link.source);
       const target = typeof link.target === 'object' ? link.target : state.nodeLookup.get(link.target);
-      return source?.isRaw || target?.isRaw ? 0.14 : 0.26;
+      if (source?.isRaw || target?.isRaw) return 0.08;
+      if (isSecondaryKind(source?.kind) || isSecondaryKind(target?.kind)) return 0.11;
+      return 0.2;
     }))
-    .force('charge', d3.forceManyBody().strength(node => node.isRaw ? -18 : -54 - Math.min(node.degree * 2.2, 24)))
+    .force('charge', d3.forceManyBody().strength(node => {
+      if (node.isRaw) return -12;
+      if (isSecondaryKind(node.kind)) return -28;
+      return -72 - Math.min(node.degree * 1.6, 22);
+    }))
     .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide().radius(node => radius(node) + (node.isRaw ? 2 : 5)).iterations(2))
-    .force('x', d3.forceX(width / 2).strength(0.012))
-    .force('y', d3.forceY(height / 2).strength(0.012))
+    .force('collision', d3.forceCollide().radius(node => radius(node) + (isSecondaryKind(node.kind) ? 1.5 : 3)).iterations(1))
+    .force('x', d3.forceX(width / 2).strength(0.009))
+    .force('y', d3.forceY(height / 2).strength(0.009))
     .alpha(1)
     .alphaDecay(0.045)
     .on('tick', () => {
@@ -1244,7 +1257,7 @@ function focusSelectedNodeAfterRestore() {
   if (!state.selectedId) return;
   const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
   if (!node) return;
-  zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.35, 0);
+  zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 0.98, 0);
 }
 
 function restoreViewportAfterLoad() {
@@ -1334,7 +1347,7 @@ function draw() {
   const hoveredNeighbors = getHoveredNeighborSet();
   const hasSelected = Boolean(state.selectedId);
   const hasHovered = Boolean(state.hoveredId);
-  const pulse = hasSelected ? (Math.sin((state.animationTime || performance.now()) / 380) + 1) / 2 : 0;
+  const pulse = hasSelected ? (Math.sin((state.animationTime || performance.now()) / 420) + 1) / 2 : 0;
 
   context.save();
   context.translate(state.transform.x, state.transform.y);
@@ -1345,6 +1358,7 @@ function draw() {
     const target = typeof link.target === 'object' ? link.target : state.nodeLookup.get(link.target);
     if (!source || !target) continue;
 
+    const secondaryLink = isSecondaryKind(source.kind) || isSecondaryKind(target.kind);
     const touchesSelected = hasSelected && (source.id === state.selectedId || target.id === state.selectedId);
     const nearSelected = hasSelected && (selectedNeighbors.has(source.id) || selectedNeighbors.has(target.id));
     const isSelectedLink = touchesSelected || (hasSelected && selectedNeighbors.has(source.id) && selectedNeighbors.has(target.id));
@@ -1354,18 +1368,18 @@ function draw() {
     context.beginPath();
     context.moveTo(source.x, source.y);
     context.lineTo(target.x, target.y);
-    context.lineWidth = touchesSelected ? 2.2 + pulse * 0.65 : isSelectedLink ? 1.65 : isHoveredLink ? 1.15 : 0.75;
+    context.lineWidth = touchesSelected ? 1.35 + pulse * 0.35 : isSelectedLink ? 1.0 : isHoveredLink ? 0.8 : 0.45;
     context.strokeStyle = touchesSelected
-      ? `rgba(212,186,255,${(0.72 + pulse * 0.22).toFixed(3)})`
+      ? `rgba(212,186,255,${(0.52 + pulse * 0.16).toFixed(3)})`
       : isSelectedLink
-        ? `rgba(199,162,255,${(0.42 + pulse * 0.14).toFixed(3)})`
+        ? `rgba(199,162,255,${(0.24 + pulse * 0.08).toFixed(3)})`
         : isHoveredLink
-          ? 'rgba(255,255,255,0.28)'
+          ? 'rgba(255,255,255,0.14)'
           : isMuted
-            ? 'rgba(255,255,255,0.02)'
-            : source.isRaw || target.isRaw
-              ? 'rgba(255,255,255,0.07)'
-              : 'rgba(255,255,255,0.11)';
+            ? 'rgba(255,255,255,0.01)'
+            : secondaryLink
+              ? 'rgba(255,255,255,0.028)'
+              : 'rgba(255,255,255,0.055)';
     context.stroke();
   }
 
@@ -1376,35 +1390,36 @@ function draw() {
     const isHovered = node.id === state.hoveredId;
     const isNeighbor = selectedNeighbors.has(node.id);
     const isHoverNeighbor = hoveredNeighbors.has(node.id);
+    const secondary = isSecondaryKind(node.kind);
     const isMuted = hasSelected && !isSelected && !isNeighbor;
     const alpha = isSelected
       ? 1
       : isHovered
-        ? 1
+        ? 0.96
         : isMuted
-          ? (node.isRaw ? 0.06 : 0.14)
-          : node.isRaw
-            ? 0.68
-            : 0.96;
+          ? (secondary ? 0.04 : 0.12)
+          : secondary
+            ? 0.34
+            : 0.9;
 
     if (isSelected) {
       context.save();
-      context.shadowColor = `rgba(155,95,255,${(0.38 + pulse * 0.26).toFixed(3)})`;
-      context.shadowBlur = 18 + pulse * 16;
+      context.shadowColor = `rgba(155,95,255,${(0.28 + pulse * 0.18).toFixed(3)})`;
+      context.shadowBlur = 10 + pulse * 10;
       context.beginPath();
-      context.arc(node.x, node.y, nodeRadius + 7.5 + pulse * 2.8, 0, Math.PI * 2);
-      context.fillStyle = `rgba(155,95,255,${(0.14 + pulse * 0.12).toFixed(3)})`;
+      context.arc(node.x, node.y, nodeRadius + 4.5 + pulse * 1.4, 0, Math.PI * 2);
+      context.fillStyle = `rgba(155,95,255,${(0.1 + pulse * 0.08).toFixed(3)})`;
       context.fill();
       context.restore();
     } else if (isHovered) {
       context.beginPath();
-      context.arc(node.x, node.y, nodeRadius + 6, 0, Math.PI * 2);
-      context.fillStyle = 'rgba(255,255,255,0.12)';
-      context.fill();
-    } else if (isNeighbor || isHoverNeighbor) {
-      context.beginPath();
       context.arc(node.x, node.y, nodeRadius + 3.5, 0, Math.PI * 2);
-      context.fillStyle = hasSelected ? 'rgba(199,162,255,0.12)' : 'rgba(199,162,255,0.09)';
+      context.fillStyle = 'rgba(255,255,255,0.08)';
+      context.fill();
+    } else if ((isNeighbor || isHoverNeighbor) && !secondary) {
+      context.beginPath();
+      context.arc(node.x, node.y, nodeRadius + 2.2, 0, Math.PI * 2);
+      context.fillStyle = hasSelected ? 'rgba(199,162,255,0.08)' : 'rgba(199,162,255,0.05)';
       context.fill();
     }
 
@@ -1415,39 +1430,39 @@ function draw() {
     context.fillStyle = color;
     context.fill();
 
-    context.beginPath();
-    context.arc(node.x, node.y, Math.max(1.3, nodeRadius * 0.38), 0, Math.PI * 2);
-    context.fillStyle = 'rgba(255,255,255,0.92)';
-    context.fill();
+    if (!secondary || isSelected || isHovered) {
+      context.beginPath();
+      context.arc(node.x, node.y, Math.max(0.7, nodeRadius * 0.22), 0, Math.PI * 2);
+      context.fillStyle = 'rgba(255,255,255,0.82)';
+      context.fill();
+    }
     context.restore();
 
     if (isSelected) {
       context.beginPath();
-      context.arc(node.x, node.y, nodeRadius + 1.8 + pulse * 0.9, 0, Math.PI * 2);
-      context.strokeStyle = `rgba(245,247,251,${(0.7 + pulse * 0.18).toFixed(3)})`;
-      context.lineWidth = 1.1 + pulse * 0.6;
+      context.arc(node.x, node.y, nodeRadius + 1.1 + pulse * 0.45, 0, Math.PI * 2);
+      context.strokeStyle = `rgba(245,247,251,${(0.56 + pulse * 0.14).toFixed(3)})`;
+      context.lineWidth = 0.85 + pulse * 0.3;
       context.stroke();
     }
   }
 
   const labeledNodes = hasSelected
-    ? state.visibleNodes.filter(node => node.id === state.selectedId || selectedNeighbors.has(node.id) || node.id === state.hoveredId)
-    : state.visibleNodes.filter(node => node.id === state.hoveredId);
-  context.font = '12px Pretendard Variable, Pretendard, sans-serif';
+    ? state.visibleNodes.filter(node => node.id === state.selectedId || (!isSecondaryKind(node.kind) && selectedNeighbors.has(node.id)) || node.id === state.hoveredId)
+    : state.visibleNodes.filter(node => node.id === state.hoveredId && !isSecondaryKind(node.kind));
+  context.font = '11px Pretendard Variable, Pretendard, sans-serif';
   context.textBaseline = 'middle';
-  for (const node of labeledNodes.slice(0, 18)) {
+  for (const node of labeledNodes.slice(0, 12)) {
     const label = node.title.length > 26 ? `${node.title.slice(0, 25)}…` : node.title;
-    const textX = node.x + radius(node) + 8;
+    const textX = node.x + radius(node) + 7;
     const textY = node.y;
-    context.fillStyle = hasSelected && node.id !== state.selectedId && !selectedNeighbors.has(node.id)
-      ? 'rgba(8,8,10,0.54)'
-      : 'rgba(8,8,10,0.84)';
+    context.fillStyle = 'rgba(8,8,10,0.72)';
     const metrics = context.measureText(label);
-    const boxWidth = metrics.width + 12;
+    const boxWidth = metrics.width + 10;
     context.beginPath();
-    context.roundRect(textX - 6, textY - 11, boxWidth, 22, 10);
+    context.roundRect(textX - 5, textY - 10, boxWidth, 20, 9);
     context.fill();
-    context.fillStyle = 'rgba(245,247,251,0.94)';
+    context.fillStyle = 'rgba(245,247,251,0.92)';
     context.fillText(label, textX, textY);
   }
 
@@ -1740,14 +1755,14 @@ function updateInspector() {
   `;
 
   const focusBtn = inspectorBody.querySelector('#focus-node-btn');
-  focusBtn.onclick = () => zoomToNode(node, 1.45);
+  focusBtn.onclick = () => zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.02);
 
   const toggleModeBtn = inspectorBody.querySelector('#toggle-mode-btn');
   toggleModeBtn.onclick = () => {
     state.graphMode = state.graphMode === 'local' ? 'global' : 'local';
     rebuildGraph();
     const nextNode = state.nodeLookup.get(node.id) || state.baseNodeLookup.get(node.id);
-    if (nextNode) zoomToNode(nextNode, state.graphMode === 'local' ? localZoomScale() : 1.35);
+    if (nextNode) zoomToNode(nextNode, state.graphMode === 'local' ? localZoomScale() : 0.98);
   };
 
   const copyLinkBtn = inspectorBody.querySelector('#copy-link-btn');
@@ -1847,7 +1862,7 @@ function getFocusRect() {
   };
 }
 
-function zoomToNode(node, scale = 1.35, duration = 480) {
+function zoomToNode(node, scale = 0.98, duration = 480) {
   const focus = getFocusRect();
   const target = d3.zoomIdentity
     .translate(focus.cx, focus.cy)
@@ -1987,7 +2002,7 @@ window.addEventListener('keydown', event => {
     state.graphMode = state.graphMode === 'local' ? 'global' : 'local';
     rebuildGraph();
     const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
-    if (node) zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.35);
+    if (node) zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 0.98);
     return;
   }
 
