@@ -946,6 +946,7 @@ const state = {
   activeKinds: new Set(),
   activePreset: 'knowledge',
   evidenceFilter: 'all',
+  evidenceTypeFilter: 'all',
   selectedTrail: [],
   graphMode: 'global',
   localDepth: 1,
@@ -972,6 +973,7 @@ const INITIAL_URL_STATE = (() => {
     preset: params.get('preset') || 'knowledge',
     raw: params.get('raw') === '1',
     evidence: params.get('why') === 'out' ? 'out' : params.get('why') === 'in' ? 'in' : 'all',
+    evidenceType: ['wikilink', 'md-link', 'backtick-ref'].includes(params.get('whyType')) ? params.get('whyType') : 'all',
     kinds: (params.get('kinds') || '').split(',').map(v => v.trim()).filter(Boolean),
     camera: Number.isFinite(tx) && Number.isFinite(ty) && Number.isFinite(z) && z > 0 ? { tx, ty, z } : null,
   };
@@ -1053,6 +1055,9 @@ function syncUrlState() {
   if (state.evidenceFilter !== 'all') params.set('why', state.evidenceFilter);
   else params.delete('why');
 
+  if (state.evidenceTypeFilter !== 'all') params.set('whyType', state.evidenceTypeFilter);
+  else params.delete('whyType');
+
   if (Number.isFinite(state.transform.x) && Number.isFinite(state.transform.y) && Number.isFinite(state.transform.k)) {
     params.set('tx', state.transform.x.toFixed(2));
     params.set('ty', state.transform.y.toFixed(2));
@@ -1081,6 +1086,7 @@ function restoreUrlState() {
   state.includeRaw = INITIAL_URL_STATE.raw;
   state.localDepth = INITIAL_URL_STATE.depth;
   state.evidenceFilter = INITIAL_URL_STATE.evidence;
+  state.evidenceTypeFilter = INITIAL_URL_STATE.evidenceType;
   state.query = INITIAL_URL_STATE.query;
   searchInput.value = INITIAL_URL_STATE.query;
 
@@ -1660,8 +1666,10 @@ function escapeHtml(value) {
 }
 
 function filterWhyConnected(items) {
-  if (state.evidenceFilter === 'all') return items;
-  return items.filter(item => item.direction === state.evidenceFilter);
+  let next = items;
+  if (state.evidenceFilter !== 'all') next = next.filter(item => item.direction === state.evidenceFilter);
+  if (state.evidenceTypeFilter !== 'all') next = next.filter(item => item.type === state.evidenceTypeFilter);
+  return next;
 }
 
 function buildWhyConnected(nodeId) {
@@ -1705,11 +1713,17 @@ function buildWhyConnected(nodeId) {
 
 function renderWhyConnected(items) {
   if (!items.length) {
-    const message = state.evidenceFilter === 'all'
-      ? '대표 연결 근거를 아직 찾지 못했습니다.'
+    const directionLabel = state.evidenceFilter === 'all'
+      ? '전체 방향'
       : state.evidenceFilter === 'out'
-        ? 'outbound 대표 근거가 없습니다.'
-        : 'inbound 대표 근거가 없습니다.';
+        ? 'outbound'
+        : 'inbound';
+    const typeLabel = state.evidenceTypeFilter === 'all'
+      ? '전체 타입'
+      : (LINK_TYPE_LABEL[state.evidenceTypeFilter] || state.evidenceTypeFilter);
+    const message = state.evidenceFilter === 'all' && state.evidenceTypeFilter === 'all'
+      ? '대표 연결 근거를 아직 찾지 못했습니다.'
+      : `필터(${directionLabel} · ${typeLabel})에 맞는 근거가 없습니다.`;
     return `<div class="search-empty">${message}</div>`;
   }
 
@@ -1807,6 +1821,12 @@ function updateInspector() {
         <button class="evidence-filter-btn ${state.evidenceFilter === 'out' ? 'active' : ''}" id="why-filter-out">out</button>
         <button class="evidence-filter-btn ${state.evidenceFilter === 'in' ? 'active' : ''}" id="why-filter-in">in</button>
       </div>
+      <div class="evidence-toolbar">
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'all' ? 'active' : ''}" id="why-type-all">all types</button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'wikilink' ? 'active' : ''}" id="why-type-wikilink">wikilink</button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'md-link' ? 'active' : ''}" id="why-type-md-link">md-link</button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'backtick-ref' ? 'active' : ''}" id="why-type-backtick-ref">backtick</button>
+      </div>
       <div class="evidence-list">${renderWhyConnected(whyConnected)}</div>
     </div>
     <div class="neighbor-section">
@@ -1849,7 +1869,17 @@ function updateInspector() {
 
   for (const button of inspectorBody.querySelectorAll('.evidence-filter-btn')) {
     button.onclick = () => {
-      state.evidenceFilter = button.id === 'why-filter-out' ? 'out' : button.id === 'why-filter-in' ? 'in' : 'all';
+      if (button.id.startsWith('why-filter-')) {
+        state.evidenceFilter = button.id === 'why-filter-out' ? 'out' : button.id === 'why-filter-in' ? 'in' : 'all';
+      } else if (button.id.startsWith('why-type-')) {
+        state.evidenceTypeFilter = button.id === 'why-type-wikilink'
+          ? 'wikilink'
+          : button.id === 'why-type-md-link'
+            ? 'md-link'
+            : button.id === 'why-type-backtick-ref'
+              ? 'backtick-ref'
+              : 'all';
+      }
       updateInspector();
       syncUrlState();
     };
