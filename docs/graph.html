@@ -795,6 +795,20 @@ const state = {
   positionCache: new Map(),
 };
 
+const INITIAL_URL_STATE = (() => {
+  const params = new URL(window.location.href).searchParams;
+  return {
+    selected: params.get('selected') || '',
+    query: params.get('q') || '',
+    mode: params.get('mode') === 'local' ? 'local' : 'global',
+    depth: params.get('depth') === '2' ? 2 : 1,
+    preset: params.get('preset') || 'all',
+    raw: params.get('raw') === '1',
+    kinds: (params.get('kinds') || '').split(',').map(v => v.trim()).filter(Boolean),
+  };
+})();
+let isRestoringUrlState = false;
+
 let width = 0;
 let height = 0;
 let devicePixelRatioValue = Math.max(1, window.devicePixelRatio || 1);
@@ -825,6 +839,68 @@ function applyPreset(name) {
   state.activeKinds = new Set([...allowed].filter(kind => availableKinds.has(kind)));
   if (state.includeRaw && name !== 'knowledge' && availableKinds.has('raw')) state.activeKinds.add('raw');
   state.activePreset = name;
+}
+
+function syncUrlState() {
+  if (!state.data || isRestoringUrlState) return;
+  const url = new URL(window.location.href);
+  const params = url.searchParams;
+  const selectedId = state.selectedId || '';
+  const mode = selectedId && state.graphMode === 'local' ? 'local' : 'global';
+
+  if (selectedId) params.set('selected', selectedId);
+  else params.delete('selected');
+
+  if (state.query.trim()) params.set('q', state.query.trim());
+  else params.delete('q');
+
+  if (mode !== 'global') params.set('mode', mode);
+  else params.delete('mode');
+
+  if (state.localDepth !== 1) params.set('depth', String(state.localDepth));
+  else params.delete('depth');
+
+  if (state.activePreset !== 'all') params.set('preset', state.activePreset);
+  else params.delete('preset');
+
+  if (state.activePreset === 'custom') {
+    const kinds = [...state.activeKinds].filter(kind => kind !== 'raw').sort();
+    if (kinds.length) params.set('kinds', kinds.join(','));
+    else params.delete('kinds');
+  } else {
+    params.delete('kinds');
+  }
+
+  if (state.includeRaw) params.set('raw', '1');
+  else params.delete('raw');
+
+  const next = `${url.pathname}${params.toString() ? `?${params.toString()}` : ''}${url.hash}`;
+  history.replaceState(null, '', next);
+}
+
+function restoreUrlState() {
+  isRestoringUrlState = true;
+
+  state.includeRaw = INITIAL_URL_STATE.raw;
+  state.localDepth = INITIAL_URL_STATE.depth;
+  state.query = INITIAL_URL_STATE.query;
+  searchInput.value = INITIAL_URL_STATE.query;
+
+  if (INITIAL_URL_STATE.preset === 'custom' && INITIAL_URL_STATE.kinds.length) {
+    const availableKinds = new Set(state.allNodes.map(node => node.kind));
+    state.activeKinds = new Set(INITIAL_URL_STATE.kinds.filter(kind => availableKinds.has(kind)));
+    if (state.includeRaw && availableKinds.has('raw')) state.activeKinds.add('raw');
+    state.activePreset = 'custom';
+  } else {
+    applyPreset(INITIAL_URL_STATE.preset);
+  }
+
+  if (INITIAL_URL_STATE.selected && state.allNodes.some(node => node.id === INITIAL_URL_STATE.selected)) {
+    state.selectedId = INITIAL_URL_STATE.selected;
+  }
+
+  state.graphMode = INITIAL_URL_STATE.mode === 'local' && state.selectedId ? 'local' : 'global';
+  isRestoringUrlState = false;
 }
 
 function buildNodes(rawNodes) {
@@ -951,6 +1027,7 @@ function rebuildGraph() {
   renderKindChips();
   updateSearchResults();
   fitGraph(0);
+  syncUrlState();
 }
 
 function setCanvasSize() {
@@ -1000,6 +1077,13 @@ function updateStats() {
   graphModeKicker.textContent = state.graphMode === 'local' ? 'Local Graph' : 'Global Graph';
 }
 
+function focusSelectedNodeAfterRestore() {
+  if (!state.selectedId) return;
+  const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+  if (!node) return;
+  zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.35, 0);
+}
+
 function renderKindChips() {
   const counts = new Map();
   for (const node of state.allNodes) {
@@ -1022,6 +1106,7 @@ function renderKindChips() {
       }
       state.activePreset = 'custom';
       rebuildGraph();
+      syncUrlState();
     };
     kindGrid.appendChild(button);
   }
@@ -1250,6 +1335,19 @@ function updateSearchResults() {
 function openNodeInLocal(id) {
   state.graphMode = 'local';
   selectNode(id, true);
+}
+
+function clearSelection() {
+  state.selectedId = null;
+  syncPulseLoop();
+  if (state.graphMode === 'local') {
+    state.graphMode = 'global';
+    rebuildGraph();
+    return;
+  }
+  updateInspector();
+  draw();
+  syncUrlState();
 }
 
 function renderResult(node) {
@@ -1483,6 +1581,7 @@ function selectNode(id, focus = false) {
 
   updateInspector();
   draw();
+  syncUrlState();
   if (focus) {
     const node = state.nodeLookup.get(id) || state.baseNodeLookup.get(id);
     if (node) zoomToNode(node);
@@ -1518,15 +1617,7 @@ canvas.addEventListener('mouseleave', () => {
 canvas.addEventListener('click', event => {
   const node = findNodeAt(event.clientX, event.clientY);
   if (!node) {
-    state.selectedId = null;
-    syncPulseLoop();
-    if (state.graphMode === 'local') {
-      state.graphMode = 'global';
-      rebuildGraph();
-      return;
-    }
-    updateInspector();
-    draw();
+    clearSelection();
     return;
   }
   selectNode(node.id);
@@ -1535,6 +1626,7 @@ canvas.addEventListener('click', event => {
 searchInput.addEventListener('input', event => {
   state.query = event.target.value || '';
   updateSearchResults();
+  syncUrlState();
 });
 searchInput.addEventListener('keydown', event => {
   if (event.key !== 'Enter') return;
@@ -1622,10 +1714,13 @@ state.data = await response.json();
 state.allNodes = state.data.nodes;
 state.allLinks = state.data.links;
 initKinds(state.allNodes);
+restoreUrlState();
 setCanvasSize();
 rebuildGraph();
 updateInspector();
 updateSearchResults();
+focusSelectedNodeAfterRestore();
+syncUrlState();
 </script>
 </body>
 </html>
