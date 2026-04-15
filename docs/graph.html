@@ -484,6 +484,10 @@ canvas.dragging { cursor: grabbing; }
   border-color: rgba(155,95,255,0.38);
   background: rgba(155,95,255,0.08);
 }
+.action-btn.success {
+  border-color: rgba(52,211,153,0.35);
+  background: rgba(52,211,153,0.14);
+}
 .meta-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -684,6 +688,7 @@ canvas.dragging { cursor: grabbing; }
       <li>local graph는 선택한 노드의 1-hop / 2-hop 연결만 남길 수 있습니다</li>
       <li>색은 note 종류를, 크기는 연결 정도를 뜻합니다</li>
       <li>검색 후 Enter를 누르면 바로 local graph로 들어갑니다</li>
+      <li><code>/</code> 검색, <code>Esc</code> 해제, <code>L</code> 로컬 토글, <code>1</code>/<code>2</code> hop 변경</li>
     </ul>
   </aside>
 
@@ -1350,6 +1355,39 @@ function clearSelection() {
   syncUrlState();
 }
 
+function clearSearchQuery() {
+  state.query = '';
+  searchInput.value = '';
+  updateSearchResults();
+  syncUrlState();
+}
+
+function isTypingTarget(target) {
+  if (!target) return false;
+  const tagName = target.tagName?.toLowerCase();
+  return tagName === 'input' || tagName === 'textarea' || target.isContentEditable;
+}
+
+async function copyCurrentShareLink() {
+  syncUrlState();
+  const text = window.location.href;
+  if (navigator.clipboard?.writeText) {
+    await navigator.clipboard.writeText(text);
+    return true;
+  }
+
+  const textarea = document.createElement('textarea');
+  textarea.value = text;
+  textarea.setAttribute('readonly', '');
+  textarea.style.position = 'absolute';
+  textarea.style.left = '-9999px';
+  document.body.appendChild(textarea);
+  textarea.select();
+  const ok = document.execCommand('copy');
+  document.body.removeChild(textarea);
+  return ok;
+}
+
 function renderResult(node) {
   return `
     <div class="search-result-row">
@@ -1437,6 +1475,7 @@ function updateInspector() {
     <div class="action-row">
       <button class="action-btn" id="focus-node-btn">노드 중앙으로</button>
       <button class="action-btn" id="toggle-mode-btn">${state.graphMode === 'local' ? '전체 그래프로' : '로컬 그래프로'}</button>
+      <button class="action-btn" id="copy-link-btn">공유 링크 복사</button>
       <a class="action-link" href="${githubUrl(node.path)}" target="_blank" rel="noopener">GitHub 원문 열기</a>
     </div>
     <div class="meta-grid">
@@ -1468,6 +1507,23 @@ function updateInspector() {
     rebuildGraph();
     const nextNode = state.nodeLookup.get(node.id) || state.baseNodeLookup.get(node.id);
     if (nextNode) zoomToNode(nextNode, state.graphMode === 'local' ? localZoomScale() : 1.35);
+  };
+
+  const copyLinkBtn = inspectorBody.querySelector('#copy-link-btn');
+  copyLinkBtn.onclick = async () => {
+    const original = copyLinkBtn.textContent;
+    try {
+      const ok = await copyCurrentShareLink();
+      copyLinkBtn.textContent = ok ? '복사됨' : '복사 실패';
+      copyLinkBtn.classList.toggle('success', ok);
+    } catch {
+      copyLinkBtn.textContent = '복사 실패';
+      copyLinkBtn.classList.remove('success');
+    }
+    window.setTimeout(() => {
+      copyLinkBtn.textContent = original;
+      copyLinkBtn.classList.remove('success');
+    }, 1200);
   };
 
   const outboundList = inspectorBody.querySelector('#outbound-list');
@@ -1638,6 +1694,60 @@ searchInput.addEventListener('keydown', event => {
     return;
   }
   first.click();
+});
+
+window.addEventListener('keydown', event => {
+  if (event.defaultPrevented) return;
+  const typing = isTypingTarget(event.target);
+
+  if (event.key === '/' && !typing) {
+    event.preventDefault();
+    searchInput.focus();
+    searchInput.select();
+    return;
+  }
+
+  if (event.key === 'Escape') {
+    if (typing && state.query.trim()) {
+      clearSearchQuery();
+      searchInput.blur();
+      return;
+    }
+    if (state.selectedId) {
+      clearSelection();
+    }
+    return;
+  }
+
+  if (typing) return;
+
+  if ((event.key === 'l' || event.key === 'L') && state.selectedId) {
+    event.preventDefault();
+    state.graphMode = state.graphMode === 'local' ? 'global' : 'local';
+    rebuildGraph();
+    const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+    if (node) zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.35);
+    return;
+  }
+
+  if (event.key === '1' && state.selectedId) {
+    event.preventDefault();
+    state.localDepth = 1;
+    state.graphMode = 'local';
+    rebuildGraph();
+    const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+    if (node) zoomToNode(node, localZoomScale());
+    return;
+  }
+
+  if (event.key === '2' && state.selectedId) {
+    event.preventDefault();
+    state.localDepth = 2;
+    state.graphMode = 'local';
+    rebuildGraph();
+    const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+    if (node) zoomToNode(node, localZoomScale());
+  }
 });
 
 rawToggle.addEventListener('click', () => {
