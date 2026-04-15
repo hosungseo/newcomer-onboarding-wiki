@@ -633,6 +633,11 @@ canvas.dragging { cursor: grabbing; }
         <button class="toggle-btn" id="depth-2">2-hop</button>
         <button class="toggle-btn" id="raw-toggle">raw layer 표시</button>
       </div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" id="preset-all">all layers</button>
+        <button class="toggle-btn" id="preset-knowledge">knowledge</button>
+        <button class="toggle-btn" id="preset-sources">sources</button>
+      </div>
     </div>
 
     <ul class="help-list">
@@ -640,7 +645,7 @@ canvas.dragging { cursor: grabbing; }
       <li>노드를 클릭하면 오른쪽 inspector가 열립니다</li>
       <li>local graph는 선택한 노드의 1-hop / 2-hop 연결만 남길 수 있습니다</li>
       <li>색은 note 종류를, 크기는 연결 정도를 뜻합니다</li>
-      <li>검색하면 해당 노드로 카메라가 바로 이동합니다</li>
+      <li>검색 후 Enter를 누르면 바로 local graph로 들어갑니다</li>
     </ul>
   </aside>
 
@@ -674,6 +679,9 @@ const globalModeBtn = document.getElementById('mode-global');
 const localModeBtn = document.getElementById('mode-local');
 const depth1Btn = document.getElementById('depth-1');
 const depth2Btn = document.getElementById('depth-2');
+const presetAllBtn = document.getElementById('preset-all');
+const presetKnowledgeBtn = document.getElementById('preset-knowledge');
+const presetSourcesBtn = document.getElementById('preset-sources');
 const graphModeKicker = document.getElementById('graph-mode-kicker');
 const fitBtn = document.getElementById('fit-btn');
 const resetBtn = document.getElementById('reset-btn');
@@ -717,6 +725,12 @@ const LABEL_BY_KIND = {
   note: 'note',
 };
 
+const PRESET_KINDS = {
+  all: ['note', 'concept', 'faq', 'gate', 'hub', 'manifest', 'path', 'process', 'readme', 'section', 'source', 'scouting'],
+  knowledge: ['note', 'concept', 'faq', 'gate', 'hub', 'path', 'process', 'readme', 'section'],
+  sources: ['source', 'scouting', 'manifest'],
+};
+
 const state = {
   data: null,
   allNodes: [],
@@ -733,6 +747,7 @@ const state = {
   hoveredId: null,
   includeRaw: false,
   activeKinds: new Set(),
+  activePreset: 'all',
   graphMode: 'global',
   localDepth: 1,
   query: '',
@@ -760,6 +775,18 @@ function radius(node) {
 function initKinds(nodes) {
   const orderedKinds = [...new Set(nodes.map(node => node.kind))];
   state.activeKinds = new Set(orderedKinds.filter(kind => kind !== 'raw'));
+}
+
+function localZoomScale() {
+  return state.localDepth === 2 ? 1.55 : 1.8;
+}
+
+function applyPreset(name) {
+  const allowed = new Set(PRESET_KINDS[name] || PRESET_KINDS.all);
+  const availableKinds = new Set(state.allNodes.map(node => node.kind));
+  state.activeKinds = new Set([...allowed].filter(kind => availableKinds.has(kind)));
+  if (state.includeRaw && name !== 'knowledge' && availableKinds.has('raw')) state.activeKinds.add('raw');
+  state.activePreset = name;
 }
 
 function buildNodes(rawNodes) {
@@ -929,6 +956,9 @@ function updateStats() {
   depth2Btn.classList.toggle('active', depthEnabled && state.localDepth === 2);
   depth1Btn.disabled = !state.selectedId;
   depth2Btn.disabled = !state.selectedId;
+  presetAllBtn.classList.toggle('active', state.activePreset === 'all');
+  presetKnowledgeBtn.classList.toggle('active', state.activePreset === 'knowledge');
+  presetSourcesBtn.classList.toggle('active', state.activePreset === 'sources');
   graphModeKicker.textContent = state.graphMode === 'local' ? 'Local Graph' : 'Global Graph';
 }
 
@@ -952,6 +982,7 @@ function renderKindChips() {
       } else {
         state.activeKinds.add(kind);
       }
+      state.activePreset = 'custom';
       rebuildGraph();
     };
     kindGrid.appendChild(button);
@@ -1270,7 +1301,7 @@ function updateInspector() {
     state.graphMode = state.graphMode === 'local' ? 'global' : 'local';
     rebuildGraph();
     const nextNode = state.nodeLookup.get(node.id) || state.baseNodeLookup.get(node.id);
-    if (nextNode) zoomToNode(nextNode, state.graphMode === 'local' ? 1.8 : 1.35);
+    if (nextNode) zoomToNode(nextNode, state.graphMode === 'local' ? localZoomScale() : 1.35);
   };
 
   const outboundList = inspectorBody.querySelector('#outbound-list');
@@ -1377,7 +1408,7 @@ function selectNode(id, focus = false) {
     rebuildGraph();
     if (focus) {
       const node = state.nodeLookup.get(id) || state.baseNodeLookup.get(id);
-      if (node) zoomToNode(node, 1.8);
+      if (node) zoomToNode(node, localZoomScale());
     }
     return;
   }
@@ -1441,13 +1472,35 @@ searchInput.addEventListener('keydown', event => {
   if (event.key !== 'Enter') return;
   const first = searchResults.querySelector('.result-btn');
   if (!first) return;
+  if (state.query.trim()) {
+    const id = decodeURIComponent(first.dataset.id);
+    state.graphMode = 'local';
+    selectNode(id, true);
+    return;
+  }
   first.click();
 });
 
 rawToggle.addEventListener('click', () => {
   state.includeRaw = !state.includeRaw;
-  if (state.includeRaw) state.activeKinds.add('raw');
-  else state.activeKinds.delete('raw');
+  if (state.activePreset !== 'custom') {
+    applyPreset(state.activePreset);
+  } else {
+    if (state.includeRaw) state.activeKinds.add('raw');
+    else state.activeKinds.delete('raw');
+  }
+  rebuildGraph();
+});
+presetAllBtn.addEventListener('click', () => {
+  applyPreset('all');
+  rebuildGraph();
+});
+presetKnowledgeBtn.addEventListener('click', () => {
+  applyPreset('knowledge');
+  rebuildGraph();
+});
+presetSourcesBtn.addEventListener('click', () => {
+  applyPreset('sources');
   rebuildGraph();
 });
 globalModeBtn.addEventListener('click', () => {
@@ -1459,7 +1512,7 @@ localModeBtn.addEventListener('click', () => {
   state.graphMode = 'local';
   rebuildGraph();
   const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
-  if (node) zoomToNode(node, 1.8);
+  if (node) zoomToNode(node, localZoomScale());
 });
 depth1Btn.addEventListener('click', () => {
   if (!state.selectedId) return;
@@ -1467,7 +1520,7 @@ depth1Btn.addEventListener('click', () => {
   state.graphMode = 'local';
   rebuildGraph();
   const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
-  if (node) zoomToNode(node, 1.8);
+  if (node) zoomToNode(node, localZoomScale());
 });
 depth2Btn.addEventListener('click', () => {
   if (!state.selectedId) return;
@@ -1475,7 +1528,7 @@ depth2Btn.addEventListener('click', () => {
   state.graphMode = 'local';
   rebuildGraph();
   const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
-  if (node) zoomToNode(node, 1.55);
+  if (node) zoomToNode(node, localZoomScale());
 });
 fitBtn.addEventListener('click', () => fitGraph());
 resetBtn.addEventListener('click', () => {
