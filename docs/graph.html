@@ -1693,6 +1693,14 @@ function buildWhyTypeCounts(items) {
   return counts;
 }
 
+function buildWhyDirectionCounts(items) {
+  return {
+    all: items.length,
+    out: items.filter(item => item.direction === 'out').length,
+    in: items.filter(item => item.direction === 'in').length,
+  };
+}
+
 function buildWhyConnected(nodeId) {
   const relatedLinks = state.baseLinks.filter(link => {
     const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
@@ -1801,6 +1809,7 @@ function updateInspector() {
   const allWhyConnected = buildWhyConnected(node.id);
   const whyConnected = filterWhyConnected(allWhyConnected);
   const whyTypeCounts = buildWhyTypeCounts(allWhyConnected);
+  const whyDirectionCounts = buildWhyDirectionCounts(allWhyConnected);
   const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
   const preview = node.preview || node.summary || '미리보기 텍스트가 아직 없습니다.';
 
@@ -1840,9 +1849,9 @@ function updateInspector() {
     <div class="evidence-section">
       <p class="panel-title">Why connected</p>
       <div class="evidence-toolbar">
-        <button class="evidence-filter-btn ${state.evidenceFilter === 'all' ? 'active' : ''}" id="why-filter-all">all</button>
-        <button class="evidence-filter-btn ${state.evidenceFilter === 'out' ? 'active' : ''}" id="why-filter-out">out</button>
-        <button class="evidence-filter-btn ${state.evidenceFilter === 'in' ? 'active' : ''}" id="why-filter-in">in</button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'all' ? 'active' : ''}" id="why-filter-all">all <span class="evidence-filter-count">${whyDirectionCounts.all}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'out' ? 'active' : ''}" id="why-filter-out">out <span class="evidence-filter-count">${whyDirectionCounts.out}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'in' ? 'active' : ''}" id="why-filter-in">in <span class="evidence-filter-count">${whyDirectionCounts.in}</span></button>
       </div>
       <div class="evidence-toolbar">
         <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'all' ? 'active' : ''}" id="why-type-all">all types <span class="evidence-filter-count">${whyTypeCounts.all}</span></button>
