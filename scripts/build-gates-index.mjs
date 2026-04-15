@@ -68,5 +68,6 @@ entries.sort((a, b) => {
   if (a.priority !== b.priority) return a.priority - b.priority;
   return a.id.localeCompare(b.id, 'ko');
 });
-writeFileSync(INDEX, JSON.stringify({ version: new Date().toISOString().slice(0,10), gates: entries }, null, 2));
+const indexVersion = entries.map(entry => entry.version).filter(Boolean).sort().at(-1) || '0';
+writeFileSync(INDEX, JSON.stringify({ version: indexVersion, gates: entries }, null, 2));
 console.log(`✓ built ${entries.length} gate entries → docs/gates.json and docs/gates/*.yaml`);

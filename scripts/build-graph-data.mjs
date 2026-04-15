@@ -200,7 +200,6 @@ for (const link of links) {
 }
 
 const payload = {
-  generatedAt: new Date().toISOString(),
   repo: 'hosungseo/newcomer-onboarding-wiki',
   stats: {
     nodes: nodes.length,
