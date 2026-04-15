@@ -515,6 +515,25 @@ canvas.dragging { cursor: grabbing; }
 .evidence-section {
   margin: 0 0 18px;
 }
+.evidence-toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: -4px 0 12px;
+}
+.evidence-filter-btn {
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-2);
+  padding: 7px 11px;
+  cursor: pointer;
+}
+.evidence-filter-btn.active {
+  color: var(--text);
+  border-color: rgba(155,95,255,0.38);
+  background: rgba(155,95,255,0.12);
+}
 .evidence-list {
   display: flex;
   flex-direction: column;
@@ -754,7 +773,7 @@ canvas.dragging { cursor: grabbing; }
       <li>local graph는 선택한 노드의 1-hop / 2-hop 연결만 남길 수 있습니다</li>
       <li>색은 note 종류를, 크기는 연결 정도를 뜻합니다</li>
       <li>검색 후 Enter를 누르면 바로 local graph로 들어갑니다</li>
-      <li><code>/</code> 검색, <code>Esc</code> 해제, <code>L</code> 로컬 토글, <code>1</code>/<code>2</code> hop 변경</li>
+      <li><code>/</code> 검색, <code>Esc</code> 해제, <code>L</code> 로컬 토글, <code>1</code>/<code>2</code> hop 변경, <code>F</code> 현재 선택 다시 맞춤</li>
     </ul>
   </aside>
 
@@ -863,6 +882,7 @@ const state = {
   includeRaw: false,
   activeKinds: new Set(),
   activePreset: 'all',
+  evidenceFilter: 'all',
   graphMode: 'global',
   localDepth: 1,
   query: '',
@@ -887,6 +907,7 @@ const INITIAL_URL_STATE = (() => {
     depth: params.get('depth') === '2' ? 2 : 1,
     preset: params.get('preset') || 'all',
     raw: params.get('raw') === '1',
+    evidence: params.get('why') === 'out' ? 'out' : params.get('why') === 'in' ? 'in' : 'all',
     kinds: (params.get('kinds') || '').split(',').map(v => v.trim()).filter(Boolean),
     camera: Number.isFinite(tx) && Number.isFinite(ty) && Number.isFinite(z) && z > 0 ? { tx, ty, z } : null,
   };
@@ -959,6 +980,9 @@ function syncUrlState() {
   if (state.includeRaw) params.set('raw', '1');
   else params.delete('raw');
 
+  if (state.evidenceFilter !== 'all') params.set('why', state.evidenceFilter);
+  else params.delete('why');
+
   if (Number.isFinite(state.transform.x) && Number.isFinite(state.transform.y) && Number.isFinite(state.transform.k)) {
     params.set('tx', state.transform.x.toFixed(2));
     params.set('ty', state.transform.y.toFixed(2));
@@ -986,6 +1010,7 @@ function restoreUrlState() {
 
   state.includeRaw = INITIAL_URL_STATE.raw;
   state.localDepth = INITIAL_URL_STATE.depth;
+  state.evidenceFilter = INITIAL_URL_STATE.evidence;
   state.query = INITIAL_URL_STATE.query;
   searchInput.value = INITIAL_URL_STATE.query;
 
@@ -1540,6 +1565,11 @@ function escapeHtml(value) {
     .replace(/'/g, '&#39;');
 }
 
+function filterWhyConnected(items) {
+  if (state.evidenceFilter === 'all') return items;
+  return items.filter(item => item.direction === state.evidenceFilter);
+}
+
 function buildWhyConnected(nodeId) {
   const relatedLinks = state.baseLinks.filter(link => {
     const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
@@ -1581,7 +1611,12 @@ function buildWhyConnected(nodeId) {
 
 function renderWhyConnected(items) {
   if (!items.length) {
-    return '<div class="search-empty">대표 연결 근거를 아직 찾지 못했습니다.</div>';
+    const message = state.evidenceFilter === 'all'
+      ? '대표 연결 근거를 아직 찾지 못했습니다.'
+      : state.evidenceFilter === 'out'
+        ? 'outbound 대표 근거가 없습니다.'
+        : 'inbound 대표 근거가 없습니다.';
+    return `<div class="search-empty">${message}</div>`;
   }
 
   return items.map(item => `
@@ -1621,7 +1656,7 @@ function updateInspector() {
   }, new Map()).entries()]
     .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'ko'))
     .slice(0, 5);
-  const whyConnected = buildWhyConnected(node.id);
+  const whyConnected = filterWhyConnected(buildWhyConnected(node.id));
   const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
   const preview = node.preview || node.summary || '미리보기 텍스트가 아직 없습니다.';
 
@@ -1656,6 +1691,11 @@ function updateInspector() {
     </div>
     <div class="evidence-section">
       <p class="panel-title">Why connected</p>
+      <div class="evidence-toolbar">
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'all' ? 'active' : ''}" id="why-filter-all">all</button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'out' ? 'active' : ''}" id="why-filter-out">out</button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'in' ? 'active' : ''}" id="why-filter-in">in</button>
+      </div>
       <div class="evidence-list">${renderWhyConnected(whyConnected)}</div>
     </div>
     <div class="neighbor-section">
@@ -1695,6 +1735,14 @@ function updateInspector() {
       copyLinkBtn.classList.remove('success');
     }, 1200);
   };
+
+  for (const button of inspectorBody.querySelectorAll('.evidence-filter-btn')) {
+    button.onclick = () => {
+      state.evidenceFilter = button.id === 'why-filter-out' ? 'out' : button.id === 'why-filter-in' ? 'in' : 'all';
+      updateInspector();
+      syncUrlState();
+    };
+  }
 
   for (const button of inspectorBody.querySelectorAll('.evidence-item[data-id]')) {
     button.onclick = () => {
@@ -1903,6 +1951,13 @@ window.addEventListener('keydown', event => {
     event.preventDefault();
     state.graphMode = state.graphMode === 'local' ? 'global' : 'local';
     rebuildGraph();
+    const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
+    if (node) zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.35);
+    return;
+  }
+
+  if ((event.key === 'f' || event.key === 'F') && state.selectedId) {
+    event.preventDefault();
     const node = state.nodeLookup.get(state.selectedId) || state.baseNodeLookup.get(state.selectedId);
     if (node) zoomToNode(node, state.graphMode === 'local' ? localZoomScale() : 1.35);
     return;
