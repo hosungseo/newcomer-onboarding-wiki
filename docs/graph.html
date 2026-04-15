@@ -591,6 +591,10 @@ canvas.dragging { cursor: grabbing; }
   border-color: rgba(155,95,255,0.38);
   background: rgba(155,95,255,0.12);
 }
+.evidence-filter-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
 .evidence-filter-count {
   margin-left: 6px;
   font-size: 11px;
@@ -1808,8 +1812,25 @@ function updateInspector() {
     .slice(0, 5);
   const allWhyConnected = buildWhyConnected(node.id);
   const whyConnected = filterWhyConnected(allWhyConnected);
-  const whyTypeCounts = buildWhyTypeCounts(allWhyConnected);
-  const whyDirectionCounts = buildWhyDirectionCounts(allWhyConnected);
+  const typeScopedItems = state.evidenceFilter === 'all'
+    ? allWhyConnected
+    : allWhyConnected.filter(item => item.direction === state.evidenceFilter);
+  const directionScopedItems = state.evidenceTypeFilter === 'all'
+    ? allWhyConnected
+    : allWhyConnected.filter(item => item.type === state.evidenceTypeFilter);
+  const whyTypeCounts = buildWhyTypeCounts(typeScopedItems);
+  const whyDirectionCounts = buildWhyDirectionCounts(directionScopedItems);
+  const directionEnabled = {
+    all: whyDirectionCounts.all > 0 || state.evidenceFilter === 'all',
+    out: whyDirectionCounts.out > 0 || state.evidenceFilter === 'out',
+    in: whyDirectionCounts.in > 0 || state.evidenceFilter === 'in',
+  };
+  const typeEnabled = {
+    all: whyTypeCounts.all > 0 || state.evidenceTypeFilter === 'all',
+    wikilink: whyTypeCounts.wikilink > 0 || state.evidenceTypeFilter === 'wikilink',
+    'md-link': whyTypeCounts['md-link'] > 0 || state.evidenceTypeFilter === 'md-link',
+    'backtick-ref': whyTypeCounts['backtick-ref'] > 0 || state.evidenceTypeFilter === 'backtick-ref',
+  };
   const color = COLOR_BY_KIND[node.kind] || COLOR_BY_KIND.note;
   const preview = node.preview || node.summary || '미리보기 텍스트가 아직 없습니다.';
 
@@ -1849,15 +1870,15 @@ function updateInspector() {
     <div class="evidence-section">
       <p class="panel-title">Why connected</p>
       <div class="evidence-toolbar">
-        <button class="evidence-filter-btn ${state.evidenceFilter === 'all' ? 'active' : ''}" id="why-filter-all">all <span class="evidence-filter-count">${whyDirectionCounts.all}</span></button>
-        <button class="evidence-filter-btn ${state.evidenceFilter === 'out' ? 'active' : ''}" id="why-filter-out">out <span class="evidence-filter-count">${whyDirectionCounts.out}</span></button>
-        <button class="evidence-filter-btn ${state.evidenceFilter === 'in' ? 'active' : ''}" id="why-filter-in">in <span class="evidence-filter-count">${whyDirectionCounts.in}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'all' ? 'active' : ''}" id="why-filter-all" ${directionEnabled.all ? '' : 'disabled'}>all <span class="evidence-filter-count">${whyDirectionCounts.all}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'out' ? 'active' : ''}" id="why-filter-out" ${directionEnabled.out ? '' : 'disabled'}>out <span class="evidence-filter-count">${whyDirectionCounts.out}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceFilter === 'in' ? 'active' : ''}" id="why-filter-in" ${directionEnabled.in ? '' : 'disabled'}>in <span class="evidence-filter-count">${whyDirectionCounts.in}</span></button>
       </div>
       <div class="evidence-toolbar">
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'all' ? 'active' : ''}" id="why-type-all">all types <span class="evidence-filter-count">${whyTypeCounts.all}</span></button>
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'wikilink' ? 'active' : ''}" id="why-type-wikilink">wikilink <span class="evidence-filter-count">${whyTypeCounts.wikilink}</span></button>
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'md-link' ? 'active' : ''}" id="why-type-md-link">md-link <span class="evidence-filter-count">${whyTypeCounts['md-link']}</span></button>
-        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'backtick-ref' ? 'active' : ''}" id="why-type-backtick-ref">backtick <span class="evidence-filter-count">${whyTypeCounts['backtick-ref']}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'all' ? 'active' : ''}" id="why-type-all" ${typeEnabled.all ? '' : 'disabled'}>all types <span class="evidence-filter-count">${whyTypeCounts.all}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'wikilink' ? 'active' : ''}" id="why-type-wikilink" ${typeEnabled.wikilink ? '' : 'disabled'}>wikilink <span class="evidence-filter-count">${whyTypeCounts.wikilink}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'md-link' ? 'active' : ''}" id="why-type-md-link" ${typeEnabled['md-link'] ? '' : 'disabled'}>md-link <span class="evidence-filter-count">${whyTypeCounts['md-link']}</span></button>
+        <button class="evidence-filter-btn ${state.evidenceTypeFilter === 'backtick-ref' ? 'active' : ''}" id="why-type-backtick-ref" ${typeEnabled['backtick-ref'] ? '' : 'disabled'}>backtick <span class="evidence-filter-count">${whyTypeCounts['backtick-ref']}</span></button>
       </div>
       <div class="evidence-list">${renderWhyConnected(whyConnected)}</div>
     </div>
@@ -1901,6 +1922,7 @@ function updateInspector() {
 
   for (const button of inspectorBody.querySelectorAll('.evidence-filter-btn')) {
     button.onclick = () => {
+      if (button.disabled) return;
       if (button.id.startsWith('why-filter-')) {
         state.evidenceFilter = button.id === 'why-filter-out' ? 'out' : button.id === 'why-filter-in' ? 'in' : 'all';
       } else if (button.id.startsWith('why-type-')) {
