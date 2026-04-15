@@ -476,6 +476,34 @@ canvas.dragging { cursor: grabbing; }
   line-height: 1.6;
   color: var(--text-2);
 }
+.trail-section {
+  margin: 0 0 14px;
+}
+.trail-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.trail-chip {
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.03);
+  color: var(--text-2);
+  padding: 8px 11px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: transform 180ms var(--ease), border-color 180ms var(--ease), background 180ms var(--ease);
+}
+.trail-chip:hover {
+  transform: translateY(-1px);
+  border-color: rgba(155,95,255,0.28);
+  background: rgba(155,95,255,0.08);
+}
+.trail-chip.active {
+  color: var(--text);
+  border-color: rgba(155,95,255,0.38);
+  background: rgba(155,95,255,0.14);
+}
 .preview-card {
   margin: 0 0 16px;
   padding: 14px;
@@ -918,6 +946,7 @@ const state = {
   activeKinds: new Set(),
   activePreset: 'knowledge',
   evidenceFilter: 'all',
+  selectedTrail: [],
   graphMode: 'global',
   localDepth: 1,
   query: '',
@@ -1536,6 +1565,11 @@ function openNodeInLocal(id) {
   selectNode(id, true);
 }
 
+function pushSelectionToTrail(id) {
+  if (!id) return;
+  state.selectedTrail = [id, ...state.selectedTrail.filter(item => item !== id)].slice(0, 6);
+}
+
 function clearSelection() {
   state.selectedId = null;
   syncPulseLoop();
@@ -1691,6 +1725,19 @@ function renderWhyConnected(items) {
   `).join('');
 }
 
+function renderTrail() {
+  if (!state.selectedTrail.length) {
+    return '<div class="search-empty">아직 이동 기록이 없습니다.</div>';
+  }
+
+  return state.selectedTrail
+    .map(id => state.baseNodeLookup.get(id) || state.nodeLookup.get(id))
+    .filter(Boolean)
+    .map(node => `
+      <button class="trail-chip ${node.id === state.selectedId ? 'active' : ''}" type="button" data-trail-id="${encodeURIComponent(node.id)}">${escapeHtml(node.title)}</button>
+    `).join('');
+}
+
 function updateInspector() {
   const node = state.selectedId ? (state.baseNodeLookup.get(state.selectedId) || state.nodeLookup.get(state.selectedId)) : null;
   if (!node) {
@@ -1729,6 +1776,10 @@ function updateInspector() {
       <span class="node-path">${escapeHtml(node.path)}</span>
     </div>
     <p class="node-summary">${escapeHtml(node.summary || '요약이 아직 없습니다.')}</p>
+    <div class="trail-section">
+      <p class="panel-title">Trail</p>
+      <div class="trail-list">${renderTrail()}</div>
+    </div>
     <div class="preview-card">
       <p class="panel-title">Preview</p>
       <p class="preview-body">${escapeHtml(preview)}</p>
@@ -1807,6 +1858,13 @@ function updateInspector() {
   for (const button of inspectorBody.querySelectorAll('.evidence-item[data-id]')) {
     button.onclick = () => {
       const id = decodeURIComponent(button.dataset.id);
+      selectNode(id, true);
+    };
+  }
+
+  for (const button of inspectorBody.querySelectorAll('.trail-chip[data-trail-id]')) {
+    button.onclick = () => {
+      const id = decodeURIComponent(button.dataset.trailId);
       selectNode(id, true);
     };
   }
@@ -1914,6 +1972,7 @@ function fitGraph(duration = 560) {
 
 function selectNode(id, focus = false) {
   state.selectedId = id;
+  pushSelectionToTrail(id);
   syncPulseLoop();
   if (state.graphMode === 'local') {
     rebuildGraph();
