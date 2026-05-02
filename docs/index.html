@@ -131,6 +131,33 @@ header {
 .search-clear.show { display: inline-flex; }
 .search-empty { color: var(--text-3); font-size: 13px; padding: 20px 4px; text-align: center; }
 .gate-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; }
+.quick-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;
+  margin-bottom: 8px;
+}
+.quick-card {
+  text-align: left; width: 100%; padding: 16px 18px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--brand-tint) 72%, var(--card)), var(--card));
+  border: 1px solid color-mix(in srgb, var(--brand) 18%, var(--border));
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  cursor: pointer; transition: all 180ms var(--ease);
+  color: var(--text); display: flex; flex-direction: column; gap: 6px;
+}
+.quick-card:hover { border-color: var(--brand); box-shadow: var(--shadow-hover); transform: translateY(-2px); }
+.quick-card .eyebrow { font-size: 11px; color: var(--brand); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.quick-card .title { font-size: 15px; font-weight: 650; letter-spacing: -0.01em; }
+.quick-card .desc { font-size: 13px; color: var(--text-2); line-height: 1.45; }
+.quick-card .meta { font-size: 11px; color: var(--text-3); margin-top: 2px; }
+.quick-links {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 4px;
+}
+.quick-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 8px 12px; border-radius: 999px;
+  background: var(--muted); color: var(--text-2); text-decoration: none;
+  border: 1px solid var(--border); font-size: 13px; transition: all 150ms var(--ease);
+}
+.quick-link:hover { color: var(--brand); border-color: var(--brand); background: var(--brand-tint); }
 .gate-card {
   text-align: left; width: 100%; padding: 16px 18px;
   background: var(--card); border: 1px solid var(--border);
@@ -438,6 +465,62 @@ function renderLanding() {
   app.appendChild(hero);
 
   const main = gateIndex.filter(g => !g.isSubgate);
+  const quickStartIds = [
+    'gate-첫문서처리',
+    'gate-첫인사복무와문서처리',
+    'gate-첫급여',
+    'gate-첫승진',
+    'gate-첫복귀',
+    'gate-임용후첫달'
+  ];
+  const quickStart = quickStartIds
+    .map(id => gateIndexById[id])
+    .filter(Boolean);
+
+  const quickMeta = {
+    'gate-첫문서처리': { eyebrow: 'FIRST MILE', desc: '기안·검토·결재·등록 중 어디서 막혔는지 바로 좁혀 들어갑니다.' },
+    'gate-첫인사복무와문서처리': { eyebrow: 'NEWCOMER CORE', desc: '휴가·유연근무·수당·평가·문서처리 중 지금 필요한 축을 먼저 고릅니다.' },
+    'gate-첫급여': { eyebrow: 'PAY', desc: '봉급·수당·복지포인트·여비가 어떻게 다른 층위인지 빠르게 잡습니다.' },
+    'gate-첫승진': { eyebrow: 'PROMOTION', desc: '근평·경력·가점·명부·심사 구조를 처음부터 다시 정리합니다.' },
+    'gate-첫복귀': { eyebrow: 'RETURN', desc: '휴직·재해 뒤 복귀 절차와 승진경력 반영 질문을 분리해 봅니다.' },
+    'gate-임용후첫달': { eyebrow: 'FIRST MONTH', desc: '국가인재원·공통실무 모듈 기준으로 첫 달 학습 순서를 잡습니다.' }
+  };
+
+  const quickLabel = document.createElement('div');
+  quickLabel.className = 'section-title';
+  quickLabel.textContent = '처음 많이 찾는 시작점';
+  app.appendChild(quickLabel);
+
+  const quickIntro = document.createElement('p');
+  quickIntro.style.cssText = 'margin:0 0 12px;color:var(--text-2);font-size:14px;line-height:1.55';
+  quickIntro.textContent = '긴 목록을 보기 전에, 신규자와 전입자가 가장 자주 부딪히는 첫 질문부터 바로 들어가세요.';
+  app.appendChild(quickIntro);
+
+  const quickGrid = document.createElement('div');
+  quickGrid.className = 'quick-grid';
+  for (const g of quickStart) {
+    const meta = quickMeta[g.id] || { eyebrow: 'START', desc: g.trigger };
+    const card = document.createElement('button');
+    card.className = 'quick-card';
+    card.innerHTML = `
+      <div class="eyebrow">${escapeHtml(meta.eyebrow)}</div>
+      <div class="title">${escapeHtml(g.id.replace(/^gate-/, ''))}</div>
+      <div class="desc">${escapeHtml(meta.desc)}</div>
+      <div class="meta">리프 ${g.leafCount}개 · 진입 옵션 ${g.entryOptions}</div>
+    `;
+    card.onclick = () => { location.hash = encodeURIComponent(g.id); };
+    quickGrid.appendChild(card);
+  }
+  app.appendChild(quickGrid);
+
+  const quickLinks = document.createElement('div');
+  quickLinks.className = 'quick-links';
+  quickLinks.innerHTML = `
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/README.md" target="_blank" rel="noopener">README에서 전체 구조 보기</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/faq-신규공무원의-첫실무질문-인사복무와문서처리.md" target="_blank" rel="noopener">대표 FAQ로 바로 가기</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/newcomer-path-첫인사복무와문서처리-2026-04.md" target="_blank" rel="noopener">대표 path 보기</a>
+  `;
+  app.appendChild(quickLinks);
 
   // Search input
   const sw = document.createElement('div');
