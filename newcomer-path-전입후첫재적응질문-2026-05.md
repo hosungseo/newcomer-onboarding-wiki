@@ -37,6 +37,7 @@
   - 필요하면 `hub-행정안전부.md`
   - 필요하면 `concept-정부업무시스템-국민신문고.md`
 - **예산·재정 일을 맡게 되어 dBrain과 예산 기초를 같이 보고 싶다**
+  - → `newcomer-path-전입후첫예산재정질문-2026-05.md`
   - → `concept-정부업무시스템-dBrain.md`
   - → `process-신규자-예산이해-기본흐름.md`
   - 필요하면 `hub-기획재정부.md`
@@ -102,6 +103,7 @@
 - **문서처리 재적응** → `faq-신규공무원의-첫문서처리질문.md` → `newcomer-path-첫문서처리질문-2026-04.md`
 - **인사 시스템** → `concept-정부업무시스템-e사람.md`
 - **예산·재정 시스템** → `concept-정부업무시스템-dBrain.md`
+- **전입자 예산 재적응 path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
 - **민원 대응 시스템** → `concept-정부업무시스템-국민신문고.md`
 
 ## Related Notes
@@ -119,3 +121,4 @@
 - `concept-정부업무시스템-국민신문고.md`
 - `process-전입후-첫주-재적응.md`
 - `process-신규자-예산이해-기본흐름.md`
+- `newcomer-path-전입후첫예산재정질문-2026-05.md`
