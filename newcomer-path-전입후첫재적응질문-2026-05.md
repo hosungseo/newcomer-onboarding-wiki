@@ -34,6 +34,7 @@
   - → `concept-정부업무시스템-e사람.md`
   - → `concept-정부업무시스템-dBrain.md`
 - **문서처리·민원·정보공개를 새 기관 문맥에서 다시 잡고 싶다**
+  - → `newcomer-path-전입후첫문서민원질문-2026-05.md`
   - → `newcomer-path-첫문서처리질문-2026-04.md`
   - 필요하면 `hub-행정안전부.md`
   - 필요하면 `concept-정부업무시스템-국민신문고.md`
@@ -103,6 +104,7 @@
 - **인사·복무 재적응** → `faq-신규공무원의-첫실무질문-인사복무와문서처리.md` → `newcomer-path-첫인사복무와문서처리-2026-04.md`
 - **전입자 인사·복무 재적응 path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
 - **문서처리 재적응** → `faq-신규공무원의-첫문서처리질문.md` → `newcomer-path-첫문서처리질문-2026-04.md`
+- **전입자 문서·민원 재적응 path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - **인사 시스템** → `concept-정부업무시스템-e사람.md`
 - **예산·재정 시스템** → `concept-정부업무시스템-dBrain.md`
 - **전입자 예산 재적응 path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
@@ -119,6 +121,7 @@
 - `newcomer-path-첫인사복무와문서처리-2026-04.md`
 - `newcomer-path-전입후첫인사복무질문-2026-05.md`
 - `newcomer-path-첫문서처리질문-2026-04.md`
+- `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - `concept-정부업무시스템-e사람.md`
 - `concept-정부업무시스템-dBrain.md`
 - `concept-정부업무시스템-국민신문고.md`
