@@ -6,7 +6,7 @@ entry_question:
   text: "지금 전입 후 가장 먼저 다시 잡아야 할 것은?"
   options:
     - {label: "기관 역할·조직 맥락", goto: A}
-    - {label: "업무시스템 역할 구분", leaf: B-시스템}
+    - {label: "업무시스템 역할 구분", goto: B}
     - {label: "문서처리 타이밍", leaf: C-문서처리}
     - {label: "인사·복무 타이밍", leaf: D-인사복무}
     - {label: "예산·재정 타이밍", leaf: E-예산}
@@ -20,6 +20,13 @@ nodes:
       - {label: "인사혁신처 축", leaf: A-인사혁신처}
       - {label: "기획재정부 축", leaf: A-기획재정부}
       - {label: "모름 — 기관 공통 입구부터", leaf: A-기관공통}
+  B:
+    question: "지금 어느 시스템 역할부터 다시 구분해야 하나?"
+    options:
+      - {label: "e사람 — 인사·급여·복무", leaf: B-e사람}
+      - {label: "dBrain — 예산·재정·집행", leaf: B-dBrain}
+      - {label: "국민신문고 — 민원상담·신청·조회", leaf: B-국민신문고}
+      - {label: "모름 — 시스템 공통 입구부터", leaf: B-시스템공통}
 
 leaves:
   A-행정안전부:
@@ -50,13 +57,34 @@ leaves:
       - newcomer-path-전입후첫재적응질문-2026-05
     exits: {shallow: Z-전체흐름, deeper: A-행정안전부, sideways: B-시스템}
 
-  B-시스템:
+  B-e사람:
+    notes:
+      - faq-전입첫날-시스템은-언제-봐야-하나
+      - concept-정부업무시스템-e사람
+      - hub-인사혁신처
+    exits: {shallow: B-시스템공통, deeper: D-인사복무, sideways: B-dBrain}
+
+  B-dBrain:
+    notes:
+      - faq-전입첫날-시스템은-언제-봐야-하나
+      - concept-정부업무시스템-dBrain
+      - hub-기획재정부
+    exits: {shallow: B-시스템공통, deeper: E-예산, sideways: B-국민신문고}
+
+  B-국민신문고:
+    notes:
+      - faq-전입첫날-시스템은-언제-봐야-하나
+      - concept-정부업무시스템-국민신문고
+      - hub-행정안전부
+    exits: {shallow: B-시스템공통, deeper: C-문서처리, sideways: B-e사람}
+
+  B-시스템공통:
     notes:
       - faq-전입첫날-시스템은-언제-봐야-하나
       - concept-정부업무시스템-e사람
       - concept-정부업무시스템-dBrain
       - concept-정부업무시스템-국민신문고
-    exits: {shallow: Z-전체흐름, deeper: null, sideways: E-예산}
+    exits: {shallow: Z-전체흐름, deeper: B-e사람, sideways: E-예산}
 
   C-문서처리:
     notes:
