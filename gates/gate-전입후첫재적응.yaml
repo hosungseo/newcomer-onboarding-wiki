@@ -7,7 +7,7 @@ entry_question:
   options:
     - {label: "기관 역할·조직 맥락", goto: A}
     - {label: "업무시스템 역할 구분", goto: B}
-    - {label: "문서처리 타이밍", leaf: C-문서처리}
+    - {label: "문서처리 타이밍", goto: C}
     - {label: "인사·복무 타이밍", leaf: D-인사복무}
     - {label: "예산·재정 타이밍", leaf: E-예산}
     - {label: "전혀 모름 — 전입 첫날 최소 동선부터", leaf: Z-전체흐름}
@@ -27,6 +27,12 @@ nodes:
       - {label: "dBrain — 예산·재정·집행", leaf: B-dBrain}
       - {label: "국민신문고 — 민원상담·신청·조회", leaf: B-국민신문고}
       - {label: "모름 — 시스템 공통 입구부터", leaf: B-시스템공통}
+  C:
+    question: "지금 다시 잡아야 하는 문서처리 쪽은 어느 흐름에 더 가까운가?"
+    options:
+      - {label: "내부 문서 흐름 — 기안·검토·결재·등록", leaf: C-내부문서}
+      - {label: "대외 응대 흐름 — 민원·정보공개", leaf: C-대외응대}
+      - {label: "모름 — 문서처리 공통 입구부터", leaf: C-문서공통}
 
 leaves:
   A-행정안전부:
@@ -86,12 +92,27 @@ leaves:
       - concept-정부업무시스템-국민신문고
     exits: {shallow: Z-전체흐름, deeper: B-e사람, sideways: E-예산}
 
-  C-문서처리:
+  C-내부문서:
     notes:
       - faq-전입첫날-문서처리는-언제-다시-보면-되나
       - newcomer-path-첫문서처리질문-2026-04
       - process-행정문서-기안에서결재까지
-    exits: {shallow: Z-전체흐름, deeper: gate-첫문서처리, sideways: D-인사복무}
+    exits: {shallow: C-문서공통, deeper: gate-첫문서처리, sideways: C-대외응대}
+
+  C-대외응대:
+    notes:
+      - faq-전입첫날-문서처리는-언제-다시-보면-되나
+      - concept-정부업무시스템-국민신문고
+      - process-국민신문고-민원상담에서민원신청까지
+      - process-정보공개청구-신규자-기본흐름
+    exits: {shallow: C-문서공통, deeper: B-국민신문고, sideways: C-내부문서}
+
+  C-문서공통:
+    notes:
+      - faq-전입첫날-문서처리는-언제-다시-보면-되나
+      - newcomer-path-첫문서처리질문-2026-04
+      - hub-행정안전부
+    exits: {shallow: Z-전체흐름, deeper: C-내부문서, sideways: D-인사복무}
 
   D-인사복무:
     notes:
