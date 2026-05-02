@@ -1,0 +1,68 @@
+id: gate-전입후첫재적응
+version: 2026-05-03
+trigger: "새 부처·새 자리로 옮겼는데 무엇부터 다시 적응해야 할지 모르겠다"
+
+entry_question:
+  text: "지금 전입 후 가장 먼저 다시 잡아야 할 것은?"
+  options:
+    - {label: "기관 역할·조직 맥락", leaf: A-기관이해}
+    - {label: "업무시스템 역할 구분", leaf: B-시스템}
+    - {label: "문서처리 타이밍", leaf: C-문서처리}
+    - {label: "인사·복무 타이밍", leaf: D-인사복무}
+    - {label: "예산·재정 타이밍", leaf: E-예산}
+    - {label: "전혀 모름 — 전입 첫날 최소 동선부터", leaf: Z-전체흐름}
+
+nodes: {}
+
+leaves:
+  A-기관이해:
+    notes:
+      - faq-전입첫날-무엇부터-다시-봐야-하나
+      - faq-전입자의-첫적응질문
+      - hub-행정안전부
+      - hub-인사혁신처
+      - hub-기획재정부
+    exits: {shallow: Z-전체흐름, deeper: gate-전입후첫재적응, sideways: B-시스템}
+
+  B-시스템:
+    notes:
+      - faq-전입첫날-시스템은-언제-봐야-하나
+      - concept-정부업무시스템-e사람
+      - concept-정부업무시스템-dBrain
+      - concept-정부업무시스템-국민신문고
+    exits: {shallow: Z-전체흐름, deeper: null, sideways: E-예산}
+
+  C-문서처리:
+    notes:
+      - faq-전입첫날-문서처리는-언제-다시-보면-되나
+      - newcomer-path-첫문서처리질문-2026-04
+      - process-행정문서-기안에서결재까지
+    exits: {shallow: Z-전체흐름, deeper: gate-첫문서처리, sideways: D-인사복무}
+
+  D-인사복무:
+    notes:
+      - faq-전입첫날-인사복무는-언제-다시-보면-되나
+      - newcomer-path-첫인사복무와문서처리-2026-04
+      - faq-신규공무원의-첫실무질문-인사복무와문서처리
+    exits: {shallow: Z-전체흐름, deeper: gate-첫인사복무와문서처리, sideways: C-문서처리}
+
+  E-예산:
+    notes:
+      - faq-전입첫날-예산은-언제-다시-보면-되나
+      - concept-정부업무시스템-dBrain
+      - process-신규자-예산이해-기본흐름
+      - hub-기획재정부
+    exits: {shallow: Z-전체흐름, deeper: gate-예산이해, sideways: B-시스템}
+
+  Z-전체흐름:
+    notes:
+      - faq-전입첫날-무엇부터-다시-봐야-하나
+      - faq-전입자의-첫적응질문
+      - newcomer-path-전입후첫재적응질문-2026-05
+      - process-전입후-첫주-재적응
+    exits: {shallow: null, deeper: A-기관이해, sideways: root}
+
+subgates:
+  - gate-첫문서처리
+  - gate-첫인사복무와문서처리
+  - gate-예산이해
