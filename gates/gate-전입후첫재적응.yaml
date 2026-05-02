@@ -9,7 +9,7 @@ entry_question:
     - {label: "업무시스템 역할 구분", goto: B}
     - {label: "문서처리 타이밍", goto: C}
     - {label: "인사·복무 타이밍", goto: D}
-    - {label: "예산·재정 타이밍", leaf: E-예산}
+    - {label: "예산·재정 타이밍", goto: E}
     - {label: "전혀 모름 — 전입 첫날 최소 동선부터", leaf: Z-전체흐름}
 
 nodes:
@@ -41,6 +41,13 @@ nodes:
       - {label: "수당·보수 — 급여 항목과 구조", leaf: D-수당보수}
       - {label: "근무성적평가·성과관리", leaf: D-평가}
       - {label: "모름 — 인사·복무 공통 입구부터", leaf: D-인사복무공통}
+  E:
+    question: "지금 다시 잡아야 하는 예산·재정 쪽은 어디에 더 가까운가?"
+    options:
+      - {label: "예산 전체 그림 — 나라살림과 큰 구조", leaf: E-전체그림}
+      - {label: "편성 기준 — 예산안편성지침·기준", leaf: E-편성기준}
+      - {label: "dBrain 실무 — 예산·재정·집행 시스템", leaf: E-dBrain실무}
+      - {label: "모름 — 예산 공통 입구부터", leaf: E-예산공통}
 
 leaves:
   A-행정안전부:
@@ -157,13 +164,33 @@ leaves:
       - faq-신규공무원의-첫실무질문-인사복무와문서처리
     exits: {shallow: Z-전체흐름, deeper: D-휴가, sideways: C-문서공통}
 
-  E-예산:
+  E-전체그림:
+    notes:
+      - faq-전입첫날-예산은-언제-다시-보면-되나
+      - process-신규자-예산이해-기본흐름
+      - source-기획재정부-2024-나라살림-예산개요
+    exits: {shallow: E-예산공통, deeper: E-편성기준, sideways: E-dBrain실무}
+
+  E-편성기준:
+    notes:
+      - faq-전입첫날-예산은-언제-다시-보면-되나
+      - source-기획재정부-예산안편성지침-및-기준
+      - process-신규자-예산이해-기본흐름
+    exits: {shallow: E-예산공통, deeper: gate-예산이해, sideways: E-전체그림}
+
+  E-dBrain실무:
     notes:
       - faq-전입첫날-예산은-언제-다시-보면-되나
       - concept-정부업무시스템-dBrain
+      - hub-기획재정부
+    exits: {shallow: E-예산공통, deeper: gate-예산이해, sideways: B-dBrain}
+
+  E-예산공통:
+    notes:
+      - faq-전입첫날-예산은-언제-다시-보면-되나
       - process-신규자-예산이해-기본흐름
       - hub-기획재정부
-    exits: {shallow: Z-전체흐름, deeper: gate-예산이해, sideways: B-시스템}
+    exits: {shallow: Z-전체흐름, deeper: E-전체그림, sideways: B-시스템공통}
 
   Z-전체흐름:
     notes:
