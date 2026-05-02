@@ -5,24 +5,50 @@ trigger: "새 부처·새 자리로 옮겼는데 무엇부터 다시 적응해�
 entry_question:
   text: "지금 전입 후 가장 먼저 다시 잡아야 할 것은?"
   options:
-    - {label: "기관 역할·조직 맥락", leaf: A-기관이해}
+    - {label: "기관 역할·조직 맥락", goto: A}
     - {label: "업무시스템 역할 구분", leaf: B-시스템}
     - {label: "문서처리 타이밍", leaf: C-문서처리}
     - {label: "인사·복무 타이밍", leaf: D-인사복무}
     - {label: "예산·재정 타이밍", leaf: E-예산}
     - {label: "전혀 모름 — 전입 첫날 최소 동선부터", leaf: Z-전체흐름}
 
-nodes: {}
+nodes:
+  A:
+    question: "지금 어느 기관 맥락을 먼저 다시 잡아야 하나?"
+    options:
+      - {label: "행정안전부 축", leaf: A-행정안전부}
+      - {label: "인사혁신처 축", leaf: A-인사혁신처}
+      - {label: "기획재정부 축", leaf: A-기획재정부}
+      - {label: "모름 — 기관 공통 입구부터", leaf: A-기관공통}
 
 leaves:
-  A-기관이해:
+  A-행정안전부:
+    notes:
+      - faq-전입자의-첫적응질문
+      - hub-행정안전부
+      - concept-행정안전부-기능과조직단위-연결축
+    exits: {shallow: A-기관공통, deeper: null, sideways: B-시스템}
+
+  A-인사혁신처:
+    notes:
+      - faq-전입자의-첫적응질문
+      - hub-인사혁신처
+      - concept-인사혁신처-기능과조직단위-연결축
+    exits: {shallow: A-기관공통, deeper: null, sideways: D-인사복무}
+
+  A-기획재정부:
+    notes:
+      - faq-전입자의-첫적응질문
+      - hub-기획재정부
+      - process-신규자-예산이해-기본흐름
+    exits: {shallow: A-기관공통, deeper: E-예산, sideways: B-시스템}
+
+  A-기관공통:
     notes:
       - faq-전입첫날-무엇부터-다시-봐야-하나
       - faq-전입자의-첫적응질문
-      - hub-행정안전부
-      - hub-인사혁신처
-      - hub-기획재정부
-    exits: {shallow: Z-전체흐름, deeper: gate-전입후첫재적응, sideways: B-시스템}
+      - newcomer-path-전입후첫재적응질문-2026-05
+    exits: {shallow: Z-전체흐름, deeper: A-행정안전부, sideways: B-시스템}
 
   B-시스템:
     notes:
