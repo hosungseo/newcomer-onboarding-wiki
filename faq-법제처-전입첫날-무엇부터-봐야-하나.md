@@ -68,6 +68,7 @@
 - **공통 절차 구조** → `source-법제처-홈.md`
 - **입법 14단계 흐름** → `source-법제처-입법과정안내.md`
 - **법제처 전입 첫날 순서 패키지** → `newcomer-path-법제처-전입첫날-2026-05.md`
+- **법제처 전입 첫주 process** → `process-법제처-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -76,5 +77,6 @@
 - `source-법제처-입법과정안내.md`
 - `source-법제처-2025-법제업무편람.md`
 - `newcomer-path-법제처-전입첫날-2026-05.md`
+- `process-법제처-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
