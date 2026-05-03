@@ -72,6 +72,12 @@ curl -H "Accept: text/markdown" https://kgov-ready-demo.vercel.app/mois
 - `/.well-known/mcp.json`은 `/mcp`를 광고하지만, local inspection 기준 실제 JSON-RPC MCP server 구현은 확인되지 않았다.
 - 따라서 newcomer 문서에서는 “manifest exists”와 “backend protocol implemented”를 구분해 설명해야 한다.
 
+## kgov slug ↔ newcomer hub 매니페스트
+
+- [[link-manifest-kgov-agent-ready-행정사회부처-2026-05]] — `moef`, `mois`, `moe`, `mohw`, `moel`, `mpva`, `mogef`와 행정·사회정책 hub 연결
+- [[link-manifest-kgov-agent-ready-경제인프라부처-2026-05]] — `msit`, `mcst`, `mafra`, `motie`, `me`, `molit`, `mof`, `mss`와 경제·인프라 hub 연결
+- [[link-manifest-kgov-agent-ready-외교안보법무부처-2026-05]] — `mofa`, `unikorea`, `moj`, `mnd`와 외교·안보·법무 hub 연결
+
 ## 연결 노트
 
 - [[concept-신규공무원-AI적응-핵심축]]

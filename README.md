@@ -212,7 +212,7 @@
 - **급여·수당·복지·여비**: [[faq-신규공무원의-첫급여질문]] → [[newcomer-path-첫급여질문-2026-04]]
 - **승진 구조 이해**: [[faq-신규공무원의-첫승진질문]] → [[newcomer-path-첫승진질문-2026-04]]
 - **휴직·복귀·재해보상**: [[faq-신규공무원의-첫복귀질문]], [[faq-신규공무원의-첫재해보상질문]]
-- **업무시스템 적응**: [[concept-정부업무시스템-e사람]], [[concept-정부업무시스템-dBrain]], [[concept-정부업무시스템-국민신문고]], [[concept-공공서비스-AI-ready-interface-kgov-agent-plaza]]
+- **업무시스템 적응**: [[concept-정부업무시스템-e사람]], [[concept-정부업무시스템-dBrain]], [[concept-정부업무시스템-국민신문고]], [[concept-공공서비스-AI-ready-interface-kgov-agent-plaza]] → [[link-manifest-kgov-agent-ready-행정사회부처-2026-05]] / [[link-manifest-kgov-agent-ready-경제인프라부처-2026-05]] / [[link-manifest-kgov-agent-ready-외교안보법무부처-2026-05]]
 - **국가인재원 공통실무모듈**: [[hub-국가인재원-공통실무모듈]] → [[newcomer-path-국가인재원-신규자과정-공통실무모듈-2026-05]]
 
 ## 왜 이 프로젝트가 필요한가
