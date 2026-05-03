@@ -68,6 +68,7 @@
 - **전국 조직·민원·안전정보 구조** → `source-소방청-홈.md`
 - **현재형 현장 기능** → `source-소방청-정책흔적.md`
 - **소방청 전입 첫날 순서 패키지** → `newcomer-path-소방청-전입첫날-2026-05.md`
+- **소방청 전입 첫주 process** → `process-소방청-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -75,5 +76,6 @@
 - `source-소방청-홈.md`
 - `source-소방청-정책흔적.md`
 - `newcomer-path-소방청-전입첫날-2026-05.md`
+- `process-소방청-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
