@@ -23,6 +23,9 @@
 - `gate-전입후첫재적응.md`
 - `source-방위사업청-홈.md`
 - `source-방위사업청-정책흔적.md`
+- `faq-방위사업청-전입첫날-무엇부터-봐야-하나.md`
+- `newcomer-path-방위사업청-전입첫날-2026-05.md`
+- `process-방위사업청-전입첫주-적응흐름.md`
 - `faq-전입자의-첫적응질문.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 
@@ -46,17 +49,22 @@
 - 전입자 관문에서 먼저 고르기 → `gate-전입후첫재적응.md`
 - 전입 첫 적응 질문 → `faq-전입자의-첫적응질문.md`
 - 전입 첫 주 재적응 순서 패키지 → `newcomer-path-전입후첫재적응질문-2026-05.md`
+- 방위사업청 전입 첫날 FAQ → `faq-방위사업청-전입첫날-무엇부터-봐야-하나.md`
+- 방위사업청 전입 첫날 path → `newcomer-path-방위사업청-전입첫날-2026-05.md`
+- 방위사업청 전입 첫 주 process → `process-방위사업청-전입첫주-적응흐름.md`
 - 기관의 사업관리·조달·기술·수출·감독 레이어 보기 → `source-방위사업청-정책흔적.md`
 
 ## 아직 비어 있는 칸
 - 방위력개선사업 lifecycle process note
 - 군수품 조달·계약관리 newcomer note
 - 방위사업법령·행정규칙 읽기 note
-- 전입 첫날 FAQ/process/newcomer-path note 추가
 
 ## 연결 노트
 - `gate-전입후첫재적응.md`
 - `faq-전입자의-첫적응질문.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
+- `faq-방위사업청-전입첫날-무엇부터-봐야-하나.md`
+- `newcomer-path-방위사업청-전입첫날-2026-05.md`
+- `process-방위사업청-전입첫주-적응흐름.md`
 - `source-방위사업청-홈.md`
 - `source-방위사업청-정책흔적.md`
