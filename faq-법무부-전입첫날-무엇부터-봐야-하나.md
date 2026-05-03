@@ -69,6 +69,7 @@
 - **메뉴축 구조** → `source-법무부-메뉴축-메모.md`
 - **공공 접점층** → `source-법무부-공공접점-메모.md`
 - **법무부 전입 첫날 순서 패키지** → `newcomer-path-법무부-전입첫날-2026-05.md`
+- **법무부 전입 첫주 process** → `process-법무부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -77,5 +78,6 @@
 - `source-법무부-메뉴축-메모.md`
 - `source-법무부-공공접점-메모.md`
 - `newcomer-path-법무부-전입첫날-2026-05.md`
+- `process-법무부-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
