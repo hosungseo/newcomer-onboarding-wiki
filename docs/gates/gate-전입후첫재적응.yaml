@@ -19,6 +19,7 @@ nodes:
       - {label: "행정안전부 축", leaf: A-행정안전부}
       - {label: "인사혁신처 축", leaf: A-인사혁신처}
       - {label: "기획재정부 축", leaf: A-기획재정부}
+      - {label: "부처군 전체 경로 — 기관군별 section에서 찾기", leaf: A-부처군}
       - {label: "모름 — 기관 공통 입구부터", leaf: A-기관공통}
   B:
     question: "지금 어느 시스템 역할부터 다시 구분해야 하나?"
@@ -77,6 +78,19 @@ leaves:
       - faq-전입자의-첫적응질문
       - newcomer-path-전입후첫재적응질문-2026-05
     exits: {shallow: Z-전체흐름, deeper: A-행정안전부, sideways: B}
+
+  A-부처군:
+    notes:
+      - landing-전입자-기관군별-온보딩-2026-05
+      - coverage-부처군-section-첫날첫주-2026-05
+      - quality-gate-부처군-전입경로-section-2026-05
+      - section-경제산업부처-전입경로
+      - section-사회안전부처-전입경로
+      - section-법무거버넌스부처-전입경로
+      - section-외교안보부처-전입경로
+      - section-국토환경부처-전입경로
+      - section-교육문화과학부처-전입경로
+    exits: {shallow: A-기관공통, deeper: null, sideways: Z-전체흐름}
 
   B-e사람:
     notes:
