@@ -25,6 +25,7 @@
 - docs/index.html quick links: 있음
 - 기관군 master landing shortcut: 있음
 - 개별 landing shortcut: 보강 완료
+- 첫날·첫주 연결 숫자표: [[coverage-부처군-section-첫날첫주-2026-05]]
 
 ## 다음 점검 후보
 - section별 중복 기관 배치가 적절한지 확인한다.
