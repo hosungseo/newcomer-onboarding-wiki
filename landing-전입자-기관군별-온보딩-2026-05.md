@@ -39,6 +39,8 @@
 
 ## AI-ready 공공서비스 연결
 
+- kgov-ready-demo Plaza 연결 검증 → [[verification-kgov-ready-demo-plaza-2026-05]]
+
 - 공공서비스 AI-ready interface 참조 시안 → `concept-공공서비스-AI-ready-interface-kgov-agent-plaza.md`
 - kgov 행정·사회부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`
 - kgov 경제·인프라부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-경제인프라부처-2026-05.md`

@@ -39,6 +39,8 @@
 
 ### kgov-ready-demo 연결
 
+- [[verification-kgov-ready-demo-plaza-2026-05]] — 대표 slug live page / llms.txt / index.md 응답 확인 기록
+
 `kgov-ready-demo`는 공식 정보원이 아니라 AI-ready public interface 참조 시안으로 문서화했다.
 
 - [[concept-공공서비스-AI-ready-interface-kgov-agent-plaza]]

@@ -74,6 +74,8 @@ curl -H "Accept: text/markdown" https://kgov-ready-demo.vercel.app/mois
 
 ## kgov slug ↔ newcomer hub 매니페스트
 
+- [[verification-kgov-ready-demo-plaza-2026-05]] — 대표 slug live page / llms.txt / index.md 응답 확인 기록
+
 - [[link-manifest-kgov-agent-ready-행정사회부처-2026-05]] — `moef`, `mois`, `moe`, `mohw`, `moel`, `mpva`, `mogef`와 행정·사회정책 hub 연결
 - [[link-manifest-kgov-agent-ready-경제인프라부처-2026-05]] — `msit`, `mcst`, `mafra`, `motie`, `me`, `molit`, `mof`, `mss`와 경제·인프라 hub 연결
 - [[link-manifest-kgov-agent-ready-외교안보법무부처-2026-05]] — `mofa`, `unikorea`, `moj`, `mnd`와 외교·안보·법무 hub 연결
