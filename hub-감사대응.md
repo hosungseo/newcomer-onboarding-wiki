@@ -33,6 +33,8 @@
 - 법률자문성 결론
 
 ## Related Notes
+- [[hub-장관보고]]
+- [[newcomer-path-장관보고준비-첫주-2026-05]]
 - [[hub-국회대응]]
 - [[hub-예산]]
 - [[coverage-부처군-section-기관행-2026-05]]
