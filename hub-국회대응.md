@@ -40,6 +40,7 @@
 - 법률자문성 결론
 
 ## Related Notes
+- [[newcomer-path-예산시즌-첫주-2026-05]] — 예산 시즌과 국회 대응이 만나는 첫 주 경로
 - [[landing-전입자-기관군별-온보딩-2026-05]]
 - [[coverage-부처군-section-기관행-2026-05]]
 - [[quality-gate-부처군-전입경로-section-2026-05]]
