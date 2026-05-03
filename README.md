@@ -450,6 +450,9 @@
 - [[structure-design-2026-04]] — 정부 원문 → 파생 note → 허브/FAQ/path → 공개 인터페이스 정보구조 설계
 - [[link-schema-관보-보도자료-2026-04]] — `gov-press-md / gov-gazette-md`를 newcomer wiki의 live layer로 붙이는 연결 규칙
 - [[link-manifest-행정안전부-인사혁신처-기획재정부-2026-04]] — 3부처 파일럿 live-layer 레코드를 existing note와 직접 매핑한 실행용 manifest
+- [[link-manifest-kgov-agent-ready-경제인프라부처-2026-05]] — `kgov-ready-demo` agent-ready ministry surface와 경제·인프라 부처 전입 온보딩 note를 매핑한 실행용 manifest
+- [[link-manifest-kgov-agent-ready-행정사회부처-2026-05]] — `kgov-ready-demo` agent-ready ministry surface와 행정·사회 부처 전입 온보딩 note를 매핑한 실행용 manifest
+- [[link-manifest-kgov-agent-ready-외교안보법무부처-2026-05]] — `kgov-ready-demo` agent-ready ministry surface와 외교·안보·법무 부처 전입 온보딩 note를 매핑한 실행용 manifest
 - [[hub-행정안전부]] — 행정운영·정보공개·민원 대응 축에서 보는 행정안전부 institution hub
 - [[concept-행정안전부-기능과조직단위-연결축]] — 행정안전부의 실·국·본부·소속기관을 기존 note 묶음과 직접 연결하는 bridge concept note
 - [[hub-인사혁신처]] — 인사·복무·보수·성과·징계 축에서 보는 인사혁신처 institution hub
