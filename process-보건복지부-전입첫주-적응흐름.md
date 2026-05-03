@@ -70,8 +70,10 @@
 - **현재형 복지부 정책축** → `source-보건복지부-업무계획.md`
 - **공통 인사·복무 path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
 - **공통 문서·민원 path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-보건복지부.md`
 - `faq-보건복지부-전입첫날-무엇부터-봐야-하나.md`
 - `newcomer-path-보건복지부-전입첫날-2026-05.md`

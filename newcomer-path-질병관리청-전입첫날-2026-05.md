@@ -61,7 +61,10 @@
 - **전입 후 문서·민원 child path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - **전입 후 인사·복무 child path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
 
+- **공통 전입 재적응 gate** → `gate-전입후첫재적응.md`
+
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-질병관리청.md`
 - `source-질병관리청-홈.md`
 - `source-질병관리청-정책흔적.md`

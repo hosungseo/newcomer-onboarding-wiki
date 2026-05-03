@@ -62,6 +62,7 @@
 - **전입 후 인사·복무 child path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-공정거래위원회.md`
 - `source-공정거래위원회-홈.md`
 - `source-공정거래위원회-정책흔적.md`

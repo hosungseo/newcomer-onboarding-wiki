@@ -62,6 +62,7 @@
 - **전입 후 예산·재정 child path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-감사원.md`
 - `source-감사원-홈.md`
 - `source-감사원-정책흔적.md`

@@ -60,7 +60,10 @@
 - **법제처 전입 첫주 process** → `process-법제처-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
+- **전입 재적응 gate** → `gate-전입후첫재적응.md`
+
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-법제처.md`
 - `source-법제처-홈.md`
 - `source-법제처-입법과정안내.md`

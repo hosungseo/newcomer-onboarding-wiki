@@ -62,8 +62,10 @@
 - **외교부 전입 첫주 process** → `process-외교부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 - **전입 후 문서·민원 child path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-외교부.md`
 - `source-정부조직법-외교부.md`
 - `source-외교부-검색경로-메모.md`

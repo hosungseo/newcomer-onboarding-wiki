@@ -63,6 +63,7 @@
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-국민권익위원회.md`
 - `source-국민권익위원회-국민신문고.md`
 - `source-국민권익위원회-국민신문고-민원상담안내.md`

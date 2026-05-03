@@ -73,7 +73,10 @@
 - **재정 시스템 기준점** → `concept-정부업무시스템-dBrain.md`
 - **공통 예산·재정 path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
 
+- **전입 재적응 gate** → `gate-전입후첫재적응.md`
+
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-기획재정부.md`
 - `faq-기획재정부-전입첫날-무엇부터-봐야-하나.md`
 - `newcomer-path-기획재정부-전입첫날-2026-05.md`

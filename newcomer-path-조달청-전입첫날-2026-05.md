@@ -59,8 +59,10 @@
 - **조달청 전입 첫날 FAQ** → `faq-조달청-전입첫날-무엇부터-봐야-하나.md`
 - **조달청 전입 첫주 process** → `process-조달청-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-조달청.md`
 - `source-조달청-홈.md`
 - `source-조달청-계약방법.md`

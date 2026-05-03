@@ -62,6 +62,7 @@
 - **전입 후 예산·재정 child path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-과학기술정보통신부.md`
 - `source-정부조직법-과학기술정보통신부.md`
 - `source-과학기술정보통신부-홈.md`

@@ -61,7 +61,10 @@
 - **전입 후 문서·민원 child path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - **전입 후 예산·재정 child path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
 
+- **전입 재적응 gate** → `gate-전입후첫재적응.md`
+
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-농촌진흥청.md`
 - `source-농촌진흥청-홈.md`
 - `source-농촌진흥청-정책흔적.md`

@@ -62,6 +62,7 @@
 - **전입 후 문서·민원 child path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-국가보훈부.md`
 - `source-국가보훈부-홈.md`
 - `source-국가보훈부-정책흔적.md`

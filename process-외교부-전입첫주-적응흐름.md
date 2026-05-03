@@ -70,8 +70,10 @@
 - **현재형 외교부 메시지 축** → `source-외교부-보도자료-글로벌중추국가.md`
 - **공통 문서·민원 path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - **공통 인사·복무 path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-외교부.md`
 - `faq-외교부-전입첫날-무엇부터-봐야-하나.md`
 - `newcomer-path-외교부-전입첫날-2026-05.md`

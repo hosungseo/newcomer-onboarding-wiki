@@ -69,8 +69,10 @@
 - **인사혁신처 전입 첫주 process** → `process-인사혁신처-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 - **전입 후 인사·복무 child path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-인사혁신처.md`
 - `source-정부조직법-인사혁신처.md`
 - `source-인사혁신처-2024-공무원인사실무.md`

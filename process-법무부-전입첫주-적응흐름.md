@@ -71,7 +71,10 @@
 - **공통 문서·민원 path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - **공통 인사·복무 path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
 
+- **전입 재적응 gate** → `gate-전입후첫재적응.md`
+
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-법무부.md`
 - `faq-법무부-전입첫날-무엇부터-봐야-하나.md`
 - `newcomer-path-법무부-전입첫날-2026-05.md`

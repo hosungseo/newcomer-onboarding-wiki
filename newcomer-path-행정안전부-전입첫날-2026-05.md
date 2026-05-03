@@ -71,7 +71,10 @@
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 - **전입 후 문서·민원 child path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 
+- **공통 전입 재적응 gate** → `gate-전입후첫재적응.md`
+
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-행정안전부.md`
 - `source-정부조직법-행정안전부.md`
 - `source-행정안전부-조직과기능.md`

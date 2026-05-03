@@ -73,6 +73,7 @@
 - **공통 인사·복무 path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-국민권익위원회.md`
 - `faq-국민권익위원회-전입첫날-무엇부터-봐야-하나.md`
 - `newcomer-path-국민권익위원회-전입첫날-2026-05.md`

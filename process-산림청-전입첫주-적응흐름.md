@@ -68,8 +68,10 @@
 - **현재형 산림청 축** → `source-산림청-정책흔적.md`
 - **공통 문서·민원 path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - **공통 인사·복무 path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-산림청.md`
 - `faq-산림청-전입첫날-무엇부터-봐야-하나.md`
 - `newcomer-path-산림청-전입첫날-2026-05.md`

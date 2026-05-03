@@ -60,8 +60,10 @@
 - **중기부 전입 첫날 FAQ** → `faq-중소벤처기업부-전입첫날-무엇부터-봐야-하나.md`
 - **중기부 전입 첫주 process** → `process-중소벤처기업부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-중소벤처기업부.md`
 - `source-정부조직법-중소벤처기업부.md`
 - `source-중소벤처기업부-홈.md`

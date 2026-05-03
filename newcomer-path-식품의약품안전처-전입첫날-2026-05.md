@@ -60,8 +60,10 @@
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 - **전입 후 문서·민원 child path** → `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - **전입 후 예산·재정 child path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
+- **전입 후 첫 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-식품의약품안전처.md`
 - `source-식품의약품안전처-홈.md`
 - `source-식품의약품안전처-정책흔적.md`

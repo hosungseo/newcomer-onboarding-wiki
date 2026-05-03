@@ -71,7 +71,10 @@
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 - **전입 후 예산·재정 child path** → `newcomer-path-전입후첫예산재정질문-2026-05.md`
 
+- **전입 재적응 gate** → `gate-전입후첫재적응.md`
+
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-기획재정부.md`
 - `source-정부조직법-기획재정부.md`
 - `source-기획재정부-일반현황.md`

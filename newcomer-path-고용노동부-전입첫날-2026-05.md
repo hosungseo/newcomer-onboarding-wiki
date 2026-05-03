@@ -63,6 +63,7 @@
 - **전입 후 인사·복무 child path** → `newcomer-path-전입후첫인사복무질문-2026-05.md`
 
 ## Related Notes
+- `gate-전입후첫재적응.md`
 - `hub-고용노동부.md`
 - `source-정부조직법-고용노동부.md`
 - `source-고용노동부-홈.md`
