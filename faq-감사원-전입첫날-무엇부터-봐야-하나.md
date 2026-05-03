@@ -68,6 +68,7 @@
 - **메인 최소 근거** → `source-감사원-홈.md`
 - **현재형 감사·점검·책임성 축** → `source-감사원-정책흔적.md`
 - **감사원 전입 첫날 순서 패키지** → `newcomer-path-감사원-전입첫날-2026-05.md`
+- **감사원 전입 첫주 process** → `process-감사원-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -75,5 +76,6 @@
 - `source-감사원-홈.md`
 - `source-감사원-정책흔적.md`
 - `newcomer-path-감사원-전입첫날-2026-05.md`
+- `process-감사원-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
