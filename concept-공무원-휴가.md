@@ -37,10 +37,11 @@
 - `2026.04.07` **인사혁신처공고제2026-193호(「국가공무원 복무규정」 일부개정령안 입법예고)** — 휴가·근무시간·복무를 포괄하는 상위 규정의 최신 공식 변경 레이어다. ([archive](https://github.com/hosungseo/gov-gazette-md/blob/main/data/2026/2026-04/2026-04-07/017_인사혁신처_인사혁신처공고제2026_193호_국가공무원_복무규정_일부개정령안_입법예고.md) · [PDF](https://gwanbo.go.kr/ezpdf/customLayout.jsp?contentId=I0000000000000001775436831612000&tocId=I0000000000000001775016093528000&isTocOrder=N&name=%EC%9D%B8%EC%82%AC%ED%98%81%EC%8B%A0%EC%B2%98%EA%B3%B5%EA%B3%A0%EC%A0%9C2026-193%ED%98%B8%28%E3%80%8C%EA%B5%AD%EA%B0%80%EA%B3%B5%EB%AC%B4%EC%9B%90+%EB%B3%B5%EB%AC%B4%EA%B7%9C%EC%A0%95%E3%80%8D+%EC%9D%BC%EB%B6%80%EA%B0%9C%EC%A0%95%EB%A0%B9%EC%95%88+%EC%9E%85%EB%B2%95%EC%98%88%EA%B3%A0%29) · [readable](https://github.com/hosungseo/gov-gazette-md/blob/main/readable-final/2026-04-07/017_인사혁신처_인사혁신처공고제2026_193호_국가공무원_복무규정_일부개정령안_입법예고.md))
 
 ## 먼저 같이 읽을 note
+- `faq-연가와-특별휴가는-무엇이-다른가.md`
 - `concept-공무원-복무.md`
 - `concept-공무원-유연근무.md`
 - `concept-신규공무원-인사적응-핵심축.md`
 - 인접 주제: `휴직`, `징계`
 
 ## 메모
-이 note는 `복무` 아래에서 가장 자주 독립 질문이 생기는 축이라, 이후 필요하면 `연가`, `특별휴가`, `휴직`으로 더 잘게 분해할 수 있다.
+이 note는 `복무` 아래에서 가장 자주 독립 질문이 생기는 축이다. 2026-05에는 첫 하위 FAQ로 `연가와 특별휴가` 구분 note를 분리했다. 이후 필요하면 `병가`, `공가`, `휴직`도 같은 방식으로 더 잘게 분해할 수 있다.
