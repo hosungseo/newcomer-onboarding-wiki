@@ -39,8 +39,6 @@
 
 ## 상황별 공통 업무축
 
-## 상황별 공통 업무축
-
 - [[landing-전입자-공통업무축-2026-05]] — 국회·예산·감사·보고·홍보·민원·법령 공통 업무축을 한 번에 고르는 landing
 - [[hub-국회대응]] — 모든 부처가 국회 일정·자료요구·질의답변을 공개근거와 금지선 기준으로 정리하는 공통 축
 - [[newcomer-path-국회대응시즌-첫주-2026-05]] — 국회 대응 시즌 첫 주에 읽을 순서
@@ -63,6 +61,9 @@
 - kgov 행정·사회부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`
 - kgov 경제·인프라부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-경제인프라부처-2026-05.md`
 - kgov 외교·안보·법무부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-외교안보법무부처-2026-05.md`
+
+## 부처 전입
+- [[hub-부처전입]] / [[newcomer-path-부처전입-첫주-2026-05]]
 
 ## 위원회 전입
 - [[hub-위원회전입]] / [[newcomer-path-위원회전입-첫주-2026-05]]
