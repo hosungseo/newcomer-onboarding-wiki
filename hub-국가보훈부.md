@@ -73,3 +73,4 @@
 - `newcomer-path-국가보훈부-전입첫날-2026-05.md`
 - `source-국가보훈부-홈.md`
 - `source-국가보훈부-정책흔적.md`
+- `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`

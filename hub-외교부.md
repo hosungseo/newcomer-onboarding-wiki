@@ -67,6 +67,7 @@
 - 재외공관 구조와 본부 정책축 연결 보강
 
 ## 연결 노트
+- `link-manifest-kgov-agent-ready-외교안보법무부처-2026-05.md` — 외교·안보·법무 부처 kgov-agent-ready 연결 manifest
 - `gate-전입후첫재적응.md`
 - `faq-전입자의-첫적응질문.md`
 - `faq-외교부-전입첫날-무엇부터-봐야-하나.md`

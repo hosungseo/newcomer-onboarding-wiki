@@ -80,3 +80,4 @@
 - `source-정부조직법-보건복지부.md`
 - `source-보건복지부-홈.md`
 - `source-보건복지부-업무계획.md`
+- `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`

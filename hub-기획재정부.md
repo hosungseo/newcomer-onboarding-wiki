@@ -54,6 +54,7 @@
 - `newcomer-path-기획재정부-전입첫날-2026-05.md`
 - `process-신규자-예산이해-기본흐름.md`
 - `concept-정부업무시스템-dBrain.md`
+- `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`
 
 ## 기관 기준 핵심 source
 - `source-기획재정부-직제.md` — 부처 직무와 복권위원회 사무처 등 구조 규정

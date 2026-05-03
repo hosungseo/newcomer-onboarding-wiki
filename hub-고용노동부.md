@@ -80,3 +80,4 @@
 - `source-정부조직법-고용노동부.md`
 - `source-고용노동부-홈.md`
 - `source-고용노동부-메인-정책흔적.md`
+- `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`

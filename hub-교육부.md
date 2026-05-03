@@ -80,3 +80,4 @@
 - `source-정부조직법-교육부.md`
 - `source-교육부-홈.md`
 - `source-교육부-2026-업무계획.md`
+- `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`

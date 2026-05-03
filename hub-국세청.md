@@ -72,3 +72,4 @@
 - `newcomer-path-국세청-전입첫날-2026-05.md`
 - `source-국세청-홈.md`
 - `source-국세청-정책흔적.md`
+- `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`

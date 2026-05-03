@@ -103,6 +103,7 @@
 - `newcomer-path-행정안전부-전입첫날-2026-05.md`
 - `newcomer-path-첫문서처리질문-2026-04.md`
 - `concept-정부업무시스템-국민신문고.md`
+- `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`
 
 ## 아직 비어 있는 칸
 - `자치혁신실 / 지방재정경제실 / 재난안전관리본부` 축 permanent note를 더 분해
