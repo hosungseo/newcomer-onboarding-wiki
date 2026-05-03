@@ -7,3 +7,6 @@ tmp/
 
 # Local Playwright install scratch (no package.json in repo)
 tests/playwright/package-lock.json
+tests/playwright/node_modules/
+tests/playwright/playwright-report/
+tests/playwright/test-results/
