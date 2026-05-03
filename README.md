@@ -116,6 +116,11 @@
 - [[hub-경찰청]]
 - [[hub-병무청]]
 - [[hub-방위사업청]]
+- [[hub-검찰청]]
+- [[hub-고위공직자범죄수사처]]
+- [[hub-우주항공청]]
+- [[hub-국가유산청]]
+- [[hub-새만금개발청]]
 - [[hub-국가인재원-공통실무모듈]]
 
 ## 이 README에서 특히 먼저 볼 만한 묶음
@@ -454,6 +459,7 @@
 - [[link-manifest-kgov-agent-ready-경제인프라부처-2026-05]] — `kgov-ready-demo` agent-ready ministry surface와 경제·인프라 부처 전입 온보딩 note를 매핑한 실행용 manifest
 - [[link-manifest-kgov-agent-ready-행정사회부처-2026-05]] — `kgov-ready-demo` agent-ready ministry surface와 행정·사회 부처 전입 온보딩 note를 매핑한 실행용 manifest
 - [[link-manifest-kgov-agent-ready-외교안보법무부처-2026-05]] — `kgov-ready-demo` agent-ready ministry surface와 외교·안보·법무 부처 전입 온보딩 note를 매핑한 실행용 manifest
+- [[quality-gate-전입자-온보딩-커버리지-2026-05]] — 중앙행정기관 전입자 온보딩 5-file packet coverage와 기관군 landing link 검증 기록
 - [[hub-행정안전부]] — 행정운영·정보공개·민원 대응 축에서 보는 행정안전부 institution hub
 - [[concept-행정안전부-기능과조직단위-연결축]] — 행정안전부의 실·국·본부·소속기관을 기존 note 묶음과 직접 연결하는 bridge concept note
 - [[hub-인사혁신처]] — 인사·복무·보수·성과·징계 축에서 보는 인사혁신처 institution hub
