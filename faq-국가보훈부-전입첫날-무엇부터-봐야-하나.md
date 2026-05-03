@@ -68,6 +68,7 @@
 - **대상자·지원제도 entry** → `source-국가보훈부-홈.md`
 - **현재형 정책 흔적** → `source-국가보훈부-정책흔적.md`
 - **국가보훈부 전입 첫날 순서 패키지** → `newcomer-path-국가보훈부-전입첫날-2026-05.md`
+- **국가보훈부 전입 첫주 process** → `process-국가보훈부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -75,5 +76,6 @@
 - `source-국가보훈부-홈.md`
 - `source-국가보훈부-정책흔적.md`
 - `newcomer-path-국가보훈부-전입첫날-2026-05.md`
+- `process-국가보훈부-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
