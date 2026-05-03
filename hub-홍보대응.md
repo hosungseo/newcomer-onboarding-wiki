@@ -34,6 +34,8 @@
 - 법률자문성 결론
 
 ## Related Notes
+- [[hub-민원대응]]
+- [[newcomer-path-민원폭주대응-첫주-2026-05]]
 - [[landing-전입자-기관군별-온보딩-2026-05]]
 - [[coverage-부처군-section-기관행-2026-05]]
 - [[hub-장관보고]]
