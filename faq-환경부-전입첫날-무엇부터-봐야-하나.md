@@ -69,6 +69,7 @@
 - **메인 명칭·identity 변화** → `source-환경부-홈.md`
 - **현재형 실무 축** → `source-환경부-정책흔적.md`
 - **환경부 전입 첫날 순서 패키지** → `newcomer-path-환경부-전입첫날-2026-05.md`
+- **환경부 전입 첫주 process** → `process-환경부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -77,5 +78,6 @@
 - `source-환경부-홈.md`
 - `source-환경부-정책흔적.md`
 - `newcomer-path-환경부-전입첫날-2026-05.md`
+- `process-환경부-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
