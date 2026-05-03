@@ -68,6 +68,7 @@
 - **세무·민원 구조** → `source-국세청-홈.md`
 - **현재형 신고·조사·지원 서비스** → `source-국세청-정책흔적.md`
 - **국세청 전입 첫날 순서 패키지** → `newcomer-path-국세청-전입첫날-2026-05.md`
+- **국세청 전입 첫주 process** → `process-국세청-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -75,5 +76,6 @@
 - `source-국세청-홈.md`
 - `source-국세청-정책흔적.md`
 - `newcomer-path-국세청-전입첫날-2026-05.md`
+- `process-국세청-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
