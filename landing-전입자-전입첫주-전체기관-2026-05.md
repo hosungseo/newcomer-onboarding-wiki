@@ -73,6 +73,18 @@
 2. path 안에서 `hub`, `전입첫날 path`, `전입첫주 process`, `gate-전입후첫재적응` 순서의 연결을 확인한다.
 3. 기관 특화 업무를 보기 전에 문서·인사·예산 공통 질문이 급하면 공통 gate로 되돌아간다.
 
+## 부처군 section으로 다시 보기
+
+기관별 목록에서 소속 기관을 찾은 뒤, 같은 계열 기관들을 한 장에서 비교하고 싶다면 아래 section으로 올라간다.
+
+- [[section-경제산업부처-전입경로]]
+- [[section-사회안전부처-전입경로]]
+- [[section-법무거버넌스부처-전입경로]]
+- [[section-외교안보부처-전입경로]]
+- [[section-국토환경부처-전입경로]]
+- [[section-교육문화과학부처-전입경로]]
+- coverage: [[coverage-부처군-section-기관행-2026-05]] / [[coverage-부처군-section-첫날첫주-2026-05]]
+
 ## Related Notes
 - `gate-전입후첫재적응.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
