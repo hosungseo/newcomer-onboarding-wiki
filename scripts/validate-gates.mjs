@@ -20,7 +20,7 @@ const mdFiles = new Set(
 const gateFiles = readdirSync(GATES_DIR).filter(f => f.endsWith('.yaml'));
 const gateIds = new Set(gateFiles.map(f => f.slice(0, -5)));
 
-const NOTE_PREFIXES = /^(concept|process|source|faq|section|hub|newcomer-path)-/;
+const NOTE_PREFIXES = /^(concept|process|source|faq|section|hub|newcomer-path|practitioner-path)-/;
 
 let errors = 0;
 const err = (gate, msg) => { console.error(`✗ ${gate}: ${msg}`); errors++; };

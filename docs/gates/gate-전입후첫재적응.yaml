@@ -26,7 +26,7 @@ nodes:
       - {label: "e사람 — 인사·급여·복무", leaf: B-e사람}
       - {label: "dBrain — 예산·재정·집행", leaf: B-dBrain}
       - {label: "국민신문고 — 민원상담·신청·조회", leaf: B-국민신문고}
-      - {label: "모름 — 시스템 공통 입구부터", leaf: B-시스템공통}
+      - {label: "모름 — 시스템 공통 입구부터", leaf: B공통}
   C:
     question: "지금 다시 잡아야 하는 문서처리 쪽은 어느 흐름에 더 가까운가?"
     options:
@@ -40,14 +40,14 @@ nodes:
       - {label: "유연근무 — 시차출퇴근·재택·집약근무", leaf: D-유연근무}
       - {label: "수당·보수 — 급여 항목과 구조", leaf: D-수당보수}
       - {label: "근무성적평가·성과관리", leaf: D-평가}
-      - {label: "모름 — 인사·복무 공통 입구부터", leaf: D-인사복무공통}
+      - {label: "모름 — 인사·복무 공통 입구부터", leaf: D공통}
   E:
     question: "지금 다시 잡아야 하는 예산·재정 쪽은 어디에 더 가까운가?"
     options:
       - {label: "예산 전체 그림 — 나라살림과 큰 구조", leaf: E-전체그림}
       - {label: "편성 기준 — 예산안편성지침·기준", leaf: E-편성기준}
       - {label: "dBrain 실무 — 예산·재정·집행 시스템", leaf: E-dBrain실무}
-      - {label: "모름 — 예산 공통 입구부터", leaf: E-예산공통}
+      - {label: "모름 — 예산 공통 입구부터", leaf: E공통}
 
 leaves:
   A-행정안전부:
@@ -55,57 +55,57 @@ leaves:
       - faq-전입자의-첫적응질문
       - hub-행정안전부
       - concept-행정안전부-기능과조직단위-연결축
-    exits: {shallow: A-기관공통, deeper: null, sideways: B-시스템}
+    exits: {shallow: A-기관공통, deeper: null, sideways: B}
 
   A-인사혁신처:
     notes:
       - faq-전입자의-첫적응질문
       - hub-인사혁신처
       - concept-인사혁신처-기능과조직단위-연결축
-    exits: {shallow: A-기관공통, deeper: null, sideways: D-인사복무}
+    exits: {shallow: A-기관공통, deeper: null, sideways: D}
 
   A-기획재정부:
     notes:
       - faq-전입자의-첫적응질문
       - hub-기획재정부
       - process-신규자-예산이해-기본흐름
-    exits: {shallow: A-기관공통, deeper: E-예산, sideways: B-시스템}
+    exits: {shallow: A-기관공통, deeper: E, sideways: B}
 
   A-기관공통:
     notes:
       - faq-전입첫날-무엇부터-다시-봐야-하나
       - faq-전입자의-첫적응질문
       - newcomer-path-전입후첫재적응질문-2026-05
-    exits: {shallow: Z-전체흐름, deeper: A-행정안전부, sideways: B-시스템}
+    exits: {shallow: Z-전체흐름, deeper: A-행정안전부, sideways: B}
 
   B-e사람:
     notes:
       - faq-전입첫날-시스템은-언제-봐야-하나
       - concept-정부업무시스템-e사람
       - hub-인사혁신처
-    exits: {shallow: B-시스템공통, deeper: D-인사복무, sideways: B-dBrain}
+    exits: {shallow: B공통, deeper: D, sideways: B-dBrain}
 
   B-dBrain:
     notes:
       - faq-전입첫날-시스템은-언제-봐야-하나
       - concept-정부업무시스템-dBrain
       - hub-기획재정부
-    exits: {shallow: B-시스템공통, deeper: E-예산, sideways: B-국민신문고}
+    exits: {shallow: B공통, deeper: E, sideways: B-국민신문고}
 
   B-국민신문고:
     notes:
       - faq-전입첫날-시스템은-언제-봐야-하나
       - concept-정부업무시스템-국민신문고
       - hub-행정안전부
-    exits: {shallow: B-시스템공통, deeper: C-문서처리, sideways: B-e사람}
+    exits: {shallow: B공통, deeper: C, sideways: B-e사람}
 
-  B-시스템공통:
+  B공통:
     notes:
       - faq-전입첫날-시스템은-언제-봐야-하나
       - concept-정부업무시스템-e사람
       - concept-정부업무시스템-dBrain
       - concept-정부업무시스템-국민신문고
-    exits: {shallow: Z-전체흐름, deeper: B-e사람, sideways: E-예산}
+    exits: {shallow: Z-전체흐름, deeper: B-e사람, sideways: E}
 
   C-내부문서:
     notes:
@@ -127,37 +127,37 @@ leaves:
       - faq-전입첫날-문서처리는-언제-다시-보면-되나
       - newcomer-path-첫문서처리질문-2026-04
       - hub-행정안전부
-    exits: {shallow: Z-전체흐름, deeper: C-내부문서, sideways: D-인사복무}
+    exits: {shallow: Z-전체흐름, deeper: C-내부문서, sideways: D}
 
   D-휴가:
     notes:
       - faq-전입첫날-인사복무는-언제-다시-보면-되나
       - concept-공무원-휴가
       - concept-공무원-복무
-    exits: {shallow: D-인사복무공통, deeper: null, sideways: D-유연근무}
+    exits: {shallow: D공통, deeper: null, sideways: D-유연근무}
 
   D-유연근무:
     notes:
       - faq-전입첫날-인사복무는-언제-다시-보면-되나
       - concept-공무원-유연근무
       - concept-공무원-복무
-    exits: {shallow: D-인사복무공통, deeper: null, sideways: D-수당보수}
+    exits: {shallow: D공통, deeper: null, sideways: D-수당보수}
 
   D-수당보수:
     notes:
       - faq-전입첫날-인사복무는-언제-다시-보면-되나
       - concept-공무원-수당
       - concept-공무원-보수
-    exits: {shallow: D-인사복무공통, deeper: gate-첫급여, sideways: D-평가}
+    exits: {shallow: D공통, deeper: gate-첫급여, sideways: D-평가}
 
   D-평가:
     notes:
       - faq-전입첫날-인사복무는-언제-다시-보면-되나
       - concept-공무원-근무성적평가
       - concept-공무원-성과관리
-    exits: {shallow: D-인사복무공통, deeper: null, sideways: D-휴가}
+    exits: {shallow: D공통, deeper: null, sideways: D-휴가}
 
-  D-인사복무공통:
+  D공통:
     notes:
       - faq-전입첫날-인사복무는-언제-다시-보면-되나
       - newcomer-path-첫인사복무와문서처리-2026-04
@@ -169,28 +169,28 @@ leaves:
       - faq-전입첫날-예산은-언제-다시-보면-되나
       - process-신규자-예산이해-기본흐름
       - source-기획재정부-2024-나라살림-예산개요
-    exits: {shallow: E-예산공통, deeper: E-편성기준, sideways: E-dBrain실무}
+    exits: {shallow: E공통, deeper: E-편성기준, sideways: E-dBrain실무}
 
   E-편성기준:
     notes:
       - faq-전입첫날-예산은-언제-다시-보면-되나
       - source-기획재정부-예산안편성지침-및-기준
       - process-신규자-예산이해-기본흐름
-    exits: {shallow: E-예산공통, deeper: gate-예산이해, sideways: E-전체그림}
+    exits: {shallow: E공통, deeper: gate-예산이해, sideways: E-전체그림}
 
   E-dBrain실무:
     notes:
       - faq-전입첫날-예산은-언제-다시-보면-되나
       - concept-정부업무시스템-dBrain
       - hub-기획재정부
-    exits: {shallow: E-예산공통, deeper: gate-예산이해, sideways: B-dBrain}
+    exits: {shallow: E공통, deeper: gate-예산이해, sideways: B-dBrain}
 
-  E-예산공통:
+  E공통:
     notes:
       - faq-전입첫날-예산은-언제-다시-보면-되나
       - process-신규자-예산이해-기본흐름
       - hub-기획재정부
-    exits: {shallow: Z-전체흐름, deeper: E-전체그림, sideways: B-시스템공통}
+    exits: {shallow: Z-전체흐름, deeper: E-전체그림, sideways: B공통}
 
   Z-전체흐름:
     notes:
@@ -198,7 +198,7 @@ leaves:
       - faq-전입자의-첫적응질문
       - newcomer-path-전입후첫재적응질문-2026-05
       - process-전입후-첫주-재적응
-    exits: {shallow: null, deeper: A-기관이해, sideways: root}
+    exits: {shallow: null, deeper: A, sideways: root}
 
 subgates:
   - gate-첫문서처리
