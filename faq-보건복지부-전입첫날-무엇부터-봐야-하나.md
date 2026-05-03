@@ -69,6 +69,7 @@
 - **공식 메인 접점** → `source-보건복지부-홈.md`
 - **현재형 정책 우선순위** → `source-보건복지부-업무계획.md`
 - **보건복지부 전입 첫날 순서 패키지** → `newcomer-path-보건복지부-전입첫날-2026-05.md`
+- **보건복지부 전입 첫주 process** → `process-보건복지부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -77,5 +78,6 @@
 - `source-보건복지부-홈.md`
 - `source-보건복지부-업무계획.md`
 - `newcomer-path-보건복지부-전입첫날-2026-05.md`
+- `process-보건복지부-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `faq-전입자의-첫적응질문.md`
