@@ -70,6 +70,7 @@
 - **공식 메인 접점** → `source-고용노동부-홈.md`
 - **현재형 정책 우선순위** → `source-고용노동부-메인-정책흔적.md`
 - **고용노동부 전입 첫날 순서 패키지** → `newcomer-path-고용노동부-전입첫날-2026-05.md`
+- **고용노동부 전입 첫주 process** → `process-고용노동부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
 
 ## Related Notes
@@ -78,6 +79,7 @@
 - `source-고용노동부-홈.md`
 - `source-고용노동부-메인-정책흔적.md`
 - `newcomer-path-고용노동부-전입첫날-2026-05.md`
+- `process-고용노동부-전입첫주-적응흐름.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `newcomer-path-전입후첫문서민원질문-2026-05.md`
 - `concept-정부업무시스템-국민신문고.md`
