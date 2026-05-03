@@ -59,11 +59,11 @@ first-entry FAQ cleanup과 추가 기관 packet 확장 이후 중앙부처·위�
 
 확인한 5종 파일:
 
-- `source-{기관}-홈.md` 또는 `source-{기관}-*.md`
-- `hub-{기관}.md`
-- `faq-{기관}-전입첫날-무엇부터-봐야-하나.md`
-- `newcomer-path-{기관}-전입첫날-2026-05.md`
-- `process-{기관}-전입첫주-적응흐름.md`
+- pattern: `source-{기관}-홈` 또는 `source-{기관}-*`
+- pattern: `hub-{기관}`
+- pattern: `faq-{기관}-전입첫날-무엇부터-봐야-하나`
+- pattern: `newcomer-path-{기관}-전입첫날-2026-05`
+- pattern: `process-{기관}-전입첫주-적응흐름`
 
 결과:
 
@@ -82,6 +82,42 @@ first-entry FAQ cleanup과 추가 기관 packet 확장 이후 중앙부처·위�
 - `검찰청`
 
 따라서 이 시점 기준 중앙행정기관 전입자 온보딩의 기본 5-file packet coverage는 clean 상태다. 다음 작업은 새 기관을 더 찾기보다 각 기관 hub의 깊이를 늘리거나, README/docs/index 노출과 전체 repo missing refs cleanup으로 넘어가는 편이 낫다.
+
+## 2026-05-04 02:05 전입첫주 path/FAQ coverage 재검증
+
+전입자 온보딩 확장을 `첫날`에서 `첫주`까지 넓힌 뒤, 전체 기관 coverage와 노출 경로를 다시 확인했다.
+
+확인한 파일군:
+
+- `newcomer-path-*-전입첫주-2026-05.md`
+- `faq-*-전입첫주-무엇부터-읽어야-하나.md`
+- `landing-전입자-전입첫주-전체기관-2026-05.md`
+- `landing-전입자-전입첫주-FAQ-전체기관-2026-05.md`
+- `README.md`
+- `docs/index.html`
+
+결과:
+
+- first-week path files: 51
+- first-week FAQ files: 51
+- path는 있으나 FAQ가 없는 기관: 0
+- FAQ는 있으나 path가 없는 기관: 0
+- `landing-전입자-전입첫주-전체기관-2026-05.md`: 전입첫주 path filename refs 51개
+- `landing-전입자-전입첫주-FAQ-전체기관-2026-05.md`: FAQ refs 51개 + path refs 51개
+- README: 두 first-week landing 모두 wikilink로 노출
+- docs/index.html: 두 first-week landing 모두 GitHub `.md` quick link로 노출
+
+판정:
+
+- 중앙부처·위원회·청 단위 전입첫주 path/FAQ coverage는 51/51로 clean하다.
+- 사용자는 기관명을 아는 경우 `전입첫주 path landing` 또는 `전입첫주 FAQ landing`에서 바로 소속 기관 entry로 내려갈 수 있다.
+- 이 품질 게이트 기준으로는 전입자 온보딩의 기본 coverage 확장 작업이 `첫날 triad`에서 `첫주 path+FAQ`까지 완료된 상태다.
+
+다음 작업 방향:
+
+1. 전체 repo missing refs cleanup을 별도 wave로 분리한다.
+2. 실제 사용성이 높은 FAQ placeholder를 우선 만들고, 설계문서 예시·외부 archive path는 표기 규칙으로 분류한다.
+3. 기관별 hub 깊이 보강은 51개를 한 번에 반복하기보다 기관군별로 `자주 막히는 첫 질문`이나 `조심할 민감정보 boundary`를 얇게 늘린다.
 
 ## 남은 품질 이슈
 
