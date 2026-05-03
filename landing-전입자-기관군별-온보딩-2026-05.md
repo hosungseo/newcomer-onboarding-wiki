@@ -37,6 +37,11 @@
 - 기관이 추가되면 먼저 해당 기관의 hub/FAQ/path/process 4종 존재 여부를 확인한 뒤, 알맞은 기관군 landing에 한 줄 묶음으로 추가한다.
 - 현재 커버리지와 남은 링크 cleanup 이슈는 `quality-gate-전입자-온보딩-커버리지-2026-05.md`에서 확인한다.
 
+## 상황별 공통 업무축
+
+- [[hub-국회대응]] — 모든 부처가 국회 일정·자료요구·질의답변을 공개근거와 금지선 기준으로 정리하는 공통 축
+- [[newcomer-path-국회대응시즌-첫주-2026-05]] — 국회 대응 시즌 첫 주에 읽을 순서
+
 ## AI-ready 공공서비스 연결
 
 - kgov-ready-demo Plaza 연결 검증 → [[verification-kgov-ready-demo-plaza-2026-05]]
