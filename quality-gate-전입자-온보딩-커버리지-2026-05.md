@@ -1,0 +1,80 @@
+# quality gate — 전입자 온보딩 커버리지 2026-05
+
+이 note는 2026-05-03 기준 `newcomer-onboarding-wiki`의 전입자/신규자 온보딩 확장 상태를 다음 작업자가 빠르게 이어받기 위한 품질 게이트 기록이다.
+
+## 확인 범위
+
+- 중앙부처·위원회·청 단위 hub
+- 기관별 전입 첫날 FAQ
+- 기관별 first-day newcomer path
+- 기관별 first-week process
+- 기관군별 transfer landing
+- kgov-ready-demo agent-ready manifest 연결
+
+## 통과한 것
+
+### 기관별 삼종 note 커버리지
+
+국가인재원 계열을 제외한 기관 hub 46개 기준으로 아래 3종 note 존재 여부를 확인했다.
+
+- pattern: `faq-{기관}-전입첫날-무엇부터-봐야-하나`
+- pattern: `newcomer-path-{기관}-전입첫날-2026-05`
+- pattern: `process-{기관}-전입첫주-적응흐름`
+
+결과:
+
+- institutions: 46
+- missing triads: 0
+
+### 전입자 gate 연결
+
+최근 batch에서 다음 연결을 닫았다.
+
+- 기관 hub → `gate-전입후첫재적응.md`
+- 기관 FAQ → `gate-전입후첫재적응.md`
+- 기관 first-day path → `gate-전입후첫재적응.md`
+- 기관 first-week process → `gate-전입후첫재적응.md`
+- 기관군 landing → 기관 hub/FAQ/path/process
+- 기관 hub → 기관군 landing
+
+### kgov-ready-demo 연결
+
+`kgov-ready-demo`는 공식 정보원이 아니라 AI-ready public interface 참조 시안으로 문서화했다.
+
+- [[concept-공공서비스-AI-ready-interface-kgov-agent-plaza]]
+- [[link-manifest-kgov-agent-ready-행정사회부처-2026-05]]
+- [[link-manifest-kgov-agent-ready-경제인프라부처-2026-05]]
+- [[link-manifest-kgov-agent-ready-외교안보법무부처-2026-05]]
+
+kgov manifest 3개는 19개 demo slug를 newcomer wiki의 관련 hub/FAQ/path/process로 연결한다. 관련 21개 hub도 자기 kgov manifest로 되돌아가는 backlink를 갖는다.
+
+## 남은 품질 이슈
+
+전체 repo의 `.md` reference 전체 검사는 아직 clean하지 않다. 2026-05-03 20:25 점검에서 `md_files 547`, `missing_refs 186`이 나왔다.
+
+이 missing refs는 대부분 이번 전입자 확장 batch에서 새로 만든 파일이 아니라, 기존 FAQ/설계/manifest의 미래 확장 placeholder 또는 외부 archive 경로다. 따라서 이번 전입자 온보딩 핵심 경로의 blocker라기보다는 별도 cleanup wave로 다뤄야 한다.
+
+대표 유형:
+
+1. FAQ 안의 후속 FAQ placeholder
+2. `structure-design-2026-04.md`, `atomization-rules-2026-04.md` 같은 설계 문서의 예시 파일명
+3. `link-manifest-행정안전부-인사혁신처-기획재정부-2026-04.md` 안의 외부 archive/data/readable-final 경로
+4. 보도자료·관보 archive 경로처럼 repo root 기준 local file이 아닌 참조
+
+## 다음 추천 작업
+
+1. 전입자 경로 자체는 새 note를 무리하게 더 만들기보다, README/docs live 노출 상태를 확인한다.
+2. 별도 cleanup wave로 `missing_refs`를 아래처럼 분류한다.
+   - 실제로 만들어야 할 FAQ
+   - 의도적 placeholder
+   - 외부 archive path
+   - 오탈자
+3. placeholder 중 자주 등장하는 FAQ 묶음만 1개 기관군 또는 1개 주제군씩 생성한다.
+4. `link-manifest-행정안전부-인사혁신처-기획재정부-2026-04.md`는 외부 archive path를 local wiki link로 오인하지 않도록 표기 규칙을 정리한다.
+
+## 연결 노트
+
+- [[landing-전입자-기관군별-온보딩-2026-05]]
+- [[gate-전입후첫재적응]]
+- [[concept-공공서비스-AI-ready-interface-kgov-agent-plaza]]
+- [[README]]
