@@ -70,6 +70,7 @@
 - **금융위 전입 첫날 순서 패키지** → `newcomer-path-금융위원회-전입첫날-2026-05.md`
 - **금융위 전입 첫주 process** → `process-금융위원회-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
+- **공통 전입 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
 - `hub-금융위원회.md`

@@ -71,6 +71,7 @@
 - **국토교통부 전입 첫날 순서 패키지** → `newcomer-path-국토교통부-전입첫날-2026-05.md`
 - **국토교통부 전입 첫주 process** → `process-국토교통부-전입첫주-적응흐름.md`
 - **공통 전입 재적응 상위 path** → `newcomer-path-전입후첫재적응질문-2026-05.md`
+- **공통 전입 재적응 gate** → `gate-전입후첫재적응.md`
 
 ## Related Notes
 - `hub-국토교통부.md`
