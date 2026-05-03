@@ -36,14 +36,14 @@
 ### 2. `gov-press-md`
 - 역할: 정부 보도자료 document DB
 - 성격: 설명 / 홍보 / 정책 메시지 / 최신 현안
-- 기본 단위: `data/YYYY/YYYY-MM/YYYY-MM-DD/001_부처명_제목.md`
+- 기본 단위: external path pattern: data/YYYY/YYYY-MM/YYYY-MM-DD/001_부처명_제목.md
 
 ### 3. `gov-gazette-md`
 - 역할: 관보 document DB
 - 성격: 공식 기록 / 제도 변화 / 조직 변화 / 인사 / 법령 / 고시 / 예규
 - 기본 단위:
-  - metadata: `data/YYYY/YYYY-MM/YYYY-MM-DD/001_기관명_제목.md`
-  - readable: `readable-final/YYYY-MM-DD/001_기관명_제목.md`
+  - metadata: external path pattern: data/YYYY/YYYY-MM/YYYY-MM-DD/001_기관명_제목.md
+  - readable: external path pattern: readable-final/YYYY-MM-DD/001_기관명_제목.md
 
 ### 4. `ai-readable-government`
 - 역할: 위 두 DB를 읽는 public reader
@@ -118,7 +118,7 @@
 ---
 
 ## 공통 레코드 스키마
-`ai-readable-government/docs/INDEXES.md` 기준으로, newcomer wiki가 읽을 최소 공통 필드는 아래처럼 잡는 것이 좋다.
+external docs path: ai-readable-government/docs/INDEXES.md 기준으로, newcomer wiki가 읽을 최소 공통 필드는 아래처럼 잡는 것이 좋다.
 
 | 필드 | 의미 |
 |---|---|

@@ -89,8 +89,8 @@ first-entry FAQ cleanup과 추가 기관 packet 확장 이후 중앙부처·위�
 
 확인한 파일군:
 
-- `newcomer-path-*-전입첫주-2026-05.md`
-- `faq-*-전입첫주-무엇부터-읽어야-하나.md`
+- filename pattern: `newcomer-path-*-전입첫주-2026-05` (wildcard pattern; `.md` extension omitted to avoid treating it as a local note ref)
+- filename pattern: `faq-*-전입첫주-무엇부터-읽어야-하나` (wildcard pattern; `.md` extension omitted to avoid treating it as a local note ref)
 - `landing-전입자-전입첫주-전체기관-2026-05.md`
 - `landing-전입자-전입첫주-FAQ-전체기관-2026-05.md`
 - `README.md`
