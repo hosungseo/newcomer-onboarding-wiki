@@ -108,3 +108,4 @@
 - `자치혁신실 / 지방재정경제실 / 재난안전관리본부` 축 permanent note를 더 분해
 - `직제 / 직제 시행규칙`에서 과 수준 사무분장을 읽기 쉬운 atomic note로 더 분해
 - 행정안전부 업무계획·백서에서 newcomer용 기관 이해 note 추가 분해
+- 공공서비스 AI-ready interface 참조 시안 → `concept-공공서비스-AI-ready-interface-kgov-agent-plaza.md`

@@ -26,3 +26,6 @@
 
 - 이 landing은 README나 공개 index에서 전입자 온보딩의 첫 진입점으로 노출하기 좋다.
 - 기관이 추가되면 먼저 해당 기관의 hub/FAQ/path/process 4종 존재 여부를 확인한 뒤, 알맞은 기관군 landing에 한 줄 묶음으로 추가한다.
+
+## 연결 노트
+- 공공서비스 AI-ready interface 참조 시안 → `concept-공공서비스-AI-ready-interface-kgov-agent-plaza.md`

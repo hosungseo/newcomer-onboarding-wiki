@@ -31,3 +31,4 @@
 - `concept-행정안전부-인공지능정부실-AI데이터디지털서비스연결축.md`
 - `source-국가공무원인재개발원-2026-교육운영계획.md`
 - `source-국가공무원인재개발원-2026-04월-교육과정-안내.md`
+- `concept-공공서비스-AI-ready-interface-kgov-agent-plaza.md`

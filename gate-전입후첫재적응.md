@@ -61,3 +61,6 @@
 - `newcomer-path-전입후첫인사복무질문-2026-05.md`
 - `newcomer-path-전입후첫예산재정질문-2026-05.md`
 - `process-전입후-첫주-재적응.md`
+
+## 연결 노트
+- 공공서비스 AI-ready interface 참조 시안 → `concept-공공서비스-AI-ready-interface-kgov-agent-plaza.md`
