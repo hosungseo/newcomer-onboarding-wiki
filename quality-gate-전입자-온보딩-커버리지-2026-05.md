@@ -48,6 +48,41 @@
 
 kgov manifest 3개는 19개 demo slug를 newcomer wiki의 관련 hub/FAQ/path/process로 연결한다. 관련 21개 hub도 자기 kgov manifest로 되돌아가는 backlink를 갖는다.
 
+## 2026-05-03 21:40 재검증
+
+first-entry FAQ cleanup과 추가 기관 packet 확장 이후 중앙부처·위원회·청 단위 coverage를 재스캔했다.
+
+확인한 기관 범위:
+
+- 18부 + 주요 처·위원회·청 + 국무조정실 + 새 기관/독립기관
+- `문화재청`은 현재 명칭인 `국가유산청` packet으로 대체 확인했다.
+
+확인한 5종 파일:
+
+- `source-{기관}-홈.md` 또는 `source-{기관}-*.md`
+- `hub-{기관}.md`
+- `faq-{기관}-전입첫날-무엇부터-봐야-하나.md`
+- `newcomer-path-{기관}-전입첫날-2026-05.md`
+- `process-{기관}-전입첫주-적응흐름.md`
+
+결과:
+
+- checked agencies: 50
+- legacy name excluded: `문화재청` → `국가유산청`으로 확인
+- agencies with missing 5-file packet: 0
+- 기관군 landing files checked: 6
+- landing local `.md` missing refs: 0
+
+최근 추가로 coverage를 닫은 기관:
+
+- `국가유산청`
+- `새만금개발청`
+- `우주항공청`
+- `고위공직자범죄수사처`
+- `검찰청`
+
+따라서 이 시점 기준 중앙행정기관 전입자 온보딩의 기본 5-file packet coverage는 clean 상태다. 다음 작업은 새 기관을 더 찾기보다 각 기관 hub의 깊이를 늘리거나, README/docs/index 노출과 전체 repo missing refs cleanup으로 넘어가는 편이 낫다.
+
 ## 남은 품질 이슈
 
 전체 repo의 `.md` reference 전체 검사는 아직 clean하지 않다. 2026-05-03 20:25 점검에서 `md_files 547`, `missing_refs 186`이 나왔다.
