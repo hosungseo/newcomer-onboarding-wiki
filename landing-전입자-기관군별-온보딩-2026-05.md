@@ -63,3 +63,6 @@
 - kgov 행정·사회부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-행정사회부처-2026-05.md`
 - kgov 경제·인프라부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-경제인프라부처-2026-05.md`
 - kgov 외교·안보·법무부처 slug ↔ newcomer hub 매핑 → `link-manifest-kgov-agent-ready-외교안보법무부처-2026-05.md`
+
+## 위원회 전입
+- [[hub-위원회전입]] / [[newcomer-path-위원회전입-첫주-2026-05]]
