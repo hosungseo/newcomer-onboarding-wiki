@@ -757,3 +757,4 @@
 - [[checklist-민원대응-답변초안-제출전검토]]
 - [[coverage-민원대응-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-민원대응-2026-05]]
+- [[quality-gate-민원대응-공통업무축-2026-05]]

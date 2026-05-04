@@ -5,6 +5,7 @@
 
 ## 핵심 진입로
 - [[manifest-newcomer-journey-민원대응-2026-05]]
+- [[quality-gate-민원대응-공통업무축-2026-05]]
 - [[hub-민원대응]]
 - [[newcomer-path-민원폭주대응-첫주-2026-05]]
 
