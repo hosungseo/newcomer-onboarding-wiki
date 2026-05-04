@@ -12,6 +12,9 @@
 2. 상황형 첫주 path: [[newcomer-path-정보공개청구대응-첫주-2026-05]]
 3. 검토 흐름: [[process-정보공개청구-검토흐름]]
 4. 결정 전 점검: [[checklist-정보공개청구-결정전검토]]
+5. 상황형 coverage: [[coverage-정보공개청구-상황형경로-2026-05]]
+6. journey manifest: [[manifest-newcomer-journey-정보공개청구-2026-05]]
+7. quality gate: [[quality-gate-정보공개청구-2026-05]]
 
 ## 공개자료·내부검토자료 공통 흐름
 - [[faq-공개자료와-내부검토자료는-어떻게-구분하나]]
@@ -29,9 +32,10 @@
 | source | 완료 | 요청·제출 경로, 최종본 여부, 공식근거, 민감정보, 기록물 성격 순으로 대조함 |
 | 정보공개청구 process | 완료 | 청구 내용 기록 단위 분리, 보유·관리 여부, 공개자료 대조, 비공개 검토 표시, 담당 확인 흐름을 제공함 |
 | 정보공개청구 checklist | 완료 | 결정 전 청구 대상, 보유 여부, 공개근거, 비공개 검토 항목, 멈춤선을 점검함 |
-| docs exposure | 부분 완료 | 정보공개청구 FAQ/path/process/checklist와 기존 source/process/checklist/coverage는 웹 인덱스에 노출됨 |
-| manifest | 미완료 | 정보공개청구 또는 정보공개기록관리 journey manifest 필요 |
-| quality gate | 미완료 | 개인정보·비공개 내부검토·법률판단 금지선 점검 note 필요 |
+| docs exposure | 완료 | 정보공개청구 FAQ/path/process/checklist/manifest/quality/coverage와 기존 source/process/checklist/coverage가 웹 인덱스에 노출됨 |
+| manifest | 완료 | 정보공개청구 journey manifest가 전입자/agent route를 고정함 |
+| quality gate | 완료 | 개인정보·비공개 내부검토·법률판단 금지선을 점검하는 note가 있음 |
+| 상황형 coverage | 완료 | 정보공개청구 전용 coverage가 하위 경로와 남은 분기 후보를 묶음 |
 
 ## 연결 업무축
 - [[hub-문서기안]]
@@ -50,9 +54,9 @@
 6. 최종 공개·부분공개·비공개 판단처럼 보이는 표현은 정식 검토·결재 절차로 넘긴다.
 
 ## 다음 빈칸
-1. 정보공개기록관리 또는 정보공개청구 newcomer journey manifest를 만든다.
-2. 정보공개기록관리 quality gate를 만들어 개인정보·비공개 내부검토·법률판단 금지선을 점검한다.
-3. 정보공개청구가 민원·국회·감사 대응으로 넘어갈 때의 분기 manifest를 만든다.
+1. 정보공개청구가 민원·국회·감사 대응으로 넘어갈 때의 분기 manifest를 만든다.
+2. 부분공개·부존재·이송 유형별 하위 process 후보를 검토한다.
+3. 공개자료와 내부검토자료 경계 FAQ를 실제 사례형 질문으로 보강한다.
 
 ## 금지선
 개인정보, 보안정보, 업체별 민감정보, 비공개 내부검토 의견, 법률자문성 결론, 공개 여부에 대한 단정적 법률 판단은 포함하지 않는다.
@@ -60,6 +64,7 @@
 ## Coverage
 - [[coverage-내부운영협업3축-운영정보공개회의-2026-05]]
 
-## Manifest
+## Manifest / Quality / Situation Coverage
 - [[manifest-newcomer-journey-정보공개청구-2026-05]]
 - [[quality-gate-정보공개청구-2026-05]]
+- [[coverage-정보공개청구-상황형경로-2026-05]]
