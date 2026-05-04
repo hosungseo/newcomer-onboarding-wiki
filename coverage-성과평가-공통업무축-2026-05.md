@@ -35,10 +35,11 @@
 
 ## Manifest
 - [[manifest-newcomer-journey-성과평가-2026-05]]
+- [[quality-gate-성과평가-2026-05]]
 
 ## 다음 빈칸
-1. `quality-gate-성과평가-2026-05`로 개인별 평가자료·내부 심의자료 금지선을 별도 점검한다.
-2. README/landing/docs에서 성과·평가 manifest 노출을 확인한다.
+1. README/landing/docs에서 성과·평가 manifest/quality gate 노출을 확인한다.
+2. 국회·감사·보고 경로별 성과자료 설명 차이를 보강한다.
 3. 국회·감사·보고 경로별 성과자료 설명 차이를 보강한다.
 
 ## 금지선
