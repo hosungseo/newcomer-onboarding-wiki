@@ -10,6 +10,7 @@
 - [[checklist-장관보고-보고초안-제출전검토]]
 - [[coverage-장관보고-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-장관보고-2026-05]]
+- [[quality-gate-장관보고-2026-05]]
 - [[faq-장관보고-비공개판단은-어디서-멈추나]]
 - [[newcomer-path-장관보고준비-첫주-2026-05]]
 - [[newcomer-path-첫문서처리질문-2026-04]]

@@ -38,6 +38,7 @@
 - [[checklist-장관보고-보고초안-제출전검토]]
 - [[coverage-장관보고-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-장관보고-2026-05]]
+- [[quality-gate-장관보고-2026-05]]
 - [[source-감사대응-자료대조순서]]
 - [[process-감사대응-자료제출-작성흐름]]
 - [[checklist-감사대응-자료제출-제출전검토]]

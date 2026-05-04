@@ -16,6 +16,7 @@
 - [[process-장관보고-보고초안-작성흐름]]
 - [[checklist-장관보고-보고초안-제출전검토]]
 - [[manifest-newcomer-journey-장관보고-2026-05]]
+- [[quality-gate-장관보고-2026-05]]
 
 ## 연결 업무축
 - [[hub-예산]]
