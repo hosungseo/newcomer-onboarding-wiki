@@ -70,5 +70,6 @@
 
 ## Manifest / Quality / Situation Coverage
 - [[manifest-newcomer-journey-정보공개청구-2026-05]]
+- [[manifest-newcomer-journey-정보공개청구-분기-2026-05]]
 - [[quality-gate-정보공개청구-2026-05]]
 - [[coverage-정보공개청구-상황형경로-2026-05]]

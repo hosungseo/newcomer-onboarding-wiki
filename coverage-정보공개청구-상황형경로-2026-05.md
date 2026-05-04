@@ -16,6 +16,7 @@
 10. **결정 전 점검** — [[checklist-정보공개청구-결정전검토]]에서 청구 대상, 보유 여부, 공개근거, 비공개 검토 항목, 멈춤선을 확인한다.
 7. **agent route** — [[manifest-newcomer-journey-정보공개청구-2026-05]]에서 전입자와 agent가 같은 순서로 움직이도록 route를 고정한다.
 8. **품질 gate** — [[quality-gate-정보공개청구-2026-05]]에서 공개 위키에 실어도 되는 경계와 연결 품질을 점검한다.
+9. **분기 manifest** — [[manifest-newcomer-journey-정보공개청구-분기-2026-05]]에서 민원·국회·감사·홍보로 넘어가는 cross-route를 확인한다.
 
 ## 완성도 점검
 | 층 | 상태 | 다음 보강 |
@@ -26,7 +27,7 @@
 | source | 있음 | 공개 포털·법령·홈페이지·기록물 대조 순서를 더 세분화 가능 |
 | process | 보강 | 부분공개과 부존재·이송 하위 process를 추가했고, 다음 후보는 민원·국회·감사 분기 manifest |
 | checklist | 보강 | 결정 전·부분공개·부존재이송 제출 전 검토표를 함께 사용 가능 |
-| manifest | 있음 | 민원·국회·감사 분기 manifest와 연결 가능 |
+| manifest | 보강 | 기본 journey manifest와 민원·국회·감사·홍보 분기 manifest가 함께 있음 |
 | quality gate | 있음 | docs/index 노출은 유지하고, 주기적으로 missing ref를 점검 |
 
 ## 공개/비공개 금지선
@@ -41,7 +42,7 @@
 
 ## 다음 후보
 1. `source-정보공개청구-공개자료-대조순서`를 별도 note로 분리할지 판단한다.
-2. 민원·국회·감사로 넘어가는 cross-route manifest를 만들면 전입자 분기 탐색성이 좋아진다.
+2. 분기 manifest를 README/landing/docs 노출까지 더 넓게 연결하면 전입자 탐색성이 좋아진다.
 3. 민원·국회·감사로 넘어가는 cross-route manifest를 만들면 전입자 분기 탐색성이 좋아진다.
 
 ## Related Notes

@@ -40,6 +40,7 @@ stop_lines:
 
 ## Related Notes
 - [[quality-gate-정보공개청구-2026-05]]
+- [[manifest-newcomer-journey-정보공개청구-분기-2026-05]]
 - [[landing-전입자-공통업무축-2026-05]]
 - [[README]]
 - [[hub-문서기안]]
