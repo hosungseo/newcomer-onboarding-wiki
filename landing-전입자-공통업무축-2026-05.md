@@ -46,6 +46,7 @@
 - [[manifest-newcomer-journey-예산대응-2026-05]]
 - [[quality-gate-예산대응-공통업무축-2026-05]]
 - [[hub-문서기안]]
+- [[newcomer-path-문서기안-첫주-2026-05]]
 - [[hub-인사복무]]
 - [[newcomer-path-인사복무-첫주-2026-05]]
 - [[faq-인사복무-처음-무엇부터-확인하나]]
