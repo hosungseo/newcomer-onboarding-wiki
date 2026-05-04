@@ -111,3 +111,4 @@
 - [[checklist-법령대응-설명초안-제출전검토]]
 - [[coverage-법령대응-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-법령대응-2026-05]]
+- [[quality-gate-법령대응-공통업무축-2026-05]]
