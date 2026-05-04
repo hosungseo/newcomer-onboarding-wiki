@@ -106,6 +106,7 @@
 
 ## 민감정보 금지선
 - [[source-사회안전부처-민감정보-금지선비교]]
+- [[checklist-사회안전부처-민감정보-제출전검토]]
 
 ## Manifest / Quality Gate
 - [[manifest-newcomer-journey-사회안전부처전입-2026-05]]
