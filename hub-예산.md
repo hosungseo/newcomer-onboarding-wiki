@@ -94,3 +94,6 @@ newcomer에게 중요한 포인트는 메뉴 조작법보다 다음 3가지다.
 - [[concept-조달계약-기본방법-구분]]
 - [[hub-기획재정부]]
 - [[hub-조달청]]
+
+## Situation Path
+- [[newcomer-path-국회예산심사-첫주-2026-05]]
