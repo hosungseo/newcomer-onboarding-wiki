@@ -21,7 +21,7 @@
 | checklist | 있음 | 제출 전 검토표가 있음 |
 | coverage | 이번 보강 | 현재 경로와 다음 빈칸을 묶음 |
 | manifest | 완료 | 전입자/agent 실행 route를 고정함 |
-| quality gate | 미완료 | 조직개편안·정원협상·개인정보 금지선 점검 note 필요 |
+| quality gate | 완료 | 조직개편안·정원협상·개인정보 금지선 점검 note가 있음 |
 
 ## 연결 업무축
 - [[hub-예산]] — 정원·기구 조정이 예산·인건비와 연결될 때
@@ -35,12 +35,13 @@
 비공개 조직개편안, 내부 검토의견, 개인별 인사·평정 정보, 특정 부서의 민감한 정원 협상 내용, 기관 간 협의전략, 법률자문성 결론은 공개 온보딩 note에 포함하지 않는다.
 
 ## 다음 후보
-1. `quality-gate-조직정원-2026-05`로 공개/비공개 금지선을 별도 점검한다.
-2. README/landing/docs에서 조직·정원 manifest 노출을 확인한다.
+1. README/landing/docs에서 조직·정원 manifest/quality gate 노출을 확인한다.
+2. 기관별 전입 hub에서 조직·정원 path로 연결되는 빈칸을 찾는다.
 3. 기관별 전입 hub에서 조직·정원 path로 연결되는 빈칸을 찾는다.
 
 ## Related Notes
 - [[landing-전입자-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-조직정원-2026-05]]
+- [[quality-gate-조직정원-2026-05]]
 - [[coverage-운영관리3축-조직성과계약-2026-05]]
 - [[README]]
