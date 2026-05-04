@@ -26,5 +26,6 @@
 - [[source-장관보고-자료대조순서]]
 - [[process-장관보고-보고초안-작성흐름]]
 - [[coverage-장관보고-공통업무축-2026-05]]
+- [[manifest-newcomer-journey-장관보고-2026-05]]
 - [[landing-전입자-공통업무축-2026-05]]
 - [[coverage-부처군-section-기관행-2026-05]]
