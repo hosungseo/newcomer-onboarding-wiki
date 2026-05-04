@@ -26,6 +26,7 @@
 - 공통 coverage는 [[coverage-공통업무축-처청위원회-2026-05]]를 본다.
 
 ## Related Notes
+- [[hub-복무수당여비]]
 - [[hub-인사승진]]
 - [[hub-문서기안]]
 - [[coverage-고립FAQ-문서인사복무-2026-05]]
