@@ -37,6 +37,7 @@
 - [[process-감사대응-자료제출-작성흐름]]
 - [[checklist-감사대응-자료제출-제출전검토]]
 - [[coverage-감사대응-공통업무축-2026-05]]
+- [[manifest-newcomer-journey-감사대응-2026-05]]
 - [[source-예산대응-자료대조순서]]
 - [[process-예산대응-요구자료-작성흐름]]
 - [[checklist-예산대응-요구자료-제출전검토]]
