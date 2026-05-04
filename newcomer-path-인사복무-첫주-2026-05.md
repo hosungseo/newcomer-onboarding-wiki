@@ -36,6 +36,7 @@
 - [[process-인사복무-검토초안-작성흐름]]
 - [[checklist-인사복무-검토초안-검토]]
 - [[coverage-인사복무-공통업무축-2026-05]]
+- [[manifest-newcomer-journey-인사복무-2026-05]]
 - [[source-인사복무-자료대조순서]]
 - [[hub-인사복무]]
 - [[hub-인사]]
