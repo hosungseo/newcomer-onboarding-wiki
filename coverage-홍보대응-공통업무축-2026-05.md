@@ -35,6 +35,7 @@
 
 ## Related Notes
 - [[manifest-newcomer-journey-홍보대응-2026-05]]
+- [[quality-gate-홍보대응-공통업무축-2026-05]]
 - [[landing-전입자-공통업무축-2026-05]]
 - [[README]]
 - [[hub-장관보고]]
