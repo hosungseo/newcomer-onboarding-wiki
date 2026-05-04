@@ -47,3 +47,4 @@
 - [[source-문서기안-자료대조순서]]
 - [[process-문서기안-검토초안-작성흐름]]
 - [[coverage-문서기안-공통업무축-2026-05]]
+- [[manifest-newcomer-journey-문서기안-2026-05]]
