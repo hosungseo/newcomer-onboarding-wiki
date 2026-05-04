@@ -106,6 +106,7 @@
 - [[checklist-계약조달-검토초안-검토]]
 - [[coverage-계약조달-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-계약조달-2026-05]]
+- [[quality-gate-계약조달-2026-05]]
 
 ## Source
 - [[source-국회대응-자료대조순서]]

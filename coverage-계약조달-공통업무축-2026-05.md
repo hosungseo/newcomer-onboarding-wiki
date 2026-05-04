@@ -59,3 +59,4 @@
 
 ## Manifest
 - [[manifest-newcomer-journey-계약조달-2026-05]]
+- [[quality-gate-계약조달-2026-05]]
