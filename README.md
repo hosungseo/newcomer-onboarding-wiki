@@ -524,6 +524,7 @@
 3. 그다음에는 승진축 `휴직·육아휴직과 승진경력 인정`으로 돌아갈 수 있다
 
 ## Related Notes
+- [[source-예산대응-자료대조순서]]
 - [[source-scouting-2026-04-13]] — 공개 온보딩/실무 적응 자료 1차 발굴 메모
 - [[collection-strategy-2026-04]] — common-core-first 수집 전략과 역할축 프레임
 - [[atomization-rules-2026-04]] — 공격적 원자화 기준서 (`document → section/process/concept → path`)
