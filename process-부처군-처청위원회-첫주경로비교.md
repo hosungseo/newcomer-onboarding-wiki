@@ -59,5 +59,6 @@
 ## Related Notes
 - [[landing-전입자-공통업무축-2026-05]]
 - [[coverage-공통업무축-처청위원회-2026-05]]
+- [[checklist-부처군-처청위원회-첫주경로선택]]
 - [[coverage-부처군-section-기관행-2026-05]]
 - [[README]]
