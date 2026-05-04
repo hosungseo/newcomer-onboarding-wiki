@@ -56,3 +56,6 @@
 
 ## Coverage
 - [[coverage-운영관리3축-조직성과계약-2026-05]]
+
+## Manifest
+- [[manifest-newcomer-journey-계약조달-2026-05]]
