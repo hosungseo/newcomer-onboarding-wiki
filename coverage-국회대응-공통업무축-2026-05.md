@@ -6,6 +6,7 @@
 ## 핵심 진입로
 - [[hub-국회대응]]
 - [[manifest-newcomer-journey-국회대응-2026-05]]
+- [[quality-gate-국회대응-공통업무축-2026-05]]
 - [[newcomer-path-국회예산심사-첫주-2026-05]]
 - [[newcomer-path-국정감사대응-첫주-2026-05]]
 - [[newcomer-path-국회대응시즌-첫주-2026-05]]
