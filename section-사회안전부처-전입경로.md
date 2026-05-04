@@ -104,8 +104,9 @@
 - 내부 상황관리, 지휘체계, 비상연락망, 현장 매뉴얼의 비공개 부분
 - 개별 사안에 대한 법률자문성 결론이나 책임 판단
 
-## Manifest
+## Manifest / Quality Gate
 - [[manifest-newcomer-journey-사회안전부처전입-2026-05]]
+- [[quality-gate-사회안전부처전입-2026-05]]
 
 ## Related Notes
 - [[hub-사회안전부처전입]] / [[newcomer-path-사회안전부처전입-첫주-2026-05]]
