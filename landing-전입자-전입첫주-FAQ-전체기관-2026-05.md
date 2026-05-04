@@ -95,5 +95,6 @@
 - `process-전입후-첫주-재적응.md`
 
 ## Coverage
+- [[coverage-기관별전입첫주FAQ-통합색인-2026-05]]
 - [[coverage-고립FAQ-기관별전입첫주-2차-2026-05]]
 - [[coverage-고립FAQ-기관별전입첫주-2026-05]]
