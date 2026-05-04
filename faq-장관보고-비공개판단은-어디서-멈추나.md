@@ -23,5 +23,6 @@
 - 감사 대응 연결: [[hub-감사대응]] / [[newcomer-path-감사대응-첫주-2026-05]]
 
 ## Related Notes
+- [[source-장관보고-자료대조순서]]
 - [[landing-전입자-공통업무축-2026-05]]
 - [[coverage-부처군-section-기관행-2026-05]]
