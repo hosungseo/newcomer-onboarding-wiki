@@ -10,6 +10,7 @@
 - [[checklist-감사대응-자료제출-제출전검토]]
 - [[coverage-감사대응-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-감사대응-2026-05]]
+- [[quality-gate-감사대응-공통업무축-2026-05]]
 - [[faq-감사자료-비공개정보는-어디서-멈추나]]
 - [[newcomer-path-감사대응-첫주-2026-05]]
 - [[newcomer-path-첫문서처리질문-2026-04]]

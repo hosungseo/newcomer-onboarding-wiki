@@ -17,6 +17,7 @@
 - [[process-감사대응-자료제출-작성흐름]]
 - [[checklist-감사대응-자료제출-제출전검토]]
 - [[manifest-newcomer-journey-감사대응-2026-05]]
+- [[quality-gate-감사대응-공통업무축-2026-05]]
 
 ## 연결 업무축
 - [[hub-국회대응]]
