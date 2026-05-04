@@ -62,3 +62,4 @@
 
 ## Manifest
 - [[manifest-newcomer-journey-정보공개청구-2026-05]]
+- [[quality-gate-정보공개청구-2026-05]]
