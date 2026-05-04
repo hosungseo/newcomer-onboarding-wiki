@@ -6,6 +6,7 @@
 ## 점검 대상
 - [[hub-정보공개기록관리]]
 - [[faq-정보공개청구-처음-무엇부터-확인하나]]
+- [[faq-정보공개청구-공개자료와-내부검토자료-사례구분]]
 - [[newcomer-path-정보공개청구대응-첫주-2026-05]]
 - [[source-정보공개기록관리-자료대조순서]]
 - [[process-정보공개청구-검토흐름]]
@@ -19,6 +20,7 @@
 ## 1. 경로 완성도
 - [x] hub에서 정보공개·기록관리의 전체 경계를 설명한다.
 - [x] FAQ에서 첫 30분 확인 질문을 제공한다.
+- [x] 사례형 FAQ에서 공개자료와 내부검토자료 경계를 실제 질문으로 나눈다.
 - [x] path에서 첫주 행동 순서를 제공한다.
 - [x] source에서 공개자료·내부검토자료 대조 순서를 제공한다.
 - [x] process에서 청구 검토흐름을 제공한다.
@@ -44,8 +46,8 @@
 ## 4. 남은 고도화 후보
 1. `docs/index.html`에 이 quality gate를 노출한다.
 2. 정보공개기록관리 전체 journey manifest를 만들지, 정보공개청구 manifest를 대표 manifest로 둘지 정한다.
-3. 공개자료와 내부검토자료 경계 FAQ를 실제 사례형 질문으로 보강한다.
-4. 분기 manifest를 기관별 전입 hub와 연결할지 판단한다.
+3. 분기 manifest를 기관별 전입 hub와 연결할지 판단한다.
+4. 정보공개청구 source/FAQ/checklist 묶음을 별도 quality gate로 분리할지 검토한다.
 
 ## 판정
 현재 정보공개청구 묶음은 공개 온보딩 위키 기준으로 `hub → FAQ → path → source → process → checklist → manifest → coverage` 경로가 닫혀 있다. 다음 단계는 quality gate 웹 노출과 분기 manifest 보강이다.
