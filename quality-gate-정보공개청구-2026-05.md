@@ -11,6 +11,8 @@
 - [[process-정보공개청구-검토흐름]]
 - [[checklist-정보공개청구-결정전검토]]
 - [[manifest-newcomer-journey-정보공개청구-2026-05]]
+- [[manifest-newcomer-journey-정보공개청구-분기-2026-05]]
+- [[coverage-정보공개청구-상황형경로-2026-05]]
 - [[coverage-정보공개기록관리-공통업무축-2026-05]]
 - [[coverage-정보공개청구-상황형경로-2026-05]]
 
@@ -22,6 +24,7 @@
 - [x] process에서 청구 검토흐름을 제공한다.
 - [x] checklist에서 결정 전 점검 항목을 제공한다.
 - [x] manifest에서 전입자/agent 실행 순서를 묶는다.
+- [x] 분기 manifest에서 민원·국회·감사·홍보 cross-route를 묶는다.
 - [x] coverage에서 현재 완성도와 다음 gap을 보여준다.
 
 ## 2. 공개/비공개 금지선
@@ -41,8 +44,8 @@
 ## 4. 남은 고도화 후보
 1. `docs/index.html`에 이 quality gate를 노출한다.
 2. 정보공개기록관리 전체 journey manifest를 만들지, 정보공개청구 manifest를 대표 manifest로 둘지 정한다.
-3. 민원·국회·감사 대응으로 넘어가는 분기 manifest를 만든다.
-4. 공개자료와 내부검토자료 경계 FAQ를 실제 사례형 질문으로 보강한다.
+3. 공개자료와 내부검토자료 경계 FAQ를 실제 사례형 질문으로 보강한다.
+4. 분기 manifest를 기관별 전입 hub와 연결할지 판단한다.
 
 ## 판정
 현재 정보공개청구 묶음은 공개 온보딩 위키 기준으로 `hub → FAQ → path → source → process → checklist → manifest → coverage` 경로가 닫혀 있다. 다음 단계는 quality gate 웹 노출과 분기 manifest 보강이다.
