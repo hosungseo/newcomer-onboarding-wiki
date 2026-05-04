@@ -784,3 +784,4 @@
 - [[process-홍보대응-보도자료초안-작성흐름]]
 - [[checklist-홍보대응-보도자료초안-제출전검토]]
 - [[coverage-홍보대응-공통업무축-2026-05]]
+- [[manifest-newcomer-journey-홍보대응-2026-05]]
