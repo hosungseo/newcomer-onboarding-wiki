@@ -34,3 +34,4 @@
 - [[coverage-공통업무축-처청위원회-2026-05]]
 - [[manifest-newcomer-journey-처청위원회전입-2026-05]]
 - [[quality-gate-처청위원회전입-2026-05]]
+- [[source-처청위원회전입-기관성격-대조순서]]
