@@ -66,6 +66,7 @@
 - [[newcomer-path-정보공개청구대응-첫주-2026-05]]
 - [[process-정보공개청구-검토흐름]]
 - [[checklist-정보공개청구-결정전검토]]
+- [[manifest-newcomer-journey-정보공개청구-2026-05]]
 - [[source-정보공개기록관리-자료대조순서]]
 - [[process-정보공개기록관리-공개검토초안-작성흐름]]
 - [[checklist-정보공개기록관리-공개검토초안-검토]]

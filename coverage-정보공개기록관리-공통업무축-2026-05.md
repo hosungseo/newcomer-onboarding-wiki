@@ -59,3 +59,6 @@
 
 ## Coverage
 - [[coverage-내부운영협업3축-운영정보공개회의-2026-05]]
+
+## Manifest
+- [[manifest-newcomer-journey-정보공개청구-2026-05]]
