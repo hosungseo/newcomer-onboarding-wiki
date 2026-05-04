@@ -4,6 +4,7 @@
 민원대응 관련 hub, 민원폭주 첫주 path, FAQ, source, process, checklist note를 한곳에 묶어 전입자가 유입경로 분류부터 답변 초안 제출 전 검토까지 다시 찾게 한다.
 
 ## 핵심 진입로
+- [[manifest-newcomer-journey-민원대응-2026-05]]
 - [[hub-민원대응]]
 - [[newcomer-path-민원폭주대응-첫주-2026-05]]
 
@@ -38,7 +39,8 @@
 - process: 있음
 - checklist: 있음
 - docs exposure: hub/path/FAQ/source/process/checklist 있음
-- 다음 후보: 민원대응 manifest 또는 정보공개·홍보·감사로 이어지는 상황형 path
+- manifest: 있음
+- 다음 후보: 정보공개·홍보·감사로 이어지는 상황형 path 또는 반복 민원 FAQ template
 
 ## 금지선
 개인정보, 민원인 식별정보, 사건별 민원·신고·수사·감사·조사 세부, 내부 검토의견, 민원 대응 전략, 비공개 협의 내용, 업체·입찰·평가 정보, 법률자문성 결론은 포함하지 않는다.
