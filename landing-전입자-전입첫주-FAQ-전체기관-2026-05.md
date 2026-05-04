@@ -93,3 +93,6 @@
 - `gate-전입후첫재적응.md`
 - `landing-전입자-전입첫주-전체기관-2026-05.md`
 - `process-전입후-첫주-재적응.md`
+
+## Coverage
+- [[coverage-고립FAQ-기관별전입첫주-2026-05]]
