@@ -42,6 +42,7 @@
 - [[process-예산대응-요구자료-작성흐름]]
 - [[checklist-예산대응-요구자료-제출전검토]]
 - [[coverage-예산대응-공통업무축-2026-05]]
+- [[manifest-newcomer-journey-예산대응-2026-05]]
 - [[faq-예산자료-비공개수치는-어디서-멈추나]]
 - [[hub-예산]]
 - [[newcomer-path-첫예산업무]]

@@ -16,6 +16,7 @@
 - [[source-예산대응-자료대조순서]]
 - [[process-예산대응-요구자료-작성흐름]]
 - [[checklist-예산대응-요구자료-제출전검토]]
+- [[manifest-newcomer-journey-예산대응-2026-05]]
 
 ## 연결 업무축
 - [[hub-국회대응]]
