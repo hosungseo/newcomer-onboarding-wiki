@@ -45,6 +45,7 @@
 - [[checklist-인사복무-검토초안-검토]]
 - [[coverage-인사복무-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-인사복무-2026-05]]
+- [[quality-gate-인사복무-2026-05]]
 - [[source-인사복무-자료대조순서]]
 - [[newcomer-path-전입후첫문서민원질문-2026-05]]
 - [[newcomer-path-첫문서처리질문-2026-04]]

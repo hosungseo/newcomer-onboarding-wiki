@@ -10,6 +10,7 @@
 - [[checklist-인사복무-검토초안-검토]]
 - [[coverage-인사복무-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-인사복무-2026-05]]
+- [[quality-gate-인사복무-2026-05]]
 - [[hub-문서기안]]
 
 ## 1단계 — 질문 유형 표시
