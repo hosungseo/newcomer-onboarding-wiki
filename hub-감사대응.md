@@ -43,3 +43,6 @@
 - [[hub-예산]]
 - [[coverage-부처군-section-기관행-2026-05]]
 - [[landing-전입자-기관군별-온보딩-2026-05]]
+
+## Situation Path
+- [[newcomer-path-국정감사대응-첫주-2026-05]]
