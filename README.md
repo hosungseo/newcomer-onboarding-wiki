@@ -39,6 +39,7 @@
 - [[newcomer-path-국가인재원-신규자과정-공통실무모듈-2026-05]]
 - [[newcomer-path-첫인사복무와문서처리-2026-04]]
 - [[newcomer-path-전입후첫인사복무질문-2026-05]]
+- [[newcomer-path-인사복무-첫주-2026-05]]
 - [[newcomer-path-전입후첫문서민원질문-2026-05]]
 - [[newcomer-path-첫문서처리질문-2026-04]]
 - [[newcomer-path-전입후첫재적응질문-2026-05]]
