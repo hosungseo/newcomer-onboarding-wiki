@@ -104,8 +104,9 @@
 - 미공개 계획, 내부 일정, 보안성 시설·시스템 세부
 - 개별 사안에 대한 법률자문성 결론이나 책임 판단
 
-## Manifest
+## Manifest / Quality Gate
 - [[manifest-newcomer-journey-국토환경부처전입-2026-05]]
+- [[quality-gate-국토환경부처전입-2026-05]]
 
 ## Related Notes
 - [[hub-국토환경부처전입]] / [[newcomer-path-국토환경부처전입-첫주-2026-05]]
