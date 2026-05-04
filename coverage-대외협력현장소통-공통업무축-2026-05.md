@@ -35,10 +35,11 @@
 
 ## Manifest
 - [[manifest-newcomer-journey-대외협력현장소통-2026-05]]
+- [[quality-gate-대외협력현장소통-2026-05]]
 
 ## 다음 빈칸
-1. `quality-gate-대외협력현장소통-2026-05`로 개인정보·민원인 식별정보·미확정 정책안 금지선을 별도 점검한다.
-2. README/landing/docs에서 대외협력·현장소통 manifest 노출을 확인한다.
+1. README/landing/docs에서 대외협력·현장소통 manifest/quality gate 노출을 확인한다.
+2. 협업·회의운영과 대외협력·현장소통의 후속조치 경계를 비교한다.
 3. 협업·회의운영과 대외협력·현장소통의 후속조치 경계를 비교한다.
 
 ## Section
