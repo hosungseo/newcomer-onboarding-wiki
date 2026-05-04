@@ -11,6 +11,7 @@
 - [[checklist-문서기안-검토초안-검토]]
 - [[coverage-문서기안-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-문서기안-2026-05]]
+- [[quality-gate-문서기안-2026-05]]
 - [[source-문서기안-자료대조순서]]
 - [[coverage-고립FAQ-문서인사복무-2026-05]]
 - [[process-행정문서-기안에서결재까지]]

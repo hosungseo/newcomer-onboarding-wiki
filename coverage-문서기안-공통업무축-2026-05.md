@@ -18,6 +18,7 @@
 - [[process-문서기안-검토초안-작성흐름]]
 - [[checklist-문서기안-검토초안-검토]]
 - [[manifest-newcomer-journey-문서기안-2026-05]]
+- [[quality-gate-문서기안-2026-05]]
 
 ## 연결 업무축
 - [[hub-민원대응]]

@@ -45,6 +45,7 @@ stop_lines:
 이 manifest는 공개 온보딩 경로만 다룬다. 개인정보, 비공개 내부검토의견, 미확정 기관 입장, 사건별 조사·감독·민원 세부, 보안 문서, 법률자문성 결론은 초안·체크리스트·agent routing에 넣지 않는다.
 
 ## Related Notes
+- [[quality-gate-문서기안-2026-05]]
 - [[landing-전입자-공통업무축-2026-05]]
 - [[README]]
 - [[process-행정문서-기안에서결재까지]]
