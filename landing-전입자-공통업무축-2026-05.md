@@ -46,6 +46,7 @@
 - [[manifest-newcomer-journey-예산대응-2026-05]]
 - [[quality-gate-예산대응-공통업무축-2026-05]]
 - [[hub-문서기안]]
+- [[hub-인사복무]]
 - [[hub-협업회의운영]]
 - [[hub-대외협력현장소통]]
 - [[newcomer-path-대외협력현장소통-첫주-2026-05]]
