@@ -100,6 +100,8 @@
   - [[section-국토환경부처-전입경로]]
     - [[manifest-newcomer-journey-국토환경부처전입-2026-05]]
     - [[quality-gate-국토환경부처전입-2026-05]]
+    - [[source-국토환경부처-민감정보-금지선비교]]
+    - [[checklist-국토환경부처-민감정보-제출전검토]]
   - [[section-교육문화과학부처-전입경로]]
   - coverage 점검: [[coverage-부처군-section-첫날첫주-2026-05]] / [[coverage-부처군-section-기관행-2026-05]] / [[quality-gate-부처군-전입경로-section-2026-05]]
 - 국회 대응 시즌이면 `[[hub-국회대응]]` → `[[newcomer-path-국회대응시즌-첫주-2026-05]]`로 먼저 들어간다.
