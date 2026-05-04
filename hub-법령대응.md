@@ -10,6 +10,7 @@
 - [[process-법령대응-설명초안-작성흐름]]
 - [[checklist-법령대응-설명초안-제출전검토]]
 - [[coverage-법령대응-공통업무축-2026-05]]
+- [[manifest-newcomer-journey-법령대응-2026-05]]
 - [[newcomer-path-법령제개정시즌-첫주-2026-05]]
 - [[hub-법제]]
 - [[gate-정부입법]]

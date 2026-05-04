@@ -5,6 +5,7 @@
 
 ## 핵심 진입로
 - [[hub-법령대응]]
+- [[manifest-newcomer-journey-법령대응-2026-05]]
 - [[newcomer-path-법령제개정시즌-첫주-2026-05]]
 
 ## 먼저 읽을 FAQ
