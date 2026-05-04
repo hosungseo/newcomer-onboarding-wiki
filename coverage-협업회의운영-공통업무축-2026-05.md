@@ -35,10 +35,11 @@
 
 ## Manifest
 - [[manifest-newcomer-journey-협업회의운영-2026-05]]
+- [[quality-gate-협업회의운영-2026-05]]
 
 ## 다음 빈칸
-1. `quality-gate-협업회의운영-2026-05`로 회의자료·내부검토자료·개인정보 금지선을 별도 점검한다.
-2. README/landing/docs에서 협업·회의운영 manifest 노출을 확인한다.
+1. README/landing/docs에서 협업·회의운영 manifest/quality gate 노출을 확인한다.
+2. 회의 후속조치가 장관보고·국회·감사로 넘어갈 때의 경로별 설명 차이를 보강한다.
 3. 회의 후속조치가 장관보고·국회·감사로 넘어갈 때의 경로별 설명 차이를 보강한다.
 
 ## Coverage
