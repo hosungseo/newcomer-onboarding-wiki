@@ -141,6 +141,7 @@
 
 v1 체크포인트:
 - [[manifest-agent-readable-catalog-v1-2026-05]]
+- [[llms-newcomer-onboarding-v1]]
 - [[release-candidate-전입자온보딩-v1-2026-05]]
 
 추천 허브:
