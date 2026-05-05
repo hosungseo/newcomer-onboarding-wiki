@@ -1,6 +1,7 @@
 # Manifest — Agent-readable Catalog v1 2026-05
 
 ## 목적
+- [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] — 정보공개기록관리 boundary router 공개문안 초안 FAQ.
 전입자 온보딩 v1 release candidate의 핵심 진입점을 에이전트가 바로 읽고 route를 고를 수 있게 묶는 catalog manifest다. 새 전입자 질문을 받으면 먼저 landing을 고르고, 업무축 coverage/manifest/quality gate로 내려간다.
 
 ## Top-level Entry
