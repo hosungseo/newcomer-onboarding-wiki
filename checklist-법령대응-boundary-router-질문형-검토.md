@@ -13,6 +13,7 @@
 
 ## 연결
 - [[hub-법령대응]]
+- [[walkthrough-법령대응-기관상황업무축-공개경계-2026-05]]
 - [[manifest-institution-to-boundary-router-2026-05]]
 - [[coverage-institution-boundary-core-hubs-2026-05]]
 - [[faq-법령설명-법률자문성결론은-어디서-멈추나]]

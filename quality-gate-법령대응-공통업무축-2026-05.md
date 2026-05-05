@@ -8,6 +8,7 @@
 - [[newcomer-path-법령제개정시즌-첫주-2026-05]]
 - [[faq-법령제개정-처음-무엇부터-확인하나]]
 - [[faq-법령제개정-조문보다-먼저-봐야-할-자료는]]
+- [[faq-법령설명-법률자문성결론은-어디서-멈추나]]
 - [[source-법령대응-자료대조순서]]
 - [[process-법령대응-설명초안-작성흐름]]
 - [[checklist-법령대응-설명초안-제출전검토]]
@@ -17,12 +18,17 @@
 ## Gate 1 — 경로 완성도
 - [ ] hub에서 첫주 path, FAQ, source, process, checklist, coverage, manifest로 이동할 수 있는가?
 - [ ] newcomer path에서 자료대조와 설명초안 작성 흐름으로 이동할 수 있는가?
-- [ ] coverage가 현재 보강 상태와 다음 후보를 말해 주는가?
+- [ ] coverage가 FAQ → source → process → checklist 순서를 한 화면에서 보여 주는가?
+- [ ] coverage가 walkthrough 독립 노트의 존재 여부와 다음 후보를 명확히 말해 주는가?
 - [ ] manifest가 agent-readable route를 포함하는가?
+- [ ] manifest가 FAQ/source/process/checklist/walkthrough 상태를 노출하는가?
 
 ## Gate 2 — 자료·근거 구분
 - [ ] 조문안, 신구조문대비표, 제안이유, 설명자료, Q&A를 분리해 읽게 하는가?
 - [ ] 공개자료와 내부확인 대상의 경계를 말하는가?
+- [ ] FAQ 3종이 `처음 확인 → 선행자료 → 법률자문성 멈춤선` 순서로 배치되는가?
+- [ ] source가 공개 근거와 내부 확인 대상을 분리하고, process가 그 결과를 설명초안으로 옮기는가?
+- [ ] checklist가 제출 전 법령층위·절차단계·공개/비공개 경계를 다시 닫는가?
 - [ ] 법제, 정부입법, 국회대응, 홍보대응 등 인접 업무축 분기가 실제 존재하는 note로만 연결되는가?
 
 ## Gate 3 — 공개/비공개 금지선
@@ -36,6 +42,7 @@
 - 법령대응 국회심사 대응 path
 - 법령대응 규제심사 source/process
 - 법령대응 법제심사 source/process
+- 법령대응 walkthrough: 입법예고 의견 대응 또는 국회심사 설명자료 전환 시나리오
 
 ## 판정
 현재 묶음은 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로를 갖췄다. 다음 단계는 상황형 path를 세분화해 입법예고, 규제심사, 법제심사, 국회심사별로 분기하는 것이다.

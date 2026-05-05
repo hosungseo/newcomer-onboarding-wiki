@@ -9,6 +9,7 @@
 - [[manifest-newcomer-journey-법령대응-2026-05]]
 - [[quality-gate-법령대응-공통업무축-2026-05]]
 - [[newcomer-path-법령제개정시즌-첫주-2026-05]]
+- [[walkthrough-법령대응-기관상황업무축-공개경계-2026-05]]
 - [[source-법령대응-자료대조순서]]
 - [[process-법령대응-설명초안-작성흐름]]
 
