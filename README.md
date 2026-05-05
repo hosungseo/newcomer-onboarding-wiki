@@ -977,7 +977,7 @@ v1 체크포인트:
 - [예산·민원 실행경계 route map](walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05.md) — 예산 수치가 민원 답변에 섞이는 경우 공개자료와 답변 경계를 나누는 교차 route
 - [정보공개·협업회의 실행경계 route map](walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05.md) — 정보공개 청구와 회의결과·후속조치 공개경계를 함께 고르는 교차 route
 - [정보공개·협업회의 실행경계 coverage](coverage-정보공개기록관리-협업회의-실행경계-2026-05.md) — 정보공개 source/FAQ/process와 협업회의 후속조치 checklist 노출 상태
-- [정보공개·협업회의 실행경계 manifest](manifest-newcomer-journey-내부운영협업대외소통-2026-05.md) — 전입자 journey route 연결
-- [정보공개·협업회의 실행경계 quality gate](quality-gate-내부운영협업대외소통-2026-05.md) — 공개·마스킹·회의결과 외부공유 멈춤선
+- [정보공개·협업회의 실행경계 manifest](manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05.md) — 전입자 journey route 연결
+- [정보공개·협업회의 실행경계 quality gate](quality-gate-정보공개기록관리-협업회의-실행경계-2026-05.md) — 공개·마스킹·회의결과 외부공유 멈춤선
 - [홍보·법령 실행경계 route map](walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05.md) — 법령 공개설명을 보도자료·Q&A·대외문안으로 전환하기 전 확인하는 교차 route
 
