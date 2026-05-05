@@ -12,6 +12,10 @@
 - 민원 폭주, 반복답변, 개인정보·사건정보 → [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]]
 - 장관 보고, 쟁점 메모, 공개자료 전환 → [[walkthrough-전입자-시나리오-장관보고-공개자료전환-2026-05]]
 
+## UI Exposure
+- 현재 public docs index에는 quick link로 노출되어 있다.
+- 다음 UI 패킷은 상황형 walkthrough block을 별도로 분리하는 것이다.
+
 ## Fallback
 애매하면 [[index-전입자-walkthrough-시나리오-v1-2026-05]]에서 상황형 묶음을 다시 고르고, 공개 가능성이 걸리면 [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]를 먼저 확인한다.
 

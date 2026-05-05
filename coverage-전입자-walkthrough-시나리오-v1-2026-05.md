@@ -25,7 +25,7 @@ v1 release candidate 이후 실제 전입자 질문을 end-to-end로 따라갈 �
 - [x] 각 walkthrough에는 공개/비공개 멈춤선이 있다.
 - [x] walkthrough section과 quality gate는 README 계열 진입점(landing/release candidate)과 docs quick link에 노출됐다.
 - [x] walkthrough index와 scenario router는 README/landing/docs 및 상태판 계층에 노출됐다.
-- [ ] docs index는 현재 quick link 노출은 되어 있으나, walkthrough 전용 section UI로는 아직 분리되지 않았다.
+- [ ] docs index는 현재 quick link 노출은 되어 있으나, walkthrough 전용 section UI로는 아직 분리되지 않았다. 다음 작은 패킷은 docs index 안에 상황형 walkthrough quick-link block을 분리하는 것이다.
 
 ## 다음 후보
 1. 언론 대응/홍보 질의 walkthrough는 [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]]로 추가했다. 다음 후보는 장관 보고 또는 회의 후속조치 walkthrough다.
