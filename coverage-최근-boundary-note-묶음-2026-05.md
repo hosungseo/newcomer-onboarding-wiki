@@ -14,6 +14,7 @@
 - [[coverage-institution-boundary-router-section-2026-05]] — 대표 기관군 section의 boundary router 연결 coverage.
 - [[coverage-institution-boundary-response-hubs-2026-05]] — 대응형 업무 hub의 boundary router 직접 연결 coverage.
 - [[quality-gate-institution-boundary-hub-expansion-2026-05]] — 기관군 section·core hub·response hub boundary router 확장 점검.
+- [[coverage-institution-boundary-agency-hubs-2026-05]] — 감사원·조달청 기관별 hub의 boundary router 직접 연결 coverage.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개자료·업체 민감정보 경계.
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 공식 조직도·업무분장·검토 중 자료 경계.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산 단계별 제출 전 분기.
