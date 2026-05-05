@@ -43,6 +43,14 @@
 3. 조달청·나라장터 등 외부 조달 절차와 자체 계약의 차이를 FAQ로 세분화한다.
 4. 검사·검수·지급 단계만 따로 떼어 실행 checklist를 만든다.
 
+## Boundary router gate
+- [x] [[checklist-계약조달-boundary-router-질문형-검토]]가 계약조달 공개 답변 전 질문형 멈춤선을 제공한다.
+- [x] [[checklist-계약조달-공개비공개-실행경계]]가 공개문안·답변초안·내부검토 메모로 나누기 전 실행경계를 점검한다.
+- [x] [[faq-계약조달-boundary-router-공개문안-초안-2026-05]]와 [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]]가 공개문안 FAQ의 근거·금지선·coverage를 함께 노출한다.
+- [x] [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]]와 [[coverage-계약조달-boundary-router-공개문안-process-2026-05]]가 source/process/checklist 사이의 공개문안 전환 절차를 함께 노출한다.
+- [x] [[walkthrough-core-boundary-checklist-entry-2026-05]]에서 core boundary checklist walkthrough로 재진입할 수 있다.
+- [x] boundary router 링크는 모두 실제 파일만 가리키며 placeholder wikilink를 만들지 않는다.
+
 ## 판정
 현재 계약·조달 묶음은 공개 온보딩 위키 기준으로 `hub → path → FAQ → source → process → checklist → coverage → manifest` 경로가 닫혀 있다. 다음 단계는 quality gate 웹 노출과 감사·국회·민원 분기 보강이다.
 

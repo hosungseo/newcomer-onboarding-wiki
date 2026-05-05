@@ -30,6 +30,13 @@
 | manifest | 완료 | [[manifest-newcomer-journey-계약조달-2026-05]]가 전입자/agent route를 고정함 |
 | quality gate | 완료 | [[quality-gate-계약조달-2026-05]]가 업체정보·입찰 전 자료·내부 평가·법률판단 금지선을 점검함 |
 
+## Boundary router 공개문안 레이어
+- 질문형 검토 checklist: [[checklist-계약조달-boundary-router-질문형-검토]] — 공개 답변 전 요청 주체, 공개근거, 민감정보, 내부판단 금지선을 먼저 가른다.
+- 실행경계 checklist: [[checklist-계약조달-공개비공개-실행경계]] — 공개문안·답변초안·내부검토 메모로 나누기 전 계약자료 공개/비공개 실행경계를 확인한다.
+- 공개문안 FAQ: [[faq-계약조달-boundary-router-공개문안-초안-2026-05]] / coverage [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]] — 전입자가 외부 설명 가능한 문장과 멈춰야 할 문장을 구분한다.
+- 공개문안 process: [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]] / coverage [[coverage-계약조달-boundary-router-공개문안-process-2026-05]] — source → process → checklist 사이에서 공개형 문안으로 바꾸는 순서를 고정한다.
+- walkthrough: [[walkthrough-core-boundary-checklist-entry-2026-05]] — core 업무축 boundary checklist 진입 흐름에서 계약조달 레이어로 분기한다.
+
 ## 연결 업무축
 - [[hub-예산]]
 - [[hub-감사대응]]
