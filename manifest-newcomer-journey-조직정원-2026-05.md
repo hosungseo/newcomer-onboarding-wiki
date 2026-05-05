@@ -60,3 +60,5 @@ stop_lines:
 - [[README]]
 
 - 공통 공개/비공개 경계 경로: [[newcomer-path-예산계약조직정원-공개경계]]
+
+- 실행경계 보강: [[newcomer-path-조직정원-공개경계]], [[coverage-조직정원-실행경계-2026-05]]
