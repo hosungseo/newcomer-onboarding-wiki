@@ -20,6 +20,7 @@
 
 ## 민감정보 금지선
 - [[source-외교안보부처-민감정보-금지선비교]]
+- [[checklist-외교안보부처-민감정보-제출전검토]]
 
 ## Manifest / Quality Gate
 - [[manifest-newcomer-journey-외교안보부처전입-2026-05]]
