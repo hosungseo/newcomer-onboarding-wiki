@@ -17,6 +17,7 @@
 - [[quality-gate-response-boundary-router-checklists-2026-05]]
 
 ## 상위 경로
+- [[walkthrough-response-boundary-checklist-entry-2026-05]] — 대응형 업무에서 boundary checklist landing으로 들어가는 질문형 walkthrough.
 - [[walkthrough-institution-boundary-router-question-flow-2026-05]]
 - [[manifest-institution-to-boundary-router-2026-05]]
 - [[section-최근-boundary-note-묶음-2026-05]]

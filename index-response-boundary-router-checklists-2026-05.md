@@ -10,6 +10,7 @@
 - 협업회의 자료·후속조치·대외공유: [[checklist-협업회의운영-boundary-router-질문형-검토]] / [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]]
 
 ## 공통 route
+- [[walkthrough-response-boundary-checklist-entry-2026-05]] — 대응형 업무에서 boundary checklist landing으로 들어가는 질문형 walkthrough.
 - [[manifest-response-boundary-router-checklists-2026-05]]
 - [[quality-gate-response-boundary-router-checklists-2026-05]]
 - [[landing-response-boundary-router-checklists-2026-05]] — 대응형 boundary checklist를 상황별로 바로 고르는 landing.
