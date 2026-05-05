@@ -81,6 +81,7 @@ newcomer에게 중요한 포인트는 메뉴 조작법보다 다음 3가지다.
 
 ## Related Notes
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
+- [[checklist-예산대응-boundary-router-질문형-검토]] — 예산대응에서 boundary router로 돌아가기 전 질문형 검토.
 - [[faq-예산시즌-처음-무엇부터-확인하나]]
 - [[source-예산대응-자료대조순서]]
 - [[process-예산대응-요구자료-작성흐름]]

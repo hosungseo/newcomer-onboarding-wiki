@@ -6,6 +6,7 @@
 ## Gate 1 — section coverage
 - [x] [[coverage-institution-boundary-router-section-2026-05]]에서 대표 6개 기관군 section 연결을 확인할 수 있다.
 - [x] [[manifest-institution-to-boundary-router-2026-05]]가 section→업무축 boundary 회귀 route를 제공한다.
+- [[checklist-예산대응-boundary-router-질문형-검토]] — 예산대응에서 boundary router로 돌아가기 전 질문형 검토.
 - [[checklist-조직정원-boundary-router-질문형-검토]] — 조직정원에서 boundary router로 돌아가기 전 질문형 검토.
 
 ## Gate 2 — core hub coverage
