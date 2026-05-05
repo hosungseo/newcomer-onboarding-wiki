@@ -22,6 +22,7 @@
 
 ## Coverage
 - [[coverage-boundary-router-checklist-products-index-2026-05]] — response/core boundary checklist products cross-index coverage.
+- [[release-candidate-boundary-checklist-products-2026-05]] — response/core boundary checklist products release candidate.
 - [[coverage-response-boundary-router-landing-2026-05]]
 - [[coverage-response-boundary-checklist-walkthrough-2026-05]]
 - [[coverage-core-boundary-router-landing-2026-05]]
