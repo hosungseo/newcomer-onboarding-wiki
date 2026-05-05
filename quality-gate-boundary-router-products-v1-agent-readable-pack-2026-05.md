@@ -12,6 +12,9 @@
 - [x] [[checklist-boundary-router-products-v1-agent-readable-release-pack-2026-05]]
 - [x] [[coverage-boundary-router-products-v1-agent-readable-pack-2026-05]]
 - [x] [[coverage-boundary-router-products-v1-agent-readable-checklist-2026-05]]
+- [x] [[manifest-boundary-router-public-draft-products-2026-05]]
+- [x] [[quality-gate-boundary-router-public-draft-products-2026-05]]
+- [x] [[coverage-boundary-router-public-draft-products-2026-05]]
 
 ## Gate 2 — release pack controls
 - [x] [[manifest-boundary-router-products-v1-release-pack-2026-05]]

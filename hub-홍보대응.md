@@ -14,6 +14,7 @@
 - [[quality-gate-홍보대응-공통업무축-2026-05]]
 - [[faq-보도자료-미확정정보는-어디서-멈추나]]
 - [[newcomer-path-보도자료대응-첫주-2026-05]]
+- [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]] — 첫 보도자료 초안에서 공개 가능 문장과 멈춤선을 따라가는 실습 경로.
 - [[hub-장관보고]]
 - [[hub-국회대응]]
 - [[hub-감사대응]]
@@ -45,6 +46,8 @@
 ## Related Notes
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[checklist-홍보대응-boundary-router-질문형-검토]] — 홍보대응에서 boundary router로 돌아가기 전 질문형 검토.
+- [[walkthrough-institution-boundary-router-question-flow-2026-05]] — 기관 hub에서 출발해 홍보대응 공개/비공개 질문으로 되돌아오는 router walkthrough.
+- [[walkthrough-response-boundary-checklist-entry-2026-05]] — 국회·감사·민원·정보공개로 번질 때 대응형 checklist로 갈아타는 entry.
 - [[hub-법령대응]]
 - [[newcomer-path-법령제개정시즌-첫주-2026-05]]
 - [[hub-민원대응]]

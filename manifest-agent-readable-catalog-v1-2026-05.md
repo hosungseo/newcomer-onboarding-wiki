@@ -65,6 +65,9 @@
 개인정보, 민원인 식별정보, 업체별 민감정보, 비공개 내부검토 의견, 미확정 정책안, 감사·조사·수사 세부, 법률자문성 결론, 현장 관계자 개인 평가나 발언 왜곡은 포함하지 않는다.
 
 ## Recent Boundary Notes
+- [[manifest-boundary-router-public-draft-products-2026-05]] — 공개문안 FAQ/process 제품군 통합 manifest.
+- [[quality-gate-boundary-router-public-draft-products-2026-05]] — 공개문안 제품군 통합 quality gate.
+- [[coverage-boundary-router-public-draft-products-2026-05]] — 공개문안 제품군 노출 coverage.
 - [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
 - [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
 - [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 묶음의 section entry.

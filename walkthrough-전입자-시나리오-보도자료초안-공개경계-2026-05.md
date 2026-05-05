@@ -19,8 +19,10 @@
 - [[quality-gate-홍보대응-공통업무축-2026-05]]
 
 ## 4. 외부 질의로 이어질 가능성을 확인한다
+- 기관 hub에서 출발한 질문이면 [[manifest-institution-to-boundary-router-2026-05]]와 [[walkthrough-institution-boundary-router-question-flow-2026-05]]로 되돌아가 공개/비공개 route를 재확인한다.
+- 홍보 문안 자체의 질문형 검토는 [[checklist-홍보대응-boundary-router-질문형-검토]]를 통과시킨다.
 - 현장 의견이 섞였으면 [[faq-대외협력현장소통-현장의견-표현예시]]를 함께 본다.
-- 국회·감사·민원 대응으로 번질 수 있으면 [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]의 교차 walkthrough를 확인한다.
+- 국회·감사·민원 대응으로 번질 수 있으면 [[walkthrough-response-boundary-checklist-entry-2026-05]]와 [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]의 교차 walkthrough를 확인한다.
 
 ## 5. 제출 전 멈춤선
 - 미확정 일정이나 내부 조정안을 확정 발표처럼 쓰면 멈춘다.
@@ -29,6 +31,9 @@
 - 감사·조사·수사·보안 세부나 법률자문성 결론이 섞이면 멈춘다.
 
 ## Related
+- [[hub-홍보대응]]
+- [[newcomer-path-보도자료대응-첫주-2026-05]]
+- [[checklist-홍보대응-boundary-router-질문형-검토]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
 - [[llms-newcomer-onboarding-v1]]
 - [[release-candidate-전입자온보딩-v1-2026-05]]
