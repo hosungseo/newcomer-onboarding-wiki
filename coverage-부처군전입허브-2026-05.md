@@ -46,6 +46,7 @@
 
 ## 법무·거버넌스 부처군 manifest
 - [[manifest-newcomer-journey-법무거버넌스부처전입-2026-05]]
+- [[quality-gate-법무거버넌스부처전입-2026-05]]
 
 ## 부처군/처청위원회 비교
 - [[process-부처군-처청위원회-첫주경로비교]]
