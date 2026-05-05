@@ -2,6 +2,7 @@
 
 ## 목적
 전입자가 기관 hub에서 “이 자료를 어디까지 공개/공유해도 되나?”라고 물을 때 [[manifest-institution-to-boundary-router-2026-05]]로 빠르게 돌아가는 질문형 흐름을 제공한다.
+- [[checklist-국회대응-boundary-router-질문형-검토]] — 국회대응에서 boundary router로 돌아가기 전 질문형 검토.
 - [[checklist-감사대응-boundary-router-질문형-검토]] — 감사대응에서 boundary router로 돌아가기 전 질문형 검토.
 
 ## 질문 흐름
