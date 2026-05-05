@@ -49,3 +49,6 @@
 - [[coverage-내부운영협업3축-운영정보공개회의-2026-05]]
 - [[landing-전입자-공통업무축-2026-05]]
 - [[README]]
+
+## 다음 후보 최신화
+- README/landing 노출과 후속조치 경계 process는 완료됐다. 다음은 docs quick link 분리, 후속조치 checklist 분화, 현장의견/공식입장 표현 예시 FAQ 보강이다.
