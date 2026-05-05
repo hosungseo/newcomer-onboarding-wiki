@@ -11,6 +11,13 @@
 - [[process-정보공개기록관리-공개검토초안-작성흐름]]
 - [[checklist-정보공개기록관리-공개검토초안-검토]]
 - [[coverage-정보공개기록관리-공통업무축-2026-05]]
+- [[walkthrough-institution-boundary-router-question-flow-2026-05]]
+- [[checklist-정보공개기록관리-boundary-router-질문형-검토]]
+- [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]]
+- [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]]
+- [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]]
+- [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]]
+- [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]]
 
 ## 1. 경로 완성도
 - [x] 공통 업무축 landing 또는 hub에서 정보공개·기록관리 첫주 path로 이동할 수 있다.
@@ -30,10 +37,11 @@
 - [x] 없는 파일을 placeholder wikilink로 만들지 않는다.
 - [x] 업무축 manifest가 coverage/docs와 연결되어 있다.
 - [x] 새 note는 최소 2개 이상 기존 note와 연결되어 있다.
+- [x] boundary router 공개문안 FAQ/process와 질문형 checklist/walkthrough가 업무축 quality gate에서 함께 점검된다.
 - [x] docs/index.html에 정보공개·기록관리 업무축 manifest가 노출되어 있다.
 
 ## 4. 남은 고도화 후보
-1. README 또는 공통 업무축 landing에 정보공개·기록관리 업무축 manifest/quality gate를 노출한다.
+1. boundary router FAQ/process/checklist coverage가 manifest와 공통 coverage에 노출되었으므로, 다음은 catalog/llms metadata 상위 묶음 노출만 판단한다.
 2. 정보공개기록관리 coverage의 “다음 빈칸”을 청구 분기 이후 현재 상태에 맞게 다시 정리한다.
 3. 민원·국회·감사로 넘어가는 분기 checklist를 별도 note로 만들지 검토한다.
 

@@ -12,6 +12,13 @@
 - [[checklist-협업회의운영-후속조치-검토]]
 - [[coverage-협업회의운영-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-협업회의운영-2026-05]]
+- [[walkthrough-institution-boundary-router-question-flow-2026-05]]
+- [[checklist-협업회의운영-boundary-router-질문형-검토]]
+- [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]]
+- [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]]
+- [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]]
+- [[coverage-협업회의운영-boundary-router-공개문안-faq-2026-05]]
+- [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]
 
 ## 1. 경로 완성도
 - [x] hub에서 회의 준비, 참석자 조율, 회의자료 정리, 후속 조치 관리를 나눈다.
@@ -33,10 +40,11 @@
 - [x] 문서기안, 정보공개기록관리, 장관보고, 국회대응, 감사대응, 홍보대응으로 분기된다.
 - [x] 없는 파일을 placeholder wikilink로 만들지 않는다.
 - [x] 새 note는 최소 2개 이상 기존 note와 연결되어 있다.
+- [x] boundary router 공개문안 FAQ/process와 질문형 checklist/walkthrough가 업무축 quality gate에서 함께 점검된다.
 - [x] docs/index.html에 hub/path/source/process/checklist/coverage/manifest가 노출되어 있다.
 
 ## 4. 남은 고도화 후보
-1. README와 landing에서 협업·회의운영 manifest/quality gate까지 노출한다.
+1. boundary router FAQ/process/checklist coverage가 manifest와 공통 coverage에 노출되었으므로, 다음은 catalog/llms metadata 상위 묶음 노출만 판단한다.
 2. [[process-협업회의운영-대외협력현장소통-후속조치경계]]로 대외협력·현장소통과의 경계를 점검한다.
 3. 대외협력현장소통 축과 중복되는 회의/현장 후속조치 경계를 정리한다.
 

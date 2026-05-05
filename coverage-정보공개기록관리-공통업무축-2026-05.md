@@ -43,6 +43,14 @@
 | quality gate | 완료 | 개인정보·비공개 내부검토·법률판단 금지선을 점검하는 note가 있음 |
 | 상황형 coverage | 완료 | 정보공개청구 전용 coverage가 하위 경로와 남은 분기 후보를 묶음 |
 
+## Boundary Router 공개문안·질문형 묶음
+- walkthrough: [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관 질문을 따라온 뒤 정보공개·기록관리 boundary checklist로 회귀한다.
+- checklist: [[checklist-정보공개기록관리-boundary-router-질문형-검토]]가 청구자료, 공개가능 기록, 개인정보, 내부검토, 부분공개·이송 가능성을 질문형으로 점검한다.
+- FAQ: [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]]가 공개문안에서 설명 가능한 절차·범위와 제외해야 할 원문을 나눈다.
+- source: [[source-정보공개기록관리-자료대조순서]]와 [[source-정보공개청구-공개자료-대조순서]]를 근거 확인층으로 사용한다.
+- process: [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]]가 청구 접수 사실, 처리 절차, 공개 가능한 기한·방법 안내를 분리한다.
+- coverage: [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]], [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]], [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]]가 checklist/FAQ/process 노출을 각각 점검한다.
+
 ## 연결 업무축
 - [[hub-문서기안]]
 - [[hub-민원대응]]

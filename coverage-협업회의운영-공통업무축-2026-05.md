@@ -16,6 +16,14 @@
 - [[process-협업회의운영-결과초안-작성흐름]]
 - [[checklist-협업회의운영-후속조치-검토]]
 
+## Boundary Router 공개문안·질문형 묶음
+- walkthrough: [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관 질문을 따라온 뒤 협업·회의운영 boundary checklist로 회귀한다.
+- checklist: [[checklist-협업회의운영-boundary-router-질문형-검토]]가 공식 회의자료, 내부검토 메모, 후속조치, 대외공유 가능성을 질문형으로 점검한다.
+- FAQ: [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]]가 공개 가능한 회의 개요·확정 후속조치와 제외해야 할 참석자별 발언·내부검토를 나눈다.
+- source: [[source-협업회의운영-자료대조순서]]를 근거 확인층으로 사용한다.
+- process: [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]]가 회의 개요, 확정된 논의 결과, 공개 가능한 후속 일정을 분리한다.
+- coverage: [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]], [[coverage-협업회의운영-boundary-router-공개문안-faq-2026-05]], [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]가 checklist/FAQ/process 노출을 각각 점검한다.
+
 ## 연결 업무축
 - [[hub-문서기안]]
 - [[hub-정보공개기록관리]]
