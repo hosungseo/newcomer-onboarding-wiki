@@ -1,6 +1,8 @@
 # Checkpoint 2026-05-05 — Boundary Router Ecosystem
 
 ## 완료된 axis
+- [[process-예산대응-boundary-router-공개문안-작성흐름-2026-05]] — 예산대응 boundary router 공개문안 작성흐름.
+- [[coverage-예산대응-boundary-router-공개문안-process-2026-05]] — 예산대응 boundary router 공개문안 process coverage.
 - institution section axis: 대표 6개 기관군 section → boundary router
 - core hubs axis: 계약조달·조직정원·예산·민원대응·홍볼대응·법령대응 hub → boundary router
 - [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]] — 조직정원 boundary router 공개문안 작성흐름.
