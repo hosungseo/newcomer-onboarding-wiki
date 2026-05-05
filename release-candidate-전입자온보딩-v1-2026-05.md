@@ -38,6 +38,9 @@
 - [[coverage-성과평가-공통업무축-2026-05]] / [[manifest-newcomer-journey-성과평가-2026-05]] / [[quality-gate-성과평가-2026-05]]
 - [[coverage-대외협력현장소통-공통업무축-2026-05]] / [[manifest-newcomer-journey-대외협력현장소통-2026-05]] / [[quality-gate-대외협력현장소통-2026-05]]
 
+## Agent-readable catalog
+- [[manifest-agent-readable-catalog-v1-2026-05]]
+
 ## v1 이후 남은 고도화 후보
 
 1. feature branch의 축적물을 main/docs 배포면에 반영할지 결정한다.
