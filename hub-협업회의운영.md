@@ -17,6 +17,7 @@
 - 회의 결과는 보고, 지시사항, 후속 과제, 기록물 중 무엇으로 남겨야 하는가?
 
 ## 관련 업무축
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[hub-문서기안]]
 - [[hub-장관보고]]
 - [[hub-국회대응]]

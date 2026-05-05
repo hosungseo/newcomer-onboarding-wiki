@@ -17,6 +17,7 @@
 - 기록물로 남겨야 하는 자료와 단순 참고자료를 어떻게 나눌 것인가?
 
 ## 관련 업무축
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[hub-문서기안]]
 - [[hub-민원대응]]
 - [[hub-국회대응]]

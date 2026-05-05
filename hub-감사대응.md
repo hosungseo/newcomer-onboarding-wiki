@@ -51,6 +51,7 @@
 - [[manifest-scenario-router-walkthrough-v1-2026-05]] — 질문이 국회·감사·민원·정보공개·예산 중 어디로 갈지 애매할 때 먼저 고르는 router.
 
 ## Related Notes
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[hub-민원대응]]
 - [[newcomer-path-민원폭주대응-첫주-2026-05]]
 - [[hub-장관보고]]
