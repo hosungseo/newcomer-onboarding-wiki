@@ -15,6 +15,8 @@
 - [[index-boundary-router-checklist-products-2026-05]] — response/core boundary router checklist 제품군 cross-index.
 - [[release-candidate-boundary-checklist-products-2026-05]] — response/core boundary checklist products 통합 release candidate.
 - [[walkthrough-boundary-checklist-products-entry-2026-05]] — response/core boundary checklist 제품군 통합 진입 walkthrough.
+- [[manifest-boundary-checklist-products-2026-05]] — response/core boundary checklist products 최상위 manifest.
+- [[coverage-boundary-checklist-products-manifest-2026-05]] — checklist products manifest 노출 coverage.
 - [[coverage-boundary-checklist-products-walkthrough-2026-05]] — checklist products 통합 walkthrough 노출 coverage.
 - [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 - landing: institution boundary, response checklist
