@@ -10,8 +10,9 @@
 - [x] [[coverage-최근-boundary-note-묶음-2026-05]]가 노출 상태를 제공한다.
 
 ## Gate 2 — 업무축 역링크
+- [x] [[section-최근-boundary-note-묶음-2026-05]]에서 manifest/index/coverage/quality gate로 진입할 수 있다.
 - [x] 계약조달, 조직정원, 예산대응, 민원대응, 홍보대응, 법령대응 hub/coverage에서 각 boundary note로 내려갈 수 있다.
-- [x] README, 공통업무축 landing, docs index, agent catalog, llms metadata에서 묶음으로 진입할 수 있다.
+- [x] README, 공통업무축 landing, docs index, agent catalog, llms metadata, release candidate에서 묶음으로 진입할 수 있다.
 
 ## Gate 3 — 공개/비공개 멈춤선
 - [x] 각 note는 개인정보, 비공개 내부검토, 미확정 정책안, 업체별 민감정보, 법률자문성 결론 중 최소 해당 위험의 멈춤선을 포함한다.

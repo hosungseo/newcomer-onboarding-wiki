@@ -21,6 +21,10 @@
 - docs index: `docs/index.html` quick link에 노출.
 - agent-readable: [[manifest-agent-readable-catalog-v1-2026-05]]에 노출.
 - llms metadata: [[llms-newcomer-onboarding-v1]]에 노출.
+- section: [[section-최근-boundary-note-묶음-2026-05]]에 노출.
+- journey manifest: [[manifest-newcomer-journey-boundary-notes-2026-05]]에 route로 노출.
+- quality gate: [[quality-gate-최근-boundary-note-묶음-2026-05]]에 안전 점검으로 노출.
+- release candidate: [[release-candidate-전입자온보딩-v1-2026-05]]에 노출.
 
 ## 다음 후보
 1. 이 묶음을 release candidate와 quality gate에도 반영할지 판단한다.
