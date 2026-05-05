@@ -2,6 +2,7 @@
 
 ## 목적
 [[index-boundary-router-products-v1-2026-05]]가 institution/response/core boundary router 제품군의 v1 통합 index로 노출되는지 확인한다.
+- [[quality-gate-boundary-router-products-v1-2026-05]] — boundary router products v1 통합 quality gate.
 
 ## v1 index 노출
 - README → index-boundary-router-products-v1-2026-05.md
