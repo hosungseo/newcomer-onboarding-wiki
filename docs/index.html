@@ -616,6 +616,13 @@ function renderLanding() {
   scenarioIntro.textContent = '전입자가 실제 상황을 들고 왔을 때는 아래 router/index에서 먼저 시나리오를 고르고, 각 walkthrough의 checklist·quality gate에서 공개/비공개 멈춤선을 확인합니다.';
   app.appendChild(scenarioIntro);
 
+  const boundaryRouteMap = document.createElement('div');
+  boundaryRouteMap.className = 'quick-links';
+  boundaryRouteMap.innerHTML = `
+    <a class="quick-link featured" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/section-execution-boundary-routes-2026-05.md" target="_blank" rel="noopener">실행경계 route map — 업무축·상황별 바로가기</a>
+  `;
+  app.appendChild(boundaryRouteMap);
+
   const scenarioLinks = document.createElement('div');
   scenarioLinks.className = 'quick-links';
   scenarioLinks.innerHTML = `
