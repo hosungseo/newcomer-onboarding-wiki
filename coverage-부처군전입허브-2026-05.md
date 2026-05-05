@@ -51,6 +51,7 @@
 
 ## 외교·안보 부처군 manifest
 - [[manifest-newcomer-journey-외교안보부처전입-2026-05]]
+- [[quality-gate-외교안보부처전입-2026-05]]
 
 ## 부처군/처청위원회 비교
 - [[process-부처군-처청위원회-첫주경로비교]]

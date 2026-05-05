@@ -18,8 +18,9 @@
 4. 첫주 path와 FAQ로 반복 질문을 분리한다.
 5. 안보·작전·외교교섭·수사·개인 병역정보·업체 비공개자료는 공개 onboarding note에 넣지 않는다.
 
-## Manifest
+## Manifest / Quality Gate
 - [[manifest-newcomer-journey-외교안보부처전입-2026-05]]
+- [[quality-gate-외교안보부처전입-2026-05]]
 
 ## Related Notes
 - [[hub-외교안보부처전입]] / [[newcomer-path-외교안보부처전입-첫주-2026-05]]
