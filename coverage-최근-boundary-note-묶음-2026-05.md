@@ -40,6 +40,7 @@
 - institution entries: [[landing-전입자-기관군별-온보딩-2026-05]], [[landing-전입자-전입첫주-전체기관-2026-05]], [[coverage-부처군-section-기관행-2026-05]]에서 [[section-최근-boundary-note-묶음-2026-05]]로 연결된다.
 
 ## 다음 후보
+- [[coverage-response-boundary-router-landing-2026-05]] — 대응형 boundary checklist landing 노출 coverage.
 1. 이 묶음을 release candidate와 quality gate에도 반영할지 판단한다.
 2. 각 note가 해당 업무축 coverage에서 완료 상태로 유지되는지 주기적으로 확인한다.
 3. 다음 고속 레인은 기관별 hub에서 이 boundary 묶음으로 들어오는 경로를 보강한다.

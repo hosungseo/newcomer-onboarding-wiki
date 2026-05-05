@@ -10,6 +10,7 @@
 - 협업회의 자료·후속조치·대외공유 → [[checklist-협업회의운영-boundary-router-질문형-검토]]
 
 ## 묶음과 검증
+- [[coverage-response-boundary-router-landing-2026-05]] — 대응형 boundary checklist landing 노출 coverage.
 - [[index-response-boundary-router-checklists-2026-05]]
 - [[manifest-response-boundary-router-checklists-2026-05]]
 - [[quality-gate-response-boundary-router-checklists-2026-05]]
