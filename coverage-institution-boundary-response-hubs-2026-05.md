@@ -2,6 +2,7 @@
 
 ## 목적
 대응형 업무 hub에서 [[manifest-institution-to-boundary-router-2026-05]]로 직접 회귀할 수 있는지 확인한다.
+- [[checklist-정보공개기록관리-boundary-router-질문형-검토]] — 정보공개기록관리에서 boundary router로 돌아가기 전 질문형 검토.
 - [[checklist-국회대응-boundary-router-질문형-검토]] — 국회대응에서 boundary router로 돌아가기 전 질문형 검토.
 
 ## 직접 연결된 response hubs
