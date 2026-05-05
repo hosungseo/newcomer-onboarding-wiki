@@ -22,6 +22,7 @@
 - [x] [[manifest-agent-readable-catalog-v1-2026-05]]와 [[llms-newcomer-onboarding-v1]]에서 agent/LLM 진입이 가능하다.
 
 ## 다음 후보
+- [[checklist-institution-boundary-router-hub-selection-2026-05]] — 기관별 개별 hub boundary router 연결 전 선택 체크리스트.
 - [[index-institution-boundary-router-next-hubs-2026-05]] — 기관별 개별 hub boundary router 연결 후보 index.
 - [[coverage-institution-boundary-router-section-2026-05]] — 대표 기관군 section의 boundary router 연결 coverage.
 - 기관별 개별 hub 중 boundary router 역링크가 필요한 곳을 선별한다.
