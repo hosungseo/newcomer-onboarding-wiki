@@ -4,6 +4,7 @@
 boundary router products v1의 landing/index/walkthrough/manifest/quality/release/checklist/coverage를 release pack으로 한 번에 찾도록 묶는다.
 
 ## Release pack entrypoints
+- [[coverage-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack 노출 coverage.
 - [[landing-boundary-router-products-v1-2026-05]]
 - [[index-boundary-router-products-v1-2026-05]]
 - [[walkthrough-boundary-router-products-v1-entry-2026-05]]
