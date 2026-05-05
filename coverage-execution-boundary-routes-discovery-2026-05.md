@@ -19,10 +19,11 @@
 
 
 ## 2026-05-06 노출 확인
-- README: `신규자 실행경계 route`에서 [[section-execution-boundary-routes-2026-05]]와 4개 교차 route-map으로 진입한다.
-- landing: [[landing-전입자-공통업무축-2026-05]]는 긴 route chain을 접고 section/route-map 중심으로 진입시킨다.
-- docs/index.html: 실행경계 quick-links에서 [[section-execution-boundary-routes-2026-05]] 및 4개 route-map을 직접 노출한다.
+- README: `신규자 실행경계 route`에서 [[section-execution-boundary-routes-2026-05]], [[index-execution-boundary-route-aliases-2026-05]], 4개 교차 route-map으로 진입한다.
+- landing: [[landing-전입자-공통업무축-2026-05]]는 긴 route chain을 접고 section/route-map 및 [[index-execution-boundary-route-aliases-2026-05]] 중심으로 진입시킨다.
+- docs/index.html: 실행경계 quick-links에서 [[section-execution-boundary-routes-2026-05]], [[index-execution-boundary-route-aliases-2026-05]], 4개 route-map을 직접 노출한다.
 - route-map bridge: [[section-execution-boundary-routes-2026-05]]의 landing bridge가 [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]], [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]], [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]], [[walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05]]로 내려간다.
+- alias triangle: [[index-execution-boundary-route-aliases-2026-05]] → [[manifest-newcomer-journey-execution-boundary-route-aliases-2026-05]] → [[quality-gate-execution-boundary-route-aliases-2026-05]]가 README/landing/docs 삼각 노출을 기록한다.
 
 ## 품질 기준
 - placeholder wikilink 없이 실제 존재하는 note만 연결한다.
