@@ -9,6 +9,7 @@ boundary router products v1 release pack의 최상위 정의를 고정한다.
 - [[coverage-boundary-router-products-v1-release-pack-2026-05]]
 - [[quality-gate-boundary-router-products-v1-release-pack-2026-05]]
 - [[release-candidate-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack 최종 release candidate.
+- [[coverage-boundary-router-products-v1-release-pack-candidate-2026-05]] — boundary router products v1 release pack candidate 노출 coverage.
 
 ## Entry points
 - [[landing-boundary-router-products-v1-2026-05]]
