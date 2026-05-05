@@ -10,9 +10,16 @@
 - [[faq-법령제개정-조문보다-먼저-봐야-할-자료는]]
 - [[faq-법령설명-법률자문성결론은-어디서-멈추나]]
 - [[source-법령대응-자료대조순서]]
+- [[source-법령대응-공개근거-우선순위]]
+- [[source-법령대응-의견조회-공개자료-대조순서]]
 - [[process-법령대응-설명초안-작성흐름]]
+- [[process-법령대응-전입자-첫실행흐름]]
 - [[checklist-법령대응-설명초안-제출전검토]]
+- [[checklist-법령대응-공개문안-초안검토]]
+- [[checklist-법령대응-boundary-router-질문형-검토]]
 - [[coverage-법령대응-공통업무축-2026-05]]
+- [[coverage-법령대응-boundary-router-실행경계-2026-05]]
+- [[walkthrough-법령대응-기관상황업무축-공개경계-2026-05]]
 - [[manifest-newcomer-journey-법령대응-2026-05]]
 - [[coverage-법령대응-boundary-router-실행경계-2026-05]]
 
@@ -23,13 +30,16 @@
 - [ ] coverage가 walkthrough 독립 노트의 존재 여부와 다음 후보를 명확히 말해 주는가?
 - [ ] manifest가 agent-readable route를 포함하는가?
 - [ ] manifest가 FAQ/source/process/checklist/walkthrough 상태를 노출하는가?
+- [ ] execution boundary coverage가 추가 FAQ/source/process/checklist를 실제 note로만 연결하는가?
 
 ## Gate 2 — 자료·근거 구분
 - [ ] 조문안, 신구조문대비표, 제안이유, 설명자료, Q&A를 분리해 읽게 하는가?
 - [ ] 공개자료와 내부확인 대상의 경계를 말하는가?
 - [ ] FAQ 3종이 `처음 확인 → 선행자료 → 법률자문성 멈춤선` 순서로 배치되는가?
 - [ ] source가 공개 근거와 내부 확인 대상을 분리하고, process가 그 결과를 설명초안으로 옮기는가?
+- [ ] 의견조회·공개근거 source가 공개 가능 문장과 내부협의 문장을 분리하는가?
 - [ ] checklist가 제출 전 법령층위·절차단계·공개/비공개 경계를 다시 닫는가?
+- [ ] 공개문안·질문형 boundary checklist가 법률자문성 결론과 미확정 판단을 제거하는가?
 - [ ] 법제, 정부입법, 국회대응, 홍보대응 등 인접 업무축 분기가 실제 존재하는 note로만 연결되는가?
 
 ## Gate 3 — 공개/비공개 금지선
@@ -47,4 +57,4 @@
 - 법령대응 walkthrough: 입법예고 의견 대응 또는 국회심사 설명자료 전환 시나리오
 
 ## 판정
-현재 묶음은 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로를 갖췄다. 다음 단계는 상황형 path를 세분화해 입법예고, 규제심사, 법제심사, 국회심사별로 분기하는 것이다.
+현재 묶음은 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로와 [[coverage-법령대응-boundary-router-실행경계-2026-05]] 기반 public/private decision point를 갖췄다. 다음 단계는 상황형 path를 세분화해 입법예고, 규제심사, 법제심사, 국회심사별로 분기하는 것이다.
