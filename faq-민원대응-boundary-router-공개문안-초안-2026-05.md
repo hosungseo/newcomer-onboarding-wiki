@@ -1,4 +1,5 @@
 # FAQ — 민원대응 Boundary Router 공개문안 초안 2026-05
+- [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]] — 민원대응 boundary router 공개문안 FAQ coverage.
 
 ## Q1. 민원대응 자료를 공개 문안으로 바꿀 때 먼저 무엇을 확인하나?
 먼저 [[checklist-민원대응-boundary-router-질문형-검토]]로 공개 가능한 접수 경로, 처리 절차, 일반 안내 문장만 남긴다. 민원인 식별정보, 개별 사건 판단, 내부 검토는 공개 문안에서 분리한다.
