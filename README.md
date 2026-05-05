@@ -7,6 +7,7 @@
 - [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
 - [[release-candidate-core-boundary-checklists-2026-05]] — 핵심 업무축 boundary checklist 묶음 release candidate.
 - [[walkthrough-core-boundary-checklist-entry-2026-05]] — 핵심 업무축 boundary checklist 진입 walkthrough.
+- [[index-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist 제품군 index.
 - [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 - [[release-candidate-response-boundary-checklists-2026-05]] — 대응형 boundary checklist 묶음 release candidate.
 - docs/index.html featured quick link — 대응형 checklist를 상황형 walkthrough 영역에서 바로 고르게 노출한다.
