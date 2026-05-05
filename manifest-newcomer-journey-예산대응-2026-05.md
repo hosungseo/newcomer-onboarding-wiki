@@ -48,3 +48,13 @@
 
 ## Quality Gate
 - [[quality-gate-예산대응-공통업무축-2026-05]]
+
+
+## Boundary router route
+1. [[source-예산대응-자료대조순서]]에서 공개근거와 내부확인 대상을 먼저 분리한다.
+2. [[process-예산대응-요구자료-작성흐름]]로 기본 초안을 만들되, 외부 설명·민원·국회·보고 문안으로 바꾸기 전 [[checklist-예산대응-boundary-router-질문형-검토]]를 먼저 통과한다.
+3. 공개문안이 필요하면 [[faq-예산대응-boundary-router-공개문안-초안-2026-05]]에서 답변 가능한 범위를 확인하고 [[process-예산대응-boundary-router-공개문안-작성흐름-2026-05]]로 문장화한다.
+4. [[coverage-예산대응-boundary-router-공개문안-faq-2026-05]]와 [[coverage-예산대응-boundary-router-공개문안-process-2026-05]]에서 FAQ/process coverage가 manifest·quality gate에 노출됐는지 확인한다.
+5. 길을 잃으면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아가 core boundary checklist entry에서 예산대응으로 다시 분기한다.
+
+- 공통 공개/비공개 경계 경로: [[newcomer-path-예산계약조직정원-공개경계]]

@@ -40,5 +40,12 @@
 - 예산대응 dBrain 공개경계 FAQ
 - 예산대응 보조사업·위탁사업 checklist
 
+## Boundary router gate
+- [x] [[checklist-예산대응-boundary-router-질문형-검토]]가 예산대응 공개 답변 전 질문형 멈춤선을 제공한다.
+- [x] [[faq-예산대응-boundary-router-공개문안-초안-2026-05]]와 [[coverage-예산대응-boundary-router-공개문안-faq-2026-05]]가 공개문안 FAQ의 근거·금지선·coverage를 함께 노출한다.
+- [x] [[process-예산대응-boundary-router-공개문안-작성흐름-2026-05]]와 [[coverage-예산대응-boundary-router-공개문안-process-2026-05]]가 source/process/checklist 사이의 공개문안 전환 절차를 함께 노출한다.
+- [x] [[walkthrough-core-boundary-checklist-entry-2026-05]]에서 core boundary checklist walkthrough로 재진입할 수 있다.
+- [x] boundary router 링크는 모두 실제 파일만 가리키며 placeholder wikilink를 만들지 않는다.
+
 ## 판정
 현재 묶음은 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로를 갖췄다. 다음 단계는 국회예산심사, 결산·정산, 보조·위탁사업처럼 상황별 path를 세분화하는 것이다.

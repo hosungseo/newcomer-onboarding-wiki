@@ -24,6 +24,12 @@
 | manifest | 완료 | 전입자/agent 실행 route를 고정함 |
 | quality gate | 완료 | 조직개편안·정원협상·개인정보 금지선 점검 note가 있음 |
 
+## Boundary router 공개문안 레이어
+- 질문형 검토 checklist: [[checklist-조직정원-boundary-router-질문형-검토]] — 공개 답변 전 요청 주체, 공개근거, 민감정보, 내부판단 금지선을 먼저 가른다.
+- 공개문안 FAQ: [[faq-조직정원-boundary-router-공개문안-초안-2026-05]] / coverage [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]] — 전입자가 외부 설명 가능한 문장과 멈춰야 할 문장을 구분한다.
+- 공개문안 process: [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]] / coverage [[coverage-조직정원-boundary-router-공개문안-process-2026-05]] — source → process → checklist 사이에서 공개형 문안으로 바꾸는 순서를 고정한다.
+- walkthrough: [[walkthrough-core-boundary-checklist-entry-2026-05]] — core 업무축 boundary checklist 진입 흐름에서 조직정원 레이어로 분기한다.
+
 ## 연결 업무축
 - [[hub-예산]] — 정원·기구 조정이 예산·인건비와 연결될 때
 - [[hub-인사승진]] — 직급 조정과 인사 운영이 연결될 때

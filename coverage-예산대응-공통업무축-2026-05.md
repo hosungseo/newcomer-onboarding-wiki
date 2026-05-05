@@ -20,6 +20,12 @@
 - [[manifest-newcomer-journey-예산대응-2026-05]]
 - [[quality-gate-예산대응-공통업무축-2026-05]]
 
+## Boundary router 공개문안 레이어
+- 질문형 검토 checklist: [[checklist-예산대응-boundary-router-질문형-검토]] — 공개 답변 전 요청 주체, 공개근거, 민감정보, 내부판단 금지선을 먼저 가른다.
+- 공개문안 FAQ: [[faq-예산대응-boundary-router-공개문안-초안-2026-05]] / coverage [[coverage-예산대응-boundary-router-공개문안-faq-2026-05]] — 전입자가 외부 설명 가능한 문장과 멈춰야 할 문장을 구분한다.
+- 공개문안 process: [[process-예산대응-boundary-router-공개문안-작성흐름-2026-05]] / coverage [[coverage-예산대응-boundary-router-공개문안-process-2026-05]] — source → process → checklist 사이에서 공개형 문안으로 바꾸는 순서를 고정한다.
+- walkthrough: [[walkthrough-core-boundary-checklist-entry-2026-05]] — core 업무축 boundary checklist 진입 흐름에서 예산대응 레이어로 분기한다.
+
 ## 연결 업무축
 - [[hub-국회대응]]
 - [[hub-감사대응]]

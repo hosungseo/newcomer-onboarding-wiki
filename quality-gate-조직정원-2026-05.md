@@ -39,6 +39,13 @@
 2. 기관별 전입 hub 중 조직·정원 이슈가 강한 곳에 이 coverage를 역링크한다.
 3. 조직·정원 쟁점별 예시 FAQ를 추가한다.
 
+## Boundary router gate
+- [x] [[checklist-조직정원-boundary-router-질문형-검토]]가 조직정원 공개 답변 전 질문형 멈춤선을 제공한다.
+- [x] [[faq-조직정원-boundary-router-공개문안-초안-2026-05]]와 [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]]가 공개문안 FAQ의 근거·금지선·coverage를 함께 노출한다.
+- [x] [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]]와 [[coverage-조직정원-boundary-router-공개문안-process-2026-05]]가 source/process/checklist 사이의 공개문안 전환 절차를 함께 노출한다.
+- [x] [[walkthrough-core-boundary-checklist-entry-2026-05]]에서 core boundary checklist walkthrough로 재진입할 수 있다.
+- [x] boundary router 링크는 모두 실제 파일만 가리키며 placeholder wikilink를 만들지 않는다.
+
 ## 판정
 조직·정원 묶음은 공개 온보딩 기준으로 `hub → path → source → process → checklist → coverage → manifest` 경로가 닫혀 있다. 다음 단계는 README/landing 노출과 기관별 hub 연결이다.
 
