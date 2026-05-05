@@ -37,11 +37,21 @@
 | 정보공개청구 path | 완료 | 첫주 단위로 청구 대상 → 공개자료/내부검토자료 → 비공개 검토 → 기록물 경로를 배치함 |
 | source | 완료 | 요청·제출 경로, 최종본 여부, 공식근거, 민감정보, 기록물 성격 순으로 대조함 |
 | 정보공개청구 process | 완료 | 청구 내용 기록 단위 분리, 보유·관리 여부, 공개자료 대조, 비공개 검토 표시, 담당 확인 흐름을 제공함 |
+| 협업회의 공개경계 route | 완료 | 신규 router/path/source/process/FAQ/checklist/walkthrough가 정보공개·기록관리와 협업회의운영 사이의 실행경계를 묶음 |
 | 정보공개청구 checklist | 완료 | 결정 전 청구 대상, 보유 여부, 공개근거, 비공개 검토 항목, 멈춤선을 점검함 |
 | docs exposure | 완료 | 정보공개청구 FAQ/path/process/checklist/manifest/quality/coverage와 기존 source/process/checklist/coverage가 웹 인덱스에 노출됨 |
 | manifest | 완료 | 정보공개청구 journey manifest가 전입자/agent route를 고정함 |
 | quality gate | 완료 | 개인정보·비공개 내부검토·법률판단 금지선을 점검하는 note가 있음 |
 | 상황형 coverage | 완료 | 정보공개청구 전용 coverage가 하위 경로와 남은 분기 후보를 묶음 |
+
+## 실행경계 신규 라우트
+- router: [[router-정보공개기록관리-협업회의-신규자-공개경계]]가 정보공개·기록관리와 협업회의운영이 만나는 공개경계 신규자 진입점을 고정한다.
+- path: [[newcomer-path-정보공개기록관리-협업회의-공개경계]]가 원천기록 확인, 마스킹 선처리, 회의결과 외부공유, 청구에서 공개까지 분기 흐름을 순서화한다.
+- source: [[source-정보공개기록관리-원천기록-확인우선순서]]가 결재본·회의자료·첨부·시스템 기록 등 원천기록 우선순위를 확인한다.
+- process: [[process-정보공개기록관리-청구에서공개까지-분기흐름]]가 청구 접수에서 공개·부분공개·비공개·부존재·이송까지 분기한다.
+- FAQ: [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]]로 개인정보·민감정보 선마스킹 여부를 결정하고, [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]]로 회의 결과 외부공유 범위를 맞춘다.
+- checklist: [[checklist-협업회의운영-후속조치-회의전-precheck]]로 회의 전부터 공개 가능한 결과물과 비공개 후속조치를 분리한다.
+- walkthrough: [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]가 신규 route를 한 번에 따라가게 한다.
 
 ## Boundary Router 공개문안·질문형 묶음
 - walkthrough: [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관 질문을 따라온 뒤 정보공개·기록관리 boundary checklist로 회귀한다.

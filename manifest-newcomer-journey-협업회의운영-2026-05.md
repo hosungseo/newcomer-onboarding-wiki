@@ -9,16 +9,17 @@
 3. **첫 질문** — [[faq-회의자료와-내부검토자료는-어떻게-구분하나]]로 공개 가능 자료와 내부 검토자료를 구분한다.
 4. **자료 대조** — [[source-협업회의운영-자료대조순서]]에서 사전 배포자료, 내부 검토자료, 결정사항, 미결사항, 기록물 경계를 대조한다.
 5. **결과초안 작성** — [[process-협업회의운영-결과초안-작성흐름]]에서 회의 목적, 참석 범위, 결정사항, 쟁점, 후속 과제, 보고 경로를 분리한다.
-6. **후속조치 점검** — [[checklist-협업회의운영-후속조치-검토]]에서 담당자·기한·보고경로·공개경계를 확인한다.
-7. **coverage 확인** — [[coverage-협업회의운영-공통업무축-2026-05]]에서 현재 완성도와 다음 gap을 확인한다.
+6. **회의 전 precheck** — [[checklist-협업회의운영-후속조치-회의전-precheck]]로 회의 전부터 공개 가능한 결과물, 내부검토, 후속조치 금지선을 분리한다.
+7. **정보공개 교차 경계** — [[router-정보공개기록관리-협업회의-신규자-공개경계]]와 [[newcomer-path-정보공개기록관리-협업회의-공개경계]]로 회의 결과가 공개·청구 대응으로 넘어가는 흐름을 확인한다.
+8. **coverage 확인** — [[coverage-협업회의운영-공통업무축-2026-05]]에서 현재 완성도와 다음 gap을 확인한다.
 
 
 ## FAQ/source/process/checklist/walkthrough exposure
-- FAQ: [[faq-회의자료와-내부검토자료는-어떻게-구분하나]], [[faq-회의후속조치-보고국회감사로-넘어가면-무엇이-달라지나]], [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]]
-- Source: [[source-협업회의운영-자료대조순서]]
-- Process: [[process-협업회의운영-결과초안-작성흐름]], [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]]
-- Checklist: [[checklist-협업회의운영-후속조치-검토]], [[checklist-협업회의운영-boundary-router-질문형-검토]]
-- Walkthrough: [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]], [[walkthrough-institution-boundary-router-question-flow-2026-05]]
+- FAQ: [[faq-회의자료와-내부검토자료는-어떻게-구분하나]], [[faq-회의후속조치-보고국회감사로-넘어가면-무엇이-달라지나]], [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]], [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]], [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]]
+- Source: [[source-협업회의운영-자료대조순서]], [[source-정보공개기록관리-원천기록-확인우선순서]]
+- Process: [[process-협업회의운영-결과초안-작성흐름]], [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]], [[process-정보공개기록관리-청구에서공개까지-분기흐름]]
+- Checklist: [[checklist-협업회의운영-후속조치-검토]], [[checklist-협업회의운영-boundary-router-질문형-검토]], [[checklist-협업회의운영-후속조치-회의전-precheck]]
+- Walkthrough: [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]], [[walkthrough-institution-boundary-router-question-flow-2026-05]], [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]
 
 ## Boundary router route
 1. **질문형 walkthrough** — [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관·상황 질문을 먼저 좁힌다.
@@ -48,6 +49,14 @@ branch_to:
   감사_후속확인: hub-감사대응.md
   홍보_대외설명: hub-홍보대응.md
 boundary_router:
+  cross_axis_router: router-정보공개기록관리-협업회의-신규자-공개경계.md
+  cross_axis_path: newcomer-path-정보공개기록관리-협업회의-공개경계.md
+  cross_axis_walkthrough: walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05.md
+  source_original_record: source-정보공개기록관리-원천기록-확인우선순서.md
+  process_claim_to_disclosure: process-정보공개기록관리-청구에서공개까지-분기흐름.md
+  meeting_external_share_faq: faq-협업회의운영-회의결과는-어디까지-외부공유하나.md
+  masking_faq: faq-정보공개기록관리-마스킹은-언제-먼저-하나.md
+  meeting_precheck: checklist-협업회의운영-후속조치-회의전-precheck.md
   walkthrough: walkthrough-institution-boundary-router-question-flow-2026-05.md
   checklist: checklist-협업회의운영-boundary-router-질문형-검토.md
   faq_public_draft: faq-협업회의운영-boundary-router-공개문안-초안-2026-05.md

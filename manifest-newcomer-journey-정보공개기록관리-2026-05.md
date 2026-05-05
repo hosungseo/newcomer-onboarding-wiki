@@ -10,16 +10,17 @@
 4. **자료 대조** — 일반 공개검토는 [[source-정보공개기록관리-자료대조순서]], 청구 대응은 [[source-정보공개청구-공개자료-대조순서]]로 근거를 낮춘다.
 5. **초안 작성** — 일반 공개검토 초안은 [[process-정보공개기록관리-공개검토초안-작성흐름]]과 [[checklist-정보공개기록관리-공개검토초안-검토]]로 처리한다.
 6. **결정 유형 분기** — 부분공개, 부존재·이송, 결정 전 검토는 [[coverage-정보공개청구-상황형경로-2026-05]]에서 하위 process/checklist로 이동한다.
-7. **공통 업무축 연결** — 민원·국회·감사·홍보·문서 쟁점은 [[hub-민원대응]], [[hub-국회대응]], [[hub-감사대응]], [[hub-홍보대응]], [[hub-문서기안]]으로 분기한다.
-8. **coverage 확인** — [[coverage-정보공개기록관리-공통업무축-2026-05]]에서 현재 완성도와 다음 빈칸을 확인한다.
+7. **협업회의 공개경계** — 회의자료·후속조치가 정보공개 판단으로 넘어가면 [[router-정보공개기록관리-협업회의-신규자-공개경계]] → [[newcomer-path-정보공개기록관리-협업회의-공개경계]] → [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]] 순서로 확인한다.
+8. **공통 업무축 연결** — 민원·국회·감사·홍보·문서 쟁점은 [[hub-민원대응]], [[hub-국회대응]], [[hub-감사대응]], [[hub-홍보대응]], [[hub-문서기안]]으로 분기한다.
+9. **coverage 확인** — [[coverage-정보공개기록관리-공통업무축-2026-05]]에서 현재 완성도와 다음 빈칸을 확인한다.
 
 
 ## FAQ/source/process/checklist/walkthrough exposure
-- FAQ: [[faq-공개자료와-내부검토자료는-어떻게-구분하나]], [[faq-정보공개청구-처음-무엇부터-확인하나]], [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]]
-- Source: [[source-정보공개기록관리-자료대조순서]], [[source-정보공개청구-공개자료-대조순서]]
-- Process: [[process-정보공개기록관리-공개검토초안-작성흐름]], [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]]
-- Checklist: [[checklist-정보공개기록관리-공개검토초안-검토]], [[checklist-정보공개기록관리-boundary-router-질문형-검토]]
-- Walkthrough: [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]], [[walkthrough-institution-boundary-router-question-flow-2026-05]]
+- FAQ: [[faq-공개자료와-내부검토자료는-어떻게-구분하나]], [[faq-정보공개청구-처음-무엇부터-확인하나]], [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]], [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]], [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]]
+- Source: [[source-정보공개기록관리-자료대조순서]], [[source-정보공개청구-공개자료-대조순서]], [[source-정보공개기록관리-원천기록-확인우선순서]]
+- Process: [[process-정보공개기록관리-공개검토초안-작성흐름]], [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]], [[process-정보공개기록관리-청구에서공개까지-분기흐름]]
+- Checklist: [[checklist-정보공개기록관리-공개검토초안-검토]], [[checklist-정보공개기록관리-boundary-router-질문형-검토]], [[checklist-협업회의운영-후속조치-회의전-precheck]]
+- Walkthrough: [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]], [[walkthrough-institution-boundary-router-question-flow-2026-05]], [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]
 
 ## Boundary router route
 1. **질문형 walkthrough** — [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관·상황 질문을 먼저 좁힌다.
@@ -59,6 +60,14 @@ common_axes:
   홍보대응: hub-홍보대응.md
   문서기안: hub-문서기안.md
 boundary_router:
+  cross_axis_router: router-정보공개기록관리-협업회의-신규자-공개경계.md
+  cross_axis_path: newcomer-path-정보공개기록관리-협업회의-공개경계.md
+  cross_axis_walkthrough: walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05.md
+  source_original_record: source-정보공개기록관리-원천기록-확인우선순서.md
+  process_claim_to_disclosure: process-정보공개기록관리-청구에서공개까지-분기흐름.md
+  masking_faq: faq-정보공개기록관리-마스킹은-언제-먼저-하나.md
+  meeting_external_share_faq: faq-협업회의운영-회의결과는-어디까지-외부공유하나.md
+  meeting_precheck: checklist-협업회의운영-후속조치-회의전-precheck.md
   walkthrough: walkthrough-institution-boundary-router-question-flow-2026-05.md
   checklist: checklist-정보공개기록관리-boundary-router-질문형-검토.md
   faq_public_draft: faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05.md
