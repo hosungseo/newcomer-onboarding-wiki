@@ -33,5 +33,8 @@
 - 협업·회의운영: hub/path/FAQ/source/process/checklist/coverage 있음
 - 대외협력·현장소통: hub/path/FAQ/source/process/checklist/coverage 있음
 
+## 공통 masking FAQ
+- 공통 masking FAQ: [[faq-공통업무축-민감정보-masking-사례구분]]
+
 ## 금지선
 개인정보, 민원인 식별정보, 업체별 민감정보, 비공개 내부검토 의견, 미확정 정책안, 인사·평정자료, 법률자문성 결론은 포함하지 않는다.

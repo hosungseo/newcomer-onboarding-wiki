@@ -30,6 +30,9 @@
 4. 각 coverage에서 hub → path → FAQ → source/process/checklist 순서로 내려간다.
 5. manifest로 전입자 journey를 고정하고 quality gate로 공개/비공개 금지선을 다시 점검한다.
 
+## 공통 masking FAQ
+- 공통 masking FAQ: [[faq-공통업무축-민감정보-masking-사례구분]]
+
 ## 금지선
 비공개 조직개편안, 개인별 평가·평정자료, 업체별 민감정보, 개인정보, 보안정보, 비공개 내부검토 의견, 미확정 정책안, 법률자문성 결론은 포함하지 않는다.
 
