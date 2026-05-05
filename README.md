@@ -969,3 +969,6 @@ v1 체크포인트:
 
 - [실행경계 route map](section-execution-boundary-routes-2026-05.md) — 업무축·상황별로 최근 실행경계 노트를 고르는 시작점
 - [실행경계 discovery coverage](coverage-execution-boundary-routes-discovery-2026-05.md) — route-map과 coverage/manifest/quality-gate 노출 상태 점검
+
+- [홍보·법령 실행경계 route map](walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05.md) — 법령 공개설명을 보도자료·Q&A·대외문안으로 전환하기 전 확인하는 교차 route
+- [홍보·법령 노출 gap audit](audit-lane-a-홍보법령-route-exposure-recheck-2026-05.md) — docs/landing/coverage 노출 상태와 남은 README gap 점검
