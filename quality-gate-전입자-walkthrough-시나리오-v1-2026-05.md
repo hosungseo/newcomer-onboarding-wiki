@@ -5,6 +5,7 @@
 
 ## 점검 대상
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
+- [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[walkthrough-전입자-시나리오-국회감사민원-대외전환-2026-05]]
 - [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]]

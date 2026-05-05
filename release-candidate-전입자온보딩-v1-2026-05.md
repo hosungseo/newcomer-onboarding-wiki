@@ -41,6 +41,7 @@
 ## Agent-readable catalog
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
+- [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[llms-newcomer-onboarding-v1]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
