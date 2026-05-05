@@ -1,6 +1,7 @@
 # FAQ — 정보공개기록관리 Boundary Router 공개문안 초안 2026-05
 - [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]] — 정보공개기록관리 boundary router 공개문안 FAQ coverage.
 - [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] — 정보공개기록관리 boundary router 공개문안 작성흐름.
+- [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]] — 정보공개기록관리 boundary router 공개문안 process coverage.
 
 ## Q1. 정보공개기록관리 자료를 공개 문안으로 바꿀 때 먼저 무엇을 확인하나?
 먼저 [[checklist-정보공개기록관리-boundary-router-질문형-검토]]로 공개 가능한 기록 범위, 처리 절차, 비공개 사유 검토 필요 지점을 분리한다. 이어 [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]]로 checklist 노출과 누락을 확인한다.

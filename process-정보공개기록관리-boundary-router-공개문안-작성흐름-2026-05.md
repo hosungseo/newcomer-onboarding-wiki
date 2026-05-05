@@ -13,6 +13,7 @@
 
 ## 3. 노출·품질 확인
 - [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]]로 FAQ 노출을 확인한다.
+- [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]] — 정보공개기록관리 boundary router 공개문안 process coverage.
 - 제품 경계는 [[manifest-boundary-checklist-products-2026-05]]와 [[manifest-institution-to-boundary-router-2026-05]]로 되돌린다.
 
 ## 멈춤선
