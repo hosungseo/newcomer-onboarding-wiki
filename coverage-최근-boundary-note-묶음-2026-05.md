@@ -11,6 +11,7 @@
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 boundary note로 되돌아가는 router.
 - representative institution sections: 경제산업·사회안전·법무거버넌스·외교안보·국토환경·교육문화과학 section에서 [[manifest-institution-to-boundary-router-2026-05]]로 연결된다.
 - [[quality-gate-institution-to-boundary-router-2026-05]] — 기관군 to boundary router 안전 점검.
+- [[coverage-institution-boundary-router-section-2026-05]] — 대표 기관군 section의 boundary router 연결 coverage.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개자료·업체 민감정보 경계.
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 공식 조직도·업무분장·검토 중 자료 경계.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산 단계별 제출 전 분기.

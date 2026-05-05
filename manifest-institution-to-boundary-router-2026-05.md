@@ -13,6 +13,7 @@
 
 ## 상위 진입
 - [[quality-gate-institution-to-boundary-router-2026-05]] — 기관군 to boundary router 안전 점검.
+- [[coverage-institution-boundary-router-section-2026-05]] — 대표 기관군 section의 boundary router 연결 coverage.
 - [[landing-전입자-기관군별-온보딩-2026-05]]
 - [[landing-전입자-전입첫주-전체기관-2026-05]]
 - [[coverage-부처군-section-기관행-2026-05]]
