@@ -7,6 +7,7 @@
 - [x] [[index-boundary-router-products-v1-2026-05]]가 institution/response/core 제품군을 함께 가리킨다.
 - [x] [[coverage-boundary-router-products-v1-index-2026-05]]가 v1 index 노출 상태를 확인한다.
 - [[release-candidate-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 통합 release candidate.
+- [[coverage-boundary-router-products-v1-release-2026-05]] — boundary router products v1 release 노출 coverage.
 
 ## Gate 2 — institution route
 - [x] [[manifest-institution-to-boundary-router-2026-05]]

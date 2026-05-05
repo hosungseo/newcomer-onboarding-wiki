@@ -6,6 +6,7 @@
 - [[coverage-boundary-router-products-v1-index-2026-05]] — boundary router products v1 index 노출 coverage.
 - [[quality-gate-boundary-router-products-v1-2026-05]] — boundary router products v1 통합 quality gate.
 - [[release-candidate-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 통합 release candidate.
+- [[coverage-boundary-router-products-v1-release-2026-05]] — boundary router products v1 release 노출 coverage.
 
 - 기관군별 전입 경로가 있다.
 - 공통업무축 landing에서 주요 업무를 고를 수 있다.
