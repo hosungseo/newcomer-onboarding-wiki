@@ -11,6 +11,7 @@
 - [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
 - [[walkthrough-core-boundary-checklist-entry-2026-05]] — 핵심 업무축 boundary checklist 진입 walkthrough.
 - [[index-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist 제품군 index.
+- [[coverage-boundary-router-checklist-products-index-2026-05]] — checklist products cross-index 노출 coverage.
 - [[index-boundary-router-checklist-products-2026-05]] — response/core boundary router checklist 제품군 cross-index.
 - [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 - landing: institution boundary, response checklist
