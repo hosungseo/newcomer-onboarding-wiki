@@ -2,6 +2,7 @@
 
 ## 목적
 [[index-boundary-router-products-v1-release-pack-2026-05]]가 boundary router products v1의 release pack 색인으로 노출되는지 확인한다.
+- [[quality-gate-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack quality gate.
 
 ## Release pack 노출
 - README → index-boundary-router-products-v1-release-pack-2026-05.md
