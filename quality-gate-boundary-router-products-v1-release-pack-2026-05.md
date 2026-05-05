@@ -7,6 +7,7 @@
 - [x] [[index-boundary-router-products-v1-release-pack-2026-05]]가 landing/index/walkthrough/manifest/quality/release/checklist/coverage를 함께 묶는다.
 - [x] [[coverage-boundary-router-products-v1-release-pack-2026-05]]가 release pack 노출 상태를 확인한다.
 - [[manifest-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack manifest.
+- [[release-candidate-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack 최종 release candidate.
 - [[coverage-boundary-router-products-v1-release-pack-manifest-2026-05]] — boundary router products v1 release pack manifest 노출 coverage.
 
 ## Gate 2 — 빠른 진입
