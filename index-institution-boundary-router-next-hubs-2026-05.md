@@ -17,6 +17,7 @@
 - [[coverage-최근-boundary-note-묶음-2026-05]]
 
 ## 다음 작업
+- [[coverage-institution-boundary-response-hubs-2026-05]] — 대응형 업무 hub의 boundary router 직접 연결 coverage.
 - [[coverage-institution-boundary-core-hubs-2026-05]] — 핵심 업무축 hub의 boundary router 직접 연결 coverage.
 - [[faq-기관별-hub-boundary-router는-언제-직접-연결하나]] — 기관별 hub에 boundary router를 직접 연결할지 판단하는 FAQ.
 - [[process-institution-boundary-router-hub-linking-2026-05]] — 기관별 개별 hub에 boundary router를 안전하게 연결하는 절차.

@@ -13,6 +13,7 @@
 
 
 ## 추가 연결된 response hubs
+- [[coverage-institution-boundary-response-hubs-2026-05]] — 대응형 업무 hub의 boundary router 직접 연결 coverage.
 - [[hub-감사대응]] → [[manifest-institution-to-boundary-router-2026-05]]
 - [[hub-국회대응]] → [[manifest-institution-to-boundary-router-2026-05]]
 - [[hub-정보공개기록관리]] → [[manifest-institution-to-boundary-router-2026-05]]
