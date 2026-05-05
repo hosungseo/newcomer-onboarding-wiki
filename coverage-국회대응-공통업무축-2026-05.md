@@ -45,7 +45,7 @@
 - manifest: [[manifest-newcomer-journey-국회대응-2026-05]] 있음
 - quality gate: [[quality-gate-국회대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
-- 다음 후보: 예산심사·국감별 상황형 path 보강, 서면질의/현안보고 답변 분기 checklist, 비공개 수치·개인정보 masking 사례 FAQ
+- 다음 후보: 예산심사·국감별 상황형 path 보강, 서면질의/현안보고 답변 분기 checklist, [[faq-공통업무축-민감정보-masking-사례구분]]을 비공개 수치·개인정보 사례로 더 세분화할지 검토
 
 ## 공통 masking FAQ
 - [[faq-공통업무축-민감정보-masking-사례구분]]

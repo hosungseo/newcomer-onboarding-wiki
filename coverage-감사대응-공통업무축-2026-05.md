@@ -44,7 +44,7 @@
 - manifest: [[manifest-newcomer-journey-감사대응-2026-05]] 있음
 - quality gate: [[quality-gate-감사대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
-- 다음 후보: 국정감사 대응 상황형 path 보강, 감사자료가 국회·예산·민원으로 넘어갈 때의 분기 checklist, 개인정보·사건정보 masking 사례 FAQ
+- 다음 후보: 국정감사 대응 상황형 path 보강, 감사자료가 국회·예산·민원으로 넘어갈 때의 분기 checklist, [[faq-공통업무축-민감정보-masking-사례구분]]을 감사자료 사례로 더 세분화할지 검토
 
 ## 공통 masking FAQ
 - [[faq-공통업무축-민감정보-masking-사례구분]]
