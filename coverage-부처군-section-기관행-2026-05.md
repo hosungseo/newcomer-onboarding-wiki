@@ -18,6 +18,7 @@
 - 값이 낮은 section은 새 note 생성보다 먼저 기존 note가 있는데 section에 빠진 것인지 확인한다.
 
 ## Related Notes
+- [[section-최근-boundary-note-묶음-2026-05]] — 기관별 전입자가 공통업무축 공개/비공개 boundary로 되돌아가는 section.
 - [[coverage-부처군-section-첫날첫주-2026-05]]
 - [[quality-gate-부처군-전입경로-section-2026-05]]
 - [[landing-전입자-기관군별-온보딩-2026-05]]

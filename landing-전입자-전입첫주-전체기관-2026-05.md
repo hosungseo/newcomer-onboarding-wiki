@@ -86,6 +86,7 @@
 - coverage: [[coverage-부처군-section-기관행-2026-05]] / [[coverage-부처군-section-첫날첫주-2026-05]]
 
 ## Related Notes
+- [[section-최근-boundary-note-묶음-2026-05]] — 기관별 전입자가 공통업무축 공개/비공개 boundary로 되돌아가는 section.
 - `gate-전입후첫재적응.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `process-전입후-첫주-재적응.md`
