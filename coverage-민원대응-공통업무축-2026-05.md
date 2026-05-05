@@ -42,7 +42,7 @@
 - manifest: [[manifest-newcomer-journey-민원대응-2026-05]] 있음
 - quality gate: [[quality-gate-민원대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
-- 현장소통 전환 section은 [[section-대외협력현장소통-전환묶음-2026-05]]와 [[section-국회감사민원-대외전환-2026-05]]로 연결됐다. 다음 후보: 정보공개·홍보·감사로 이어지는 상황형 path, 반복 민원 FAQ template, [[faq-공통업무축-민감정보-masking-사례구분]]을 민원답변 제출전 checklist로 분화할지 검토
+- 현장소통 전환 section은 [[section-대외협력현장소통-전환묶음-2026-05]]와 [[section-국회감사민원-대외전환-2026-05]]로 연결됐고 README/landing/docs 노출도 완료됐다. 다음 후보: 정보공개·홍보·감사로 이어지는 상황형 path, 반복 민원 FAQ template, [[faq-공통업무축-민감정보-masking-사례구분]]을 민원답변 제출전 checklist로 분화할지 검토
 
 ## 공통 masking FAQ
 - [[faq-공통업무축-민감정보-masking-사례구분]]

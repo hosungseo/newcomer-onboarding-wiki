@@ -44,7 +44,7 @@
 - manifest: [[manifest-newcomer-journey-감사대응-2026-05]] 있음
 - quality gate: [[quality-gate-감사대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
-- 현장소통 전환 section은 [[section-대외협력현장소통-전환묶음-2026-05]]와 [[section-국회감사민원-대외전환-2026-05]]로 연결됐다. 다음 후보: 국정감사 대응 상황형 path 보강, 감사자료가 예산·민원으로 넘어갈 때의 분기 checklist, [[faq-공통업무축-민감정보-masking-사례구분]]을 감사자료 사례로 더 세분화할지 검토
+- 현장소통 전환 section은 [[section-대외협력현장소통-전환묶음-2026-05]]와 [[section-국회감사민원-대외전환-2026-05]]로 연결됐고 README/landing/docs 노출도 완료됐다. 다음 후보: 국정감사 대응 상황형 path 보강, 감사자료가 예산·민원으로 넘어갈 때의 분기 checklist, [[faq-공통업무축-민감정보-masking-사례구분]]을 감사자료 사례로 더 세분화할지 검토
 
 ## 공통 masking FAQ
 - [[faq-공통업무축-민감정보-masking-사례구분]]
