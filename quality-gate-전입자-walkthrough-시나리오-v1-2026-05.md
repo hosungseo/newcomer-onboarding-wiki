@@ -27,7 +27,7 @@
 - [x] walkthrough index가 docs/landing/README/coverage/quality gate에 노출됐다.
 - [x] scenario router가 docs/landing/README/coverage/quality gate에 노출됐다.
 - [x] 회의 후속조치, 민원 폭주, 장관 보고 walkthrough가 시나리오 묶음에 포함됐다.
-- [ ] docs index는 아직 상황형 walkthrough 전용 section UI로 분리되지 않았다. 분리 전까지는 [[manifest-scenario-router-walkthrough-v1-2026-05]]를 임시 route entry로 사용한다.
+- [x] docs index는 상황형 walkthrough 전용 section UI로 분리됐고, [[manifest-scenario-router-walkthrough-v1-2026-05]]가 대표 route entry로 노출됐다.
 
 ## 공개 안전 점검
 - 개인정보·민원인 식별정보를 예시로 확정하지 않는다.

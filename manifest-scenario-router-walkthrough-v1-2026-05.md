@@ -14,7 +14,7 @@
 
 ## UI Exposure
 - 현재 public docs index에는 quick link로 노출되어 있다.
-- 다음 UI 패킷은 상황형 walkthrough block을 별도로 분리하는 것이다.
+- docs index의 `상황형 walkthrough — 실제 질문에서 바로 고르기` section으로 분리되어 router/index/walkthrough 묶음이 한 곳에서 보인다.
 
 ## Fallback
 애매하면 [[index-전입자-walkthrough-시나리오-v1-2026-05]]에서 상황형 묶음을 다시 고르고, 공개 가능성이 걸리면 [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]를 먼저 확인한다.
