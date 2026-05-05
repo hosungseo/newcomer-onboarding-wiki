@@ -21,6 +21,8 @@
 - 국회: [[coverage-국회대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-국회대응-2026-05]] / [[quality-gate-국회대응-공통업무축-2026-05]]
 - [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] — 국회대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-국회대응-boundary-router-공개문안-faq-2026-05]] — 국회대응 boundary router 공개문안 FAQ coverage.
+- [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] — 국회대응 boundary router 공개문안 작성흐름.
+- [[coverage-국회대응-boundary-router-공개문안-process-2026-05]] — 국회대응 boundary router 공개문안 process coverage.
 - 감사: [[coverage-감사대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-감사대응-2026-05]] / [[quality-gate-감사대응-공통업무축-2026-05]]
 - 민원: [[coverage-민원대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-민원대응-2026-05]] / [[quality-gate-민원대응-공통업무축-2026-05]]
 - 대외 전환: [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]

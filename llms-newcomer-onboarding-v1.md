@@ -19,6 +19,8 @@ This file gives AI agents a compact entry map for the public newcomer onboarding
 
 ## High-signal manifests
 - [[manifest-newcomer-journey-국회대응-2026-05]]
+- [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] — 국회대응 boundary router 공개문안 작성흐름.
+- [[coverage-국회대응-boundary-router-공개문안-process-2026-05]] — 국회대응 boundary router 공개문안 process coverage.
 - [[manifest-newcomer-journey-감사대응-2026-05]]
 - [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] — 감사대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]] — 감사대응 boundary router 공개문안 FAQ coverage.
