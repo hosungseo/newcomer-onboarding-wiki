@@ -56,6 +56,7 @@
 - [[coverage-institution-boundary-agency-hubs-2026-05]] — 감사원·조달청 기관별 hub의 boundary router 직접 연결 coverage.
 - [[walkthrough-institution-boundary-router-question-flow-2026-05]] — 기관 hub에서 boundary router로 돌아가는 질문형 walkthrough.
 - [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
+- [[manifest-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary router 질문형 checklist 묶음.
 - [[index-institution-boundary-router-next-hubs-2026-05]] — 기관별 개별 hub boundary router 연결 후보 index.
 - [[checklist-institution-boundary-router-hub-selection-2026-05]] — 기관별 개별 hub boundary router 연결 전 선택 체크리스트.
 - [[process-institution-boundary-router-hub-linking-2026-05]] — 기관별 개별 hub에 boundary router를 안전하게 연결하는 절차.

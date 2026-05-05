@@ -17,6 +17,7 @@
 - [[coverage-institution-boundary-agency-hubs-2026-05]] — 감사원·조달청 기관별 hub의 boundary router 직접 연결 coverage.
 - [[walkthrough-institution-boundary-router-question-flow-2026-05]] — 기관 hub에서 boundary router로 돌아가는 질문형 walkthrough.
 - [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
+- [[manifest-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary router 질문형 checklist 묶음.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개자료·업체 민감정보 경계.
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 공식 조직도·업무분장·검토 중 자료 경계.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산 단계별 제출 전 분기.
