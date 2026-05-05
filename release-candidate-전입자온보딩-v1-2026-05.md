@@ -3,6 +3,7 @@
 이 문서는 `newcomer-onboarding-wiki`가 전 부처 전입자·신규자 온보딩 지식망으로 어느 정도 닫혔는지 확인하기 위한 v1 release candidate 체크포인트다. 목적은 더 많은 노트를 계속 만드는 것이 아니라, 지금까지 만든 기관군·공통업무축·상황형 경로가 실제 진입점으로 묶였는지 판정하는 것이다.
 
 ## v1 판정 기준
+- [[coverage-boundary-router-products-v1-index-2026-05]] — boundary router products v1 index 노출 coverage.
 
 - 기관군별 전입 경로가 있다.
 - 공통업무축 landing에서 주요 업무를 고를 수 있다.
