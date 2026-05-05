@@ -32,5 +32,9 @@
 4. 각 route에서는 coverage → hub/path → FAQ → source → process → checklist 순서로 내려간다.
 5. 공개·비공개 경계는 각 note의 금지선을 우선한다.
 
+
+## Quality Gate
+- [[quality-gate-내부운영협업대외소통-2026-05]]
+
 ## do_not_include
 개인정보, 민원인 식별정보, 업체별 민감정보, 비공개 내부검토 의견, 미확정 정책안, 인사·평정자료, 법률자문성 결론.
