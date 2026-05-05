@@ -145,6 +145,7 @@ v1 체크포인트:
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]]
+- [[manifest-scenario-router-walkthrough-v1-2026-05]]
 - [[release-candidate-전입자온보딩-v1-2026-05]]
 
 추천 허브:

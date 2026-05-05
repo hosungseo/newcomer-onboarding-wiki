@@ -17,6 +17,7 @@ v1 release candidate 이후 실제 전입자 질문을 end-to-end로 따라갈 �
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]]
+- [[manifest-scenario-router-walkthrough-v1-2026-05]]
 - [x] 공통업무축 landing에서 진입 가능하다.
 - [x] agent-readable catalog에서 시나리오 묶음으로 진입 가능하다.
 - [x] release candidate에서 walkthrough 후보 상태를 확인할 수 있다.
