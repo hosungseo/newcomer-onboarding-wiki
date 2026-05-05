@@ -41,9 +41,10 @@
 - [[quality-gate-대외협력현장소통-2026-05]]
 
 ## 다음 빈칸
-1. README/landing/docs에서 대외협력·현장소통 manifest/quality gate 노출을 확인한다.
-2. [[process-협업회의운영-대외협력현장소통-후속조치경계]]를 기준으로 협업회의운영과의 후속조치 경계를 함께 본다.
-3. 협업·회의운영과 대외협력·현장소통의 후속조치 경계를 비교한다.
+1. 대외협력·현장소통 manifest와 quality gate는 [[manifest-newcomer-journey-대외협력현장소통-2026-05]] / [[quality-gate-대외협력현장소통-2026-05]]로 닫혔다.
+2. 협업·회의운영과 대외협력·현장소통의 후속조치 경계 process는 [[process-협업회의운영-대외협력현장소통-후속조치경계]]로 닫혔다.
+3. 다음은 후속조치 제출전 checklist 분화, 현장의견/공식입장 표현 예시 FAQ 보강, docs quick link 묶음 분리 검토다.
+4. 민감정보 masking은 [[faq-공통업무축-민감정보-masking-사례구분]]을 공통 기준으로 삼고, 필요 시 대외소통 전용 사례로 분화한다.
 
 ## Section
 - [[section-공통업무축-내부운영협업대외소통-2026-05]]
