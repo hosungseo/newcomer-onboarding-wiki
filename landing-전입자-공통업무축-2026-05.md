@@ -49,6 +49,8 @@
 - 정보공개·협업회의 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-정보공개기록관리-boundary-router-질문형-검토]] / [[checklist-협업회의운영-boundary-router-질문형-검토]]를 먼저 본다.
 - 감사대응 공개문안 route: [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] → [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-감사대응-boundary-router-공개문안-process-2026-05]]
 - 국회대응 공개문안 route: [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] → [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
+- 감사대응 자료제출경계 route: [[faq-감사대응-자료제출은-어디까지-하나]] → [[source-감사대응-공개비공개-자료제출-판단순서]] → [[process-감사대응-자료제출-작성흐름]] → [[checklist-감사대응-자료제출-제출전검토]] → [[walkthrough-감사대응-전입자-라우터-2026-05]]
+- 국회대응 자료요구경계 route: [[faq-국회대응-공개답변과-비공개협의는-어디서-나누나]] → [[source-국회대응-자료요구-답변초안-대조순서]] → [[process-국회대응-자료요구-실행경계]] → [[checklist-국회대응-자료요구답변-제출전검토]] → [[walkthrough-국회대응-전입자-라우터-2026-05]]
 - 감사·국회 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-감사대응-boundary-router-질문형-검토]] / [[checklist-국회대응-boundary-router-질문형-검토]]를 먼저 본다.
 - [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
 - [[index-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 업무축별 entry map.
@@ -101,6 +103,16 @@
 - [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]]
 - [[coverage-국회대응-boundary-router-공개문안-faq-2026-05]]
 - [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
+- [[faq-감사대응-자료제출은-어디까지-하나]]
+- [[source-감사대응-공개비공개-자료제출-판단순서]]
+- [[process-감사대응-자료제출-작성흐름]]
+- [[checklist-감사대응-자료제출-제출전검토]]
+- [[walkthrough-감사대응-전입자-라우터-2026-05]]
+- [[faq-국회대응-공개답변과-비공개협의는-어디서-나누나]]
+- [[source-국회대응-자료요구-답변초안-대조순서]]
+- [[process-국회대응-자료요구-실행경계]]
+- [[checklist-국회대응-자료요구답변-제출전검토]]
+- [[walkthrough-국회대응-전입자-라우터-2026-05]]
 - [[checklist-감사대응-boundary-router-질문형-검토]]
 - [[checklist-국회대응-boundary-router-질문형-검토]]
 - [[source-장관보고-자료대조순서]]
