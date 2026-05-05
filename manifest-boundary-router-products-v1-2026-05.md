@@ -8,6 +8,7 @@
 - [[quality-gate-boundary-router-products-v1-2026-05]]
 - [[walkthrough-boundary-router-products-v1-entry-2026-05]] — institution/response/core boundary router products v1 통합 walkthrough.
 - [[landing-boundary-router-products-v1-2026-05]] — boundary router products v1 빠른 선택 landing.
+- [[coverage-boundary-router-products-v1-landing-2026-05]] — boundary router products v1 landing 노출 coverage.
 - [[coverage-boundary-router-products-v1-walkthrough-2026-05]] — boundary router products v1 walkthrough 노출 coverage.
 - [[release-candidate-boundary-router-products-v1-2026-05]]
 - [[coverage-boundary-router-products-v1-manifest-2026-05]] — boundary router products v1 manifest 노출 coverage.

@@ -10,6 +10,7 @@
 - response/core 중 어디인지 헷갈린다 → [[walkthrough-boundary-checklist-products-entry-2026-05]]
 
 ## v1 제품 상태
+- [[coverage-boundary-router-products-v1-landing-2026-05]] — boundary router products v1 landing 노출 coverage.
 - [[index-boundary-router-products-v1-2026-05]]
 - [[manifest-boundary-router-products-v1-2026-05]]
 - [[quality-gate-boundary-router-products-v1-2026-05]]
