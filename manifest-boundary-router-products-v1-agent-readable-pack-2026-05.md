@@ -4,6 +4,7 @@
 Agent가 boundary router products v1 release pack을 읽고 안내할 때 사용하는 agent-readable pack의 최상위 정의를 고정한다.
 
 ## Agent-readable pack
+- [[coverage-boundary-router-products-v1-agent-readable-pack-manifest-2026-05]] — boundary router products v1 agent-readable pack manifest 노출 coverage.
 - [[index-boundary-router-products-v1-agent-readable-pack-2026-05]]
 - [[coverage-boundary-router-products-v1-agent-readable-pack-2026-05]]
 - [[quality-gate-boundary-router-products-v1-agent-readable-pack-2026-05]]
