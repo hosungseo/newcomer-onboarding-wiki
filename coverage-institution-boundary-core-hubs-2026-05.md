@@ -2,6 +2,7 @@
 
 ## 목적
 핵심 업무축 hub에서 [[manifest-institution-to-boundary-router-2026-05]]로 직접 회귀할 수 있는지 확인한다.
+- [[checklist-조직정원-boundary-router-질문형-검토]] — 조직정원에서 boundary router로 돌아가기 전 질문형 검토.
 - [[checklist-계약조달-boundary-router-질문형-검토]] — 계약조달에서 boundary router로 돌아가기 전 질문형 검토.
 
 ## 직접 연결된 core hubs
