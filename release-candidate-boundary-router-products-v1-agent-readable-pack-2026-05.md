@@ -6,6 +6,7 @@ Agent가 boundary router products v1 release pack을 안정적으로 읽고 안�
 ## Agent-readable 정의
 - [[coverage-boundary-router-products-v1-agent-readable-pack-release-2026-05]] — boundary router products v1 agent-readable pack release 노출 coverage.
 - [[manifest-boundary-router-products-v1-agent-readable-pack-2026-05]]
+- [[walkthrough-boundary-router-products-v1-agent-readable-pack-entry-2026-05]] — boundary router products v1 agent-readable pack entry walkthrough.
 - [[index-boundary-router-products-v1-agent-readable-pack-2026-05]]
 - [[quality-gate-boundary-router-products-v1-agent-readable-pack-2026-05]]
 - [[coverage-boundary-router-products-v1-agent-readable-pack-2026-05]]
