@@ -4,6 +4,7 @@
 교차 실행경계 전용 coverage/manifest/quality alias를 한 곳에서 고르게 하는 index다. 세부 FAQ/process/checklist 중복 나열은 각 coverage로 위임한다.
 
 ## 읽는 법
+- 교차 route 선택 기준만 빠르게 보려면 [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]]를 본다.
 - 질문 문장에서 바로 고를 때는 [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]를 먼저 본다.
 - 상황을 먼저 고른 뒤 `coverage → manifest → quality gate` 순서로만 내려간다.
 - 상세 업무 흐름이 필요하면 각 coverage에서 원래 route-map/walkthrough로 이동한다.
