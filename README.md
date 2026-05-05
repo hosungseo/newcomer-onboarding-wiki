@@ -4,6 +4,9 @@
 
 ## 한 줄 정의
 - [[landing-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist를 바로 고르는 landing.
+- [감사 자료제출경계 coverage](coverage-감사대응-자료제출경계-2026-05.md) — 감사 자료제출 FAQ/source/process/checklist/walkthrough 노출 상태
+- [국회 자료요구경계 coverage](coverage-국회대응-자료요구경계-2026-05.md) — 국회 자료요구 FAQ/source/process/checklist/walkthrough 노출 상태
+- [감사·국회 노출 audit](audit-lane-a-감사국회-notes-exposure-2026-05.md) — 감사·국회 coverage/manifest/quality 반영 재확인 기록
 - [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] — 협업회의운영 boundary router 공개문안 작성흐름.
 - [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]] — 협업회의운영 boundary router 공개문안 process coverage.
 - [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
