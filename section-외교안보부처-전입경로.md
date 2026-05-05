@@ -27,6 +27,7 @@
 - [[quality-gate-외교안보부처전입-2026-05]]
 
 ## Related Notes
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 공통업무축 boundary note로 되돌아가는 route.
 - [[hub-외교안보부처전입]] / [[newcomer-path-외교안보부처전입-첫주-2026-05]]
 - [[source-외교안보부처-공개경로-전입자메모-2026-05]]
 - [[faq-외교안보부처-전입첫날-무엇을-공개범위에서-확인하나]]

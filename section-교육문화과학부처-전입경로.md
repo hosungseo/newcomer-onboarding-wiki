@@ -88,6 +88,7 @@
 - [[quality-gate-교육문화과학부처전입-2026-05]]
 
 ## Related Notes
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 공통업무축 boundary note로 되돌아가는 route.
 - [[hub-교육문화과학부처전입]] / [[newcomer-path-교육문화과학부처전입-첫주-2026-05]]
 - [[faq-전입자의-첫적응질문]]
 - [[newcomer-path-전입후첫재적응질문-2026-05]]
