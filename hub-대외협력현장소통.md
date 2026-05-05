@@ -32,6 +32,7 @@
 - [[process-대외협력현장소통-결과초안-작성흐름]]
 - [[checklist-대외협력현장소통-후속조치-검토]]
 - [[checklist-대외협력현장소통-민감정보-masking-제출전검토]]
+- [[checklist-대외협력현장소통-국회감사민원-전환검토]]
 - [[coverage-대외협력현장소통-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-대외협력현장소통-2026-05]]
 - [[quality-gate-대외협력현장소통-2026-05]]
