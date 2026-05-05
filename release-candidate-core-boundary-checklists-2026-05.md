@@ -5,6 +5,7 @@
 
 ## 포함 산출물
 - [[landing-core-boundary-router-checklists-2026-05]]
+- [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 - [[walkthrough-core-boundary-checklist-entry-2026-05]] — 핵심 업무축 boundary checklist 진입 walkthrough.
 - [[manifest-core-boundary-router-checklists-2026-05]]
 - [[quality-gate-core-boundary-router-checklists-2026-05]]

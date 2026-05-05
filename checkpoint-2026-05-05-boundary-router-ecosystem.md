@@ -9,6 +9,8 @@
 ## 완료된 제품화
 - [[manifest-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router 질문형 checklist 묶음.
 - [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
+- [[walkthrough-core-boundary-checklist-entry-2026-05]] — 핵심 업무축 boundary checklist 진입 walkthrough.
+- [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 - landing: institution boundary, response checklist
 - walkthrough: institution boundary 질문형, response checklist entry
 - checklist: 감사·국회·정보공개·협업회의운영 boundary router 질문형

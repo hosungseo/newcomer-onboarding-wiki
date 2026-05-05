@@ -6,6 +6,8 @@
 - [[landing-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist를 바로 고르는 landing.
 - [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
 - [[release-candidate-core-boundary-checklists-2026-05]] — 핵심 업무축 boundary checklist 묶음 release candidate.
+- [[walkthrough-core-boundary-checklist-entry-2026-05]] — 핵심 업무축 boundary checklist 진입 walkthrough.
+- [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 - [[release-candidate-response-boundary-checklists-2026-05]] — 대응형 boundary checklist 묶음 release candidate.
 - docs/index.html featured quick link — 대응형 checklist를 상황형 walkthrough 영역에서 바로 고르게 노출한다.
 공공에 공개된 기관 소개, 법령, 업무계획, 보도자료, 평가자료, 통계를 바탕으로 신입·전입 공무원이 조직과 업무 맥락을 빠르게 익히도록 돕는 **public-data-first onboarding wiki**.
