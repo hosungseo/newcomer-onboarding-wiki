@@ -16,6 +16,7 @@
 4. 공개/비공개 경계가 확인되면 [[manifest-institution-to-boundary-router-2026-05]] 또는 관련 boundary note로 회귀한다.
 
 ## 상위 상태판
+- [[quality-gate-response-boundary-router-checklists-2026-05]] — 대응형 boundary router checklist 묶음 품질 점검.
 - [[coverage-institution-boundary-response-hubs-2026-05]]
 - [[quality-gate-institution-boundary-hub-expansion-2026-05]]
 - [[section-최근-boundary-note-묶음-2026-05]]
