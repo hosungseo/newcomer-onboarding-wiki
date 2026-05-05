@@ -53,3 +53,18 @@
 
 ## Quality Gate
 - [[quality-gate-국회대응-공통업무축-2026-05]]
+
+## FAQ/source/process/checklist/walkthrough exposure matrix
+- FAQ: [[faq-국회대응-처음-무엇부터-확인하나]], [[faq-국회자료요구-비공개정보는-어디서-멈추나]], [[faq-국회대응-boundary-router-공개문안-초안-2026-05]]
+- Source: [[source-국회대응-자료대조순서]]
+- Process: [[process-국회대응-자료요구답변-작성흐름]], [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]]
+- Checklist: [[checklist-국회대응-자료요구답변-제출전검토]], [[checklist-국회대응-boundary-router-질문형-검토]]
+- Walkthrough: [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]]
+
+## Public/private decision order
+1. 요구 유형, 제출 기한, 대상 기간, 기존 제출자료를 먼저 고정한다.
+2. 공개 법령·예산서·업무계획·공개 통계로 설명 가능한 사실과 절차 안내를 먼저 고른다.
+3. 답변 초안은 공개문안과 실제 제출 답변을 분리해 관리한다.
+4. 비공개 협의, 정무적 판단, 미확정 답변안, 내부 산출근거 원문, 업체·입찰·평가 정보는 공개문안에서 제외한다.
+5. 예산심사·국정감사·민원·언론으로 번지는 항목은 상황형 route로 분기하고, 분기 사유만 남긴다.
+

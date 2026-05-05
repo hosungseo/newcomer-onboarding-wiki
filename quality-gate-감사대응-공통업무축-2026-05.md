@@ -60,3 +60,11 @@
 
 ## 판정
 현재 묶음은 boundary router FAQ/process/checklist 회귀까지 포함해 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로를 갖췄고, 제출 전 checklist에 예산·계약·민원·정보공개 분기 확인 패킷을 보강했다. 다음 단계는 국정감사, 조치결과, 정보공개·민원 경계처럼 상황별 path를 세분화하는 것이다.
+
+## Gate 7 — FAQ/source/process/checklist/walkthrough 노출
+- [ ] manifest가 FAQ/source/process/checklist/walkthrough 5종을 한 화면에서 고르게 하는가?
+- [ ] FAQ가 source 대조와 process 작성 흐름으로 되돌아가게 하는가?
+- [ ] process가 boundary checklist와 자료제출 제출 전 checklist를 모두 통과하게 하는가?
+- [ ] walkthrough가 실제 자료제출 상황에서 공개문안 경계 확인으로 회귀하는가?
+- [ ] 공개 가능한 사실·절차·제출 범위와 비공개 내부확인·감사전략·사건별 세부를 결정 순서로 분리하는가?
+

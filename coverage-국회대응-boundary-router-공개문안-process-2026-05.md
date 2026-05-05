@@ -17,3 +17,10 @@
 
 ## 다음 후보
 국회대응 공개문안 process coverage를 README, agent catalog, llms metadata, ecosystem checkpoint에 노출한다.
+
+## source/checklist/walkthrough 회귀 보강
+- 작성 전: [[source-국회대응-자료대조순서]]로 요구 유형, 대상 기간, 제출 기한, 공개근거를 잠근 뒤 초안을 시작한다.
+- 작성 중: 공개문안은 “제출 현황/절차/공개 근거로 확인 가능한 사실”만 쓰고, 내부 검토·비공개 협의·미확정 답변안은 문장 밖에 둔다.
+- 작성 후: [[checklist-국회대응-boundary-router-질문형-검토]] → [[checklist-국회대응-자료요구답변-제출전검토]] 순서로 금지선을 재확인한다.
+- walkthrough: [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]]에 연결해 전입자가 실제 자료요구 답변 상황에서 process를 찾을 수 있게 한다.
+

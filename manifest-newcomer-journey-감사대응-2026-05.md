@@ -65,3 +65,18 @@
 
 ## Quality Gate
 - [[quality-gate-감사대응-공통업무축-2026-05]]
+
+## FAQ/source/process/checklist/walkthrough exposure matrix
+- FAQ: [[faq-감사대응-처음-무엇부터-확인하나]], [[faq-감사자료-비공개정보는-어디서-멈추나]], [[faq-감사대응-boundary-router-공개문안-초안-2026-05]]
+- Source: [[source-감사대응-자료대조순서]]
+- Process: [[process-감사대응-자료제출-작성흐름]], [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]]
+- Checklist: [[checklist-감사대응-자료제출-제출전검토]], [[checklist-감사대응-boundary-router-질문형-검토]]
+- Walkthrough: [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]]
+
+## Public/private decision order
+1. 요구사항 원문·대상 기간·요구기관을 고정한다.
+2. 공개 법령·지침·업무계획·공개 성과자료로 설명 가능한 사실을 먼저 고른다.
+3. 기안·결재·시행문·첨부·증빙·조치결과는 존재 여부와 공개 가능 범위만 확인한다.
+4. 내부 문답, 감사 대응 전략, 감사 착안점, 사건별 세부, 미확정 조치계획은 공개문안에서 제외한다.
+5. 예산·계약·민원·정보공개로 번지는 항목은 해당 축 checklist로 분기하고, 분기 사유만 남긴다.
+

@@ -39,3 +39,11 @@
 
 ## 금지선
 이 quality gate는 공개 위키용 구조 점검만 다룬다. 실제 국회 대응 전략, 비공개 협의 내용, 내부 검토의견, 개인정보, 사건별 민감정보, 업체·입찰·평가 정보, 법률자문성 결론은 포함하지 않는다.
+
+## Gate — FAQ/source/process/checklist/walkthrough 노출
+- [ ] manifest가 FAQ/source/process/checklist/walkthrough 5종을 한 화면에서 고르게 하는가?
+- [ ] FAQ가 source 대조와 process 작성 흐름으로 되돌아가게 하는가?
+- [ ] process가 boundary checklist와 자료요구답변 제출 전 checklist를 모두 통과하게 하는가?
+- [ ] walkthrough가 실제 자료요구 답변 상황에서 공개문안 경계 확인으로 회귀하는가?
+- [ ] 공개 가능한 제출 현황·절차·집계 사실과 비공개 협의·미확정 답변안·내부 산출근거 원문을 결정 순서로 분리하는가?
+
