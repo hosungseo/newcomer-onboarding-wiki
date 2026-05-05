@@ -4,6 +4,7 @@
 기관군 전입 경로에서 공통업무축 boundary note로 되돌아가는 route가 안전한지 점검한다.
 
 ## Gate 1 — 상위 진입
+- [x] 계약조달·조직정원·예산·민원대응·홍보대응·법령대응 hub에서 [[manifest-institution-to-boundary-router-2026-05]]로 회귀할 수 있다.
 - [x] 대표 6개 기관군 section(경제산업·사회안전·법무거버넌스·외교안보·국토환경·교육문화과학)에서 [[manifest-institution-to-boundary-router-2026-05]]로 회귀할 수 있다.
 - [x] [[landing-전입자-기관군별-온보딩-2026-05]]에서 router로 진입할 수 있다.
 - [x] [[landing-전입자-전입첫주-전체기관-2026-05]]에서 router로 진입할 수 있다.

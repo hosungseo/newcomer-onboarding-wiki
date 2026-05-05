@@ -17,6 +17,7 @@
 - 공개 가능한 조직 정보와 내부 검토 정보를 어디서 나눠야 하나?
 
 ## 관련 업무축
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[hub-문서기안]]
 - [[hub-인사승진]]
 - [[hub-복무수당여비]]

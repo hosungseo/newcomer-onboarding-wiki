@@ -80,6 +80,7 @@ newcomer에게 중요한 포인트는 메뉴 조작법보다 다음 3가지다.
 - 보조금·위탁사업·출장여비 등 유형별 공개 정산 기준의 안전한 연결
 
 ## Related Notes
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[faq-예산시즌-처음-무엇부터-확인하나]]
 - [[source-예산대응-자료대조순서]]
 - [[process-예산대응-요구자료-작성흐름]]

@@ -19,6 +19,7 @@
 - 감사·국회·민원 대응으로 이어질 수 있는 공개근거와 기록은 무엇인지?
 
 ## 관련 업무축
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[hub-예산]]
 - [[hub-감사대응]]
 - [[hub-국회대응]]

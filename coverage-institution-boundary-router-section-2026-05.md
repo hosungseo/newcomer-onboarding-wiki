@@ -11,6 +11,15 @@
 - [[section-국토환경부처-전입경로]] → [[manifest-institution-to-boundary-router-2026-05]]
 - [[section-교육문화과학부처-전입경로]] → [[manifest-institution-to-boundary-router-2026-05]]
 
+
+## 개별 hub 연결
+- [[hub-계약조달]] → [[manifest-institution-to-boundary-router-2026-05]]
+- [[hub-조직정원]] → [[manifest-institution-to-boundary-router-2026-05]]
+- [[hub-예산]] → [[manifest-institution-to-boundary-router-2026-05]]
+- [[hub-민원대응]] → [[manifest-institution-to-boundary-router-2026-05]]
+- [[hub-홍보대응]] → [[manifest-institution-to-boundary-router-2026-05]]
+- [[hub-법령대응]] → [[manifest-institution-to-boundary-router-2026-05]]
+
 ## 상태판
 - [[quality-gate-institution-to-boundary-router-2026-05]]
 - [[coverage-최근-boundary-note-묶음-2026-05]]

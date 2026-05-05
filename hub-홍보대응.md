@@ -43,6 +43,7 @@
 - 법률자문성 결론
 
 ## Related Notes
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[hub-법령대응]]
 - [[newcomer-path-법령제개정시즌-첫주-2026-05]]
 - [[hub-민원대응]]
