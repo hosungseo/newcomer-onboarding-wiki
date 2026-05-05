@@ -8,6 +8,7 @@
 - [[section-대외협력현장소통-전환묶음-2026-05]]
 - [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]]
 - [[manifest-newcomer-journey-대외협력현장소통-국회감사민원전환-2026-05]]
+- [[quality-gate-국회감사민원-대외전환-2026-05]]
 - [[checklist-대외협력현장소통-국회감사민원-전환검토]]
 
 ## 2. 국회 자료요구로 넘어갈 때
