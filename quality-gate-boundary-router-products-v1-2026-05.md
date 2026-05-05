@@ -8,6 +8,7 @@
 - [x] [[coverage-boundary-router-products-v1-index-2026-05]]가 v1 index 노출 상태를 확인한다.
 - [[release-candidate-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 통합 release candidate.
 - [[checklist-boundary-router-products-v1-release-ready-2026-05]] — boundary router products v1 release-ready 최종 체크리스트.
+- [[coverage-boundary-router-products-v1-release-ready-checklist-2026-05]] — boundary router products v1 release-ready checklist 노출 coverage.
 - [[manifest-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 manifest.
 - [[walkthrough-boundary-router-products-v1-entry-2026-05]] — institution/response/core boundary router products v1 통합 walkthrough.
 - [[coverage-boundary-router-products-v1-manifest-2026-05]] — boundary router products v1 manifest 노출 coverage.

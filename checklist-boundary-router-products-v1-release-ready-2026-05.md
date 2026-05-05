@@ -4,6 +4,7 @@
 [[release-candidate-boundary-router-products-v1-2026-05]]를 배포 후보로 볼 때 빠뜨린 노출·검증·멈춤선을 마지막으로 확인한다.
 
 ## Release ready 확인
+- [[coverage-boundary-router-products-v1-release-ready-checklist-2026-05]] — boundary router products v1 release-ready checklist 노출 coverage.
 - [ ] 빠른 선택은 [[landing-boundary-router-products-v1-2026-05]]에서 시작할 수 있는가?
 - [ ] 전체 색인은 [[index-boundary-router-products-v1-2026-05]]에서 확인할 수 있는가?
 - [ ] 제품 정의는 [[manifest-boundary-router-products-v1-2026-05]]에 고정되어 있는가?
