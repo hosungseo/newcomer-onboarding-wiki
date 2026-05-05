@@ -1,6 +1,7 @@
 # Section — 전입자 walkthrough 시나리오 v1 2026-05
 
 ## 목적
+- [[index-전입자-walkthrough-시나리오-v1-2026-05]]
 전입자가 실제 상황을 먼저 떠올렸을 때 바로 탈 수 있는 walkthrough 묶음을 `상황형 section`으로 모은다. 이 section은 docs index를 나중에 `기관군 / 업무축 / 상황형 walkthrough / 품질검증 / agent-readable`로 나눌 때 상황형 walkthrough의 후보 구조가 된다.
 
 ## 시나리오 묶음

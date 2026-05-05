@@ -4,6 +4,7 @@
 실제 전입자 상황형 walkthrough 4개를 하나의 journey manifest로 묶어, 질문이 들어왔을 때 어떤 시나리오를 먼저 타야 하는지 고른다.
 
 ## Entry
+- [[index-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
