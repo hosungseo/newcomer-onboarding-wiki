@@ -25,6 +25,7 @@
 - journey manifest: [[manifest-newcomer-journey-boundary-notes-2026-05]]에 route로 노출.
 - quality gate: [[quality-gate-최근-boundary-note-묶음-2026-05]]에 안전 점검으로 노출.
 - release candidate: [[release-candidate-전입자온보딩-v1-2026-05]]에 노출.
+- institution entries: [[landing-전입자-기관군별-온보딩-2026-05]], [[landing-전입자-전입첫주-전체기관-2026-05]], [[coverage-부처군-section-기관행-2026-05]]에서 [[section-최근-boundary-note-묶음-2026-05]]로 연결된다.
 
 ## 다음 후보
 1. 이 묶음을 release candidate와 quality gate에도 반영할지 판단한다.

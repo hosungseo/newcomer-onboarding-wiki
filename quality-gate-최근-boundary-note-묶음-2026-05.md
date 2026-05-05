@@ -11,6 +11,7 @@
 
 ## Gate 2 — 업무축 역링크
 - [x] [[section-최근-boundary-note-묶음-2026-05]]에서 manifest/index/coverage/quality gate로 진입할 수 있다.
+- [x] 기관군별 온보딩 landing, 전입첫주 전체기관 landing, 부처군 section coverage에서 [[section-최근-boundary-note-묶음-2026-05]]로 회귀할 수 있다.
 - [x] 계약조달, 조직정원, 예산대응, 민원대응, 홍보대응, 법령대응 hub/coverage에서 각 boundary note로 내려갈 수 있다.
 - [x] README, 공통업무축 landing, docs index, agent catalog, llms metadata, release candidate에서 묶음으로 진입할 수 있다.
 
