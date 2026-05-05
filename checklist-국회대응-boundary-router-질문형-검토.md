@@ -11,6 +11,7 @@
 - [ ] 기관 hub에서 시작한 경우 [[walkthrough-institution-boundary-router-question-flow-2026-05]]로 질문형 route를 탔는가?
 
 ## 연결
+- [[coverage-국회대응-boundary-router-질문형-검토-2026-05]] — 국회대응 boundary router 질문형 checklist 연결 coverage.
 - [[hub-국회대응]]
 - [[manifest-institution-to-boundary-router-2026-05]]
 - [[coverage-institution-boundary-response-hubs-2026-05]]
