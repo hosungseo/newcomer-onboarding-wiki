@@ -35,6 +35,7 @@
 - [[manifest-newcomer-journey-walkthrough-v1-2026-05]] — 실제 전입자 질문 유형별 walkthrough 첫 진입점을 고른다.
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]] — 실제 전입자 walkthrough 묶음의 최상위 index다.
 - [[manifest-scenario-router-walkthrough-v1-2026-05]] — 실제 전입자 질문을 7개 walkthrough 중 하나로 빠르게 route한다.
+- [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]] — 국회 대응 시즌 자료요구·서면질의 답변.
 - [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]] — 보도자료 초안에서 공개 문장과 미확정 정보 경계를 end-to-end로 확인하는 시나리오다.
 - [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]] — 회의 후속조치가 공개 문장으로 전환되기 전 경계를 end-to-end로 확인하는 시나리오다.
 - [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]] — 민원 폭주 상황에서 반복답변과 개인정보·사건정보 경계를 end-to-end로 확인하는 시나리오다.
