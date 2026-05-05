@@ -11,10 +11,14 @@
 ## 먼저 읽을 FAQ
 - [[faq-감사대응-처음-무엇부터-확인하나]]
 - [[faq-감사자료-비공개정보는-어디서-멈추나]]
+- [[faq-감사자료-조치결과는-어떻게-정리하나]]
+- [[faq-감사자료-증빙은-어떤-순서로-붙이나]]
+- [[faq-감사자료-자료대조는-무엇부터-확인하나]]
 
 ## 자료·초안 흐름
 - [[source-감사대응-자료대조순서]]
 - [[process-감사대응-자료제출-작성흐름]]
+- [[process-감사대응-조치결과-이행상황-확인흐름]]
 - [[checklist-감사대응-자료제출-제출전검토]]
 - [[manifest-newcomer-journey-감사대응-2026-05]]
 - [[quality-gate-감사대응-공통업무축-2026-05]]
@@ -44,7 +48,8 @@
 - manifest: [[manifest-newcomer-journey-감사대응-2026-05]] 있음
 - quality gate: [[quality-gate-감사대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
-- 현장소통 전환 section, journey manifest, quality gate는 [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]로 연결됐고 README/landing/docs 노출도 완료됐다. 다음 후보: 국정감사 대응 상황형 path 보강, 감사자료가 예산·민원으로 넘어갈 때의 분기 checklist, [[faq-공통업무축-민감정보-masking-사례구분]]을 감사자료 사례로 더 세분화할지 검토
+- 현장소통 전환 section, journey manifest, quality gate는 [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]로 연결됐고 README/landing/docs 노출도 완료됐다.
+- checklist에는 감사자료가 예산·계약·민원·정보공개로 넘어갈 때의 분기 확인 패킷을 추가했다. 다음 후보: 국정감사 대응 상황형 path 보강, [[faq-공통업무축-민감정보-masking-사례구분]]을 감사자료 사례로 더 세분화할지 검토
 
 ## 공통 masking FAQ
 - [[faq-공통업무축-민감정보-masking-사례구분]]
