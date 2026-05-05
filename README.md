@@ -986,4 +986,7 @@ v1 체크포인트:
 - [정보공개·협업회의 실행경계 manifest](manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05.md) — 전입자 journey route 연결
 - [정보공개·협업회의 실행경계 quality gate](quality-gate-정보공개기록관리-협업회의-실행경계-2026-05.md) — 공개·마스킹·회의결과 외부공유 멈춤선
 - [홍보·법령 실행경계 route map](walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05.md) — 법령 공개설명을 보도자료·Q&A·대외문안으로 전환하기 전 확인하는 교차 route
+- [홍보·법령 실행경계 coverage](coverage-홍보대응-법령대응-실행경계-2026-05.md) — 홍보 문안·법령 공개설명 경계 노출 상태
+- [홍보·법령 실행경계 manifest](manifest-newcomer-journey-홍보대응-법령대응-실행경계-2026-05.md) — 전입자 journey route 연결
+- [홍보·법령 실행경계 quality gate](quality-gate-홍보대응-법령대응-실행경계-2026-05.md) — 공식입장·법률자문성 결론 멈춤선
 
