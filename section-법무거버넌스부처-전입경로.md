@@ -21,6 +21,9 @@
 4. 첫주 path로 반복 질문과 process note를 묶는다.
 5. 사건별 판단, 수사·감사·신고 세부, 개인정보는 공개 onboarding note에서 다루지 않는다.
 
+## 민감정보 금지선
+- [[source-법무거버넌스부처-민감정보-금지선비교]]
+
 ## Manifest / Quality Gate
 - [[manifest-newcomer-journey-법무거버넌스부처전입-2026-05]]
 - [[quality-gate-법무거버넌스부처전입-2026-05]]
