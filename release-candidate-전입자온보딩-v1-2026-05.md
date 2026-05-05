@@ -52,6 +52,7 @@
 - [[coverage-institution-boundary-router-section-2026-05]] — 대표 6개 기관군 section의 boundary router 연결 coverage.
 - [[index-institution-boundary-router-next-hubs-2026-05]] — 기관별 개별 hub boundary router 연결 후보 index.
 - [[checklist-institution-boundary-router-hub-selection-2026-05]] — 기관별 개별 hub boundary router 연결 전 선택 체크리스트.
+- [[process-institution-boundary-router-hub-linking-2026-05]] — 기관별 개별 hub에 boundary router를 안전하게 연결하는 절차.
 - [[llms-newcomer-onboarding-v1]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
 
