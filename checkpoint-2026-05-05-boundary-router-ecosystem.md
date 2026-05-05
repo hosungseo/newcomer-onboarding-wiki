@@ -28,6 +28,8 @@
 - [[quality-gate-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack quality gate.
 - [[manifest-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack manifest.
 - [[release-candidate-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack 최종 release candidate.
+- [[checklist-boundary-router-products-v1-agent-readable-release-pack-2026-05]] — boundary router products v1 agent-readable release pack 확인 checklist.
+- [[coverage-boundary-router-products-v1-agent-readable-checklist-2026-05]] — boundary router products v1 agent-readable checklist 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-pack-candidate-2026-05]] — boundary router products v1 release pack candidate 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-pack-manifest-2026-05]] — boundary router products v1 release pack manifest 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack 노출 coverage.
