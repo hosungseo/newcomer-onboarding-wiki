@@ -20,15 +20,15 @@
 | source | 완료 | 기존 보도자료, 업무계획, 법령, 예산서, 공개 통계 순으로 자료 대조를 제시함 |
 | process | 완료 | 보도자료 초안 작성흐름과 장관보고·국회·감사 분기 표시를 정리함 |
 | checklist | 완료 | 발표 목적, 공개근거, 개인정보·민감정보, 확인선 점검을 체크박스로 제공함 |
-| docs exposure | 부분 완료 | hub/path/FAQ/source/process/checklist는 웹 인덱스에 노출됨. coverage 노출은 다음 단계 후보 |
-| manifest | 미완료 | newcomer journey manifest 필요 |
-| quality gate | 미완료 | 공개/비공개 금지선과 coverage gap 점검 note 필요 |
+| docs exposure | 완료 | hub/path/FAQ/source/process/checklist/coverage/manifest/quality gate가 웹 인덱스에 노출됨 |
+| manifest | 완료 | [[manifest-newcomer-journey-홍보대응-2026-05]]가 전입자/agent 실행 경로를 고정함 |
+| quality gate | 완료 | [[quality-gate-홍보대응-공통업무축-2026-05]]가 공개/비공개 금지선과 coverage gap을 점검함 |
 
 ## 다음 빈칸
-1. [[coverage-홍보대응-공통업무축-2026-05]]를 `docs/index.html`에 노출한다.
-2. 홍보대응 newcomer journey manifest를 만들어 전입자/agent 실행 경로로 묶는다.
-3. 홍보대응 quality gate를 만들어 공개자료·내부검토·개인정보·사건별 민감정보 금지선을 점검한다.
-4. 필요하면 `faq-보도자료-미확정정보는-어디서-멈추나.md`와 연결해 미확정 정보 처리 FAQ를 두껍게 만든다.
+1. 홍보대응 coverage/docs exposure, manifest, quality gate는 [[manifest-newcomer-journey-홍보대응-2026-05]] / [[quality-gate-홍보대응-공통업무축-2026-05]]로 닫혔다.
+2. 다음은 `faq-보도자료-미확정정보는-어디서-멈추나.md`와 연결해 미확정 정보 처리 FAQ를 두껍게 만들지 검토한다.
+3. 장관보고·국회·감사·민원으로 넘어가는 보도자료 문안 분기 checklist를 만들지 검토한다.
+4. 공개자료와 내부검토자료 경계 사례를 홍보대응 source에 추가할지 검토한다.
 
 ## 공개/비공개 금지선
 홍보대응 묶음은 공개 위키 기준으로만 유지한다. 미확정 정책결정, 비공개 내부검토, 비공개 협의·대응 전략, 개인정보, 민원인·피해자·신고자 식별정보, 사건별 민감정보, 수사·감사·감독·보안 세부, 특정 업체·입찰·평가 정보, 법률자문성 결론은 포함하지 않는다.
