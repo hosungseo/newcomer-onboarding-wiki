@@ -13,6 +13,7 @@
 - [[manifest-boundary-checklist-products-2026-05]]
 - [[coverage-boundary-router-products-v1-index-2026-05]] — boundary router products v1 index 노출 coverage.
 - [[quality-gate-boundary-router-products-v1-2026-05]] — boundary router products v1 통합 quality gate.
+- [[release-candidate-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 통합 release candidate.
 - [[index-boundary-router-checklist-products-2026-05]]
 - [[walkthrough-boundary-checklist-products-entry-2026-05]]
 - [[quality-gate-boundary-checklist-products-2026-05]]
