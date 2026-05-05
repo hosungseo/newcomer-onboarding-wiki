@@ -61,6 +61,7 @@ Never include personal data, complainant identifiers, vendor-sensitive details, 
 - [[quality-gate-response-boundary-router-checklists-2026-05]] — 대응형 boundary router checklist 묶음 품질 점검.
 - [[index-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist 상황별 색인.
 - [[landing-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist를 바로 고르는 landing.
+- [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
 - [[release-candidate-response-boundary-checklists-2026-05]] — 대응형 boundary checklist 묶음 release candidate.
 - [[walkthrough-response-boundary-checklist-entry-2026-05]] — 대응형 업무에서 boundary checklist landing으로 들어가는 질문형 walkthrough.
 - [[coverage-response-boundary-checklist-walkthrough-2026-05]] — 대응형 boundary checklist entry walkthrough 노출 coverage.
