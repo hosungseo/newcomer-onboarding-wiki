@@ -6,6 +6,7 @@
 ## Gate 1 — release pack 색인
 - [x] [[index-boundary-router-products-v1-release-pack-2026-05]]가 landing/index/walkthrough/manifest/quality/release/checklist/coverage를 함께 묶는다.
 - [x] [[coverage-boundary-router-products-v1-release-pack-2026-05]]가 release pack 노출 상태를 확인한다.
+- [[manifest-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack manifest.
 
 ## Gate 2 — 빠른 진입
 - [x] [[landing-boundary-router-products-v1-2026-05]]

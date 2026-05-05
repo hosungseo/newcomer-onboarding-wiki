@@ -16,6 +16,7 @@ institution/response/core boundary router 제품군을 전입자 온보딩 v1의
 - [[index-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack index.
 - [[coverage-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack 노출 coverage.
 - [[quality-gate-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack quality gate.
+- [[manifest-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack manifest.
 - [[coverage-boundary-router-products-v1-release-ready-checklist-2026-05]] — boundary router products v1 release-ready checklist 노출 coverage.
 - [[coverage-boundary-router-products-v1-section-2026-05]] — boundary router products v1 section 노출 coverage.
 - [[coverage-boundary-router-products-v1-walkthrough-2026-05]] — boundary router products v1 walkthrough 노출 coverage.
