@@ -10,6 +10,7 @@
 - [[source-홍보대응-자료대조순서]]
 - [[process-홍보대응-보도자료초안-작성흐름]]
 - [[checklist-홍보대응-보도자료초안-제출전검토]]
+- [[checklist-홍보대응-대외전환-문안분기-제출전검토]]
 - [[coverage-홍보대응-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-홍보대응-2026-05]]
 - [[checklist-홍보대응-boundary-router-질문형-검토]]
@@ -23,6 +24,7 @@
 - [x] source에서 공개자료 대조 순서를 제공한다.
 - [x] process에서 초안 작성흐름을 제공한다.
 - [x] checklist에서 제출 전 검토 항목을 제공한다.
+- [x] 대외전환 checklist가 보도자료 문안을 장관보고·국회·감사·민원 답변으로 그대로 재사용하지 않도록 막는다.
 - [x] coverage에서 현재 완성도와 다음 빈칸을 보여준다.
 - [x] manifest에서 전입자/agent 실행 순서를 묶는다.
 
@@ -46,13 +48,15 @@
 - [x] [[walkthrough-core-boundary-checklist-entry-2026-05]]에서 core boundary checklist walkthrough로 재진입할 수 있다.
 - [x] 홍보대응 boundary FAQ/source/process 전용 note는 아직 없으므로 placeholder wikilink를 만들지 않고 gap으로만 관리한다.
 - [x] 공개 가능한 확정 사실과 비공개 대응전략·피해자/신고자 식별위험을 분리하도록 멈춤선을 둔다.
+- [x] source/process는 기본 note를 쓰되, boundary checklist가 공개근거·확정 사실·비공개 전략을 먼저 분리한다.
+- [x] 대외전환 checklist가 장관보고·국회·감사·민원 재사용 전 public/private decision point를 한 번 더 강제한다.
 
 ## 5. 남은 고도화 후보
-1. `docs/index.html`에 이 quality gate를 노출한다.
-2. 미확정 정보 처리 FAQ를 실제 note로 만든 뒤 연결한다. 생성 전에는 후보명을 wikilink로 만들지 않는다.
-3. 언론 대응·정정보도·반박자료처럼 상황형 path를 별도 note로 확장한다.
-4. 장관보고·국회대응·감사대응으로 이어지는 분기 manifest를 만든다.
-5. 홍보대응 boundary 전용 source/process가 생기면 [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]]의 대기 항목을 실제 링크로 승격한다.
+1. 미확정 정보 처리 FAQ를 실제 note로 만든 뒤 연결한다. 생성 전에는 후보명을 wikilink로 만들지 않는다.
+2. 언론 대응·정정보도·반박자료처럼 상황형 path를 별도 note로 확장한다.
+3. 장관보고·국회대응·감사대응으로 이어지는 분기 manifest를 만든다.
+4. 홍보대응 boundary 전용 source/process가 생기면 [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]]의 대기 항목을 실제 링크로 승격한다.
+5. 대외전환 checklist를 관련 업무축 coverage에도 교차 노출할지 검토한다.
 
 ## 판정
 현재 홍보대응 묶음은 공개 온보딩 위키 기준으로 `hub → path → FAQ → source → process → checklist → coverage → manifest` 경로가 닫혀 있다. 다음 단계는 quality gate 웹 노출과 상황형 path 세분화다.

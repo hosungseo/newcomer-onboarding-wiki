@@ -9,11 +9,13 @@
 3. quality gate: [[quality-gate-홍보대응-공통업무축-2026-05]]
 4. checklist: [[checklist-홍보대응-boundary-router-질문형-검토]]
 5. 공통 walkthrough 재진입: [[walkthrough-core-boundary-checklist-entry-2026-05]]
+6. 대외전환 제출 전 점검: [[checklist-홍보대응-대외전환-문안분기-제출전검토]]
 
 ## 점검 범위
 | 층 | 상태 | 메모 |
 |---|---|---|
 | checklist | 완료 | 요청 주체, 공개근거, 확정 사실, 개인정보·피해자·신고자 식별위험, 비공개 대응전략을 먼저 가른다 |
+| conversion checklist | 완료 | 보도자료 문안이 장관보고·국회·감사·민원으로 바뀔 때 같은 문장을 그대로 재사용하지 않도록 공개/비공개 decision point를 다시 탄다 |
 | FAQ | 대기 | 홍보대응 공개문안 FAQ는 아직 별도 note로 만들지 않고 후보로만 둔다 |
 | source | 대기 | 보도자료 원문·설명자료·업무계획·통계·법령 중심 대조 순서는 기본 source note에서 처리한다 |
 | process | 대기 | 보도자료 초안 작성흐름은 기본 process note에서 처리하고, boundary 전용 process는 후속 후보로 둔다 |
@@ -26,7 +28,8 @@
 2. 공개 가능한 확정 사실과 공개근거가 있는지 확인한다.
 3. 개인정보, 피해자·신고자 식별위험, 사건별 민감정보, 비공개 대응전략이 섞이면 공개문안 작성을 멈춘다.
 4. 답변 가능한 범위만 남으면 기본 source/process/checklist 경로로 돌아가 문안을 다듬는다.
-5. 다른 core 업무축 경계와 비교해야 하면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아간다.
+5. 장관보고·국회·감사·민원 답변으로 바뀌면 [[checklist-홍보대응-대외전환-문안분기-제출전검토]]를 먼저 적용한다.
+6. 다른 core 업무축 경계와 비교해야 하면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아간다.
 
 ## 남은 고도화 후보
 - 홍보대응 공개문안 FAQ를 만들 때는 이 coverage에서 후보명을 wikilink로 먼저 만들지 않는다.
