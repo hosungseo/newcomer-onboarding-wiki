@@ -1,6 +1,7 @@
 # Manifest — Core Boundary Router Checklists 2026-05
 
 ## 목적
+- [[quality-gate-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router checklist 묶음 품질 점검.
 계약조달·조직정원·예산대응·민원대응·홍보대응·법령대응 hub에서 [[manifest-institution-to-boundary-router-2026-05]]로 돌아가기 전 사용하는 질문형 checklist 묶음을 고정한다.
 
 ## Checklist bundle

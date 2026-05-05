@@ -14,6 +14,7 @@
 
 ## Gate 2 — core hub coverage
 - [[manifest-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router 질문형 checklist 묶음.
+- [[quality-gate-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router checklist 묶음 품질 점검.
 - [x] [[coverage-institution-boundary-core-hubs-2026-05]]에서 계약조달·조직정원·예산·민원대응·홍보대응·법령대응 hub 연결을 확인할 수 있다.
 - [x] 각 core hub는 직접 민감정보를 설명하지 않고 boundary router로 짧게 회귀한다.
 
