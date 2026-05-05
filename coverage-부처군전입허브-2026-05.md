@@ -19,40 +19,46 @@
 - [[landing-전입자-공통업무축-2026-05]]
 
 ## 다음 확장 후보
-1. `docs/index.html`에 6개 부처군 hub quick link를 노출한다.
-2. 부처군별 첫날 FAQ를 1개씩 만든다. 예: `faq-경제부처전입-처음-무엇부터-구분하나`.
-3. 각 부처군 hub에서 가장 자주 닿는 공통 업무축 3개를 더 선명하게 표시한다.
-4. 기관군 landing에서 부처/처·청/위원회/첫출근/coverage 흐름을 한 단락으로 정리한다.
+1. 6개 부처군 모두 `manifest → quality gate → 민감정보 source → 제출전 checklist → README/landing/docs exposure` 기본층을 갖췄으므로, 다음은 기관군별 첫주 path에서 가장 자주 닿는 공통 업무축 3개를 더 선명하게 표시한다.
+2. 처·청/위원회 전입 축도 같은 방식으로 민감정보 source/checklist 층을 보강한다.
+3. 기관군 landing에서 부처/처·청/위원회/첫출근/coverage 흐름을 한 단락으로 정리한다.
+4. docs/index.html에서 전 부처군 journey 묶음이 너무 길어졌는지 보고, 필요하면 `manifest`와 `민감정보` quick link를 분리한다.
 
 ## 경제·산업 부처군 manifest
 - [[manifest-newcomer-journey-경제산업부처전입-2026-05]]
 - [[quality-gate-경제산업부처전입-2026-05]]
 - [[source-경제산업부처-민감정보-금지선비교]]
+- [[checklist-경제산업부처-민감정보-제출전검토]]
 
 ## 사회·안전 부처군 manifest
 - [[manifest-newcomer-journey-사회안전부처전입-2026-05]]
 - [[quality-gate-사회안전부처전입-2026-05]]
 - [[source-사회안전부처-민감정보-금지선비교]]
+- [[checklist-사회안전부처-민감정보-제출전검토]]
 
 ## 국토·환경 부처군 manifest
 - [[manifest-newcomer-journey-국토환경부처전입-2026-05]]
 - [[quality-gate-국토환경부처전입-2026-05]]
 - [[source-국토환경부처-민감정보-금지선비교]]
+- [[checklist-국토환경부처-민감정보-제출전검토]]
 
 ## 교육·문화·과학 부처군 manifest
 - [[manifest-newcomer-journey-교육문화과학부처전입-2026-05]]
 - [[quality-gate-교육문화과학부처전입-2026-05]]
 - [[source-교육문화과학부처-민감정보-금지선비교]]
+- [[checklist-교육문화과학부처-민감정보-제출전검토]]
 
 ## 법무·거버넌스 부처군 manifest
 - [[manifest-newcomer-journey-법무거버넌스부처전입-2026-05]]
 - [[quality-gate-법무거버넌스부처전입-2026-05]]
 - [[source-법무거버넌스부처-민감정보-금지선비교]]
+- [[checklist-법무거버넌스부처-민감정보-제출전검토]]
 
 ## 외교·안보 부처군 manifest
 - [[manifest-newcomer-journey-외교안보부처전입-2026-05]]
 - [[quality-gate-외교안보부처전입-2026-05]]
 - [[source-외교안보부처-민감정보-금지선비교]]
+- [[checklist-외교안보부처-민감정보-제출전검토]]
 
 ## 부처군/처청위원회 비교
 - [[process-부처군-처청위원회-첫주경로비교]]
