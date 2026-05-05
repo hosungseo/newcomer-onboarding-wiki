@@ -38,35 +38,12 @@
 
 ## 최근 boundary note 묶음
 - [[section-execution-boundary-routes-2026-05]] — 계약조달·조직정원·감사국회·민원법령·정보공개협업회의·홍보대외협력 실행경계 route를 한 화면에서 고르는 최상위 section.
-- [[audit-boundary-duplicate-root-notes-2026-05]] — 최근 실행경계 audit/coverage/manifest/quality gate가 겹쳐 보이는 root note를 삭제 대신 superseded 후보로 정리하는 점검표.
-- [[section-실행경계-boundary-router-4축-2026-05]] — 예산·조직정원·홍보·정보공개 실행경계 route를 한 화면에서 고르는 companion section.
-- [[section-민원법령-boundary-router-실행경계-2026-05]] — 민원·법령 boundary route를 개인정보·사건정보·법률자문성 결론 금지선 기준으로 고르는 companion section.
-- 홍보대응 질문형 route: [[checklist-홍보대응-boundary-router-질문형-검토]] → [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]] → [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]]로 이어서, 보도자료·브리핑·대외 설명 문안의 공식발표 가능 범위를 먼저 가른다.
-- 홍보대응/현장소통 후속조치 route: [[walkthrough-대외협력현장소통-기관상황업무축-공개경계]] → [[checklist-홍보대응-현장소통-후속조치-실행경계]] → [[newcomer-path-홍보대응-대외문안-공개경계]] / [[section-대외협력현장소통-전환묶음-2026-05]]로 이동해 현장 의견·공식입장·후속조치·공개문안의 경계를 분리한다.
-- 정보공개·기록관리/협업회의 통합 route: [[router-정보공개기록관리-협업회의-신규자-공개경계]] → [[newcomer-path-정보공개기록관리-협업회의-공개경계]] → [[source-정보공개기록관리-원천기록-확인우선순서]] → [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]] → [[process-정보공개기록관리-청구에서공개까지-분기흐름]] → [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]] → [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]
-- 협업회의운영 후속조치 route: [[process-협업회의운영-결과초안과후속조치]] → [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]] → [[checklist-협업회의운영-후속조치-회의전-precheck]] / [[checklist-협업회의운영-회의결과-후속조치-실행경계]] → [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]
-- 정보공개·기록관리 공개문안 route: [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] → [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]]
-- 협업회의운영 공개문안 route: [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]] → [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]
-- 정보공개·협업회의 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-정보공개기록관리-boundary-router-질문형-검토]] / [[checklist-협업회의운영-boundary-router-질문형-검토]]를 먼저 본다.
-- 감사대응 공개문안 route: [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] → [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-감사대응-boundary-router-공개문안-process-2026-05]]
-- 국회대응 공개문안 route: [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] → [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
-- 감사대응 자료제출경계 route: [[faq-감사대응-자료제출은-어디까지-하나]] → [[source-감사대응-공개비공개-자료제출-판단순서]] → [[process-감사대응-자료제출-작성흐름]] → [[checklist-감사대응-자료제출-제출전검토]] → [[walkthrough-감사대응-전입자-라우터-2026-05]]
-- 국회대응 자료요구경계 route: [[faq-국회대응-공개답변과-비공개협의는-어디서-나누나]] → [[source-국회대응-자료요구-답변초안-대조순서]] → [[process-국회대응-자료요구-실행경계]] → [[checklist-국회대응-자료요구답변-제출전검토]] → [[walkthrough-국회대응-전입자-라우터-2026-05]]
-- 감사·국회 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-감사대응-boundary-router-질문형-검토]] / [[checklist-국회대응-boundary-router-질문형-검토]]를 먼저 본다.
-- 계약조달 실행경계 route: [[faq-계약조달-boundary-router-공개문안-초안-2026-05]] → [[source-계약조달-업체민감정보-마스킹-대조순서]] → [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]] → [[checklist-계약조달-공개비공개-실행경계]] → [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]
-- 조직정원 실행경계 route: [[faq-조직정원-boundary-router-공개문안-초안-2026-05]] → [[source-조직정원-원천자료-확인우선순서]] → [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]] → [[checklist-조직정원-공개비공개-실행경계]] → [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]
-- 계약조달·조직정원 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-계약조달-boundary-router-질문형-검토]] / [[checklist-조직정원-boundary-router-질문형-검토]]를 먼저 본다.
-- [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
-- [[index-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 업무축별 entry map.
-- [[quality-gate-최근-boundary-note-묶음-2026-05]] — 최근 boundary note 묶음의 공개/비공개 안전 점검.
-- [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
-- [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist를 묶은 공통업무축 section.
-- [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개/업체민감정보 FAQ
-- [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 조직정원 공식조직도/업무분장 FAQ
-- [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
-- [[checklist-민원대응-민감정보-masking-제출전검토]] — 민원대응 민감정보 masking checklist
-- [[checklist-홍보대응-대외전환-문안분기-제출전검토]] — 홍보대응 대외전환 문안분기 checklist
-- [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명 법률자문성 결론 FAQ
+- [[section-실행경계-boundary-router-4축-2026-05]] / [[section-민원법령-boundary-router-실행경계-2026-05]] — 예산·조직정원·홍보·정보공개 및 민원·법령 companion route를 먼저 고르는 보조 section.
+- 교차축 route-map: [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]] / [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]] / [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]] / [[walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05]] 중 상황에 맞는 축으로 내려간다.
+- 질문형 멈춤선은 [[checklist-계약조달-boundary-router-질문형-검토]] / [[checklist-조직정원-boundary-router-질문형-검토]] / [[checklist-정보공개기록관리-boundary-router-질문형-검토]] / [[checklist-협업회의운영-boundary-router-질문형-검토]] / [[checklist-감사대응-boundary-router-질문형-검토]] / [[checklist-국회대응-boundary-router-질문형-검토]]에서 먼저 확인한다.
+- 최근 boundary 묶음의 운영 상태는 [[coverage-최근-boundary-note-묶음-2026-05]] → [[quality-gate-최근-boundary-note-묶음-2026-05]] → [[manifest-newcomer-journey-boundary-notes-2026-05]] 순서로 확인한다.
+- 중복·노출 정리는 [[audit-boundary-duplicate-root-notes-2026-05]]와 [[coverage-execution-boundary-routes-discovery-2026-05]]를 기준으로 본다.
+
 
 - [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]] — 국회 대응 시즌 자료요구·서면질의 답변.
 - [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]] — 감사 대응 시즌 자료제출.
