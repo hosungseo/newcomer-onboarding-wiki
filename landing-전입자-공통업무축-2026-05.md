@@ -25,6 +25,7 @@
 ## v1 체크포인트
 
 - [[release-candidate-전입자온보딩-v1-2026-05]] — 기관군·공통업무축·확장 업무축이 v1 release candidate 수준으로 묶였는지 확인한다.
+- [[manifest-agent-readable-catalog-v1-2026-05]]
 
 ## 같이 봐야 할 기관군
 업무축을 고른 뒤에는 소속 기관군 section으로 내려가 민감 경계를 다시 확인한다.
