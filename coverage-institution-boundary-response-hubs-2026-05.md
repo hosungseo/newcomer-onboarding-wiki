@@ -28,6 +28,7 @@
 - [[coverage-최근-boundary-note-묶음-2026-05]]
 
 ## 다음 후보
+- [[manifest-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary router 질문형 checklist 묶음.
 감사원 등 기관별 개별 hub에 직접 회귀 경로가 필요한지 [[index-institution-boundary-router-next-hubs-2026-05]] 기준으로 선별한다.
 
 ## 금지선
