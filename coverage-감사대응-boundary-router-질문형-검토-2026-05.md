@@ -3,6 +3,7 @@
 ## 목적
 [[checklist-감사대응-boundary-router-질문형-검토]]가 감사대응·감사원 hub와 기관 boundary router 질문형 walkthrough에 제대로 연결됐는지 확인한다.
 - [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] — 감사대응 boundary router 공개문안 초안 FAQ.
+- [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]] — 감사대응 boundary router 공개문안 FAQ coverage.
 
 ## 연결 상태
 - [[hub-감사대응]] → [[checklist-감사대응-boundary-router-질문형-검토]]
