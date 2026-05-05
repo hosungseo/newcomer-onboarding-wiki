@@ -46,9 +46,17 @@
 ## Internal Operations Axes
 - 내부운영·협업·대외소통 umbrella: [[section-공통업무축-내부운영협업대외소통-2026-05]] / [[manifest-newcomer-journey-내부운영협업대외소통-2026-05]] / [[quality-gate-내부운영협업대외소통-2026-05]]
 - 운영관리 3축: [[coverage-운영관리3축-조직성과계약-2026-05]]
-- 대외협력·현장소통: [[section-대외협력현장소통-전환묶음-2026-05]] / [[coverage-대외협력현장소통-공통업무축-2026-05]]
 - 정보공개·기록관리: [[coverage-정보공개기록관리-공통업무축-2026-05]] / [[manifest-newcomer-journey-정보공개기록관리-2026-05]] / [[quality-gate-정보공개기록관리-2026-05]] — 공개자료·내부검토자료·기록물·정보공개청구 경계.
 - 협업·회의운영: [[coverage-협업회의운영-공통업무축-2026-05]] / [[manifest-newcomer-journey-협업회의운영-2026-05]] / [[quality-gate-협업회의운영-2026-05]] — 회의자료·결정사항·후속조치·공개전환 경계.
+- 대외협력·현장소통: [[coverage-대외협력현장소통-공통업무축-2026-05]] / [[manifest-newcomer-journey-대외협력현장소통-2026-05]] / [[quality-gate-대외협력현장소통-2026-05]] — 현장 의견, 기관 공식 입장, 후속조치, 국회·감사·민원 전환 경계.
+- 홍보대응: [[coverage-홍보대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-홍보대응-2026-05]] / [[quality-gate-홍보대응-공통업무축-2026-05]] — 보도자료·설명자료의 공개근거, 미확정 정보, 대외전환 문안분기 경계.
+
+### Recent boundary route order
+1. 공개·기록 여부가 핵심이면 정보공개·기록관리 route를 먼저 탄다.
+2. 회의 결과·후속조치·협업자료가 핵심이면 협업·회의운영 route를 탄다.
+3. 현장 의견이나 관계기관 소통이 공식 입장으로 바뀌는지 묻는다면 대외협력·현장소통 route를 탄다.
+4. 보도자료·설명자료·언론답변 문안이면 홍보대응 route를 타고, 장관보고·국회·감사·민원 재사용 전 대외전환 checklist를 다시 확인한다.
+5. 위 route가 자료제출·답변·공개설명 경계로 바뀌면 Core Response Axes의 해당 업무축 manifest/quality gate로 되돌아간다.
 
 ## LLM Metadata
 - [[llms-newcomer-onboarding-v1]]
@@ -168,4 +176,3 @@
 - [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명 법률자문성 결론 FAQ
 - [[coverage-법령대응-boundary-router-실행경계-2026-05]] — 법령대응 공개/비공개 실행경계 coverage
 - [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]] — 법령대응 공개설명경계 journey manifest
-

@@ -1,7 +1,7 @@
 # Coverage — 내부 운영·협업 3축 2026-05
 
 ## 목적
-최근 확장한 운영관리, 정보공개·기록관리, 협업·회의운영 묶음을 한곳에 모아 전입자가 내부 운영 업무와 대외 대응 전 단계의 협업 업무를 빠르게 고르게 한다.
+최근 확장한 운영관리, 정보공개·기록관리, 협업·회의운영, 대외협력·현장소통, 홍보대응 묶음을 한곳에 모아 전입자가 내부 운영 업무와 대외 대응 전 단계의 협업·공개문안 업무를 빠르게 고르게 한다.
 
 ## 1. 운영관리 3축
 - [[coverage-운영관리3축-조직성과계약-2026-05]]
@@ -19,10 +19,23 @@
 - 회의 목적, 참석자, 회의자료, 내부검토자료, 결정사항, 후속 조치를 분리하는 축이다.
 - journey/gate: [[manifest-newcomer-journey-협업회의운영-2026-05]] / [[quality-gate-협업회의운영-2026-05]]
 
+## 4. 대외협력·현장소통
+- [[coverage-대외협력현장소통-공통업무축-2026-05]]
+- 현장 의견, 기관 공식 입장, 공유자료, 후속 조치, 국회·감사·민원 전환 가능성을 분리하는 축이다.
+- journey/gate: [[manifest-newcomer-journey-대외협력현장소통-2026-05]] / [[quality-gate-대외협력현장소통-2026-05]]
+
+## 5. 홍보대응
+- [[coverage-홍보대응-공통업무축-2026-05]]
+- 보도자료·설명자료·언론답변에서 공개근거, 확정 사실, 미확정 정보, 비공개 대응전략, 대외전환 문안분기를 분리하는 축이다.
+- journey/gate: [[manifest-newcomer-journey-홍보대응-2026-05]] / [[quality-gate-홍보대응-공통업무축-2026-05]]
+
 ## Boundary router discovery bridge
 - 정보공개·기록관리: [[coverage-정보공개기록관리-공통업무축-2026-05]] → [[manifest-newcomer-journey-정보공개기록관리-2026-05]] → [[quality-gate-정보공개기록관리-2026-05]] 순서로 확인한다.
 - 협업·회의운영: [[coverage-협업회의운영-공통업무축-2026-05]] → [[manifest-newcomer-journey-협업회의운영-2026-05]] → [[quality-gate-협업회의운영-2026-05]] 순서로 확인한다.
-- 두 축 모두 [[landing-response-boundary-router-checklists-2026-05]], [[index-response-boundary-router-checklists-2026-05]], [[manifest-response-boundary-router-checklists-2026-05]]에서 최근 질문형 boundary route로 발견될 수 있어야 한다.
+- 대외협력·현장소통: [[coverage-대외협력현장소통-공통업무축-2026-05]] → [[manifest-newcomer-journey-대외협력현장소통-2026-05]] → [[quality-gate-대외협력현장소통-2026-05]] 순서로 확인하고, 국회·감사·민원 전환 시 전환 manifest를 경유한다.
+- 홍보대응: [[coverage-홍보대응-공통업무축-2026-05]] → [[manifest-newcomer-journey-홍보대응-2026-05]] → [[quality-gate-홍보대응-공통업무축-2026-05]] 순서로 확인하고, 보도자료 문안 재사용 전 대외전환 checklist를 경유한다.
+- 정보공개·기록관리과 협업·회의운영은 [[landing-response-boundary-router-checklists-2026-05]], [[index-response-boundary-router-checklists-2026-05]], [[manifest-response-boundary-router-checklists-2026-05]]에서 최근 질문형 boundary route로 발견될 수 있어야 한다.
+- 대외협력·현장소통과 홍보대응은 [[manifest-agent-readable-catalog-v1-2026-05]]의 Recent boundary route order에서 정보공개·협업 route 다음 단계로 발견될 수 있어야 한다.
 - 통합 제품군 노출은 [[landing-boundary-router-products-v1-2026-05]], [[manifest-boundary-router-products-v1-2026-05]], [[coverage-boundary-router-products-v1-landing-2026-05]]에서 다시 점검한다.
 
 
@@ -34,8 +47,10 @@
 1. 조직·성과·계약처럼 내부 운영 구조를 보는 일인지 확인한다.
 2. 자료 공개, 기록물, 비공개 검토 경계가 핵심인지 확인한다.
 3. 회의·협업·후속 조치 관리가 핵심인지 확인한다.
-4. 각 coverage에서 hub → path → FAQ → source/process/checklist 순서로 내려간다.
-5. manifest로 전입자 journey를 고정하고 quality gate로 공개/비공개 금지선을 다시 점검한다.
+4. 현장 의견·관계기관 소통이 공식 입장이나 후속 조치로 바뀌는지 확인한다.
+5. 보도자료·설명자료·언론답변 문안인지 확인한다.
+6. 각 coverage에서 hub → path → FAQ → source/process/checklist 순서로 내려간다.
+7. manifest로 전입자 journey를 고정하고 quality gate로 공개/비공개 금지선을 다시 점검한다.
 
 ## 공통 masking FAQ
 - 공통 masking FAQ: [[faq-공통업무축-민감정보-masking-사례구분]]
