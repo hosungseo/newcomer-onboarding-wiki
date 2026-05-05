@@ -2,6 +2,7 @@
 
 ## 목적
 [[faq-감사대응-boundary-router-공개문안-초안-2026-05]]가 감사대응 공개문안 초안 경로에서 발견되는지 확인한다.
+- [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] — 감사대응 boundary router 공개문안 작성흐름.
 
 ## 노출 확인
 - [[checklist-감사대응-boundary-router-질문형-검토]] → [[faq-감사대응-boundary-router-공개문안-초안-2026-05]]
