@@ -3,6 +3,7 @@
 🌐 **웹 관문**: https://hosungseo.github.io/newcomer-onboarding-wiki/
 
 ## 한 줄 정의
+- [[landing-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist를 바로 고르는 landing.
 공공에 공개된 기관 소개, 법령, 업무계획, 보도자료, 평가자료, 통계를 바탕으로 신입·전입 공무원이 조직과 업무 맥락을 빠르게 익히도록 돕는 **public-data-first onboarding wiki**.
 
 ## 바로 시작
