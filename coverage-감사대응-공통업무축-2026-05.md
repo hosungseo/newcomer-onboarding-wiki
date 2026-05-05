@@ -41,8 +41,10 @@
 - source: 있음
 - process: 있음
 - checklist: 있음
-- docs exposure: hub/path/FAQ/source/process/checklist 있음
-- 다음 후보: 감사대응 manifest, 감사대응 quality gate, 국정감사 대응 상황형 path 보강
+- manifest: [[manifest-newcomer-journey-감사대응-2026-05]] 있음
+- quality gate: [[quality-gate-감사대응-공통업무축-2026-05]] 있음
+- docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
+- 다음 후보: 국정감사 대응 상황형 path 보강, 감사자료가 국회·예산·민원으로 넘어갈 때의 분기 checklist, 개인정보·사건정보 masking 사례 FAQ
 
 ## 금지선
 감사 대응 전략, 내부 문답, 미확정 조치계획, 개인정보, 사건별 민감정보, 수사·감독·조사 세부, 비공개 예산·계약·평가자료, 법률자문성 결론은 공개 온보딩 note에 포함하지 않는다.
