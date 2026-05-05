@@ -12,14 +12,17 @@
 - [[faq-민원답변-첫문장은-어떻게-쓰나]]
 - [[faq-민원답변-타기관소관은-어떻게-처리하나]]
 - [[source-민원대응-자료대조순서]]
+- [[source-민원대응-마스킹-이송-원천대조순서]]
 - [[process-민원대응-답변초안-작성흐름]]
 - [[checklist-민원대응-답변초안-제출전검토]]
 - [[checklist-민원대응-boundary-router-질문형-검토]]
+- [[checklist-민원대응-답변전-공개경계-precheck]]
 - [[coverage-민원대응-공통업무축-2026-05]]
 - [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]]
 - [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
 - [[coverage-민원대응-boundary-router-walkthrough-2026-05]]
 - [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]]
+- [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]]
 - [[checklist-민원대응-타기관이송-제출전검토]]
 - [[manifest-newcomer-journey-민원대응-2026-05]]
 
@@ -36,6 +39,8 @@
 - [ ] 유입경로, 민원유형, 소관, 공개근거가 분리되어 있다.
 - [ ] 첫 문장 tone, 타기관 소관 분기, 반복답변 재사용 조건이 분리되어 있다.
 - [ ] walkthrough coverage가 FAQ/source/process/checklist와 공개·비공개 판단 지점을 실제 note로만 연결한다.
+- [ ] [[source-민원대응-마스킹-이송-원천대조순서]]와 [[checklist-민원대응-답변전-공개경계-precheck]]가 개인정보·제3자 정보·소관 이송·예산 수치 근거를 답변 전 단계에서 닫는가.
+- [ ] [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]]가 예산 수치 포함 민원을 공개 예산자료와 민원 답변 경계로 분기하는가.
 - [ ] 개인정보, 민원인 식별정보, 사건별 민원·신고·조사 세부 금지선이 명시되어 있다.
 - [ ] docs/index.html에는 핵심 route가 노출되어 있다.
 - [ ] manifest/coverage 파일에서 docs/landing discovery 후보가 노출되어 있다.
@@ -45,7 +50,7 @@
 - hub/path/FAQ/source/process/checklist/coverage/manifest는 모두 존재한다.
 - docs 노출은 hub, path, FAQ, source, process, checklist, coverage, manifest까지 확인 대상이다.
 - manifest/coverage discovery는 [[manifest-agent-readable-catalog-v1-2026-05]], [[manifest-boundary-router-public-draft-products-2026-05]], [[coverage-boundary-router-public-draft-products-2026-05]]에 노출되어 있다.
-- FAQ/process/checklist thickening은 공개문안 초안, 첫 문장, 타기관 소관, 질문형 검토, 민감정보 masking, 타기관 이송까지 연결되어 있다.
+- FAQ/process/checklist thickening은 공개문안 초안, 첫 문장, 타기관 소관, 질문형 검토, 민감정보 masking, 타기관 이송, 답변전 공개경계 precheck까지 연결되어 있다.
 - 민원 폭주·반복답변 walkthrough는 [[coverage-민원대응-boundary-router-walkthrough-2026-05]]에서 FAQ/source/process/checklist 노출과 public/private decision point를 추적한다.
 - 다음 빈칸은 정보공개 청구와 겹치는 민원, 반복민원 FAQ template, 민원답변 tone checklist의 제품화 확장이다.
 

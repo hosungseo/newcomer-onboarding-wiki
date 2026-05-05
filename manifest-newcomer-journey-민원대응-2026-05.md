@@ -17,6 +17,7 @@
 ## Journey 3 — 근거와 내부확인 분리
 
 - Source: [[source-민원대응-자료대조순서]]
+- Masking/transfer source: [[source-민원대응-마스킹-이송-원천대조순서]]
 - 연결 업무축: [[hub-정보공개기록관리]], [[hub-법령대응]]
 - 확인 질문: 공개근거로 답할 수 있는 문장과 담당 부서 내부확인이 필요한 문장은 무엇인가?
 
@@ -33,6 +34,7 @@
 
 - Checklist: [[checklist-민원대응-답변초안-제출전검토]]
 - Boundary checklist: [[checklist-민원대응-boundary-router-질문형-검토]]
+- Precheck: [[checklist-민원대응-답변전-공개경계-precheck]]
 - Process coverage: [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
 - 핵심 확인: 개인정보, 사건정보, 내부검토 의견, 법률자문성 결론, 비공개 협의 내용이 섞이지 않았는가?
 
@@ -41,6 +43,7 @@
 - Coverage: [[coverage-민원대응-공통업무축-2026-05]]
 - Walkthrough: [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]]
 - Walkthrough coverage: [[coverage-민원대응-boundary-router-walkthrough-2026-05]]
+- Budget/civil boundary route: [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]]
 - 반복 질문은 FAQ 후보로, 반복 절차는 process 후보로, 반복 자료 확인은 source 후보로 승격한다.
 - 타기관 소관은 [[checklist-민원대응-타기관이송-제출전검토]]에서 이송·안내 경계를 닫고, 국회·감사·홍보로 이어지는 민원은 관련 업무축에 cross-link를 남긴다.
 
@@ -56,14 +59,19 @@ faq:
   - faq-민원대응-boundary-router-공개문안-초안-2026-05
   - faq-민원답변-첫문장은-어떻게-쓰나
   - faq-민원답변-타기관소관은-어떻게-처리하나
-source: source-민원대응-자료대조순서
+source:
+  - source-민원대응-자료대조순서
+  - source-민원대응-마스킹-이송-원천대조순서
 process: process-민원대응-답변초안-작성흐름
 checklist:
   - checklist-민원대응-답변초안-제출전검토
   - checklist-민원대응-boundary-router-질문형-검토
   - checklist-민원대응-민감정보-masking-제출전검토
   - checklist-민원대응-타기관이송-제출전검토
-walkthrough: walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05
+  - checklist-민원대응-답변전-공개경계-precheck
+walkthrough:
+  - walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05
+  - walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05
 coverage:
   - coverage-민원대응-공통업무축-2026-05
   - coverage-민원대응-boundary-router-공개문안-faq-2026-05

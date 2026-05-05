@@ -18,13 +18,16 @@
 
 ## 자료·초안 흐름
 - [[source-민원대응-자료대조순서]]
+- [[source-민원대응-마스킹-이송-원천대조순서]]
 - [[process-민원대응-답변초안-작성흐름]]
 - [[checklist-민원대응-답변초안-제출전검토]]
+- [[checklist-민원대응-답변전-공개경계-precheck]]
 - [[checklist-민원대응-민감정보-masking-제출전검토]] — 개인정보·사건정보·신고/조사 세부 masking 제출 전 점검.
 - [[checklist-민원대응-boundary-router-질문형-검토]] — 공개문안 전환 전 질문형 멈춤선 점검.
 - [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]]
 - [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
 - [[coverage-민원대응-boundary-router-walkthrough-2026-05]] — 민원 폭주·반복답변 walkthrough의 FAQ/source/process/checklist 노출과 공개·비공개 판단 지점을 점검.
+- [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]] — 예산 수치가 민원 답변에 섞일 때 공개 예산자료와 민원 답변 경계를 함께 점검.
 
 ## 연결 업무축
 - [[hub-홍보대응]]
@@ -46,7 +49,7 @@
 - FAQ: 2개 있음
 - source: 있음
 - process: 있음
-- checklist: [[checklist-민원대응-민감정보-masking-제출전검토]], [[checklist-민원대응-타기관이송-제출전검토]]까지 보강
+- checklist: [[checklist-민원대응-민감정보-masking-제출전검토]], [[checklist-민원대응-타기관이송-제출전검토]], [[checklist-민원대응-답변전-공개경계-precheck]]까지 보강
 - walkthrough: [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]] 및 [[coverage-민원대응-boundary-router-walkthrough-2026-05]]로 노출
 - manifest: [[manifest-newcomer-journey-민원대응-2026-05]] 있음
 - quality gate: [[quality-gate-민원대응-공통업무축-2026-05]] 있음
