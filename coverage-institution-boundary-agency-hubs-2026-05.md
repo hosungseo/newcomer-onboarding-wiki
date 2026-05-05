@@ -19,6 +19,7 @@
 - [[coverage-institution-boundary-response-hubs-2026-05]]
 
 ## 다음 후보
+- [[walkthrough-institution-boundary-router-question-flow-2026-05]] — 기관 hub에서 boundary router로 돌아가는 질문형 walkthrough.
 다음 wake에서는 기관별 hub보다 walkthrough/router 질문형 진입 또는 감사·국회·정보공개 축의 남은 FAQ/process/checklist 빈칸을 우선 검토한다.
 
 ## 금지선

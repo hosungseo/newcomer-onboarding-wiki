@@ -1,6 +1,7 @@
 # Section — 최근 boundary note 묶음 2026-05
 
 ## 목적
+- [[walkthrough-institution-boundary-router-question-flow-2026-05]] — 기관 hub에서 boundary router로 돌아가는 질문형 walkthrough.
 최근 boundary FAQ/checklist를 하나의 section으로 묶어 공통업무축 전입자가 공개/비공개 경계를 빠르게 찾게 한다.
 
 ## 진입 순서
