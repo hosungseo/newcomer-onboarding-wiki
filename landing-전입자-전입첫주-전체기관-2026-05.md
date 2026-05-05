@@ -87,6 +87,7 @@
 
 ## Related Notes
 - [[section-최근-boundary-note-묶음-2026-05]] — 기관별 전입자가 공통업무축 공개/비공개 boundary로 되돌아가는 section.
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 boundary note로 되돌아가는 router.
 - `gate-전입후첫재적응.md`
 - `newcomer-path-전입후첫재적응질문-2026-05.md`
 - `process-전입후-첫주-재적응.md`

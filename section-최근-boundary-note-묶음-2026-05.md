@@ -7,6 +7,7 @@
 - [[manifest-newcomer-journey-boundary-notes-2026-05]] — 질문 유형별 route.
 - [[index-최근-boundary-note-묶음-2026-05]] — 업무축별 entry map.
 - [[coverage-최근-boundary-note-묶음-2026-05]] — 노출·연결 상태.
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 boundary note로 되돌아가는 router.
 - [[quality-gate-최근-boundary-note-묶음-2026-05]] — 공개/비공개 안전 점검.
 
 ## Boundary note 묶음

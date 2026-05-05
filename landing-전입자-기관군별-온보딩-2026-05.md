@@ -15,6 +15,7 @@
 - 부처 본부와 처·청·위원회 첫주 질문 차이는 [[process-부처군-처청위원회-첫주경로비교]]에서 비교하고, 실제 선택 전에는 [[checklist-부처군-처청위원회-첫주경로선택]]으로 확인한다.
 - 업무 상황이 먼저 보이면 [[landing-전입자-공통업무축-2026-05]]에서 국회·예산·감사·보고·홍보·민원·법령 중 하나를 고른다.
 - [[section-최근-boundary-note-묶음-2026-05]] — 기관별 전입자가 공통업무축 공개/비공개 boundary로 되돌아가는 section.
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 boundary note로 되돌아가는 router.
 
 ## 부처군 바로가기
 
