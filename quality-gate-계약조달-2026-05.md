@@ -8,7 +8,10 @@
 - [[newcomer-path-계약조달-첫주-2026-05]]
 - [[faq-계약조달-처음-무엇부터-확인하나]]
 - [[source-계약조달-증빙자료-대조순서]]
+- [[faq-계약조달-공공민간-증거경계는-어디서-나누나]]
+- [[source-계약조달-업체민감정보-마스킹-대조순서]]
 - [[process-계약조달-검토초안-작성흐름]]
+- [[process-계약조달-초안공개자료-분기흐름]]
 - [[checklist-계약조달-검토초안-검토]]
 - [[coverage-계약조달-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-계약조달-2026-05]]
@@ -24,8 +27,8 @@
 - [x] hub에서 계약·조달의 전체 업무 경계를 설명한다.
 - [x] path에서 첫주 행동 순서를 제공한다.
 - [x] FAQ에서 첫 30분 확인 질문을 제공한다.
-- [x] source에서 예산 근거, 계약 성격, 절차 증빙, 내부확인 대상을 대조한다.
-- [x] process에서 검토초안 작성흐름과 표시어를 제공한다.
+- [x] source에서 예산 근거, 계약 성격, 절차 증빙, 내부확인 대상, 업체 민감정보 마스킹 대상을 대조한다.
+- [x] process에서 검토초안 작성흐름, 초안 공개자료 분기흐름, 표시어를 제공한다.
 - [x] checklist에서 제출 전 점검 항목을 제공한다.
 - [x] coverage에서 현재 완성도와 다음 gap을 보여준다.
 - [x] manifest에서 전입자/agent 실행 순서를 묶는다.
@@ -52,11 +55,13 @@
 
 ## Boundary router gate
 - [x] [[source-계약조달-증빙자료-대조순서]]가 공개근거와 내부확인 대상을 나누는 source 기준점으로 manifest에 노출되어 있다.
+- [x] [[faq-계약조달-공공민간-증거경계는-어디서-나누나]], [[source-계약조달-업체민감정보-마스킹-대조순서]], [[process-계약조달-초안공개자료-분기흐름]]이 업체자료가 섞인 요청의 공개/내부 분기 route로 manifest와 coverage에 노출되어 있다.
 - [x] [[checklist-계약조달-boundary-router-질문형-검토]]가 계약조달 공개 답변 전 질문형 멈춤선을 제공한다.
 - [x] [[checklist-계약조달-공개비공개-실행경계]]가 공개문안·답변초안·내부검토 메모로 나누기 전 실행경계를 점검한다.
 - [x] [[faq-계약조달-boundary-router-공개문안-초안-2026-05]]와 [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]]가 공개문안 FAQ의 근거·금지선·coverage를 함께 노출한다.
 - [x] [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]]와 [[coverage-계약조달-boundary-router-공개문안-process-2026-05]]가 source/process/checklist 사이의 공개문안 전환 절차를 함께 노출한다.
 - [x] [[walkthrough-core-boundary-checklist-entry-2026-05]]에서 core boundary checklist walkthrough로 재진입할 수 있다.
+- [x] [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]에서 계약조달·조직정원이 함께 등장하는 요청을 먼저 분리할 수 있다.
 - [x] boundary router 링크는 모두 실제 파일만 가리키며 placeholder wikilink를 만들지 않는다.
 
 ## 판정
