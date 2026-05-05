@@ -974,6 +974,9 @@ v1 체크포인트:
 - [실행경계 discovery coverage](coverage-execution-boundary-routes-discovery-2026-05.md) — route-map과 coverage/manifest/quality-gate 노출 상태 점검
 
 - [계약·조직 실행경계 route map](walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05.md) — 계약자료와 조직·정원 자료가 함께 걸릴 때 공개/비공개 경계를 고르는 교차 route
+- [계약·조직 실행경계 coverage](coverage-계약조달-조직정원-실행경계-2026-05.md) — 계약자료·조직정원 공개경계 노출 상태
+- [계약·조직 실행경계 manifest](manifest-newcomer-journey-계약조달-조직정원-실행경계-2026-05.md) — 전입자 journey route 연결
+- [계약·조직 실행경계 quality gate](quality-gate-계약조달-조직정원-실행경계-2026-05.md) — 업체 민감정보·조직 내부검토 멈춤선
 - [예산·민원 실행경계 route map](walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05.md) — 예산 수치가 민원 답변에 섞이는 경우 공개자료와 답변 경계를 나누는 교차 route
 - [예산·민원 실행경계 coverage](coverage-예산대응-민원대응-실행경계-2026-05.md) — 예산 공개자료와 민원 답변 경계 노출 상태
 - [예산·민원 실행경계 manifest](manifest-newcomer-journey-예산대응-민원대응-실행경계-2026-05.md) — 전입자 journey route 연결
