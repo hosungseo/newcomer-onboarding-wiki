@@ -4,6 +4,8 @@
 
 ## 한 줄 정의
 - [[landing-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist를 바로 고르는 landing.
+- [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] — 협업회의운영 boundary router 공개문안 작성흐름.
+- [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]] — 협업회의운영 boundary router 공개문안 process coverage.
 - [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
 - [[release-candidate-core-boundary-checklists-2026-05]] — 핵심 업무축 boundary checklist 묶음 release candidate.
 - [[walkthrough-core-boundary-checklist-entry-2026-05]] — 핵심 업무축 boundary checklist 진입 walkthrough.

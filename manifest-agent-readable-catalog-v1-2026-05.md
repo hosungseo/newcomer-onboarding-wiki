@@ -78,6 +78,8 @@
 - [[manifest-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary router 질문형 checklist 묶음.
 - [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]] — 협업회의운영 boundary router 공개문안 초안 FAQ.
 - [[coverage-협업회의운영-boundary-router-공개문안-faq-2026-05]] — 협업회의운영 boundary router 공개문안 FAQ coverage.
+- [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] — 협업회의운영 boundary router 공개문안 작성흐름.
+- [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]] — 협업회의운영 boundary router 공개문안 process coverage.
 - [[quality-gate-response-boundary-router-checklists-2026-05]] — 대응형 boundary router checklist 묶음 품질 점검.
 - [[index-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist 상황별 색인.
 - [[landing-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist를 바로 고르는 landing.
