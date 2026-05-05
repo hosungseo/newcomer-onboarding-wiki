@@ -244,6 +244,8 @@ v1 체크포인트:
 - [[manifest-newcomer-journey-협업회의운영-2026-05]]
 - [[quality-gate-협업회의운영-2026-05]]
 - [[hub-정보공개기록관리]]
+- [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] — 정보공개기록관리 boundary router 공개문안 작성흐름.
+- [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]] — 정보공개기록관리 boundary router 공개문안 process coverage.
 - [[newcomer-path-정보공개기록관리-첫주-2026-05]]
 - [[faq-공개자료와-내부검토자료는-어떻게-구분하나]]
 - [[faq-정보공개청구-처음-무엇부터-확인하나]]

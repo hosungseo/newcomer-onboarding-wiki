@@ -1,6 +1,8 @@
 # llms.txt — newcomer-onboarding-wiki v1
 
 ## Purpose
+- [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] — 정보공개기록관리 boundary router 공개문안 작성흐름.
+- [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]] — 정보공개기록관리 boundary router 공개문안 process coverage.
 This file gives AI agents a compact entry map for the public newcomer onboarding wiki. Use it to route newcomer questions by institution, situation, work axis, source/checklist, and public/non-public boundary.
 
 ## Primary entry points
