@@ -2,6 +2,7 @@
 
 ## 목적
 [[checklist-국회대응-boundary-router-질문형-검토]]가 국회대응 hub와 기관 boundary router 질문형 walkthrough에 제대로 연결됐는지 확인한다.
+- [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] — 국회대응 boundary router 공개문안 초안 FAQ.
 
 ## 연결 상태
 - [[hub-국회대응]] → [[checklist-국회대응-boundary-router-질문형-검토]]

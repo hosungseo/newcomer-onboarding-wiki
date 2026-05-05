@@ -12,6 +12,7 @@
 
 ## 연결
 - [[coverage-국회대응-boundary-router-질문형-검토-2026-05]] — 국회대응 boundary router 질문형 checklist 연결 coverage.
+- [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] — 국회대응 boundary router 공개문안 초안 FAQ.
 - [[hub-국회대응]]
 - [[manifest-institution-to-boundary-router-2026-05]]
 - [[coverage-institution-boundary-response-hubs-2026-05]]
