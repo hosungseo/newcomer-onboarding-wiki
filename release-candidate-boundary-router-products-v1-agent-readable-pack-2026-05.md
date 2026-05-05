@@ -4,6 +4,7 @@
 Agent가 boundary router products v1 release pack을 안정적으로 읽고 안내할 수 있도록 agent-readable pack을 배포 후보로 고정한다.
 
 ## Agent-readable 정의
+- [[coverage-boundary-router-products-v1-agent-readable-pack-release-2026-05]] — boundary router products v1 agent-readable pack release 노출 coverage.
 - [[manifest-boundary-router-products-v1-agent-readable-pack-2026-05]]
 - [[index-boundary-router-products-v1-agent-readable-pack-2026-05]]
 - [[quality-gate-boundary-router-products-v1-agent-readable-pack-2026-05]]
