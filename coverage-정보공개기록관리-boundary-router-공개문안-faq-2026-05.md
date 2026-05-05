@@ -2,6 +2,7 @@
 
 ## 목적
 [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]]가 정보공개기록관리 공개문안 초안 경로에서 발견되는지 확인한다.
+- [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] — 정보공개기록관리 boundary router 공개문안 작성흐름.
 
 ## 노출 확인
 - [[checklist-정보공개기록관리-boundary-router-질문형-검토]] → [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]]
