@@ -4,6 +4,7 @@
 response/core boundary router checklist 제품군의 최상위 제품 묶음을 고정한다.
 
 ## 제품 entrypoint
+- [[coverage-boundary-checklist-products-manifest-2026-05]] — checklist products manifest 노출 coverage.
 - [[index-boundary-router-checklist-products-2026-05]]
 - [[walkthrough-boundary-checklist-products-entry-2026-05]]
 - [[release-candidate-boundary-checklist-products-2026-05]]
