@@ -24,7 +24,7 @@
 - [x] agent-readable catalog와 llms metadata에서 high-signal scenario로 찾을 수 있다.
 - [x] docs/landing/release candidate에서 quality gate 진입 경로가 노출됐다.
 - [x] walkthrough index가 docs/landing/README/coverage/quality gate에 노출됐다.
-- [x] 회의 후속조치와 민원 폭주 walkthrough가 시나리오 묶음에 포함됐다.
+- [x] 회의 후속조치, 민원 폭주, 장관 보고 walkthrough가 시나리오 묶음에 포함됐다.
 - [ ] docs index는 아직 상황형 walkthrough 전용 section UI로 분리되지 않았다.
 
 ## 공개 안전 점검
