@@ -25,9 +25,15 @@ steps:
   coverage: coverage-조직정원-공통업무축-2026-05.md
   boundary_router:
     question_checklist: checklist-조직정원-boundary-router-질문형-검토.md
+    public_source_order: source-조직정원-공개자료-대조순서.md
+    original_source_priority: source-조직정원-원천자료-확인우선순서.md
+    pre_submit_boundary_check: checklist-조직정원-제출전-precheck.md
     public_faq: faq-조직정원-boundary-router-공개문안-초안-2026-05.md
     public_process: process-조직정원-boundary-router-공개문안-작성흐름-2026-05.md
     walkthrough: walkthrough-core-boundary-checklist-entry-2026-05.md
+    contract_org_route_map: walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05.md
+    execution_boundary_coverage: coverage-조직정원-실행경계-2026-05.md
+    execution_boundary_quality_gate: quality-gate-조직정원-실행경계-2026-05.md
 branch_to:
   예산_인건비: hub-예산.md
   직급_인사운영: hub-인사승진.md
@@ -48,8 +54,10 @@ stop_lines:
 1. [[source-조직정원-공식자료-대조순서]]에서 공개근거와 내부확인 대상을 먼저 분리한다.
 2. [[process-조직정원-검토초안-작성흐름]]로 기본 초안을 만들되, 외부 설명·민원·국회·보고 문안으로 바꾸기 전 [[checklist-조직정원-boundary-router-질문형-검토]]를 먼저 통과한다.
 3. 공개문안이 필요하면 [[faq-조직정원-boundary-router-공개문안-초안-2026-05]]에서 답변 가능한 범위를 확인하고 [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]]로 문장화한다.
-4. [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]]와 [[coverage-조직정원-boundary-router-공개문안-process-2026-05]]에서 FAQ/process coverage가 manifest·quality gate에 노출됐는지 확인한다.
-5. 길을 잃으면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아가 core boundary checklist entry에서 조직정원으로 다시 분기한다.
+4. 원천자료와 내부 검토안이 섞인 요청은 [[source-조직정원-원천자료-확인우선순서]]를 거친 뒤 [[checklist-조직정원-제출전-precheck]]에서 확정 전 조직·정원안, 인사정보, 내부검토 의견이 남지 않았는지 확인한다.
+5. [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]], [[coverage-조직정원-boundary-router-공개문안-process-2026-05]], [[coverage-조직정원-실행경계-2026-05]]에서 FAQ/process/실행경계 coverage가 manifest·quality gate에 노출됐는지 확인한다.
+6. 계약조달 자료와 같이 들어온 요청은 [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]에서 계약·조직 route를 먼저 분리한다.
+7. 길을 잃으면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아가 core boundary checklist entry에서 조직정원으로 다시 분기한다.
 
 ## 공개/비공개 금지선
 이 manifest는 공개 온보딩 경로만 다룬다. 비공개 조직개편안, 내부 검토의견, 개인별 인사·평정 정보, 특정 부서의 민감한 정원 협상 내용, 기관 간 협의전략, 법률자문성 결론은 route, 초안, checklist에 넣지 않는다.

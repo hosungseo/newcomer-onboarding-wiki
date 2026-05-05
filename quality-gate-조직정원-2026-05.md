@@ -10,7 +10,9 @@
 - [[process-조직정원-검토초안-작성흐름]]
 - [[checklist-조직정원-검토초안-제출전검토]]
 - [[coverage-조직정원-공통업무축-2026-05]]
+- [[coverage-조직정원-실행경계-2026-05]]
 - [[manifest-newcomer-journey-조직정원-2026-05]]
+- [[quality-gate-조직정원-실행경계-2026-05]]
 
 ## 1. 경로 완성도
 - [x] hub에서 법령상 조직, 실제 업무분장, 정원 관리, 협의 경로를 나눈다.
@@ -44,6 +46,8 @@
 - [x] [[faq-조직정원-boundary-router-공개문안-초안-2026-05]]와 [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]]가 공개문안 FAQ의 근거·금지선·coverage를 함께 노출한다.
 - [x] [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]]와 [[coverage-조직정원-boundary-router-공개문안-process-2026-05]]가 source/process/checklist 사이의 공개문안 전환 절차를 함께 노출한다.
 - [x] [[walkthrough-core-boundary-checklist-entry-2026-05]]에서 core boundary checklist walkthrough로 재진입할 수 있다.
+- [x] [[source-조직정원-원천자료-확인우선순서]], [[checklist-조직정원-제출전-precheck]], [[coverage-조직정원-실행경계-2026-05]], [[quality-gate-조직정원-실행경계-2026-05]]가 조직정원 실행경계 route로 노출되어 있다.
+- [x] [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]에서 계약조달과 조직정원이 함께 등장하는 요청을 먼저 분리할 수 있다.
 - [x] boundary router 링크는 모두 실제 파일만 가리키며 placeholder wikilink를 만들지 않는다.
 
 ## 판정
