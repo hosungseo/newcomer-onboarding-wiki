@@ -5,16 +5,25 @@
 ## 먼저 읽을 route
 
 - 계약조달·조직정원 교차: [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]
-- 계약조달: coverage-계약조달-실행경계-2026-05 → manifest-newcomer-journey-계약조달-실행경계-2026-05 → quality-gate-계약조달-실행경계-2026-05
+- 계약조달: [[coverage-계약조달-실행경계-2026-05]] → [[manifest-newcomer-journey-계약조달-실행경계-2026-05]] → [[quality-gate-계약조달-실행경계-2026-05]]
 - 조직정원: [[coverage-조직정원-실행경계-2026-05]] → [[manifest-newcomer-journey-조직정원-실행경계-2026-05]] → [[quality-gate-조직정원-실행경계-2026-05]]
 - 감사·국회: [[walkthrough-국회대응-전입자-라우터-2026-05]] → [[coverage-감사국회-실행경계-2026-05]] → [[manifest-newcomer-journey-감사국회-실행경계-2026-05]] → [[quality-gate-감사국회-실행경계-2026-05]]
 - 민원·법령: [[section-민원법령-boundary-router-실행경계-2026-05]] → [[coverage-법령대응-공개설명경계-2026-05]]
 - 정보공개·협업회의: [[router-정보공개기록관리-협업회의-신규자-공개경계]] → [[coverage-내부운영협업3축-운영정보공개회의-2026-05]]
 - 홍보·대외협력: [[walkthrough-대외협력현장소통-기관상황업무축-공개경계]] → [[newcomer-path-홍보대응-대외문안-공개경계]]
 
+## landing route-map bridge
+
+landing에서 긴 route chain을 펼치지 않고 아래 4개 교차 route-map으로 바로 내려간다. 각 route-map은 멈춤선과 다음 checklist/source를 자체적으로 가진다.
+
+- 계약·조직: [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05#멈춤선]]
+- 예산·민원: [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05#멈춤선]]
+- 정보공개·협업회의: [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05#멈춤선]]
+- 홍보·법령: [[walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05#멈춤선]]
+
 ## agent execution
 
-- 전체 발견성: coverage-execution-boundary-routes-discovery-2026-05
+- 전체 발견성: [[coverage-execution-boundary-routes-discovery-2026-05]]
 - agent catalog: [[manifest-agent-readable-catalog-v1-2026-05]]
 - 중복 audit: [[audit-boundary-duplicate-root-notes-2026-05]]
 
