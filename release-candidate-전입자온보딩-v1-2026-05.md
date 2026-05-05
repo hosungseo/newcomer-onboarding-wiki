@@ -40,7 +40,7 @@
 
 ## Agent-readable catalog
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]]
-- [[manifest-scenario-router-walkthrough-v1-2026-05]] — 7개 walkthrough를 질문 유형별로 route한다.
+- [[manifest-scenario-router-walkthrough-v1-2026-05]] — 8개 walkthrough를 질문 유형별로 route한다.
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
@@ -55,6 +55,7 @@
 3. journey manifest를 agent-readable catalog로 묶는 작업은 [[manifest-agent-readable-catalog-v1-2026-05]]와 [[llms-newcomer-onboarding-v1]]로 시작했고 README/landing/docs 노출까지 완료됐다.
 4. 중복된 coverage/quality gate 표현을 얇게 정리한다.
 5. 실제 전입자 시나리오 walkthrough는 [[walkthrough-전입자-시나리오-국회감사민원-대외전환-2026-05]], [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]], [[walkthrough-전입자-시나리오-예산시즌-자료요구-2026-05]], [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]], [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]], [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]], [[walkthrough-전입자-시나리오-장관보고-공개자료전환-2026-05]]로 확장됐다.
+- [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]] — 국회 대응 시즌 자료요구·서면질의 답변.
 
 ## 판정
 
