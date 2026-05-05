@@ -10,6 +10,7 @@
 - 협업회의 자료·후속조치·대외공유 → [[checklist-협업회의운영-boundary-router-질문형-검토]]
 
 ## 묶음과 검증
+- docs/index.html featured quick link — 대응형 checklist를 상황형 walkthrough 영역에서 바로 고르게 노출한다.
 - [[coverage-response-boundary-router-landing-2026-05]] — 대응형 boundary checklist landing 노출 coverage.
 - [[index-response-boundary-router-checklists-2026-05]]
 - [[manifest-response-boundary-router-checklists-2026-05]]

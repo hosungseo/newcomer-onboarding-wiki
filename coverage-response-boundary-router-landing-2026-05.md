@@ -2,6 +2,7 @@
 
 ## 목적
 [[landing-response-boundary-router-checklists-2026-05]]가 사용자 README, agent/LLM catalog, release candidate, docs index에서 모두 발견되는지 확인한다.
+- docs/index.html featured quick link — 대응형 checklist를 상황형 walkthrough 영역에서 바로 고르게 노출한다.
 
 ## 노출 상태
 - [[README]] → [[landing-response-boundary-router-checklists-2026-05]]
