@@ -10,6 +10,7 @@
 - [[hub-협업회의운영]] → [[manifest-institution-to-boundary-router-2026-05]]
 
 ## 연결 기준
+- [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
 - [[faq-기관별-hub-boundary-router는-언제-직접-연결하나]]
 - [[checklist-institution-boundary-router-hub-selection-2026-05]]
 - [[process-institution-boundary-router-hub-linking-2026-05]]

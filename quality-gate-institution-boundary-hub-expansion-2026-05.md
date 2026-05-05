@@ -12,6 +12,7 @@
 - [x] 각 core hub는 직접 민감정보를 설명하지 않고 boundary router로 짧게 회귀한다.
 
 ## Gate 3 — response hub coverage
+- [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
 - [x] 감사원·조달청 기관별 개별 hub에서 [[manifest-institution-to-boundary-router-2026-05]]로 회귀할 수 있다.
 - [x] [[coverage-institution-boundary-response-hubs-2026-05]]에서 감사대응·국회대응·정보공개기록관리·협업회의운영 hub 연결을 확인할 수 있다.
 - [x] 대응형 hub는 감사·국회·정보공개·회의 상황의 민감한 세부 대신 공개/비공개 경계 route로 회귀한다.

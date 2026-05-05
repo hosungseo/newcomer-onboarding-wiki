@@ -11,6 +11,7 @@
 - [ ] 감사원 또는 감사대응 hub에서 바로 시작한 경우 [[coverage-institution-boundary-agency-hubs-2026-05]]와 [[coverage-institution-boundary-response-hubs-2026-05]]를 확인했는가?
 
 ## 연결
+- [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
 - [[hub-감사대응]]
 - [[hub-감사원]]
 - [[manifest-institution-to-boundary-router-2026-05]]
