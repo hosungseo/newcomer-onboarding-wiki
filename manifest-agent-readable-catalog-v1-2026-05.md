@@ -80,6 +80,12 @@
 ## do_not_include
 개인정보, 민원인 식별정보, 업체별 민감정보, 비공개 내부검토 의견, 미확정 정책안, 감사·조사·수사 세부, 법률자문성 결론, 현장 관계자 개인 평가나 발언 왜곡은 포함하지 않는다.
 
+## Execution Boundary Route Map
+- [[section-execution-boundary-routes-2026-05]] — 최근 실행경계 route를 계약조달·조직정원·감사국회·민원법령·정보공개협업·홍보대외협력 흐름으로 고르는 section entry.
+- coverage-execution-boundary-routes-discovery-2026-05 — 실행경계 route의 manifest/coverage/quality gate 삼각형과 docs/landing 노출 순서 기준.
+- quality-gate-execution-boundary-routes-discovery-2026-05 — section entry와 중복 audit 노출 전 최종 quality gate.
+- [[audit-boundary-duplicate-root-notes-2026-05]] — 실행경계 관련 audit/coverage/manifest/quality gate root note 중복 후보를 삭제 대신 route-map 기준으로 정리하는 audit.
+
 ## Recent Boundary Notes
 - [[manifest-boundary-router-public-draft-products-2026-05]] — 공개문안 FAQ/process 제품군 통합 manifest.
 - [[quality-gate-boundary-router-public-draft-products-2026-05]] — 공개문안 제품군 통합 quality gate.

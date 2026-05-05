@@ -37,6 +37,8 @@
 - [[manifest-scenario-router-walkthrough-v1-2026-05]] — 실제 전입자 질문을 7개 walkthrough 중 하나로 빠르게 route한다.
 
 ## 최근 boundary note 묶음
+- [[section-execution-boundary-routes-2026-05]] — 계약조달·조직정원·감사국회·민원법령·정보공개협업회의·홍보대외협력 실행경계 route를 한 화면에서 고르는 최상위 section.
+- [[audit-boundary-duplicate-root-notes-2026-05]] — 최근 실행경계 audit/coverage/manifest/quality gate가 겹쳐 보이는 root note를 삭제 대신 superseded 후보로 정리하는 점검표.
 - [[section-실행경계-boundary-router-4축-2026-05]] — 예산·조직정원·홍보·정보공개 실행경계 route를 한 화면에서 고르는 companion section.
 - [[section-민원법령-boundary-router-실행경계-2026-05]] — 민원·법령 boundary route를 개인정보·사건정보·법률자문성 결론 금지선 기준으로 고르는 companion section.
 - 홍보대응 질문형 route: [[checklist-홍보대응-boundary-router-질문형-검토]] → [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]] → [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]]로 이어서, 보도자료·브리핑·대외 설명 문안의 공식발표 가능 범위를 먼저 가른다.
@@ -88,6 +90,8 @@
 공통 업무축 landing은 공개·고수준 온보딩만 다룬다. 비공개 내부 검토의견, 개인정보, 사건별 민감정보, 수사·감사·감독·보안·작전 세부, 업체·입찰·평가 정보, 법률자문성 결론은 적지 않는다.
 
 ## Related Notes
+- [[section-execution-boundary-routes-2026-05]]
+- [[audit-boundary-duplicate-root-notes-2026-05]]
 - [[section-민원법령-boundary-router-실행경계-2026-05]]
 - [[faq-감사대응-boundary-router-공개문안-초안-2026-05]]
 - [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]]

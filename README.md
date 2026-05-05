@@ -964,3 +964,8 @@ v1 체크포인트:
 - [[coverage-홍보대응-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-홍보대응-2026-05]]
 - [[quality-gate-홍보대응-공통업무축-2026-05]]
+
+## 신규자 실행경계 route
+
+- [실행경계 route map](section-execution-boundary-routes-2026-05.md) — 업무축·상황별로 최근 실행경계 노트를 고르는 시작점
+- [실행경계 discovery coverage](coverage-execution-boundary-routes-discovery-2026-05.md) — route-map과 coverage/manifest/quality-gate 노출 상태 점검
