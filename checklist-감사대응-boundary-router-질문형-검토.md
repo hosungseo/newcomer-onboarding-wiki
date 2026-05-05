@@ -12,6 +12,7 @@
 
 ## 연결
 - [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
+- [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] — 감사대응 boundary router 공개문안 초안 FAQ.
 - [[hub-감사대응]]
 - [[hub-감사원]]
 - [[manifest-institution-to-boundary-router-2026-05]]
