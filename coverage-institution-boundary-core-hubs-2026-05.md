@@ -2,6 +2,7 @@
 
 ## 목적
 핵심 업무축 hub에서 [[manifest-institution-to-boundary-router-2026-05]]로 직접 회귀할 수 있는지 확인한다.
+- [[checklist-법령대응-boundary-router-질문형-검토]] — 법령대응에서 boundary router로 돌아가기 전 질문형 검토.
 - [[checklist-홍보대응-boundary-router-질문형-검토]] — 홍보대응에서 boundary router로 돌아가기 전 질문형 검토.
 - [[checklist-민원대응-boundary-router-질문형-검토]] — 민원대응에서 boundary router로 돌아가기 전 질문형 검토.
 - [[checklist-예산대응-boundary-router-질문형-검토]] — 예산대응에서 boundary router로 돌아가기 전 질문형 검토.

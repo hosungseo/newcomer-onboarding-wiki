@@ -44,6 +44,7 @@
 
 ## Related Notes
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
+- [[checklist-법령대응-boundary-router-질문형-검토]] — 법령대응에서 boundary router로 돌아가기 전 질문형 검토.
 - [[landing-전입자-기관군별-온보딩-2026-05]]
 - [[coverage-부처군-section-기관행-2026-05]]
 - [[hub-국회대응]]
