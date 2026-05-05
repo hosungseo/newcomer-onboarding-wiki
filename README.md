@@ -168,6 +168,8 @@
 - 감사 대응이면 `[[hub-감사대응]]` → `[[newcomer-path-감사대응-첫주-2026-05]]`로 요구사항·기록·공개근거·금지선을 먼저 나눈다.
 - [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] — 감사대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]] — 감사대응 boundary router 공개문안 FAQ coverage.
+- [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] — 감사대응 boundary router 공개문안 작성흐름.
+- [[coverage-감사대응-boundary-router-공개문안-process-2026-05]] — 감사대응 boundary router 공개문안 process coverage.
 - 장관 보고 준비는 `[[hub-장관보고]]` → `[[newcomer-path-장관보고준비-첫주-2026-05]]`로 목적·근거·쟁점·확인사항을 먼저 분리한다.
 - 보도자료 대응은 `[[hub-홍보대응]]` → `[[newcomer-path-보도자료대응-첫주-2026-05]]`로 확정 사실·공개근거·대상·금지선을 먼저 나눈다.
 - 민원 폭주 대응은 `[[hub-민원대응]]` → `[[newcomer-path-민원폭주대응-첫주-2026-05]]`로 유입경로·유형·공개근거·개인정보 경계를 먼저 잡는다.

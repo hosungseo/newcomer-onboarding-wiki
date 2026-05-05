@@ -22,6 +22,8 @@ This file gives AI agents a compact entry map for the public newcomer onboarding
 - [[manifest-newcomer-journey-감사대응-2026-05]]
 - [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] — 감사대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]] — 감사대응 boundary router 공개문안 FAQ coverage.
+- [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] — 감사대응 boundary router 공개문안 작성흐름.
+- [[coverage-감사대응-boundary-router-공개문안-process-2026-05]] — 감사대응 boundary router 공개문안 process coverage.
 - [[manifest-newcomer-journey-민원대응-2026-05]]
 - [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]]
 - [[manifest-newcomer-journey-내부운영협업대외소통-2026-05]]

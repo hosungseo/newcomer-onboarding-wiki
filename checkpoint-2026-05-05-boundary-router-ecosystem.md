@@ -6,6 +6,8 @@
 - response hubs axis: 감사대응·국회대응·정보공개기록관리·협업회의운영 hub → boundary checklist
 - [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] — 감사대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]] — 감사대응 boundary router 공개문안 FAQ coverage.
+- [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] — 감사대응 boundary router 공개문안 작성흐름.
+- [[coverage-감사대응-boundary-router-공개문안-process-2026-05]] — 감사대응 boundary router 공개문안 process coverage.
 - agency hubs axis: 감사원·조달청 기관별 hub → boundary router
 
 ## 완료된 제품화
