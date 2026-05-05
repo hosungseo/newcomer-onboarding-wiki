@@ -16,6 +16,7 @@
 - [[release-candidate-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 통합 release candidate.
 - [[manifest-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 manifest.
 - [[walkthrough-boundary-router-products-v1-entry-2026-05]] — institution/response/core boundary router products v1 통합 walkthrough.
+- [[coverage-boundary-router-products-v1-walkthrough-2026-05]] — boundary router products v1 walkthrough 노출 coverage.
 - [[index-boundary-router-checklist-products-2026-05]]
 - [[walkthrough-boundary-checklist-products-entry-2026-05]]
 - [[quality-gate-boundary-checklist-products-2026-05]]

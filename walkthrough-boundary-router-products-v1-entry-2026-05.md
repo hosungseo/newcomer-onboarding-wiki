@@ -12,6 +12,7 @@
 - 둘 사이가 헷갈리면 [[walkthrough-boundary-checklist-products-entry-2026-05]]에서 response/core checklist 제품군을 먼저 고른다.
 
 ## 3. 제품화 상태를 확인한다
+- [[coverage-boundary-router-products-v1-walkthrough-2026-05]] — boundary router products v1 walkthrough 노출 coverage.
 - v1 manifest: [[manifest-boundary-router-products-v1-2026-05]]
 - v1 quality: [[quality-gate-boundary-router-products-v1-2026-05]]
 - v1 release: [[release-candidate-boundary-router-products-v1-2026-05]]
