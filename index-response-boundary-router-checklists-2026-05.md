@@ -1,6 +1,7 @@
 # Index — Response Boundary Router Checklists 2026-05
 
 ## 목적
+- [[index-boundary-router-checklist-products-2026-05]] — response/core boundary router checklist 제품군 cross-index.
 감사·국회·정보공개·협업회의운영 상황에서 전입자가 바로 고를 수 있는 boundary router 질문형 checklist 색인이다.
 
 ## 상황별 바로가기
