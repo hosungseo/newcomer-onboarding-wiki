@@ -72,3 +72,5 @@
 
 ## Situation Path
 - [[newcomer-path-국정감사대응-첫주-2026-05]]
+
+- 실행경계 보강: [[walkthrough-감사대응-전입자-라우터-2026-05]]
