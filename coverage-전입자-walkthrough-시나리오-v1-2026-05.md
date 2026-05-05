@@ -24,6 +24,7 @@ v1 release candidate 이후 실제 전입자 질문을 end-to-end로 따라갈 �
 - [x] 각 walkthrough는 최소 2개 이상 기존 note와 연결된다.
 - [x] 각 walkthrough에는 공개/비공개 멈춤선이 있다.
 - [x] walkthrough section과 quality gate는 README 계열 진입점(landing/release candidate)과 docs quick link에 노출됐다.
+- [x] walkthrough index와 scenario router는 README/landing/docs 및 상태판 계층에 노출됐다.
 - [ ] docs index는 현재 quick link 노출은 되어 있으나, walkthrough 전용 section UI로는 아직 분리되지 않았다.
 
 ## 다음 후보

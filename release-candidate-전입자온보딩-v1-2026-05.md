@@ -40,6 +40,7 @@
 
 ## Agent-readable catalog
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]]
+- [[manifest-scenario-router-walkthrough-v1-2026-05]] — 7개 walkthrough를 질문 유형별로 route한다.
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
