@@ -49,3 +49,5 @@
 
 ## 판정
 현재 묶음은 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로를 갖췄다. 다음 단계는 국회예산심사, 결산·정산, 보조·위탁사업처럼 상황별 path를 세분화하는 것이다.
+
+- 실행경계 보강: [[walkthrough-예산대응-전입자-라우터-2026-05]], [[coverage-예산대응-실행경계-2026-05]]

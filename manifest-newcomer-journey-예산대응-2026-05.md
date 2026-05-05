@@ -58,3 +58,5 @@
 5. 길을 잃으면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아가 core boundary checklist entry에서 예산대응으로 다시 분기한다.
 
 - 공통 공개/비공개 경계 경로: [[newcomer-path-예산계약조직정원-공개경계]]
+
+- 실행경계 보강: [[walkthrough-예산대응-전입자-라우터-2026-05]], [[coverage-예산대응-실행경계-2026-05]]
