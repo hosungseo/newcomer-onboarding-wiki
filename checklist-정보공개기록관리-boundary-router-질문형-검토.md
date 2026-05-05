@@ -13,6 +13,7 @@
 ## 연결
 - [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]] — 정보공개기록관리 boundary router 질문형 checklist 연결 coverage.
 - [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] — 정보공개기록관리 boundary router 공개문안 초안 FAQ.
+- [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]] — 정보공개기록관리 boundary router 공개문안 FAQ coverage.
 - [[hub-정보공개기록관리]]
 - [[manifest-institution-to-boundary-router-2026-05]]
 - [[coverage-institution-boundary-response-hubs-2026-05]]
