@@ -66,8 +66,15 @@ checklist:
 walkthrough: walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05
 coverage:
   - coverage-민원대응-공통업무축-2026-05
+  - coverage-민원대응-boundary-router-공개문안-faq-2026-05
+  - coverage-민원대응-boundary-router-공개문안-process-2026-05
   - coverage-민원대응-boundary-router-walkthrough-2026-05
 quality_gate: quality-gate-민원대응-공통업무축-2026-05
+discovery:
+  agent_catalog: manifest-agent-readable-catalog-v1-2026-05
+  public_draft_products_manifest: manifest-boundary-router-public-draft-products-2026-05
+  public_draft_products_coverage: coverage-boundary-router-public-draft-products-2026-05
+  docs_landing_candidate: true
 stop_lines:
   - 민원인 개인정보
   - 사건별 사실관계
@@ -75,6 +82,12 @@ stop_lines:
   - 내부 대응전략
   - 법률자문성 결론
 ```
+
+## Discovery exposure
+
+- Agent catalog: [[manifest-agent-readable-catalog-v1-2026-05]]
+- Public draft products: [[manifest-boundary-router-public-draft-products-2026-05]], [[coverage-boundary-router-public-draft-products-2026-05]], [[quality-gate-boundary-router-public-draft-products-2026-05]]
+- Landing/docs 후보: 공개문안 FAQ/process coverage와 반복답변 walkthrough coverage를 함께 노출한다.
 
 ## 다음 확장 후보
 

@@ -38,11 +38,13 @@
 - [ ] walkthrough coverage가 FAQ/source/process/checklist와 공개·비공개 판단 지점을 실제 note로만 연결한다.
 - [ ] 개인정보, 민원인 식별정보, 사건별 민원·신고·조사 세부 금지선이 명시되어 있다.
 - [ ] docs/index.html에는 핵심 route가 노출되어 있다.
+- [ ] manifest/coverage 파일에서 docs/landing discovery 후보가 노출되어 있다.
 - [ ] public/private decision point가 `공개 가능 → 담당 확인 → 공개 note 제외 → 전환 필요` 순서로 구분되어 있다.
 
 ## 현재 판정
 - hub/path/FAQ/source/process/checklist/coverage/manifest는 모두 존재한다.
 - docs 노출은 hub, path, FAQ, source, process, checklist, coverage, manifest까지 확인 대상이다.
+- manifest/coverage discovery는 [[manifest-agent-readable-catalog-v1-2026-05]], [[manifest-boundary-router-public-draft-products-2026-05]], [[coverage-boundary-router-public-draft-products-2026-05]]에 노출되어 있다.
 - FAQ/process/checklist thickening은 공개문안 초안, 첫 문장, 타기관 소관, 질문형 검토, 민감정보 masking, 타기관 이송까지 연결되어 있다.
 - 민원 폭주·반복답변 walkthrough는 [[coverage-민원대응-boundary-router-walkthrough-2026-05]]에서 FAQ/source/process/checklist 노출과 public/private decision point를 추적한다.
 - 다음 빈칸은 정보공개 청구와 겹치는 민원, 반복민원 FAQ template, 민원답변 tone checklist의 제품화 확장이다.

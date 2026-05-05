@@ -36,7 +36,11 @@
 - [[faq-민원대응-boundary-router-공개문안-초안-2026-05]] — 민원대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]] — 민원대응 boundary router 공개문안 FAQ coverage.
 - [[coverage-민원대응-boundary-router-공개문안-process-2026-05]] — 민원대응 공개문안 FAQ/process/checklist layer coverage.
+- [[coverage-민원대응-boundary-router-walkthrough-2026-05]] — 민원 폭주·반복답변 walkthrough의 landing/docs discovery 후보 coverage.
 - [[faq-민원답변-첫문장은-어떻게-쓰나]] / [[faq-민원답변-타기관소관은-어떻게-처리하나]] / [[checklist-민원대응-boundary-router-질문형-검토]] — 민원답변 first sentence, 타기관 소관, 질문형 검토 layer.
+- 법령: [[coverage-법령대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-법령대응-2026-05]] / [[quality-gate-법령대응-공통업무축-2026-05]]
+- [[coverage-법령대응-boundary-router-실행경계-2026-05]] — 법령대응 FAQ/source/process/checklist/walkthrough 실행경계 coverage.
+- [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]] / [[coverage-법령대응-공개설명경계-2026-05]] / [[quality-gate-법령대응-공개설명경계-2026-05]] — 입법예고 공개자료·신구조문·의견답변·제출전 검토의 공개설명경계 묶음.
 - 대외 전환: [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]
 
 ## Internal Operations Axes
@@ -157,6 +161,9 @@
 - [[process-예산대응-boundary-router-공개문안-작성흐름-2026-05]] — 예산대응 boundary router 공개문안 작성흐름.
 - [[coverage-예산대응-boundary-router-공개문안-process-2026-05]] — 예산대응 boundary router 공개문안 process coverage.
 - [[checklist-민원대응-민감정보-masking-제출전검토]] — 민원대응 민감정보 masking checklist
+- [[coverage-민원대응-boundary-router-walkthrough-2026-05]] — 민원 반복답변 boundary walkthrough coverage
 - [[checklist-홍보대응-대외전환-문안분기-제출전검토]] — 홍보대응 대외전환 문안분기 checklist
 - [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명 법률자문성 결론 FAQ
+- [[coverage-법령대응-boundary-router-실행경계-2026-05]] — 법령대응 공개/비공개 실행경계 coverage
+- [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]] — 법령대응 공개설명경계 journey manifest
 
