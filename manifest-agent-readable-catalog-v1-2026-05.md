@@ -32,6 +32,7 @@
 - [[llms-newcomer-onboarding-v1]]
 
 ## High-signal Walkthroughs
+- [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]] — 실제 전입자 시나리오 묶음의 coverage와 다음 빈칸.

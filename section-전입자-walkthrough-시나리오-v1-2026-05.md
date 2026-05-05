@@ -4,6 +4,7 @@
 전입자가 실제 상황을 먼저 떠올렸을 때 바로 탈 수 있는 walkthrough 묶음을 `상황형 section`으로 모은다. 이 section은 docs index를 나중에 `기관군 / 업무축 / 상황형 walkthrough / 품질검증 / agent-readable`로 나눌 때 상황형 walkthrough의 후보 구조가 된다.
 
 ## 시나리오 묶음
+- [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]] — 전체 coverage와 다음 빈칸.
 - [[walkthrough-전입자-시나리오-국회감사민원-대외전환-2026-05]] — 현장소통 자료가 국회·감사·민원 대응으로 전환되는 상황.
 - [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]] — 정보공개청구 첫 검토와 공개/비공개 경계.
