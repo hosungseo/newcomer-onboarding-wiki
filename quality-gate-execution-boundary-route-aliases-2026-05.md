@@ -6,6 +6,7 @@
 - [[coverage-execution-boundary-routes-discovery-2026-05]]
 
 ## Gate 1 — alias 완결성
+- [x] [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]가 신규자 질문을 4개 alias route로 보낼 수 있는가?
 - [x] 4개 교차 route가 coverage/manifest/quality 삼각형을 갖는가?
 - [x] index에서 각 alias 묶음으로 바로 내려갈 수 있는가?
 - [x] section/discovery coverage와 상호 연결되는가?
