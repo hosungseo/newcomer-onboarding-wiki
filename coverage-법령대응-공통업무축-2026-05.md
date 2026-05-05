@@ -45,5 +45,8 @@
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
 - 다음 후보: 입법예고·국회심사 상황형 path, 법령설명 Q&A template, 비공개 협의·법률자문성 결론 masking 사례 FAQ
 
+## 공통 masking FAQ
+- [[faq-공통업무축-민감정보-masking-사례구분]]
+
 ## 금지선
 법률자문성 결론, 비공개 협의 내용, 내부 검토의견, 이해관계자 개인정보·영업비밀, 사건별 수사·감사·감독 자료, 미확정 정책판단을 확정처럼 쓰는 문장은 포함하지 않는다.

@@ -45,5 +45,8 @@
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
 - 다음 후보: 국회예산심사 상황형 path 보강, 요구·정부안·국회심의·확정·집행·결산 단계별 분기 checklist, 비공개 요구안·조정안 masking 사례 FAQ
 
+## 공통 masking FAQ
+- [[faq-공통업무축-민감정보-masking-사례구분]]
+
 ## 금지선
 비공개 요구안, 내부 조정안, 기재부·국회 협의 전략, 미확정 증감 사유, 업체·입찰·평가 정보, dBrain 화면·권한 정보, 개인정보와 사건별 민감정보는 공개 온보딩 note에 포함하지 않는다.
