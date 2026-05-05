@@ -8,6 +8,7 @@ institution/response/core boundary router 제품군을 전입자 온보딩 v1의
 - [[coverage-boundary-router-products-v1-index-2026-05]]
 - [[quality-gate-boundary-router-products-v1-2026-05]]
 - [[manifest-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 manifest.
+- [[coverage-boundary-router-products-v1-manifest-2026-05]] — boundary router products v1 manifest 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-2026-05]] — boundary router products v1 release 노출 coverage.
 
 ## Institution route
