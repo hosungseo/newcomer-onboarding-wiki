@@ -31,6 +31,7 @@
 - [[walkthrough-전입자-시나리오-예산시즌-자료요구-2026-05]] — 예산 시즌 자료요구에서 수치 기준, 국회 제출 전 검토, 공개/비공개 경계를 end-to-end로 확인하는 시나리오다.
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]] — 실제 전입자 walkthrough 3개의 coverage와 다음 빈칸을 확인한다.
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]] — 실제 전입자 walkthrough 4개를 상황형 section으로 묶어 탐색한다.
+- [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]] — walkthrough 묶음이 공개 온보딩 위키에서 안전한지 점검한다.
 - [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]] — 보도자료 초안에서 공개 문장과 미확정 정보 경계를 end-to-end로 확인하는 시나리오다.
 
 ## 같이 봐야 할 기관군
