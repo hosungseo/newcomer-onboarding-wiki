@@ -44,6 +44,7 @@
 대외협력·현장소통 묶음은 공개 온보딩 기준으로 `hub → path → FAQ → source → process → checklist → coverage → manifest` 경로가 닫혀 있다. 다음 단계는 README/landing 노출과 협업회의운영 축과의 경계 비교다.
 
 ## Related Notes
+- [[faq-공통업무축-민감정보-masking-사례구분]]
 - [[section-공통업무축-내부운영협업대외소통-2026-05]]
 - [[coverage-내부운영협업3축-운영정보공개회의-2026-05]]
 - [[landing-전입자-공통업무축-2026-05]]
