@@ -2,6 +2,7 @@
 
 ## 목적
 [[index-boundary-router-products-v1-agent-readable-pack-2026-05]]가 agent-readable release pack 색인으로 노출되는지 확인한다.
+- [[quality-gate-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack quality gate.
 
 ## Agent-readable pack 노출
 - [[manifest-agent-readable-catalog-v1-2026-05]] → [[index-boundary-router-products-v1-agent-readable-pack-2026-05]]

@@ -5,6 +5,7 @@ Agent가 boundary router products v1 release pack을 읽을 때 필요한 manife
 
 ## Agent entrypoints
 - [[coverage-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack 노출 coverage.
+- [[quality-gate-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack quality gate.
 - [[checklist-boundary-router-products-v1-agent-readable-release-pack-2026-05]]
 - [[coverage-boundary-router-products-v1-agent-readable-checklist-2026-05]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
