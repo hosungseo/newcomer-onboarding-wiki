@@ -17,6 +17,7 @@
 
 ## 상위 상태판
 - [[quality-gate-response-boundary-router-checklists-2026-05]] — 대응형 boundary router checklist 묶음 품질 점검.
+- [[index-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist 상황별 색인.
 - [[coverage-institution-boundary-response-hubs-2026-05]]
 - [[quality-gate-institution-boundary-hub-expansion-2026-05]]
 - [[section-최근-boundary-note-묶음-2026-05]]
