@@ -13,6 +13,7 @@
 
 
 ## 개별 hub 연결
+- [[coverage-institution-boundary-core-hubs-2026-05]] — 핵심 업무축 hub의 boundary router 직접 연결 coverage.
 - [[hub-계약조달]] → [[manifest-institution-to-boundary-router-2026-05]]
 - [[hub-조직정원]] → [[manifest-institution-to-boundary-router-2026-05]]
 - [[hub-예산]] → [[manifest-institution-to-boundary-router-2026-05]]
