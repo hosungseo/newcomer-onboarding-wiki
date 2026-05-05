@@ -25,9 +25,9 @@
 | source | 완료 | 예산 근거, 계약 성격, 절차 증빙, 공개자료/내부확인 대상, 후속 대응 연결을 제공함 |
 | process | 완료 | 계약 성격, 예산·절차 단계, 증빙 대조, 공개/비공개 경계, 후속 대응, 표시어를 제공함 |
 | checklist | 완료 | 계약 성격, 예산·절차 단계, 증빙, 금지선, 후속 대응, 제출 전 멈춤선을 점검함 |
-| docs exposure | 부분 완료 | hub/path/FAQ/source/process/checklist/coverage는 웹 인덱스에 노출됨 |
-| manifest | 미완료 | 계약·조달 newcomer journey manifest 필요 |
-| quality gate | 미완료 | 업체정보·입찰 전 자료·내부 평가·법률판단 금지선 점검 note 필요 |
+| docs exposure | 완료 | hub/path/FAQ/source/process/checklist/coverage/manifest/quality gate가 웹 인덱스에 노출됨 |
+| manifest | 완료 | [[manifest-newcomer-journey-계약조달-2026-05]]가 전입자/agent route를 고정함 |
+| quality gate | 완료 | [[quality-gate-계약조달-2026-05]]가 업체정보·입찰 전 자료·내부 평가·법률판단 금지선을 점검함 |
 
 ## 연결 업무축
 - [[hub-예산]]
@@ -47,9 +47,10 @@
 6. 업체별 민감정보와 내부 평가자료는 공개형 note에 쓰지 않는다.
 
 ## 다음 빈칸
-1. 계약·조달 newcomer journey manifest를 만든다.
-2. 계약·조달 quality gate를 만들어 입찰 전 비공개 검토자료, 업체별 민감정보, 내부 평가·심사자료, 협상전략, 예정가격 산정 세부, 법률자문성 결론 금지선을 점검한다.
-3. 감사·국회·민원 대응으로 넘어가는 계약자료 설명 분기 manifest를 만든다.
+1. 계약·조달 newcomer journey manifest와 quality gate는 [[manifest-newcomer-journey-계약조달-2026-05]] / [[quality-gate-계약조달-2026-05]]로 닫혔다.
+2. 다음은 감사·국회·민원 대응으로 넘어가는 계약자료 설명 분기 manifest를 만들지 검토한다.
+3. 계약자료를 공개자료/내부평가/업체민감정보로 나누는 사례형 FAQ를 보강할지 검토한다.
+4. 예정가격·검사검수·대금지급처럼 반복되는 하위 단계별 checklist가 필요한지 검토한다.
 
 ## 금지선
 입찰 전 비공개 검토자료, 업체별 민감정보, 내부 평가·심사자료, 특정 계약 상대방에 대한 비공개 판단, 협상전략, 예정가격 산정 세부, 법률자문성 결론은 포함하지 않는다.
