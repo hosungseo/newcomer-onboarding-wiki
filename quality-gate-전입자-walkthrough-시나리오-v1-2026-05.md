@@ -17,6 +17,7 @@
 - [x] 각 walkthrough는 checklist 또는 quality gate로 내려간다.
 - [x] 각 walkthrough에는 공개/비공개 멈춤선이 있다.
 - [x] agent-readable catalog와 llms metadata에서 high-signal scenario로 찾을 수 있다.
+- [x] docs/landing/release candidate에서 quality gate 진입 경로가 노출됐다.
 - [ ] docs index는 아직 상황형 walkthrough 전용 section UI로 분리되지 않았다.
 
 ## 공개 안전 점검

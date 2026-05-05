@@ -33,6 +33,7 @@
 
 ## High-signal Walkthroughs
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
+- [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]] — 실제 전입자 시나리오 묶음의 coverage와 다음 빈칸.
 - [[walkthrough-전입자-시나리오-국회감사민원-대외전환-2026-05]] — 현장소통 자료가 국회·감사·민원 대응으로 전환되는 상황.
 - [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]] — 정보공개청구 첫 검토와 공개/비공개 경계 확인 상황.
