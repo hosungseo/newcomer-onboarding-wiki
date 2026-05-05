@@ -1,5 +1,6 @@
 # FAQ — 계약조달 Boundary Router 공개문안 초안 2026-05
 - [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]] — 계약조달 boundary router 공개문안 FAQ coverage.
+- [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]] — 계약조달 boundary router 공개문안 작성흐름.
 
 ## Q1. 계약조달 자료를 공개 문안으로 바꿀 때 먼저 무엇을 확인하나?
 먼저 [[checklist-계약조달-boundary-router-질문형-검토]]로 공개 가능한 계약 목적, 절차, 공고·계약 일반정보만 남긴다. 세부 산출내역, 업체 영업정보, 평가·협상 내부자료는 공개 문안에서 분리한다.
