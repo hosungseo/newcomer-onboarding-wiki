@@ -14,6 +14,7 @@
    - 감사→국회·언론·민원, 국회→감사·예산·홍보, 정보공개→민원·법령, 협업회의→홍보·국회 route를 함께 본다.
 
 ## 바로가기
+- [[coverage-response-boundary-checklist-walkthrough-2026-05]] — 대응형 boundary checklist entry walkthrough 노출 coverage.
 - [[index-response-boundary-router-checklists-2026-05]]
 - [[manifest-response-boundary-router-checklists-2026-05]]
 - [[quality-gate-response-boundary-router-checklists-2026-05]]

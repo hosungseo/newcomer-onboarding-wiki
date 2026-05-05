@@ -13,6 +13,7 @@
 
 ## 포함 묶음
 - [[walkthrough-response-boundary-checklist-entry-2026-05]] — 대응형 업무에서 boundary checklist landing으로 들어가는 질문형 walkthrough.
+- [[coverage-response-boundary-checklist-walkthrough-2026-05]] — 대응형 boundary checklist entry walkthrough 노출 coverage.
 - [[index-response-boundary-router-checklists-2026-05]]
 - [[manifest-response-boundary-router-checklists-2026-05]]
 - [[quality-gate-response-boundary-router-checklists-2026-05]]
