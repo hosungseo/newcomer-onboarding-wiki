@@ -15,6 +15,7 @@
 - [[process-institution-boundary-router-hub-linking-2026-05]]
 
 ## 상위 상태판
+- [[quality-gate-institution-boundary-hub-expansion-2026-05]] — 기관군 section·core hub·response hub boundary router 확장 점검.
 - [[coverage-institution-boundary-core-hubs-2026-05]]
 - [[quality-gate-institution-to-boundary-router-2026-05]]
 - [[coverage-최근-boundary-note-묶음-2026-05]]
