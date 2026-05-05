@@ -38,6 +38,7 @@
 
 ## 최근 boundary note 묶음
 - [[section-execution-boundary-routes-2026-05]] — 계약조달·조직정원·감사국회·민원법령·정보공개협업회의·홍보대외협력 실행경계 route를 한 화면에서 고르는 최상위 section.
+- [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality 묶음.
 - [[section-실행경계-boundary-router-4축-2026-05]] / [[section-민원법령-boundary-router-실행경계-2026-05]] — 예산·조직정원·홍보·정보공개 및 민원·법령 companion route를 먼저 고르는 보조 section.
 - 교차축 route-map: [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]] / [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]] / [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]] / [[walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05]] 중 상황에 맞는 축으로 내려간다.
 - 질문형 멈춤선은 [[checklist-계약조달-boundary-router-질문형-검토]] / [[checklist-조직정원-boundary-router-질문형-검토]] / [[checklist-정보공개기록관리-boundary-router-질문형-검토]] / [[checklist-협업회의운영-boundary-router-질문형-검토]] / [[checklist-감사대응-boundary-router-질문형-검토]] / [[checklist-국회대응-boundary-router-질문형-검토]]에서 먼저 확인한다.
