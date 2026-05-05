@@ -16,6 +16,11 @@
 - [[quality-gate-institution-to-boundary-router-2026-05]]
 - [[coverage-최근-boundary-note-묶음-2026-05]]
 
+
+## 직접 연결 완료 기관별 hub
+- [[hub-감사원]] → [[manifest-institution-to-boundary-router-2026-05]]
+- [[hub-조달청]] → [[manifest-institution-to-boundary-router-2026-05]]
+
 ## 다음 작업
 - [[coverage-institution-boundary-response-hubs-2026-05]] — 대응형 업무 hub의 boundary router 직접 연결 coverage.
 - [[coverage-institution-boundary-core-hubs-2026-05]] — 핵심 업무축 hub의 boundary router 직접 연결 coverage.

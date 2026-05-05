@@ -1,4 +1,5 @@
 # hub — 조달청
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 
 - type: hub
 - institution: 조달청
