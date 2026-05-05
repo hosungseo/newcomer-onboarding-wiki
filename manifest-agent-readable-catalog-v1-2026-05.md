@@ -94,6 +94,8 @@
 - [[quality-gate-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack quality gate.
 - [[coverage-boundary-router-products-v1-agent-readable-pack-manifest-2026-05]] — boundary router products v1 agent-readable pack manifest 노출 coverage.
 - [[manifest-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack manifest.
+- [[release-candidate-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack release candidate.
+- [[coverage-boundary-router-products-v1-agent-readable-pack-release-2026-05]] — boundary router products v1 agent-readable pack release 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-pack-candidate-2026-05]] — boundary router products v1 release pack candidate 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-pack-manifest-2026-05]] — boundary router products v1 release pack manifest 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-pack-2026-05]] — boundary router products v1 release pack 노출 coverage.
