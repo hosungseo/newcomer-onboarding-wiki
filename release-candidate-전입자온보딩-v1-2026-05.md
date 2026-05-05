@@ -49,6 +49,7 @@
 - [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
 - [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 묶음의 section entry.
 - [[quality-gate-institution-to-boundary-router-2026-05]] — 기관군 to boundary router 안전 점검.
+- [[coverage-institution-boundary-router-section-2026-05]] — 대표 6개 기관군 section의 boundary router 연결 coverage.
 - [[llms-newcomer-onboarding-v1]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
 
