@@ -30,6 +30,7 @@
 - [[quality-gate-법무거버넌스부처전입-2026-05]]
 
 ## Related Notes
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 공통업무축 boundary note로 되돌아가는 route.
 - [[hub-법무거버넌스부처전입]] / [[newcomer-path-법무거버넌스부처전입-첫주-2026-05]]
 - [[source-법무거버넌스부처-공개경로-전입자메모-2026-05]]
 - [[faq-법무거버넌스부처-전입첫날-사건보다-무엇을-먼저-보나]]

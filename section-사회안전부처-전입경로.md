@@ -113,6 +113,7 @@
 - [[quality-gate-사회안전부처전입-2026-05]]
 
 ## Related Notes
+- [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 공통업무축 boundary note로 되돌아가는 route.
 - [[hub-사회안전부처전입]] / [[newcomer-path-사회안전부처전입-첫주-2026-05]]
 - [[faq-전입자의-첫적응질문]]
 - [[hub-보건복지부]]
