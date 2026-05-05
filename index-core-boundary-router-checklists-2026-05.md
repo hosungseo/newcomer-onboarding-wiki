@@ -11,6 +11,7 @@
 - release 상태: [[release-candidate-core-boundary-checklists-2026-05]]
 
 ## Coverage
+- [[coverage-core-boundary-checklist-index-2026-05]] — 핵심 업무축 boundary checklist index 노출 coverage.
 - [[coverage-core-boundary-router-landing-2026-05]]
 - [[coverage-core-boundary-checklist-walkthrough-2026-05]]
 - [[coverage-institution-boundary-core-hubs-2026-05]]

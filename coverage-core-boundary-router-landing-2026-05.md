@@ -19,6 +19,7 @@
 - [[checklist-법령대응-boundary-router-질문형-검토]]
 
 ## 다음 후보
+- [[coverage-core-boundary-checklist-index-2026-05]] — 핵심 업무축 boundary checklist index 노출 coverage.
 - [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 core checklist landing을 README, agent catalog, llms metadata, release candidate에 노출한다.
 
