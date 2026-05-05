@@ -17,6 +17,7 @@
 - [[section-최근-boundary-note-묶음-2026-05]]
 
 ## 다음 후보
+- [[index-institution-boundary-router-next-hubs-2026-05]] — 기관별 개별 hub boundary router 연결 후보 index.
 - 기관별 개별 hub 중 계약·조직·예산·민원·홍보·법령 boundary router가 특히 필요한 대표 hub를 선별한다.
 
 ## 금지선

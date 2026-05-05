@@ -12,6 +12,7 @@
 6. 법령·제도 설명에서 법률판단처럼 보이면 [[faq-법령설명-법률자문성결론은-어디서-멈추나]]로 간다.
 
 ## 상위 진입
+- [[index-institution-boundary-router-next-hubs-2026-05]] — 기관별 개별 hub boundary router 연결 후보 index.
 - [[quality-gate-institution-to-boundary-router-2026-05]] — 기관군 to boundary router 안전 점검.
 - [[coverage-institution-boundary-router-section-2026-05]] — 대표 기관군 section의 boundary router 연결 coverage.
 - [[landing-전입자-기관군별-온보딩-2026-05]]
