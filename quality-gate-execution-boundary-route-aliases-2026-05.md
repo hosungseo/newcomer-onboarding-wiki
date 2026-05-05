@@ -21,6 +21,7 @@
 - [x] [[landing-전입자-공통업무축-2026-05]]에서 alias index로 들어올 수 있는가?
 - [x] docs/index.html quick-link에서 alias index로 들어올 수 있는가?
 - [x] [[manifest-agent-readable-catalog-v1-2026-05]] agent catalog에서 alias index/manifest/quality gate로 들어올 수 있는가?
+- [x] agent catalog에서 alias 질문 router로도 들어올 수 있는가?
 
 ## 판정
 실행경계 alias 묶음은 전입자의 이름 검색과 교차축 탐색을 돕는 고수준 index로 유지한다.
