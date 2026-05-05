@@ -208,6 +208,8 @@ v1 체크포인트:
 - [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist를 묶은 공통업무축 section.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개/업체민감정보 FAQ
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 조직정원 공식조직도/업무분장 FAQ
+- [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]] — 조직정원 boundary router 공개문안 작성흐름.
+- [[coverage-조직정원-boundary-router-공개문안-process-2026-05]] — 조직정원 boundary router 공개문안 process coverage.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
 - [[checklist-민원대응-민감정보-masking-제출전검토]] — 민원대응 민감정보 masking checklist
 - [[checklist-홍보대응-대외전환-문안분기-제출전검토]] — 홍보대응 대외전환 문안분기 checklist

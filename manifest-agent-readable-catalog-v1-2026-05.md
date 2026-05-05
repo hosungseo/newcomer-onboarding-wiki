@@ -142,6 +142,8 @@
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 조직정원 공식조직도/업무분장 FAQ
 - [[faq-조직정원-boundary-router-공개문안-초안-2026-05]] — 조직정원 boundary router 공개문안 초안 FAQ.
 - [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]] — 조직정원 boundary router 공개문안 FAQ coverage.
+- [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]] — 조직정원 boundary router 공개문안 작성흐름.
+- [[coverage-조직정원-boundary-router-공개문안-process-2026-05]] — 조직정원 boundary router 공개문안 process coverage.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
 - [[checklist-민원대응-민감정보-masking-제출전검토]] — 민원대응 민감정보 masking checklist
 - [[checklist-홍보대응-대외전환-문안분기-제출전검토]] — 홍보대응 대외전환 문안분기 checklist
