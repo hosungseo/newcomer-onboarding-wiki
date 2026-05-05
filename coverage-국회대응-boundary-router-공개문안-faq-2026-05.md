@@ -3,6 +3,7 @@
 ## 목적
 [[faq-국회대응-boundary-router-공개문안-초안-2026-05]]가 국회대응 공개문안 초안 경로에서 발견되는지 확인한다.
 - [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] — 국회대응 boundary router 공개문안 작성흐름.
+- [[coverage-국회대응-boundary-router-공개문안-process-2026-05]] — 국회대응 boundary router 공개문안 process coverage.
 
 ## 노출 확인
 - [[checklist-국회대응-boundary-router-질문형-검토]] → [[faq-국회대응-boundary-router-공개문안-초안-2026-05]]
