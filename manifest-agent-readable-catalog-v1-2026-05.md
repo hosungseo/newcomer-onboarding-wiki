@@ -80,6 +80,8 @@
 - [[quality-gate-boundary-router-products-v1-2026-05]] — boundary router products v1 통합 quality gate.
 - [[release-candidate-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 통합 release candidate.
 - [[manifest-boundary-router-products-v1-2026-05]] — institution/response/core boundary router products v1 manifest.
+- [[walkthrough-boundary-router-products-v1-entry-2026-05]] — institution/response/core boundary router products v1 통합 walkthrough.
+- [[coverage-boundary-router-products-v1-walkthrough-2026-05]] — boundary router products v1 walkthrough 노출 coverage.
 - [[coverage-boundary-router-products-v1-manifest-2026-05]] — boundary router products v1 manifest 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-2026-05]] — boundary router products v1 release 노출 coverage.
 - [[index-boundary-router-products-v1-2026-05]] — institution/response/core boundary router 제품군 v1 index.
