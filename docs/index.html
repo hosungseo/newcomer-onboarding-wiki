@@ -575,13 +575,30 @@ function renderLanding() {
   `;
   app.appendChild(transferLinks);
 
-  const scenarioLabel = document.createElement('div');
-  scenarioLabel.className = 'section-title';
-  scenarioLabel.textContent = '상황형 walkthrough — 실제 질문에서 바로 고르기';
+  const responseLabel = document.createElement('div');
+  responseLabel.className = 'section-title';
+  responseLabel.textContent = '대응형 boundary checklist — 감사·국회 먼저 보기';
+  app.appendChild(responseLabel);
+
+  const responseLinks = document.createElement('div');
+  responseLinks.className = 'quick-links';
+  responseLinks.innerHTML = `
     <a class="quick-link featured" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/landing-response-boundary-router-checklists-2026-05.md" target="_blank" rel="noopener">대응형 checklist — 감사·국회·정보공개·협업회의 바로 고르기</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/checklist-감사대응-boundary-router-질문형-검토.md" target="_blank" rel="noopener">감사대응 질문형 checklist</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/process-감사대응-boundary-router-공개문안-작성흐름-2026-05.md" target="_blank" rel="noopener">감사대응 공개문안 process</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/faq-감사대응-boundary-router-공개문안-초안-2026-05.md" target="_blank" rel="noopener">감사대응 공개문안 FAQ</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/checklist-국회대응-boundary-router-질문형-검토.md" target="_blank" rel="noopener">국회대응 질문형 checklist</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/process-국회대응-boundary-router-공개문안-작성흐름-2026-05.md" target="_blank" rel="noopener">국회대응 공개문안 process</a>
+    <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/faq-국회대응-boundary-router-공개문안-초안-2026-05.md" target="_blank" rel="noopener">국회대응 공개문안 FAQ</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/walkthrough-response-boundary-checklist-entry-2026-05.md" target="_blank" rel="noopener">대응형 boundary checklist entry walkthrough</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/coverage-response-boundary-checklist-walkthrough-2026-05.md" target="_blank" rel="noopener">대응형 boundary checklist walkthrough coverage</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/release-candidate-response-boundary-checklists-2026-05.md" target="_blank" rel="noopener">대응형 boundary checklist release candidate</a>
+  `;
+  app.appendChild(responseLinks);
+
+  const scenarioLabel = document.createElement('div');
+  scenarioLabel.className = 'section-title';
+  scenarioLabel.textContent = '상황형 walkthrough — 실제 질문에서 바로 고르기';
   app.appendChild(scenarioLabel);
 
   const scenarioIntro = document.createElement('p');
