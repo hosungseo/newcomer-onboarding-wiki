@@ -12,6 +12,7 @@
 ## 공통 route
 - [[manifest-response-boundary-router-checklists-2026-05]]
 - [[quality-gate-response-boundary-router-checklists-2026-05]]
+- [[landing-response-boundary-router-checklists-2026-05]] — 대응형 boundary checklist를 상황별로 바로 고르는 landing.
 - [[walkthrough-institution-boundary-router-question-flow-2026-05]]
 - [[manifest-institution-to-boundary-router-2026-05]]
 

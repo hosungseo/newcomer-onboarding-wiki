@@ -3,6 +3,7 @@
 ## 목적
 [[manifest-response-boundary-router-checklists-2026-05]]가 감사·국회·정보공개·협업회의운영 질문형 checklist 묶음을 안전하게 고정했는지 점검한다.
 - [[index-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist 상황별 색인.
+- [[landing-response-boundary-router-checklists-2026-05]] — 대응형 boundary checklist를 상황별로 바로 고르는 landing.
 
 ## Gate 1 — checklist 존재
 - [x] [[checklist-감사대응-boundary-router-질문형-검토]]가 있다.
