@@ -14,6 +14,7 @@
 ## 상태판
 - [[coverage-최근-boundary-note-묶음-2026-05]]
 - [[quality-gate-최근-boundary-note-묶음-2026-05]] — 최근 boundary note 묶음의 공개/비공개 안전 점검.
+- [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
 
 ## 사용 순서
 1. 업무축을 먼저 고른다.
