@@ -12,6 +12,7 @@
 - 법령 설명·제도 안내·해석 요청 → [[checklist-법령대응-boundary-router-질문형-검토]]
 
 ## 묶음과 검증
+- [[coverage-core-boundary-router-landing-2026-05]] — 핵심 업무축 boundary checklist landing 노출 coverage.
 - [[manifest-core-boundary-router-checklists-2026-05]]
 - [[quality-gate-core-boundary-router-checklists-2026-05]]
 - [[coverage-institution-boundary-core-hubs-2026-05]]

@@ -3,6 +3,7 @@
 ## 목적
 [[manifest-core-boundary-router-checklists-2026-05]]가 핵심 업무축 6개 checklist 묶음을 안전하게 고정했는지 점검한다.
 - [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
+- [[coverage-core-boundary-router-landing-2026-05]] — 핵심 업무축 boundary checklist landing 노출 coverage.
 
 ## Gate 1 — checklist 존재
 - [x] [[checklist-계약조달-boundary-router-질문형-검토]]가 있다.
