@@ -146,6 +146,15 @@ v1 체크포인트:
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[manifest-scenario-router-walkthrough-v1-2026-05]]
+
+## 최근 boundary note 묶음
+- [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개/업체민감정보 FAQ
+- [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 조직정원 공식조직도/업무분장 FAQ
+- [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
+- [[checklist-민원대응-민감정보-masking-제출전검토]] — 민원대응 민감정보 masking checklist
+- [[checklist-홍보대응-대외전환-문안분기-제출전검토]] — 홍보대응 대외전환 문안분기 checklist
+- [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명 법률자문성 결론 FAQ
+
 - [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]] — 국회 대응 시즌 자료요구·서면질의 답변.
 - [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]] — 감사 대응 시즌 자료제출.
 - [[release-candidate-전입자온보딩-v1-2026-05]]
