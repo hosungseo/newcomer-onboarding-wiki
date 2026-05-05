@@ -39,6 +39,7 @@
 - [[coverage-대외협력현장소통-공통업무축-2026-05]] / [[manifest-newcomer-journey-대외협력현장소통-2026-05]] / [[quality-gate-대외협력현장소통-2026-05]]
 
 ## Agent-readable catalog
+- [[llms-newcomer-onboarding-v1]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
 
 ## v1 이후 남은 고도화 후보

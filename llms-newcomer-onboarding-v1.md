@@ -1,0 +1,29 @@
+# llms.txt — newcomer-onboarding-wiki v1
+
+## Purpose
+This file gives AI agents a compact entry map for the public newcomer onboarding wiki. Use it to route newcomer questions by institution, situation, work axis, source/checklist, and public/non-public boundary.
+
+## Primary entry points
+- [[release-candidate-전입자온보딩-v1-2026-05]]
+- [[manifest-agent-readable-catalog-v1-2026-05]]
+- [[landing-전입자-기관군별-온보딩-2026-05]]
+- [[landing-전입자-공통업무축-2026-05]]
+- [[landing-전입자-전입첫주-전체기관-2026-05]]
+
+## Route order
+1. If the question names an institution group, start with institution-group landing.
+2. If the question names a work type, start with common-work-axis landing.
+3. If the question is about first-week adaptation, start with first-week landing and FAQ paths.
+4. If the question asks what can be submitted, disclosed, or answered, open the relevant checklist and quality gate.
+5. If the text contains personal data, internal review, unresolved policy, audit/investigation details, or vendor-sensitive information, use masking FAQ and stop at public-safe wording.
+
+## High-signal manifests
+- [[manifest-newcomer-journey-국회대응-2026-05]]
+- [[manifest-newcomer-journey-감사대응-2026-05]]
+- [[manifest-newcomer-journey-민원대응-2026-05]]
+- [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]]
+- [[manifest-newcomer-journey-내부운영협업대외소통-2026-05]]
+- [[manifest-newcomer-journey-대외협력현장소통-2026-05]]
+
+## Safety boundary
+Never include personal data, complainant identifiers, vendor-sensitive details, non-public internal review opinions, unresolved policy drafts, audit/investigation/surveillance/security details, legal-advice conclusions, or distorted individual field statements in public onboarding notes.
