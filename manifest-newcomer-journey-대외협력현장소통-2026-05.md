@@ -31,6 +31,15 @@ steps:
   coverage: coverage-대외협력현장소통-공통업무축-2026-05.md
   conversion_manifest: manifest-newcomer-journey-대외협력현장소통-국회감사민원전환-2026-05.md
   walkthrough_status: no_dedicated_walkthrough_use_section_and_manifest
+  landing_exposure:
+    - landing-전입자-공통업무축-2026-05.md
+  docs_index_exposure:
+    - hub-대외협력현장소통.md
+    - checklist-대외협력현장소통-민감정보-masking-제출전검토.md
+    - checklist-대외협력현장소통-국회감사민원-전환검토.md
+    - manifest-newcomer-journey-대외협력현장소통-국회감사민원전환-2026-05.md
+    - coverage-대외협력현장소통-공통업무축-2026-05.md
+    - quality-gate-대외협력현장소통-2026-05.md
 branch_to:
   회의_후속조치: hub-협업회의운영.md
   기록_정보공개: hub-정보공개기록관리.md
@@ -52,6 +61,7 @@ stop_lines:
 2. 현장 의견, 관계기관 협의 상태, 후속조치 후보는 담당 확인 필요 표시를 붙인다.
 3. 개인정보·민원인·업체·관계자 식별 위험은 masking checklist로 보내고 공개 route에서 제외한다.
 4. 국회·감사·민원으로 전환되면 [[manifest-newcomer-journey-대외협력현장소통-국회감사민원전환-2026-05]]를 먼저 탄 뒤 대상 업무축 checklist로 내려간다.
+5. 웹 진입은 [[landing-전입자-공통업무축-2026-05]]와 docs/index.html quick link에서 확인하며, 전용 walkthrough가 없으면 [[section-대외협력현장소통-전환묶음-2026-05]]와 전환 manifest를 사용한다.
 
 ## 공개/비공개 금지선
 이 manifest는 공개 온보딩 경로만 다룬다. 개인정보, 민원인 식별정보, 업체별 민감정보, 비공개 내부검토 의견, 미확정 정책안, 현장 관계자 개인 평가나 발언 왜곡은 route, 결과초안, checklist에 넣지 않는다.

@@ -25,5 +25,10 @@
 - [[coverage-감사대응-공통업무축-2026-05]]
 - [[coverage-민원대응-공통업무축-2026-05]]
 
+## Discovery exposure
+- [[landing-전입자-공통업무축-2026-05]]의 대외협력·현장소통 묶음에서 이 전환 manifest로 진입한다.
+- docs/index.html quick link는 대외협력·현장소통 전환 checklist, 이 manifest, 국회·감사·민원 대외전환 section/manifest/quality gate를 같은 구간에 노출한다.
+- 전용 walkthrough가 없는 동안은 [[section-대외협력현장소통-전환묶음-2026-05]]와 [[section-국회감사민원-대외전환-2026-05]]를 discovery anchor로 사용한다.
+
 ## do_not_include
 개인정보, 민원인 식별정보, 업체별 민감정보, 감사·조사·수사 세부, 비공개 내부검토 의견, 미확정 정책안, 법률자문성 결론, 현장 관계자 개인 평가나 발언 왜곡은 포함하지 않는다.

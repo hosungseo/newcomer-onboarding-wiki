@@ -45,6 +45,7 @@
 - [x] 없는 파일을 placeholder wikilink로 만들지 않는다.
 - [x] 새 note는 최소 2개 이상 기존 note와 연결되어 있다.
 - [x] docs/index.html에 hub/path/source/process/checklist/coverage/manifest가 노출되어 있다.
+- [x] [[landing-전입자-공통업무축-2026-05]]와 docs/index.html에서 masking checklist, 국회·감사·민원 전환 checklist, 전환 manifest, section, quality gate가 함께 발견된다.
 
 ## 5. 남은 고도화 후보
 1. 대외협력·현장소통 전용 walkthrough를 만들지 여부를 검토한다. 생성 전에는 후보명을 wikilink로 만들지 않는다.
@@ -52,7 +53,7 @@
 3. 현장 의견이 홍보 대응으로 넘어갈 때는 [[hub-홍보대응]]의 boundary router checklist와 함께 다시 점검한다.
 
 ## 판정
-대외협력·현장소통 묶음은 공개 온보딩 기준으로 `hub → path → FAQ → source → process → checklist → coverage → manifest` 경로가 닫혀 있다. 다음 단계는 README/landing 노출과 협업회의운영 축과의 경계 비교다.
+대외협력·현장소통 묶음은 공개 온보딩 기준으로 `hub → path → FAQ → source → process → checklist → coverage → manifest` 경로가 닫혀 있고, README/landing/docs 노출도 완료됐다. 다음 단계는 협업회의운영 축과의 경계 비교다.
 
 ## Related Notes
 - [[faq-공통업무축-민감정보-masking-사례구분]]
@@ -68,4 +69,4 @@
 ## 다음 후보 최신화
 - README/landing/docs 노출과 후속조치 경계 process는 완료됐다.
 - 후속조치 checklist 분화는 [[checklist-대외협력현장소통-민감정보-masking-제출전검토]]로 시작했고, 현장의견/공식입장 표현 예시 FAQ는 [[faq-대외협력현장소통-현장의견-표현예시]]로 시작했다.
-- 국회·감사·민원 전환 checklist는 [[checklist-대외협력현장소통-국회감사민원-전환검토]]로 시작했다. 다음은 docs quick link 묶음 분리다.
+- 국회·감사·민원 전환 checklist는 [[checklist-대외협력현장소통-국회감사민원-전환검토]]로 시작했고, docs quick link 묶음 노출도 완료됐다. 다음은 실제 전입자 landing 문구가 전환 경계를 충분히 설명하는지 점검한다.

@@ -31,6 +31,13 @@ steps:
     question_checklist: checklist-홍보대응-boundary-router-질문형-검토.md
     checklist_coverage: coverage-홍보대응-boundary-router-질문형-검토-2026-05.md
     walkthrough: walkthrough-core-boundary-checklist-entry-2026-05.md
+    landing_exposure:
+      - landing-core-boundary-router-checklists-2026-05.md
+      - landing-전입자-공통업무축-2026-05.md
+    docs_index_exposure:
+      - checklist-홍보대응-boundary-router-질문형-검토.md
+      - coverage-홍보대응-boundary-router-질문형-검토-2026-05.md
+      - checklist-홍보대응-대외전환-문안분기-제출전검토.md
     faq_status: pending_no_placeholder_wikilink
     source_status: use_source_홍보대응_자료대조순서_until_boundary_source_exists
     process_status: use_process_홍보대응_보도자료초안_작성흐름_until_boundary_process_exists
@@ -51,6 +58,7 @@ stop_lines:
 3. 별도 홍보대응 boundary FAQ/source/process note가 생기기 전까지는 기본 FAQ/source/process를 사용하고, 생성 전 후보명은 wikilink로 만들지 않는다.
 4. [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]]에서 checklist coverage와 남은 gap을 확인한다.
 5. 다른 core 업무축 경계와 비교해야 하면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아간다.
+6. 전입자가 웹에서 찾을 때는 [[landing-core-boundary-router-checklists-2026-05]] 또는 [[landing-전입자-공통업무축-2026-05]]를 먼저 보고, docs/index.html quick link에서는 checklist → coverage → 대외전환 checklist 순서로 확인한다.
 
 ## Public/private decision route
 1. 공개 가능한 확정 사실과 공개근거만 본문 문장으로 남긴다.

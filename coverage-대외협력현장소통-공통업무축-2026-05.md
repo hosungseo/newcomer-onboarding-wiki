@@ -45,8 +45,10 @@
 3. **비공개 유지**: 개인정보, 민원인 식별정보, 업체별 민감정보, 비공개 내부검토 의견, 미확정 정책안, 현장 관계자 개인 평가나 발언 왜곡.
 4. **전환 시 재검토**: 국회 자료요구·감사 확인·민원 답변·홍보 문안으로 바뀌면 [[manifest-newcomer-journey-대외협력현장소통-국회감사민원전환-2026-05]]와 대상 업무축 checklist를 다시 탄다.
 
-## Walkthrough exposure
+## Walkthrough / landing / docs exposure
 - 전용 walkthrough note는 아직 만들지 않았다. 현재는 [[section-대외협력현장소통-전환묶음-2026-05]]와 전환 manifest가 FAQ/source/process/checklist 순서를 안내하며, 새 walkthrough를 만들기 전에는 placeholder wikilink를 두지 않는다.
+- [[landing-전입자-공통업무축-2026-05]]는 hub, 첫주 path, 표현 FAQ, masking checklist, 전환 checklist, 전환 manifest, source/process/checklist, coverage, section, quality gate를 한 묶음으로 노출한다.
+- docs/index.html quick link는 대외협력·현장소통 hub부터 quality gate까지, 그리고 국회·감사·민원 대외전환 section/manifest/quality gate까지 함께 노출한다.
 
 ## Manifest
 - [[manifest-newcomer-journey-대외협력현장소통-2026-05]]
@@ -59,7 +61,8 @@
 4. 현장의견/공식입장 표현 예시 FAQ는 [[faq-대외협력현장소통-현장의견-표현예시]]로 시작했다.
 5. 국회·감사·민원 전환 흐름은 [[manifest-newcomer-journey-대외협력현장소통-국회감사민원전환-2026-05]]로 manifest까지 닫혔다.
 6. 대외협력·현장소통 산출물 묶음 분리는 [[section-대외협력현장소통-전환묶음-2026-05]]로 시작했고, README/landing/docs 노출까지 완료됐다.
-7. 다음은 이 section을 국회·감사·민원 coverage의 교차 진입부에도 노출할지 검토한다.
+7. docs/landing discovery 기준으로는 전입자 landing → 대외협력·현장소통 묶음 → 전환 manifest → 국회·감사·민원 대외전환 section/quality gate까지 이어진다.
+8. 다음은 이 section을 국회·감사·민원 coverage의 교차 진입부에도 더 강하게 노출할지 검토한다.
 
 ## Section
 - [[section-대외협력현장소통-전환묶음-2026-05]]

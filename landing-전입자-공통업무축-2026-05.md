@@ -39,6 +39,8 @@
 ## 최근 boundary note 묶음
 - [[section-실행경계-boundary-router-4축-2026-05]] — 예산·조직정원·홍보·정보공개 실행경계 route를 한 화면에서 고르는 companion section.
 - [[section-민원법령-boundary-router-실행경계-2026-05]] — 민원·법령 boundary route를 개인정보·사건정보·법률자문성 결론 금지선 기준으로 고르는 companion section.
+- 홍보대응 질문형 route: [[checklist-홍보대응-boundary-router-질문형-검토]] → [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]] → [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]]로 이어서, 보도자료·브리핑·대외 설명 문안의 공식발표 가능 범위를 먼저 가른다.
+- 홍보대응/현장소통 후속조치 route: [[walkthrough-대외협력현장소통-기관상황업무축-공개경계]] → [[checklist-홍보대응-현장소통-후속조치-실행경계]] → [[newcomer-path-홍보대응-대외문안-공개경계]] / [[section-대외협력현장소통-전환묶음-2026-05]]로 이동해 현장 의견·공식입장·후속조치·공개문안의 경계를 분리한다.
 - 정보공개·기록관리/협업회의 통합 route: [[router-정보공개기록관리-협업회의-신규자-공개경계]] → [[newcomer-path-정보공개기록관리-협업회의-공개경계]] → [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]] / [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
 - 정보공개·기록관리 공개문안 route: [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] → [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]]
 - 협업회의운영 공개문안 route: [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]] → [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]
