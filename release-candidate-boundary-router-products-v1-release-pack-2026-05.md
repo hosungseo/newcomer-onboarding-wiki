@@ -11,6 +11,8 @@ boundary router products v1 release pack을 전입자 온보딩 v1의 최종 배
 - [[coverage-boundary-router-products-v1-agent-readable-checklist-2026-05]] — boundary router products v1 agent-readable checklist 노출 coverage.
 - [[index-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack index.
 - [[quality-gate-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack quality gate.
+- [[manifest-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack manifest.
+- [[coverage-boundary-router-products-v1-agent-readable-pack-manifest-2026-05]] — boundary router products v1 agent-readable pack manifest 노출 coverage.
 - [[index-boundary-router-products-v1-release-pack-2026-05]]
 - [[coverage-boundary-router-products-v1-release-pack-2026-05]]
 - [[quality-gate-boundary-router-products-v1-release-pack-2026-05]]
