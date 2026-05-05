@@ -13,6 +13,7 @@
 ## Coverage
 - [[coverage-core-boundary-checklist-index-2026-05]] — 핵심 업무축 boundary checklist index 노출 coverage.
 - [[index-boundary-router-checklist-products-2026-05]] — response/core boundary router checklist 제품군 cross-index.
+- [[coverage-boundary-router-checklist-products-index-2026-05]] — response/core boundary checklist products cross-index coverage.
 - [[coverage-core-boundary-router-landing-2026-05]]
 - [[coverage-core-boundary-checklist-walkthrough-2026-05]]
 - [[coverage-institution-boundary-core-hubs-2026-05]]

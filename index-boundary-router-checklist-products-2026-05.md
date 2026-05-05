@@ -21,6 +21,7 @@
 - [[index-institution-boundary-router-next-hubs-2026-05]]
 
 ## Coverage
+- [[coverage-boundary-router-checklist-products-index-2026-05]] — response/core boundary checklist products cross-index coverage.
 - [[coverage-response-boundary-router-landing-2026-05]]
 - [[coverage-response-boundary-checklist-walkthrough-2026-05]]
 - [[coverage-core-boundary-router-landing-2026-05]]
