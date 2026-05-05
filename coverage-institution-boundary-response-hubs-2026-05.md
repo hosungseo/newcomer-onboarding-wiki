@@ -12,6 +12,7 @@
 - [[hub-협업회의운영]] → [[manifest-institution-to-boundary-router-2026-05]]
 
 ## 연결 기준
+- [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]] — 정보공개기록관리 boundary router 질문형 checklist 연결 coverage.
 - [[coverage-국회대응-boundary-router-질문형-검토-2026-05]] — 국회대응 boundary router 질문형 checklist 연결 coverage.
 - [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
 - [[faq-기관별-hub-boundary-router는-언제-직접-연결하나]]
