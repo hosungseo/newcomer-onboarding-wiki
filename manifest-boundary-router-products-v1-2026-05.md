@@ -6,6 +6,7 @@
 ## v1 entrypoint
 - [[index-boundary-router-products-v1-2026-05]]
 - [[quality-gate-boundary-router-products-v1-2026-05]]
+- [[walkthrough-boundary-router-products-v1-entry-2026-05]] — institution/response/core boundary router products v1 통합 walkthrough.
 - [[release-candidate-boundary-router-products-v1-2026-05]]
 - [[coverage-boundary-router-products-v1-manifest-2026-05]] — boundary router products v1 manifest 노출 coverage.
 - [[coverage-boundary-router-products-v1-release-2026-05]]
