@@ -31,6 +31,7 @@
 - [[index-institution-boundary-router-next-hubs-2026-05]]
 
 ## 다음 후보
+- [[coverage-institution-boundary-agency-hubs-2026-05]] — 감사원·조달청 기관별 hub의 boundary router 직접 연결 coverage.
 계약조달·조직정원·예산·민원·홍보·법령과 감사·국회·정보공개·협업 hub의 직접 회귀 경로는 연결 완료. 다음 후보는 기관별 개별 hub 선별이다.
 
 ## 금지선

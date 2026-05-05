@@ -22,6 +22,7 @@
 - [x] [[process-institution-boundary-router-hub-linking-2026-05]]로 안전한 연결 절차를 확인할 수 있다.
 
 ## 다음 후보
+- [[coverage-institution-boundary-agency-hubs-2026-05]] — 감사원·조달청 기관별 hub의 boundary router 직접 연결 coverage.
 - 감사원, 조달청 등 기관별 개별 hub에서 직접 boundary router가 필요한지 선별한다.
 - direct hub 연결이 충분하면 walkthrough/router에서 전입자 질문형 진입을 보강한다.
 

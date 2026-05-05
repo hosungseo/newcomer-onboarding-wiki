@@ -18,6 +18,7 @@
 
 
 ## 직접 연결 완료 기관별 hub
+- [[coverage-institution-boundary-agency-hubs-2026-05]] — 감사원·조달청 기관별 hub의 boundary router 직접 연결 coverage.
 - [[hub-감사원]] → [[manifest-institution-to-boundary-router-2026-05]]
 - [[hub-조달청]] → [[manifest-institution-to-boundary-router-2026-05]]
 
