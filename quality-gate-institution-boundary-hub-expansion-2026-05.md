@@ -12,6 +12,7 @@
 - [x] 각 core hub는 직접 민감정보를 설명하지 않고 boundary router로 짧게 회귀한다.
 
 ## Gate 3 — response hub coverage
+- [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]] — 협업회의운영 boundary router 질문형 checklist 연결 coverage.
 - [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]] — 정보공개기록관리 boundary router 질문형 checklist 연결 coverage.
 - [[coverage-국회대응-boundary-router-질문형-검토-2026-05]] — 국회대응 boundary router 질문형 checklist 연결 coverage.
 - [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
