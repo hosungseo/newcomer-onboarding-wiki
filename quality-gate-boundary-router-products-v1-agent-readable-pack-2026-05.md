@@ -2,6 +2,7 @@
 
 ## 목적
 [[index-boundary-router-products-v1-agent-readable-pack-2026-05]]가 agent-readable release pack으로 충분한지 최종 점검한다.
+- [[manifest-boundary-router-products-v1-agent-readable-pack-2026-05]] — boundary router products v1 agent-readable pack manifest.
 
 ## Gate 1 — agent-readable entrypoints
 - [x] [[index-boundary-router-products-v1-agent-readable-pack-2026-05]]
