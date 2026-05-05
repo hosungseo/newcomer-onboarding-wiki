@@ -4,6 +4,7 @@
 
 ## 먼저 읽을 route
 
+- 계약조달·조직정원 교차: [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]
 - 계약조달: coverage-계약조달-실행경계-2026-05 → manifest-newcomer-journey-계약조달-실행경계-2026-05 → quality-gate-계약조달-실행경계-2026-05
 - 조직정원: [[coverage-조직정원-실행경계-2026-05]] → [[manifest-newcomer-journey-조직정원-실행경계-2026-05]] → [[quality-gate-조직정원-실행경계-2026-05]]
 - 감사·국회: [[walkthrough-국회대응-전입자-라우터-2026-05]] → [[coverage-감사국회-실행경계-2026-05]] → [[manifest-newcomer-journey-감사국회-실행경계-2026-05]] → [[quality-gate-감사국회-실행경계-2026-05]]
