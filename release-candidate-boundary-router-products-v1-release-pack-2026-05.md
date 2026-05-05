@@ -6,6 +6,7 @@ boundary router products v1 release pack을 전입자 온보딩 v1의 최종 배
 ## Release pack 정의
 - [[coverage-boundary-router-products-v1-release-pack-candidate-2026-05]] — boundary router products v1 release pack candidate 노출 coverage.
 - [[manifest-boundary-router-products-v1-release-pack-2026-05]]
+- [[checklist-boundary-router-products-v1-agent-readable-release-pack-2026-05]] — boundary router products v1 agent-readable release pack 확인 checklist.
 - [[index-boundary-router-products-v1-release-pack-2026-05]]
 - [[coverage-boundary-router-products-v1-release-pack-2026-05]]
 - [[quality-gate-boundary-router-products-v1-release-pack-2026-05]]
