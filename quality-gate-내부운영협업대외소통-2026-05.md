@@ -31,9 +31,9 @@
 - [x] umbrella coverage가 세부 coverage의 manifest/quality gate를 다시 연결한다.
 
 ## 4. 다음 후보
-1. README와 공통업무축 landing에 이 quality gate를 노출한다.
-2. 내부운영·협업·대외소통 묶음이 길어지면 docs quick link를 `운영관리`, `정보공개`, `협업`, `대외소통`으로 나눌지 검토한다.
-3. 공통 masking FAQ를 이 section의 금지선 아래에도 연결할지 검토한다.
+1. README와 공통업무축 landing 노출은 완료됐다. 다음은 docs quick link가 길어졌을 때 `운영관리`, `정보공개`, `협업`, `대외소통` 묶음으로 분리할지 검토한다.
+2. 공통 masking FAQ 연결은 section/coverage/manifest/quality gate까지 완료됐다. 다음은 [[faq-공통업무축-민감정보-masking-사례구분]]을 실제 제출전 checklist로 분화할지 검토한다.
+3. 내부운영·협업·대외소통 묶음이 다른 공통업무축과 만나는 교차 경로, 특히 국회·감사·민원으로 넘어가는 분기 checklist를 만들지 검토한다.
 
 ## 판정
 내부운영·협업·대외소통 section은 공개 온보딩 기준으로 큰 분기와 금지선이 닫혀 있다. 다음 단계는 상위 진입부에 quality gate를 노출하는 것이다.
