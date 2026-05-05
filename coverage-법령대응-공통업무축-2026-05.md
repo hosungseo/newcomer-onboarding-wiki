@@ -8,17 +8,25 @@
 - [[manifest-newcomer-journey-법령대응-2026-05]]
 - [[quality-gate-법령대응-공통업무축-2026-05]]
 - [[walkthrough-법령대응-기관상황업무축-공개경계-2026-05]]
+- [[coverage-법령대응-boundary-router-실행경계-2026-05]]
 - [[newcomer-path-법령제개정시즌-첫주-2026-05]]
 
 ## 먼저 읽을 FAQ
 - [[faq-법령제개정-처음-무엇부터-확인하나]]
 - [[faq-법령제개정-조문보다-먼저-봐야-할-자료는]]
 - [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명에서 법률자문성 결론과 비공개 협의 내용을 멈추는 기준.
+- [[faq-법령대응-신구조문대비표와-설명자료가-다르면]] — 자료 간 불일치를 단정하지 않고 확인 질문으로 전환.
+- [[faq-법령대응-의견조회-답변초안은-어디서-멈추나]] — 의견조회 답변초안의 공개 가능 문장과 내부협의 문장 분리.
 
 ## 자료·초안 흐름
 - [[source-법령대응-자료대조순서]] — 정책목적, 법령층위, 절차단계, 공개자료, 내부확인 대상을 분리한다.
+- [[source-법령대응-공개근거-우선순위]] — 조문·입법예고·공개 설명자료의 공개근거 우선순위를 표시한다.
+- [[source-법령대응-의견조회-공개자료-대조순서]] — 의견조회 답변에서 공개 가능한 자료와 비공개 협의 내용을 분리한다.
 - [[process-법령대응-설명초안-작성흐름]] — 조문안·제안이유·설명자료·Q&A를 설명초안으로 옮기는 순서를 잡는다.
+- [[process-법령대응-전입자-첫실행흐름]] — 전입자 첫 실행 순서를 boundary router로 닫는다.
 - [[checklist-법령대응-설명초안-제출전검토]] — 법률자문성 결론, 비공개 협의, 개인정보·영업비밀, 미확정 판단 금지선을 확인한다.
+- [[checklist-법령대응-공개문안-초안검토]] — 공개문안으로 남길 수 있는 문장만 남긴다.
+- [[checklist-법령대응-boundary-router-질문형-검토]] — 공개 전 질문형 멈춤선으로 위험 문장을 걸러낸다.
 
 ## FAQ → source → process → checklist 노출 매트릭스
 | 층 | 현재 노트 | 전입자가 확인할 것 |
@@ -30,6 +38,7 @@
 | Process | [[process-법령대응-설명초안-작성흐름]] | 확정된 설명과 확인 필요 문장을 구분하는 작성 순서 |
 | Checklist | [[checklist-법령대응-설명초안-제출전검토]] | 제출 전 공개/비공개 금지선 최종 확인 |
 | Walkthrough | [[walkthrough-법령대응-기관상황업무축-공개경계-2026-05]] | 기관→상황→업무축→자료→초안/체크리스트→공개/비공개 경계 이동 |
+| Boundary coverage | [[coverage-법령대응-boundary-router-실행경계-2026-05]] | 공개 설명과 비공개 법률자문성 판단을 분리하는 실행경계 점검 |
 
 ## 연결 업무축
 - [[hub-법제]]
@@ -52,10 +61,12 @@
 - FAQ: [[faq-법령설명-법률자문성결론은-어디서-멈추나]]까지 보강
 - source: 있음
 - process: 있음
-- checklist: 있음
+- checklist: [[checklist-법령대응-boundary-router-질문형-검토]]까지 보강
+- walkthrough/execution boundary: [[coverage-법령대응-boundary-router-실행경계-2026-05]]로 노출
 - manifest: [[manifest-newcomer-journey-법령대응-2026-05]] 있음
 - quality gate: [[quality-gate-법령대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
+- boundary router 실행경계: [[coverage-법령대응-boundary-router-실행경계-2026-05]]
 - 다음 후보: 입법예고·국회심사 상황형 path, 법령설명 Q&A template
 
 ## 공통 masking FAQ

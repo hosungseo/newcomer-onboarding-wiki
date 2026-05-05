@@ -42,6 +42,7 @@
 
 - Walkthrough: [[walkthrough-법령대응-기관상황업무축-공개경계-2026-05]]
 - coverage에서 walkthrough 노출 상태를 추적한다: [[coverage-법령대응-공통업무축-2026-05]]
+- boundary 실행경계 coverage: [[coverage-법령대응-boundary-router-실행경계-2026-05]]
 - 다음 세분화 후보: 입법예고 의견 대응, 규제심사 보완자료 정리, 국회심사 설명자료 전환.
 - 확인 질문: 지금 필요한 것은 일반 설명초안인지, 기관·상황·업무축을 따라가는 공개경계 walkthrough인지 구분했는가?
 
@@ -69,6 +70,7 @@ source: source-법령대응-자료대조순서
 process: process-법령대응-설명초안-작성흐름
 checklist: checklist-법령대응-설명초안-제출전검토
 coverage: coverage-법령대응-공통업무축-2026-05
+boundary_execution_coverage: coverage-법령대응-boundary-router-실행경계-2026-05
 quality_gate: quality-gate-법령대응-공통업무축-2026-05
 walkthrough: walkthrough-법령대응-기관상황업무축-공개경계-2026-05
 walkthrough_status: exposed

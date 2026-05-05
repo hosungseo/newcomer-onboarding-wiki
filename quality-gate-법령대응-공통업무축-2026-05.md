@@ -14,6 +14,7 @@
 - [[checklist-법령대응-설명초안-제출전검토]]
 - [[coverage-법령대응-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-법령대응-2026-05]]
+- [[coverage-법령대응-boundary-router-실행경계-2026-05]]
 
 ## Gate 1 — 경로 완성도
 - [ ] hub에서 첫주 path, FAQ, source, process, checklist, coverage, manifest로 이동할 수 있는가?
@@ -32,6 +33,7 @@
 - [ ] 법제, 정부입법, 국회대응, 홍보대응 등 인접 업무축 분기가 실제 존재하는 note로만 연결되는가?
 
 ## Gate 3 — 공개/비공개 금지선
+- [ ] boundary 실행경계 coverage가 공개 설명·담당확인 후 제한공개·공개 note 제외·전환 필요를 구분하는가?
 - [ ] 법률자문성 결론을 공개 note에 남기지 말라는 문장이 있는가?
 - [ ] 비공개 협의 내용과 내부 검토의견 금지선이 있는가?
 - [ ] 개인정보, 영업비밀, 사건별 수사·감사·감독 자료 금지선이 있는가?
