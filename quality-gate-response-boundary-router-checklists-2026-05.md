@@ -19,6 +19,7 @@
 - [x] [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]]가 있다.
 
 ## Gate 3 — route
+- [x] docs/index.html featured quick link에서 [[landing-response-boundary-router-checklists-2026-05]]로 바로 진입할 수 있다.
 - [x] [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 대응형 hub 질문으로 들어갈 수 있다.
 - [x] [[manifest-institution-to-boundary-router-2026-05]]로 공개/비공개 경계 회귀가 가능하다.
 - [x] [[coverage-institution-boundary-response-hubs-2026-05]]에서 대응형 hub 연결 상태를 확인할 수 있다.
