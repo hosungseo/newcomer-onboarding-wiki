@@ -18,6 +18,7 @@
 
 ## 관련 업무축
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
+- [[checklist-협업회의운영-boundary-router-질문형-검토]] — 협업회의운영에서 boundary router로 돌아가기 전 질문형 검토.
 - [[hub-문서기안]]
 - [[hub-장관보고]]
 - [[hub-국회대응]]
