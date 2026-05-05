@@ -82,8 +82,11 @@
 
 ## Execution Boundary Route Map
 - [[section-execution-boundary-routes-2026-05]] — 최근 실행경계 route를 계약조달·조직정원·감사국회·민원법령·정보공개협업·홍보대외협력 흐름으로 고르는 section entry.
-- coverage-execution-boundary-routes-discovery-2026-05 — 실행경계 route의 manifest/coverage/quality gate 삼각형과 docs/landing 노출 순서 기준.
-- quality-gate-execution-boundary-routes-discovery-2026-05 — section entry와 중복 audit 노출 전 최종 quality gate.
+- [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality alias index.
+- [[manifest-newcomer-journey-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 agent-readable journey manifest.
+- [[quality-gate-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 발견성·안전성 gate.
+- [[coverage-execution-boundary-routes-discovery-2026-05]] — 실행경계 route의 manifest/coverage/quality gate 삼각형과 docs/landing 노출 순서 기준.
+- [[quality-gate-execution-boundary-routes-discovery-2026-05]] — section entry와 중복 audit 노출 전 최종 quality gate.
 - [[audit-boundary-duplicate-root-notes-2026-05]] — 실행경계 관련 audit/coverage/manifest/quality gate root note 중복 후보를 삭제 대신 route-map 기준으로 정리하는 audit.
 
 ## Recent Boundary Notes
