@@ -2,6 +2,7 @@
 
 ## 목적
 - [[faq-계약조달-boundary-router-공개문안-초안-2026-05]] — 계약조달 boundary router 공개문안 초안 FAQ.
+- [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]] — 계약조달 boundary router 공개문안 FAQ coverage.
 - [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] — 정보공개기록관리 boundary router 공개문안 초안 FAQ.
 - [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]] — 정보공개기록관리 boundary router 공개문안 FAQ coverage.
 - [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] — 정보공개기록관리 boundary router 공개문안 작성흐름.
