@@ -4,6 +4,7 @@
 기관군 전입 경로에서 공통업무축 boundary note로 되돌아가는 route가 안전한지 점검한다.
 
 ## Gate 1 — 상위 진입
+- [x] 대표 6개 기관군 section(경제산업·사회안전·법무거버넌스·외교안보·국토환경·교육문화과학)에서 [[manifest-institution-to-boundary-router-2026-05]]로 회귀할 수 있다.
 - [x] [[landing-전입자-기관군별-온보딩-2026-05]]에서 router로 진입할 수 있다.
 - [x] [[landing-전입자-전입첫주-전체기관-2026-05]]에서 router로 진입할 수 있다.
 - [x] [[coverage-부처군-section-기관행-2026-05]]에서 router로 진입할 수 있다.
@@ -21,7 +22,7 @@
 - [x] [[manifest-agent-readable-catalog-v1-2026-05]]와 [[llms-newcomer-onboarding-v1]]에서 agent/LLM 진입이 가능하다.
 
 ## 다음 후보
-- 기관군별 hub 중 boundary router 역링크가 없는 곳을 찾아 대표 2~3곳에 연결한다.
+- 기관별 개별 hub 중 boundary router 역링크가 필요한 곳을 선별한다.
 
 ## 금지선
 개인정보, 비공개 내부검토, 미확정 정책안, 업체별 민감정보, 법률자문성 결론, 감사·수사·보안 세부는 포함하지 않는다.
