@@ -17,6 +17,7 @@
 - [[source-민원대응-자료대조순서]]
 - [[process-민원대응-답변초안-작성흐름]]
 - [[checklist-민원대응-답변초안-제출전검토]]
+- [[checklist-민원대응-민감정보-masking-제출전검토]] — 개인정보·사건정보·신고/조사 세부 masking 제출 전 점검.
 
 ## 연결 업무축
 - [[hub-홍보대응]]
@@ -38,11 +39,11 @@
 - FAQ: 2개 있음
 - source: 있음
 - process: 있음
-- checklist: 있음
+- checklist: [[checklist-민원대응-민감정보-masking-제출전검토]]까지 보강
 - manifest: [[manifest-newcomer-journey-민원대응-2026-05]] 있음
 - quality gate: [[quality-gate-민원대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
-- 현장소통 전환 section, journey manifest, quality gate는 [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]로 연결됐고 README/landing/docs 노출도 완료됐다. 다음 후보: 정보공개·홍보·감사로 이어지는 상황형 path, 반복 민원 FAQ template, [[faq-공통업무축-민감정보-masking-사례구분]]을 민원답변 제출전 checklist로 분화할지 검토
+- 현장소통 전환 section, journey manifest, quality gate는 [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]로 연결됐고 README/landing/docs 노출도 완료됐다. 다음 후보: 정보공개·홍보·감사로 이어지는 상황형 path, 반복 민원 FAQ template
 
 ## 공통 masking FAQ
 - [[faq-공통업무축-민감정보-masking-사례구분]]
