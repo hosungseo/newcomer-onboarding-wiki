@@ -33,6 +33,7 @@
 - [[coverage-국회대응-boundary-router-공개문안-process-2026-05]] — 국회대응 boundary router 공개문안 process coverage.
 - 감사: [[coverage-감사대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-감사대응-2026-05]] / [[quality-gate-감사대응-공통업무축-2026-05]]
 - 민원: [[coverage-민원대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-민원대응-2026-05]] / [[quality-gate-민원대응-공통업무축-2026-05]]
+- [[faq-민원대응-boundary-router-공개문안-초안-2026-05]] — 민원대응 boundary router 공개문안 초안 FAQ.
 - 대외 전환: [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]
 
 ## Internal Operations Axes
