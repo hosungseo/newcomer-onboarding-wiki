@@ -1,6 +1,7 @@
 # Checklist — 예산대응 boundary router 질문형 검토
 - [[faq-예산대응-boundary-router-공개문안-초안-2026-05]] — 예산대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-예산대응-boundary-router-공개문안-faq-2026-05]] — 예산대응 boundary router 공개문안 FAQ coverage.
+- [[process-예산대응-boundary-router-공개문안-작성흐름-2026-05]] — 예산대응 boundary router 공개문안 작성흐름.
 
 ## 목적
 예산 hub에서 예산요구·국회심의·대외설명·산출근거를 다룰 때 [[manifest-institution-to-boundary-router-2026-05]]로 돌아가야 하는 공개/비공개 경계를 빠르게 점검한다.

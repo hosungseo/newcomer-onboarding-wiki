@@ -1,5 +1,6 @@
 # FAQ — 예산대응 Boundary Router 공개문안 초안 2026-05
 - [[coverage-예산대응-boundary-router-공개문안-faq-2026-05]] — 예산대응 boundary router 공개문안 FAQ coverage.
+- [[process-예산대응-boundary-router-공개문안-작성흐름-2026-05]] — 예산대응 boundary router 공개문안 작성흐름.
 
 ## Q1. 예산대응 자료를 공개 문안으로 바꿀 때 먼저 무엇을 확인하나?
 먼저 [[checklist-예산대응-boundary-router-질문형-검토]]로 공개 가능한 예산 항목, 확정된 편성·집행 절차, 공개 가능한 수치만 남긴다. 내부 조정안, 미확정 요구액, 협의 중인 증감 사유는 공개 문안에서 분리한다.
