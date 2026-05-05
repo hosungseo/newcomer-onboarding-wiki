@@ -46,7 +46,7 @@
 
 1. feature branch의 축적물을 main/docs 배포면에 반영할지 결정한다.
 2. docs index를 단순 quick link 나열에서 `기관군 / 업무축 / 상황형 / 품질검증` 섹션형 UI로 나눈다.
-3. journey manifest를 agent-readable catalog로 묶는 작업은 [[manifest-agent-readable-catalog-v1-2026-05]]로 시작했고 README/landing/docs 노출까지 완료됐다.
+3. journey manifest를 agent-readable catalog로 묶는 작업은 [[manifest-agent-readable-catalog-v1-2026-05]]와 [[llms-newcomer-onboarding-v1]]로 시작했고 README/landing/docs 노출까지 완료됐다.
 4. 중복된 coverage/quality gate 표현을 얇게 정리한다.
 5. 실제 전입자 시나리오 3개를 골라 end-to-end walkthrough를 작성한다.
 
