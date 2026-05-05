@@ -41,6 +41,8 @@
 - [x] 없는 파일을 placeholder wikilink로 만들지 않는다.
 - [x] 새 note는 최소 2개 이상 기존 note와 연결되어 있다.
 - [x] boundary router 공개문안 FAQ/process와 질문형 checklist/walkthrough가 업무축 quality gate에서 함께 점검된다.
+- [x] FAQ/source/process/checklist/walkthrough가 manifest와 coverage에 모두 노출되어 agent route에서 누락되지 않는다.
+- [x] 회의 개요·확정 후속조치와 참석자별 발언·기관 간 이견·미확정 조정안 금지선이 decision point별로 분리되어 있다.
 - [x] docs/index.html에 hub/path/source/process/checklist/coverage/manifest가 노출되어 있다.
 
 ## 4. 남은 고도화 후보

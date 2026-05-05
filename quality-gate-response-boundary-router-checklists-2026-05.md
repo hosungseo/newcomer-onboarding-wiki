@@ -27,6 +27,12 @@
 - [x] [[manifest-institution-to-boundary-router-2026-05]]로 공개/비공개 경계 회귀가 가능하다.
 - [x] [[coverage-institution-boundary-response-hubs-2026-05]]에서 대응형 hub 연결 상태를 확인할 수 있다.
 
+## Gate 4 — 정보공개기록관리 / 협업회의운영 상세 노출
+- [x] 정보공개기록관리는 FAQ/source/process/checklist/walkthrough가 [[manifest-response-boundary-router-checklists-2026-05]]와 업무축 manifest/coverage에 동시에 노출되어 있다.
+- [x] 협업회의운영은 FAQ/source/process/checklist/walkthrough가 [[manifest-response-boundary-router-checklists-2026-05]]와 업무축 manifest/coverage에 동시에 노출되어 있다.
+- [x] 정보공개기록관리의 공개 가능 기록·절차 안내와 비공개 내부검토·개인정보·법률판단 단정 표현이 decision point로 분리되어 있다.
+- [x] 협업회의운영의 회의 개요·확정 후속조치와 참석자별 발언·기관 간 이견·미확정 조정안이 decision point로 분리되어 있다.
+
 ## 다음 후보
 이 묶음을 README/docs landing의 상황형 walkthrough 영역에서 더 잘 보이게 할지 검토한다.
 

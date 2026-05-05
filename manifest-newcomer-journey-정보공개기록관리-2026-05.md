@@ -13,6 +13,14 @@
 7. **공통 업무축 연결** — 민원·국회·감사·홍보·문서 쟁점은 [[hub-민원대응]], [[hub-국회대응]], [[hub-감사대응]], [[hub-홍보대응]], [[hub-문서기안]]으로 분기한다.
 8. **coverage 확인** — [[coverage-정보공개기록관리-공통업무축-2026-05]]에서 현재 완성도와 다음 빈칸을 확인한다.
 
+
+## FAQ/source/process/checklist/walkthrough exposure
+- FAQ: [[faq-공개자료와-내부검토자료는-어떻게-구분하나]], [[faq-정보공개청구-처음-무엇부터-확인하나]], [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]]
+- Source: [[source-정보공개기록관리-자료대조순서]], [[source-정보공개청구-공개자료-대조순서]]
+- Process: [[process-정보공개기록관리-공개검토초안-작성흐름]], [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]]
+- Checklist: [[checklist-정보공개기록관리-공개검토초안-검토]], [[checklist-정보공개기록관리-boundary-router-질문형-검토]]
+- Walkthrough: [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]], [[walkthrough-institution-boundary-router-question-flow-2026-05]]
+
 ## Boundary router route
 1. **질문형 walkthrough** — [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관·상황 질문을 먼저 좁힌다.
 2. **질문형 checklist** — [[checklist-정보공개기록관리-boundary-router-질문형-검토]]에서 공개 가능한 기록과 비공개 검토 원문을 분리한다.

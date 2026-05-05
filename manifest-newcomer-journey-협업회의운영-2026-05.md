@@ -12,6 +12,14 @@
 6. **후속조치 점검** — [[checklist-협업회의운영-후속조치-검토]]에서 담당자·기한·보고경로·공개경계를 확인한다.
 7. **coverage 확인** — [[coverage-협업회의운영-공통업무축-2026-05]]에서 현재 완성도와 다음 gap을 확인한다.
 
+
+## FAQ/source/process/checklist/walkthrough exposure
+- FAQ: [[faq-회의자료와-내부검토자료는-어떻게-구분하나]], [[faq-회의후속조치-보고국회감사로-넘어가면-무엇이-달라지나]], [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]]
+- Source: [[source-협업회의운영-자료대조순서]]
+- Process: [[process-협업회의운영-결과초안-작성흐름]], [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]]
+- Checklist: [[checklist-협업회의운영-후속조치-검토]], [[checklist-협업회의운영-boundary-router-질문형-검토]]
+- Walkthrough: [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]], [[walkthrough-institution-boundary-router-question-flow-2026-05]]
+
 ## Boundary router route
 1. **질문형 walkthrough** — [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관·상황 질문을 먼저 좁힌다.
 2. **질문형 checklist** — [[checklist-협업회의운영-boundary-router-질문형-검토]]에서 공식 회의자료와 내부검토 메모, 후속조치, 대외공유 가능성을 분리한다.

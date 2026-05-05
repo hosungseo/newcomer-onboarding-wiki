@@ -9,6 +9,12 @@
 - [[checklist-정보공개기록관리-boundary-router-질문형-검토]] → [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]]
 - [[checklist-협업회의운영-boundary-router-질문형-검토]] → [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]]
 
+## Coverage matrix — 정보공개기록관리 / 협업회의운영
+| 업무축 | FAQ | Source | Process | Checklist | Walkthrough | Decision point |
+|---|---|---|---|---|---|---|
+| 정보공개기록관리 | [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] | [[source-정보공개기록관리-자료대조순서]] | [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] | [[checklist-정보공개기록관리-boundary-router-질문형-검토]] | [[walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05]] | 공개 가능한 기록·절차 안내와 비공개 내부검토·개인정보·법률판단 단정 표현을 분리 |
+| 협업회의운영 | [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]] | [[source-협업회의운영-자료대조순서]] | [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] | [[checklist-협업회의운영-boundary-router-질문형-검토]] | [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]] | 회의 개요·확정 후속조치와 참석자별 발언·기관 간 이견·미확정 조정안을 분리 |
+
 ## Route
 1. 기관 또는 업무 hub에서 시작한다.
 2. [[walkthrough-institution-boundary-router-question-flow-2026-05]]로 질문형 분기를 탄다.

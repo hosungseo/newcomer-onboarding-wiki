@@ -38,6 +38,8 @@
 - [x] 업무축 manifest가 coverage/docs와 연결되어 있다.
 - [x] 새 note는 최소 2개 이상 기존 note와 연결되어 있다.
 - [x] boundary router 공개문안 FAQ/process와 질문형 checklist/walkthrough가 업무축 quality gate에서 함께 점검된다.
+- [x] FAQ/source/process/checklist/walkthrough가 manifest와 coverage에 모두 노출되어 agent route에서 누락되지 않는다.
+- [x] 공개 가능 절차·범위와 비공개 내부검토·개인정보·법률판단 금지선이 decision point별로 분리되어 있다.
 - [x] docs/index.html에 정보공개·기록관리 업무축 manifest가 노출되어 있다.
 
 ## 4. 남은 고도화 후보
