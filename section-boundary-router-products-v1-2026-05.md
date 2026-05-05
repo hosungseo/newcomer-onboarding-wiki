@@ -4,6 +4,7 @@
 README와 docs에서 boundary router products v1 묶음을 섹션 단위로 노출하기 위한 요약 섹션이다.
 
 ## 빠른 진입
+- [[coverage-boundary-router-products-v1-section-2026-05]] — boundary router products v1 section 노출 coverage.
 - 선택 landing: [[landing-boundary-router-products-v1-2026-05]]
 - 전체 index: [[index-boundary-router-products-v1-2026-05]]
 - 통합 walkthrough: [[walkthrough-boundary-router-products-v1-entry-2026-05]]
