@@ -39,6 +39,9 @@
 ## 최근 boundary note 묶음
 - [[section-실행경계-boundary-router-4축-2026-05]] — 예산·조직정원·홍보·정보공개 실행경계 route를 한 화면에서 고르는 companion section.
 - [[section-민원법령-boundary-router-실행경계-2026-05]] — 민원·법령 boundary route를 개인정보·사건정보·법률자문성 결론 금지선 기준으로 고르는 companion section.
+- 감사대응 공개문안 route: [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] → [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-감사대응-boundary-router-공개문안-process-2026-05]]
+- 국회대응 공개문안 route: [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] → [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
+- 감사·국회 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-감사대응-boundary-router-질문형-검토]] / [[checklist-국회대응-boundary-router-질문형-검토]]를 먼저 본다.
 - [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
 - [[index-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 업무축별 entry map.
 - [[quality-gate-최근-boundary-note-묶음-2026-05]] — 최근 boundary note 묶음의 공개/비공개 안전 점검.
@@ -80,6 +83,16 @@
 
 ## Related Notes
 - [[section-민원법령-boundary-router-실행경계-2026-05]]
+- [[faq-감사대응-boundary-router-공개문안-초안-2026-05]]
+- [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]]
+- [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]]
+- [[coverage-감사대응-boundary-router-공개문안-process-2026-05]]
+- [[faq-국회대응-boundary-router-공개문안-초안-2026-05]]
+- [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]]
+- [[coverage-국회대응-boundary-router-공개문안-faq-2026-05]]
+- [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
+- [[checklist-감사대응-boundary-router-질문형-검토]]
+- [[checklist-국회대응-boundary-router-질문형-검토]]
 - [[source-장관보고-자료대조순서]]
 - [[process-장관보고-보고초안-작성흐름]]
 - [[checklist-장관보고-보고초안-제출전검토]]
