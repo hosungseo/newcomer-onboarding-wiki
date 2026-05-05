@@ -16,6 +16,7 @@
 3. [[coverage-institution-boundary-router-section-2026-05]]에 이미 section 연결이 완료된 기관군의 대표 hub.
 
 ## 연결 후 검증
+- [[process-institution-boundary-router-hub-linking-2026-05]] — 기관별 개별 hub에 boundary router를 안전하게 연결하는 절차.
 - [[quality-gate-institution-to-boundary-router-2026-05]]에 개별 hub 연결 상태를 반영한다.
 - [[coverage-최근-boundary-note-묶음-2026-05]] 또는 관련 coverage에 연결 완료 상태를 남긴다.
 - root `.md` wikilink missing refs와 docs GitHub `.md` 링크를 검증한다.

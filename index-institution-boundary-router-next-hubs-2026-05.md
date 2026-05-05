@@ -17,6 +17,7 @@
 - [[coverage-최근-boundary-note-묶음-2026-05]]
 
 ## 다음 작업
+- [[process-institution-boundary-router-hub-linking-2026-05]] — 기관별 개별 hub에 boundary router를 안전하게 연결하는 절차.
 - [[checklist-institution-boundary-router-hub-selection-2026-05]] — 기관별 개별 hub boundary router 연결 전 선택 체크리스트.
 기관별 hub 파일명이 안정적으로 확인되는 묶음부터 2~3개씩 역링크를 추가한다. placeholder wikilink는 만들지 않는다.
 
