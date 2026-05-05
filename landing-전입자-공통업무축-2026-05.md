@@ -94,6 +94,7 @@
 - [[section-대외협력현장소통-전환묶음-2026-05]]
 - [[section-국회감사민원-대외전환-2026-05]]
 - [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]]
+- [[quality-gate-국회감사민원-대외전환-2026-05]]
 - [[manifest-newcomer-journey-대외협력현장소통-2026-05]]
 - [[quality-gate-대외협력현장소통-2026-05]]
 - [[process-협업회의운영-대외협력현장소통-후속조치경계]]
