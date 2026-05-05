@@ -28,6 +28,7 @@
 ## 연결 기준
 - [[manifest-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router 질문형 checklist 묶음.
 - [[quality-gate-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router checklist 묶음 품질 점검.
+- [[landing-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary checklist를 바로 고르는 landing.
 - [[faq-기관별-hub-boundary-router는-언제-직접-연결하나]]
 - [[checklist-institution-boundary-router-hub-selection-2026-05]]
 - [[process-institution-boundary-router-hub-linking-2026-05]]
