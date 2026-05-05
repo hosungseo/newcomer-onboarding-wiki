@@ -4,6 +4,7 @@
 상황형 walkthrough 묶음의 최상위 index다. 전입자가 질문을 들고 왔을 때 먼저 이 문서에서 상황을 고르고, 이후 section/manifest/quality gate로 내려간다.
 
 ## 먼저 볼 것
+- [[manifest-scenario-router-walkthrough-v1-2026-05]]
 - [[manifest-newcomer-journey-walkthrough-v1-2026-05]] — 질문 유형별 첫 진입점.
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]] — 상황형 walkthrough 묶음.
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]] — 현재 완성도와 다음 빈칸.
