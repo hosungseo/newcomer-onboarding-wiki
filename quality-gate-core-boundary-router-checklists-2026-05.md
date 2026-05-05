@@ -24,6 +24,7 @@
 - [x] [[quality-gate-institution-boundary-hub-expansion-2026-05]]에서 core/response/agency hub 확장 상태를 함께 확인할 수 있다.
 
 ## 다음 후보
+- [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 core checklist 묶음을 landing/index/release candidate로 제품화한다.
 
 ## 금지선

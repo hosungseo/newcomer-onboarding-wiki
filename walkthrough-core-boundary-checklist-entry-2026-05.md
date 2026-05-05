@@ -18,6 +18,7 @@
 기관별 맥락이 필요하면 [[walkthrough-institution-boundary-router-question-flow-2026-05]]로 돌아가고, 묶음 상태는 [[manifest-core-boundary-router-checklists-2026-05]]와 [[quality-gate-core-boundary-router-checklists-2026-05]]에서 확인한다.
 
 ## 4. release 상태 확인
+- [[coverage-core-boundary-checklist-walkthrough-2026-05]] — 핵심 업무축 boundary checklist walkthrough 노출 coverage.
 제품화된 묶음은 [[release-candidate-core-boundary-checklists-2026-05]]와 [[coverage-core-boundary-router-landing-2026-05]]에서 확인한다.
 
 ## 금지선
