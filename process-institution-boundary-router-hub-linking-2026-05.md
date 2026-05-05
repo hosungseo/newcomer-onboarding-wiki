@@ -4,6 +4,7 @@
 기관별 개별 hub에 [[manifest-institution-to-boundary-router-2026-05]]를 추가할 때, 중복·placeholder·민감정보 확장을 피하면서 안전하게 연결한다.
 
 ## 흐름
+- [[faq-기관별-hub-boundary-router는-언제-직접-연결하나]] — 기관별 hub에 boundary router를 직접 연결할지 판단하는 FAQ.
 1. 후보 확인: [[index-institution-boundary-router-next-hubs-2026-05]]에서 계약·조직·예산·민원·홍보·법령 boundary가 필요한 후보군을 고른다.
 2. 파일 확인: 실제 hub 파일이 존재하는지 확인하고, 없으면 wikilink를 만들지 않는다.
 3. 선택 점검: [[checklist-institution-boundary-router-hub-selection-2026-05]]의 선택 기준을 통과한 경우에만 역링크를 추가한다.

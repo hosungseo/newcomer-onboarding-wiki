@@ -4,6 +4,7 @@
 기관별 개별 hub에 [[manifest-institution-to-boundary-router-2026-05]]를 연결하기 전, 공개 가능한 안전 범위와 실제 필요성을 점검한다.
 
 ## 선택 기준
+- [[faq-기관별-hub-boundary-router는-언제-직접-연결하나]] — 기관별 hub에 boundary router를 직접 연결할지 판단하는 FAQ.
 - [ ] 해당 hub가 계약·조달, 조직·정원, 예산, 민원, 홍보, 법령 중 하나 이상의 boundary route와 만난다.
 - [ ] 이미 대표 기관군 section의 상위 연결만으로 충분하지 않고, 개별 기관 hub에서 직접 회귀할 필요가 있다.
 - [ ] 연결 대상 boundary note가 실제 파일로 존재한다.
