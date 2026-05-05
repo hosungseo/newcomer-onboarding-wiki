@@ -43,3 +43,12 @@ This file gives AI agents a compact entry map for the public newcomer onboarding
 
 ## Safety boundary
 Never include personal data, complainant identifiers, vendor-sensitive details, non-public internal review opinions, unresolved policy drafts, audit/investigation/surveillance/security details, legal-advice conclusions, or distorted individual field statements in public onboarding notes.
+
+## Recent Boundary Notes
+- [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개/업체민감정보 FAQ
+- [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 조직정원 공식조직도/업무분장 FAQ
+- [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
+- [[checklist-민원대응-민감정보-masking-제출전검토]] — 민원대응 민감정보 masking checklist
+- [[checklist-홍보대응-대외전환-문안분기-제출전검토]] — 홍보대응 대외전환 문안분기 checklist
+- [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명 법률자문성 결론 FAQ
+
