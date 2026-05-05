@@ -47,6 +47,7 @@
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
 - [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
+- [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 묶음의 section entry.
 - [[llms-newcomer-onboarding-v1]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
 
