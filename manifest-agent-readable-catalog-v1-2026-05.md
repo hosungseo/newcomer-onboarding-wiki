@@ -32,6 +32,7 @@
 - [[llms-newcomer-onboarding-v1]]
 
 ## High-signal Walkthroughs
+- [[index-전입자-walkthrough-시나리오-v1-2026-05]] — 상황형 walkthrough 묶음의 최상위 index.
 - [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
 - [[section-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]

@@ -26,6 +26,7 @@ This file gives AI agents a compact entry map for the public newcomer onboarding
 - [[manifest-newcomer-journey-대외협력현장소통-2026-05]]
 
 ## High-signal walkthrough scenarios
+- [[index-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[manifest-newcomer-journey-walkthrough-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
