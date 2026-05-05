@@ -29,7 +29,10 @@ steps:
     question_checklist: checklist-계약조달-boundary-router-질문형-검토.md
     execution_boundary_checklist: checklist-계약조달-공개비공개-실행경계.md
     public_faq: faq-계약조달-boundary-router-공개문안-초안-2026-05.md
+    public_faq_coverage: coverage-계약조달-boundary-router-공개문안-faq-2026-05.md
     public_process: process-계약조달-boundary-router-공개문안-작성흐름-2026-05.md
+    public_process_coverage: coverage-계약조달-boundary-router-공개문안-process-2026-05.md
+    source_basis: source-계약조달-증빙자료-대조순서.md
     walkthrough: walkthrough-core-boundary-checklist-entry-2026-05.md
 stop_lines:
   - 입찰 전 비공개 검토자료
@@ -46,8 +49,8 @@ stop_lines:
 2. [[process-계약조달-검토초안-작성흐름]]로 기본 초안을 만들되, 외부 설명·민원·국회·보고 문안으로 바꾸기 전 [[checklist-계약조달-boundary-router-질문형-검토]]를 먼저 통과한다.
 3. 공개문안이 필요하면 [[faq-계약조달-boundary-router-공개문안-초안-2026-05]]에서 답변 가능한 범위를 확인하고 [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]]로 문장화한다.
 4. 제출 전에는 [[checklist-계약조달-공개비공개-실행경계]]로 공개자료·업체민감정보·내부검토 메모가 섞이지 않았는지 확인한다.
-4. [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]]와 [[coverage-계약조달-boundary-router-공개문안-process-2026-05]]에서 FAQ/process coverage가 manifest·quality gate에 노출됐는지 확인한다.
-5. 길을 잃으면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아가 core boundary checklist entry에서 계약조달으로 다시 분기한다.
+5. [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]]와 [[coverage-계약조달-boundary-router-공개문안-process-2026-05]]에서 FAQ/process coverage가 manifest·quality gate에 노출됐는지 확인한다.
+6. 길을 잃으면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아가 core boundary checklist entry에서 계약조달로 다시 분기한다.
 
 ## 공개/비공개 금지선
 이 manifest는 공개 온보딩 경로만 다룬다. 입찰 전 비공개 검토자료, 업체별 민감정보, 내부 평가·심사자료, 특정 계약 상대방에 대한 비공개 판단, 협상전략, 예정가격 산정 세부, 법률자문성 결론은 초안·체크리스트·agent routing에 넣지 않는다.
