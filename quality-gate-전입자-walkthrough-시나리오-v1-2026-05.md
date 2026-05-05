@@ -9,6 +9,7 @@
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[manifest-scenario-router-walkthrough-v1-2026-05]]
 - [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]
+- [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
 - [[walkthrough-전입자-시나리오-국회감사민원-대외전환-2026-05]]
 - [x] [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]]는 국회 자료요구 답변의 공개/비공개 멈춤선을 포함한다.
 - [x] [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]]는 감사 자료제출의 공개/비공개 멈춤선을 포함한다.
