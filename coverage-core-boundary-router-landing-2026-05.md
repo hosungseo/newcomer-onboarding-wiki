@@ -2,6 +2,7 @@
 
 ## 목적
 [[landing-core-boundary-router-checklists-2026-05]]가 핵심 업무축 checklist 묶음의 진입면으로 노출되는지 확인한다.
+- [[release-candidate-core-boundary-checklists-2026-05]] — 핵심 업무축 boundary checklist 묶음 release candidate.
 
 ## 노출 상태
 - [[manifest-core-boundary-router-checklists-2026-05]] → [[landing-core-boundary-router-checklists-2026-05]]
