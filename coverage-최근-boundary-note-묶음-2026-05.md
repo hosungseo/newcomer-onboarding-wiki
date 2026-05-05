@@ -19,6 +19,7 @@
 - [[coverage-감사대응-boundary-router-질문형-검토-2026-05]] — 감사대응 boundary router 질문형 checklist 연결 coverage.
 - [[manifest-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary router 질문형 checklist 묶음.
 - [[quality-gate-response-boundary-router-checklists-2026-05]] — 대응형 boundary router checklist 묶음 품질 점검.
+- [[index-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist 상황별 색인.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개자료·업체 민감정보 경계.
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 공식 조직도·업무분장·검토 중 자료 경계.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산 단계별 제출 전 분기.
