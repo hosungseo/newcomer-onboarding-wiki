@@ -16,6 +16,7 @@
 - [[manifest-core-boundary-router-checklists-2026-05]]
 - [[quality-gate-core-boundary-router-checklists-2026-05]]
 - [[release-candidate-core-boundary-checklists-2026-05]] — 핵심 업무축 boundary checklist 묶음 release candidate.
+- [[walkthrough-core-boundary-checklist-entry-2026-05]] — 핵심 업무축 boundary checklist 진입 walkthrough.
 - [[coverage-institution-boundary-core-hubs-2026-05]]
 
 ## 상위 경로
