@@ -39,6 +39,7 @@
 - [[coverage-대외협력현장소통-공통업무축-2026-05]] / [[manifest-newcomer-journey-대외협력현장소통-2026-05]] / [[quality-gate-대외협력현장소통-2026-05]]
 
 ## Agent-readable catalog
+- [[coverage-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[llms-newcomer-onboarding-v1]]
 - [[manifest-agent-readable-catalog-v1-2026-05]]
 
