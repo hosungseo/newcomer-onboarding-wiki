@@ -51,6 +51,7 @@
 - [x] source/process는 기본 note를 쓰되, boundary checklist가 공개근거·확정 사실·비공개 전략을 먼저 분리한다.
 - [x] 대외전환 checklist가 장관보고·국회·감사·민원 재사용 전 public/private decision point를 한 번 더 강제한다.
 - [x] [[landing-core-boundary-router-checklists-2026-05]]와 [[landing-전입자-공통업무축-2026-05]], docs/index.html quick link에서 boundary checklist·coverage·대외전환 checklist가 발견 가능하다.
+- [x] README, docs/index.html quick link, [[landing-전입자-공통업무축-2026-05]], [[manifest-agent-readable-catalog-v1-2026-05]]에서 공통업무축 coverage/manifest/quality gate가 직접 노출된다.
 
 ## 5. 남은 고도화 후보
 1. 미확정 정보 처리 FAQ를 실제 note로 만든 뒤 연결한다. 생성 전에는 후보명을 wikilink로 만들지 않는다.

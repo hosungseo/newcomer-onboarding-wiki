@@ -91,6 +91,11 @@ boundary_execution_coverage: coverage-법령대응-boundary-router-실행경계-
 quality_gate: quality-gate-법령대응-공통업무축-2026-05
 walkthrough: walkthrough-법령대응-기관상황업무축-공개경계-2026-05
 walkthrough_status: exposed
+actual_exposure:
+  readme: README 신규자 실행경계 route 묶음
+  docs_index: docs/index.html 법령대응 quick links
+  landing: landing-전입자-공통업무축-2026-05
+  agent_catalog: manifest-agent-readable-catalog-v1-2026-05
 walkthrough_next_split_candidates:
   - 입법예고 의견 대응
   - 규제심사 보완자료 정리

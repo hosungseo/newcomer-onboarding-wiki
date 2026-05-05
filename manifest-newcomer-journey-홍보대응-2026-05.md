@@ -27,6 +27,11 @@ steps:
   pre_submit_review: checklist-홍보대응-보도자료초안-제출전검토.md
   external_conversion_review: checklist-홍보대응-대외전환-문안분기-제출전검토.md
   coverage: coverage-홍보대응-공통업무축-2026-05.md
+  actual_exposure:
+    readme: README 신규자 실행경계 route 묶음
+    docs_index: docs/index.html 홍보대응 quick links
+    landing: landing-전입자-공통업무축-2026-05
+    agent_catalog: manifest-agent-readable-catalog-v1-2026-05
   boundary_router:
     question_checklist: checklist-홍보대응-boundary-router-질문형-검토.md
     checklist_coverage: coverage-홍보대응-boundary-router-질문형-검토-2026-05.md

@@ -65,7 +65,7 @@
 - walkthrough/execution boundary: [[coverage-법령대응-boundary-router-실행경계-2026-05]]로 노출
 - manifest: [[manifest-newcomer-journey-법령대응-2026-05]] 있음
 - quality gate: [[quality-gate-법령대응-공통업무축-2026-05]] 있음
-- docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
+- actual exposure: README, docs/index.html quick link, [[landing-전입자-공통업무축-2026-05]], [[manifest-agent-readable-catalog-v1-2026-05]]에 coverage/manifest/quality gate가 실제 노출됨
 - boundary router 실행경계: [[coverage-법령대응-boundary-router-실행경계-2026-05]]
 - 다음 후보: 입법예고·국회심사 상황형 path, 법령설명 Q&A template
 

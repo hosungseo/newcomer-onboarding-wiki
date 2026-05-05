@@ -21,7 +21,7 @@
 | source | 완료 | 기존 보도자료, 업무계획, 법령, 예산서, 공개 통계 순으로 자료 대조를 제시함 |
 | process | 완료 | 보도자료 초안 작성흐름과 장관보고·국회·감사 분기 표시를 정리함 |
 | checklist | 보강 | 발표 목적, 공개근거, 개인정보·민감정보, 확인선 점검과 대외전환 문안분기 checklist를 제공함 |
-| docs exposure | 완료 | hub/path/FAQ/source/process/checklist/coverage/manifest/quality gate가 웹 인덱스에 노출됨 |
+| actual exposure | 완료 | README, docs/index.html quick link, [[landing-전입자-공통업무축-2026-05]], [[manifest-agent-readable-catalog-v1-2026-05]]에 coverage/manifest/quality gate가 실제 노출됨 |
 | manifest | 완료 | [[manifest-newcomer-journey-홍보대응-2026-05]]가 전입자/agent 실행 경로를 고정함 |
 | quality gate | 완료 | [[quality-gate-홍보대응-공통업무축-2026-05]]가 공개/비공개 금지선과 coverage gap을 점검함 |
 
@@ -29,7 +29,7 @@
 - 질문형 검토 checklist: [[checklist-홍보대응-boundary-router-질문형-검토]] — 보도자료·설명자료·언론답변 전에 요청 목적, 공개근거, 확정 사실, 개인정보·피해자·신고자 식별위험, 비공개 대응전략을 먼저 가른다.
 - 질문형 검토 coverage: [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]] — 홍보대응 boundary checklist가 manifest/quality gate/walkthrough에 어떻게 노출되는지 기록한다.
 - 공통 walkthrough: [[walkthrough-core-boundary-checklist-entry-2026-05]] — core 업무축 boundary checklist 진입 흐름에서 홍보대응으로 재분기한다.
-- docs/landing discovery: [[landing-core-boundary-router-checklists-2026-05]]와 [[landing-전입자-공통업무축-2026-05]], docs/index.html quick link가 checklist·coverage·대외전환 checklist를 각각 노출한다.
+- docs/landing discovery: [[landing-core-boundary-router-checklists-2026-05]]와 [[landing-전입자-공통업무축-2026-05]], docs/index.html quick link가 boundary checklist·coverage·대외전환 checklist와 공통업무축 coverage/manifest/quality gate를 각각 노출한다.
 - FAQ/source/process 전용 boundary note는 아직 만들지 않았다. placeholder wikilink를 두지 않고, 기본 FAQ/source/process와 checklist coverage의 gap으로만 관리한다.
 
 ## 다음 빈칸
