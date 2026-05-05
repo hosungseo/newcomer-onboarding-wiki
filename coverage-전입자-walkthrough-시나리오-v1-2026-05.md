@@ -11,6 +11,7 @@ v1 release candidate 이후 실제 전입자 질문을 end-to-end로 따라갈 �
 - [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]] — 보도자료 초안에서 공개 문장과 미확정 정보 경계를 확인하는 상황.
 - [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]] — 회의 후속조치가 공개 문장으로 전환되기 전 경계를 확인하는 상황.
 - [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]] — 민원 폭주 상황에서 반복답변과 개인정보·사건정보 경계를 확인하는 상황.
+- [[walkthrough-전입자-시나리오-장관보고-공개자료전환-2026-05]] — 장관 보고용 쟁점 메모가 공개자료로 전환되기 전 경계를 확인하는 상황.
 
 ## Coverage 판정
 - [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
@@ -28,7 +29,7 @@ v1 release candidate 이후 실제 전입자 질문을 end-to-end로 따라갈 �
 1. 언론 대응/홍보 질의 walkthrough는 [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]]로 추가했다. 다음 후보는 장관 보고 또는 회의 후속조치 walkthrough다.
 2. 회의 후속조치 walkthrough는 [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]]로 추가했다. 다음 후보는 장관 보고 walkthrough다.
 3. docs index를 `기관군 / 업무축 / 상황형 walkthrough / 품질검증 / agent-readable` 섹션으로 재배치한다.
-4. walkthrough 6개는 [[manifest-agent-readable-catalog-v1-2026-05]]와 [[llms-newcomer-onboarding-v1]] 안에서 high-signal scenarios로 따로 묶었다. 다음 후보는 docs index UI의 section화다.
+4. walkthrough 7개는 [[manifest-agent-readable-catalog-v1-2026-05]]와 [[llms-newcomer-onboarding-v1]] 안에서 high-signal scenarios로 따로 묶었다. 다음 후보는 docs index UI의 section화다.
 
 ## Related
 - [[release-candidate-전입자온보딩-v1-2026-05]]

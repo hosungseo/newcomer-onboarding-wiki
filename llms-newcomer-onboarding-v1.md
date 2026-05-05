@@ -36,6 +36,7 @@ This file gives AI agents a compact entry map for the public newcomer onboarding
 - [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]]
 - [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]]
 - [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]]
+- [[walkthrough-전입자-시나리오-장관보고-공개자료전환-2026-05]]
 
 ## Safety boundary
 Never include personal data, complainant identifiers, vendor-sensitive details, non-public internal review opinions, unresolved policy drafts, audit/investigation/surveillance/security details, legal-advice conclusions, or distorted individual field statements in public onboarding notes.
