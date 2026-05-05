@@ -147,6 +147,7 @@ v1 체크포인트:
 - [[index-전입자-walkthrough-시나리오-v1-2026-05]]
 - [[manifest-scenario-router-walkthrough-v1-2026-05]]
 - [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]] — 국회 대응 시즌 자료요구·서면질의 답변.
+- [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]] — 감사 대응 시즌 자료제출.
 - [[release-candidate-전입자온보딩-v1-2026-05]]
 
 추천 허브:
