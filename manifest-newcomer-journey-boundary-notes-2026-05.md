@@ -15,6 +15,7 @@
 - [[index-최근-boundary-note-묶음-2026-05]]
 - [[coverage-최근-boundary-note-묶음-2026-05]]
 - [[quality-gate-최근-boundary-note-묶음-2026-05]]
+- [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist를 묶은 공통업무축 section.
 
 ## 사용 원칙
 - 먼저 업무축을 고른다.

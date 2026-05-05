@@ -6,6 +6,7 @@
 ## Gate 1 — entry map
 - [x] [[index-최근-boundary-note-묶음-2026-05]]가 업무축별 entry를 제공한다.
 - [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
+- [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist를 묶은 공통업무축 section.
 - [x] [[coverage-최근-boundary-note-묶음-2026-05]]가 노출 상태를 제공한다.
 
 ## Gate 2 — 업무축 역링크

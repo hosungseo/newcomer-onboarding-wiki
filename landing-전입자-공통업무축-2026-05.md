@@ -41,6 +41,7 @@
 - [[index-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 업무축별 entry map.
 - [[quality-gate-최근-boundary-note-묶음-2026-05]] — 최근 boundary note 묶음의 공개/비공개 안전 점검.
 - [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
+- [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist를 묶은 공통업무축 section.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개/업체민감정보 FAQ
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 조직정원 공식조직도/업무분장 FAQ
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
