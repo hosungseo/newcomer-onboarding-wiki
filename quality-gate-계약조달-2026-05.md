@@ -12,6 +12,13 @@
 - [[checklist-계약조달-검토초안-검토]]
 - [[coverage-계약조달-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-계약조달-2026-05]]
+- [[checklist-계약조달-boundary-router-질문형-검토]]
+- [[checklist-계약조달-공개비공개-실행경계]]
+- [[faq-계약조달-boundary-router-공개문안-초안-2026-05]]
+- [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]]
+- [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]]
+- [[coverage-계약조달-boundary-router-공개문안-process-2026-05]]
+- [[walkthrough-core-boundary-checklist-entry-2026-05]]
 
 ## 1. 경로 완성도
 - [x] hub에서 계약·조달의 전체 업무 경계를 설명한다.
@@ -44,6 +51,7 @@
 4. 검사·검수·지급 단계만 따로 떼어 실행 checklist를 만든다.
 
 ## Boundary router gate
+- [x] [[source-계약조달-증빙자료-대조순서]]가 공개근거와 내부확인 대상을 나누는 source 기준점으로 manifest에 노출되어 있다.
 - [x] [[checklist-계약조달-boundary-router-질문형-검토]]가 계약조달 공개 답변 전 질문형 멈춤선을 제공한다.
 - [x] [[checklist-계약조달-공개비공개-실행경계]]가 공개문안·답변초안·내부검토 메모로 나누기 전 실행경계를 점검한다.
 - [x] [[faq-계약조달-boundary-router-공개문안-초안-2026-05]]와 [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]]가 공개문안 FAQ의 근거·금지선·coverage를 함께 노출한다.
