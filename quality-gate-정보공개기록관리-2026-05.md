@@ -42,6 +42,12 @@
 - [x] 공개 가능 절차·범위와 비공개 내부검토·개인정보·법률판단 금지선이 decision point별로 분리되어 있다.
 - [x] docs/index.html에 정보공개·기록관리 업무축 manifest가 노출되어 있다.
 
+## 3-1. Docs/Landing 발견성
+- [x] [[landing-response-boundary-router-checklists-2026-05]]와 [[index-response-boundary-router-checklists-2026-05]]에서 정보공개·기록관리 질문형 checklist로 진입 가능하다.
+- [x] [[landing-boundary-router-products-v1-2026-05]]와 [[manifest-boundary-router-products-v1-2026-05]]에서 공개문안 FAQ/process와 질문형 checklist 제품군을 통해 이 업무축 manifest로 회귀 가능하다.
+- [x] [[manifest-agent-readable-catalog-v1-2026-05]]가 최근 boundary note 묶음과 Internal Operations Axes 양쪽에서 정보공개·기록관리 route를 노출한다.
+
+
 ## 4. 남은 고도화 후보
 1. boundary router FAQ/process/checklist coverage가 manifest와 공통 coverage에 노출되었으므로, 다음은 catalog/llms metadata 상위 묶음 노출만 판단한다.
 2. 정보공개기록관리 coverage의 “다음 빈칸”을 청구 분기 이후 현재 상태에 맞게 다시 정리한다.

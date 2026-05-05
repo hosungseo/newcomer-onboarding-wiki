@@ -66,6 +66,12 @@ stop_lines:
   - 회의 참석자 개인 평가나 발언 왜곡
 ```
 
+## Docs/Landing discovery route
+- Quick entry: [[landing-response-boundary-router-checklists-2026-05]] → [[index-response-boundary-router-checklists-2026-05]] → [[checklist-협업회의운영-boundary-router-질문형-검토]] → [[coverage-협업회의운영-공통업무축-2026-05]].
+- Product entry: [[landing-boundary-router-products-v1-2026-05]] → [[manifest-boundary-router-products-v1-2026-05]] → [[manifest-response-boundary-router-checklists-2026-05]] → 이 manifest.
+- Agent fallback: landing/docs에서 바로 찾지 못하면 [[manifest-agent-readable-catalog-v1-2026-05]]의 Internal Operations Axes와 Recent Boundary Notes를 확인한다.
+
+
 ## 공개/비공개 금지선
 이 manifest는 공개 온보딩 경로만 다룬다. 비공개 내부검토 의견, 개인정보, 업체별 민감정보, 보안정보, 미확정 정책안, 회의 참석자 개인 평가나 발언 왜곡은 route, 결과초안, checklist에 넣지 않는다.
 

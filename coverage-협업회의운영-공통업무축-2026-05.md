@@ -24,6 +24,13 @@
 - process: [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]]가 회의 개요, 확정된 논의 결과, 공개 가능한 후속 일정을 분리한다.
 - coverage: [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]], [[coverage-협업회의운영-boundary-router-공개문안-faq-2026-05]], [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]가 checklist/FAQ/process 노출을 각각 점검한다.
 
+## Docs/Landing discovery
+- response checklist landing: [[landing-response-boundary-router-checklists-2026-05]]에서 협업·회의운영 질문형 checklist로 바로 들어온다.
+- products landing: [[landing-boundary-router-products-v1-2026-05]]에서 회의 공개문안 FAQ/process와 checklist 제품군을 함께 고를 때 이 coverage를 확인한다.
+- response index: [[index-response-boundary-router-checklists-2026-05]]와 [[manifest-response-boundary-router-checklists-2026-05]]가 감사·국회·정보공개·협업회의운영 checklist를 한 묶음으로 노출한다.
+- 제품군 coverage: [[coverage-response-boundary-router-landing-2026-05]], [[coverage-boundary-router-products-v1-landing-2026-05]], [[coverage-boundary-router-products-v1-manifest-2026-05]]에서 docs/landing 발견성을 재점검한다.
+
+
 ## 연결 업무축
 - [[hub-문서기안]]
 - [[hub-정보공개기록관리]]

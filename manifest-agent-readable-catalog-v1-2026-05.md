@@ -47,6 +47,8 @@
 - 내부운영·협업·대외소통 umbrella: [[section-공통업무축-내부운영협업대외소통-2026-05]] / [[manifest-newcomer-journey-내부운영협업대외소통-2026-05]] / [[quality-gate-내부운영협업대외소통-2026-05]]
 - 운영관리 3축: [[coverage-운영관리3축-조직성과계약-2026-05]]
 - 대외협력·현장소통: [[section-대외협력현장소통-전환묶음-2026-05]] / [[coverage-대외협력현장소통-공통업무축-2026-05]]
+- 정보공개·기록관리: [[coverage-정보공개기록관리-공통업무축-2026-05]] / [[manifest-newcomer-journey-정보공개기록관리-2026-05]] / [[quality-gate-정보공개기록관리-2026-05]] — 공개자료·내부검토자료·기록물·정보공개청구 경계.
+- 협업·회의운영: [[coverage-협업회의운영-공통업무축-2026-05]] / [[manifest-newcomer-journey-협업회의운영-2026-05]] / [[quality-gate-협업회의운영-2026-05]] — 회의자료·결정사항·후속조치·공개전환 경계.
 
 ## LLM Metadata
 - [[llms-newcomer-onboarding-v1]]

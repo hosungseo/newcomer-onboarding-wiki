@@ -19,6 +19,13 @@
 - 회의 목적, 참석자, 회의자료, 내부검토자료, 결정사항, 후속 조치를 분리하는 축이다.
 - journey/gate: [[manifest-newcomer-journey-협업회의운영-2026-05]] / [[quality-gate-협업회의운영-2026-05]]
 
+## Boundary router discovery bridge
+- 정보공개·기록관리: [[coverage-정보공개기록관리-공통업무축-2026-05]] → [[manifest-newcomer-journey-정보공개기록관리-2026-05]] → [[quality-gate-정보공개기록관리-2026-05]] 순서로 확인한다.
+- 협업·회의운영: [[coverage-협업회의운영-공통업무축-2026-05]] → [[manifest-newcomer-journey-협업회의운영-2026-05]] → [[quality-gate-협업회의운영-2026-05]] 순서로 확인한다.
+- 두 축 모두 [[landing-response-boundary-router-checklists-2026-05]], [[index-response-boundary-router-checklists-2026-05]], [[manifest-response-boundary-router-checklists-2026-05]]에서 최근 질문형 boundary route로 발견될 수 있어야 한다.
+- 통합 제품군 노출은 [[landing-boundary-router-products-v1-2026-05]], [[manifest-boundary-router-products-v1-2026-05]], [[coverage-boundary-router-products-v1-landing-2026-05]]에서 다시 점검한다.
+
+
 ## 같이 보면 좋은 상위 진입로
 - [[landing-전입자-공통업무축-2026-05]]
 - [[newcomer-path-첫출근-인사이동-첫주-2026-05]]

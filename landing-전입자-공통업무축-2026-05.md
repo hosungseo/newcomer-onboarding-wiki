@@ -39,6 +39,10 @@
 ## 최근 boundary note 묶음
 - [[section-실행경계-boundary-router-4축-2026-05]] — 예산·조직정원·홍보·정보공개 실행경계 route를 한 화면에서 고르는 companion section.
 - [[section-민원법령-boundary-router-실행경계-2026-05]] — 민원·법령 boundary route를 개인정보·사건정보·법률자문성 결론 금지선 기준으로 고르는 companion section.
+- 정보공개·기록관리/협업회의 통합 route: [[router-정보공개기록관리-협업회의-신규자-공개경계]] → [[newcomer-path-정보공개기록관리-협업회의-공개경계]] → [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]] / [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
+- 정보공개·기록관리 공개문안 route: [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] → [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]]
+- 협업회의운영 공개문안 route: [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]] → [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]
+- 정보공개·협업회의 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-정보공개기록관리-boundary-router-질문형-검토]] / [[checklist-협업회의운영-boundary-router-질문형-검토]]를 먼저 본다.
 - 감사대응 공개문안 route: [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] → [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-감사대응-boundary-router-공개문안-process-2026-05]]
 - 국회대응 공개문안 route: [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] → [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] → [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
 - 감사·국회 질문형 검토에서 바로 멈춤선을 확인해야 하면 [[checklist-감사대응-boundary-router-질문형-검토]] / [[checklist-국회대응-boundary-router-질문형-검토]]를 먼저 본다.

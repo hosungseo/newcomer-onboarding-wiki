@@ -45,6 +45,12 @@
 - [x] 회의 개요·확정 후속조치와 참석자별 발언·기관 간 이견·미확정 조정안 금지선이 decision point별로 분리되어 있다.
 - [x] docs/index.html에 hub/path/source/process/checklist/coverage/manifest가 노출되어 있다.
 
+## 3-1. Docs/Landing 발견성
+- [x] [[landing-response-boundary-router-checklists-2026-05]]와 [[index-response-boundary-router-checklists-2026-05]]에서 협업·회의운영 질문형 checklist로 진입 가능하다.
+- [x] [[landing-boundary-router-products-v1-2026-05]]와 [[manifest-boundary-router-products-v1-2026-05]]에서 공개문안 FAQ/process와 질문형 checklist 제품군을 통해 이 업무축 manifest로 회귀 가능하다.
+- [x] [[manifest-agent-readable-catalog-v1-2026-05]]가 최근 boundary note 묶음과 Internal Operations Axes 양쪽에서 협업·회의운영 route를 노출한다.
+
+
 ## 4. 남은 고도화 후보
 1. boundary router FAQ/process/checklist coverage가 manifest와 공통 coverage에 노출되었으므로, 다음은 catalog/llms metadata 상위 묶음 노출만 판단한다.
 2. [[process-협업회의운영-대외협력현장소통-후속조치경계]]로 대외협력·현장소통과의 경계를 점검한다.

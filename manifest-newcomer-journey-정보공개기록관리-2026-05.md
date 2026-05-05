@@ -77,6 +77,12 @@ stop_lines:
   - 결재 전 확정처럼 보이는 표현
 ```
 
+## Docs/Landing discovery route
+- Quick entry: [[landing-response-boundary-router-checklists-2026-05]] → [[index-response-boundary-router-checklists-2026-05]] → [[checklist-정보공개기록관리-boundary-router-질문형-검토]] → [[coverage-정보공개기록관리-공통업무축-2026-05]].
+- Product entry: [[landing-boundary-router-products-v1-2026-05]] → [[manifest-boundary-router-products-v1-2026-05]] → [[manifest-response-boundary-router-checklists-2026-05]] → 이 manifest.
+- Agent fallback: landing/docs에서 바로 찾지 못하면 [[manifest-agent-readable-catalog-v1-2026-05]]의 Internal Operations Axes와 Recent Boundary Notes를 확인한다.
+
+
 ## 공개/비공개 금지선
 이 manifest는 공개 온보딩 경로만 다룬다. 개인정보, 보안정보, 업체별 민감정보, 비공개 내부검토 의견, 법률자문성 결론, 공개 여부에 대한 단정적 법률 판단은 route나 초안 문장에 넣지 않는다.
 
