@@ -3,6 +3,8 @@
 ## 완료된 axis
 - institution section axis: 대표 6개 기관군 section → boundary router
 - core hubs axis: 계약조달·조직정원·예산·민원대응·홍볼대응·법령대응 hub → boundary router
+- [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]] — 계약조달 boundary router 공개문안 작성흐름.
+- [[coverage-계약조달-boundary-router-공개문안-process-2026-05]] — 계약조달 boundary router 공개문안 process coverage.
 - response hubs axis: 감사대응·국회대응·정보공개기록관리·협업회의운영 hub → boundary checklist
 - [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] — 협업회의운영 boundary router 공개문안 작성흐름.
 - [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]] — 협업회의운영 boundary router 공개문안 process coverage.

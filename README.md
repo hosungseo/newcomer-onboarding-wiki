@@ -267,6 +267,8 @@ v1 체크포인트:
 - [[manifest-newcomer-journey-정보공개기록관리-2026-05]]
 - [[quality-gate-정보공개기록관리-2026-05]]
 - [[hub-계약조달]]
+- [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]] — 계약조달 boundary router 공개문안 작성흐름.
+- [[coverage-계약조달-boundary-router-공개문안-process-2026-05]] — 계약조달 boundary router 공개문안 process coverage.
 - [[newcomer-path-계약조달-첫주-2026-05]]
 - [[faq-구매-용역-공사는-어떻게-구분하나]]
 - [[faq-계약조달-처음-무엇부터-확인하나]]
