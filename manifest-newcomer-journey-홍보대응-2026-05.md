@@ -25,6 +25,13 @@ steps:
   draft_release: process-홍보대응-보도자료초안-작성흐름.md
   pre_submit_review: checklist-홍보대응-보도자료초안-제출전검토.md
   coverage: coverage-홍보대응-공통업무축-2026-05.md
+  boundary_router:
+    question_checklist: checklist-홍보대응-boundary-router-질문형-검토.md
+    checklist_coverage: coverage-홍보대응-boundary-router-질문형-검토-2026-05.md
+    walkthrough: walkthrough-core-boundary-checklist-entry-2026-05.md
+    faq_status: pending_no_placeholder_wikilink
+    source_status: use_source_홍보대응_자료대조순서_until_boundary_source_exists
+    process_status: use_process_홍보대응_보도자료초안_작성흐름_until_boundary_process_exists
 stop_lines:
   - 미확정 정책결정
   - 비공개 내부검토
@@ -35,6 +42,13 @@ stop_lines:
   - 특정 업체·입찰·평가 정보
   - 법률자문성 결론
 ```
+
+## Boundary router route
+1. [[source-홍보대응-자료대조순서]]에서 기존 보도자료·설명자료·업무계획·법령·예산서·통계의 공개근거를 먼저 확인한다.
+2. 외부 설명문이나 언론 답변으로 바꾸기 전 [[checklist-홍보대응-boundary-router-질문형-검토]]를 통과해 확정 사실, 개인정보, 피해자·신고자 식별위험, 비공개 대응전략을 가른다.
+3. 별도 홍보대응 boundary FAQ/source/process note가 생기기 전까지는 기본 FAQ/source/process를 사용하고, 생성 전 후보명은 wikilink로 만들지 않는다.
+4. [[coverage-홍보대응-boundary-router-질문형-검토-2026-05]]에서 checklist coverage와 남은 gap을 확인한다.
+5. 다른 core 업무축 경계와 비교해야 하면 [[walkthrough-core-boundary-checklist-entry-2026-05]]로 돌아간다.
 
 ## 공개/비공개 금지선
 이 manifest는 공개 온보딩 경로만 다룬다. 미확정 정책결정, 비공개 내부검토, 비공개 협의·대응 전략, 개인정보, 민원인·피해자·신고자 식별정보, 사건별 민감정보, 수사·감사·감독·보안 세부, 특정 업체·입찰·평가 정보, 법률자문성 결론은 초안·체크리스트·agent routing에 넣지 않는다.
