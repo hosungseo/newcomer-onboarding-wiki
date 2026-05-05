@@ -572,6 +572,22 @@ function renderLanding() {
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/release-candidate-전입자온보딩-v1-2026-05.md" target="_blank" rel="noopener">전입자 온보딩 v1 release candidate</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/manifest-agent-readable-catalog-v1-2026-05.md" target="_blank" rel="noopener">전입자 온보딩 v1 agent-readable catalog</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/llms-newcomer-onboarding-v1.md" target="_blank" rel="noopener">전입자 온보딩 v1 llms metadata</a>
+  `;
+  app.appendChild(transferLinks);
+
+  const scenarioLabel = document.createElement('div');
+  scenarioLabel.className = 'section-title';
+  scenarioLabel.textContent = '상황형 walkthrough — 실제 질문에서 바로 고르기';
+  app.appendChild(scenarioLabel);
+
+  const scenarioIntro = document.createElement('p');
+  scenarioIntro.style.cssText = 'margin:0 0 12px;color:var(--text-2);font-size:14px;line-height:1.55';
+  scenarioIntro.textContent = '전입자가 실제 상황을 들고 왔을 때는 아래 router/index에서 먼저 시나리오를 고르고, 각 walkthrough의 checklist·quality gate에서 공개/비공개 멈춤선을 확인합니다.';
+  app.appendChild(scenarioIntro);
+
+  const scenarioLinks = document.createElement('div');
+  scenarioLinks.className = 'quick-links';
+  scenarioLinks.innerHTML = `
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/walkthrough-전입자-시나리오-국회감사민원-대외전환-2026-05.md" target="_blank" rel="noopener">국회·감사·민원 대외전환 walkthrough</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/walkthrough-전입자-시나리오-정보공개청구-첫검토-2026-05.md" target="_blank" rel="noopener">정보공개청구 첫 검토 walkthrough</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/walkthrough-전입자-시나리오-예산시즌-자료요구-2026-05.md" target="_blank" rel="noopener">예산 시즌 자료요구 walkthrough</a>
@@ -585,6 +601,12 @@ function renderLanding() {
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05.md" target="_blank" rel="noopener">회의 후속조치 공개전환 walkthrough</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05.md" target="_blank" rel="noopener">민원 폭주 반복답변 walkthrough</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/walkthrough-전입자-시나리오-장관보고-공개자료전환-2026-05.md" target="_blank" rel="noopener">장관 보고 공개자료 전환 walkthrough</a>
+  `;
+  app.appendChild(scenarioLinks);
+
+  const transferLinks2 = document.createElement('div');
+  transferLinks2.className = 'quick-links';
+  transferLinks2.innerHTML = `
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/section-공통업무축-내부운영협업대외소통-2026-05.md" target="_blank" rel="noopener">내부운영·협업·대외소통 section</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/manifest-newcomer-journey-내부운영협업대외소통-2026-05.md" target="_blank" rel="noopener">내부운영·협업·대외소통 journey manifest</a>
     <a class="quick-link" href="https://github.com/hosungseo/newcomer-onboarding-wiki/blob/main/quality-gate-내부운영협업대외소통-2026-05.md" target="_blank" rel="noopener">내부운영·협업·대외소통 quality gate</a>
