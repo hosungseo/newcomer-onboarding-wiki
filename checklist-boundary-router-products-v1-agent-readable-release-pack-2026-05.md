@@ -4,6 +4,7 @@
 Agent나 전입자 안내 화면이 [[release-candidate-boundary-router-products-v1-release-pack-2026-05]]를 읽을 때 필요한 entrypoint와 검증 문서를 빠뜨리지 않도록 확인한다.
 
 ## Agent-readable 확인
+- [[coverage-boundary-router-products-v1-agent-readable-checklist-2026-05]] — boundary router products v1 agent-readable checklist 노출 coverage.
 - [ ] 최상위 후보는 [[release-candidate-boundary-router-products-v1-release-pack-2026-05]]인가?
 - [ ] 최상위 정의는 [[manifest-boundary-router-products-v1-release-pack-2026-05]]인가?
 - [ ] 빠른 선택은 [[landing-boundary-router-products-v1-2026-05]]에서 가능한가?
