@@ -39,9 +39,10 @@
 - source: 있음
 - process: 있음
 - checklist: 있음
-- docs exposure: hub/path/FAQ/source/process/checklist 있음
-- manifest: 있음
-- 다음 후보: 정보공개·홍보·감사로 이어지는 상황형 path 또는 반복 민원 FAQ template
+- manifest: [[manifest-newcomer-journey-민원대응-2026-05]] 있음
+- quality gate: [[quality-gate-민원대응-공통업무축-2026-05]] 있음
+- docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
+- 다음 후보: 정보공개·홍보·감사로 이어지는 상황형 path, 반복 민원 FAQ template, 개인정보·사건정보 masking 사례 checklist
 
 ## 금지선
 개인정보, 민원인 식별정보, 사건별 민원·신고·수사·감사·조사 세부, 내부 검토의견, 민원 대응 전략, 비공개 협의 내용, 업체·입찰·평가 정보, 법률자문성 결론은 포함하지 않는다.
