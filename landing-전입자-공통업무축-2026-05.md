@@ -37,6 +37,7 @@
 - [[manifest-scenario-router-walkthrough-v1-2026-05]] — 실제 전입자 질문을 7개 walkthrough 중 하나로 빠르게 route한다.
 
 ## 최근 boundary note 묶음
+- [[section-실행경계-boundary-router-4축-2026-05]] — 예산·조직정원·홍보·정보공개 실행경계 route를 한 화면에서 고르는 companion section.
 - [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
 - [[index-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 업무축별 entry map.
 - [[quality-gate-최근-boundary-note-묶음-2026-05]] — 최근 boundary note 묶음의 공개/비공개 안전 점검.
@@ -170,6 +171,7 @@
 - [[section-공통업무축-내부운영협업대외소통-2026-05]]
 - [[coverage-내부운영협업3축-운영정보공개회의-2026-05]]
 - [[coverage-운영관리3축-조직성과계약-2026-05]]
+- [[section-실행경계-boundary-router-4축-2026-05]]
 - [[hub-조직정원]]
 - [[hub-성과평가]]
 - [[newcomer-path-성과평가-첫주-2026-05]]
