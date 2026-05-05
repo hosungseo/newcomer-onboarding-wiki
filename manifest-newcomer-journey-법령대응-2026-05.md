@@ -106,3 +106,5 @@ stop_lines:
 
 ## Quality Gate
 - [[quality-gate-법령대응-공통업무축-2026-05]]
+
+- 공개설명경계 보강: [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]], [[coverage-법령대응-공개설명경계-2026-05]]

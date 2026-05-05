@@ -65,3 +65,5 @@
 
 ## 판정
 현재 묶음은 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로와 [[coverage-법령대응-boundary-router-실행경계-2026-05]] 기반 public/private decision point를 갖췄다. 다음 단계는 상황형 path를 세분화해 입법예고, 규제심사, 법제심사, 국회심사별로 분기하는 것이다.
+
+- 공개설명경계 보강: [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]], [[coverage-법령대응-공개설명경계-2026-05]]
