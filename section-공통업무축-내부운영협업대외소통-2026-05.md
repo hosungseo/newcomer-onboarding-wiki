@@ -28,10 +28,11 @@
 5. 선택한 coverage에서 hub → path → FAQ → source → process → checklist 순서로 내려간다.
 
 ## 현재 보강 상태
-- 운영관리 3축: coverage 있음
-- 정보공개·기록관리: hub/path/FAQ/source/process/checklist/coverage 있음
-- 협업·회의운영: hub/path/FAQ/source/process/checklist/coverage 있음
-- 대외협력·현장소통: hub/path/FAQ/source/process/checklist/coverage 있음
+- 운영관리 3축: coverage와 조직정원·성과평가·계약조달 manifest/quality gate 있음
+- 정보공개·기록관리: hub/path/FAQ/source/process/checklist/coverage/manifest/quality gate 있음
+- 협업·회의운영: hub/path/FAQ/source/process/checklist/coverage/manifest/quality gate 있음
+- 대외협력·현장소통: hub/path/FAQ/source/process/checklist/coverage/manifest/quality gate 있음
+- umbrella: [[manifest-newcomer-journey-내부운영협업대외소통-2026-05]] / [[quality-gate-내부운영협업대외소통-2026-05]] 있음
 
 ## 공통 masking FAQ
 - 공통 masking FAQ: [[faq-공통업무축-민감정보-masking-사례구분]]
