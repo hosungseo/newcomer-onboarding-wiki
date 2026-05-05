@@ -4,6 +4,7 @@
 boundary router products v1 release pack의 최상위 정의를 고정한다.
 
 ## Release pack
+- [[coverage-boundary-router-products-v1-release-pack-manifest-2026-05]] — boundary router products v1 release pack manifest 노출 coverage.
 - [[index-boundary-router-products-v1-release-pack-2026-05]]
 - [[coverage-boundary-router-products-v1-release-pack-2026-05]]
 - [[quality-gate-boundary-router-products-v1-release-pack-2026-05]]
