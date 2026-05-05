@@ -1,5 +1,6 @@
 # FAQ — 조직정원 Boundary Router 공개문안 초안 2026-05
 - [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]] — 조직정원 boundary router 공개문안 FAQ coverage.
+- [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]] — 조직정원 boundary router 공개문안 작성흐름.
 
 ## Q1. 조직정원 자료를 공개 문안으로 바꿀 때 먼저 무엇을 확인하나?
 먼저 [[checklist-조직정원-boundary-router-질문형-검토]]로 공개 가능한 조직 기능, 정원 일반 현황, 확정된 제도·절차만 남긴다. 개인별 인사정보, 내부 검토안, 미확정 조직개편안은 공개 문안에서 분리한다.

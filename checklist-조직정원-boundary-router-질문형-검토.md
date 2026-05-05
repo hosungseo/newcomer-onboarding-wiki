@@ -1,6 +1,7 @@
 # Checklist — 조직정원 boundary router 질문형 검토
 - [[faq-조직정원-boundary-router-공개문안-초안-2026-05]] — 조직정원 boundary router 공개문안 초안 FAQ.
 - [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]] — 조직정원 boundary router 공개문안 FAQ coverage.
+- [[process-조직정원-boundary-router-공개문안-작성흐름-2026-05]] — 조직정원 boundary router 공개문안 작성흐름.
 
 ## 목적
 조직정원 hub에서 조직도·정원표·업무분장·개편 설명을 다룰 때 [[manifest-institution-to-boundary-router-2026-05]]로 돌아가야 하는 공개/비공개 경계를 빠르게 점검한다.
