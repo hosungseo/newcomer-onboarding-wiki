@@ -1,5 +1,6 @@
 # hub — 감사원
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
+- [[checklist-감사대응-boundary-router-질문형-검토]] — 감사대응에서 boundary router로 돌아가기 전 질문형 검토.
 
 - type: hub
 - institution: 감사원
