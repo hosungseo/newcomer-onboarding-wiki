@@ -146,6 +146,7 @@
 - [[coverage-조직정원-boundary-router-공개문안-process-2026-05]] — 조직정원 boundary router 공개문안 process coverage.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
 - [[faq-예산대응-boundary-router-공개문안-초안-2026-05]] — 예산대응 boundary router 공개문안 초안 FAQ.
+- [[coverage-예산대응-boundary-router-공개문안-faq-2026-05]] — 예산대응 boundary router 공개문안 FAQ coverage.
 - [[checklist-민원대응-민감정보-masking-제출전검토]] — 민원대응 민감정보 masking checklist
 - [[checklist-홍보대응-대외전환-문안분기-제출전검토]] — 홍보대응 대외전환 문안분기 checklist
 - [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명 법률자문성 결론 FAQ
