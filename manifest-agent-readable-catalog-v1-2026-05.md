@@ -31,5 +31,8 @@
 ## LLM Metadata
 - [[llms-newcomer-onboarding-v1]]
 
+## Walkthroughs
+- [[walkthrough-전입자-시나리오-국회감사민원-대외전환-2026-05]]
+
 ## do_not_include
 개인정보, 민원인 식별정보, 업체별 민감정보, 비공개 내부검토 의견, 미확정 정책안, 감사·조사·수사 세부, 법률자문성 결론, 현장 관계자 개인 평가나 발언 왜곡은 포함하지 않는다.
