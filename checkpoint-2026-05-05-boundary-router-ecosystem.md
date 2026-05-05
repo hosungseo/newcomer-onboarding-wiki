@@ -7,6 +7,7 @@
 - agency hubs axis: 감사원·조달청 기관별 hub → boundary router
 
 ## 완료된 제품화
+- [[manifest-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router 질문형 checklist 묶음.
 - landing: institution boundary, response checklist
 - walkthrough: institution boundary 질문형, response checklist entry
 - checklist: 감사·국회·정보공개·협업회의운영 boundary router 질문형

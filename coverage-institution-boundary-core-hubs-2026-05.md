@@ -26,6 +26,7 @@
 - [[hub-협업회의운영]] → [[manifest-institution-to-boundary-router-2026-05]]
 
 ## 연결 기준
+- [[manifest-core-boundary-router-checklists-2026-05]] — 핵심 업무축 boundary router 질문형 checklist 묶음.
 - [[faq-기관별-hub-boundary-router는-언제-직접-연결하나]]
 - [[checklist-institution-boundary-router-hub-selection-2026-05]]
 - [[process-institution-boundary-router-hub-linking-2026-05]]
