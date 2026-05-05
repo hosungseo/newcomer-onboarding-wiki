@@ -26,7 +26,7 @@ v1 release candidate 이후 실제 전입자 질문을 end-to-end로 따라갈 �
 
 ## 다음 후보
 1. 언론 대응/홍보 질의 walkthrough는 [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]]로 추가했다. 다음 후보는 장관 보고 또는 회의 후속조치 walkthrough다.
-2. 장관 보고 또는 회의 후속조치 walkthrough를 추가해 내부 보고·공개자료 전환 경계를 보강한다.
+2. 회의 후속조치 walkthrough는 [[walkthrough-전입자-시나리오-회의후속조치-공개전환-2026-05]]로 추가했다. 다음 후보는 장관 보고 walkthrough다.
 3. docs index를 `기관군 / 업무축 / 상황형 walkthrough / 품질검증 / agent-readable` 섹션으로 재배치한다.
 4. walkthrough 6개는 [[manifest-agent-readable-catalog-v1-2026-05]]와 [[llms-newcomer-onboarding-v1]] 안에서 high-signal scenarios로 따로 묶었다. 다음 후보는 docs index UI의 section화다.
 
