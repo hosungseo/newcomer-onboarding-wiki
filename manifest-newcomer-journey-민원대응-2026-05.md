@@ -36,11 +36,45 @@
 - Process coverage: [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
 - 핵심 확인: 개인정보, 사건정보, 내부검토 의견, 법률자문성 결론, 비공개 협의 내용이 섞이지 않았는가?
 
-## Journey 6 — 반복민원 재사용
+## Journey 6 — 반복민원 walkthrough와 재사용
 
 - Coverage: [[coverage-민원대응-공통업무축-2026-05]]
+- Walkthrough: [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]]
+- Walkthrough coverage: [[coverage-민원대응-boundary-router-walkthrough-2026-05]]
 - 반복 질문은 FAQ 후보로, 반복 절차는 process 후보로, 반복 자료 확인은 source 후보로 승격한다.
-- 국회·감사·홍보로 이어지는 민원은 관련 업무축에 cross-link를 남긴다.
+- 타기관 소관은 [[checklist-민원대응-타기관이송-제출전검토]]에서 이송·안내 경계를 닫고, 국회·감사·홍보로 이어지는 민원은 관련 업무축에 cross-link를 남긴다.
+
+## Exposure inventory
+
+```yaml
+route_id: newcomer-journey-civil-complaint-response-2026-05
+hub: hub-민원대응
+path: newcomer-path-민원폭주대응-첫주-2026-05
+faq:
+  - faq-민원폭주-처음-무엇부터-분류하나
+  - faq-민원답변-개인정보와-사건정보는-어디서-멈추나
+  - faq-민원대응-boundary-router-공개문안-초안-2026-05
+  - faq-민원답변-첫문장은-어떻게-쓰나
+  - faq-민원답변-타기관소관은-어떻게-처리하나
+source: source-민원대응-자료대조순서
+process: process-민원대응-답변초안-작성흐름
+checklist:
+  - checklist-민원대응-답변초안-제출전검토
+  - checklist-민원대응-boundary-router-질문형-검토
+  - checklist-민원대응-민감정보-masking-제출전검토
+  - checklist-민원대응-타기관이송-제출전검토
+walkthrough: walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05
+coverage:
+  - coverage-민원대응-공통업무축-2026-05
+  - coverage-민원대응-boundary-router-walkthrough-2026-05
+quality_gate: quality-gate-민원대응-공통업무축-2026-05
+stop_lines:
+  - 민원인 개인정보
+  - 사건별 사실관계
+  - 신고·조사·수사·감사 세부
+  - 내부 대응전략
+  - 법률자문성 결론
+```
 
 ## 다음 확장 후보
 

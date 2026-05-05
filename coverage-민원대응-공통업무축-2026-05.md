@@ -24,6 +24,7 @@
 - [[checklist-민원대응-boundary-router-질문형-검토]] — 공개문안 전환 전 질문형 멈춤선 점검.
 - [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]]
 - [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
+- [[coverage-민원대응-boundary-router-walkthrough-2026-05]] — 민원 폭주·반복답변 walkthrough의 FAQ/source/process/checklist 노출과 공개·비공개 판단 지점을 점검.
 
 ## 연결 업무축
 - [[hub-홍보대응]]
@@ -45,7 +46,8 @@
 - FAQ: 2개 있음
 - source: 있음
 - process: 있음
-- checklist: [[checklist-민원대응-민감정보-masking-제출전검토]]까지 보강
+- checklist: [[checklist-민원대응-민감정보-masking-제출전검토]], [[checklist-민원대응-타기관이송-제출전검토]]까지 보강
+- walkthrough: [[walkthrough-전입자-시나리오-민원폭주-반복답변경계-2026-05]] 및 [[coverage-민원대응-boundary-router-walkthrough-2026-05]]로 노출
 - manifest: [[manifest-newcomer-journey-민원대응-2026-05]] 있음
 - quality gate: [[quality-gate-민원대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
