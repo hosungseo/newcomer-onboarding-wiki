@@ -36,5 +36,20 @@
 ## do_not_include
 국회 대응 전략, 비공개 내부검토, 비공개 협의 내용, 개인정보, 사건별 민감정보, 수사·감사·감독 세부, 비공개 예산수치, 업체·입찰·평가 정보, 법률자문성 결론.
 
+## Boundary Router 공개문안 route
+- boundary_checklist: [[checklist-국회대응-boundary-router-질문형-검토]]
+- boundary_faq: [[faq-국회대응-boundary-router-공개문안-초안-2026-05]]
+- boundary_process: [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]]
+- boundary_faq_coverage: [[coverage-국회대응-boundary-router-공개문안-faq-2026-05]]
+- boundary_process_coverage: [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
+- boundary_question_coverage: [[coverage-국회대응-boundary-router-질문형-검토-2026-05]]
+
+### boundary_route_order
+1. core route에서 요구사항과 공개근거를 먼저 확인한다.
+2. 공개문안 FAQ로 답변 가능한 범위와 멈춤선을 고른다.
+3. 공개문안 process로 초안 문장을 작성하되, 내부확인·비공개 판단은 문장 밖에 둔다.
+4. boundary checklist와 자료요구답변 제출 전 checklist를 모두 통과한 문장만 공개 온보딩 예시로 남긴다.
+5. coverage 3종에서 FAQ, process, checklist가 모두 노출되는지 확인한다.
+
 ## Quality Gate
 - [[quality-gate-국회대응-공통업무축-2026-05]]

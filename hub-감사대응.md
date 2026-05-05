@@ -50,6 +50,14 @@
 - [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]] — 자료제출 요청, 조치결과 확인, 증빙 정리가 동시에 들어온 경우의 end-to-end 경로.
 - [[manifest-scenario-router-walkthrough-v1-2026-05]] — 질문이 국회·감사·민원·정보공개·예산 중 어디로 갈지 애매할 때 먼저 고르는 router.
 
+## 신규자 route — 기관 → 상황 → 업무축 → 자료 → 초안/체크리스트 → 경계
+1. 기관 맥락은 [[landing-전입자-기관군별-온보딩-2026-05]] 또는 해당 부처 hub에서 먼저 잡는다.
+2. 감사 상황이면 [[newcomer-path-감사대응-첫주-2026-05]]와 [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]]로 들어간다.
+3. 자료는 [[source-감사대응-자료대조순서]]에서 공개근거·내부확인·증빙 존재 여부로 나눈다.
+4. 초안은 [[process-감사대응-자료제출-작성흐름]]과 [[process-감사대응-조치결과-이행상황-확인흐름]]에서 작성 순서를 잡는다.
+5. 제출 직전에는 [[checklist-감사대응-자료제출-제출전검토]]와 [[checklist-감사대응-boundary-router-질문형-검토]]에서 공개/비공개 경계를 확인한다.
+6. 국회 자료요구나 상임위 설명으로 전환되면 [[hub-국회대응]]과 [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]]로 갈아탄다.
+
 ## Related Notes
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관별 hub에서 공통업무축 공개/비공개 boundary note로 되돌아가는 route.
 - [[checklist-감사대응-boundary-router-질문형-검토]] — 감사대응에서 boundary router로 돌아가기 전 질문형 검토.

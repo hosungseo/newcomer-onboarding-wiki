@@ -48,5 +48,20 @@
 6. `checklist-감사대응-자료제출-제출전검토`로 요구범위, 기록, 공개근거, 개인정보·사건정보 금지선을 검토한다.
 7. `coverage-감사대응-공통업무축-2026-05`에서 빠진 층과 다음 후보를 확인한다.
 
+## Boundary Router 공개문안 route
+- boundary_checklist: [[checklist-감사대응-boundary-router-질문형-검토]]
+- boundary_faq: [[faq-감사대응-boundary-router-공개문안-초안-2026-05]]
+- boundary_process: [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]]
+- boundary_faq_coverage: [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]]
+- boundary_process_coverage: [[coverage-감사대응-boundary-router-공개문안-process-2026-05]]
+- boundary_question_coverage: [[coverage-감사대응-boundary-router-질문형-검토-2026-05]]
+
+### boundary_route_order
+1. core route에서 요구사항과 공개근거를 먼저 확인한다.
+2. 공개문안 FAQ로 답변 가능한 범위와 멈춤선을 고른다.
+3. 공개문안 process로 초안 문장을 작성하되, 내부확인·비공개 판단은 문장 밖에 둔다.
+4. boundary checklist와 자료제출 제출 전 checklist를 모두 통과한 문장만 공개 온보딩 예시로 남긴다.
+5. coverage 3종에서 FAQ, process, checklist가 모두 노출되는지 확인한다.
+
 ## Quality Gate
 - [[quality-gate-감사대응-공통업무축-2026-05]]

@@ -25,6 +25,13 @@
 - [ ] 개인정보, 비공개 내부검토, 미확정 정책안, 감사·수사·보안·업체 민감정보 금지선이 명시되어 있다.
 - [ ] docs/index.html에는 핵심 route가 노출되어 있다.
 
+## 공개문안/Boundary Router 추가 기준
+- [ ] [[checklist-국회대응-boundary-router-질문형-검토]]가 FAQ와 process를 모두 안내하는가?
+- [ ] [[faq-국회대응-boundary-router-공개문안-초안-2026-05]]가 공개 가능한 제출 현황·절차 설명과 비공개 내부확인을 분리하는가?
+- [ ] [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]]가 초안 작성 뒤 제출 전 checklist로 되돌아오게 하는가?
+- [ ] [[coverage-국회대응-boundary-router-공개문안-faq-2026-05]], [[coverage-국회대응-boundary-router-공개문안-process-2026-05]], [[coverage-국회대응-boundary-router-질문형-검토-2026-05]]가 manifest와 agent-readable catalog 노출을 확인하는가?
+- [ ] [[walkthrough-전입자-시나리오-국회대응시즌-자료요구답변-2026-05]]가 공개문안 경계 확인 단계로 회귀하는가?
+
 ## 현재 판정
 - hub/path/FAQ/source/process/checklist/coverage/manifest는 모두 존재한다.
 - docs 노출은 hub, path, FAQ, source, process, checklist, coverage, manifest, 예산심사 path, 국정감사 path까지 확인 대상이다.

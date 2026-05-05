@@ -45,11 +45,18 @@
 - [ ] 민원인·신고자·피해자·사건번호·현장조사 내용이 있으면 민원/정보공개/개인정보 검토로 분기하는가?
 - [ ] 분기 항목의 세부 사실은 공개 온보딩 note에 쓰지 않고 작업 표시만 남기게 하는가?
 
-## Gate 5 — 다음 고도화 후보
+## Gate 5 — 공개문안/Boundary Router 회귀
+- [ ] [[checklist-감사대응-boundary-router-질문형-검토]]가 FAQ와 process를 모두 안내하는가?
+- [ ] [[faq-감사대응-boundary-router-공개문안-초안-2026-05]]가 공개 가능한 사실·절차와 비공개 내부확인을 분리하는가?
+- [ ] [[process-감사대응-boundary-router-공개문안-작성흐름-2026-05]]가 초안 작성 뒤 제출 전 checklist로 되돌아오게 하는가?
+- [ ] [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]], [[coverage-감사대응-boundary-router-공개문안-process-2026-05]], [[coverage-감사대응-boundary-router-질문형-검토-2026-05]]가 manifest와 agent-readable catalog 노출을 확인하는가?
+- [ ] [[walkthrough-전입자-시나리오-감사대응시즌-자료제출-2026-05]]가 공개문안 경계 확인 단계로 회귀하는가?
+
+## Gate 6 — 다음 고도화 후보
 - 국정감사 대응 상황형 path 세분화
 - 감사 조치결과 이행상황 process/checklist — [[process-감사대응-조치결과-이행상황-확인흐름]] 반영, 다음은 제출 전 checklist 세분화
 - 감사자료 비공개정보 FAQ 보강
 - 감사·정보공개·민원 경계 manifest
 
 ## 판정
-현재 묶음은 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로를 갖췄고, 제출 전 checklist에 예산·계약·민원·정보공개 분기 확인 패킷을 보강했다. 다음 단계는 국정감사, 조치결과, 정보공개·민원 경계처럼 상황별 path를 세분화하는 것이다.
+현재 묶음은 boundary router FAQ/process/checklist 회귀까지 포함해 `hub → path → FAQ → source → process → checklist → coverage → manifest`의 기본 실행 경로를 갖췄고, 제출 전 checklist에 예산·계약·민원·정보공개 분기 확인 패킷을 보강했다. 다음 단계는 국정감사, 조치결과, 정보공개·민원 경계처럼 상황별 path를 세분화하는 것이다.
