@@ -6,7 +6,7 @@ boundary router에서 공개문안 초안으로 이어지는 최근 확장축을
 ## Route Rules
 1. 감사·국회·정보공개·협업회의운영 질문은 response axis 공개문안 묶음으로 보낸다.
 2. 계약조달·조직정원·예산 질문은 core axis 공개문안 묶음으로 보낸다.
-3. 민원대응 질문은 현재 FAQ coverage까지만 고정되어 있으므로 [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]]에서 멈추고 별도 process 생성 여부를 확인한다.
+3. 민원대응 질문은 FAQ/process/checklist layer까지 고정되어 있으므로 [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]]와 [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]를 함께 확인한 뒤 공개문안 전환 여부를 판단한다.
 4. 문안 작성 전에 반드시 해당 업무축 boundary router 질문형 checklist로 되돌아가 개인정보·비공개 내부검토·미확정 정책안·민감정보 금지선을 확인한다.
 5. 공개 가능성을 단정하지 말고, 공개 가능한 일반 사실과 담당 확인이 필요한 비공개 후보를 분리한다.
 
@@ -15,7 +15,7 @@ boundary router에서 공개문안 초안으로 이어지는 최근 확장축을
 - 국회대응: [[faq-국회대응-boundary-router-공개문안-초안-2026-05]] / [[coverage-국회대응-boundary-router-공개문안-faq-2026-05]] / [[process-국회대응-boundary-router-공개문안-작성흐름-2026-05]] / [[coverage-국회대응-boundary-router-공개문안-process-2026-05]]
 - 정보공개기록관리: [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]] / [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]] / [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]] / [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]]
 - 협업회의운영: [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]] / [[coverage-협업회의운영-boundary-router-공개문안-faq-2026-05]] / [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]] / [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]
-- 민원대응: [[faq-민원대응-boundary-router-공개문안-초안-2026-05]] / [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]]
+- 민원대응: [[faq-민원대응-boundary-router-공개문안-초안-2026-05]] / [[faq-민원답변-첫문장은-어떻게-쓰나]] / [[faq-민원답변-타기관소관은-어떻게-처리하나]] / [[checklist-민원대응-boundary-router-질문형-검토]] / [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]] / [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
 
 ## Core Public Draft Axes
 - 계약조달: [[faq-계약조달-boundary-router-공개문안-초안-2026-05]] / [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]] / [[process-계약조달-boundary-router-공개문안-작성흐름-2026-05]] / [[coverage-계약조달-boundary-router-공개문안-process-2026-05]]

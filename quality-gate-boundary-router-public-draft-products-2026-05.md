@@ -13,12 +13,12 @@
 - [x] 계약조달 FAQ/process coverage가 있다: [[coverage-계약조달-boundary-router-공개문안-faq-2026-05]] / [[coverage-계약조달-boundary-router-공개문안-process-2026-05]]
 - [x] 조직정원 FAQ/process coverage가 있다: [[coverage-조직정원-boundary-router-공개문안-faq-2026-05]] / [[coverage-조직정원-boundary-router-공개문안-process-2026-05]]
 - [x] 예산대응 FAQ/process coverage가 있다: [[coverage-예산대응-boundary-router-공개문안-faq-2026-05]] / [[coverage-예산대응-boundary-router-공개문안-process-2026-05]]
-- [ ] 민원대응은 FAQ coverage까지만 있다: [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]]
+- [ ] 민원대응은 FAQ/process/checklist coverage가 함께 있다: [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]] / [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
 
 ## Gate 2 — route safety
 - [x] 각 축은 공개문안 FAQ에서 바로 문장 생산으로 뛰지 않고 boundary router 질문형 checklist로 회귀한다.
 - [x] process가 있는 축은 공개 가능한 일반 사실, 담당 확인 대상, 비공개 후보를 분리한다.
-- [x] 민원대응은 process 부재를 완료로 오인하지 않도록 manifest route rule에 멈춤선을 둔다.
+- [x] 민원대응은 first sentence·타기관 소관·질문형 checklist까지 manifest route rule에 노출한다.
 
 ## Gate 3 — 금지선
 - [x] 개인정보·민원인 식별정보를 공개문안에 넣지 않는다.
@@ -33,4 +33,4 @@
 - [ ] README.md와 docs/index.html 노출은 Lane D 범위 밖이라 이번 작업에서는 건드리지 않았다.
 
 ## 다음 후보
-민원대응 공개문안 process와 process coverage를 추가한 뒤, README/docs index/release candidate 노출은 별도 레인에서 처리한다.
+민원대응 공개문안 process coverage는 추가됐다. README/docs index/release candidate 노출은 별도 레인에서 처리한다.

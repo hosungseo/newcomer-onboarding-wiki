@@ -35,6 +35,8 @@
 - 민원: [[coverage-민원대응-공통업무축-2026-05]] / [[manifest-newcomer-journey-민원대응-2026-05]] / [[quality-gate-민원대응-공통업무축-2026-05]]
 - [[faq-민원대응-boundary-router-공개문안-초안-2026-05]] — 민원대응 boundary router 공개문안 초안 FAQ.
 - [[coverage-민원대응-boundary-router-공개문안-faq-2026-05]] — 민원대응 boundary router 공개문안 FAQ coverage.
+- [[coverage-민원대응-boundary-router-공개문안-process-2026-05]] — 민원대응 공개문안 FAQ/process/checklist layer coverage.
+- [[faq-민원답변-첫문장은-어떻게-쓰나]] / [[faq-민원답변-타기관소관은-어떻게-처리하나]] / [[checklist-민원대응-boundary-router-질문형-검토]] — 민원답변 first sentence, 타기관 소관, 질문형 검토 layer.
 - 대외 전환: [[section-국회감사민원-대외전환-2026-05]] / [[manifest-newcomer-journey-국회감사민원-대외전환-2026-05]] / [[quality-gate-국회감사민원-대외전환-2026-05]]
 
 ## Internal Operations Axes

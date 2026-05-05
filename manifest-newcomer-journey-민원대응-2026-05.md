@@ -22,6 +22,9 @@
 
 ## Journey 4 — 답변 초안 작성
 
+- FAQ: [[faq-민원대응-boundary-router-공개문안-초안-2026-05]]
+- First sentence: [[faq-민원답변-첫문장은-어떻게-쓰나]]
+- 타기관 소관 분기: [[faq-민원답변-타기관소관은-어떻게-처리하나]]
 - Process: [[process-민원대응-답변초안-작성흐름]]
 - 연결 업무축: [[hub-홍보대응]], [[hub-감사대응]]
 - 초안 원칙: 제도 설명, 확인된 사실, 추가 확인 경로, 금지선을 분리한다.
@@ -29,6 +32,8 @@
 ## Journey 5 — 제출 전 검토
 
 - Checklist: [[checklist-민원대응-답변초안-제출전검토]]
+- Boundary checklist: [[checklist-민원대응-boundary-router-질문형-검토]]
+- Process coverage: [[coverage-민원대응-boundary-router-공개문안-process-2026-05]]
 - 핵심 확인: 개인정보, 사건정보, 내부검토 의견, 법률자문성 결론, 비공개 협의 내용이 섞이지 않았는가?
 
 ## Journey 6 — 반복민원 재사용

@@ -4,6 +4,8 @@
 민원 대응은 모든 부처가 국민의 질문·불편·신고·요구를 접수하고, 공개 가능한 설명과 내부 확인이 필요한 사안을 분리하는 공통 업무축이다.
 
 ## 신규자/전입자가 먼저 볼 것
+- 빠른 길: `기관 hub → [[newcomer-path-민원폭주대응-첫주-2026-05]] → [[hub-민원대응]] → [[source-민원대응-자료대조순서]] → [[process-민원대응-답변초안-작성흐름]] → [[checklist-민원대응-답변초안-제출전검토]] → [[checklist-민원대응-boundary-router-질문형-검토]]`
+- 기관에서 바로 온 경우: [[manifest-institution-to-boundary-router-2026-05]]와 [[walkthrough-institution-boundary-router-question-flow-2026-05]]로 공개/비공개 질문을 먼저 정리한 뒤 민원대응으로 들어온다.
 - [[manifest-newcomer-journey-민원대응-2026-05]]
 - [[quality-gate-민원대응-공통업무축-2026-05]]
 - [[faq-민원폭주-처음-무엇부터-분류하나]]
