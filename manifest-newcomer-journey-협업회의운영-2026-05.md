@@ -12,6 +12,13 @@
 6. **후속조치 점검** — [[checklist-협업회의운영-후속조치-검토]]에서 담당자·기한·보고경로·공개경계를 확인한다.
 7. **coverage 확인** — [[coverage-협업회의운영-공통업무축-2026-05]]에서 현재 완성도와 다음 gap을 확인한다.
 
+## Boundary router route
+1. **질문형 walkthrough** — [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관·상황 질문을 먼저 좁힌다.
+2. **질문형 checklist** — [[checklist-협업회의운영-boundary-router-질문형-검토]]에서 공식 회의자료와 내부검토 메모, 후속조치, 대외공유 가능성을 분리한다.
+3. **source 회귀** — [[source-협업회의운영-자료대조순서]]로 사전 배포자료, 결정사항, 미결사항, 기록물 경계를 다시 확인한다.
+4. **공개문안 FAQ/process** — [[faq-협업회의운영-boundary-router-공개문안-초안-2026-05]]와 [[process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05]]로 설명 가능한 회의 개요와 확정 후속조치만 남긴다.
+5. **coverage 확인** — [[coverage-협업회의운영-boundary-router-질문형-검토-2026-05]], [[coverage-협업회의운영-boundary-router-공개문안-faq-2026-05]], [[coverage-협업회의운영-boundary-router-공개문안-process-2026-05]]로 노출을 검증한다.
+
 ## Agent-readable routing
 ```yaml
 journey: 협업회의운영
@@ -32,6 +39,16 @@ branch_to:
   국회_자료요구: hub-국회대응.md
   감사_후속확인: hub-감사대응.md
   홍보_대외설명: hub-홍보대응.md
+boundary_router:
+  walkthrough: walkthrough-institution-boundary-router-question-flow-2026-05.md
+  checklist: checklist-협업회의운영-boundary-router-질문형-검토.md
+  faq_public_draft: faq-협업회의운영-boundary-router-공개문안-초안-2026-05.md
+  source: source-협업회의운영-자료대조순서.md
+  process_public_draft: process-협업회의운영-boundary-router-공개문안-작성흐름-2026-05.md
+  coverage:
+    - coverage-협업회의운영-boundary-router-질문형-검토-2026-05.md
+    - coverage-협업회의운영-boundary-router-공개문안-faq-2026-05.md
+    - coverage-협업회의운영-boundary-router-공개문안-process-2026-05.md
 stop_lines:
   - 비공개 내부검토 의견
   - 개인정보와 재식별 가능한 사례

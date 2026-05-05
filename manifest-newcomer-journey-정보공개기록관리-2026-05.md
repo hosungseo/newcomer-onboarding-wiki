@@ -13,6 +13,13 @@
 7. **공통 업무축 연결** — 민원·국회·감사·홍보·문서 쟁점은 [[hub-민원대응]], [[hub-국회대응]], [[hub-감사대응]], [[hub-홍보대응]], [[hub-문서기안]]으로 분기한다.
 8. **coverage 확인** — [[coverage-정보공개기록관리-공통업무축-2026-05]]에서 현재 완성도와 다음 빈칸을 확인한다.
 
+## Boundary router route
+1. **질문형 walkthrough** — [[walkthrough-institution-boundary-router-question-flow-2026-05]]에서 기관·상황 질문을 먼저 좁힌다.
+2. **질문형 checklist** — [[checklist-정보공개기록관리-boundary-router-질문형-검토]]에서 공개 가능한 기록과 비공개 검토 원문을 분리한다.
+3. **source 회귀** — [[source-정보공개기록관리-자료대조순서]]와 [[source-정보공개청구-공개자료-대조순서]]로 근거·최종본·민감정보를 다시 확인한다.
+4. **공개문안 FAQ/process** — [[faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05]]와 [[process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05]]로 설명 가능한 절차 문장만 남긴다.
+5. **coverage 확인** — [[coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05]], [[coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05]], [[coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05]]로 노출을 검증한다.
+
 ## Agent-readable routing
 ```yaml
 journey: 정보공개기록관리
@@ -43,6 +50,16 @@ common_axes:
   감사대응: hub-감사대응.md
   홍보대응: hub-홍보대응.md
   문서기안: hub-문서기안.md
+boundary_router:
+  walkthrough: walkthrough-institution-boundary-router-question-flow-2026-05.md
+  checklist: checklist-정보공개기록관리-boundary-router-질문형-검토.md
+  faq_public_draft: faq-정보공개기록관리-boundary-router-공개문안-초안-2026-05.md
+  source: source-정보공개기록관리-자료대조순서.md
+  process_public_draft: process-정보공개기록관리-boundary-router-공개문안-작성흐름-2026-05.md
+  coverage:
+    - coverage-정보공개기록관리-boundary-router-질문형-검토-2026-05.md
+    - coverage-정보공개기록관리-boundary-router-공개문안-faq-2026-05.md
+    - coverage-정보공개기록관리-boundary-router-공개문안-process-2026-05.md
 stop_lines:
   - 개인정보와 민감정보 원문
   - 보안정보와 업체별 영업비밀
