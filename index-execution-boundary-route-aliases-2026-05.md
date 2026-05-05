@@ -1,7 +1,12 @@
 # Index — execution boundary route aliases 2026-05
 
 ## 목적
-최근 추가한 교차 실행경계 전용 coverage/manifest/quality alias를 한 곳에서 고르게 하는 index다.
+교차 실행경계 전용 coverage/manifest/quality alias를 한 곳에서 고르게 하는 index다. 세부 FAQ/process/checklist 중복 나열은 각 coverage로 위임한다.
+
+## 읽는 법
+- 상황을 먼저 고른 뒤 `coverage → manifest → quality gate` 순서로만 내려간다.
+- 상세 업무 흐름이 필요하면 각 coverage에서 원래 route-map/walkthrough로 이동한다.
+- 이 index에는 중복 세부 FAQ/process/checklist를 펼치지 않는다.
 
 ## 교차 route alias 묶음
 - 계약·조직: [[coverage-계약조달-조직정원-실행경계-2026-05]] → [[manifest-newcomer-journey-계약조달-조직정원-실행경계-2026-05]] → [[quality-gate-계약조달-조직정원-실행경계-2026-05]]
