@@ -12,6 +12,7 @@
 ## 먼저 읽을 FAQ
 - [[faq-법령제개정-처음-무엇부터-확인하나]]
 - [[faq-법령제개정-조문보다-먼저-봐야-할-자료는]]
+- [[faq-법령설명-법률자문성결론은-어디서-멈추나]] — 법령설명에서 법률자문성 결론과 비공개 협의 내용을 멈추는 기준.
 
 ## 자료·초안 흐름
 - [[source-법령대응-자료대조순서]]
@@ -36,14 +37,14 @@
 ## 현재 보강 상태
 - hub: 있음
 - path: 있음
-- FAQ: 2개 있음
+- FAQ: [[faq-법령설명-법률자문성결론은-어디서-멈추나]]까지 보강
 - source: 있음
 - process: 있음
 - checklist: 있음
 - manifest: [[manifest-newcomer-journey-법령대응-2026-05]] 있음
 - quality gate: [[quality-gate-법령대응-공통업무축-2026-05]] 있음
 - docs exposure: hub/path/FAQ/source/process/checklist/manifest/quality gate 있음
-- 다음 후보: 입법예고·국회심사 상황형 path, 법령설명 Q&A template, [[faq-공통업무축-민감정보-masking-사례구분]]을 법령검토·법률자문성 결론 사례로 더 세분화할지 검토
+- 다음 후보: 입법예고·국회심사 상황형 path, 법령설명 Q&A template
 
 ## 공통 masking FAQ
 - [[faq-공통업무축-민감정보-masking-사례구분]]
