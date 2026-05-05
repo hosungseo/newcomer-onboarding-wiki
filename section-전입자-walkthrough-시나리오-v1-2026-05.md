@@ -18,6 +18,7 @@
 5. 개인정보·비공개 내부검토·미확정 정책안이 보이면 공개 문장으로 확정하지 않는다.
 
 ## 다음 후보
+- [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - 장관 보고 또는 회의 후속조치 walkthrough를 추가한다.
 - 민원 폭주 또는 언론 질의 대응 walkthrough를 추가한다.
 - docs index에서 이 section을 별도 quick link block으로 분리한다.

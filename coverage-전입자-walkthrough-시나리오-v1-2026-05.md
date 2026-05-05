@@ -11,6 +11,7 @@ v1 release candidate 이후 실제 전입자 질문을 end-to-end로 따라갈 �
 - [[walkthrough-전입자-시나리오-보도자료초안-공개경계-2026-05]] — 보도자료 초안에서 공개 문장과 미확정 정보 경계를 확인하는 상황.
 
 ## Coverage 판정
+- [[quality-gate-전입자-walkthrough-시나리오-v1-2026-05]]
 - [x] 공통업무축 landing에서 진입 가능하다.
 - [x] agent-readable catalog에서 시나리오 묶음으로 진입 가능하다.
 - [x] release candidate에서 walkthrough 후보 상태를 확인할 수 있다.
