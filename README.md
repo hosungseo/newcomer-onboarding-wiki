@@ -970,5 +970,8 @@ v1 체크포인트:
 - [실행경계 route map](section-execution-boundary-routes-2026-05.md) — 업무축·상황별로 최근 실행경계 노트를 고르는 시작점
 - [실행경계 discovery coverage](coverage-execution-boundary-routes-discovery-2026-05.md) — route-map과 coverage/manifest/quality-gate 노출 상태 점검
 
+- [계약·조직 실행경계 route map](walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05.md) — 계약자료와 조직·정원 자료가 함께 걸릴 때 공개/비공개 경계를 고르는 교차 route
+- [예산·민원 실행경계 route map](walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05.md) — 예산 수치가 민원 답변에 섞이는 경우 공개자료와 답변 경계를 나누는 교차 route
+- [정보공개·협업회의 실행경계 route map](walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05.md) — 정보공개 청구와 회의결과·후속조치 공개경계를 함께 고르는 교차 route
 - [홍보·법령 실행경계 route map](walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05.md) — 법령 공개설명을 보도자료·Q&A·대외문안으로 전환하기 전 확인하는 교차 route
-- [홍보·법령 노출 gap audit](audit-lane-a-홍보법령-route-exposure-recheck-2026-05.md) — docs/landing/coverage 노출 상태와 남은 README gap 점검
+
