@@ -9,6 +9,7 @@
 - [[manifest-newcomer-journey-boundary-notes-2026-05]] — 최근 boundary note 묶음의 전입자 journey route.
 - [[section-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist를 묶은 공통업무축 section.
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 boundary note로 되돌아가는 router.
+- [[quality-gate-institution-to-boundary-router-2026-05]] — 기관군 to boundary router 안전 점검.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개자료·업체 민감정보 경계.
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 공식 조직도·업무분장·검토 중 자료 경계.
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산 단계별 제출 전 분기.
