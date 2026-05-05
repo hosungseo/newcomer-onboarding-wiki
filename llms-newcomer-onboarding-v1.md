@@ -51,6 +51,7 @@ Never include personal data, complainant identifiers, vendor-sensitive details, 
 - [[manifest-institution-to-boundary-router-2026-05]] — 기관군 전입 경로에서 boundary note로 되돌아가는 route.
 - [[quality-gate-institution-to-boundary-router-2026-05]] — 기관군 to boundary router 안전 점검.
 - [[coverage-institution-boundary-router-section-2026-05]] — 대표 6개 기관군 section의 boundary router 연결 coverage.
+- [[coverage-institution-boundary-core-hubs-2026-05]] — 핵심 업무축 hub의 boundary router 직접 연결 coverage.
 - [[index-institution-boundary-router-next-hubs-2026-05]] — 기관별 개별 hub boundary router 연결 후보 index.
 - [[checklist-institution-boundary-router-hub-selection-2026-05]] — 기관별 개별 hub boundary router 연결 전 선택 체크리스트.
 - [[process-institution-boundary-router-hub-linking-2026-05]] — 기관별 개별 hub에 boundary router를 안전하게 연결하는 절차.
