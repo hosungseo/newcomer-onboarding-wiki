@@ -4,6 +4,7 @@
 교차 실행경계 alias 묶음을 전입자 journey에서 한 번에 발견하도록 연결한다.
 
 ## index
+- [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]]
 - [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]
 - [[index-execution-boundary-route-aliases-2026-05]]
 - [[section-execution-boundary-routes-2026-05]]
