@@ -37,6 +37,7 @@
 - [[manifest-scenario-router-walkthrough-v1-2026-05]] — 실제 전입자 질문을 7개 walkthrough 중 하나로 빠르게 route한다.
 
 ## 최근 boundary note 묶음
+- [[coverage-최근-boundary-note-묶음-2026-05]] — 최근 boundary FAQ/checklist 6개의 노출·연결 상태 coverage.
 - [[faq-계약자료-공개자료와-업체민감정보는-어떻게-나누나]] — 계약자료 공개/업체민감정보 FAQ
 - [[faq-조직정원-공식조직도와-업무분장은-어떻게-나누나]] — 조직정원 공식조직도/업무분장 FAQ
 - [[checklist-예산대응-단계별분기-제출전검토]] — 예산대응 단계별분기 checklist
