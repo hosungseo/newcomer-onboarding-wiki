@@ -1,4 +1,5 @@
 # Checklist — 계약조달 boundary router 질문형 검토
+- [[faq-계약조달-boundary-router-공개문안-초안-2026-05]] — 계약조달 boundary router 공개문안 초안 FAQ.
 
 ## 목적
 계약조달 hub에서 계약자료·제안서·업체정보·공개자료를 다룰 때 [[manifest-institution-to-boundary-router-2026-05]]로 돌아가야 하는 공개/비공개 경계를 빠르게 점검한다.
