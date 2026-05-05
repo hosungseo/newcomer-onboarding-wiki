@@ -3,6 +3,7 @@
 ## 목적
 [[index-boundary-router-checklist-products-2026-05]]가 response/core checklist 제품군의 cross-index로 노출되는지 확인한다.
 - [[release-candidate-boundary-checklist-products-2026-05]] — response/core boundary checklist products release candidate.
+- [[quality-gate-boundary-checklist-products-2026-05]] — response/core boundary checklist products 통합 quality gate.
 
 ## Cross-index 노출
 - [[index-response-boundary-router-checklists-2026-05]] → [[index-boundary-router-checklist-products-2026-05]]

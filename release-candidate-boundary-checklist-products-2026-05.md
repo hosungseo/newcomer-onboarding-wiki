@@ -6,6 +6,7 @@ response/core boundary router checklist 제품군을 전입자 온보딩 v1에�
 ## 통합 진입
 - [[index-boundary-router-checklist-products-2026-05]]
 - [[coverage-boundary-router-checklist-products-index-2026-05]]
+- [[quality-gate-boundary-checklist-products-2026-05]] — response/core boundary checklist products 통합 quality gate.
 
 ## Response 제품군
 - [[index-response-boundary-router-checklists-2026-05]]
