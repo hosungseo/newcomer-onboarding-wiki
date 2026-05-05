@@ -3,6 +3,7 @@
 ## 목적
 [[release-candidate-boundary-checklist-products-2026-05]]가 response/core checklist 제품군을 안전하게 묶었는지 최종 점검한다.
 - [[walkthrough-boundary-checklist-products-entry-2026-05]] — response/core boundary checklist 제품군 통합 진입 walkthrough.
+- [[coverage-boundary-checklist-products-walkthrough-2026-05]] — response/core checklist products 통합 walkthrough coverage.
 
 ## Gate 1 — 통합 색인
 - [x] [[index-boundary-router-checklist-products-2026-05]]가 response/core 제품군을 함께 가리킨다.

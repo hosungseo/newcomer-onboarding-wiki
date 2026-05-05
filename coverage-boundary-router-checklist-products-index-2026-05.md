@@ -19,6 +19,7 @@
 - [[coverage-core-boundary-checklist-index-2026-05]]
 
 ## 다음 후보
+- [[coverage-boundary-checklist-products-walkthrough-2026-05]] — response/core checklist products 통합 walkthrough coverage.
 cross-index를 README, agent catalog, llms metadata, release candidate에 노출한다.
 
 ## 금지선

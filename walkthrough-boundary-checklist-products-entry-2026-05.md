@@ -16,6 +16,7 @@
 기관별 맥락이 필요하면 [[walkthrough-institution-boundary-router-question-flow-2026-05]]로 돌아가고, 공개/비공개 경계는 [[manifest-institution-to-boundary-router-2026-05]]에서 확인한다.
 
 ## 4. 제품화 상태 확인
+- [[coverage-boundary-checklist-products-walkthrough-2026-05]] — response/core checklist products 통합 walkthrough coverage.
 통합 release와 품질 상태는 [[release-candidate-boundary-checklist-products-2026-05]] 및 [[quality-gate-boundary-checklist-products-2026-05]]에서 확인한다.
 
 ## 금지선
