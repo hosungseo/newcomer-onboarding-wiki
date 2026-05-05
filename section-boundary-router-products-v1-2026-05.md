@@ -13,6 +13,7 @@ README와 docs에서 boundary router products v1 묶음을 섹션 단위로 노�
 - manifest: [[manifest-boundary-router-products-v1-2026-05]]
 - quality: [[quality-gate-boundary-router-products-v1-2026-05]]
 - release: [[release-candidate-boundary-router-products-v1-2026-05]]
+- [[checklist-boundary-router-products-v1-release-ready-2026-05]] — boundary router products v1 release-ready 최종 체크리스트.
 
 ## 노출 coverage
 - [[coverage-boundary-router-products-v1-index-2026-05]]
