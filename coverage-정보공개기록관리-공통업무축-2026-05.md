@@ -70,6 +70,9 @@
 ## Coverage
 - [[coverage-내부운영협업3축-운영정보공개회의-2026-05]]
 
+## 업무축 Manifest
+- [[manifest-newcomer-journey-정보공개기록관리-2026-05]]
+
 ## Manifest / Quality / Situation Coverage
 - [[manifest-newcomer-journey-정보공개청구-2026-05]]
 - [[manifest-newcomer-journey-정보공개청구-분기-2026-05]]
