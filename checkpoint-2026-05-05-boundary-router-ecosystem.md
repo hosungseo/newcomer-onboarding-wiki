@@ -4,6 +4,8 @@
 - institution section axis: 대표 6개 기관군 section → boundary router
 - core hubs axis: 계약조달·조직정원·예산·민원대응·홍볼대응·법령대응 hub → boundary router
 - response hubs axis: 감사대응·국회대응·정보공개기록관리·협업회의운영 hub → boundary checklist
+- [[faq-감사대응-boundary-router-공개문안-초안-2026-05]] — 감사대응 boundary router 공개문안 초안 FAQ.
+- [[coverage-감사대응-boundary-router-공개문안-faq-2026-05]] — 감사대응 boundary router 공개문안 FAQ coverage.
 - agency hubs axis: 감사원·조달청 기관별 hub → boundary router
 
 ## 완료된 제품화
