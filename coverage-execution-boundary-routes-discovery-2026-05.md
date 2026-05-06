@@ -36,6 +36,7 @@
 - 실행경계 note는 개인정보·비공개 내부검토·미확정 정책안·감사/수사/징계/보안/업체 민감정보를 포함하지 않는다.
 
 ## 신규 교차 route 후보
+- parliamentary procurement boundary: [[router-국회대응-계약조달-실행경계-2026-05]]가 국회 제출 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
 - audit procurement boundary: [[router-감사대응-계약조달-실행경계-2026-05]]가 감사 제출 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
 - budget drafting boundary: [[router-예산대응-문서기안-실행경계-2026-05]]가 예산 검토자료와 결재 가능한 기안문을 나누는 신규 교차 route 후보로 작동한다.
 - external field collaboration meeting boundary: [[router-대외협력현장소통-협업회의운영-실행경계-2026-05]]가 현장 발언·민원성 요구와 회의 확정 조치사항을 나누는 신규 교차 route 후보로 작동한다.
