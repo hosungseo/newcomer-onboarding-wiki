@@ -74,6 +74,27 @@
       }
     },
     {
+      "id": "info-disclosure-records-onboarding-coverage",
+      "title": "정보공개기록관리 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "entry": "router-정보공개기록관리-협업회의-신규자-공개경계.md",
+      "coverage": "coverage-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "onboardingCoverage": {
+        "publicPrivateBoundary": "faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05.md",
+        "evidenceBundle": "source-정보공개기록관리-답변초안-증거묶음-2026-05.md",
+        "responseLogChecklist": "process-정보공개기록관리-청구처리-응답로그-2026-05.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must start from public/private boundary before drafting an answer",
+        "evidence bundle must separate public source, confirmed record, protected category, and owner question",
+        "response log checklist records request, basis, masking, decision, and next owner without exposing private details",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
       "id": "main-merge-diff-risk-review",
       "title": "Main merge diff risk review",
       "status": "REVIEW_REQUIRED",
@@ -122,20 +143,5 @@
       ],
       "summary": "Merge review recommendation gate: baseline HEAD b1887d5; root markdown 1791; docs/index.html 190 lines; GitHub Pages source main:/docs; REVIEW_REQUIRED until diff and Pages source are accepted."
     }
-  ],
-  "pagesRecheck": {
-    "explicitMainMergeApproval": {
-      "status": "REVIEW_REQUIRED",
-      "head": "db8b681",
-      "changedFilesVsOriginMain": 1593,
-      "automaticMerge": false,
-      "process": "process-explicit-main-merge-approval-decision-2026-05-07.md",
-      "faq": "faq-explicit-main-merge-approval-db8b681-2026-05-07.md",
-      "source": "source-main-merge-approval-diff-count-db8b681-2026-05-07.md",
-      "section": "section-main-merge-diff-review-packet-2026-05-07.md",
-      "coverage": "coverage-main-merge-diff-review-packet-2026-05-07.md",
-      "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",
-      "manifest": "manifest-main-merge-diff-review-packet-2026-05-07.md"
-    }
-  }
+  ]
 }
