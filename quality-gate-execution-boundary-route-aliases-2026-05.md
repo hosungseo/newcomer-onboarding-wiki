@@ -26,6 +26,7 @@
 - [x] agent catalog에서 alias 질문 router로도 들어올 수 있는가?
 
 ## Gate 4 — FAQ 삼각 노출
+- [x] [[release-note-execution-boundary-route-aliases-2026-05]]가 alias 묶음의 README/landing/docs/agent 노출 상태를 요약하는가?
 - [x] README에서 alias 선택 FAQ로 들어올 수 있는가?
 - [x] [[landing-전입자-공통업무축-2026-05]]에서 alias 선택 FAQ로 들어올 수 있는가?
 - [x] docs/index.html quick-link와 [[manifest-agent-readable-catalog-v1-2026-05]]에서 alias 선택 FAQ로 들어올 수 있는가?

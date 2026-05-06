@@ -24,6 +24,7 @@
 - docs/index.html: 실행경계 quick-links에서 [[section-execution-boundary-routes-2026-05]], [[index-execution-boundary-route-aliases-2026-05]], 4개 route-map을 직접 노출한다.
 - route-map bridge: [[section-execution-boundary-routes-2026-05]]의 landing bridge가 [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]], [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]], [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]], [[walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05]]로 내려간다.
 - alias triangle: [[index-execution-boundary-route-aliases-2026-05]] → [[manifest-newcomer-journey-execution-boundary-route-aliases-2026-05]] → [[quality-gate-execution-boundary-route-aliases-2026-05]]가 README/landing/docs 삼각 노출을 기록한다.
+- alias release note: [[release-note-execution-boundary-route-aliases-2026-05]]가 alias index/router/FAQ와 4개 교차 route의 README/landing/docs/agent 노출 상태를 요약한다.
 - alias question router: [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]가 신규자 질문 문장을 4개 교차 route alias로 보내는 진입점으로 작동한다.
 - alias router examples: [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]의 예시 질문이 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 4개 alias coverage로 바로 연결된다.
 - alias selection FAQ: [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]]가 신규자가 어떤 교차 route를 먼저 고를지 빠르게 판단하게 한다.
