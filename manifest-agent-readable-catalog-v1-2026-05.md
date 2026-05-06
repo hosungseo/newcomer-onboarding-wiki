@@ -90,6 +90,7 @@
 - [[router-대외협력현장소통-홍보대응-실행경계-2026-05]] — 현장 소통과 공식 홍보문안 경계를 나누는 신규 교차 route router.
 - [[coverage-대외협력현장소통-홍보대응-실행경계-2026-05]] — 대외협력현장소통과 홍보대응의 현장입력·공개문안 경계 coverage.
 - [[release-note-대외협력현장소통-홍보대응-실행경계-2026-05]] — 대외협력현장소통·홍보대응 신규 교차 route의 포함 진입점과 노출 상태 요약.
+- [[router-대외협력현장소통-정보공개기록관리-실행경계-2026-05]] — 현장 소통 기록과 공개·기록관리 경계를 나누는 신규 교차 route router.
 - [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]] — 교차 route 선택 기준을 짧게 설명하는 FAQ.
 - [[manifest-newcomer-journey-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 agent-readable journey manifest.
 - [[quality-gate-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 발견성·안전성 gate.
