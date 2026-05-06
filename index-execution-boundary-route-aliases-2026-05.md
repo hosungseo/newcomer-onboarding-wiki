@@ -17,6 +17,7 @@
 - 홍보·법령: [[coverage-홍보대응-법령대응-실행경계-2026-05]] → [[manifest-newcomer-journey-홍보대응-법령대응-실행경계-2026-05]] → [[quality-gate-홍보대응-법령대응-실행경계-2026-05]]
 
 ## 상위 진입
+- [[release-note-execution-boundary-route-aliases-2026-05]] — alias 묶음의 release note와 노출 상태 요약.
 - [[section-execution-boundary-routes-2026-05]] — 업무축·상황별 route-map 시작점.
 - [[coverage-execution-boundary-routes-discovery-2026-05]] — README/landing/docs/agent catalog 발견성 coverage.
 - [[quality-gate-execution-boundary-routes-discovery-2026-05]] — route-map discovery quality gate.
