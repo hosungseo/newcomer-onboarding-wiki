@@ -51,8 +51,12 @@
       "guardrails": [
         "verify the published GitHub Pages docs/index.html only after merge/deploy; do not assume local links prove live exposure",
         "live check is read-only: confirm docs/index.html exposes gates.json, existing-hub router, low-density section, and coverage links",
-        "if Pages is stale or 404, record deploy/cache status instead of editing graph/data, catalogs, README, or landing files"
-      ]
+        "if Pages is stale or 404, record deploy/cache status instead of editing graph/data, catalogs, README, or landing files",
+        "compare live HTML labels against local docs/index.html and docs/gates.json targets; HTTP 200 alone is not sufficient evidence"
+      ],
+      "comparison": "process-pages-live-reflection-check-2026-05-07.md",
+      "boundarySource": "source-pages-live-response-verification-boundary-2026-05-07.md",
+      "faq": "faq-pages-live-response-after-index-restore-2026-05-07.md"
     }
   ]
 }

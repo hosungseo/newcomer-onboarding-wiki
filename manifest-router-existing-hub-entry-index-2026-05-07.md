@@ -16,6 +16,7 @@ This manifest keeps the existing-hub router family small: one router, one low-de
 - Root markdown wikilinks among the router family.
 - `docs/index.html` operational exposure under docs/landing exposure.
 - `docs/gates.json` as the compact gate inventory for later GitHub Pages live verification.
+- [[process-pages-live-reflection-check-2026-05-07]] as the read-only comparison checklist when local docs/gates need to be compared with the served GitHub Pages HTML.
 
 ## Out of scope
 

@@ -3,7 +3,7 @@ title: 실행경계 routes discovery quality gate
 kind: quality-gate
 status: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-07
 audience: 전입자·agent·docs maintainer
 scope: section-execution-boundary-routes와 duplicate-root audit의 discovery 노출 점검
 confidentiality: public-only
@@ -53,6 +53,12 @@ confidentiality: public-only
 - [x] docs/index 수정은 저밀도 hub/path section/coverage 두 링크 노출로 제한한다.
 - [x] placeholder wikilink를 만들지 않는다.
 - [x] 개인정보, 비공개 내부검토, 비공개 협의, 미확정 정책안, 감사·수사·징계·보안·업체 민감정보를 공개 route 문안에 넣지 않는다.
+
+## Gate 6 — GitHub Pages live comparison handoff
+
+- [x] docs/index exposes `docs/gates.json` and [[process-pages-live-reflection-check-2026-05-07]] as a read-only live/local comparison pair.
+- [x] `docs/gates.json` records [[process-pages-live-reflection-check-2026-05-07]], [[source-pages-live-response-verification-boundary-2026-05-07]], and [[faq-pages-live-response-after-index-restore-2026-05-07]] for the Pages verification checkpoint.
+- [x] Live verification remains post-deploy/read-only: compare served labels and `.md` hrefs against local docs/gates, then stop on stale Pages or broken links instead of widening README, landing, graph/data, or catalogs.
 
 ## 다음 행동
 
