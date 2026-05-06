@@ -92,6 +92,18 @@
       "coverage": "coverage-pages-source-branch-mismatch-2026-05-07.md",
       "qualityGate": "quality-gate-pages-source-branch-mismatch-2026-05-07.md",
       "manifest": "manifest-pages-source-branch-mismatch-2026-05-07.md"
+    },
+    "mainDocsPublicationDecision": {
+      "status": "decision-required",
+      "pagesSourceBranch": "main",
+      "pagesSourcePath": "/docs",
+      "workingBranch": "feature/search-priority-feedback-v2",
+      "decision": "merge feature docs to main:/docs or intentionally change Pages source",
+      "checklist": "checklist-safe-main-docs-publication-2026-05-07.md",
+      "section": "section-main-docs-publication-decision-2026-05-07.md",
+      "coverage": "coverage-main-docs-publication-decision-2026-05-07.md",
+      "qualityGate": "quality-gate-main-docs-publication-decision-2026-05-07.md",
+      "manifest": "manifest-main-docs-publication-decision-2026-05-07.md"
     }
   }
 }

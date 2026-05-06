@@ -33,6 +33,7 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 - Existing-entry decision checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]
 - Docs/gates exposure review: [[process-docs-gates-index-exposure-review-2026-05-07]]
 - Docs/index restore safety: [[process-docs-index-restore-safety-2026-05-07]]
+- Safe main:/docs publication checklist: [[checklist-safe-main-docs-publication-2026-05-07]]
 - Pages live verification checklist: [[process-pages-live-reflection-check-2026-05-07]]
 - Pages response verification process: [[process-github-pages-live-html-vs-docs-index-2026-05-07]]
 - Pages source branch triage: [[process-pages-source-branch-triage-2026-05-07]]
