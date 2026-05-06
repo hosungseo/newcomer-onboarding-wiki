@@ -101,6 +101,8 @@
 
 - 인사복무·성과평가: [[router-인사복무-성과평가-실행경계-2026-05]] — 인사복무 자료와 성과평가 설명 경계 후보.
 
+- 대외협력현장소통·성과평가: [[router-대외협력현장소통-성과평가-실행경계-2026-05]] — 현장소통 기록과 성과평가 설명 경계 후보.
+
 ## docs link count checkpoint
 - 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 661개이며 missing 0으로 확인했다.
 - 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
