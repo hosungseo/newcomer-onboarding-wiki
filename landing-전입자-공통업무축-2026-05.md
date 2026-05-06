@@ -48,6 +48,7 @@
 - [[release-note-대외협력현장소통-홍보대응-실행경계-2026-05]] — 신규 교차 route 포함 진입점과 노출 상태 요약.
 - [[router-대외협력현장소통-정보공개기록관리-실행경계-2026-05]] — 현장 소통 기록과 정보공개·기록관리 경계를 나누는 신규 교차 router.
 - [[coverage-대외협력현장소통-정보공개기록관리-실행경계-2026-05]] — 대외협력현장소통·정보공개기록관리 router/manifest/quality 삼각형 coverage.
+- [[release-note-대외협력현장소통-정보공개기록관리-실행경계-2026-05]] — 신규 교차 route 포함 진입점과 노출 상태 요약.
 - [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]] — 질문 예시를 4개 교차 route alias로 바로 보내는 신규자 router.
 - [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 중 어느 교차 route를 먼저 볼지 고르는 FAQ.
 - [[section-실행경계-boundary-router-4축-2026-05]] / [[section-민원법령-boundary-router-실행경계-2026-05]] — 예산·조직정원·홍보·정보공개 및 민원·법령 companion route를 먼저 고르는 보조 section.
