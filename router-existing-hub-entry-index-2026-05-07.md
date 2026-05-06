@@ -29,6 +29,8 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 
 ## Review controls
 
+- Pages FAIL 후보 triage: [[process-pages-fail-candidate-triage-2026-05-07]]
+
 - Promotion checklist: [[checklist-router-existing-hub-entry-promotion-safety-2026-05-07]]
 - Existing-entry decision checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]
 - Docs/gates exposure review: [[process-docs-gates-index-exposure-review-2026-05-07]]

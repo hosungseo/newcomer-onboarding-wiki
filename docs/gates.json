@@ -73,5 +73,18 @@
         "guardrail": "Third WAIT evidence: HTTP 200 alone is not sufficient; expected route title is absent while the gateway title is present, so keep Pages reflection classified as WAIT-3, not PASS. Repeated WAIT-to-FAIL escalation belongs to the main/process owner."
       }
     }
-  ]
+  ],
+  "pagesRecheck": {
+    "failCandidateTriage": {
+      "status": "FAIL-candidate",
+      "liveStatus": 200,
+      "liveBytes": 31241,
+      "localBytes": 19206,
+      "routeTitlePresent": false,
+      "gatewayTitlePresent": true,
+      "nextAction": "Verify GitHub Pages source branch/folder and deployment surface before editing docs/index again.",
+      "process": "process-pages-fail-candidate-triage-2026-05-07.md",
+      "faq": "faq-pages-repeated-gateway-title-fail-candidate-2026-05-07.md"
+    }
+  }
 }
