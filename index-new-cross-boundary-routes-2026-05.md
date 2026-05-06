@@ -1,6 +1,8 @@
 # Index — new cross-boundary routes 2026-05
 
 ## 목적
+- [[release-note-new-cross-boundary-routes-2026-05]] — 신규 교차 route 묶음 release note.
+
 최근 확장한 신규 교차 실행경계 route를 한 곳에서 찾게 하는 index다. 기존 4개 alias 묶음과 별도로, 새 후보에서 router → coverage → quality/manifest → release note → audit까지 닫힌 route를 모은다.
 
 ## 신규 route 묶음
