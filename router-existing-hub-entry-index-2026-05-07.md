@@ -61,3 +61,6 @@ Gap, if any:
 ## Stop line
 
 Do not use this router for private HR records, non-public budget strategy, internal deliberation, personal data, legal-advice conclusions, or any route whose wikilink is missing from the root markdown surface.
+
+## Current-head merge approval
+- Current-head main merge approval refresh: [[process-current-head-main-merge-approval-refresh-2026-05-07]] → [[process-explicit-main-merge-approval-decision-2026-05-07]] (`b81f3d2`, 1646 changed files, REVIEW_REQUIRED).

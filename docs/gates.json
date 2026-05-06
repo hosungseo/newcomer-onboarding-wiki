@@ -417,5 +417,18 @@
       ],
       "summary": "Final main merge readiness gate: HEAD d7f853e; changed files vs origin/main 1643; recommendation REVIEW_REQUIRED; Pages source main:/docs mismatch risk; no automatic merge."
     }
-  ]
+  ],
+  "mergeReadiness": {
+    "currentHeadApprovalRefresh": {
+      "status": "REVIEW_REQUIRED",
+      "head": "b81f3d2",
+      "changedFilesVsOriginMain": 1646,
+      "pagesSource": "main:/docs",
+      "automaticMerge": false,
+      "faq": "faq-current-head-main-merge-review-required-b81f3d2-2026-05-07.md",
+      "source": "source-current-head-main-merge-approval-evidence-bundle-b81f3d2-2026-05-07.md",
+      "process": "process-current-head-main-merge-approval-refresh-2026-05-07.md",
+      "router": "router-existing-hub-entry-index-2026-05-07.md"
+    }
+  }
 }
