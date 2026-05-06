@@ -11,6 +11,7 @@
 - [[router-대외협력현장소통-정보공개기록관리-실행경계-2026-05]] → [[coverage-대외협력현장소통-정보공개기록관리-실행경계-2026-05]] → [[release-note-대외협력현장소통-정보공개기록관리-실행경계-2026-05]] → [[audit-대외협력현장소통-정보공개기록관리-실행경계-final-2026-05]]
 
 ## 기존 alias 묶음과의 관계
+- [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route 묶음 포함·발견성·안전성 gate.
 - [[audit-new-cross-boundary-routes-final-2026-05]] — 신규 교차 route 묶음 최종 연결·노출 audit.
 - 기존 4개 alias는 [[index-execution-boundary-route-aliases-2026-05]]에서 찾는다.
 - 이 index는 기존 alias를 반복하지 않고, 신규로 닫힌 route만 모은다.
