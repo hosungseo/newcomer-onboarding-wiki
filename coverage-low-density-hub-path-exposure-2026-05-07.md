@@ -2,7 +2,7 @@
 
 ## Scope
 
-This coverage note verifies root-level exposure readiness for five lower-density hub/path axes without touching README.md, docs/index.html, landing files, or graph/data.
+This coverage note verifies root-level exposure readiness for five lower-density hub/path axes and records the small docs index exposure now added for the section/coverage pair. README.md, landing files, graph/data, and per-axis catalogs remain out of scope.
 
 ## Coverage matrix
 
@@ -18,6 +18,11 @@ This coverage note verifies root-level exposure readiness for five lower-density
 
 - [[section-low-density-hub-path-exposure-2026-05-07]] is the section-level entrypoint for these five axes.
 
+## Docs exposure
+
+- `docs/index.html` now exposes [[section-low-density-hub-path-exposure-2026-05-07]] and this coverage note under docs/landing exposure operations.
+- The docs exposure is intentionally grouped: one section link and one coverage link, not five duplicated per-axis links.
+
 ## Stop line
 
-This lane intentionally stops at root markdown exposure. Catalog, README, docs index, landing, graph/data, commit, and push work are out of scope for Lane D.
+This lane intentionally stops at docs index plus root markdown exposure. Catalog, README, landing, graph/data, commit, and push work are out of scope for Lane D.

@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This section checkpoint groups the low-density hub/path axes that already have operational notes but need a single root-level exposure surface before README, landing, graph/data, or docs index work.
+This section checkpoint groups the low-density hub/path axes that already have operational notes and now need a single root-level exposure surface for docs index work without expanding landing, graph/data, or per-axis catalog lists.
 
 ## Axes and entrypoints
 
@@ -19,4 +19,5 @@ This section checkpoint groups the low-density hub/path axes that already have o
 - Each axis has at least one newcomer path or walkthrough entrypoint reachable from this checkpoint.
 - Each axis is tied to an existing coverage/quality/manifest anchor rather than a placeholder.
 - Shared anchors are intentional where the existing root notes pair two axes: 예산대응/민원대응 and 정보공개기록관리/협업회의.
-- Next exposure step, if authorized later: promote this checkpoint into catalogs/docs surfaces without changing README.md, docs/index.html, landing files, or graph/data in this lane.
+- Docs exposure: this checkpoint is safe to expose from `docs/index.html` together with [[coverage-low-density-hub-path-exposure-2026-05-07]] because every linked route points to an existing root markdown note.
+- Stop line: do not expand landing files, graph/data, or per-axis catalog lists in this lane.
