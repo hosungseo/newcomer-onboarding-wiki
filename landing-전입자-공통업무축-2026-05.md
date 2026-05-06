@@ -43,6 +43,7 @@
 - [[release-note-new-cross-boundary-routes-2026-05]] — 신규 교차 route index 포함 범위와 노출 상태 요약.
 - [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 route 포함·발견성·안전성 검증.
 - [[audit-new-cross-boundary-routes-final-2026-05]] — 신규 route 묶음 최종 연결·노출 점검.
+- [[router-인사복무-문서기안-실행경계-2026-05]] — 인사복무 사실과 기안문 공개 범위를 나누는 신규 교차 router.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 노출 상태 요약.
 - [[router-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 섞지 않게 보내는 신규 교차 router.
 - [[coverage-장관보고-성과평가-실행경계-2026-05]] — 장관보고·성과평가 router/manifest/quality 삼각형 coverage.
