@@ -12,6 +12,7 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 | 예산, 요구자료, 집행, 계약·조달 금액흐름 | [[hub-예산대응]] | [[checklist-existing-hub-entry-decision-2026-05-07]] |
 | 임용, 전보, 휴직, 복직, 승진, 교육, e사람, 인사기록 | [[hub-인사]] | [[process-existing-hub-entry-decision-2026-05-07]] |
 | 민원대응, 홍보대응, 법령대응, 협업회의운영 등 현재 전용 hub가 없는 저밀도 축 | [[section-low-density-hub-path-exposure-2026-05-07]] | listed path / walkthrough / checklist route |
+| 10대 공통 업무축을 먼저 비교해야 하는 전입자 질문 | [[walkthrough-전입자-10대업무축-공개경계-라우터-2026-05]] | 기관 → 상황 → 업무축 → 자료 → 초안/체크리스트 → 공개·비공개 경계 |
 
 ## Routing rule
 
@@ -58,5 +59,3 @@ Gap, if any:
 ## Stop line
 
 Do not use this router for private HR records, non-public budget strategy, internal deliberation, personal data, legal-advice conclusions, or any route whose wikilink is missing from the root markdown surface.
-
-- Explicit main merge approval: [[process-explicit-main-merge-approval-decision-2026-05-07]]

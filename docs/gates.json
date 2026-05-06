@@ -280,6 +280,71 @@
       ]
     },
     {
+      "id": "contract-procurement-onboarding-coverage",
+      "title": "계약조달 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "entry": "newcomer-path-계약조달-첫주-2026-05.md",
+      "coverage": "coverage-계약조달-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-계약조달-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-계약조달-실행경계-2026-05.md",
+      "onboardingCoverage": {
+        "purchaseContractProcurementBoundary": "faq-계약조달-구매요청-계약요청-조달검토-첫구분-2026-05.md",
+        "evidenceBundle": "source-계약조달-구매계약메모-작성전-증거묶음-2026-05.md",
+        "draftReviewChecklist": "process-계약조달-검토초안-작성흐름.md",
+        "publicPrivateVendorInfoBoundary": "checklist-계약조달-공개비공개-실행경계.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must classify purchase request, contract request, and procurement review before drafting",
+        "evidence bundle separates public procurement basis, vendor-sensitive data, internal estimate/review material, and owner questions",
+        "draft/review checklist records request intake, basis, estimate/contract boundary, public-private review, owner, and next action without exposing private details",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
+      "id": "cross-axis-priority-coverage-completion",
+      "title": "Cross-axis priority coverage completion",
+      "status": "EXPOSED_READ_ONLY",
+      "surface": "docs/index.html",
+      "section": "section-cross-axis-priority-coverage-completion-2026-05-07.md",
+      "coverage": "coverage-cross-axis-priority-coverage-completion-2026-05-07.md",
+      "qualityGate": "quality-gate-cross-axis-priority-coverage-completion-2026-05-07.md",
+      "manifest": "manifest-cross-axis-priority-coverage-completion-2026-05-07.md",
+      "latestObservedHead": "506e5d8",
+      "priorityAxes": [
+        "조직정원",
+        "국회대응",
+        "홍보대응",
+        "예산대응",
+        "민원대응",
+        "법령대응",
+        "계약조달",
+        "감사대응",
+        "정보공개기록관리",
+        "협업회의운영"
+      ],
+      "preLaneMarkdownBearingGateRefs": 96,
+      "docsIndexObservedAxisCounts": {
+        "조직정원": 30,
+        "국회대응": 35,
+        "홍보대응": 35,
+        "예산대응": 41,
+        "민원대응": 25,
+        "법령대응": 36,
+        "계약조달": 11,
+        "감사대응": 27,
+        "정보공개기록관리": 33,
+        "협업회의운영": 24
+      },
+      "source": "source-cross-axis-onboarding-coverage-inventory-2026-05-07.md",
+      "guardrails": [
+        "completion means each priority axis has newcomer-facing route exposure; it does not mean equal density or publication approval",
+        "select next work by newcomer first-action clarity, not by raw file count alone",
+        "preserve existing docs/index.html sections and keep docs/gates.json markdown refs without ../ prefixes",
+        "do not commit, push, merge, rebase, publish, create new hubs, or edit README, landing, catalog, graph/data, or generated exports"
+      ]
+    },
+    {
       "id": "main-merge-diff-risk-review",
       "title": "Main merge diff risk review",
       "status": "REVIEW_REQUIRED",
