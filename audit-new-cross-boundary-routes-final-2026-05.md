@@ -35,6 +35,8 @@
 
 - 정보공개기록관리·문서기안: [[router-정보공개기록관리-문서기안-실행경계-2026-05]] → [[coverage-정보공개기록관리-문서기안-실행경계-2026-05]] → [[audit-정보공개기록관리-문서기안-실행경계-final-2026-05]]
 
+- 대외협력현장소통·협업회의운영: [[router-대외협력현장소통-협업회의운영-실행경계-2026-05]] → [[coverage-대외협력현장소통-협업회의운영-실행경계-2026-05]] → [[audit-대외협력현장소통-협업회의운영-실행경계-final-2026-05]]
+
 ## 노출 확인
 - README, landing, docs/index.html, agent-readable catalog에서 [[index-new-cross-boundary-routes-2026-05]]와 [[release-note-new-cross-boundary-routes-2026-05]]로 들어올 수 있다.
 - 개별 route는 각각 router, coverage, release note, audit까지 연결된다.
