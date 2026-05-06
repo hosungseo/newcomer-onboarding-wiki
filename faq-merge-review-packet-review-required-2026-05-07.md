@@ -14,7 +14,7 @@ The packet changes public navigation risk, not just note text. Even if the root 
 ## Required acceptance before approval
 - Confirm the `docs/index` diff is intentional and acceptable.
 - Confirm the GitHub Pages source impact is intentional and acceptable.
-- Cross-check against [[README]] and [[QUALITY-GATE]] before moving the packet out of review.
+- Cross-check against [[README]] and QUALITY-GATE before moving the packet out of review.
 
 ## Stop / forbidden
 - STOP: Do not recommend `APPROVE` while either `docs/index` diff or Pages source impact is unaccepted.
