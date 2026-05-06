@@ -31,6 +31,9 @@ confidentiality: public-only
 | 응답로그 checklist | [[process-정보공개기록관리-청구처리-응답로그-2026-05]] | 접수·보유관리·검토근거·마스킹·결정·통지·후속 소유자를 로그로 남긴다. |
 | 정보공개 FAQ | [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]] | 개인정보·민감정보 선마스킹 여부를 공개검토 전에 판단한다. |
 | 정보공개 checklist | [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]] | 공개검토 초안과 기록물 이관·보존 점검을 함께 닫는다. |
+| 협업회의 회의유형 boundary | [[faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05]] | 신규자가 회의 전 조정회의/결정회의를 먼저 구분해 미확정 조정사항을 확정결과처럼 쓰지 않게 한다. |
+| 협업회의 evidence bundle | [[source-협업회의운영-회의전-증거묶음-작성순서-2026-05]] | 회의명·안건·공개근거·확정자료·확인필요·제외자료를 회의록 초안 전 단계에서 묶는다. |
+| 협업회의 agenda/minutes/follow-up checklist | [[process-협업회의운영-agenda-to-followup-log-2026-05-07]] | 안건 접수, 이해관계자, 진행 메모, 결정/보류, 담당·기한·후속조치 log를 한 흐름으로 잠근다. |
 | 협업회의 process | [[process-협업회의운영-결과초안과후속조치]] | 회의결과 초안과 후속조치 문안을 확정사항 중심으로 작성한다. |
 | 협업회의 checklist | [[checklist-협업회의운영-회의결과-후속조치-실행경계]] | 결과공유·담당 지정·후속조치 실행 경계를 점검한다. |
 | 협업회의 precheck | [[checklist-협업회의운영-후속조치-회의전-precheck]] | 회의 전부터 공개 가능한 결과물과 비공개 후속조치를 분리한다. |
@@ -43,7 +46,8 @@ confidentiality: public-only
 ## docs/manifest 노출 상태
 
 - [x] route 핵심 노트 19개가 모두 root에 존재한다.
-- [x] onboarding coverage 3종 — 공개/비공개 첫경계, 답변초안 evidence bundle, 청구처리 응답로그 checklist — 를 docs/index와 manifest route에 노출한다.
+- [x] 정보공개 onboarding coverage 3종 — 공개/비공개 첫경계, 답변초안 evidence bundle, 청구처리 응답로그 checklist — 를 docs/index와 manifest route에 노출한다.
+- [x] 협업회의 onboarding coverage 3종 — 회의유형 boundary, 회의 전 evidence bundle, agenda/minutes/follow-up checklist — 를 docs/index와 manifest route에 노출한다.
 - [x] coverage, manifest, quality gate 삼각형을 새로 만들고 상호 연결한다.
 - [x] [[coverage-execution-boundary-routes-discovery-2026-05]]에 route 묶음으로 등록할 수 있다.
 - [x] `docs/index.html`이 있거나 새로 만들 경우, coverage → manifest → quality gate → router/path 순서로 quick link를 둘 수 있다.
@@ -66,7 +70,7 @@ confidentiality: public-only
 5. [[newcomer-path-정보공개기록관리-협업회의-공개경계]]
 6. 공개경계 source: [[source-정보공개기록관리-공개자료-대조순서]] / [[source-정보공개기록관리-답변초안-증거묶음-2026-05]] / [[source-정보공개기록관리-기록물관리-확인순서]] / [[source-정보공개기록관리-원천기록-확인우선순서]]
 7. 정보공개 FAQ/process/checklist: [[faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05]] / [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]] / [[process-정보공개기록관리-청구에서공개까지-분기흐름]] / [[process-정보공개기록관리-청구처리-응답로그-2026-05]] / [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]]
-8. 회의 후속조치 FAQ/process/checklist: [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]] / [[faq-협업회의운영-결과공유와후속조치-공개경계]] / [[process-협업회의운영-결과초안과후속조치]] / [[checklist-협업회의운영-후속조치-회의전-precheck]] / [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
+8. 회의 onboarding/checklist: [[faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05]] / [[source-협업회의운영-회의전-증거묶음-작성순서-2026-05]] / [[process-협업회의운영-agenda-to-followup-log-2026-05-07]] / [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]] / [[faq-협업회의운영-결과공유와후속조치-공개경계]] / [[process-협업회의운영-결과초안과후속조치]] / [[checklist-협업회의운영-후속조치-회의전-precheck]] / [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
 9. [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]
 
 ## 멈춤선

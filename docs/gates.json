@@ -95,6 +95,27 @@
       ]
     },
     {
+      "id": "collaboration-meeting-onboarding-coverage",
+      "title": "협업회의운영 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "entry": "walkthrough-협업회의운영-전입자-라우터-2026-05.md",
+      "coverage": "coverage-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "onboardingCoverage": {
+        "meetingTypeBoundary": "faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05.md",
+        "evidenceBundle": "source-협업회의운영-회의전-증거묶음-작성순서-2026-05.md",
+        "agendaMinutesFollowupChecklist": "process-협업회의운영-agenda-to-followup-log-2026-05-07.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must classify meeting type before writing minutes or follow-up copy",
+        "evidence bundle separates public basis, confirmed material, pending checks, and excluded internal or sensitive material",
+        "agenda/minutes/follow-up checklist records purpose, stakeholders, confirmed facts, decisions, holds, owners, deadlines, and next check without exposing private details",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
       "id": "main-merge-diff-risk-review",
       "title": "Main merge diff risk review",
       "status": "REVIEW_REQUIRED",

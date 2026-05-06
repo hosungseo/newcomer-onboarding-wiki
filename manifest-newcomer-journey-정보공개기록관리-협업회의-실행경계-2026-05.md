@@ -64,6 +64,15 @@ route:
   - step: disclosure_records_checklist
     file: checklist-정보공개기록관리-공개검토초안-기록물이관-보존
     purpose: 공개검토 초안과 기록물 이관·보존 판단을 제출 전 점검한다.
+  - step: meeting_type_boundary
+    file: faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05
+    purpose: 회의 전 조정회의/결정회의를 구분해 미확정 조정사항과 확정결정 문장을 분리한다.
+  - step: meeting_evidence_bundle
+    file: source-협업회의운영-회의전-증거묶음-작성순서-2026-05
+    purpose: 회의명·안건·공개근거·확정자료·확인필요·제외자료를 회의록 초안 전 evidence bundle로 묶는다.
+  - step: meeting_agenda_minutes_followup_checklist
+    file: process-협업회의운영-agenda-to-followup-log-2026-05-07
+    purpose: agenda intake, stakeholders, minutes memo, 결정/보류, 담당·기한·후속조치 log를 한 흐름으로 남긴다.
   - step: meeting_process
     file: process-협업회의운영-결과초안과후속조치
     purpose: 회의결과 초안과 후속조치 문안을 확정사항 중심으로 정리한다.
@@ -98,6 +107,15 @@ branch_to:
   onboarding_response_log:
     when: 청구 처리 이력과 통지 전 점검 항목을 남겨야 하는 경우
     file: process-정보공개기록관리-청구처리-응답로그-2026-05
+  meeting_type_boundary:
+    when: 회의 목적이 조정·결정·공유·사실확인·후속점검 중 무엇인지 애매한 경우
+    file: faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05
+  meeting_evidence_bundle:
+    when: 회의 메모·회의록 초안 전에 근거·확정자료·제외자료를 분리해야 하는 경우
+    file: source-협업회의운영-회의전-증거묶음-작성순서-2026-05
+  meeting_agenda_minutes_followup:
+    when: 안건 접수부터 진행 메모와 후속조치 log까지 한 체크리스트로 남겨야 하는 경우
+    file: process-협업회의운영-agenda-to-followup-log-2026-05-07
   meeting_followup:
     when: 회의결과 공유와 후속조치 기준이 필요한 경우
     file: faq-협업회의운영-결과공유와후속조치-공개경계
@@ -128,10 +146,13 @@ completion_rule: checklist와 quality_gate를 통과하거나 담당 확인 요�
 11. [[source-정보공개기록관리-답변초안-증거묶음-2026-05]]
 12. [[source-정보공개기록관리-기록물관리-확인순서]]
 13. [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]]
-14. [[process-협업회의운영-결과초안과후속조치]]
-15. [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]]
-16. [[checklist-협업회의운영-후속조치-회의전-precheck]]
-17. [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
-18. [[faq-협업회의운영-결과공유와후속조치-공개경계]]
-19. [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]]
-20. [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]]
+14. [[faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05]]
+15. [[source-협업회의운영-회의전-증거묶음-작성순서-2026-05]]
+16. [[process-협업회의운영-agenda-to-followup-log-2026-05-07]]
+17. [[process-협업회의운영-결과초안과후속조치]]
+18. [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]]
+19. [[checklist-협업회의운영-후속조치-회의전-precheck]]
+20. [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
+21. [[faq-협업회의운영-결과공유와후속조치-공개경계]]
+22. [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]]
+23. [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]]

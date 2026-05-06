@@ -20,7 +20,7 @@ confidentiality: public-only
 - [x] router는 [[router-정보공개기록관리-협업회의-신규자-공개경계]]로 고정한다.
 - [x] newcomer path는 [[newcomer-path-정보공개기록관리-협업회의-공개경계]]로 고정한다.
 - [x] 정보공개 source/process/FAQ/checklist와 협업회의 process/FAQ/precheck/checklist가 coverage 안에서 한 route로 묶인다.
-- [x] newcomer journey 보강 route notes가 노출된다: [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]], [[process-정보공개기록관리-청구에서공개까지-분기흐름]], [[process-정보공개기록관리-청구처리-응답로그-2026-05]], [[source-정보공개기록관리-원천기록-확인우선순서]], [[source-정보공개기록관리-답변초안-증거묶음-2026-05]], [[faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05]], [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]], [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]], [[checklist-협업회의운영-후속조치-회의전-precheck]].
+- [x] newcomer journey 보강 route notes가 노출된다: [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]], [[process-정보공개기록관리-청구에서공개까지-분기흐름]], [[process-정보공개기록관리-청구처리-응답로그-2026-05]], [[source-정보공개기록관리-원천기록-확인우선순서]], [[source-정보공개기록관리-답변초안-증거묶음-2026-05]], [[faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05]], [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]], [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]], [[checklist-협업회의운영-후속조치-회의전-precheck]], [[faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05]], [[source-협업회의운영-회의전-증거묶음-작성순서-2026-05]], [[process-협업회의운영-agenda-to-followup-log-2026-05-07]].
 - [x] coverage, manifest, quality gate가 서로를 가리킨다.
 - [x] [[coverage-execution-boundary-routes-discovery-2026-05]]에 route-map 등록 후보로 올릴 수 있다.
 
@@ -36,6 +36,9 @@ confidentiality: public-only
 
 ## Gate 3 — 협업회의 후속조치 기준
 
+- [x] 회의 전에는 [[faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05]]에서 조정회의/결정회의를 먼저 구분한다.
+- [x] 회의록·메모 초안 전에는 [[source-협업회의운영-회의전-증거묶음-작성순서-2026-05]]로 공개근거·확정자료·확인필요·제외자료를 분리한다.
+- [x] 안건 접수부터 회의 진행 메모, 결정/보류, 후속조치 log는 [[process-협업회의운영-agenda-to-followup-log-2026-05-07]]에서 agenda/minutes/follow-up checklist로 남긴다.
 - [x] 회의결과 초안은 [[process-협업회의운영-결과초안과후속조치]]를 기준으로 확정사항·담당·기한·확인 필요사항을 분리한다.
 - [x] 후속조치 실행은 [[checklist-협업회의운영-회의결과-후속조치-실행경계]]에서 진행/수정/확인 요청으로 닫는다.
 - [x] 결과공유 경계는 [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]]와 [[faq-협업회의운영-결과공유와후속조치-공개경계]]에서 재확인한다.
@@ -48,7 +51,8 @@ confidentiality: public-only
 - [x] placeholder wikilink를 만들지 않는다.
 - [x] README.md, landing 계열, graph/data는 이 작업에서 수정하지 않는다.
 - [x] docs index에 노출할 경우 coverage → manifest → quality gate → router/path 순서로 둔다.
-- [x] onboarding coverage 노출은 공개/비공개 첫경계 → evidence bundle → response log checklist 순서가 끊기지 않게 둔다.
+- [x] 정보공개 onboarding coverage 노출은 공개/비공개 첫경계 → evidence bundle → response log checklist 순서가 끊기지 않게 둔다.
+- [x] 협업회의 onboarding coverage 노출은 회의유형 boundary → evidence bundle → agenda/minutes/follow-up checklist 순서가 끊기지 않게 둔다.
 
 ## Gate 5 — 실제 멈춤선
 
@@ -64,6 +68,7 @@ confidentiality: public-only
 ## 통과 기준
 
 - route의 모든 링크가 존재한다.
-- onboarding coverage 3종 링크(공개/비공개 첫경계, evidence bundle, response log checklist)가 docs/index.html, docs/gates.json, coverage, manifest에 모두 노출된다.
+- 정보공개 onboarding coverage 3종 링크(공개/비공개 첫경계, evidence bundle, response log checklist)가 docs/index.html, docs/gates.json, coverage, manifest에 모두 노출된다.
+- 협업회의 onboarding coverage 3종 링크(회의유형 boundary, evidence bundle, agenda/minutes/follow-up checklist)가 docs/index.html, docs/gates.json, coverage, manifest에 모두 노출된다.
 - manifest의 stop_lines가 공개 공유·초안 제출 전에 확인된다.
 - checklist 결과가 “진행”이 아니면 초안 제출 대신 수정 또는 담당 확인 요청으로 마감한다.
