@@ -14,6 +14,7 @@
 - [[coverage-계약조달-공통업무축-2026-05]] — 계약·조달 절차, 평가자료, 업체정보 경계 확인.
 
 ## 노출 상태
+- [[audit-법령대응-계약조달-실행경계-final-2026-05]] — 신규 교차 route의 최종 연결·노출 audit.
 README, landing, docs/index.html, agent-readable catalog에서 신규 router 또는 coverage로 들어올 수 있다.
 
 ## 멈춤선
