@@ -1,7 +1,7 @@
 # Release Note — new cross-boundary routes 2026-05
 
 ## 요약
-최근 추가한 신규 교차 실행경계 route 19개를 index 단위로 묶고, 전입자가 router → coverage → release note → audit 순서로 확인할 수 있게 정리했다.
+최근 추가한 신규 교차 실행경계 route 20개를 index 단위로 묶고, 전입자가 router → coverage → release note → audit 순서로 확인할 수 있게 정리했다.
 
 ## 포함 route
 - [[router-장관보고-성과평가-실행경계-2026-05]] / [[coverage-장관보고-성과평가-실행경계-2026-05]] / [[audit-장관보고-성과평가-실행경계-final-2026-05]]
@@ -39,6 +39,8 @@
 - [[router-국회대응-계약조달-실행경계-2026-05]] / [[coverage-국회대응-계약조달-실행경계-2026-05]] / [[audit-국회대응-계약조달-실행경계-final-2026-05]]
 
 - [[router-민원대응-계약조달-실행경계-2026-05]] / [[coverage-민원대응-계약조달-실행경계-2026-05]] / [[audit-민원대응-계약조달-실행경계-final-2026-05]]
+
+- [[router-홍보대응-계약조달-실행경계-2026-05]] / [[coverage-홍보대응-계약조달-실행경계-2026-05]] / [[audit-홍보대응-계약조달-실행경계-final-2026-05]]
 
 ## 상위 진입점
 - [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route 묶음 포함·발견성·안전성 gate.
