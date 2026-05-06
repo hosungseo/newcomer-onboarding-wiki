@@ -1,29 +1,56 @@
-# Quality Gate — execution boundary routes discovery 2026-05
+---
+title: 실행경계 routes discovery quality gate
+kind: quality-gate
+status: draft
+created: 2026-05-06
+updated: 2026-05-06
+audience: 전입자·agent·docs maintainer
+scope: section-execution-boundary-routes와 duplicate-root audit의 discovery 노출 점검
+confidentiality: public-only
+---
+
+# quality gate — 실행경계 routes discovery
 
 ## 목적
-실행경계 route-map과 discovery coverage가 전입자에게 안전한 고수준 진입로로 작동하는지 점검한다.
 
-## 검사 대상
-- [[section-execution-boundary-routes-2026-05]]
-- [[coverage-execution-boundary-routes-discovery-2026-05]]
-- [[audit-section-execution-boundary-route-map-exposure-2026-05]]
-- [[audit-boundary-duplicate-root-notes-2026-05]]
-- [[landing-전입자-공통업무축-2026-05]]
-- [[manifest-agent-readable-catalog-v1-2026-05]]
+[[section-execution-boundary-routes-2026-05]]와 [[audit-boundary-duplicate-root-notes-2026-05]]가 실행경계 route-map을 보강하되, 개별 업무축의 [[coverage-execution-boundary-routes-discovery-2026-05]] / manifest / quality gate 역할을 흐리지 않는지 확인한다.
 
-## Gate 1 — 발견성
-- [x] README, landing, docs/index.html, agent catalog 중 최소 2곳에서 route-map으로 들어올 수 있는가?
-- [x] route-map에서 업무축별 coverage/manifest/quality gate로 내려갈 수 있는가?
-- [x] 중복 root note 정리는 삭제가 아니라 audit/superseded 후보로만 처리되는가?
+## Gate 1 — section entry 노출
 
-## Gate 2 — 안전성
-- [x] 개인정보, 비공개 내부검토, 미확정 정책안, 감사·수사·징계·보안·업체 민감정보가 route-map에 포함되지 않는가?
-- [x] 없는 파일을 placeholder wikilink로 만들지 않았는가?
-- [x] 외부 공개면에는 고수준 안내와 존재 파일 링크만 남겼는가?
+- [x] [[section-execution-boundary-routes-2026-05]]는 route 선택용 entry로만 둔다.
+- [x] section entry는 계약조달·조직정원·감사국회·민원법령·정보공개협업·홍보대외협력·장관보고성과평가 흐름을 한 화면에서 고르게 한다.
+- [x] 정보공개·기록관리/협업회의 흐름은 [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]] → [[manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05]] → [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]] 삼각형으로 독립 검증한다.
+- [x] section entry는 개별 coverage/manifest/quality gate를 대체하지 않는다.
 
-## 확인 근거
-- README/landing/docs/index.html 노출은 [[coverage-execution-boundary-routes-discovery-2026-05]]의 2026-05-06 노출 확인을 기준으로 닫았다.
-- 세부 민감 판단은 각 업무축 walkthrough의 멈춤선으로 위임하고, 이 gate는 고수준 entry 발견성만 확인한다.
+## Gate 2 — duplicate-root audit 노출
 
-## 판정
-현재 route-map discovery는 공개 온보딩용 고수준 경로로 유지한다. 실제 삭제·정책판단·민감정보 판단은 별도 검토 전까지 진행하지 않는다.
+- [x] [[audit-boundary-duplicate-root-notes-2026-05]]는 삭제 지시가 아니라 superseded 후보와 route-map 정렬 기준을 제시한다.
+- [x] audit 기준 진입점은 [[section-execution-boundary-routes-2026-05]]와 [[coverage-execution-boundary-routes-discovery-2026-05]]로 고정한다.
+- [x] audit/coverage/manifest/quality gate는 역할이 다르므로 같은 이름의 root note라도 즉시 삭제하지 않는다.
+
+## Gate 3 — manifest/coverage/quality 삼각형
+
+- [x] [[coverage-execution-boundary-routes-discovery-2026-05]]가 실행경계 route 묶음과 노출 순서를 가진다.
+- [x] section entry, discovery coverage, duplicate-root audit, 이 quality gate가 같은 실행경계 route-map 기준으로 서로 연결된다.
+- [x] 새 route는 coverage/manifest/quality gate 세 칸이 모두 찬 뒤 docs/landing 노출 후보가 된다.
+- [x] 정보공개·기록관리/협업회의 route는 존재 확인된 router/path/source/process/checklist/FAQ만 연결하고 placeholder wikilink를 만들지 않는다.
+- [x] 장관보고·성과평가 route는 존재 확인된 router/path/FAQ와 새 coverage/manifest/quality gate 삼각형만 연결하고 placeholder wikilink를 만들지 않는다.
+
+## Gate 4 — README/docs 노출 확인
+
+- [x] README는 route-map entry로 [[section-execution-boundary-routes-2026-05]]와 [[coverage-execution-boundary-routes-discovery-2026-05]]에 대응하는 기존 `.md` 링크만 노출한다.
+- [x] README 노출은 개별 route의 manifest/coverage/quality gate 삼각형을 복제하지 않고, discovery coverage로 모은다.
+- [x] docs/index는 route-map quick links 4개와 실행경계 section 7개를 노출한다.
+- [x] docs/index 구조 변경은 [[coverage-execution-boundary-routes-discovery-2026-05]]에 기록하되, 이 gate에서 HTML을 직접 수정하지 않는다.
+- [x] 장관보고·성과평가 신규 route는 root markdown discovery에는 등록했지만 docs/index.html·landing·graph/data에는 직접 노출하지 않았다.
+- [x] landing, graph/data 노출은 이번 gate에서 변경하지 않은 상태로 남긴다.
+
+## Gate 5 — 멈춤선
+
+- [x] README, docs/index, landing, graph/data를 이 gate에서 직접 수정하지 않는다.
+- [x] placeholder wikilink를 만들지 않는다.
+- [x] 개인정보, 비공개 내부검토, 비공개 협의, 미확정 정책안, 감사·수사·징계·보안·업체 민감정보를 공개 route 문안에 넣지 않는다.
+
+## 다음 행동
+
+docs/index의 현재 route-map quick links 구조는 [[coverage-execution-boundary-routes-discovery-2026-05]]에 기록했다. 추가 docs/landing 노출이 필요하면 해당 coverage의 노출 순서 제안을 기준으로 별도 승인·작업 단위에서 반영한다.

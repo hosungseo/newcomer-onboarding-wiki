@@ -1,111 +1,89 @@
-# Coverage — execution boundary routes discovery 2026-05
+---
+title: 실행경계 routes discovery coverage
+kind: coverage
+status: draft
+created: 2026-05-06
+updated: 2026-05-06
+audience: 전입자·agent·docs maintainer
+scope: 최근 실행경계 route의 manifest/coverage/quality gate 발견성 점검
+confidentiality: public-only
+---
 
-## 목적
-최근 실행경계 route-map이 README, landing, docs, agent catalog에서 서로 끊기지 않고 발견되는지 점검한다.
+# coverage — 실행경계 routes discovery
 
-## 핵심 entry
-- [[section-execution-boundary-routes-2026-05]] — 계약조달·조직정원·감사국회·민원법령·정보공개협업회의·홍보대외협력 실행경계 route-map.
-- [[landing-전입자-공통업무축-2026-05]] — 전입자가 먼저 보는 공통업무축 landing.
-- [[manifest-agent-readable-catalog-v1-2026-05]] — agent-readable catalog entry.
-- [[audit-section-execution-boundary-route-map-exposure-2026-05]] — route-map 노출 audit.
-- [[audit-boundary-duplicate-root-notes-2026-05]] — 중복 root note 정리 audit.
-- [[quality-gate-execution-boundary-routes-discovery-2026-05]] — discovery 품질 gate.
+## 한 줄 요약
 
-## Discovery path
-1. README 또는 docs/index.html에서 route-map을 찾는다.
-2. [[section-execution-boundary-routes-2026-05]]에서 업무축별 실행경계 route를 고른다.
-3. 세부 업무축 coverage/manifest/quality gate로 내려간다.
-4. 중복 note가 보이면 삭제하지 않고 [[audit-boundary-duplicate-root-notes-2026-05]]에서 superseded 후보로만 표시한다.
+최근 실행경계 route는 **업무축별 manifest → coverage → quality gate**가 서로를 가리키고, docs/landing에 노출될 때 같은 이름·순서로 발견되어야 한다. 이 coverage는 계약조달·조직정원·법령대응·홍보대응·감사대응·국회대응·예산대응/민원대응·정보공개기록관리/협업회의·장관보고/성과평가 실행경계 묶음의 내부 발견성과 외부 노출 상태를 한 화면에 고정한다.
 
+## route-map 진입점
 
-## 2026-05-06 노출 확인
-- README: `신규자 실행경계 route`에서 [[section-execution-boundary-routes-2026-05]], [[index-execution-boundary-route-aliases-2026-05]], 4개 교차 route-map으로 진입한다.
-- landing: [[landing-전입자-공통업무축-2026-05]]는 긴 route chain을 접고 section/route-map 및 [[index-execution-boundary-route-aliases-2026-05]] 중심으로 진입시킨다.
-- docs/index.html: 실행경계 quick-links에서 [[section-execution-boundary-routes-2026-05]], [[index-execution-boundary-route-aliases-2026-05]], 4개 route-map을 직접 노출한다.
-- route-map bridge: [[section-execution-boundary-routes-2026-05]]의 landing bridge가 [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]], [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]], [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]], [[walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05]]로 내려간다.
-- alias triangle: [[index-execution-boundary-route-aliases-2026-05]] → [[manifest-newcomer-journey-execution-boundary-route-aliases-2026-05]] → [[quality-gate-execution-boundary-route-aliases-2026-05]]가 README/landing/docs 삼각 노출을 기록한다.
-- alias release note: [[release-note-execution-boundary-route-aliases-2026-05]]가 alias index/router/FAQ와 4개 교차 route의 README/landing/docs/agent 노출 상태를 요약한다.
-- alias question router: [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]가 신규자 질문 문장을 4개 교차 route alias로 보내는 진입점으로 작동한다.
-- alias router examples: [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]의 예시 질문이 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 4개 alias coverage로 바로 연결된다.
-- alias selection FAQ: [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]]가 신규자가 어떤 교차 route를 먼저 고를지 빠르게 판단하게 한다.
-- agent catalog: [[manifest-agent-readable-catalog-v1-2026-05]]의 Execution Boundary Route Map 섹션에서 alias index/manifest/quality gate를 직접 노출한다.
+- [[section-execution-boundary-routes-2026-05]] — 최근 실행경계 route를 사람이 업무축·상황별로 고르는 section entry.
+- [[audit-boundary-duplicate-root-notes-2026-05]] — 실행경계 관련 root note 중복 후보를 삭제하지 않고 route-map 기준으로 정렬하는 audit.
+- 이 coverage는 위 section/audit가 가리키는 manifest/coverage/quality gate 삼각형을 docs·landing 노출 전에 검증하는 기준점이다.
 
-## 품질 기준
-- placeholder wikilink 없이 실제 존재하는 note만 연결한다.
-- docs/landing/README 노출은 공개 온보딩용 고수준 route만 다룬다.
-- 실행경계 note는 개인정보·비공개 내부검토·미확정 정책안·감사/수사/징계/보안/업체 민감정보를 포함하지 않는다.
+## route 묶음
 
-## 신규 교차 route 후보
-- collaboration budget boundary: [[router-협업회의운영-예산대응-실행경계-2026-05]]가 회의결과 기록과 예산 설명의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
-- legal budget boundary: [[router-법령대응-예산대응-실행경계-2026-05]]가 법령 검토와 예산 설명의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
-- org budget boundary: [[router-조직정원-예산대응-실행경계-2026-05]]가 조직정원 판단과 예산 설명의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
-- PR budget boundary: [[router-홍보대응-예산대응-실행경계-2026-05]]가 홍보 문안과 예산 설명의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
-- civil budget boundary: [[router-민원대응-예산대응-실행경계-2026-05]]가 민원 답변과 예산 설명의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
-- audit budget boundary: [[router-감사대응-예산대응-실행경계-2026-05]]가 감사 제출 범위와 재정 설명 경계를 나누는 신규 교차 route 후보로 작동한다.
-- assembly budget boundary: [[router-국회대응-예산대응-실행경계-2026-05]]가 국회 제출 범위와 재정 설명 경계를 나누는 신규 교차 route 후보로 작동한다.
-- HR procurement boundary: [[router-인사복무-계약조달-실행경계-2026-05]]가 인사·복무 정보와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- external field procurement boundary: [[router-대외협력현장소통-계약조달-실행경계-2026-05]]가 현장 공유 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- budget procurement boundary: [[router-예산대응-계약조달-실행경계-2026-05]]가 재정 설명 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- disclosure records procurement boundary: [[router-정보공개기록관리-계약조달-실행경계-2026-05]]가 정보공개 판단 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- collaboration meeting procurement boundary: [[router-협업회의운영-계약조달-실행경계-2026-05]]가 회의 공유 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- legal procurement boundary: [[router-법령대응-계약조달-실행경계-2026-05]]가 법령 검토 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- organization staffing procurement boundary: [[router-조직정원-계약조달-실행경계-2026-05]]가 조직정원 검토 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- public relations procurement boundary: [[router-홍보대응-계약조달-실행경계-2026-05]]가 홍보 공개문안과 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- civil complaint procurement boundary: [[router-민원대응-계약조달-실행경계-2026-05]]가 민원 회신 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- parliamentary procurement boundary: [[router-국회대응-계약조달-실행경계-2026-05]]가 국회 제출 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- audit procurement boundary: [[router-감사대응-계약조달-실행경계-2026-05]]가 감사 제출 범위와 계약 민감정보를 나누는 신규 교차 route 후보로 작동한다.
-- budget drafting boundary: [[router-예산대응-문서기안-실행경계-2026-05]]가 예산 검토자료와 결재 가능한 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- external field collaboration meeting boundary: [[router-대외협력현장소통-협업회의운영-실행경계-2026-05]]가 현장 발언·민원성 요구와 회의 확정 조치사항을 나누는 신규 교차 route 후보로 작동한다.
-- disclosure records drafting boundary: [[router-정보공개기록관리-문서기안-실행경계-2026-05]]가 공개 판단 기록과 결재 가능한 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- collaboration meeting drafting boundary: [[router-협업회의운영-문서기안-실행경계-2026-05]]가 회의 논의·검토안과 결재 가능한 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- legal drafting boundary: [[router-법령대응-문서기안-실행경계-2026-05]]가 법령 검토 한계와 내부 결재 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- organization drafting boundary: [[router-조직정원-문서기안-실행경계-2026-05]]가 조직정원 민감자료와 내부 결재 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- procurement drafting boundary: [[router-계약조달-문서기안-실행경계-2026-05]]가 계약조달 민감자료와 내부 결재 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- PR drafting boundary: [[router-홍보대응-문서기안-실행경계-2026-05]]가 대외 홍보문안과 내부 결재 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- civil complaint drafting boundary: [[router-민원대응-문서기안-실행경계-2026-05]]가 민원 답변 문안과 내부 결재 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- assembly drafting boundary: [[router-국회대응-문서기안-실행경계-2026-05]]가 국회 제출 문안과 내부 결재 기안문을 나누는 신규 교차 route 후보로 작동한다.
-- audit drafting boundary: [[router-감사대응-문서기안-실행경계-2026-05]]가 감사자료 제출 판단과 기안문 공개 범위를 나누는 신규 교차 route 후보로 작동한다.
-- budget performance boundary: [[router-예산대응-성과평가-실행경계-2026-05]]가 예산 수치와 성과 설명·평가 판단을 나누는 신규 교차 route 후보로 작동한다.
-- HR drafting boundary: [[router-인사복무-문서기안-실행경계-2026-05]]가 인사복무 사실과 기안문 공개 범위를 나누는 신규 교차 route 후보로 작동한다.
-- [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route 묶음 포함·발견성·안전성 gate.
-- new cross-boundary index: [[index-new-cross-boundary-routes-2026-05]]가 최근 추가된 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개, 인사복무·문서기안 route 묶음을 모은다.
-- external records boundary: [[router-대외협력현장소통-정보공개기록관리-실행경계-2026-05]]가 현장 소통 기록과 정보공개·기록관리 경계를 나누는 신규 교차 route 후보로 작동한다.
-- external communication PR boundary: [[router-대외협력현장소통-홍보대응-실행경계-2026-05]]가 현장 소통과 공식 홍보문안의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
-- minister performance boundary: [[coverage-장관보고-성과평가-실행경계-2026-05]]가 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage로 작동한다.
+| route | manifest | coverage | quality gate | docs/landing 노출명 |
+|---|---|---|---|---|
+| 계약조달 실행경계 | [[manifest-newcomer-journey-계약조달-실행경계-2026-05]] | [[coverage-계약조달-실행경계-2026-05]] | [[quality-gate-계약조달-실행경계-2026-05]] | 계약조달 실행경계 |
+| 조직정원 실행경계 | [[manifest-newcomer-journey-조직정원-실행경계-2026-05]] | [[coverage-조직정원-실행경계-2026-05]] | [[quality-gate-조직정원-실행경계-2026-05]] | 조직정원 실행경계 |
+| 법령대응 공개설명경계 | [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]] | [[coverage-법령대응-공개설명경계-2026-05]] | [[quality-gate-법령대응-공개설명경계-2026-05]] | 법령대응 공개설명경계 |
+| 감사대응 자료제출경계 | [[manifest-newcomer-journey-감사대응-자료제출경계-2026-05]] | [[coverage-감사대응-자료제출경계-2026-05]] | [[quality-gate-감사대응-자료제출경계-2026-05]] | 감사대응 자료제출경계 |
+| 국회대응 자료요구경계 | [[manifest-newcomer-journey-국회대응-자료요구경계-2026-05]] | [[coverage-국회대응-자료요구경계-2026-05]] | [[quality-gate-국회대응-자료요구경계-2026-05]] | 국회대응 자료요구경계 |
+| 정보공개·기록관리/협업회의 실행경계 | [[manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05]] | [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]] | [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]] | 정보공개·기록관리/협업회의 실행경계 |
+| 예산대응·민원대응 실행경계 | [[manifest-newcomer-journey-예산대응-민원대응-실행경계-2026-05]] | [[coverage-예산대응-민원대응-실행경계-2026-05]] | [[quality-gate-예산대응-민원대응-실행경계-2026-05]] | 예산대응·민원대응 실행경계 |
+| 홍보대응 대외문안 실행경계 | [[manifest-newcomer-journey-홍보대응-대외문안-실행경계-2026-05]] | [[coverage-홍보대응-대외문안-실행경계-2026-05]] | [[quality-gate-홍보대응-대외문안-실행경계-2026-05]] | 홍보대응 대외문안 실행경계 |
+| 장관보고·성과평가 실행경계 | [[manifest-newcomer-journey-장관보고-성과평가-실행경계-2026-05]] | [[coverage-장관보고-성과평가-실행경계-2026-05]] | [[quality-gate-장관보고-성과평가-실행경계-2026-05]] | 장관보고·성과평가 실행경계 |
 
-- 정보공개기록관리·예산대응: [[router-정보공개기록관리-예산대응-실행경계-2026-05]] — 정보공개·기록 공개 판단과 예산 설명 경계 후보.
+## docs/landing 발견성 규칙
 
-- 계약조달·예산대응: [[router-계약조달-예산대응-실행경계-2026-05]] — 계약·조달 절차와 예산 설명 경계 후보.
+- README 현재 노출은 `section-execution-boundary-routes-2026-05.md`와 `coverage-execution-boundary-routes-discovery-2026-05.md` 두 entry 링크로 제한한다.
+- docs/index 현재 노출은 route-map quick links 4개(정보공개·협업, 계약조달·조직정원, 예산·민원, 홍보·법령)와 7개 실행경계 section으로 구성되어 있다.
+- docs/index나 landing 계열에서 manifest/coverage/quality gate까지 노출할 때는 같은 route 이름 아래에 묶는다.
+- 첫 링크는 사람이 읽는 coverage로 두고, agent 실행이 필요할 때 manifest로 넘긴다.
+- quality gate는 공개 공유·초안 제출·agent 결과 수락 직전의 마지막 링크로 둔다.
+- 링크명은 파일명 축약 대신 “계약조달 실행경계”, “조직정원 실행경계”, “법령대응 공개설명경계”, “감사대응 자료제출경계”, “국회대응 자료요구경계”, “정보공개·기록관리/협업회의 실행경계”, “예산대응·민원대응 실행경계”, “장관보고·성과평가 실행경계”처럼 업무축+경계명으로 쓴다.
+- route가 추가되면 이 coverage에 manifest/coverage/quality gate 세 칸이 모두 찬 뒤 docs/landing 노출을 요청한다.
+- [[section-execution-boundary-routes-2026-05]]는 route 선택용 entry로, [[audit-boundary-duplicate-root-notes-2026-05]]는 중복 정리용 audit로 노출한다. 둘 다 route 본문을 대체하지 않는다.
 
-- 인사복무·예산대응: [[router-인사복무-예산대응-실행경계-2026-05]] — 인사복무 제도와 예산 설명 경계 후보.
+## 내부 완성도 체크
 
-- 대외협력현장소통·예산대응: [[router-대외협력현장소통-예산대응-실행경계-2026-05]] — 현장소통 결과와 예산 설명 경계 후보.
+- [x] 계약조달 route는 manifest, coverage, quality gate가 상호 연결되어 있다.
+- [x] 조직정원 route는 manifest, coverage, quality gate가 상호 연결되어 있다.
+- [x] 두 기존 route 모두 공개자료 기반 실행과 비공개 멈춤선을 함께 가진다.
+- [x] 법령대응 route는 입법예고·신구조문·의견답변의 공개설명경계를 manifest, coverage, quality gate로 묶는다.
+- [x] 감사대응 route는 walkthrough/FAQ/source/checklist까지 연결한 manifest, coverage, quality gate를 가진다.
+- [x] 국회대응 route는 source/process/예산 branch까지 연결한 manifest, coverage, quality gate를 가진다.
+- [x] 정보공개·기록관리/협업회의 route는 공개검토·기록물이관·회의결과 후속조치 실행경계를 manifest, coverage, quality gate로 묶는다.
+- [x] 예산대응·민원대응 route는 예산 요구자료와 민원 답변이 겹치는 실행경계를 manifest, coverage, quality gate로 묶는다.
+- [x] 장관보고·성과평가 route는 보고용 설명, 성과 사실 설명, 별도 평가 판단의 경계를 manifest, coverage, quality gate로 묶는다.
+- [x] 아홉 route 모두 docs/landing 노출명을 사람이 읽을 수 있는 업무축 단위로 정했다.
+- [x] README는 route-map entry 두 개(section, discovery coverage)만 노출하고, 개별 route 삼각형은 이 coverage 안에서 발견되게 한다.
+- [x] 새 route 추가 시 빈 링크 없이 이 discovery coverage에 먼저 등록하는 규칙을 둔다.
+- [x] [[section-execution-boundary-routes-2026-05]]와 [[audit-boundary-duplicate-root-notes-2026-05]]가 discovery coverage에서 같은 route-map 기준으로 발견된다.
+- [x] docs/index route-map quick links는 4개 묶음형 walkthrough로 노출되고, 본문 section은 정보공개·계약조달·예산/민원·조직정원·홍보·법령 흐름을 가진다.
+- [x] [[quality-gate-execution-boundary-routes-discovery-2026-05]]가 section/audit/docs 노출 후 최종 점검 지점으로 연결된다.
 
-- 감사대응·성과평가: [[router-감사대응-성과평가-실행경계-2026-05]] — 감사 제출용 사실관계와 성과평가 설명 경계 후보.
+## 노출 순서 제안
 
-- 국회대응·성과평가: [[router-국회대응-성과평가-실행경계-2026-05]] — 국회 제출용 사실관계와 성과평가 설명 경계 후보.
+1. 계약조달 실행경계 — [[coverage-계약조달-실행경계-2026-05]] → [[manifest-newcomer-journey-계약조달-실행경계-2026-05]] → [[quality-gate-계약조달-실행경계-2026-05]]
+2. 조직정원 실행경계 — [[coverage-조직정원-실행경계-2026-05]] → [[manifest-newcomer-journey-조직정원-실행경계-2026-05]] → [[quality-gate-조직정원-실행경계-2026-05]]
+3. 법령대응 공개설명경계 — [[coverage-법령대응-공개설명경계-2026-05]] → [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]] → [[quality-gate-법령대응-공개설명경계-2026-05]]
+4. 감사대응 자료제출경계 — [[coverage-감사대응-자료제출경계-2026-05]] → [[manifest-newcomer-journey-감사대응-자료제출경계-2026-05]] → [[quality-gate-감사대응-자료제출경계-2026-05]]
+5. 국회대응 자료요구경계 — [[coverage-국회대응-자료요구경계-2026-05]] → [[manifest-newcomer-journey-국회대응-자료요구경계-2026-05]] → [[quality-gate-국회대응-자료요구경계-2026-05]]
+6. 정보공개·기록관리/협업회의 실행경계 — [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]] → [[manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05]] → [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]]
+7. 예산대응·민원대응 실행경계 — [[coverage-예산대응-민원대응-실행경계-2026-05]] → [[manifest-newcomer-journey-예산대응-민원대응-실행경계-2026-05]] → [[quality-gate-예산대응-민원대응-실행경계-2026-05]]
+8. 홍보대응 대외문안 실행경계 — [[coverage-홍보대응-대외문안-실행경계-2026-05]] → [[manifest-newcomer-journey-홍보대응-대외문안-실행경계-2026-05]] → [[quality-gate-홍보대응-대외문안-실행경계-2026-05]]
+9. 장관보고·성과평가 실행경계 — [[coverage-장관보고-성과평가-실행경계-2026-05]] → [[manifest-newcomer-journey-장관보고-성과평가-실행경계-2026-05]] → [[quality-gate-장관보고-성과평가-실행경계-2026-05]]
 
-- 정보공개기록관리·성과평가: [[router-정보공개기록관리-성과평가-실행경계-2026-05]] — 공개 가능한 기록 기반 사실과 성과평가 설명 경계 후보.
+## 품질 점검 링크
 
-- 협업회의운영·성과평가: [[router-협업회의운영-성과평가-실행경계-2026-05]] — 회의 운영 사실과 성과평가 설명 경계 후보.
+- [[quality-gate-execution-boundary-routes-discovery-2026-05]] — section entry와 duplicate-root audit가 coverage/manifest/quality gate 역할을 흐리지 않는지 점검한다.
 
-- 계약조달·성과평가: [[router-계약조달-성과평가-실행경계-2026-05]] — 계약 절차 사실과 성과평가 설명 경계 후보.
+## 멈춤선
 
-- 조직정원·성과평가: [[router-조직정원-성과평가-실행경계-2026-05]] — 조직·정원 사실과 성과평가 설명 경계 후보.
-
-- 민원대응·성과평가: [[router-민원대응-성과평가-실행경계-2026-05]] — 민원 처리 사실과 성과평가 설명 경계 후보.
-
-- 홍보대응·성과평가: [[router-홍보대응-성과평가-실행경계-2026-05]] — 홍보 문안과 성과평가 설명 경계 후보.
-
-- 법령대응·성과평가: [[router-법령대응-성과평가-실행경계-2026-05]] — 법령 검토 문안과 성과평가 설명 경계 후보.
-
-- 인사복무·성과평가: [[router-인사복무-성과평가-실행경계-2026-05]] — 인사복무 자료와 성과평가 설명 경계 후보.
-
-- 대외협력현장소통·성과평가: [[router-대외협력현장소통-성과평가-실행경계-2026-05]] — 현장소통 기록과 성과평가 설명 경계 후보.
-
-- 감사대응·홍보대응: [[router-감사대응-홍보대응-실행경계-2026-05]] — 감사 대응 문안과 대외 홍보 문안 경계 후보.
-
-## docs link count checkpoint
-- 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 664개이며 missing 0으로 확인했다.
-- 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
-- 대외협력현장소통·성과평가 route까지 신규 route index에 반영한 뒤 664개 링크 checkpoint를 갱신했다.
+- README는 이미 존재하는 파일이므로 placeholder wikilink로 만들지 않고, 현재 entry 링크 두 개의 노출 상태만 이 coverage에서 기록한다.
+- 아직 생성되지 않았거나 이번 작업 범위가 아닌 landing 링크를 wikilink로 미리 만들지 않는다.
+- docs/index는 이번 구조 기준으로 존재하는 route-map/section 링크만 기록하고, manifest/coverage/quality gate 링크를 HTML에 추가했다고 전제하지 않는다.
+- 공개자료 기반 route가 아닌 내부검토·개인정보·업체 민감정보 route는 docs/landing discovery 묶음에 올리지 않는다.
+- manifest/coverage/quality gate 중 하나라도 없으면 “노출 준비”가 아니라 “작성 필요”로 남긴다.
