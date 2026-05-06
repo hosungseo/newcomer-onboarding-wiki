@@ -13,10 +13,11 @@ confidentiality: public-only
 
 ```yaml
 route: 감사대응 자료제출경계
-entrypoint: coverage-감사대응-자료제출경계-2026-05
-recommended_docs_label: 감사대응 자료제출경계
+entrypoint: section-감사대응-onboarding-refresh-2026-05-07
+recommended_docs_label: 감사대응 onboarding refresh
 newcomer_journey_route_notes:
   human_entry:
+    - section-감사대응-onboarding-refresh-2026-05-07
     - walkthrough-감사대응-전입자-라우터-2026-05
     - coverage-감사대응-자료제출경계-2026-05
   scope_questions:
@@ -36,9 +37,12 @@ newcomer_journey_route_notes:
   agent_control:
     - quality-gate-감사대응-자료제출경계-2026-05
 sequence:
-  - id: orient
+  - id: refresh_section
+    note: section-감사대응-onboarding-refresh-2026-05-07
+    action: 감사자료 요청 접수, fact-check/evidence bundle, 답변초안 review, deadline/follow-up tracking, disclosure/audit-sensitive boundary 순서를 먼저 확인한다.
+  - id: request_intake
     note: walkthrough-감사대응-전입자-라우터-2026-05
-    action: 요구기관, 요구일, 제출기한, 요구 원문, 대상 기간, 소관 후보를 고정한다.
+    action: 요구기관, 요구일, 제출기한, 요구 원문, 대상 기간, 소관 후보, 제출 경로를 고정한다.
   - id: audit_onboarding_boundary
     note: faq-감사대응-전입자-첫구분-자료요구-사실확인-처분요구-후속조치-2026-05
     action: 자료요구, 사실확인, 지적사항/처분요구, 후속조치 중 어느 흐름인지 먼저 나눈다.
@@ -65,7 +69,7 @@ sequence:
     action: 국회 자료요구와 겹치는 경우 공개답변, 내부검토, 확인요청으로 분기한다.
   - id: submission_followup_tracking
     note: process-감사대응-요청접수-제출후속조치-log-2026-05-07
-    action: 제출 묶음, 확인 필요, 조치/후속 owner, 완료 증빙, 다음 점검을 남긴다.
+    action: 제출 묶음, 확인 필요, 조치/후속 owner, 완료 증빙, 다음 점검, overdue escalation을 남긴다.
   - id: shared_precheck
     note: checklist-감사국회대응-제출전-precheck
     action: 감사·국회 공통 제출 직전 개인정보·비공개 협의·미확정 사실을 걸러낸다.
@@ -101,6 +105,7 @@ completion_rule: quality_gate를 통과하거나 확인 필요/제출 보류로 
 
 ### 전입자 route 노출
 
+- [[section-감사대응-onboarding-refresh-2026-05-07]]
 - [[walkthrough-감사대응-전입자-라우터-2026-05]]
 - [[coverage-감사대응-자료제출경계-2026-05]]
 

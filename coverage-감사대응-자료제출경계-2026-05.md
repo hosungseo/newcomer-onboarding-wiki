@@ -13,12 +13,13 @@ confidentiality: public-only
 
 ## 한 줄 요약
 
-감사대응 route는 **자료요구·사실확인·지적사항·후속조치 첫 구분 → evidence bundle 구성 → 공개/비공개/감사정보 경계 확인 → 제출·후속추적**으로 움직인다. docs/landing에 노출할 때는 사람이 먼저 읽는 coverage에서 시작하고, agent 실행은 manifest로 넘기며, 제출 직전에는 quality gate로 막는다.
+감사대응 onboarding refresh route는 **감사자료 요청 접수 → 사실확인/evidence bundle → 답변초안 review → deadline/follow-up tracking → disclosure/audit-sensitive boundary**로 움직인다. docs/landing에 노출할 때는 사람이 먼저 읽는 coverage에서 시작하고, agent 실행은 manifest로 넘기며, 제출 직전에는 quality gate로 막는다.
 
 ## route 구성
 
 | 단계 | 기존 노트 | 역할 |
 |---|---|---|
+| section | [[section-감사대응-onboarding-refresh-2026-05-07]] | 감사자료 요청 접수, fact-check/evidence bundle, 답변초안 review, deadline/follow-up tracking, disclosure/audit-sensitive boundary를 한 줄로 노출한다. |
 | walkthrough | [[walkthrough-감사대응-전입자-라우터-2026-05]] | 감사 요구를 기관·상황·업무축·자료·초안/체크리스트 순서로 나눈다. |
 | FAQ | [[faq-감사대응-전입자-첫구분-자료요구-사실확인-처분요구-후속조치-2026-05]] | 자료요구·사실확인·지적사항/처분요구·후속조치 중 무엇인지 먼저 나눈다. |
 | FAQ | [[faq-감사대응-자료제출은-어디까지-하나]] | 감사 요구자료 제출 가능 범위와 멈춤선을 확인한다. |
@@ -38,11 +39,12 @@ confidentiality: public-only
 ## docs/landing 노출 권장명
 
 - 노출명: `감사대응 자료제출경계`
-- 권장 순서: coverage → walkthrough → 첫구분 FAQ → evidence bundle source → submission/follow-up tracking → public/private/audit-info checklist → discovery → manifest → quality gate
+- 권장 순서: section refresh → coverage → walkthrough/request intake → 첫구분 FAQ → fact-check/evidence bundle source → response draft review checklist → deadline/follow-up tracking → disclosure/audit-sensitive boundary → discovery → manifest → quality gate
 - landing 카드 문구: “감사 요구자료와 조치결과를 공개·확정자료 기준으로 정리하고, 개인정보·내부검토·감사/징계/수사/보안 세부를 제출본에서 분리한다.”
 
 ## 완성도 체크
 
+- [x] 감사대응 onboarding refresh section이 request intake, evidence bundle, response draft review, deadline/follow-up tracking, disclosure/audit-sensitive boundary를 노출한다.
 - [x] 전입자 첫 판단용 walkthrough가 있다.
 - [x] 자료요구/사실확인/지적사항/후속조치 첫구분 FAQ, 자료제출 범위 FAQ, 조치결과 이행 FAQ가 있다.
 - [x] 공개자료/내부검토 분리 source, 감사 evidence bundle source, 감사 증거원천 source가 연결되어 있다.
