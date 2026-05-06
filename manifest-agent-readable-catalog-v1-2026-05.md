@@ -85,6 +85,7 @@
 - [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality alias index.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 README/landing/docs/agent 노출 상태 요약.
 - [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]] — 신규자 질문 문장과 예시 질문을 4개 교차 route alias로 보내는 router.
+- [[coverage-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage.
 - [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]] — 교차 route 선택 기준을 짧게 설명하는 FAQ.
 - [[manifest-newcomer-journey-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 agent-readable journey manifest.
 - [[quality-gate-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 발견성·안전성 gate.
