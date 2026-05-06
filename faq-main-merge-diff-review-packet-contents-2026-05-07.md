@@ -19,7 +19,7 @@
 - [[process-large-docs-index-diff-premerge-pages-source-2026-05-07]]
 - [[checklist-safe-main-docs-publication-2026-05-07]]
 - [[README]]
-- [[QUALITY-GATE]]
+- QUALITY-GATE
 
 ## Stop
 STOP: branch range, large diff bucket, link validation, live-route proof 중 하나라도 비어 있으면 main merge packet을 완료로 보지 않는다.

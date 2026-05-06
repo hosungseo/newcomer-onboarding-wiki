@@ -12,7 +12,7 @@ main 병합 직전에 “무엇이 들어가고, 공개 진입점이 어떻게 �
 - 기준 브랜치: `main`
 - 비교 범위: `main...HEAD`를 기본값으로 한다.
 - 공개 진입점 후보: `README.md`, `docs/index.html`, `docs/gates.json`, 루트 `landing-*`, `router-*`, `section-*`, `hub-*`, `newcomer-path-*`
-- 관련 품질 기준: [[QUALITY-GATE]], [[README]]
+- 관련 품질 기준: QUALITY-GATE, [[README]]
 
 ## 산출물
 

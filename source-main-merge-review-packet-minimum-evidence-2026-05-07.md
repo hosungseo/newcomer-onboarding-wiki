@@ -17,7 +17,7 @@ The risk gate already identifies the branch as review-required, not publication-
 - [[process-large-docs-index-diff-premerge-pages-source-2026-05-07]]
 - [[source-main-publication-diff-risk-review-trigger-2026-05-07]]
 - [[README]]
-- [[ACTIVE-TASK]]
+- ACTIVE-TASK
 
 ## Stop
 STOP: If evidence cannot identify the exact branch range and publication-facing files, keep the branch unmerged and mark the packet incomplete.
