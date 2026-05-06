@@ -490,6 +490,23 @@
         "disclosure/privacy boundary must stop personal data, third-party data, internal review, investigation/audit/litigation-sensitive details, and response strategy before external sharing",
         "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
       ]
+    },
+    {
+      "id": "main-docs-publication-decision-gate",
+      "title": "main:/docs publication decision gate",
+      "status": "ready_for_merge_review_not_live_published",
+      "surface": "docs/index.html",
+      "section": "section-main-docs-publication-decision-gate-2026-05-07.md",
+      "coverage": "coverage-main-docs-publication-decision-gate-2026-05-07.md",
+      "qualityGate": "quality-gate-main-docs-publication-decision-gate-2026-05-07.md",
+      "manifest": "manifest-main-docs-publication-decision-gate-2026-05-07.md",
+      "currentBranch": "feature/search-priority-feedback-v2",
+      "pagesSource": "main:/docs",
+      "guardrails": [
+        "feature/search-priority-feedback-v2 local exposure is not the same as published GitHub Pages exposure",
+        "GitHub Pages source remains main:/docs; merge/deploy is the publication decision point",
+        "do not classify Pages as PASS until live docs/index.html contains expected labels and links"
+      ]
     }
   ]
 }
