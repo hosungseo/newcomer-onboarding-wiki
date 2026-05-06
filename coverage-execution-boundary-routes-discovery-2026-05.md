@@ -78,6 +78,6 @@
 - 계약조달·예산대응: [[router-계약조달-예산대응-실행경계-2026-05]] — 계약·조달 절차와 예산 설명 경계 후보.
 
 ## docs link count checkpoint
-- 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 622개이며 missing 0으로 확인했다.
+- 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 625개이며 missing 0으로 확인했다.
 - 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
-- 정보공개기록관리·예산대응 route까지 신규 route index에 반영한 뒤 622개 링크 checkpoint를 갱신했다.
+- 계약조달·예산대응 route까지 신규 route index에 반영한 뒤 625개 링크 checkpoint를 갱신했다.
