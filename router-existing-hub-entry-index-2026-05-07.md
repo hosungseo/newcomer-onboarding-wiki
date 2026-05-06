@@ -29,7 +29,7 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 
 ## Review controls
 
-- Main diff review checklist: proposed target `checklist-main-diff-review-2026-05-07` (not yet present)
+- Main merge diff review packet: [[process-large-docs-index-diff-premerge-pages-source-2026-05-07]]
 - Promotion checklist: [[checklist-router-existing-hub-entry-promotion-safety-2026-05-07]]
 - Existing-entry decision checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]
 - Docs/gates exposure review: [[process-docs-gates-index-exposure-review-2026-05-07]]
@@ -56,4 +56,4 @@ Gap, if any:
 
 Do not use this router for private HR records, non-public budget strategy, internal deliberation, personal data, legal-advice conclusions, or any route whose wikilink is missing from the root markdown surface.
 
-- Main diff review process: [[process-large-docs-index-diff-premerge-pages-source-2026-05-07]]
+- Main merge diff review packet: [[process-main-merge-diff-review-packet-2026-05-07]]

@@ -95,17 +95,41 @@
         "review docs/index.html section preservation before any main merge because its diff is +183/-671 versus origin/main",
         "keep this gate limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown exposure"
       ]
+    },
+    {
+      "id": "main-merge-diff-review-packet",
+      "title": "Main merge diff review packet exposure",
+      "status": "REVIEW_REQUIRED",
+      "surface": "docs/index.html",
+      "section": "section-main-merge-diff-review-packet-2026-05-07.md",
+      "coverage": "coverage-main-merge-diff-review-packet-2026-05-07.md",
+      "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",
+      "manifest": "manifest-main-merge-diff-review-packet-2026-05-07.md",
+      "baseline": {
+        "assignedHead": "ce62d47",
+        "observedHeadAtLaneStart": "d8d7475",
+        "docsIndexLineCountAtLaneStart": 189
+      },
+      "guardrails": [
+        "expose the review packet gate only; do not merge, commit, push, rebase, or publish from this lane",
+        "preserve existing docs/index.html sections; add links inside the docs/landing exposure section only",
+        "keep review status blocking until the main/process owner reviews the branch delta and docs/index section preservation",
+        "do not expand README, landing pages, catalogs, graph/data, or generated exports in this lane"
+      ]
     }
   ],
   "pagesRecheck": {
-    "mainMergeDiffRiskReview": {
-      "status": "REVIEW_REQUIRED",
-      "commitDelta": 1576,
-      "docsIndexDiff": "+183/-671",
-      "process": "process-large-docs-index-diff-premerge-pages-source-2026-05-07.md",
+    "mainMergeDiffReviewPacket": {
+      "status": "PACKET_REQUIRED",
+      "assignedHead": "ce62d47",
+      "observedHeadAtLaneStart": "d8d7475",
+      "process": "process-main-merge-diff-review-packet-2026-05-07.md",
+      "faq": "faq-main-merge-diff-review-packet-contents-2026-05-07.md",
+      "source": "source-main-merge-review-packet-minimum-evidence-2026-05-07.md",
+      "section": "section-main-merge-diff-review-packet-2026-05-07.md",
+      "coverage": "coverage-main-merge-diff-review-packet-2026-05-07.md",
       "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",
-      "faq": "faq-main-publication-why-diff-risk-review-first-2026-05-07.md",
-      "source": "source-main-publication-diff-risk-review-trigger-2026-05-07.md"
+      "manifest": "manifest-main-merge-diff-review-packet-2026-05-07.md"
     }
   }
 }
