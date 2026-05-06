@@ -85,6 +85,8 @@
 
 - 국회대응·성과평가: [[router-국회대응-성과평가-실행경계-2026-05]] — 국회 제출용 사실관계와 성과평가 설명 경계 후보.
 
+- 정보공개기록관리·성과평가: [[router-정보공개기록관리-성과평가-실행경계-2026-05]] — 공개 가능한 기록 기반 사실과 성과평가 설명 경계 후보.
+
 ## docs link count checkpoint
 - 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 637개이며 missing 0으로 확인했다.
 - 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
