@@ -84,6 +84,8 @@
 
 - [[router-국회대응-성과평가-실행경계-2026-05]] → [[coverage-국회대응-성과평가-실행경계-2026-05]] → [[release-note-국회대응-성과평가-실행경계-2026-05]] → [[audit-국회대응-성과평가-실행경계-final-2026-05]]
 
+- [[router-정보공개기록관리-성과평가-실행경계-2026-05]] → [[coverage-정보공개기록관리-성과평가-실행경계-2026-05]] → [[release-note-정보공개기록관리-성과평가-실행경계-2026-05]] → [[audit-정보공개기록관리-성과평가-실행경계-final-2026-05]]
+
 ## 기존 alias 묶음과의 관계
 - [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route 묶음 포함·발견성·안전성 gate.
 - [[audit-new-cross-boundary-routes-final-2026-05]] — 신규 교차 route 묶음 최종 연결·노출 audit.
