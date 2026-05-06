@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, information-disclosure/records routes, minister/performance onboarding coverage, dedicated collaboration meeting onboarding route exposure",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, information-disclosure/records routes, contract/procurement onboarding route, minister/performance onboarding coverage, dedicated collaboration meeting onboarding route exposure",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -287,22 +287,26 @@
       "title": "계약조달 onboarding coverage",
       "status": "exposed",
       "surface": "docs/index.html",
-      "entry": "newcomer-path-계약조달-첫주-2026-05.md",
+      "entry": "section-계약조달-onboarding-coverage-2026-05-07.md",
       "coverage": "coverage-계약조달-실행경계-2026-05.md",
       "qualityGate": "quality-gate-계약조달-실행경계-2026-05.md",
       "manifest": "manifest-newcomer-journey-계약조달-실행경계-2026-05.md",
       "onboardingCoverage": {
-        "purchaseContractProcurementBoundary": "faq-계약조달-구매요청-계약요청-조달검토-첫구분-2026-05.md",
-        "evidenceBundle": "source-계약조달-구매계약메모-작성전-증거묶음-2026-05.md",
-        "draftReviewChecklist": "process-계약조달-검토초안-작성흐름.md",
-        "publicPrivateVendorInfoBoundary": "checklist-계약조달-공개비공개-실행경계.md"
+        "purchaseRequestIntake": "faq-계약조달-구매요청-계약요청-조달검토-첫구분-2026-05.md",
+        "procurementMethodBoundary": "faq-계약조달-onboarding-구매요청-계약방법-검수-공개경계-2026-05-07.md",
+        "quoteSpecEvidenceBundle": "source-계약조달-구매계약메모-작성전-증거묶음-2026-05.md",
+        "inspectionAcceptanceTracking": "process-계약조달-요청접수-방식판단-검수공개경계-2026-05-07.md",
+        "disclosureVendorSensitiveBoundary": "checklist-계약조달-공개비공개-실행경계.md"
       },
       "guardrails": [
-        "newcomer onboarding must classify purchase request, contract request, and procurement review before drafting",
-        "evidence bundle separates public procurement basis, vendor-sensitive data, internal estimate/review material, and owner questions",
-        "draft/review checklist records request intake, basis, estimate/contract boundary, public-private review, owner, and next action without exposing private details",
+        "newcomer onboarding must classify purchase request intake, contract request, procurement review, procurement method boundary, inspection/acceptance status, and disclosure boundary before drafting or sharing anything",
+        "procurement method boundary must keep general competition, negotiated/small-value/single-source possibilities, and existing procurement channels as evidence-backed questions until lawful/internal confirmation is complete",
+        "quote/spec evidence bundle must separate public notices, public specifications, public Q&A, law/guidance, approved contract information, owner questions, and excluded vendor-sensitive or internal estimate/review material",
+        "inspection/acceptance tracking records receipt, correction request, reinspection, acceptance, payment-claim readiness, public completion fact, private defect/dispute notes, owner, and next action without exposing private details",
+        "disclosure/vendor-sensitive boundary must stop vendor proposals, prices, costs, trade secrets, technical details, evaluation/negotiation strategy, estimate details, defect/dispute details, and audit/legal response notes before external sharing",
         "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
-      ]
+      ],
+      "section": "section-계약조달-onboarding-coverage-2026-05-07.md"
     },
     {
       "id": "minister-performance-onboarding-coverage",
