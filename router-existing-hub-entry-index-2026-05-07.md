@@ -12,7 +12,8 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 | 예산, 요구자료, 집행, 계약·조달 금액흐름 | [[hub-예산대응]] | [[checklist-existing-hub-entry-decision-2026-05-07]] |
 | 구매요청, 계약방법, 조달 방식, 검수, 업체 민감정보 | [[walkthrough-계약조달-공개문안-보조라우터-2026-05]] | 기관 → 상황 → 업무축(계약조달) → 자료 → [[source-계약조달-onboarding-메모계약초안전-근거묶음-2026-05-07]] → [[process-계약조달-요청접수-방식판단-검수공개경계-2026-05-07]] → [[checklist-계약조달-공개비공개-실행경계]] |
 | 임용, 전보, 휴직, 복직, 승진, 교육, e사람, 인사기록 | [[hub-인사]] | [[process-existing-hub-entry-decision-2026-05-07]] |
-| 민원대응, 홍보대응, 법령대응, 협업회의운영 등 현재 전용 hub가 없는 저밀도 축 | [[section-low-density-hub-path-exposure-2026-05-07]] | listed path / walkthrough / checklist route |
+| 민원대응, 민원접수, 답변초안, 답변기한, 국민신문고 | [[newcomer-path-민원대응-공개경계]] | 기관 → 상황 → 업무축(민원대응) → 자료 → [[checklist-민원대응-첫30분-소관이송-공개경계]] / [[checklist-민원대응-답변전-공개경계-precheck]] / checklist-민원대응-기한추적-접수답변 (proposed) → 공개·비공개·개인정보 경계 |
+| 홍보대응, 법령대응, 협업회의운영 등 현재 전용 hub가 없는 저밀도 축 | [[section-low-density-hub-path-exposure-2026-05-07]] | listed path / walkthrough / checklist route |
 | 10대 공통 업무축을 먼저 비교해야 하는 전입자 질문 | [[walkthrough-전입자-10대업무축-공개경계-라우터-2026-05]] | 기관 → 상황 → 업무축 → 자료 → 초안/체크리스트 → 공개·비공개 경계 |
 | cross-axis coverage completion 이후 main merge 검토 | [[process-final-main-merge-readiness-packet-2026-05-07]] | 최종 readiness packet 작성 후 [[process-explicit-main-merge-approval-decision-2026-05-07]]에서 명시 승인/보류/거절을 받는다 |
 

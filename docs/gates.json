@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, information-disclosure/records routes, contract/procurement onboarding route, minister/performance onboarding coverage, dedicated collaboration meeting onboarding route exposure",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, civil complaints refresh, budget, law, PR, organization, collaboration, information-disclosure/records routes, contract/procurement onboarding route, minister/performance onboarding coverage, dedicated collaboration meeting onboarding route exposure",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -447,6 +447,33 @@
         "do not expand README, landing pages, catalogs, graph/data, or generated exports in this lane"
       ],
       "summary": "Final main merge readiness gate: HEAD d7f853e; changed files vs origin/main 1643; recommendation REVIEW_REQUIRED; Pages source main:/docs mismatch risk; no automatic merge."
+    },
+    {
+      "id": "civil-complaints-onboarding-refresh",
+      "title": "민원대응 onboarding refresh route",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "section": "section-민원대응-onboarding-refresh-2026-05-07.md",
+      "entry": "walkthrough-민원대응-전입자-라우터-2026-05.md",
+      "coverage": "coverage-민원대응-onboarding-refresh-2026-05-07.md",
+      "qualityGate": "quality-gate-민원대응-onboarding-refresh-2026-05-07.md",
+      "manifest": "manifest-newcomer-journey-민원대응-onboarding-refresh-2026-05-07.md",
+      "onboardingCoverage": {
+        "complaintIntake": "faq-민원대응-처음-질의-불만-고충-반복민원-구분-2026-05.md",
+        "classification": "walkthrough-민원대응-전입자-라우터-2026-05.md",
+        "deadlineTracking": "process-민원대응-접수부터-재민원로그-2026-05.md",
+        "replyEvidenceBundle": "source-민원대응-첨부자료-공개근거-대조순서.md",
+        "escalation": "newcomer-path-민원대응-첫30분-소관이송-2026-05.md",
+        "disclosurePrivacyBoundary": "checklist-민원대응-답변전-공개경계-precheck.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must route complaint intake, classification, deadline tracking, reply evidence bundle, escalation, and disclosure/privacy boundary before drafting or sending a reply",
+        "deadline tracking must separate receipt date, supplement request, transfer deadline, reply deadline, extension reason, and repeat/new-material decision without exposing private details",
+        "reply evidence bundle must separate complaint text, attachments, public basis, facts under confirmation, and excluded personal or sensitive material",
+        "escalation must stop owner-unclear, transfer, repeat/group complaint, audit/legal/media-sensitive, and senior-report cases before solo response",
+        "disclosure/privacy boundary must stop personal data, third-party data, internal review, investigation/audit/litigation-sensitive details, and response strategy before external sharing",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
     }
   ]
 }
