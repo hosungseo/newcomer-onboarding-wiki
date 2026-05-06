@@ -58,6 +58,7 @@ route-map이 없거나 감사·국회처럼 단일 업무축으로 바로 보이
 - 발견성·노출 준비 상태는 [[coverage-execution-boundary-routes-discovery-2026-05]]에서 관리한다.
 - README, docs index, landing 노출 gap은 [[audit-execution-boundary-exposure-gaps-2026-05]]에서 별도로 점검한다.
 - 예산·민원·법령·협업 축의 docs/landing 노출 gap을 실제로 처리할 때는 [[process-docs-landing-exposure-gaps-예산민원법령협업-2026-05]]를 먼저 열어 새 FAQ/source/router 링크가 기존 section에 들어갈 자리부터 확인한다.
+- docs/landing process와 저밀도 newcomer path·walkthrough 축의 노출 상태는 [[coverage-docs-landing-low-density-newcomer-paths-2026-05]]에서 본다. 이 coverage는 README/docs index를 직접 늘리기 전에 `path → walkthrough → checklist/quality` 세 칸으로 접을 후보를 고정한다.
 - 이 section은 노출 문서를 직접 수정하지 않고, newcomer가 route를 고르는 root note 역할만 한다.
 
 ## stop lines

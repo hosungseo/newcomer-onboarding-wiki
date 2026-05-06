@@ -81,4 +81,4 @@ README, docs index, landing 진입면에 아직 덜 보이는 새 경로를 한 
 
 ## 이번 산출물의 다음 행동
 
-다음 작업자는 이 파일을 기준으로 README/docs/landing 중 하나를 고른 뒤, 위 existing wikilink만 사용해 최소 노출을 추가한다.
+다음 작업자는 이 파일을 기준으로 README/docs/landing 중 하나를 고른 뒤, 위 existing wikilink만 사용해 최소 노출을 추가한다. 실행 전에는 [[coverage-docs-landing-low-density-newcomer-paths-2026-05]]에서 저밀도 newcomer path와 walkthrough 축을 먼저 확인해, 과밀 목록을 늘리는 대신 `path → walkthrough → checklist/quality` 세 칸으로 줄인다.
