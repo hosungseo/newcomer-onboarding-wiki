@@ -41,7 +41,7 @@
     {
       "id": "github-pages-live-docs-verification",
       "title": "GitHub Pages live docs verification checkpoint",
-      "status": "live-response-mismatch-recorded",
+      "status": "WAIT_live_local_mismatch",
       "surface": "docs/index.html",
       "gateFile": "docs/gates.json",
       "section": "section-low-density-hub-path-exposure-2026-05-07.md",
@@ -53,20 +53,23 @@
         "live check is read-only: confirm docs/index.html exposes gates.json, existing-hub router, low-density section, and coverage links",
         "if Pages is stale or 404, record deploy/cache status instead of editing graph/data, catalogs, README, or landing files",
         "compare live HTML labels against local docs/index.html and docs/gates.json targets; HTTP 200 alone is not sufficient evidence",
-        "live comparison guardrail: status 200 with stale/mismatched title must be recorded as a live/local mismatch, not as completed exposure"
+        "live comparison guardrail: status 200 with stale/mismatched title must be recorded as WAIT/live-local mismatch, not PASS or completed exposure"
       ],
       "comparison": "process-pages-live-reflection-check-2026-05-07.md",
       "boundarySource": "source-pages-live-response-verification-boundary-2026-05-07.md",
       "faq": "faq-pages-live-response-after-index-restore-2026-05-07.md",
       "lastLiveCheck": {
-        "checkedAt": "2026-05-07T05:08:00+09:00",
+        "checkedAt": "2026-05-07T05:12:00+09:00",
         "url": "https://hosungseo.github.io/newcomer-onboarding-wiki/",
         "httpStatus": 200,
-        "bytesObserved": "about 31241",
+        "liveBytesObserved": 31241,
+        "localBytesObserved": 19149,
         "expectedTitle": "Execution Boundary Route Index",
         "observedTitle": "신규공무원 적응 위키 · 관문",
+        "gatewayTitlePresent": true,
         "expectedTitleFound": false,
-        "guardrail": "HTTP 200 alone is not sufficient; compare served labels and links against local docs/index.html and docs/gates.json before treating Pages as reflected."
+        "classification": "WAIT_not_PASS",
+        "guardrail": "HTTP 200 alone is not sufficient; expected route title is absent while the gateway title is present, so keep Pages reflection classified as WAIT, not PASS."
       }
     }
   ]
