@@ -48,6 +48,9 @@ route:
   - step: budget_submission_checklist
     file: checklist-예산대응-요구자료-제출전검토
     purpose: 제출 전 미확정 예산안과 내부검토가 섞였는지 판정한다.
+  - step: civil_boundary_classification
+    file: faq-민원대응-처음-질의-불만-고충-반복민원-구분-2026-05
+    purpose: 접수문을 단순 질의, 불만, 고충 해결요구, 반복민원으로 먼저 구분한다.
   - step: civil_first_30min_checklist
     file: checklist-민원대응-첫30분-소관이송-공개경계
     purpose: 접수 직후 답변 초안 작성 전에 5칸 요약, 소관, 이송 후보, 공개자료 대조를 고정한다.
@@ -75,6 +78,12 @@ route:
   - step: civil_masking_checklist
     file: checklist-민원대응-마스킹-이송-답변초안
     purpose: 개인정보 마스킹, 이송, 답변초안 공개경계를 제출 전 점검한다.
+  - step: civil_response_repeat_log
+    file: process-민원대응-접수부터-재민원로그-2026-05
+    purpose: 답변근거, 마스킹, 반복/새자료 판단, 담당·이송, 다음 조치를 재민원 로그에 남긴다.
+  - step: civil_public_private_personal_info_precheck
+    file: checklist-민원대응-답변전-공개경계-precheck
+    purpose: 답변 초안 외부공유 전 공개자료, 비공개자료, 개인정보·제3자정보 경계를 최종 확인한다.
   - step: coverage
     file: coverage-예산대응-민원대응-실행경계-2026-05
     purpose: route 노출과 빈칸을 점검한다.
@@ -109,13 +118,16 @@ completion_rule: 예산 checklist와 민원 checklist, quality_gate를 통과하
 4. [[faq-예산대응-공개자료와-내부검토는-어디서-갈리나]]
 5. [[process-예산대응-요구자료-작성흐름]]
 6. [[checklist-예산대응-요구자료-제출전검토]]
-7. [[checklist-민원대응-첫30분-소관이송-공개경계]]
-8. [[process-민원대응-반복민원-처리경계]]
-9. [[faq-민원대응-새자료가-붙으면-반복민원인가]]
-10. [[source-민원대응-타기관이송-소관대조순서]]
-11. [[source-민원대응-마스킹-이송-원천대조순서]]
-12. [[source-민원대응-첨부자료-공개근거-대조순서]]
-13. [[checklist-민원대응-마스킹-이송-답변초안]]
-14. [[coverage-예산대응-민원대응-실행경계-2026-05]]
-15. [[quality-gate-예산대응-민원대응-실행경계-2026-05]]
-16. [[coverage-execution-boundary-routes-discovery-2026-05]]
+7. [[faq-민원대응-처음-질의-불만-고충-반복민원-구분-2026-05]]
+8. [[checklist-민원대응-첫30분-소관이송-공개경계]]
+9. [[process-민원대응-반복민원-처리경계]]
+10. [[faq-민원대응-새자료가-붙으면-반복민원인가]]
+11. [[source-민원대응-타기관이송-소관대조순서]]
+12. [[source-민원대응-마스킹-이송-원천대조순서]]
+13. [[source-민원대응-첨부자료-공개근거-대조순서]]
+14. [[checklist-민원대응-마스킹-이송-답변초안]]
+15. [[process-민원대응-접수부터-재민원로그-2026-05]]
+16. [[checklist-민원대응-답변전-공개경계-precheck]]
+17. [[coverage-예산대응-민원대응-실행경계-2026-05]]
+18. [[quality-gate-예산대응-민원대응-실행경계-2026-05]]
+19. [[coverage-execution-boundary-routes-discovery-2026-05]]

@@ -74,6 +74,29 @@
       }
     },
     {
+      "id": "civil-complaints-onboarding-coverage",
+      "title": "민원대응 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "entry": "walkthrough-민원대응-전입자-라우터-2026-05.md",
+      "coverage": "coverage-예산대응-민원대응-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-예산대응-민원대응-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-예산대응-민원대응-실행경계-2026-05.md",
+      "onboardingCoverage": {
+        "inquiryComplaintGrievanceBoundary": "faq-민원대응-처음-질의-불만-고충-반복민원-구분-2026-05.md",
+        "evidenceBundle": "source-민원대응-첨부자료-공개근거-대조순서.md",
+        "responseRepeatComplaintLogChecklist": "process-민원대응-접수부터-재민원로그-2026-05.md",
+        "publicPrivatePersonalInfoBoundary": "checklist-민원대응-답변전-공개경계-precheck.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must classify inquiry, complaint, grievance, and repeat complaint before drafting a response",
+        "evidence bundle must separate complaint text, attachments, public basis, jurisdiction/transfer candidate, and excluded personal or sensitive material",
+        "response/repeat complaint log checklist records receipt, response basis, masking, repeat/new-material decision, transfer/owner, and next action without exposing private details",
+        "public/private/personal-info boundary must be checked before sharing any response draft outside the processing lane",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
       "id": "info-disclosure-records-onboarding-coverage",
       "title": "정보공개기록관리 onboarding coverage",
       "status": "exposed",
@@ -164,17 +187,5 @@
       ],
       "summary": "Merge review recommendation gate: baseline HEAD b1887d5; root markdown 1791; docs/index.html 190 lines; GitHub Pages source main:/docs; REVIEW_REQUIRED until diff and Pages source are accepted."
     }
-  ],
-  "coverageGates": {
-    "contract-procurement-onboarding-coverage": {
-      "status": "PASS",
-      "faq": "faq-계약조달-구매요청-계약요청-조달검토-첫구분-2026-05.md",
-      "source": "source-계약조달-구매계약메모-작성전-증거묶음-2026-05.md",
-      "process": "process-계약조달-수요접수-to-검수로그-2026-05.md",
-      "router": "router-계약조달-신규자-계약초안-공개경계-2026-05.md",
-      "coverage": "coverage-계약조달-실행경계-2026-05.md",
-      "qualityGate": "quality-gate-계약조달-실행경계-2026-05.md",
-      "manifest": "manifest-newcomer-journey-계약조달-실행경계-2026-05.md"
-    }
-  }
+  ]
 }

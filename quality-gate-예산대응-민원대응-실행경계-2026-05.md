@@ -20,6 +20,7 @@ confidentiality: public-only
 - [x] route-map: [[walkthrough-예산대응-민원대응-실행경계-라우트맵-2026-05]]가 예산 요구자료와 민원 답변의 첫 분기를 제공한다.
 - [x] budget router: [[walkthrough-예산대응-전입자-라우터-2026-05]]가 표·기한·요구항목 중심 사안을 예산 route로 보낸다.
 - [x] civil router: [[walkthrough-민원대응-전입자-라우터-2026-05]]가 민원 문장 중심 사안을 소관·이송·답변 route로 보낸다.
+- [x] civil boundary FAQ: [[faq-민원대응-처음-질의-불만-고충-반복민원-구분-2026-05]]가 질의/불만/고충/반복민원 첫 경계를 제공한다.
 - [x] first checklist: [[checklist-민원대응-첫30분-소관이송-공개경계]]가 접수 직후 5칸 요약·소관·이송·공개자료 대조를 강제한다.
 - [x] FAQ: [[faq-예산대응-요구자료-항목은-어떻게-쪼개나]]가 요구 항목 쪼개기 기준을 제공한다.
 - [x] FAQ: [[faq-예산대응-공개자료와-내부검토는-어디서-갈리나]]가 공개자료와 내부검토 경계를 제공한다.
@@ -34,6 +35,8 @@ confidentiality: public-only
 - [x] source: [[source-민원대응-첨부자료-공개근거-대조순서]]가 첨부자료를 공개근거·확인필요·제외로 분류한다.
 - [x] FAQ: [[faq-민원대응-반복질문은-어디까지-표준답변으로-묶나]]가 표준답변 가능 범위를 제공한다.
 - [x] checklist: [[checklist-민원대응-마스킹-이송-답변초안]]가 개인정보 마스킹·이송·답변초안 경계를 점검한다.
+- [x] response/repeat log: [[process-민원대응-접수부터-재민원로그-2026-05]]가 답변근거·마스킹·반복/새자료 판단·담당/이송·다음조치를 기록한다.
+- [x] public/private/personal-info precheck: [[checklist-민원대응-답변전-공개경계-precheck]]가 외부공유 전 공개·비공개·개인정보 경계를 점검한다.
 - [x] coverage: [[coverage-예산대응-민원대응-실행경계-2026-05]]가 제품군 노출과 남은 빈칸을 묶는다.
 - [x] manifest: [[manifest-newcomer-journey-예산대응-민원대응-실행경계-2026-05]]가 agent-readable route를 제공한다.
 - [x] discovery: [[coverage-execution-boundary-routes-discovery-2026-05]]가 docs/landing 노출명과 묶음 순서를 제공한다.
