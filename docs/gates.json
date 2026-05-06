@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, and information-disclosure routes",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, and information-disclosure routes, minister/performance onboarding coverage",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -299,6 +299,26 @@
         "evidence bundle separates public procurement basis, vendor-sensitive data, internal estimate/review material, and owner questions",
         "draft/review checklist records request intake, basis, estimate/contract boundary, public-private review, owner, and next action without exposing private details",
         "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
+      "id": "minister-performance-onboarding-coverage",
+      "title": "장관보고·성과평가 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "section": "section-장관보고-성과평가-onboarding-coverage-2026-05-07.md",
+      "entry": "router-장관보고-성과평가-실행경계-2026-05.md",
+      "coverage": "coverage-장관보고-성과평가-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-장관보고-성과평가-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-장관보고-성과평가-실행경계-2026-05.md",
+      "boundary": "faq-장관보고-성과평가-전입자-첫구분-2026-05.md",
+      "evidenceBundle": "source-장관보고-성과평가-초안전-근거묶음-2026-05.md",
+      "briefingRevisionTracking": "newcomer-path-첫보고서작성-공통행정업무.md",
+      "guardrails": [
+        "route first by minister briefing, senior briefing, performance metric check, or evaluation submission",
+        "separate public/confirmed evidence bundle from private internal review and unconfirmed performance",
+        "use briefing/revision/tracking checklist before drafting or submission",
+        "stop before scores, grades, rankings, committee remarks, personal performance data, or unconfirmed policy/performance claims"
       ]
     },
     {
