@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Use this checklist before routing a newcomer question into an existing hub when the priority axes already have a hub or an accepted section-level route. Pair it with [[process-existing-hub-entry-decision-2026-05-07]] and [[section-low-density-hub-path-exposure-2026-05-07]].
+Use this checklist before routing a newcomer question into an existing hub when the priority axes already have a hub or an accepted section-level route. Pair it with [[router-existing-hub-entry-index-2026-05-07]], [[process-existing-hub-entry-decision-2026-05-07]], and [[section-low-density-hub-path-exposure-2026-05-07]].
 
 ## Pre-check
 

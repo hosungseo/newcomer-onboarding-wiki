@@ -6,6 +6,8 @@ Use this process when every priority axis already has a root-level hub or reusab
 
 This is a cross-process artifact for [[section-low-density-hub-path-exposure-2026-05-07]]. It intentionally does not create, rename, or expand hubs.
 
+Router entry index: [[router-existing-hub-entry-index-2026-05-07]].
+
 ## Decision rule
 
 Pick the hub by the user's first stable noun, not by the longest downstream route.

@@ -2,23 +2,35 @@
 
 ## Purpose
 
-When a newcomer sees a new issue, do not create another hub first. Choose the closest existing hub, then move to the secondary path or section checkpoint.
+Use this router when a newcomer question feels like it may need a new hub, but the safer first move is to test existing root entries before expanding the surface.
 
-## Entry order
+## Entry index
 
-| Signal | Start here | Then check |
+| First stable noun in the request | Enter first | Then use |
 |---|---|---|
-| unsure whether this is institution/function/domain | [[hub-기관또는기능]] | [[process-existing-hub-entry-decision-2026-05-07]] |
-| budget request mixed with complaint or data demand | [[hub-예산대응]] | [[newcomer-path-예산대응-요구자료-첫판단-2026-05]] |
-| complaint, 국민신문고, transfer, or masking question | [[hub-민원대응]] | [[newcomer-path-민원대응-첫30분-소관이송-2026-05]] |
-| press inquiry or public message draft | [[hub-홍보대응]] | [[newcomer-path-홍보대응-보도문의-첫판단-2026-05]] |
-| statute explanation or legal inquiry | [[hub-법령대응]] | [[newcomer-path-법령대응-민원성질의-첫판단-2026-05]] |
-| meeting result becoming a shareable follow-up | [[hub-협업회의운영]] | [[walkthrough-협업회의운영-결과공유-보조라우터-2026-05]] |
+| 기관, 부처, 부서, 기능, unfamiliar portfolio | [[hub-기관또는기능]] | [[process-existing-hub-entry-decision-2026-05-07]] |
+| 예산, 요구자료, 집행, 계약·조달 금액흐름 | [[hub-예산대응]] | [[checklist-existing-hub-entry-decision-2026-05-07]] |
+| 임용, 전보, 휴직, 복직, 승진, 교육, e사람, 인사기록 | [[hub-인사]] | [[process-existing-hub-entry-decision-2026-05-07]] |
+| 민원대응, 홍보대응, 법령대응, 협업회의운영 등 현재 전용 hub가 없는 저밀도 축 | [[section-low-density-hub-path-exposure-2026-05-07]] | listed path / walkthrough / checklist route |
+
+## Routing rule
+
+1. Fix the first stable noun.
+2. Choose exactly one existing hub or section entry above.
+3. Follow [[process-existing-hub-entry-decision-2026-05-07]] for cross-axis tie-breakers.
+4. Use [[checklist-router-existing-hub-before-new-hub-2026-05-07]] before naming any new hub.
+5. If no existing entry fits, leave a one-line gap statement instead of silently creating a duplicate hub.
+
+## Minimal handoff
+
+```text
+Input noun:
+Existing entry chosen:
+Reason:
+Next route:
+Gap, if any:
+```
 
 ## Stop line
 
-Stop at the existing hub when the issue contains personal data, undisclosed review, personnel/audit/investigation/security details, vendor-sensitive material, or an unconfirmed policy position.
-
-## Forbidden
-
-Do not create a new hub merely because the current case feels cross-cutting. First route through [[section-low-density-hub-path-exposure-2026-05-07]] and [[checklist-existing-hub-entry-decision-2026-05-07]].
+Do not use this router for private HR records, non-public budget strategy, internal deliberation, personal data, legal-advice conclusions, or any route whose wikilink is missing from the root markdown surface.

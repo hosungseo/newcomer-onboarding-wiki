@@ -4,6 +4,8 @@
 
 This section checkpoint groups the low-density hub/path axes that already have operational notes and now need a single root-level exposure surface for docs index work without expanding landing, graph/data, or per-axis catalog lists.
 
+Use [[router-existing-hub-entry-index-2026-05-07]] first when the question may belong to an existing hub before entering one of these lower-density route rows.
+
 ## Axes and entrypoints
 
 | Axis | Hub/path checkpoint | Coverage / quality / manifest anchor |
@@ -13,12 +15,10 @@ This section checkpoint groups the low-density hub/path axes that already have o
 | 홍보대응 | [[newcomer-path-홍보대응-대외문안-공개경계]], [[walkthrough-홍보대응-대외문안-보조라우터-2026-05]], [[checklist-홍보대응-초안공개전환-문장별-precheck]] | [[coverage-홍보대응-대외문안-실행경계-2026-05]], [[quality-gate-홍보대응-대외문안-실행경계-2026-05]], [[manifest-newcomer-journey-홍보대응-대외문안-실행경계-2026-05]] |
 | 법령대응 | [[newcomer-path-법령대응-공개설명경계]], [[walkthrough-홍보대응-법령대응-실행경계-라우트맵-2026-05]], [[checklist-법령대응-입법예고-설명초안-제출전검토]] | [[coverage-법령대응-공개설명경계-2026-05]], [[quality-gate-법령대응-공개설명경계-2026-05]], [[manifest-newcomer-journey-법령대응-공개설명경계-2026-05]] |
 | 협업회의운영 | [[newcomer-path-협업회의운영-회의결과-공개경계-2026-05]], [[walkthrough-협업회의운영-전입자-라우터-2026-05]], [[checklist-협업회의운영-회의결과-후속조치-실행경계]] | [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]], [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]], [[manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05]] |
-| 기존 허브 진입 | [[router-existing-hub-entry-index-2026-05-07]], [[process-existing-hub-entry-decision-2026-05-07]], [[checklist-existing-hub-entry-decision-2026-05-07]] | [[coverage-existing-hub-entry-router-2026-05-07]], [[quality-gate-existing-hub-entry-router-2026-05-07]], [[manifest-existing-hub-entry-router-2026-05-07]] |
 
 ## Section checkpoints
 
 - Each axis has at least one newcomer path or walkthrough entrypoint reachable from this checkpoint.
-- The existing-hub entry router is exposed as a maintainer-facing overlay so newcomers start from existing hubs before creating new hub pages.
 - Each axis is tied to an existing coverage/quality/manifest anchor rather than a placeholder.
 - Shared anchors are intentional where the existing root notes pair two axes: 예산대응/민원대응 and 정보공개기록관리/협업회의.
 - Docs exposure: this checkpoint is safe to expose from `docs/index.html` together with [[coverage-low-density-hub-path-exposure-2026-05-07]] because every linked route points to an existing root markdown note.
