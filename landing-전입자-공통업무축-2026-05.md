@@ -39,6 +39,7 @@
 ## 최근 boundary note 묶음
 - [[section-execution-boundary-routes-2026-05]] — 계약조달·조직정원·감사국회·민원법령·정보공개협업회의·홍보대외협력 실행경계 route를 한 화면에서 고르는 최상위 section.
 - [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality 묶음.
+- [[index-new-cross-boundary-routes-2026-05]] — 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개 신규 교차 route 묶음.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 노출 상태 요약.
 - [[router-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 섞지 않게 보내는 신규 교차 router.
 - [[coverage-장관보고-성과평가-실행경계-2026-05]] — 장관보고·성과평가 router/manifest/quality 삼각형 coverage.
