@@ -12,6 +12,7 @@ Use this gate before promoting [[router-existing-hub-entry-index-2026-05-07]] fr
 - [x] Coverage is recorded in [[coverage-router-existing-hub-entry-index-2026-05-07]].
 - [x] Manifest exposure is recorded in [[manifest-router-existing-hub-entry-index-2026-05-07]].
 - [x] `docs/index.html` links are relative GitHub/Page-safe `.md` links.
+- [x] Main merge risk is exposed separately in [[quality-gate-main-diff-risk-2026-05-07]]: `origin/main..HEAD` has 1,576 commits and `docs/index.html` differs by +183/-671 lines, so merge to `main` requires review.
 - [x] Live Pages response evidence is recorded as a guardrail, not completion: second WAIT recheck observed HTTP 200, 31,241 live bytes, and 19,192 local bytes; the expected `Execution Boundary Route Index` title was absent and gateway title `신규공무원 적응 위키 · 관문` was present, so classify WAIT-2, not PASS.
 
 ## Failure conditions

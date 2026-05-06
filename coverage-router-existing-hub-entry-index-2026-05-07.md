@@ -13,7 +13,8 @@ This coverage note verifies that [[router-existing-hub-entry-index-2026-05-07]] 
 | Quality gate | [[quality-gate-router-existing-hub-entry-index-2026-05-07]] | Added to check target existence, no-new-hub drift, and docs link safety. |
 | Manifest | [[manifest-router-existing-hub-entry-index-2026-05-07]] | Added to record the router family and safe exposure boundaries. |
 | Docs index | `docs/index.html` | Exposes the router, coverage, quality gate, and manifest as one operational group. |
+| Main diff risk gate | [[quality-gate-main-diff-risk-2026-05-07]] | Records that `origin/main..HEAD` has 1,576 commits and `docs/index.html` is +183/-671, so merge to `main` requires review. |
 
 ## Stop line
 
-Do not treat this coverage note as authority to add graph/data, README, landing, catalog, commit, or push changes. It only confirms the root markdown and docs index exposure path.
+Do not treat this coverage note as authority to add graph/data, README, landing, catalog, commit, push, or main-merge changes. It only confirms the root markdown and docs index exposure path, plus the review-required main diff risk gate.

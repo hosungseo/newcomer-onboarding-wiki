@@ -16,6 +16,7 @@ This manifest keeps the existing-hub router family small: one router, one low-de
 - Root markdown wikilinks among the router family.
 - `docs/index.html` operational exposure under docs/landing exposure.
 - `docs/gates.json` as the compact gate inventory for later GitHub Pages live verification.
+- [[quality-gate-main-diff-risk-2026-05-07]] as a merge-safety blocker: `origin/main..HEAD` has 1,576 commits and the `docs/index.html` comparison is +183/-671, so a merge to `main` requires review before publication.
 - [[process-pages-live-reflection-check-2026-05-07]] as the read-only comparison checklist when local docs/gates need to be compared with the served GitHub Pages HTML.
 - Live response evidence from 2026-05-07 05:22 KST third WAIT recheck: HTTP 200, 31,241 live bytes, and 19,194 local bytes were observed at capture; expected `Execution Boundary Route Index` was absent and gateway title `신규공무원 적응 위키 · 관문` was present, so the manifest classifies this as WAIT-3, not PASS, and keeps it as a live comparison guardrail rather than completed Pages reflection. Repeated-WAIT escalation to FAIL is reserved for the main/process owner.
 
