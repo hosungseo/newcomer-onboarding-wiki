@@ -24,5 +24,6 @@ Use [[router-existing-hub-entry-index-2026-05-07]] first when the question may b
 - Docs exposure: this checkpoint is safe to expose from `docs/index.html` together with [[coverage-low-density-hub-path-exposure-2026-05-07]] because every linked route points to an existing root markdown note.
 - Pages verification: `docs/gates.json` may be checked after GitHub Pages deploy to confirm live exposure, but that verification remains read-only and does not expand README, landing, graph/data, or catalogs.
 - Live comparison handoff: [[process-pages-live-reflection-check-2026-05-07]] is the safe local-vs-live checklist; use it only after deploy/merge and stop on stale Pages, missing labels, or broken root `.md` links.
+- Live response evidence 2026-05-07 05:08 KST: GitHub Pages returned HTTP 200 with about 31,241 bytes, but the expected local docs index title `Execution Boundary Route Index` was not found; treat this as live/local mismatch evidence and keep the comparison guardrail active.
 - Existing-hub router exposure: [[router-existing-hub-entry-index-2026-05-07]] is separately covered by [[coverage-router-existing-hub-entry-index-2026-05-07]], [[quality-gate-router-existing-hub-entry-index-2026-05-07]], and [[manifest-router-existing-hub-entry-index-2026-05-07]].
 - Stop line: do not expand landing files, graph/data, or per-axis catalog lists in this lane.

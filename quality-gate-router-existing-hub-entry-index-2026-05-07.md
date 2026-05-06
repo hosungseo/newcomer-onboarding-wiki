@@ -12,7 +12,8 @@ Use this gate before promoting [[router-existing-hub-entry-index-2026-05-07]] fr
 - [x] Coverage is recorded in [[coverage-router-existing-hub-entry-index-2026-05-07]].
 - [x] Manifest exposure is recorded in [[manifest-router-existing-hub-entry-index-2026-05-07]].
 - [x] `docs/index.html` links are relative GitHub/Page-safe `.md` links.
+- [x] Live Pages response evidence is recorded as a guardrail, not completion: HTTP 200 and about 31,241 bytes observed, but the expected `Execution Boundary Route Index` title was not found.
 
 ## Failure conditions
 
-Stop and split the work if any target is missing, if the router is copied into graph/data or catalogs, or if a docs link points to a non-existent `.md` file.
+Stop and split the work if any target is missing, if the router is copied into graph/data or catalogs, if a docs link points to a non-existent `.md` file, or if live Pages returns HTTP 200 but stale/mismatched labels compared with local docs/gates.
