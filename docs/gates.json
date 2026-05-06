@@ -41,7 +41,7 @@
     {
       "id": "github-pages-live-docs-verification",
       "title": "GitHub Pages live docs verification checkpoint",
-      "status": "WAIT_2_live_local_mismatch",
+      "status": "WAIT_3_live_local_mismatch",
       "surface": "docs/index.html",
       "gateFile": "docs/gates.json",
       "section": "section-low-density-hub-path-exposure-2026-05-07.md",
@@ -59,18 +59,18 @@
       "boundarySource": "source-pages-live-response-verification-boundary-2026-05-07.md",
       "faq": "faq-pages-live-response-after-index-restore-2026-05-07.md",
       "lastLiveCheck": {
-        "checkedAt": "2026-05-07T05:17:00+09:00",
-        "recheckNumber": 2,
+        "checkedAt": "2026-05-07T05:22:00+09:00",
+        "recheckNumber": 3,
         "url": "https://hosungseo.github.io/newcomer-onboarding-wiki/",
         "httpStatus": 200,
         "liveBytesObserved": 31241,
-        "localBytesObserved": 19192,
+        "localBytesObserved": 19194,
         "expectedTitle": "Execution Boundary Route Index",
         "observedTitle": "신규공무원 적응 위키 · 관문",
         "gatewayTitlePresent": true,
         "expectedTitleFound": false,
-        "classification": "WAIT_2_not_PASS",
-        "guardrail": "Second WAIT evidence: HTTP 200 alone is not sufficient; expected route title is absent while the gateway title is present, so keep Pages reflection classified as WAIT-2, not PASS."
+        "classification": "WAIT_3_not_PASS",
+        "guardrail": "Third WAIT evidence: HTTP 200 alone is not sufficient; expected route title is absent while the gateway title is present, so keep Pages reflection classified as WAIT-3, not PASS. Repeated WAIT-to-FAIL escalation belongs to the main/process owner."
       }
     }
   ]

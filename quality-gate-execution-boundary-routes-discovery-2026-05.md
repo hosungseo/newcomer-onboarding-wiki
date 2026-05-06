@@ -59,6 +59,7 @@ confidentiality: public-only
 - [x] docs/index exposes `docs/gates.json` and [[process-pages-live-reflection-check-2026-05-07]] as a read-only live/local comparison pair.
 - [x] `docs/gates.json` records [[process-pages-live-reflection-check-2026-05-07]], [[source-pages-live-response-verification-boundary-2026-05-07]], and [[faq-pages-live-response-after-index-restore-2026-05-07]] for the Pages verification checkpoint.
 - [x] Live verification remains post-deploy/read-only: compare served labels and `.md` hrefs against local docs/gates, then stop on stale Pages or broken links instead of widening README, landing, graph/data, or catalogs.
+- [x] Third Pages WAIT evidence is recorded as HTTP 200, live bytes 31,241, local bytes 19,194 at capture, expected route title absent, gateway title present; classify as WAIT-3/not PASS, with any repeated-WAIT-to-FAIL escalation left to the main/process owner.
 
 ## 다음 행동
 
