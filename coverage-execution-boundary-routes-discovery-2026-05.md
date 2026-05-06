@@ -46,6 +46,6 @@
 - minister performance boundary: [[coverage-장관보고-성과평가-실행경계-2026-05]]가 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage로 작동한다.
 
 ## docs link count checkpoint
-- 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 532개이며 missing 0으로 확인했다.
+- 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 535개이며 missing 0으로 확인했다.
 - 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
-- 예산대응·성과평가 route까지 신규 route index에 반영한 뒤 532개 링크 checkpoint를 갱신했다.
+- 감사대응·문서기안 route까지 신규 route index에 반영한 뒤 535개 링크 checkpoint를 갱신했다.
