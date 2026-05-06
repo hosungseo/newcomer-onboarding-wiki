@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, and GitHub Pages live verification",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, and GitHub Pages live verification; law-response onboarding coverage",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -159,6 +159,30 @@
         "evidence bundle must separate public source, publication date, confirmed fact, numeric basis, owner check, and excluded internal/sensitive material",
         "draft/approval/distribution log checklist records request intake, draft, review/approval, distribution, press inquiry/correction, and next owner without exposing private details",
         "public/private/personal-info/reputational-risk boundary must be checked before sharing any draft outside the processing lane",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
+      "id": "law-response-onboarding-coverage",
+      "title": "법령대응 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "section": "section-법무거버넌스부처-전입경로.md",
+      "entry": "newcomer-path-법령대응-공개설명경계.md",
+      "coverage": "coverage-법령대응-공개설명경계-2026-05.md",
+      "qualityGate": "quality-gate-법령대응-공개설명경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-법령대응-공개설명경계-2026-05.md",
+      "onboardingCoverage": {
+        "lawLookupAuthoritativeInterpretationRevisionReviewBoundary": "faq-법령대응-전입자-첫구분-법령조회-유권해석-입법예고-내부검토-2026-05.md",
+        "evidenceBundle": "source-법령대응-법무검토-답변초안-최소근거묶음-2026-05.md",
+        "reviewReplyTrackingChecklist": "process-법령대응-입법예고-의견수렴-설명초안.md",
+        "publicPrivateUnconfirmedInterpretationBoundary": "quality-gate-법령대응-공개설명경계-2026-05.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must classify law lookup, authoritative interpretation, revision review, public notice/opinion handling, and internal legal review before drafting any reply",
+        "evidence bundle must separate current law text, public notice/revision draft, article comparison, authoritative/public interpretation source, owner confirmation, and excluded internal or unconfirmed material",
+        "review/reply tracking checklist records request intake, legal basis checked, reviewer/owner, reply scope, public/private boundary, open questions, and next action without exposing private details",
+        "public/private/unconfirmed-interpretation boundary must stop unpublished interpretation, non-public consultation, internal legal review, and case-specific application conclusions before external sharing",
         "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
       ]
     },
