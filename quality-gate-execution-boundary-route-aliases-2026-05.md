@@ -7,6 +7,7 @@
 
 ## Gate 1 — alias 완결성
 - [x] [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]]가 신규자 질문을 4개 alias route로 보낼 수 있는가?
+- [x] 예시 질문 4개가 각각 다른 alias coverage로 연결되는가?
 - [x] [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]]가 교차 route 선택 기준을 짧게 설명하는가?
 - [x] 4개 교차 route가 coverage/manifest/quality 삼각형을 갖는가?
 - [x] index에서 각 alias 묶음으로 바로 내려갈 수 있는가?
