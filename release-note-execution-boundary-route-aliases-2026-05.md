@@ -17,6 +17,7 @@
 - 홍보·법령: [[coverage-홍보대응-법령대응-실행경계-2026-05]]
 
 ## 노출 상태
+- [[audit-execution-boundary-route-aliases-final-2026-05]] — alias 묶음 최종 노출·중복 점검.
 README, landing, docs/index.html, agent-readable catalog, discovery coverage에서 alias index/router/FAQ로 들어올 수 있다.
 
 ## 멈춤선
