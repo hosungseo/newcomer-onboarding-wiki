@@ -13,7 +13,8 @@
 ## 기존 alias 묶음과의 관계
 - [[audit-new-cross-boundary-routes-final-2026-05]] — 신규 교차 route 묶음 최종 연결·노출 audit.
 - 기존 4개 alias는 [[index-execution-boundary-route-aliases-2026-05]]에서 찾는다.
-- 신규 route는 아직 기존 4개 alias에 합치지 않고, 실제 coverage/quality/manifest 삼각형이 닫힌 후보로 유지한다.
+- 이 index는 기존 alias를 반복하지 않고, 신규로 닫힌 route만 모은다.
+- 새 route가 기존 alias와 겹치면 기존 alias index에는 대표 묶음만 남기고, 세부 router·release note는 이 index에서 관리한다.
 - discovery 근거는 [[coverage-execution-boundary-routes-discovery-2026-05]]에서 확인한다.
 
 ## 멈춤선

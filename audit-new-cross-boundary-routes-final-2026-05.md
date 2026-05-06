@@ -16,7 +16,7 @@
 ## 노출 확인
 - README, landing, docs/index.html, agent-readable catalog에서 [[index-new-cross-boundary-routes-2026-05]]와 [[release-note-new-cross-boundary-routes-2026-05]]로 들어올 수 있다.
 - 개별 route는 각각 router, coverage, release note, audit까지 연결된다.
-- 기존 4개 alias 묶음은 [[index-execution-boundary-route-aliases-2026-05]]에 남기고, 신규 route 묶음은 별도 index로 유지한다.
+- 기존 4개 alias 묶음은 [[index-execution-boundary-route-aliases-2026-05]]에 남기고, 신규 route 묶음은 별도 index로 유지해 README/docs 중복 문구를 줄인다.
 
 ## 판정
 신규 교차 route 묶음은 “실제 router/coverage/quality/manifest/audit이 닫힌 route만 index에 올린다”는 기준으로 유지한다.
