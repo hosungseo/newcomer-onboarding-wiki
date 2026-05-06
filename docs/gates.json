@@ -146,24 +146,34 @@
     },
     {
       "id": "budget-response-onboarding-coverage",
-      "title": "Budget response onboarding coverage",
+      "title": "예산대응 onboarding refresh coverage",
       "status": "exposed",
       "surface": "docs/index.html",
       "entry": "walkthrough-예산대응-전입자-라우터-2026-05.md",
-      "section": "section-execution-boundary-routes-2026-05.md",
-      "coverage": "coverage-예산대응-민원대응-실행경계-2026-05.md",
-      "qualityGate": "quality-gate-예산대응-민원대응-실행경계-2026-05.md",
-      "manifest": "manifest-newcomer-journey-예산대응-민원대응-실행경계-2026-05.md",
+      "section": "section-예산대응-onboarding-refresh-2026-05-07.md",
+      "coverage": "coverage-예산대응-onboarding-refresh-2026-05-07.md",
+      "qualityGate": "quality-gate-예산대응-onboarding-refresh-2026-05-07.md",
+      "manifest": "manifest-newcomer-journey-예산대응-onboarding-refresh-2026-05-07.md",
       "boundaryFaq": "faq-예산대응-예산요구-예산조정-집행변경-국회의회설명자료-첫구분-2026-05.md",
       "evidenceBundle": "source-예산대응-검토메모-작성전-증거묶음-2026-05.md",
       "replyTracking": "process-예산대응-요청접수-회신추적로그-2026-05.md",
       "publicPrivateBoundary": "checklist-예산대응-요구자료-제출전검토.md",
       "guardrails": [
-        "classify budget request, budget adjustment, execution-change, and assembly/council explanation material before drafting",
-        "build the evidence bundle from public/final budget sources and separate internal review or unconfirmed budget figures",
-        "record requester, deadline, reply basis, owner, follow-up, and tracking status before sharing",
-        "do not expose private review notes, negotiation strategy, provisional budget, or unconfirmed figures in public-facing replies"
-      ]
+        "newcomer onboarding must record budget request intake fields before drafting: requester, requested item, format, deadline, owner candidate, and response path",
+        "classify budget request, budget adjustment, execution-change, and National Assembly/council explanation material before drafting or sharing any number",
+        "evidence bundle must separate public/final budget sources, original request, owner confirmation, internal review, unconfirmed budget figures, and excluded material",
+        "coordination/deadline tracking records owner office, reply deadline, supplement request, follow-up action, National Assembly submission status, and next check without exposing private details",
+        "National Assembly explanation materials and disclosure boundary must stop private review notes, negotiation strategy, provisional budget, expected Q&A, and unconfirmed figures before external sharing",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ],
+      "onboardingCoverage": {
+        "budgetRequestIntake": "walkthrough-예산대응-전입자-라우터-2026-05.md",
+        "adjustmentExecutionChangeClassification": "faq-예산대응-예산요구-예산조정-집행변경-국회의회설명자료-첫구분-2026-05.md",
+        "evidenceBundle": "source-예산대응-검토메모-작성전-증거묶음-2026-05.md",
+        "coordinationDeadlineTracking": "process-예산대응-요청접수-회신추적로그-2026-05.md",
+        "nationalAssemblyExplanationMaterials": "checklist-예산대응-요구자료-제출전검토.md",
+        "disclosureBoundary": "faq-예산대응-공개자료와-내부검토는-어디서-갈리나.md"
+      }
     },
     {
       "id": "info-disclosure-records-onboarding-coverage",
