@@ -979,6 +979,7 @@ v1 체크포인트:
 - [장관보고·성과평가 실행경계 release note](release-note-장관보고-성과평가-실행경계-2026-05.md) — 신규 교차 route 포함 진입점과 노출 상태 요약
 - [대외협력현장소통·홍보대응 실행경계 router](router-대외협력현장소통-홍보대응-실행경계-2026-05.md) — 현장 소통과 공식 홍보문안 경계를 나누는 신규 교차 route
 - [대외협력현장소통·홍보대응 실행경계 coverage](coverage-대외협력현장소통-홍보대응-실행경계-2026-05.md) — router·coverage·quality·manifest 삼각형 진입점
+- [대외협력현장소통·홍보대응 실행경계 release note](release-note-대외협력현장소통-홍보대응-실행경계-2026-05.md) — 신규 교차 route 포함 진입점과 노출 상태 요약
 - [실행경계 alias 질문 router](router-execution-boundary-route-aliases-newcomer-questions-2026-05.md) — 신규자 질문 예시를 4개 교차 route로 보내는 진입점
 - [실행경계 alias 선택 FAQ](faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나.md) — 어떤 교차 route를 먼저 고를지 빠르게 판단
 
