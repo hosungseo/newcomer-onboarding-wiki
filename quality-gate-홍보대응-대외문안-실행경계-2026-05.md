@@ -3,7 +3,7 @@ title: 홍보대응 대외문안 실행경계 quality gate
 kind: quality-gate
 status: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-07
 audience: 홍보대응·언론대응·현장소통·법령대응·전입자·agent
 scope: 보도자료·설명자료·Q&A 초안 대외 배포 전 검증
 confidentiality: public-only
@@ -18,6 +18,7 @@ confidentiality: public-only
 ## 필수 경로 점검
 
 - [x] coverage: [[coverage-홍보대응-대외문안-실행경계-2026-05]]가 전체 노출과 실행 순서를 묶는다.
+- [x] section: [[section-홍보대응-onboarding-coverage-2026-05-07]]가 press/public notice/SNS boundary, evidence bundle, draft/approval/distribution log, public/private/personal-info/reputational-risk boundary를 한 onboarding entry로 노출한다.
 - [x] newcomer path: [[newcomer-path-홍보대응-대외문안-공개경계]]가 산출물 유형과 첫 읽기 순서를 제공한다.
 - [x] process: [[process-홍보대응-보도자료초안-대외전환-문안분기]]가 문장을 공개 가능/확인 필요/삭제/후속조치로 분기한다.
 - [x] checklist: [[checklist-홍보대응-현장소통-후속조치-실행경계]]가 현장소통 결과와 대외문안을 분리한다.
@@ -39,6 +40,13 @@ confidentiality: public-only
 - 개인정보, 민원·신고자, 참석자, 업체·계약 상대방 식별·재식별 정보
 - 감사·조사·수사·보안·입찰·계약·업체평가·감독검사 관련 민감정보
 - 법령 조문 해석, 사건별 적용 결론, 미확정 입법예고·신구조문 설명
+
+## onboarding 통과 기준
+
+- 보도자료, 공고/공지, SNS 게시물 중 어떤 산출물인지 구분되어 있고, 각 산출물의 승인·배포 선이 다르게 표시되어 있다.
+- evidence bundle에 공개 원문, 공표일, 담당 확인, 수치 근거, 제외 범주가 문장별로 남아 있다.
+- draft/approval/distribution log에 요청 접수, 초안 작성, 검토·승인, 배포, 질의·정정, 다음 소유자가 남아 있다.
+- 공개/비공개, 개인정보·재식별, 기관·개인·업체 평판위험 문장은 본문 밖 확인 질문 또는 삭제 로그로 분리되어 있다.
 
 ## 통과 기준
 

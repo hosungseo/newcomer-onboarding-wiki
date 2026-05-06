@@ -139,6 +139,30 @@
       ]
     },
     {
+      "id": "public-relations-onboarding-coverage",
+      "title": "홍보대응 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "section": "section-홍보대응-onboarding-coverage-2026-05-07.md",
+      "entry": "newcomer-path-홍보대응-대외문안-공개경계.md",
+      "coverage": "coverage-홍보대응-대외문안-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-홍보대응-대외문안-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-홍보대응-대외문안-실행경계-2026-05.md",
+      "onboardingCoverage": {
+        "pressPublicNoticeSnsBoundary": "section-홍보대응-onboarding-coverage-2026-05-07.md",
+        "evidenceBundle": "source-홍보대응-초안전-증거묶음-2026-05-07.md",
+        "draftApprovalDistributionLogChecklist": "process-홍보대응-요청접수-배포질의로그-2026-05.md",
+        "publicPrivatePersonalInfoReputationalRiskBoundary": "quality-gate-홍보대응-대외문안-실행경계-2026-05.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must classify press release, public notice/announcement, and SNS copy before drafting or distributing any external text",
+        "evidence bundle must separate public source, publication date, confirmed fact, numeric basis, owner check, and excluded internal/sensitive material",
+        "draft/approval/distribution log checklist records request intake, draft, review/approval, distribution, press inquiry/correction, and next owner without exposing private details",
+        "public/private/personal-info/reputational-risk boundary must be checked before sharing any draft outside the processing lane",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
       "id": "main-merge-diff-risk-review",
       "title": "Main merge diff risk review",
       "status": "REVIEW_REQUIRED",

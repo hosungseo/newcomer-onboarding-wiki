@@ -3,7 +3,7 @@ title: 홍보대응 대외문안 실행경계 coverage
 kind: coverage
 status: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-07
 audience: 홍보대응·언론대응·현장소통·법령대응·전입자·agent
 scope: 보도자료·설명자료·Q&A 초안의 공개자료 기반 실행경계 노출 점검
 confidentiality: public-only
@@ -34,6 +34,16 @@ confidentiality: public-only
 | manifest | [[manifest-newcomer-journey-홍보대응-대외문안-실행경계-2026-05]] | agent-readable 실행 경로와 branch/stop line |
 | quality gate | [[quality-gate-홍보대응-대외문안-실행경계-2026-05]] | 대외 배포 전 최종 검증 |
 
+
+## Onboarding coverage exposure
+
+| onboarding 축 | 노트 | 신규자가 확인할 것 |
+|---|---|---|
+| press/public notice/SNS boundary | [[section-홍보대응-onboarding-coverage-2026-05-07]] | 보도자료, 공고/공지, SNS 카드뉴스·게시글을 같은 초안으로 섞지 않고 산출물별 공개 강도와 승인선을 나눈다. |
+| evidence bundle | [[source-홍보대응-초안전-증거묶음-2026-05-07]] / [[source-홍보대응-보도자료초안-공개근거-대조순서]] | 공개 원문, 공표일, 담당 확인, 수치 근거, 제외할 내부검토·민감정보를 문장별로 묶는다. |
+| draft/approval/distribution log checklist | [[process-홍보대응-요청접수-배포질의로그-2026-05]] / [[checklist-홍보대응-초안공개전환-문장별-precheck]] | 요청 접수, 초안, 검토·승인, 배포, 언론질의·정정 요청, 다음 소유자를 한 로그로 남긴다. |
+| public/private/personal-info/reputational-risk boundary | [[faq-홍보대응-민감정보는-어떻게-마스킹하나]] / [[faq-홍보대응-현장의견과-공식입장은-어떻게-구분하나]] / [[quality-gate-홍보대응-대외문안-실행경계-2026-05]] | 공개/비공개, 개인정보·재식별, 기관·개인·업체 평판위험, 현장발언 오인 위험을 배포 전 중지선으로 본다. |
+
 ## 전입자 판단 순서
 
 1. [[newcomer-path-홍보대응-대외문안-공개경계]]에서 산출물 유형을 보도자료·설명자료·Q&A·정정자료·현장소통 후속안내 중 하나로 고정한다.
@@ -57,7 +67,8 @@ confidentiality: public-only
 
 ## docs/landing 발견성
 
-- docs 노출명은 “홍보대응 대외문안 실행경계”로 고정한다.
+- docs 노출명은 “홍보대응 대외문안 실행경계”와 “홍보대응 onboarding coverage”로 고정한다.
+- onboarding coverage 링크는 [[section-홍보대응-onboarding-coverage-2026-05-07]]로 둔다.
 - 사람이 먼저 읽을 링크는 이 coverage이고, agent 실행 링크는 [[manifest-newcomer-journey-홍보대응-대외문안-실행경계-2026-05]]로 둔다.
 - 대외 배포 직전 마지막 검증 링크는 [[quality-gate-홍보대응-대외문안-실행경계-2026-05]]로 둔다.
 

@@ -3,7 +3,7 @@ title: 홍보대응 대외문안 실행경계 newcomer journey manifest
 kind: manifest
 status: draft
 created: 2026-05-06
-updated: 2026-05-06
+updated: 2026-05-07
 audience: 홍보대응·언론대응·현장소통·법령대응·전입자·agent
 scope: 공개자료 기반 보도자료·설명자료·Q&A 초안 실행 경로
 confidentiality: public-only
@@ -16,6 +16,7 @@ id: newcomer-journey-pr-external-copy-boundary-2026-05
 label: 홍보대응 대외문안 실행경계
 entry: newcomer-path-홍보대응-대외문안-공개경계
 coverage: coverage-홍보대응-대외문안-실행경계-2026-05
+section: section-홍보대응-onboarding-coverage-2026-05-07
 quality_gate: quality-gate-홍보대응-대외문안-실행경계-2026-05
 audience:
   - 홍보대응 전입자
@@ -23,15 +24,24 @@ audience:
   - 현장소통 후속조치 담당자
   - agent routing
 route:
+  - step: onboarding_section
+    file: section-홍보대응-onboarding-coverage-2026-05-07
+    purpose: press/public notice/SNS boundary, evidence bundle, draft/approval/distribution log, public/private/personal-info/reputational-risk boundary를 한 번에 확인한다.
   - step: newcomer_route
     file: newcomer-path-홍보대응-대외문안-공개경계
     purpose: 산출물 유형과 공개·비공개 경계의 첫 읽기 순서를 잡는다.
+  - step: evidence_bundle
+    file: source-홍보대응-초안전-증거묶음-2026-05-07
+    purpose: 공개 원문, 공표일, 담당 확인, 수치 근거, 제외 범주를 문장별 증거묶음으로 만든다.
   - step: source_public_basis
     file: source-홍보대응-보도자료초안-공개근거-대조순서
     purpose: 보도자료초안에 넣을 공개 원문과 확정 사실을 대조한다.
   - step: source_boundary
     file: source-홍보대응-공개비공개-경계체크
     purpose: 문장 후보를 공개 가능, 확인 필요, 제외로 나눈다.
+  - step: draft_approval_distribution_log
+    file: process-홍보대응-요청접수-배포질의로그-2026-05
+    purpose: 요청 접수, 초안, 검토·승인, 배포, 언론질의·정정 요청, 다음 소유자를 로그로 남긴다.
   - step: process_sentence_branch
     file: process-홍보대응-보도자료초안-대외전환-문안분기
     purpose: 보도자료 본문, Q&A, 확인 질문, 후속조치를 분기한다.
@@ -70,14 +80,17 @@ completion_rule: quality_gate를 통과하거나 중지/확인 요청으로 종�
 
 ## 읽는 순서
 
-1. [[newcomer-path-홍보대응-대외문안-공개경계]]
-2. [[source-홍보대응-보도자료초안-공개근거-대조순서]]
-3. [[source-홍보대응-공개비공개-경계체크]]
-4. [[process-홍보대응-보도자료초안-대외전환-문안분기]]
-5. [[checklist-홍보대응-초안공개전환-문장별-precheck]]
-6. [[faq-홍보대응-보도문의-공식답변은-어디서-멈추나]]
-7. [[checklist-홍보대응-현장소통-후속조치-실행경계]]
-8. [[quality-gate-홍보대응-대외문안-실행경계-2026-05]]
+1. [[section-홍보대응-onboarding-coverage-2026-05-07]]
+2. [[newcomer-path-홍보대응-대외문안-공개경계]]
+3. [[source-홍보대응-초안전-증거묶음-2026-05-07]]
+4. [[source-홍보대응-보도자료초안-공개근거-대조순서]]
+5. [[source-홍보대응-공개비공개-경계체크]]
+6. [[process-홍보대응-요청접수-배포질의로그-2026-05]]
+7. [[process-홍보대응-보도자료초안-대외전환-문안분기]]
+8. [[checklist-홍보대응-초안공개전환-문장별-precheck]]
+9. [[faq-홍보대응-보도문의-공식답변은-어디서-멈추나]]
+10. [[checklist-홍보대응-현장소통-후속조치-실행경계]]
+11. [[quality-gate-홍보대응-대외문안-실행경계-2026-05]]
 
 ## branch 읽기
 
