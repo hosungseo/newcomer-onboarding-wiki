@@ -22,6 +22,8 @@
 
 - [[router-홍보대응-문서기안-실행경계-2026-05]] → [[coverage-홍보대응-문서기안-실행경계-2026-05]] → [[release-note-홍보대응-문서기안-실행경계-2026-05]] → [[audit-홍보대응-문서기안-실행경계-final-2026-05]]
 
+- [[router-계약조달-문서기안-실행경계-2026-05]] → [[coverage-계약조달-문서기안-실행경계-2026-05]] → [[release-note-계약조달-문서기안-실행경계-2026-05]] → [[audit-계약조달-문서기안-실행경계-final-2026-05]]
+
 ## 기존 alias 묶음과의 관계
 - [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route 묶음 포함·발견성·안전성 gate.
 - [[audit-new-cross-boundary-routes-final-2026-05]] — 신규 교차 route 묶음 최종 연결·노출 audit.
