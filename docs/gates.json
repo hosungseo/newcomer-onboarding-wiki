@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, and GitHub Pages live verification; law-response onboarding coverage",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for civil, budget, law, PR, organization, collaboration, and information-disclosure routes",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -94,6 +94,27 @@
         "response/repeat complaint log checklist records receipt, response basis, masking, repeat/new-material decision, transfer/owner, and next action without exposing private details",
         "public/private/personal-info boundary must be checked before sharing any response draft outside the processing lane",
         "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
+      "id": "budget-response-onboarding-coverage",
+      "title": "Budget response onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "entry": "walkthrough-예산대응-전입자-라우터-2026-05.md",
+      "section": "section-execution-boundary-routes-2026-05.md",
+      "coverage": "coverage-예산대응-민원대응-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-예산대응-민원대응-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-예산대응-민원대응-실행경계-2026-05.md",
+      "boundaryFaq": "faq-예산대응-예산요구-예산조정-집행변경-국회의회설명자료-첫구분-2026-05.md",
+      "evidenceBundle": "source-예산대응-검토메모-작성전-증거묶음-2026-05.md",
+      "replyTracking": "process-예산대응-요청접수-회신추적로그-2026-05.md",
+      "publicPrivateBoundary": "checklist-예산대응-요구자료-제출전검토.md",
+      "guardrails": [
+        "classify budget request, budget adjustment, execution-change, and assembly/council explanation material before drafting",
+        "build the evidence bundle from public/final budget sources and separate internal review or unconfirmed budget figures",
+        "record requester, deadline, reply basis, owner, follow-up, and tracking status before sharing",
+        "do not expose private review notes, negotiation strategy, provisional budget, or unconfirmed figures in public-facing replies"
       ]
     },
     {

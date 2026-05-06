@@ -33,6 +33,18 @@ route:
   - step: civil_router
     file: walkthrough-민원대응-전입자-라우터-2026-05
     purpose: 국민신문고·전화·공문 민원 문장이 중심인 경우 소관·이송·답변 경계를 먼저 자른다.
+  - step: budget_boundary_classification
+    file: faq-예산대응-예산요구-예산조정-집행변경-국회의회설명자료-첫구분-2026-05
+    purpose: 예산요구, 예산조정, 집행변경, 국회/의회 설명자료 중 무엇인지 먼저 표시한다.
+  - step: budget_evidence_bundle
+    file: source-예산대응-검토메모-작성전-증거묶음-2026-05
+    purpose: 공개·확정 예산 원천, 요구 원문, 내부검토, 미확정 예산안을 분리해 검토메모 전 증거묶음을 만든다.
+  - step: budget_reply_tracking_checklist
+    file: process-예산대응-요청접수-회신추적로그-2026-05
+    purpose: 요청자, 기한, 회신근거, 담당, 보완요청, 후속조치, 추적상태를 남긴다.
+  - step: budget_public_private_unconfirmed_boundary
+    file: checklist-예산대응-요구자료-제출전검토
+    purpose: 공개 가능 수치와 비공개 내부검토·미확정 예산안을 외부공유 전 최종 분리한다.
   - step: budget_item_split
     file: faq-예산대응-요구자료-항목은-어떻게-쪼개나
     purpose: 요구 항목을 공개자료, 확인필요, 제외자료, 후속질문으로 쪼갠다.
