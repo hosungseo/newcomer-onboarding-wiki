@@ -83,6 +83,8 @@
 
 - 대외협력현장소통·예산대응: [[router-대외협력현장소통-예산대응-실행경계-2026-05]] → [[coverage-대외협력현장소통-예산대응-실행경계-2026-05]] → [[audit-대외협력현장소통-예산대응-실행경계-final-2026-05]]
 
+- 감사대응·성과평가: [[router-감사대응-성과평가-실행경계-2026-05]] → [[coverage-감사대응-성과평가-실행경계-2026-05]] → [[audit-감사대응-성과평가-실행경계-final-2026-05]]
+
 ## 노출 확인
 - README, landing, docs/index.html, agent-readable catalog에서 [[index-new-cross-boundary-routes-2026-05]]와 [[release-note-new-cross-boundary-routes-2026-05]]로 들어올 수 있다.
 - 개별 route는 각각 router, coverage, release note, audit까지 연결된다.
