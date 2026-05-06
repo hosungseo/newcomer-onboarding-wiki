@@ -5,7 +5,7 @@
 - id: `main-merge-diff-review-packet`
 - date: `2026-05-07`
 - status: `REVIEW_REQUIRED`
-- current review packet: HEAD `f1dab6d`; `docs/index.html` diff `+183/-671`; Pages source `main:/docs`; review required
+- current review packet: HEAD `b1887d5`; root markdown file count `1791`; `docs/index.html` `190 lines`; Pages source `main:/docs`; recommendation REVIEW_REQUIRED until diff and Pages source accepted
 
 ## Public root files
 

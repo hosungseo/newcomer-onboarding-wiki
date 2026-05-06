@@ -6,8 +6,8 @@ Expose the review packet route that must run before any merge/publication of the
 
 ## Baseline recorded for this lane
 
-- Current HEAD to review: `f1dab6d`
-- `docs/index.html` diff to review: `+183/-671`
+- Current HEAD to review: `b1887d5`
+- Baseline exposure metrics: root markdown `1791`; `docs/index.html` `190 lines`
 - GitHub Pages source: `main:/docs`
 - Packet status: **review required**
 - Scope: `docs/index.html`, `docs/gates.json`, and root `section-*` / `coverage-*` / `quality-gate-*` / `manifest-*` markdown only.

@@ -2,7 +2,7 @@
 
 ## Covered surfaces
 
-- `docs/index.html`: exposes the review packet summary inside the existing docs/landing exposure 운영 section: HEAD `f1dab6d`, `docs/index.html` `+183/-671`, Pages source `main:/docs`, review required.
+- `docs/index.html`: exposes the review recommendation gate inside the existing docs/landing exposure 운영 section: baseline HEAD `b1887d5`, root markdown `1791`, `docs/index.html` `190 lines`, Pages source `main:/docs`, `REVIEW_REQUIRED` until diff and Pages source accepted.
 - `docs/gates.json`: records a `main-merge-diff-review-packet` gate linked to the section, quality gate, and manifest, with the current HEAD/diff/Pages-source summary.
 - [[section-main-merge-diff-review-packet-2026-05-07]]: gives the packet entry route.
 - [[quality-gate-main-diff-risk-2026-05-07]]: preserves the review-required stop line.

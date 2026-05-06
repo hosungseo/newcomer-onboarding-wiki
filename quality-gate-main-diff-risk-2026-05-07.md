@@ -6,11 +6,11 @@ Expose the current main-merge risk before treating local `docs/index.html` resto
 
 ## Risk evidence
 
-- Current merge review packet summary: HEAD `f1dab6d`; `docs/index.html` diff `+183/-671`; GitHub Pages source `main:/docs`; status **review required**.
+- Current merge review packet summary: HEAD `b1887d5`; root markdown file count `1791`; `docs/index.html` `190 lines`; GitHub Pages source `main:/docs`; recommendation **REVIEW_REQUIRED** until the branch diff and Pages source are accepted.
 - Review packet exposure: [[section-main-merge-diff-review-packet-2026-05-07]], [[coverage-main-merge-diff-review-packet-2026-05-07]], [[manifest-main-merge-diff-review-packet-2026-05-07]].
-- Branch comparison: `origin/main..HEAD` contains **1,576 commits**.
-- `docs/index.html` comparison against `origin/main`: **+183 / -671** lines.
-- Interpretation: this is not a small docs-only publication delta. A merge to `main` requires human review of the accumulated branch diff and the `docs/index.html` section preservation risk.
+- Branch comparison: `origin/main..HEAD` remains subject to review; do not treat the branch diff as accepted in this lane.
+- Baseline inventory for the recommendation gate: root markdown file count **1,791**; `docs/index.html` **190 lines**.
+- Interpretation: this is not yet an accepted publication delta. A merge to `main` requires human/process-owner acceptance of the branch diff, the `docs/index.html` section preservation, and the Pages source `main:/docs` risk.
 
 ## Checks
 
@@ -22,4 +22,4 @@ Expose the current main-merge risk before treating local `docs/index.html` resto
 
 ## Stop line
 
-Do not merge or publish this branch to `main` from this lane. Treat the gate as **review required** until the main/process owner explicitly reviews HEAD `f1dab6d`, the 1,576-commit branch delta, the `docs/index.html` `+183/-671` diff, and the Pages source `main:/docs` publication risk.
+Do not merge or publish this branch to `main` from this lane. Treat the gate as **review required** until the main/process owner explicitly reviews HEAD `b1887d5`, the branch diff, root markdown file count `1791`, `docs/index.html` `190 lines`, and the Pages source `main:/docs` publication risk.

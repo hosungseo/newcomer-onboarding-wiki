@@ -82,20 +82,18 @@
       "relatedManifest": "manifest-router-existing-hub-entry-index-2026-05-07.md",
       "evidence": {
         "comparison": "origin/main..HEAD",
-        "commitCount": 1576,
-        "docsIndexDiff": {
-          "insertions": 183,
-          "deletions": 671
-        },
         "classification": "merge_to_main_requires_review",
-        "head": "f1dab6d",
+        "head": "b1887d5",
         "pagesSource": "main:/docs",
-        "reviewRequired": true
+        "reviewRequired": true,
+        "rootMarkdownFiles": 1791,
+        "docsIndexLines": 190,
+        "recommendation": "REVIEW_REQUIRED_until_diff_and_pages_source_accepted"
       },
       "guardrails": [
         "do not merge or publish to main from this lane",
-        "treat the 1576-commit branch delta as outside small docs-only exposure scope",
-        "review docs/index.html section preservation before any main merge because HEAD f1dab6d shows docs/index.html +183/-671 versus origin/main and Pages source is main:/docs",
+        "treat the branch diff as outside small docs-only exposure scope",
+        "review docs/index.html section preservation before any main merge because baseline HEAD b1887d5 has root markdown 1791, docs/index.html 190 lines, and Pages source main:/docs pending acceptance",
         "keep this gate limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown exposure"
       ]
     },
@@ -109,12 +107,11 @@
       "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",
       "manifest": "manifest-main-merge-diff-review-packet-2026-05-07.md",
       "baseline": {
-        "head": "f1dab6d",
-        "docsIndexDiff": {
-          "insertions": 183,
-          "deletions": 671
-        },
+        "head": "b1887d5",
+        "rootMarkdownFiles": 1791,
+        "docsIndexLines": 190,
         "pagesSource": "main:/docs",
+        "recommendation": "REVIEW_REQUIRED_until_diff_and_pages_source_accepted",
         "status": "REVIEW_REQUIRED"
       },
       "guardrails": [
@@ -123,18 +120,19 @@
         "keep review status blocking until the main/process owner reviews the branch delta and docs/index section preservation",
         "do not expand README, landing pages, catalogs, graph/data, or generated exports in this lane"
       ],
-      "summary": "Current merge review packet: HEAD f1dab6d; docs/index.html +183/-671; GitHub Pages source main:/docs; review required."
+      "summary": "Merge review recommendation gate: baseline HEAD b1887d5; root markdown 1791; docs/index.html 190 lines; GitHub Pages source main:/docs; REVIEW_REQUIRED until diff and Pages source are accepted."
     }
   ],
   "pagesRecheck": {
-    "mergeReviewPacketSummary": {
-      "status": "review required",
-      "head": "f1dab6d",
-      "docsIndexDiff": "+183/-671",
+    "mergeReviewRecommendation": {
+      "status": "REVIEW_REQUIRED",
+      "baselineHead": "b1887d5",
+      "rootMarkdownCount": 1791,
+      "docsIndexLines": 190,
       "pagesSource": "main:/docs",
-      "process": "process-merge-review-packet-from-existing-gates-2026-05-07.md",
-      "source": "source-main-merge-review-baseline-2026-05-07.md",
-      "faq": "faq-main-merge-baseline-pages-source-2026-05-07.md",
+      "process": "process-merge-review-recommendation-from-packet-2026-05-07.md",
+      "faq": "faq-merge-review-packet-review-required-2026-05-07.md",
+      "source": "source-merge-review-pages-source-impact-2026-05-07.md",
       "section": "section-main-merge-diff-review-packet-2026-05-07.md",
       "coverage": "coverage-main-merge-diff-review-packet-2026-05-07.md",
       "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",

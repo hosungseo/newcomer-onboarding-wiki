@@ -30,6 +30,7 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 ## Review controls
 
 - Merge review packet assembly: [[process-merge-review-packet-from-existing-gates-2026-05-07]]
+- Merge recommendation process: [[process-merge-review-recommendation-from-packet-2026-05-07]]
 - Main merge diff review packet: [[process-large-docs-index-diff-premerge-pages-source-2026-05-07]]
 - Promotion checklist: [[checklist-router-existing-hub-entry-promotion-safety-2026-05-07]]
 - Existing-entry decision checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]
@@ -56,3 +57,5 @@ Gap, if any:
 ## Stop line
 
 Do not use this router for private HR records, non-public budget strategy, internal deliberation, personal data, legal-advice conclusions, or any route whose wikilink is missing from the root markdown surface.
+
+- Merge review recommendation: [[process-merge-review-recommendation-from-packet-2026-05-07]]
