@@ -1,23 +1,64 @@
-# quality gate — 조직정원 실행경계 2026-05
+---
+title: 조직정원 실행경계 quality gate
+kind: quality-gate
+status: draft
+created: 2026-05-06
+updated: 2026-05-06
+audience: 조직정원·전입자·agent
+scope: 조직정원 공개자료 기반 실행 전 검증
+confidentiality: public-only
+---
 
-## 점검 대상
-- [[newcomer-path-조직정원-공개경계]]
-- [[source-조직정원-공개자료-대조순서]]
-- [[source-조직정원-원천자료-확인우선순서]]
-- [[checklist-조직정원-공개비공개-실행경계]]
-- [[checklist-조직정원-제출전-precheck]]
-- [[coverage-조직정원-실행경계-2026-05]]
-- [[manifest-newcomer-journey-조직정원-2026-05]]
-- [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]
-
-## Gate
-- [x] [[newcomer-path-조직정원-공개경계]]가 source/process/checklist로 연결되는가.
-- [x] [[source-조직정원-공개자료-대조순서]]가 공식자료 우선순위를 분명히 하는가.
-- [x] [[source-조직정원-원천자료-확인우선순서]]가 공식 조직도·직제·정원표와 내부 검토안을 분리하는가.
-- [x] [[checklist-조직정원-공개비공개-실행경계]]와 [[checklist-조직정원-제출전-precheck]]가 인사·정원 민감정보와 미확정 조직개편안을 멈추게 하는가.
-- [x] [[coverage-조직정원-실행경계-2026-05]]에 FAQ/source/path/checklist/walkthrough가 모두 노출되는가.
-- [x] [[manifest-newcomer-journey-조직정원-2026-05]]가 원천자료 우선순서, 제출전 precheck, 실행경계 coverage/quality gate를 route에 노출하는가.
-- [x] [[walkthrough-계약조달-조직정원-실행경계-라우트맵-2026-05]]가 계약조달과 조직정원이 섞인 요청을 먼저 분리하게 하는가.
+# quality gate — 조직정원 실행경계
 
 ## 판정
-조직정원 실행경계는 공개자료 우선순서 → 원천자료 확인 → 제출전 precheck → coverage/manifest 회귀 경로가 닫혀 있다. 미확정 조직개편안, 인사정보, 내부검토 의견은 공개 route에 올리지 않는다.
+
+**조건부 통과.** 조직정원 제품군은 [[newcomer-path-조직정원-공개경계]], [[faq-조직정원-조직도와-업무분장은-무엇이-다른가]], [[faq-조직정원-정원-공개자료와-내부검토는-어디서-갈리나]], [[source-조직정원-공개자료-대조순서]]로 공개자료 기반 실행 경계를 설명할 수 있다. 다만 독립 checklist/process가 아직 얇으므로 실제 실행 전에는 이 quality gate를 마지막 stop line으로 사용한다.
+
+## 필수 경로 점검
+
+- [x] hub: [[hub-기관또는기능]]에서 기관·기능 맥락을 먼저 잡는다.
+- [x] section: [[section-조직정원-onboarding-coverage-2026-05-07]]가 조직·정원·법령근거 boundary, evidence bundle, review/decision tracking checklist, 공개/비공개/인사정보 boundary를 한 화면에 노출한다.
+- [x] section: [[section-조직정원-onboarding-coverage-2026-05-07]]가 조직·정원·법령근거 boundary, evidence bundle, review/decision tracking checklist, 공개/비공개/인사정보 boundary를 한 화면에 노출한다.
+- [x] walkthrough: [[newcomer-path-조직정원-공개경계]]가 기관 → 상황 → 업무축 → 자료 → 초안/체크리스트 → 경계 순서를 제공한다.
+- [x] FAQ: [[faq-조직정원-첫구분-조직개편-정원조정-직제개정-인력배치]]가 조직개편·정원조정·직제개정·인력배치 요청을 먼저 분기한다.
+- [x] source: [[source-조직정원-검토메모-작성전-증거묶음]]이 공개 원천, 내부 확인자료, 제외할 민감정보, 담당자 확인 질문을 분리한다.
+- [x] process/checklist: [[process-조직정원-요청접수-결정추적-log-2026-05]]가 접수, 검토, 결정/보류, 후속추적을 기록한다.
+- [x] checklist: [[checklist-조직정원-boundary-router-공개문안-제출전검토-2026-05]]가 공개문안 전환 전 공개/비공개/인사정보 경계를 점검한다.
+- [x] FAQ: [[faq-조직정원-첫구분-조직개편-정원조정-직제개정-인력배치]]가 조직개편·정원조정·직제개정·인력배치 요청을 먼저 분기한다.
+- [x] source: [[source-조직정원-검토메모-작성전-증거묶음]]이 공개 원천, 내부 확인자료, 제외할 민감정보, 담당자 확인 질문을 분리한다.
+- [x] process/checklist: [[process-조직정원-요청접수-결정추적-log-2026-05]]가 접수, 검토, 결정/보류, 후속추적을 기록한다.
+- [x] checklist: [[checklist-조직정원-boundary-router-공개문안-제출전검토-2026-05]]가 공개문안 전환 전 공개/비공개/인사정보 경계를 점검한다.
+- [x] FAQ: [[faq-조직정원-조직도와-업무분장은-무엇이-다른가]]가 조직 구조와 업무분장 차이를 설명한다.
+- [x] FAQ: [[faq-조직정원-정원-공개자료와-내부검토는-어디서-갈리나]]가 정원 공개자료와 내부검토를 나눈다.
+- [x] source: [[source-조직정원-공개자료-대조순서]]가 공개 위치, 확인일, 확정 상태, 제외 범주를 기록하게 한다.
+- [x] process: [[process-기능-단계]]가 기능 흐름과 산출물 성격을 분류하는 보조층을 제공한다.
+- [x] coverage: [[coverage-조직정원-실행경계-2026-05]]가 제품군 노출과 남은 빈칸을 묶는다.
+- [x] manifest: [[manifest-newcomer-journey-조직정원-실행경계-2026-05]]가 agent-readable route를 제공한다.
+- [x] discovery: [[coverage-execution-boundary-routes-discovery-2026-05]]가 docs/landing 노출명과 묶음 순서를 제공한다.
+
+## 실행 전 금지선
+
+다음 중 하나라도 포함되면 **중지/확인 요청**으로 판정한다.
+
+- 개인별 보직, 평정, 고충, 징계, 복무, 건강, 가족 사정, 인사 희망
+- 직급별 세부 배치, 결원관리, 충원 우선순위, 부서별 민감 정원 운용
+- 기관 간 정원 요구·삭감·조정 의견, 협의 전략, 내부 쟁점표
+- 미확정 직제개정안, 조직개편 시나리오, 대안별 영향분석
+- 보안조직, 조사·감독·감사·수사 관련 세부 인력운용 중 공개 원문을 넘는 내용
+- 최종 법률자문처럼 보이는 직제 해석·권한 판단 단정
+
+## 통과 기준
+
+- 공개 위치가 있는 조직도·직제·업무분장·정원 총괄 자료만 설명한다.
+- 공개 원문, 담당자 확인자료, 제외 자료를 서로 다른 칸에 둔다.
+- 확정·공표된 결과와 협의·검토 중인 안을 분리한다.
+- 정원 숫자를 개인 인사, 결원, 충원전략으로 좁혀 해석하지 않는다.
+- 기능 단계와 산출물 분류가 애매하면 [[process-기능-단계]]를 거쳐 보고서/학습노트 문장으로 옮길 수 있는 범위만 남긴다.
+- 공개자료 근거가 없으면 “확인 필요”로 남긴다.
+
+## 복사용 안전 문장
+
+```text
+이 메모는 공개 조직도·직제·업무분장·정원 총괄 자료에 근거한 설명이다. 개인 인사정보, 직급·부서별 민감 정원 운용, 정원 협의·조정 내부검토, 미확정 조직개편안은 제외한다.
+```
