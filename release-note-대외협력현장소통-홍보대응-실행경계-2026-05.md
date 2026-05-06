@@ -14,6 +14,7 @@
 - [[coverage-홍보대응-공통업무축-2026-05]] — 보도자료·설명자료 공개문안 경계 확인.
 
 ## 노출 상태
+- [[audit-대외협력현장소통-홍보대응-실행경계-final-2026-05]] — 신규 교차 route의 최종 연결·노출 audit.
 README, landing, docs/index.html, agent-readable catalog에서 신규 router 또는 coverage로 들어올 수 있다.
 
 ## 멈춤선
