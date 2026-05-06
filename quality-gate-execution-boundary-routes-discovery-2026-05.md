@@ -43,6 +43,7 @@ confidentiality: public-only
 - [x] docs/index는 route-map quick links 4개와 실행경계 section 7개를 노출한다.
 - [x] docs/index의 저밀도 hub/path 노출은 [[section-low-density-hub-path-exposure-2026-05-07]]와 [[coverage-low-density-hub-path-exposure-2026-05-07]] 두 링크로만 묶어 과밀 per-axis 링크를 만들지 않는다.
 - [x] docs/index 구조 변경은 [[coverage-execution-boundary-routes-discovery-2026-05]]와 해당 coverage note에 기록하되, landing·graph/data에는 확장하지 않는다.
+- [x] docs/index는 `docs/gates.json`을 read-only gates inventory로 노출해 GitHub Pages 배포 후 live verification checkpoint를 제공한다.
 - [x] 장관보고·성과평가 신규 route는 root markdown discovery에는 등록했지만 docs/index.html·landing·graph/data에는 직접 노출하지 않았다.
 - [x] landing, graph/data 노출은 이번 gate에서 변경하지 않은 상태로 남긴다.
 

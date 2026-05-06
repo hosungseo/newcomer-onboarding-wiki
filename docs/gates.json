@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub and low-density route surfaces",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, and GitHub Pages live verification",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -36,6 +36,22 @@
         "expose one grouped section link and one coverage link instead of five per-axis links",
         "only use existing root markdown route, walkthrough, checklist, FAQ, and source notes",
         "stop before graph/data, generated catalogs, README, landing, commit, or push work"
+      ]
+    },
+    {
+      "id": "github-pages-live-docs-verification",
+      "title": "GitHub Pages live docs verification checkpoint",
+      "status": "ready-for-live-check",
+      "surface": "docs/index.html",
+      "gateFile": "docs/gates.json",
+      "section": "section-low-density-hub-path-exposure-2026-05-07.md",
+      "coverage": "coverage-low-density-hub-path-exposure-2026-05-07.md",
+      "qualityGate": "quality-gate-execution-boundary-routes-discovery-2026-05.md",
+      "manifest": "manifest-router-existing-hub-entry-index-2026-05-07.md",
+      "guardrails": [
+        "verify the published GitHub Pages docs/index.html only after merge/deploy; do not assume local links prove live exposure",
+        "live check is read-only: confirm docs/index.html exposes gates.json, existing-hub router, low-density section, and coverage links",
+        "if Pages is stale or 404, record deploy/cache status instead of editing graph/data, catalogs, README, or landing files"
       ]
     }
   ]
