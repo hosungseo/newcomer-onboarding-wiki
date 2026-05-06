@@ -246,25 +246,28 @@
     },
     {
       "id": "organization-staffing-onboarding-coverage",
-      "title": "조직정원 onboarding coverage",
+      "title": "조직정원 onboarding refresh coverage",
       "status": "exposed",
       "surface": "docs/index.html",
-      "section": "section-조직정원-onboarding-coverage-2026-05-07.md",
+      "section": "section-조직정원-onboarding-refresh-2026-05-07.md",
       "entry": "newcomer-path-조직정원-공개경계.md",
-      "coverage": "coverage-조직정원-실행경계-2026-05.md",
-      "qualityGate": "quality-gate-조직정원-실행경계-2026-05.md",
-      "manifest": "manifest-newcomer-journey-조직정원-실행경계-2026-05.md",
+      "coverage": "coverage-조직정원-onboarding-refresh-2026-05-07.md",
+      "qualityGate": "quality-gate-조직정원-onboarding-refresh-2026-05-07.md",
+      "manifest": "manifest-newcomer-journey-조직정원-onboarding-refresh-2026-05-07.md",
       "onboardingCoverage": {
-        "organizationStaffingLegalBasisBoundary": "faq-조직정원-첫구분-조직개편-정원조정-직제개정-인력배치.md",
+        "orgRestructuringIntake": "newcomer-path-조직정원-공개경계.md",
+        "staffingQuotaAdjustment": "faq-조직정원-첫구분-조직개편-정원조정-직제개정-인력배치.md",
+        "decreeRuleRevision": "source-조직정원-공개자료-대조순서.md",
+        "personnelAllocationBoundary": "checklist-조직정원-boundary-router-공개문안-제출전검토-2026-05.md",
         "evidenceBundle": "source-조직정원-검토메모-작성전-증거묶음.md",
-        "reviewDecisionTrackingChecklist": "process-조직정원-요청접수-결정추적-log-2026-05.md",
-        "publicPrivatePersonnelInfoBoundary": "checklist-조직정원-boundary-router-공개문안-제출전검토-2026-05.md"
+        "coordinationDeadlineTracking": "process-조직정원-요청접수-결정추적-log-2026-05.md",
+        "disclosurePersonnelSensitiveBoundary": "checklist-조직정원-boundary-router-공개문안-제출전검토-2026-05.md"
       },
       "guardrails": [
-        "newcomer onboarding must classify organization change, staffing adjustment, legal-basis amendment, and personnel-placement request before drafting any explanation or review memo",
-        "evidence bundle must separate public legal/source material, internal confirmation material, excluded personnel-sensitive material, and owner questions",
-        "review/decision tracking checklist records request intake, function/workload/legal basis, current/requested staffing comparison, review owner, decision/hold status, and next tracking action without exposing private details",
-        "public/private/personnel-info boundary must stop internal staffing negotiations, unconfirmed organization plans, detailed allocation/ vacancy strategy, and person-specific personnel information before external sharing",
+        "newcomer onboarding must classify org restructuring intake, staffing quota adjustment, decree/rule revision, and personnel allocation boundary before drafting any explanation or review memo",
+        "evidence bundle must separate public legal/source material, decree/rule text, staffing quota basis, internal confirmation material, excluded personnel-sensitive material, and owner questions",
+        "coordination/deadline tracking records request intake, function/workload/legal basis, current/requested staffing comparison, coordination owner, reply deadline, supplement request, decision/hold status, and next tracking action without exposing private details",
+        "disclosure/personnel-sensitive boundary must stop internal staffing negotiations, unconfirmed organization plans, detailed allocation/vacancy strategy, and person-specific personnel information before external sharing",
         "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
       ]
     },
