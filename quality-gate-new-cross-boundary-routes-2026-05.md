@@ -15,6 +15,7 @@
 - [x] 기존 4개 alias 묶음은 [[index-execution-boundary-route-aliases-2026-05]]에 남기고 이 index에서 반복하지 않는가?
 
 ## Gate 2 — 발견성
+- [x] docs/index.html GitHub `.md` 링크 529개가 missing 0으로 유지되는가?
 - [x] README, landing, docs/index.html, agent-readable catalog에서 신규 index 또는 release note로 들어올 수 있는가?
 - [x] [[coverage-execution-boundary-routes-discovery-2026-05]]가 신규 route 후보와 index를 기록하는가?
 - [x] 개별 route의 router → coverage → release note/audit 연결이 끊기지 않는가?

@@ -38,7 +38,11 @@
 ## 신규 교차 route 후보
 - HR drafting boundary: [[router-인사복무-문서기안-실행경계-2026-05]]가 인사복무 사실과 기안문 공개 범위를 나누는 신규 교차 route 후보로 작동한다.
 - [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route 묶음 포함·발견성·안전성 gate.
-- new cross-boundary index: [[index-new-cross-boundary-routes-2026-05]]가 최근 추가된 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개 route 묶음을 모은다.
+- new cross-boundary index: [[index-new-cross-boundary-routes-2026-05]]가 최근 추가된 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개, 인사복무·문서기안 route 묶음을 모은다.
 - external records boundary: [[router-대외협력현장소통-정보공개기록관리-실행경계-2026-05]]가 현장 소통 기록과 정보공개·기록관리 경계를 나누는 신규 교차 route 후보로 작동한다.
 - external communication PR boundary: [[router-대외협력현장소통-홍보대응-실행경계-2026-05]]가 현장 소통과 공식 홍보문안의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
 - minister performance boundary: [[coverage-장관보고-성과평가-실행경계-2026-05]]가 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage로 작동한다.
+
+## docs link count checkpoint
+- 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 529개이며 missing 0으로 확인했다.
+- 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
