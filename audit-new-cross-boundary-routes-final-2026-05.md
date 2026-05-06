@@ -47,6 +47,8 @@
 
 - 홍보대응·계약조달: [[router-홍보대응-계약조달-실행경계-2026-05]] → [[coverage-홍보대응-계약조달-실행경계-2026-05]] → [[audit-홍보대응-계약조달-실행경계-final-2026-05]]
 
+- 조직정원·계약조달: [[router-조직정원-계약조달-실행경계-2026-05]] → [[coverage-조직정원-계약조달-실행경계-2026-05]] → [[audit-조직정원-계약조달-실행경계-final-2026-05]]
+
 ## 노출 확인
 - README, landing, docs/index.html, agent-readable catalog에서 [[index-new-cross-boundary-routes-2026-05]]와 [[release-note-new-cross-boundary-routes-2026-05]]로 들어올 수 있다.
 - 개별 route는 각각 router, coverage, release note, audit까지 연결된다.
