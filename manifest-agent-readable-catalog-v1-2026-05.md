@@ -83,7 +83,7 @@
 ## Execution Boundary Route Map
 - [[section-execution-boundary-routes-2026-05]] — 최근 실행경계 route를 계약조달·조직정원·감사국회·민원법령·정보공개협업·홍보대외협력 흐름으로 고르는 section entry.
 - [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality alias index.
-- [[index-new-cross-boundary-routes-2026-05]] — 최근 추가된 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개, 인사복무·문서기안, 예산대응·성과평가, 감사대응·문서기안, 국회대응·문서기안, 민원대응·문서기안, 홍보대응·문서기안, 계약조달·문서기안, 조직정원·문서기안, 법령대응·문서기안 신규 교차 route index.
+- [[index-new-cross-boundary-routes-2026-05]] — 최근 추가된 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개, 인사복무·문서기안, 예산대응·성과평가, 감사대응·문서기안, 국회대응·문서기안, 민원대응·문서기안, 홍보대응·문서기안, 계약조달·문서기안, 조직정원·문서기안, 법령대응·문서기안, 협업회의운영·문서기안 신규 교차 route index.
 - [[release-note-new-cross-boundary-routes-2026-05]] — 신규 교차 route index의 포함 범위와 README/landing/docs/agent 노출 상태 요약.
 - [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route index의 포함 기준, 발견성, 안전성 gate.
 - [[audit-new-cross-boundary-routes-final-2026-05]] — 신규 교차 route 묶음의 최종 연결·노출 audit.
