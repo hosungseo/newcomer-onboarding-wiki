@@ -973,7 +973,7 @@ v1 체크포인트:
 - [실행경계 route map](section-execution-boundary-routes-2026-05.md) — 업무축·상황별로 최근 실행경계 노트를 고르는 시작점
 - [실행경계 discovery coverage](coverage-execution-boundary-routes-discovery-2026-05.md) — route-map과 coverage/manifest/quality-gate 노출 상태 점검
 - [실행경계 alias index](index-execution-boundary-route-aliases-2026-05.md) — 4개 교차 route의 coverage/manifest/quality 묶음
-- [신규 교차 실행경계 route index](index-new-cross-boundary-routes-2026-05.md) — 최근 추가된 3개 신규 교차 route 묶음
+- [신규 교차 실행경계 route index](index-new-cross-boundary-routes-2026-05.md) — 최근 추가된 4개 신규 교차 route 묶음
 - [신규 교차 실행경계 route release note](release-note-new-cross-boundary-routes-2026-05.md) — 신규 route index 포함 범위와 노출 상태 요약
 - [신규 교차 실행경계 route quality gate](quality-gate-new-cross-boundary-routes-2026-05.md) — 신규 route 포함·발견성·안전성 검증
 - [신규 교차 실행경계 route final audit](audit-new-cross-boundary-routes-final-2026-05.md) — 신규 route 묶음 최종 연결·노출 점검
