@@ -6,9 +6,10 @@ Expose the review packet route that must run before any merge/publication of the
 
 ## Baseline recorded for this lane
 
-- Assigned current HEAD to record: `ce62d47`
-- Observed HEAD at lane start: `d8d7475`
-- `docs/index.html` line count at lane start: `189`
+- Current HEAD to review: `f1dab6d`
+- `docs/index.html` diff to review: `+183/-671`
+- GitHub Pages source: `main:/docs`
+- Packet status: **review required**
 - Scope: `docs/index.html`, `docs/gates.json`, and root `section-*` / `coverage-*` / `quality-gate-*` / `manifest-*` markdown only.
 
 ## Entry route

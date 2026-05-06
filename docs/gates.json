@@ -87,12 +87,15 @@
           "insertions": 183,
           "deletions": 671
         },
-        "classification": "merge_to_main_requires_review"
+        "classification": "merge_to_main_requires_review",
+        "head": "f1dab6d",
+        "pagesSource": "main:/docs",
+        "reviewRequired": true
       },
       "guardrails": [
         "do not merge or publish to main from this lane",
         "treat the 1576-commit branch delta as outside small docs-only exposure scope",
-        "review docs/index.html section preservation before any main merge because its diff is +183/-671 versus origin/main",
+        "review docs/index.html section preservation before any main merge because HEAD f1dab6d shows docs/index.html +183/-671 versus origin/main and Pages source is main:/docs",
         "keep this gate limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown exposure"
       ]
     },
@@ -106,26 +109,32 @@
       "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",
       "manifest": "manifest-main-merge-diff-review-packet-2026-05-07.md",
       "baseline": {
-        "assignedHead": "ce62d47",
-        "observedHeadAtLaneStart": "d8d7475",
-        "docsIndexLineCountAtLaneStart": 189
+        "head": "f1dab6d",
+        "docsIndexDiff": {
+          "insertions": 183,
+          "deletions": 671
+        },
+        "pagesSource": "main:/docs",
+        "status": "REVIEW_REQUIRED"
       },
       "guardrails": [
         "expose the review packet gate only; do not merge, commit, push, rebase, or publish from this lane",
         "preserve existing docs/index.html sections; add links inside the docs/landing exposure section only",
         "keep review status blocking until the main/process owner reviews the branch delta and docs/index section preservation",
         "do not expand README, landing pages, catalogs, graph/data, or generated exports in this lane"
-      ]
+      ],
+      "summary": "Current merge review packet: HEAD f1dab6d; docs/index.html +183/-671; GitHub Pages source main:/docs; review required."
     }
   ],
   "pagesRecheck": {
-    "mainMergeDiffReviewPacket": {
-      "status": "PACKET_REQUIRED",
-      "assignedHead": "ce62d47",
-      "observedHeadAtLaneStart": "d8d7475",
-      "process": "process-main-merge-diff-review-packet-2026-05-07.md",
-      "faq": "faq-main-merge-diff-review-packet-contents-2026-05-07.md",
-      "source": "source-main-merge-review-packet-minimum-evidence-2026-05-07.md",
+    "mergeReviewPacketSummary": {
+      "status": "review required",
+      "head": "f1dab6d",
+      "docsIndexDiff": "+183/-671",
+      "pagesSource": "main:/docs",
+      "process": "process-merge-review-packet-from-existing-gates-2026-05-07.md",
+      "source": "source-main-merge-review-baseline-2026-05-07.md",
+      "faq": "faq-main-merge-baseline-pages-source-2026-05-07.md",
       "section": "section-main-merge-diff-review-packet-2026-05-07.md",
       "coverage": "coverage-main-merge-diff-review-packet-2026-05-07.md",
       "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",

@@ -5,7 +5,7 @@
 - id: `main-merge-diff-review-packet`
 - date: `2026-05-07`
 - status: `REVIEW_REQUIRED`
-- lane baseline: assigned HEAD `ce62d47`; observed lane-start HEAD `d8d7475`; lane-start `docs/index.html` lines `189`
+- current review packet: HEAD `f1dab6d`; `docs/index.html` diff `+183/-671`; Pages source `main:/docs`; review required
 
 ## Public root files
 
