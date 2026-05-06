@@ -1017,6 +1017,7 @@ v1 체크포인트:
 - [예산대응·문서기안 실행경계 router](router-예산대응-문서기안-실행경계-2026-05.md) — 예산 검토자료와 결재 가능한 기안문을 나누는 신규 교차 route
 - [예산대응·문서기안 실행경계 coverage](coverage-예산대응-문서기안-실행경계-2026-05.md) — router·coverage·quality·manifest 삼각형 진입점
 - [예산대응·문서기안 실행경계 release note](release-note-예산대응-문서기안-실행경계-2026-05.md) — 신규 교차 route 포함 진입점과 노출 상태 요약
+- [감사대응·계약조달 실행경계 router](router-감사대응-계약조달-실행경계-2026-05.md) — 감사 제출 범위와 계약 민감정보를 나누는 신규 교차 route
 - [실행경계 alias release note](release-note-execution-boundary-route-aliases-2026-05.md) — alias 묶음 노출 상태와 포함 진입점 요약
 - [장관보고·성과평가 실행경계 router](router-장관보고-성과평가-실행경계-2026-05.md) — 보고 설명과 평가 판단을 분리하는 신규 교차 route
 - [장관보고·성과평가 실행경계 coverage](coverage-장관보고-성과평가-실행경계-2026-05.md) — router·coverage·quality·manifest 삼각형 진입점
