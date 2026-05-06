@@ -19,6 +19,7 @@ confidentiality: public-only
 
 | 층 | note | 역할 |
 |---|---|---|
+| section | [[section-정보공개기록관리-onboarding-coverage-2026-05-07]] | request intake, disclosure/non-disclosure boundary, records retention, evidence bundle, tracking checklist를 한 화면에 고정한다. |
 | router | [[router-정보공개기록관리-협업회의-신규자-공개경계]] | 정보공개·기록관리·협업회의 중 어디서 시작할지 첫 분기한다. |
 | newcomer path | [[newcomer-path-정보공개기록관리-협업회의-공개경계]] | 신규자가 기관·상황·업무축·자료·초안/체크리스트를 순서대로 고른다. |
 | 정보공개 FAQ | [[faq-정보공개기록관리-청구공개검토-첫판단]] | 청구 공개검토의 첫 판단과 담당 확인 지점을 나눈다. |
@@ -46,6 +47,7 @@ confidentiality: public-only
 ## docs/manifest 노출 상태
 
 - [x] route 핵심 노트 19개가 모두 root에 존재한다.
+- [x] [[section-정보공개기록관리-onboarding-coverage-2026-05-07]]가 청구 접수, 공개/비공개 경계, 기록물 보존·이관, evidence bundle, 처리추적 checklist를 묶는다.
 - [x] 정보공개 onboarding coverage 3종 — 공개/비공개 첫경계, 답변초안 evidence bundle, 청구처리 응답로그 checklist — 를 docs/index와 manifest route에 노출한다.
 - [x] 협업회의 onboarding coverage 3종 — 회의유형 boundary, 회의 전 evidence bundle, agenda/minutes/follow-up checklist — 를 docs/index와 manifest route에 노출한다.
 - [x] coverage, manifest, quality gate 삼각형을 새로 만들고 상호 연결한다.
@@ -55,7 +57,8 @@ confidentiality: public-only
 
 ## 완성도 체크
 
-- [x] 정보공개 route는 공개 원문·확정자료와 비공개 보호영역을 분리한다.
+- [x] 정보공개 route는 request intake를 먼저 남긴 뒤 공개 원문·확정자료와 비공개 보호영역을 분리한다.
+- [x] 기록물 보존기간, 이관·등록 여부, 원본/사본/편집본 구분을 확인한다.
 - [x] 기록관리 route는 기록물 존재 여부와 공개 가능 여부를 섞지 않는다.
 - [x] 협업회의 route는 발언·이견·협상 카드와 확정 결과·후속조치를 구분한다.
 - [x] checklist는 “진행 / 수정 후 진행 / 담당 확인 요청”으로 닫을 수 있다.
@@ -63,15 +66,16 @@ confidentiality: public-only
 
 ## 노출 순서 제안
 
-1. [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]]
-2. [[manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05]]
-3. [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]]
-4. [[router-정보공개기록관리-협업회의-신규자-공개경계]]
-5. [[newcomer-path-정보공개기록관리-협업회의-공개경계]]
-6. 공개경계 source: [[source-정보공개기록관리-공개자료-대조순서]] / [[source-정보공개기록관리-답변초안-증거묶음-2026-05]] / [[source-정보공개기록관리-기록물관리-확인순서]] / [[source-정보공개기록관리-원천기록-확인우선순서]]
-7. 정보공개 FAQ/process/checklist: [[faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05]] / [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]] / [[process-정보공개기록관리-청구에서공개까지-분기흐름]] / [[process-정보공개기록관리-청구처리-응답로그-2026-05]] / [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]]
-8. 회의 onboarding/checklist: [[faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05]] / [[source-협업회의운영-회의전-증거묶음-작성순서-2026-05]] / [[process-협업회의운영-agenda-to-followup-log-2026-05-07]] / [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]] / [[faq-협업회의운영-결과공유와후속조치-공개경계]] / [[process-협업회의운영-결과초안과후속조치]] / [[checklist-협업회의운영-후속조치-회의전-precheck]] / [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
-9. [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]
+1. [[section-정보공개기록관리-onboarding-coverage-2026-05-07]]
+2. [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]]
+3. [[manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05]]
+4. [[quality-gate-정보공개기록관리-협업회의-실행경계-2026-05]]
+5. [[router-정보공개기록관리-협업회의-신규자-공개경계]]
+6. [[newcomer-path-정보공개기록관리-협업회의-공개경계]]
+7. 공개경계 source: [[source-정보공개기록관리-공개자료-대조순서]] / [[source-정보공개기록관리-답변초안-증거묶음-2026-05]] / [[source-정보공개기록관리-기록물관리-확인순서]] / [[source-정보공개기록관리-원천기록-확인우선순서]]
+8. 정보공개 FAQ/process/checklist: [[faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05]] / [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]] / [[process-정보공개기록관리-청구에서공개까지-분기흐름]] / [[process-정보공개기록관리-청구처리-응답로그-2026-05]] / [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]]
+9. 회의 onboarding/checklist: [[faq-협업회의운영-조정회의와-결정회의는-무엇이-다른가-2026-05]] / [[source-협업회의운영-회의전-증거묶음-작성순서-2026-05]] / [[process-협업회의운영-agenda-to-followup-log-2026-05-07]] / [[faq-협업회의운영-회의결과는-어디까지-외부공유하나]] / [[faq-협업회의운영-결과공유와후속조치-공개경계]] / [[process-협업회의운영-결과초안과후속조치]] / [[checklist-협업회의운영-후속조치-회의전-precheck]] / [[checklist-협업회의운영-회의결과-후속조치-실행경계]]
+10. [[walkthrough-정보공개기록관리-협업회의-실행경계-라우트맵-2026-05]]
 
 ## 멈춤선
 

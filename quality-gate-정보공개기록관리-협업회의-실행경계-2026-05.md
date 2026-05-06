@@ -17,6 +17,7 @@ confidentiality: public-only
 
 ## Gate 1 — route 완성도
 
+- [x] section은 [[section-정보공개기록관리-onboarding-coverage-2026-05-07]]로 고정하고 request intake, disclosure/non-disclosure boundary, records retention, evidence bundle, tracking checklist를 한 화면에 노출한다.
 - [x] router는 [[router-정보공개기록관리-협업회의-신규자-공개경계]]로 고정한다.
 - [x] newcomer path는 [[newcomer-path-정보공개기록관리-협업회의-공개경계]]로 고정한다.
 - [x] 정보공개 source/process/FAQ/checklist와 협업회의 process/FAQ/precheck/checklist가 coverage 안에서 한 route로 묶인다.
@@ -26,12 +27,13 @@ confidentiality: public-only
 
 ## Gate 2 — 공개자료 기준
 
+- [x] 청구 접수 시 청구일·대상기록·소관/이송·보완·법정기한·연장 여부를 먼저 기록한다.
 - [x] 공개 원문·확정자료와 내부검토·잠정 판단을 분리한다.
 - [x] 공개 청구 검토는 [[faq-정보공개기록관리-청구공개검토-첫판단]], [[faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05]], [[process-정보공개기록관리-청구에서공개까지-분기흐름]], [[source-정보공개기록관리-공개자료-대조순서]]를 기준으로 삼는다.
 - [x] 원천기록·마스킹 판단은 [[source-정보공개기록관리-원천기록-확인우선순서]]와 [[faq-정보공개기록관리-마스킹은-언제-먼저-하나]]로 초안 복사 전에 잠근다.
 - [x] 답변 후보 문장은 [[source-정보공개기록관리-답변초안-증거묶음-2026-05]]에서 공개근거·원천기록·보호정보·담당 확인 질문이 붙은 것만 남긴다.
 - [x] 청구처리 진행 상황은 [[process-정보공개기록관리-청구처리-응답로그-2026-05]]에서 접수·검토·마스킹·결정·통지·후속 소유자를 기록한다.
-- [x] 기록물관리는 [[source-정보공개기록관리-기록물관리-확인순서]]와 [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]]에서 확인한다.
+- [x] 기록물관리는 [[source-정보공개기록관리-기록물관리-확인순서]]와 [[checklist-정보공개기록관리-공개검토초안-기록물이관-보존]]에서 보존기간, 이관·등록 여부, 원본/사본/편집본 구분까지 확인한다.
 - [x] 기록물 존재 여부와 공개 가능 여부를 같은 판단으로 취급하지 않는다.
 
 ## Gate 3 — 협업회의 후속조치 기준

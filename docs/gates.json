@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, and information-disclosure routes, minister/performance onboarding coverage",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, information-disclosure/records routes, minister/performance onboarding coverage",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -365,6 +365,30 @@
       ]
     },
     {
+      "id": "information-disclosure-records-onboarding-route",
+      "title": "정보공개기록관리 onboarding route exposure",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "section": "section-정보공개기록관리-onboarding-coverage-2026-05-07.md",
+      "entry": "router-정보공개기록관리-협업회의-신규자-공개경계.md",
+      "coverage": "coverage-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "qualityGate": "quality-gate-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-정보공개기록관리-협업회의-실행경계-2026-05.md",
+      "routeParts": {
+        "requestIntake": "process-정보공개기록관리-청구처리-응답로그-2026-05.md",
+        "disclosureNonDisclosureBoundary": "faq-정보공개기록관리-신규자-공개비공개-첫경계-2026-05.md",
+        "recordsRetention": "source-정보공개기록관리-기록물관리-확인순서.md",
+        "evidenceBundle": "source-정보공개기록관리-답변초안-증거묶음-2026-05.md",
+        "trackingChecklist": "checklist-정보공개기록관리-공개검토초안-기록물이관-보존.md"
+      },
+      "guardrails": [
+        "preserve the combined 정보공개기록관리/협업회의 section; add onboarding exposure without splitting or deleting existing routes",
+        "do not treat record existence as disclosure approval; keep 공개, 부분공개, 비공개, 부존재, 이송, and 보완 as separate outcomes",
+        "keep docs/gates.json markdown refs root-relative without ../ prefixes",
+        "do not edit README, landing pages, graph/data, generated exports, or commit/push in this lane"
+      ]
+    },
+    {
       "id": "main-merge-diff-risk-review",
       "title": "Final main merge readiness risk review",
       "status": "REVIEW_REQUIRED",
@@ -417,18 +441,5 @@
       ],
       "summary": "Final main merge readiness gate: HEAD d7f853e; changed files vs origin/main 1643; recommendation REVIEW_REQUIRED; Pages source main:/docs mismatch risk; no automatic merge."
     }
-  ],
-  "mergeReadiness": {
-    "currentHeadApprovalRefresh": {
-      "status": "REVIEW_REQUIRED",
-      "head": "b81f3d2",
-      "changedFilesVsOriginMain": 1646,
-      "pagesSource": "main:/docs",
-      "automaticMerge": false,
-      "faq": "faq-current-head-main-merge-review-required-b81f3d2-2026-05-07.md",
-      "source": "source-current-head-main-merge-approval-evidence-bundle-b81f3d2-2026-05-07.md",
-      "process": "process-current-head-main-merge-approval-refresh-2026-05-07.md",
-      "router": "router-existing-hub-entry-index-2026-05-07.md"
-    }
-  }
+  ]
 }
