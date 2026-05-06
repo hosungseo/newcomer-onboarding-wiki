@@ -14,6 +14,7 @@
 - [[index-execution-boundary-route-aliases-2026-05]] — 기존 4개 alias route 묶음.
 
 ## 노출 상태
+- [[audit-new-cross-boundary-routes-final-2026-05]] — 신규 교차 route 묶음 최종 연결·노출 audit.
 README, landing, docs/index.html, agent-readable catalog에서 신규 route index로 들어올 수 있다.
 
 ## 멈춤선
