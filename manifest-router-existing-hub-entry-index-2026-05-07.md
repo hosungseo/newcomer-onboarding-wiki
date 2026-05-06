@@ -17,7 +17,7 @@ This manifest keeps the existing-hub router family small: one router, one low-de
 - `docs/index.html` operational exposure under docs/landing exposure.
 - `docs/gates.json` as the compact gate inventory for later GitHub Pages live verification.
 - [[process-pages-live-reflection-check-2026-05-07]] as the read-only comparison checklist when local docs/gates need to be compared with the served GitHub Pages HTML.
-- Live response evidence from 2026-05-07 05:12 KST: HTTP 200, 31,241 live bytes, and 19,149 local bytes were observed; expected `Execution Boundary Route Index` was absent and gateway title `신규공무원 적응 위키 · 관문` was present, so the manifest classifies this as WAIT, not PASS, and keeps it as a live comparison guardrail rather than completed Pages reflection.
+- Live response evidence from 2026-05-07 05:17 KST second WAIT recheck: HTTP 200, 31,241 live bytes, and 19,192 local bytes were observed; expected `Execution Boundary Route Index` was absent and gateway title `신규공무원 적응 위키 · 관문` was present, so the manifest classifies this as WAIT-2, not PASS, and keeps it as a live comparison guardrail rather than completed Pages reflection.
 
 ## Out of scope
 

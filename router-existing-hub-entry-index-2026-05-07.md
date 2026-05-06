@@ -36,6 +36,7 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 - Pages live verification checklist: [[process-pages-live-reflection-check-2026-05-07]]
 - Pages response verification process: [[process-github-pages-live-html-vs-docs-index-2026-05-07]]
 - Pages WAIT recheck: [[process-pages-wait-recheck-2026-05-07]]
+- Pages second WAIT recheck / gateway-title escalation: [[checklist-second-wait-recheck-gateway-title-fail-2026-05-07]]
 
 ## Minimal handoff
 
