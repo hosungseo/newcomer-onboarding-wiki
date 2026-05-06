@@ -18,6 +18,11 @@
 - 개별 route는 각각 router, coverage, release note, audit까지 연결된다.
 - 기존 4개 alias 묶음은 [[index-execution-boundary-route-aliases-2026-05]]에 남기고, 신규 route 묶음은 별도 index로 유지해 README/docs 중복 문구를 줄인다.
 
+## 중복 audit
+- 신규 index는 개별 route의 전체 본문을 재서술하지 않고 router → coverage → audit 링크만 남긴다.
+- README/docs/landing/agent catalog는 index, release note, quality gate, final audit까지만 상위 묶음으로 노출한다.
+- 개별 route의 세부 stop line은 각 route audit과 quality gate에 위임한다.
+
 ## 판정
 신규 교차 route 묶음은 “실제 router/coverage/quality/manifest/audit이 닫힌 route만 index에 올린다”는 기준으로 유지한다.
 

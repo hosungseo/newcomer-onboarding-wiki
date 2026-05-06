@@ -18,6 +18,7 @@
 - [x] README, landing, docs/index.html, agent-readable catalog에서 신규 index 또는 release note로 들어올 수 있는가?
 - [x] [[coverage-execution-boundary-routes-discovery-2026-05]]가 신규 route 후보와 index를 기록하는가?
 - [x] 개별 route의 router → coverage → release note/audit 연결이 끊기지 않는가?
+- [x] 상위 묶음 노출은 index/release note/quality gate/final audit으로 제한해 같은 route 설명을 반복하지 않는가?
 
 ## Gate 3 — 안전성
 - [x] 개인정보, 비공개 내부검토, 미확정 정책안, 감사·수사·징계·보안·업체 민감정보를 포함하지 않는가?
