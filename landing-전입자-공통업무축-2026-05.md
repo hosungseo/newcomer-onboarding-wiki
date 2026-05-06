@@ -50,6 +50,7 @@
 - [[router-예산대응-성과평가-실행경계-2026-05]] — 예산 수치와 성과 설명·평가 판단을 나누는 신규 교차 router.
 - [[coverage-예산대응-성과평가-실행경계-2026-05]] — 예산대응·성과평가 router/manifest/quality 삼각형 coverage.
 - [[release-note-예산대응-성과평가-실행경계-2026-05]] — 신규 교차 route 포함 진입점과 노출 상태 요약.
+- [[router-감사대응-문서기안-실행경계-2026-05]] — 감사자료 제출 판단과 기안문 공개 범위를 나누는 신규 교차 router.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 노출 상태 요약.
 - [[router-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 섞지 않게 보내는 신규 교차 router.
 - [[coverage-장관보고-성과평가-실행경계-2026-05]] — 장관보고·성과평가 router/manifest/quality 삼각형 coverage.
