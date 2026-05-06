@@ -40,6 +40,7 @@
 - [[section-execution-boundary-routes-2026-05]] — 계약조달·조직정원·감사국회·민원법령·정보공개협업회의·홍보대외협력 실행경계 route를 한 화면에서 고르는 최상위 section.
 - [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality 묶음.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 노출 상태 요약.
+- [[router-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 섞지 않게 보내는 신규 교차 router.
 - [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]] — 질문 예시를 4개 교차 route alias로 바로 보내는 신규자 router.
 - [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 중 어느 교차 route를 먼저 볼지 고르는 FAQ.
 - [[section-실행경계-boundary-router-4축-2026-05]] / [[section-민원법령-boundary-router-실행경계-2026-05]] — 예산·조직정원·홍보·정보공개 및 민원·법령 companion route를 먼저 고르는 보조 section.

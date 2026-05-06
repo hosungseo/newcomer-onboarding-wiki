@@ -974,6 +974,7 @@ v1 체크포인트:
 - [실행경계 discovery coverage](coverage-execution-boundary-routes-discovery-2026-05.md) — route-map과 coverage/manifest/quality-gate 노출 상태 점검
 - [실행경계 alias index](index-execution-boundary-route-aliases-2026-05.md) — 4개 교차 route의 coverage/manifest/quality 묶음
 - [실행경계 alias release note](release-note-execution-boundary-route-aliases-2026-05.md) — alias 묶음 노출 상태와 포함 진입점 요약
+- [장관보고·성과평가 실행경계 router](router-장관보고-성과평가-실행경계-2026-05.md) — 보고 설명과 평가 판단을 분리하는 신규 교차 route
 - [실행경계 alias 질문 router](router-execution-boundary-route-aliases-newcomer-questions-2026-05.md) — 신규자 질문 예시를 4개 교차 route로 보내는 진입점
 - [실행경계 alias 선택 FAQ](faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나.md) — 어떤 교차 route를 먼저 고를지 빠르게 판단
 
