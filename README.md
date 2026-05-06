@@ -17,6 +17,12 @@
 - [[process-low-density-hub-path-promotion-readiness-2026-05-07]] — README/landing/docs 승격 전 readiness process.
 - [[checklist-low-density-hub-path-promotion-readiness-2026-05-07]] — 승격 전 최종 체크리스트.
 
+
+## Existing hub entry router
+- [[router-existing-hub-entry-index-2026-05-07]] — 새 hub를 만들기 전 기존 hub/section으로 먼저 진입하는 router.
+- [[coverage-router-existing-hub-entry-index-2026-05-07]] / [[quality-gate-router-existing-hub-entry-index-2026-05-07]] / [[manifest-router-existing-hub-entry-index-2026-05-07]]
+- [[checklist-router-existing-hub-entry-promotion-safety-2026-05-07]] — README/landing/docs 노출 전 안전 체크.
+
 ## 한 줄 정의
 - [[landing-response-boundary-router-checklists-2026-05]] — 감사·국회·정보공개·협업회의운영 boundary checklist를 바로 고르는 landing.
 - [감사 자료제출경계 coverage](coverage-감사대응-자료제출경계-2026-05.md) — 감사 자료제출 FAQ/source/process/checklist/walkthrough 노출 상태

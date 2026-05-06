@@ -21,6 +21,12 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 4. Use [[checklist-router-existing-hub-before-new-hub-2026-05-07]] before naming any new hub.
 5. If no existing entry fits, leave a one-line gap statement instead of silently creating a duplicate hub.
 
+## Exposure notes
+
+- Coverage: [[coverage-router-existing-hub-entry-index-2026-05-07]]
+- Quality gate: [[quality-gate-router-existing-hub-entry-index-2026-05-07]]
+- Manifest: [[manifest-router-existing-hub-entry-index-2026-05-07]]
+
 ## Minimal handoff
 
 ```text

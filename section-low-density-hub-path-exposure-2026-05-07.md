@@ -22,4 +22,5 @@ Use [[router-existing-hub-entry-index-2026-05-07]] first when the question may b
 - Each axis is tied to an existing coverage/quality/manifest anchor rather than a placeholder.
 - Shared anchors are intentional where the existing root notes pair two axes: 예산대응/민원대응 and 정보공개기록관리/협업회의.
 - Docs exposure: this checkpoint is safe to expose from `docs/index.html` together with [[coverage-low-density-hub-path-exposure-2026-05-07]] because every linked route points to an existing root markdown note.
+- Existing-hub router exposure: [[router-existing-hub-entry-index-2026-05-07]] is separately covered by [[coverage-router-existing-hub-entry-index-2026-05-07]], [[quality-gate-router-existing-hub-entry-index-2026-05-07]], and [[manifest-router-existing-hub-entry-index-2026-05-07]].
 - Stop line: do not expand landing files, graph/data, or per-axis catalog lists in this lane.

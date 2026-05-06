@@ -470,3 +470,8 @@
 - [[coverage-홍보대응-공통업무축-2026-05]]
 - [[manifest-newcomer-journey-홍보대응-2026-05]]
 - [[quality-gate-홍보대응-공통업무축-2026-05]]
+
+
+## Existing hub entry router
+- 새 hub를 만들지 말고 기존 축을 먼저 고를 때 → [[router-existing-hub-entry-index-2026-05-07]]
+- 노출 안전성 확인 → [[coverage-router-existing-hub-entry-index-2026-05-07]] / [[quality-gate-router-existing-hub-entry-index-2026-05-07]] / [[manifest-router-existing-hub-entry-index-2026-05-07]]

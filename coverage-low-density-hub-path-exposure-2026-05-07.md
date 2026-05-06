@@ -21,7 +21,8 @@ This coverage note verifies root-level exposure readiness for five lower-density
 ## Docs exposure
 
 - `docs/index.html` now exposes [[section-low-density-hub-path-exposure-2026-05-07]] and this coverage note under docs/landing exposure operations.
-- The docs exposure is intentionally grouped: one section link and one coverage link, not five duplicated per-axis links.
+- The same docs group now exposes [[router-existing-hub-entry-index-2026-05-07]], [[coverage-router-existing-hub-entry-index-2026-05-07]], [[quality-gate-router-existing-hub-entry-index-2026-05-07]], and [[manifest-router-existing-hub-entry-index-2026-05-07]] as a compact existing-hub guardrail set.
+- The docs exposure is intentionally grouped: one section link and one coverage link for low-density axes, plus one router family, not five duplicated per-axis links.
 
 ## Stop line
 
