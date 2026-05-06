@@ -14,6 +14,7 @@
 - [[coverage-예산대응-공통업무축-2026-05]] — 예산 요구, 집행, 증감 사유, 재정 설명 경계 확인.
 
 ## 노출 상태
+- [[audit-민원대응-예산대응-실행경계-final-2026-05]] — 신규 교차 route의 최종 연결·노출 audit.
 README, landing, docs/index.html, agent-readable catalog에서 신규 router 또는 coverage로 들어올 수 있다.
 
 ## 멈춤선
