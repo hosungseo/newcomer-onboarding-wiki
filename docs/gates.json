@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "generatedAt": "2026-05-07",
-  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for civil, budget, law, PR, organization, collaboration, and information-disclosure routes",
+  "scope": "docs index exposure gates for existing-hub, low-density route surfaces, GitHub Pages live verification, and onboarding coverage for audit response, civil, budget, law, PR, organization, collaboration, and information-disclosure routes",
   "constraints": [
     "public-root-markdown-only",
     "no graph/data exports",
@@ -72,6 +72,30 @@
         "classification": "WAIT_3_not_PASS",
         "guardrail": "Third WAIT evidence: HTTP 200 alone is not sufficient; expected route title is absent while the gateway title is present, so keep Pages reflection classified as WAIT-3, not PASS. Repeated WAIT-to-FAIL escalation belongs to the main/process owner."
       }
+    },
+    {
+      "id": "audit-response-onboarding-coverage",
+      "title": "감사대응 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "section": "section-execution-boundary-routes-2026-05.md",
+      "entry": "walkthrough-감사대응-전입자-라우터-2026-05.md",
+      "coverage": "coverage-감사대응-자료제출경계-2026-05.md",
+      "qualityGate": "quality-gate-감사대응-자료제출경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-감사대응-자료제출경계-2026-05.md",
+      "onboardingCoverage": {
+        "requestFactFindingFindingsFollowupBoundary": "faq-감사대응-전입자-첫구분-자료요구-사실확인-처분요구-후속조치-2026-05.md",
+        "evidenceBundle": "source-감사대응-답변초안전-증거묶음-2026-05.md",
+        "submissionFollowupTrackingChecklist": "process-감사대응-요청접수-제출후속조치-log-2026-05-07.md",
+        "publicPrivateAuditInfoBoundary": "checklist-감사대응-자료제출-조치결과-제출전검토.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must classify audit material request, fact-finding confirmation, audit finding/disposition request, and follow-up action before drafting or submitting anything",
+        "evidence bundle must separate request original, public/confirmed source, owner confirmation, audit-info hold, and excluded personal, investigation, disciplinary, security, or strategy material",
+        "submission/follow-up tracking checklist records requester, deadline, submitted bundle, open confirmation, disposition/follow-up owner, evidence of completion, and next check without exposing private details",
+        "public/private/audit-info boundary must stop audit technique, finding strategy, witness or complainant identifiers, disciplinary/investigation/security details, and internal response strategy before external sharing",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
     },
     {
       "id": "civil-complaints-onboarding-coverage",
