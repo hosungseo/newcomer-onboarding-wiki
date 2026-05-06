@@ -124,15 +124,14 @@
     }
   ],
   "pagesRecheck": {
-    "mergeReviewRecommendation": {
+    "explicitMainMergeApproval": {
       "status": "REVIEW_REQUIRED",
-      "baselineHead": "b1887d5",
-      "rootMarkdownCount": 1791,
-      "docsIndexLines": 190,
-      "pagesSource": "main:/docs",
-      "process": "process-merge-review-recommendation-from-packet-2026-05-07.md",
-      "faq": "faq-merge-review-packet-review-required-2026-05-07.md",
-      "source": "source-merge-review-pages-source-impact-2026-05-07.md",
+      "head": "db8b681",
+      "changedFilesVsOriginMain": 1593,
+      "automaticMerge": false,
+      "process": "process-explicit-main-merge-approval-decision-2026-05-07.md",
+      "faq": "faq-explicit-main-merge-approval-db8b681-2026-05-07.md",
+      "source": "source-main-merge-approval-diff-count-db8b681-2026-05-07.md",
       "section": "section-main-merge-diff-review-packet-2026-05-07.md",
       "coverage": "coverage-main-merge-diff-review-packet-2026-05-07.md",
       "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",
