@@ -98,6 +98,30 @@
       ]
     },
     {
+      "id": "national-assembly-response-onboarding-coverage",
+      "title": "국회대응 onboarding coverage",
+      "status": "exposed",
+      "surface": "docs/index.html",
+      "section": "section-국회대응-onboarding-coverage-2026-05-07.md",
+      "entry": "walkthrough-국회대응-전입자-라우터-2026-05.md",
+      "coverage": "coverage-국회대응-자료요구경계-2026-05.md",
+      "qualityGate": "quality-gate-국회대응-자료요구경계-2026-05.md",
+      "manifest": "manifest-newcomer-journey-국회대응-자료요구경계-2026-05.md",
+      "onboardingCoverage": {
+        "assemblyOfficeWrittenQuestionAuditCommitteeCurrentIssueBoundary": "faq-국회대응-전입자-첫구분-자료요구-서면질의-국감상임위-현안보고-2026-05.md",
+        "evidenceBundle": "source-국회대응-답변메모-작성전-증거묶음-2026-05.md",
+        "submissionFollowupTrackingChecklist": "process-국회대응-자료요구-답변작성흐름.md",
+        "publicPrivateNationalAssemblySubmissionBoundary": "checklist-감사국회대응-제출전-precheck.md"
+      },
+      "guardrails": [
+        "newcomer onboarding must classify Assembly office material request, written question, audit/standing committee demand, and current-issue briefing before drafting or submitting anything",
+        "evidence bundle must separate request original, deadline, public/confirmed source, owner confirmation, National Assembly submission-only material, and excluded personal, security, investigation, audit, or strategy material",
+        "submission/follow-up tracking checklist records request number, answer number, submission format, submitted bundle, supplement request, follow-up owner, evidence of completion, and next check without exposing private details",
+        "public/private/National Assembly submission boundary must stop private coordination, oral briefing, expected Q&A, response strategy, unconfirmed internal review, and personal or security-sensitive details before external sharing",
+        "keep exposure limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown"
+      ]
+    },
+    {
       "id": "civil-complaints-onboarding-coverage",
       "title": "민원대응 onboarding coverage",
       "status": "exposed",
