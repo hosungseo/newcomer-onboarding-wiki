@@ -85,6 +85,7 @@
 - [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality alias index.
 - [[index-new-cross-boundary-routes-2026-05]] — 최근 추가된 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개 신규 교차 route index.
 - [[release-note-new-cross-boundary-routes-2026-05]] — 신규 교차 route index의 포함 범위와 README/landing/docs/agent 노출 상태 요약.
+- [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 교차 route index의 포함 기준, 발견성, 안전성 gate.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 README/landing/docs/agent 노출 상태 요약.
 - [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]] — 신규자 질문 문장과 예시 질문을 4개 교차 route alias로 보내는 router.
 - [[coverage-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage.

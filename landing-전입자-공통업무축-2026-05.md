@@ -41,6 +41,7 @@
 - [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality 묶음.
 - [[index-new-cross-boundary-routes-2026-05]] — 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개 신규 교차 route 묶음.
 - [[release-note-new-cross-boundary-routes-2026-05]] — 신규 교차 route index 포함 범위와 노출 상태 요약.
+- [[quality-gate-new-cross-boundary-routes-2026-05]] — 신규 route 포함·발견성·안전성 검증.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 노출 상태 요약.
 - [[router-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 섞지 않게 보내는 신규 교차 router.
 - [[coverage-장관보고-성과평가-실행경계-2026-05]] — 장관보고·성과평가 router/manifest/quality 삼각형 coverage.
