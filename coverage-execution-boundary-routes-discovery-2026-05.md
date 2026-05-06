@@ -34,3 +34,6 @@
 - placeholder wikilink 없이 실제 존재하는 note만 연결한다.
 - docs/landing/README 노출은 공개 온보딩용 고수준 route만 다룬다.
 - 실행경계 note는 개인정보·비공개 내부검토·미확정 정책안·감사/수사/징계/보안/업체 민감정보를 포함하지 않는다.
+
+## 신규 교차 route 후보
+- minister performance boundary: [[coverage-장관보고-성과평가-실행경계-2026-05]]가 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage로 작동한다.
