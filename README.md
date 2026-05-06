@@ -1005,6 +1005,7 @@ v1 체크포인트:
 - [법령대응·문서기안 실행경계 router](router-법령대응-문서기안-실행경계-2026-05.md) — 법령 검토 한계와 내부 결재 기안문을 나누는 신규 교차 route
 - [법령대응·문서기안 실행경계 coverage](coverage-법령대응-문서기안-실행경계-2026-05.md) — router·coverage·quality·manifest 삼각형 진입점
 - [법령대응·문서기안 실행경계 release note](release-note-법령대응-문서기안-실행경계-2026-05.md) — 신규 교차 route 포함 진입점과 노출 상태 요약
+- [협업회의운영·문서기안 실행경계 router](router-협업회의운영-문서기안-실행경계-2026-05.md) — 회의 논의·검토안과 결재 가능한 기안문을 나누는 신규 교차 route
 - [실행경계 alias release note](release-note-execution-boundary-route-aliases-2026-05.md) — alias 묶음 노출 상태와 포함 진입점 요약
 - [장관보고·성과평가 실행경계 router](router-장관보고-성과평가-실행경계-2026-05.md) — 보고 설명과 평가 판단을 분리하는 신규 교차 route
 - [장관보고·성과평가 실행경계 coverage](coverage-장관보고-성과평가-실행경계-2026-05.md) — router·coverage·quality·manifest 삼각형 진입점
