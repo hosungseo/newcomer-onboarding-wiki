@@ -27,4 +27,4 @@
 - [x] 공개형 문장과 내부 판단·검토 문장을 섞지 않는가?
 
 ## 판정
-신규 교차 route index는 인사복무·문서기안 및 예산대응·성과평가 및 감사대응·문서기안처럼 닫힌 route만 싣고, 기존 alias index와 중복 설명을 늘리지 않는 discovery 보조 index로 유지한다.
+신규 교차 route index는 인사복무·문서기안 및 예산대응·성과평가 및 감사대응·문서기안 및 국회대응·문서기안처럼 닫힌 route만 싣고, 기존 alias index와 중복 설명을 늘리지 않는 discovery 보조 index로 유지한다.
