@@ -73,6 +73,8 @@
 - external communication PR boundary: [[router-대외협력현장소통-홍보대응-실행경계-2026-05]]가 현장 소통과 공식 홍보문안의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
 - minister performance boundary: [[coverage-장관보고-성과평가-실행경계-2026-05]]가 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage로 작동한다.
 
+- 정보공개기록관리·예산대응: [[router-정보공개기록관리-예산대응-실행경계-2026-05]] — 정보공개·기록 공개 판단과 예산 설명 경계 후보.
+
 ## docs link count checkpoint
 - 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 619개이며 missing 0으로 확인했다.
 - 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
