@@ -1080,6 +1080,7 @@ v1 체크포인트:
 - [인사복무·예산대응 실행경계 router](router-인사복무-예산대응-실행경계-2026-05.md) — 인사복무 제도와 예산 설명 경계를 나누는 신규 교차 route
 - [인사복무·예산대응 실행경계 coverage](coverage-인사복무-예산대응-실행경계-2026-05.md) — router·coverage·quality·manifest 삼각형 진입점
 - [인사복무·예산대응 실행경계 release note](release-note-인사복무-예산대응-실행경계-2026-05.md) — 신규 교차 route 포함 진입점과 노출 상태 요약
+- [대외협력현장소통·예산대응 실행경계 router](router-대외협력현장소통-예산대응-실행경계-2026-05.md) — 현장소통 결과와 예산 설명 경계를 나누는 신규 교차 route
 - [실행경계 alias release note](release-note-execution-boundary-route-aliases-2026-05.md) — alias 묶음 노출 상태와 포함 진입점 요약
 - [장관보고·성과평가 실행경계 router](router-장관보고-성과평가-실행경계-2026-05.md) — 보고 설명과 평가 판단을 분리하는 신규 교차 route
 - [장관보고·성과평가 실행경계 coverage](coverage-장관보고-성과평가-실행경계-2026-05.md) — router·coverage·quality·manifest 삼각형 진입점
