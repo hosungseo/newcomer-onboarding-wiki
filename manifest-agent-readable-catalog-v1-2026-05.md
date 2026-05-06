@@ -83,7 +83,7 @@
 ## Execution Boundary Route Map
 - [[section-execution-boundary-routes-2026-05]] — 최근 실행경계 route를 계약조달·조직정원·감사국회·민원법령·정보공개협업·홍보대외협력 흐름으로 고르는 section entry.
 - [[index-execution-boundary-route-aliases-2026-05]] — 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령 교차 route의 coverage/manifest/quality alias index.
-- [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]] — 신규자 질문 문장을 4개 교차 route alias로 보내는 router.
+- [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]] — 신규자 질문 문장과 예시 질문을 4개 교차 route alias로 보내는 router.
 - [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]] — 교차 route 선택 기준을 짧게 설명하는 FAQ.
 - [[manifest-newcomer-journey-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 agent-readable journey manifest.
 - [[quality-gate-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 발견성·안전성 gate.

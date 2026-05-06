@@ -9,6 +9,10 @@
 - [[index-execution-boundary-route-aliases-2026-05]]
 - [[section-execution-boundary-routes-2026-05]]
 
+## example question coverage
+- [[router-execution-boundary-route-aliases-newcomer-questions-2026-05]] includes one example each for 계약·조직, 예산·민원, 정보공개·협업회의, 홍보·법령.
+- [[faq-execution-boundary-route-aliases-어떤-교차-route를-먼저-고르나]] gives the quick selection rule before following the examples.
+
 ## alias journey
 1. [[coverage-계약조달-조직정원-실행경계-2026-05]]
 2. [[coverage-예산대응-민원대응-실행경계-2026-05]]
