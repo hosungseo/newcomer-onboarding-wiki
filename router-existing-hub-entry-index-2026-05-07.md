@@ -29,14 +29,13 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 
 ## Review controls
 
-- Pages FAIL 후보 triage: [[process-pages-fail-candidate-triage-2026-05-07]]
-
 - Promotion checklist: [[checklist-router-existing-hub-entry-promotion-safety-2026-05-07]]
 - Existing-entry decision checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]
 - Docs/gates exposure review: [[process-docs-gates-index-exposure-review-2026-05-07]]
 - Docs/index restore safety: [[process-docs-index-restore-safety-2026-05-07]]
 - Pages live verification checklist: [[process-pages-live-reflection-check-2026-05-07]]
 - Pages response verification process: [[process-github-pages-live-html-vs-docs-index-2026-05-07]]
+- Pages source branch triage: [[process-pages-source-branch-triage-2026-05-07]]
 - Pages WAIT recheck: [[process-pages-wait-recheck-2026-05-07]]
 - Pages second WAIT recheck / gateway-title escalation: [[checklist-second-wait-recheck-gateway-title-fail-2026-05-07]]
 - Pages third WAIT recheck / gateway-title FAIL threshold: [[checklist-third-wait-recheck-gateway-title-fail-2026-05-07]]
