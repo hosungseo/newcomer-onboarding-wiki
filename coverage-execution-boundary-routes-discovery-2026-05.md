@@ -36,6 +36,7 @@
 - 실행경계 note는 개인정보·비공개 내부검토·미확정 정책안·감사/수사/징계/보안/업체 민감정보를 포함하지 않는다.
 
 ## 신규 교차 route 후보
+- new cross-boundary index: [[index-new-cross-boundary-routes-2026-05]]가 최근 추가된 장관보고·성과평가, 대외협력·홍보, 대외협력·정보공개 route 묶음을 모은다.
 - external records boundary: [[router-대외협력현장소통-정보공개기록관리-실행경계-2026-05]]가 현장 소통 기록과 정보공개·기록관리 경계를 나누는 신규 교차 route 후보로 작동한다.
 - external communication PR boundary: [[router-대외협력현장소통-홍보대응-실행경계-2026-05]]가 현장 소통과 공식 홍보문안의 실행경계를 나누는 신규 교차 route 후보로 작동한다.
 - minister performance boundary: [[coverage-장관보고-성과평가-실행경계-2026-05]]가 장관보고 설명과 성과평가 판단을 분리하는 신규 교차 route coverage로 작동한다.
