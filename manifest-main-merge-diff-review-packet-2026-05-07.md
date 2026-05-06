@@ -5,7 +5,7 @@
 - id: `main-merge-diff-review-packet`
 - date: `2026-05-07`
 - status: `REVIEW_REQUIRED`
-- current review packet: HEAD `b1887d5`; root markdown file count `1791`; `docs/index.html` `190 lines`; Pages source `main:/docs`; recommendation REVIEW_REQUIRED until diff and Pages source accepted
+- current final readiness gate: HEAD `d7f853e`; changed files vs `origin/main` `1643`; Pages source `main:/docs` mismatch risk; recommendation `REVIEW_REQUIRED`; automatic merge not authorized
 
 ## Public root files
 
@@ -16,11 +16,13 @@
 ## Supporting review packet notes
 
 - [[process-main-merge-diff-review-packet-2026-05-07]]
+- [[process-final-main-merge-readiness-packet-2026-05-07]]
+- [[source-final-main-merge-evidence-bundle-d7f853e-2026-05-07]]
 - [[faq-main-merge-diff-review-packet-contents-2026-05-07]]
 - [[source-main-publication-diff-risk-review-trigger-2026-05-07]]
 
 ## Guardrails
 
 - Keep exposure in existing docs/index sections; do not create a new HTML section for this lane.
-- Keep the gate blocking/review-required until a human/process owner reviews the branch delta and `docs/index.html` section preservation.
+- Keep the gate blocking/REVIEW_REQUIRED until a human/process owner reviews HEAD `d7f853e`, the `1643` changed files vs `origin/main`, `docs/index.html` section preservation, and Pages source `main:/docs` mismatch risk.
 - Do not commit, push, merge, rebase, or publish from this lane.

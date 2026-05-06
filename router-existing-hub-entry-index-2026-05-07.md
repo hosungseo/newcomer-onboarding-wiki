@@ -13,6 +13,7 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 | 임용, 전보, 휴직, 복직, 승진, 교육, e사람, 인사기록 | [[hub-인사]] | [[process-existing-hub-entry-decision-2026-05-07]] |
 | 민원대응, 홍보대응, 법령대응, 협업회의운영 등 현재 전용 hub가 없는 저밀도 축 | [[section-low-density-hub-path-exposure-2026-05-07]] | listed path / walkthrough / checklist route |
 | 10대 공통 업무축을 먼저 비교해야 하는 전입자 질문 | [[walkthrough-전입자-10대업무축-공개경계-라우터-2026-05]] | 기관 → 상황 → 업무축 → 자료 → 초안/체크리스트 → 공개·비공개 경계 |
+| cross-axis coverage completion 이후 main merge 검토 | [[process-final-main-merge-readiness-packet-2026-05-07]] | 최종 readiness packet 작성 후 [[process-explicit-main-merge-approval-decision-2026-05-07]]에서 명시 승인/보류/거절을 받는다 |
 
 ## Routing rule
 
@@ -33,6 +34,7 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 - Merge review packet assembly: [[process-merge-review-packet-from-existing-gates-2026-05-07]]
 - Merge recommendation process: [[process-merge-review-recommendation-from-packet-2026-05-07]]
 - Main merge diff review packet: [[process-large-docs-index-diff-premerge-pages-source-2026-05-07]]
+- Final main merge readiness packet: [[process-final-main-merge-readiness-packet-2026-05-07]]
 - Explicit main merge approval process: [[process-explicit-main-merge-approval-decision-2026-05-07]]
 - Promotion checklist: [[checklist-router-existing-hub-entry-promotion-safety-2026-05-07]]
 - Existing-entry decision checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]

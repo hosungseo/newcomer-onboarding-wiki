@@ -2,15 +2,15 @@
 
 ## Gate purpose
 
-Expose the current main-merge risk before treating local `docs/index.html` restoration or docs exposure as safe to merge into `main`.
+Expose the final main-merge readiness risk before treating local `docs/index.html` restoration or docs exposure as safe to merge into `main`.
 
 ## Risk evidence
 
-- Current merge review packet summary: HEAD `b1887d5`; root markdown file count `1791`; `docs/index.html` `190 lines`; GitHub Pages source `main:/docs`; recommendation **REVIEW_REQUIRED** until the branch diff and Pages source are accepted.
+- Final readiness packet summary: HEAD `d7f853e`; changed files vs `origin/main` `1643`; GitHub Pages source `main:/docs`; Pages source mismatch risk unresolved; recommendation **REVIEW_REQUIRED**; automatic merge **not authorized**.
 - Review packet exposure: [[section-main-merge-diff-review-packet-2026-05-07]], [[coverage-main-merge-diff-review-packet-2026-05-07]], [[manifest-main-merge-diff-review-packet-2026-05-07]].
-- Branch comparison: `origin/main..HEAD` remains subject to review; do not treat the branch diff as accepted in this lane.
-- Baseline inventory for the recommendation gate: root markdown file count **1,791**; `docs/index.html` **190 lines**.
-- Interpretation: this is not yet an accepted publication delta. A merge to `main` requires human/process-owner acceptance of the branch diff, the `docs/index.html` section preservation, and the Pages source `main:/docs` risk.
+- Branch comparison: `origin/main..HEAD` remains subject to review; do not treat the `1643` changed files as accepted in this lane.
+- Evidence handoff: [[source-final-main-merge-evidence-bundle-d7f853e-2026-05-07]] and [[process-final-main-merge-readiness-packet-2026-05-07]].
+- Interpretation: this is not yet an accepted publication delta. A merge to `main` requires human/process-owner acceptance of the branch diff, the `docs/index.html` section preservation, and the Pages source `main:/docs` mismatch risk.
 
 ## Checks
 
@@ -22,4 +22,4 @@ Expose the current main-merge risk before treating local `docs/index.html` resto
 
 ## Stop line
 
-Do not merge or publish this branch to `main` from this lane. Treat the gate as **review required** until the main/process owner explicitly reviews HEAD `b1887d5`, the branch diff, root markdown file count `1791`, `docs/index.html` `190 lines`, and the Pages source `main:/docs` publication risk.
+Do not merge or publish this branch to `main` from this lane. Treat the gate as **REVIEW_REQUIRED** until the main/process owner explicitly reviews HEAD `d7f853e`, the `1643` changed files vs `origin/main`, `docs/index.html` section preservation, and the Pages source `main:/docs` mismatch/publication risk.

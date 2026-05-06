@@ -360,13 +360,13 @@
       "guardrails": [
         "completion means each priority axis has newcomer-facing route exposure; it does not mean equal density or publication approval",
         "select next work by newcomer first-action clarity, not by raw file count alone",
-        "preserve existing docs/index.html sections and keep docs/gates.json markdown refs without ../ prefixes",
+        "preserve existing docs/index.html sections and keep docs/gates.json markdown refs without parent-directory prefixes",
         "do not commit, push, merge, rebase, publish, create new hubs, or edit README, landing, catalog, graph/data, or generated exports"
       ]
     },
     {
       "id": "main-merge-diff-risk-review",
-      "title": "Main merge diff risk review",
+      "title": "Final main merge readiness risk review",
       "status": "REVIEW_REQUIRED",
       "surface": "docs/index.html",
       "gateFile": "quality-gate-main-diff-risk-2026-05-07.md",
@@ -374,23 +374,25 @@
       "evidence": {
         "comparison": "origin/main..HEAD",
         "classification": "merge_to_main_requires_review",
-        "head": "b1887d5",
+        "head": "d7f853e",
         "pagesSource": "main:/docs",
         "reviewRequired": true,
-        "rootMarkdownFiles": 1791,
-        "docsIndexLines": 190,
-        "recommendation": "REVIEW_REQUIRED_until_diff_and_pages_source_accepted"
+        "recommendation": "REVIEW_REQUIRED",
+        "changedFilesVsOriginMain": 1643,
+        "pagesSourceMismatchRisk": true,
+        "automaticMerge": false
       },
       "guardrails": [
-        "do not merge or publish to main from this lane",
-        "treat the branch diff as outside small docs-only exposure scope",
-        "review docs/index.html section preservation before any main merge because baseline HEAD b1887d5 has root markdown 1791, docs/index.html 190 lines, and Pages source main:/docs pending acceptance",
+        "do not merge, commit, push, rebase, publish, or change Pages settings from this lane",
+        "treat changed files vs origin/main 1643 at HEAD d7f853e as requiring human/process-owner review before any main merge",
+        "Pages source main:/docs creates a mismatch/publication risk until the owner accepts the source and branch delta; HTTP 200 alone is not proof of readiness",
+        "preserve docs/index.html sections and keep docs/gates.json markdown refs without parent-directory prefixes",
         "keep this gate limited to docs/index.html, docs/gates.json, and root section/coverage/quality/manifest markdown exposure"
       ]
     },
     {
       "id": "main-merge-diff-review-packet",
-      "title": "Main merge diff review packet exposure",
+      "title": "Final main merge readiness gate exposure",
       "status": "REVIEW_REQUIRED",
       "surface": "docs/index.html",
       "section": "section-main-merge-diff-review-packet-2026-05-07.md",
@@ -398,20 +400,22 @@
       "qualityGate": "quality-gate-main-diff-risk-2026-05-07.md",
       "manifest": "manifest-main-merge-diff-review-packet-2026-05-07.md",
       "baseline": {
-        "head": "b1887d5",
-        "rootMarkdownFiles": 1791,
-        "docsIndexLines": 190,
+        "head": "d7f853e",
+        "changedFilesVsOriginMain": 1643,
+        "comparison": "origin/main..HEAD",
         "pagesSource": "main:/docs",
-        "recommendation": "REVIEW_REQUIRED_until_diff_and_pages_source_accepted",
+        "pagesSourceMismatchRisk": true,
+        "recommendation": "REVIEW_REQUIRED",
+        "automaticMerge": false,
         "status": "REVIEW_REQUIRED"
       },
       "guardrails": [
-        "expose the review packet gate only; do not merge, commit, push, rebase, or publish from this lane",
-        "preserve existing docs/index.html sections; add links inside the docs/landing exposure section only",
-        "keep review status blocking until the main/process owner reviews the branch delta and docs/index section preservation",
+        "expose the final readiness gate only; do not merge, commit, push, rebase, publish, or change Pages settings from this lane",
+        "preserve existing docs/index.html sections; add/update links inside the docs/landing exposure section only",
+        "keep review status blocking until the main/process owner reviews HEAD d7f853e, changed files vs origin/main 1643, and Pages source main:/docs mismatch risk",
         "do not expand README, landing pages, catalogs, graph/data, or generated exports in this lane"
       ],
-      "summary": "Merge review recommendation gate: baseline HEAD b1887d5; root markdown 1791; docs/index.html 190 lines; GitHub Pages source main:/docs; REVIEW_REQUIRED until diff and Pages source are accepted."
+      "summary": "Final main merge readiness gate: HEAD d7f853e; changed files vs origin/main 1643; recommendation REVIEW_REQUIRED; Pages source main:/docs mismatch risk; no automatic merge."
     }
   ]
 }
