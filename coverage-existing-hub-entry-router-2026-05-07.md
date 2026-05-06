@@ -11,6 +11,8 @@ This coverage note records whether the existing-hub entry router is safely conne
 - Checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]
 - Section checkpoint: [[section-low-density-hub-path-exposure-2026-05-07]]
 - Coverage checkpoint: [[coverage-low-density-hub-path-exposure-2026-05-07]]
+- Quality gate: [[quality-gate-existing-hub-entry-router-2026-05-07]]
+- Manifest: [[manifest-existing-hub-entry-router-2026-05-07]]
 
 ## Coverage status
 
@@ -18,6 +20,7 @@ This coverage note records whether the existing-hub entry router is safely conne
 - Secondary path handoff: covered
 - Stop/forbidden boundary: covered
 - README/docs/landing promotion: not required in this lane
+- Root markdown exposure: covered through section, coverage, quality, and manifest anchors
 
 ## Quality gate
 

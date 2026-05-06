@@ -13,10 +13,12 @@ This coverage note verifies root-level exposure readiness for five lower-density
 | 홍보대응 | [[newcomer-path-홍보대응-대외문안-공개경계]] | [[coverage-홍보대응-대외문안-실행경계-2026-05]] | Covered through public-copy execution-boundary coverage plus press/public-statement checklist and source notes. |
 | 법령대응 | [[newcomer-path-법령대응-공개설명경계]] | [[coverage-법령대응-공개설명경계-2026-05]] | Covered through legal public-explanation boundary coverage plus legislative-notice and legal-review checklists. |
 | 협업회의운영 | [[newcomer-path-협업회의운영-회의결과-공개경계-2026-05]] | [[coverage-정보공개기록관리-협업회의-실행경계-2026-05]] | Covered through shared records/collaboration meeting execution-boundary coverage plus meeting-results and follow-up checklists. |
+| 기존 허브 진입 | [[router-existing-hub-entry-index-2026-05-07]] | [[coverage-existing-hub-entry-router-2026-05-07]] | Covered through existing-hub-first routing plus [[quality-gate-existing-hub-entry-router-2026-05-07]] and [[manifest-existing-hub-entry-router-2026-05-07]]. |
 
 ## Related section
 
-- [[section-low-density-hub-path-exposure-2026-05-07]] is the section-level entrypoint for these five axes.
+- [[section-low-density-hub-path-exposure-2026-05-07]] is the section-level entrypoint for these five axes plus the existing-hub entry router overlay.
+- [[quality-gate-existing-hub-entry-router-2026-05-07]] and [[manifest-existing-hub-entry-router-2026-05-07]] provide the router-specific quality/manifest exposure without README/docs/landing promotion.
 
 ## Docs exposure
 
