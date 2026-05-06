@@ -103,6 +103,8 @@
 
 - 대외협력현장소통·성과평가: [[router-대외협력현장소통-성과평가-실행경계-2026-05]] — 현장소통 기록과 성과평가 설명 경계 후보.
 
+- 감사대응·홍보대응: [[router-감사대응-홍보대응-실행경계-2026-05]] — 감사 대응 문안과 대외 홍보 문안 경계 후보.
+
 ## docs link count checkpoint
 - 2026-05-06 기준 docs/index.html GitHub `.md` 링크는 664개이며 missing 0으로 확인했다.
 - 신규 route 묶음은 [[quality-gate-new-cross-boundary-routes-2026-05]]와 [[audit-new-cross-boundary-routes-final-2026-05]]에서 중복 노출과 안전성을 함께 점검한다.
