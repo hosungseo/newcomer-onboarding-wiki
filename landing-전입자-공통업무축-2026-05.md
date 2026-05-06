@@ -161,6 +161,7 @@
 - [[router-협업회의운영-성과평가-실행경계-2026-05]] — 회의 운영 사실과 성과평가 설명 경계를 나누는 신규 교차 router.
 - [[coverage-협업회의운영-성과평가-실행경계-2026-05]] — 협업회의운영·성과평가 router/manifest/quality 삼각형 coverage.
 - [[release-note-협업회의운영-성과평가-실행경계-2026-05]] — 신규 교차 route 포함 진입점과 노출 상태 요약.
+- [[router-계약조달-성과평가-실행경계-2026-05]] — 계약 절차 사실과 성과평가 설명 경계를 나누는 신규 교차 router.
 - [[release-note-execution-boundary-route-aliases-2026-05]] — 실행경계 alias 묶음의 release note와 노출 상태 요약.
 - [[router-장관보고-성과평가-실행경계-2026-05]] — 장관보고 설명과 성과평가 판단을 섞지 않게 보내는 신규 교차 router.
 - [[coverage-장관보고-성과평가-실행경계-2026-05]] — 장관보고·성과평가 router/manifest/quality 삼각형 coverage.
