@@ -27,6 +27,12 @@ Use this router when a newcomer question feels like it may need a new hub, but t
 - Quality gate: [[quality-gate-router-existing-hub-entry-index-2026-05-07]]
 - Manifest: [[manifest-router-existing-hub-entry-index-2026-05-07]]
 
+## Review controls
+
+- Promotion checklist: [[checklist-router-existing-hub-entry-promotion-safety-2026-05-07]]
+- Existing-entry decision checklist: [[checklist-existing-hub-entry-decision-2026-05-07]]
+- Docs/gates exposure review: [[process-docs-gates-index-exposure-review-2026-05-07]]
+
 ## Minimal handoff
 
 ```text
