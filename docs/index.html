@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>신규공무원 적응 위키 · 관문</title>
-<meta name="description" content="신규·전입 공무원이 상황을 고르면 읽어야 할 공개 자료를 안내하는 아키네이터식 관문">
-<meta property="og:title" content="신규공무원 적응 위키">
-<meta property="og:description" content="상황을 고르면 알맞은 공개 자료로 안내합니다">
+<title>신규공무원 온보딩 위키 · 관문</title>
+<meta name="description" content="신규·전입 공무원이 상황을 고르면 FAQ, path, checklist, 공개 근거자료로 이어지는 온보딩 관문">
+<meta property="og:title" content="신규공무원 온보딩 위키">
+<meta property="og:description" content="상황을 고르면 FAQ, path, checklist, 공개 근거자료로 안내합니다">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <style>
@@ -433,8 +433,9 @@ function renderLanding() {
   const hero = document.createElement('section');
   hero.className = 'hero';
   hero.innerHTML = `
-    <h1>상황을 고르면, 읽을 자료를 안내합니다</h1>
-    <p>신규·전입 공무원이 마주치는 상황별로 공개 자료를 엮어놓았습니다. 한 번의 선택으로 시작하세요.</p>
+    <h1>상황을 고르면, 첫 업무 경로를 안내합니다</h1>
+    <p>신규·전입 공무원이 마주치는 질문을 업무축별 FAQ, path, checklist, 공개 근거자료로 이어 줍니다. 개인정보·비공개 내부검토·미확정 정책안은 제외하고, 공개 가능한 실행경계부터 확인합니다.</p>
+    <p class="hero-update"><strong>2026-05-07 업데이트</strong> · 정보공개, 협업회의, 계약조달, 조직정원, 예산, 민원, 감사, 국회, 홍보, 법령대응 축을 실행경계 중심으로 보강했습니다.</p>
   `;
   app.appendChild(hero);
 
