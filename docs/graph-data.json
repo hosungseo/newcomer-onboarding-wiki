@@ -1,8 +1,8 @@
 {
   "repo": "hosungseo/newcomer-onboarding-wiki",
   "stats": {
-    "nodes": 422,
-    "links": 2785,
+    "nodes": 431,
+    "links": 2864,
     "rawNodes": 118
   },
   "nodes": [
@@ -58,9 +58,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-공무원-승진.md\n• concept-공무원-승진후보자명부.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 12,
+      "degreeIn": 13,
       "degreeOut": 5,
-      "degree": 17
+      "degree": 18
     },
     {
       "id": "concept-공무원-경력평정.md",
@@ -72,9 +72,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-공무원-성과관리.md\n• section-국가인재원-신규자과정-인사제도.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 24,
+      "degreeIn": 25,
       "degreeOut": 9,
-      "degree": 33
+      "degree": 34
     },
     {
       "id": "concept-공무원-근무성적평가.md",
@@ -86,9 +86,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-공무원-성과관리.md\n• section-국가인재원-신규자과정-인사제도.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 17,
+      "degreeIn": 18,
       "degreeOut": 7,
-      "degree": 24
+      "degree": 25
     },
     {
       "id": "concept-공무원-근속승진.md",
@@ -226,9 +226,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-공무원-성과관리.md\n• section-국가인재원-신규자과정-인사제도.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 42,
+      "degreeIn": 44,
       "degreeOut": 22,
-      "degree": 64
+      "degree": 66
     },
     {
       "id": "concept-공무원-승진후보자명부.md",
@@ -240,9 +240,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-공무원-승진.md\n• concept-공무원-경력평정.md\n• concept-공무원-근무성적평가.md\n• parent source notes:",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 24,
+      "degreeIn": 25,
       "degreeOut": 11,
-      "degree": 35
+      "degree": 36
     },
     {
       "id": "concept-공무원-여비.md",
@@ -422,9 +422,9 @@
       "preview": "• type: concept\n• derived from:\n• process-공무원-특별승진-절차.md\n• concept-공무원-특별승진.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 12,
+      "degreeIn": 13,
       "degreeOut": 10,
-      "degree": 22
+      "degree": 23
     },
     {
       "id": "concept-공무원-특별승진-공적설명절차.md",
@@ -436,9 +436,9 @@
       "preview": "• type: concept\n• derived from:\n• process-공무원-특별승진-절차.md\n• concept-공무원-특별승진.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 13,
+      "degreeIn": 14,
       "degreeOut": 8,
-      "degree": 21
+      "degree": 22
     },
     {
       "id": "concept-공무원-특별승진-보고서작성.md",
@@ -464,9 +464,9 @@
       "preview": "• type: concept\n• derived from:\n• process-공무원-특별승진-절차.md\n• concept-공무원-특별승진.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 14,
+      "degreeIn": 15,
       "degreeOut": 8,
-      "degree": 22
+      "degree": 23
     },
     {
       "id": "concept-공무원-특별승진-역량면접.md",
@@ -506,9 +506,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-공무원-승진.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md\n• source-인사혁신처-2025-신규공무원-안내서.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 30,
+      "degreeIn": 31,
       "degreeOut": 15,
-      "degree": 45
+      "degree": 46
     },
     {
       "id": "concept-공무원-휴가.md",
@@ -548,9 +548,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-공무원-휴직.md\n• concept-공무원-경력평정.md\n• concept-공무원-승진후보자명부.md\n• parent source notes:",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 13,
+      "degreeIn": 15,
       "degreeOut": 10,
-      "degree": 23
+      "degree": 25
     },
     {
       "id": "concept-다중운집인파-안전관리-기본구조.md",
@@ -758,9 +758,9 @@
       "preview": "• type: concept\n• derived from:\n• process-행정문서-기안.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md\n• source page: https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 19,
+      "degreeIn": 21,
       "degreeOut": 7,
-      "degree": 26
+      "degree": 28
     },
     {
       "id": "concept-행정문서-기안자격과전자문자서명-구분.md",
@@ -772,9 +772,9 @@
       "preview": "• type: concept\n• derived from:\n• process-행정문서-기안.md\n• concept-행정문서-공무직과임기제-기안가능범위.md\n• concept-행정문서-전자문자서명.md\n• parent source notes:",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 4,
+      "degreeIn": 5,
       "degreeOut": 8,
-      "degree": 12
+      "degree": 13
     },
     {
       "id": "concept-행정문서-문서관리카드-기안.md",
@@ -828,9 +828,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정문서-비공무원-계정부여와보안조치.md\n• concept-행정문서-공무직과임기제-기안가능범위.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 11,
+      "degreeIn": 13,
       "degreeOut": 8,
-      "degree": 19
+      "degree": 21
     },
     {
       "id": "concept-행정문서-비공무원-계정부여와보안조치.md",
@@ -842,9 +842,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정문서-공무직과임기제-기안가능범위.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md\n• source page: https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 19,
+      "degreeIn": 22,
       "degreeOut": 7,
-      "degree": 26
+      "degree": 29
     },
     {
       "id": "concept-행정문서-비공무원-계정접근기간과권한범위.md",
@@ -856,9 +856,23 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정문서-비공무원-계정부여와보안조치.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md\n• source page: https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 9,
+      "degreeIn": 12,
       "degreeOut": 8,
-      "degree": 17
+      "degree": 20
+    },
+    {
+      "id": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "path": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "slug": "concept-행정문서-비공무원-보안조치-묶음구조",
+      "file": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "title": "concept — 행정문서 비공무원 보안조치의 묶음구조",
+      "summary": "- derived from:",
+      "preview": "• type: concept\n• derived from:\n• concept-행정문서-비공무원-계정부여와보안조치.md\n• concept-행정문서-비공무원-계정접근기간과권한범위.md\n• concept-행정문서-보안서약서.md\n• parent source notes:",
+      "kind": "concept",
+      "isRaw": false,
+      "degreeIn": 3,
+      "degreeOut": 9,
+      "degree": 12
     },
     {
       "id": "concept-행정문서-성립과효력.md",
@@ -884,9 +898,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정문서-행정전자서명.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md\n• source-전자정부법.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 18,
+      "degreeIn": 19,
       "degreeOut": 11,
-      "degree": 29
+      "degree": 30
     },
     {
       "id": "concept-행정문서-인증관리센터와인증기관-차이.md",
@@ -968,9 +982,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정문서-성립과효력.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md\n• source page: https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 11,
+      "degreeIn": 12,
       "degreeOut": 6,
-      "degree": 17
+      "degree": 18
     },
     {
       "id": "concept-행정문서-전자정부법시행령-제28조와제29조-관계.md",
@@ -982,9 +996,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정문서-행정전자서명.md\n• concept-행정문서-인증관리센터.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 21,
+      "degreeIn": 22,
       "degreeOut": 15,
-      "degree": 36
+      "degree": 37
     },
     {
       "id": "concept-행정문서-제89조-인증업무위탁기준.md",
@@ -1099,6 +1113,20 @@
       "degree": 45
     },
     {
+      "id": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "path": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "slug": "concept-행정안전부-공여구역주변지역지원-업무축",
+      "file": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "title": "concept — 행정안전부 공여구역 주변지역 등 지원 업무축",
+      "summary": "- derived from:",
+      "preview": "• type: concept\n• derived from:\n• concept-행정안전부-지역발전지원-업무축.md\n• concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md\n• hub-행정안전부.md\n• parent source notes:",
+      "kind": "concept",
+      "isRaw": false,
+      "degreeIn": 1,
+      "degreeOut": 7,
+      "degree": 8
+    },
+    {
       "id": "concept-행정안전부-기능과조직단위-연결축.md",
       "path": "concept-행정안전부-기능과조직단위-연결축.md",
       "slug": "concept-행정안전부-기능과조직단위-연결축",
@@ -1136,9 +1164,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정안전부-기능과조직단위-연결축.md\n• hub-행정안전부.md\n• parent source notes:\n• source-정부조직법-행정안전부.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 18,
+      "degreeIn": 19,
       "degreeOut": 25,
-      "degree": 43
+      "degree": 44
     },
     {
       "id": "concept-행정안전부-재난안전관리본부-안전재난복구비상대비연결축.md",
@@ -1178,9 +1206,9 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md\n• hub-행정안전부.md\n• parent source notes:\n• source-행정안전부-자치혁신실-주요업무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 7,
+      "degreeIn": 8,
       "degreeOut": 7,
-      "degree": 14
+      "degree": 15
     },
     {
       "id": "concept-행정안전부-지방자치제도-업무축.md",
@@ -1220,9 +1248,23 @@
       "preview": "• type: concept\n• derived from:\n• concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md\n• hub-행정안전부.md\n• parent source notes:\n• source-행정안전부-자치혁신실-주요업무.md",
       "kind": "concept",
       "isRaw": false,
-      "degreeIn": 7,
+      "degreeIn": 9,
       "degreeOut": 8,
-      "degree": 15
+      "degree": 17
+    },
+    {
+      "id": "concept-행정안전부-지역발전지원-child-두께현황-2026-04.md",
+      "path": "concept-행정안전부-지역발전지원-child-두께현황-2026-04.md",
+      "slug": "concept-행정안전부-지역발전지원-child-두께현황-2026-04",
+      "file": "concept-행정안전부-지역발전지원-child-두께현황-2026-04.md",
+      "title": "concept — 행정안전부 지역발전지원 child 두께 현황 (2026-04)",
+      "summary": "- scope: 자치혁신실 -> 지역발전지원 아래 child note들의 현재 두께를 newcomer 관점에서 빠르게 파악하는 운영용 개념 note",
+      "preview": "• type: concept\n• scope: 자치혁신실 -> 지역발전지원 아래 child note들의 현재 두께를 newcomer 관점에서 빠르게 파악하는 운영용 개념 note\n• based on:\n• concept-행정안전부-지역발전지원-업무축.md\n• faq-지역발전지원-child-질문은-어떤-순서로-나눠-봐야-하나.md\n• faq-접경권-발전-지원-note는-행안부-어느-조직과-연결되나.md",
+      "kind": "concept",
+      "isRaw": false,
+      "degreeIn": 0,
+      "degreeOut": 2,
+      "degree": 2
     },
     {
       "id": "concept-행정안전부-참여혁신조직실-문서민원정보공개연결축.md",
@@ -1332,9 +1374,9 @@
       "preview": "공무직·임기제의 기안 가능 범위 질문만 따로 떼어,\n한 줄 답 + 연결 note 구조로 정리한 소형 FAQ다.\n• 임기제공무원과 공무직을 같은 범주로 오해하는 지점을 바로잡는다.\n• 원칙과 예외, 그리고 예외 허용 조건을 newcomer 기준으로 정리한다.\n**한 줄 답:** 편람의 공무원이면 누구든지 기안자가 된다는 원칙에 비추어 보면, 임기제공무원은 공무원 축에서 읽는 것이 자연스럽다.\n• concept-행정문서-공무직과임기제-기안가능범위.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 5,
+      "degreeIn": 7,
       "degreeOut": 4,
-      "degree": 9
+      "degree": 11
     },
     {
       "id": "faq-공무직에게-업무관리시스템-계정을-줄-수-있나.md",
@@ -1346,9 +1388,9 @@
       "preview": "비공무원 계정 부여 질문만 따로 떼어,\n한 줄 답 + 연결 note 구조로 정리한 소형 FAQ다.\n• 공무직 등 비공무원에게 시스템 계정을 줄 수 있는지와, 왜 보안조치가 먼저 붙는지를 newcomer 기준으로 정리한다.\n• 기안 가능 범위 질문 안에 숨어 있던 계정·보안 조건을 따로 분리한다.\n**한 줄 답:** 원칙적으로는 아니지만, 기관장 책임 아래 보안조치와 권한 제한을 전제로 제한적으로 허용할 수 있다.\n• concept-행정문서-비공무원-계정부여와보안조치.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 4,
+      "degreeIn": 5,
       "degreeOut": 5,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "faq-공적설명절차는-무엇을-하나.md",
@@ -1418,6 +1460,20 @@
       "isRaw": false,
       "degreeIn": 3,
       "degreeOut": 8,
+      "degree": 11
+    },
+    {
+      "id": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "path": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "slug": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나",
+      "file": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "title": "FAQ — 기안자격 질문은 어떤 순서로 나눠 봐야 하나",
+      "summary": "기안자격 질문은 한꺼번에 보면 헷갈리기 쉽고,",
+      "preview": "기안자격 질문은 한꺼번에 보면 헷갈리기 쉽고,\n임기제공무원은 공무원 축인가 → 공무직은 왜 원칙적으로 안 되나 → 예외허용엔 왜 보안조치가 붙나 → 채용목적·부득이한 경우는 어떻게 좁게 읽나 순으로 나누면 가장 빠르다.\n• newcomer가 임기제공무원, 공무직, 비공무원 계정, 보안조치, 채용목적, 부득이한 경우를 한꺼번에 묻는 상황에서 첫 분기 entry를 제공한다.\n• 누가 기안할 수 있는가라는 질문 안에서도 공무원 원칙, 비공무원 예외, 예외 조건 해석을 서로 다른 층위로 나눠 준다.\n• 문서축에서 기안자격 브랜치를 전자문자서명 브랜치와 분리해 newcomer routing을 더 선명하게 만든다.\n**한 줄 답:** 임기제공무원도 되나, 공무직도 되나, 예외는 언제 되나, 왜 보안조건이 붙나가 전부 같은 질문처럼 보이지만, 실제로는 공무원 원칙, 비공무원 예외, 예외 조건 해석이라는 다른 층위이기 때문이다.",
+      "kind": "faq",
+      "isRaw": false,
+      "degreeIn": 1,
+      "degreeOut": 10,
       "degree": 11
     },
     {
@@ -1514,9 +1570,9 @@
       "preview": "비공무원 계정 부여·기안 예외 문맥의 보안서약서 질문만 따로 떼어,\n한 줄 답 + 연결 note 구조로 정리한 소형 FAQ다.\n• 왜 보안서약서를 쓰게 하냐 같은 newcomer 질문을 빠르게 설명한다.\n• 비공무원 계정부여와 보안조치 / 기안 가능 범위 note 사이를 질문 기준으로 연결한다.\n**한 줄 답:** 비공무원에게 시스템 접근을 예외적으로 허용할 때는 기관장 책임 아래 보안조치를 먼저 갖춰야 하기 때문이다.\n• concept-행정문서-보안서약서.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 2,
-      "degreeOut": 3,
-      "degree": 5
+      "degreeIn": 3,
+      "degreeOut": 4,
+      "degree": 7
     },
     {
       "id": "faq-사전예고되지-않은-비유형-공적도-특별승진이-가능한가.md",
@@ -1531,6 +1587,20 @@
       "degreeIn": 2,
       "degreeOut": 3,
       "degree": 5
+    },
+    {
+      "id": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "path": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "slug": "faq-승진경력-인정과-자동승진은-왜-다른가",
+      "file": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "title": "FAQ — 승진경력 인정과 자동승진은 왜 다른가",
+      "summary": "휴직이나 육아휴직 기간이 승진경력으로 인정된다는 말은",
+      "preview": "휴직이나 육아휴직 기간이 승진경력으로 인정된다는 말은\n그 기간이 승진 판단의 재료에 들어간다는 뜻이지, 때가 되면 자동으로 승진한다는 뜻은 아니다.\n• 육아휴직 전체 기간 인정 = 바로 승진으로 오해하는 newcomer 질문을 바로 분리한다.\n• 휴직, 경력평정, 승진후보자명부, 승진 note 사이를 질문 기준으로 다시 연결한다.\n• 최근 제도개선 설명과 승진 일반 구조를 한 문장 안에서 섞어 읽는 혼동을 줄인다.\n**한 줄 답:** 승진경력 인정은 승진을 위한 근무경력 재료를 보완하는 것이고, 실제 승진은 승진후보자명부, 결원, 심사 범위, 평가 결과까지 함께 봐야 하기 때문이다.",
+      "kind": "faq",
+      "isRaw": false,
+      "degreeIn": 1,
+      "degreeOut": 10,
+      "degree": 11
     },
     {
       "id": "faq-승진후보자명부는-무엇으로-정해지나.md",
@@ -1752,9 +1822,23 @@
       "preview": "예전에 이미 쓴 육아휴직도 승진경력으로 다시 인정되나?라는 질문을 바로 받기 위한 소형 FAQ다.\n• 육아휴직 전체 기간 인정과 소급 인정을 newcomer 기준으로 짧게 정리한다.\n• 휴직, 경력평정, 승진후보자명부, 승진 note 사이를 질문 기준으로 다시 연결한다.\n• 육아휴직 전체 기간 인정과 자동 승진을 혼동하는 지점을 분리한다.\n**한 줄 답:** 공식 설명에 따르면 개정안 시행일 이전에 사용한 육아휴직도 현 직급에서 사용한 휴직이면 소급해 경력으로 인정되도록 했다.\n• concept-공무원-휴직과승진경력인정.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 5,
+      "degreeIn": 7,
       "degreeOut": 6,
-      "degree": 11
+      "degree": 13
+    },
+    {
+      "id": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "path": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "slug": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나",
+      "file": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "title": "FAQ — 인구감소지역 지원 특별법 note는 행안부 어느 조직과 연결되나",
+      "summary": "현재 newcomer wiki에서 인구감소지역 지원 특별법을 행정안전부 조직축에 붙일 때 가장 가까운 entry는 자치혁신실 아래 지방소멸대응 branch다.",
+      "preview": "현재 newcomer wiki에서 인구감소지역 지원 특별법을 행정안전부 조직축에 붙일 때 가장 가까운 entry는 자치혁신실 아래 지방소멸대응 branch다.\n• 인구감소지역 지원 특별법을 막연한 정책명이 아니라 행정안전부 안의 실제 업무 branch로 다시 붙인다.\n• 인구감소지역 지정, 지방소멸대응기금, 고향사랑기부제와의 sibling 관계를 고정한다.\n• 아직 세부 permanent note가 두껍지 않은 상태에서도 newcomer가 길을 잃지 않게 한다.\n**한 줄 답:** 가장 가까운 조직축은 자치혁신실이고, 그 안에서도 지방소멸대응 branch와 직접 연결된다.\n• concept-행정안전부-지방소멸대응-업무축.md",
+      "kind": "faq",
+      "isRaw": false,
+      "degreeIn": 0,
+      "degreeOut": 5,
+      "degree": 5
     },
     {
       "id": "faq-인증관리센터는-무엇을-하나.md",
@@ -1780,9 +1864,9 @@
       "preview": "인증관리센터와 인증기관의 차이 질문만 따로 떼어,\n한 줄 답 + 연결 note 구조로 정리한 소형 FAQ다.\n• 인증관리센터와 인증기관이 왜 같은 말이 아닌지 newcomer 기준으로 빠르게 설명한다.\n• 제28조/제29조 관계 안에 숨어 있던 용어 구분을 더 잘게 읽게 한다.\n**한 줄 답:** 인증관리센터는 행정안전부 안에 설치된 주체이고, 인증기관은 인증관리센터와 위탁기관을 함께 묶는 범주다.\n• concept-행정문서-인증관리센터와인증기관-차이.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 4,
+      "degreeIn": 5,
       "degreeOut": 5,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "faq-일반승진심사-배수범위는-어떻게-정해지나.md",
@@ -1808,9 +1892,9 @@
       "preview": "임기제공무원과 공무직을 같은 범주로 오해하는 지점을 바로잡기 위해,\n임기제공무원의 기안 가능 여부만 따로 떼어 정리한 소형 FAQ다.\n• 임기제공무원도 기안 가능한가라는 질문에 가장 짧고 정확하게 답한다.\n• 공무원과 비공무원을 나누는 축이 왜 중요한지 newcomer 기준으로 정리한다.\n• 공무직 예외 허용 질문과 임기제공무원 원칙 질문을 분리해 준다.\n**한 줄 답:** 편람의 공무원이면 누구든지 기안자가 된다는 원칙에 비추어 보면, 임기제공무원은 공무원 축에서 읽는 것이 자연스럽다.",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 5,
+      "degreeIn": 6,
       "degreeOut": 4,
-      "degree": 9
+      "degree": 10
     },
     {
       "id": "faq-자기개발학습은-어떻게-운영되나.md",
@@ -1948,9 +2032,23 @@
       "preview": "행정전자서명 인증 문맥의 시행령 제28조 / 제29조 질문만 따로 떼어,\n한 줄 답 + 연결 note 구조로 정리한 소형 FAQ다.\n• 제28조랑 제29조가 왜 같이 나오냐는 newcomer 질문을 빠르게 설명한다.\n• 행정전자서명 / 인증관리센터 note 사이에 숨어 있던 법령 연결부를 질문 기준으로 정리한다.\n**한 줄 답:** 제28조는 인증관리센터를 두는 설치 조항이고, 제29조는 인증관리센터와 위탁기관이 인증기관으로서 인증업무를 수행하는 방식을 정한 조항이다.\n• concept-행정문서-전자정부법시행령-제28조와제29조-관계.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 3,
+      "degreeIn": 4,
       "degreeOut": 6,
-      "degree": 9
+      "degree": 10
+    },
+    {
+      "id": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "path": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "slug": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가",
+      "file": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "title": "FAQ — 접근기간과 권한범위는 왜 기관책임 문제이기도 한가",
+      "summary": "비공무원 예외허용에서 접근기간과 권한범위는 단순 설정값이 아니라, 기관이 얼마나 좁게 책임 있게 허용할지를 보여 주는 실무적 표현이다.",
+      "preview": "비공무원 예외허용에서 접근기간과 권한범위는 단순 설정값이 아니라, 기관이 얼마나 좁게 책임 있게 허용할지를 보여 주는 실무적 표현이다.\n• newcomer가 접근기간·권한범위를 기술 설정이 아니라 책임 구조의 일부로 읽게 한다.\n• 기관장 책임과 제한적 접속허용 다음 단계에서, 그 책임이 실제로 어떻게 구현되는지 보여 준다.\n• 비공무원 예외허용 브랜치에서 누가 책임지나와 어디까지·얼마 동안 허용하나를 직접 이어 주는 entry 역할을 한다.\n**한 줄 답:** 비공무원 예외허용은 기관이 책임지고 좁게 허용하는 구조이므로, 실제 책임은 얼마 동안과 어디까지를 정하는 방식으로 드러나기 때문이다.\n• concept-행정문서-비공무원-계정접근기간과권한범위.md",
+      "kind": "faq",
+      "isRaw": false,
+      "degreeIn": 1,
+      "degreeOut": 4,
+      "degree": 5
     },
     {
       "id": "faq-접근기간과-권한범위는-왜-따로-정하나.md",
@@ -1962,9 +2060,9 @@
       "preview": "비공무원 계정 예외 허용에서 왜 접근기간과 권한범위가 같이 붙는지,\n한 줄 답 + 연결 note 구조로 정리한 소형 FAQ다.\n• 계정을 줄 수 있느냐 다음에 따라오는 얼마 동안 / 어디까지 질문을 newcomer 기준으로 분리한다.\n• 비공무원 계정부여와 보안조치 note 안의 시간 제한과 범위 제한을 더 잘게 읽게 한다.\n**한 줄 답:** 비공무원 계정 예외 허용은 필요한 기간과 필요한 업무 범위 안에서만 제한적으로 열어 주는 구조이기 때문이다.\n• concept-행정문서-비공무원-계정접근기간과권한범위.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 3,
+      "degreeIn": 5,
       "degreeOut": 4,
-      "degree": 7
+      "degree": 9
     },
     {
       "id": "faq-제89조-위탁기관은-어떻게-읽나.md",
@@ -2018,9 +2116,9 @@
       "preview": "지방소멸대응 관련 note를 행정안전부 안에서 어디에 놓아야 하는지 빠르게 찾게 해 주는 소형 FAQ다.\n• 지방소멸대응을 추상 정책 구호가 아니라 행정안전부의 실제 업무축으로 다시 읽게 한다.\n• 자치혁신실과 지방소멸대응 child page를 가장 짧게 연결한다.\n• 이후 인구감소지역, 지방소멸대응기금, 고향사랑기부제 세부 note가 늘어나더라도 기관축 진입점을 고정한다.\n**한 줄 답:** 가장 가까운 축은 자치혁신실이다.\n• concept-행정안전부-지방소멸대응-업무축.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 6,
+      "degreeIn": 7,
       "degreeOut": 5,
-      "degree": 11
+      "degree": 12
     },
     {
       "id": "faq-지방자치제도-note는-행안부-어느-조직과-연결되나.md",
@@ -2063,6 +2161,20 @@
       "degreeIn": 2,
       "degreeOut": 4,
       "degree": 6
+    },
+    {
+      "id": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "path": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "slug": "faq-채용목적에-따른-업무범위는-어떻게-읽나",
+      "file": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "title": "FAQ — 채용목적에 따른 업무범위는 어떻게 읽나",
+      "summary": "공무직 예외허용에서 자주 놓치는 문구가 채용목적에 따른 업무범위 내다.",
+      "preview": "공무직 예외허용에서 자주 놓치는 문구가 채용목적에 따른 업무범위 내다.\n이 FAQ는 왜 이 문구가 붙고, 무엇을 제한하는지 newcomer 기준으로 짧게 답한다.\n• 공무직 예외허용이 아무 업무나 맡길 수 있다는 뜻이 아니라는 점을 고정한다.\n• 보안조치, 부득이한 경우, 업무범위를 한 덩어리로 읽게 한다.\n• broad FAQ인 공무직도 기안할 수 있나에서 한 단계 더 내려간 entry를 제공한다.\n**한 줄 답:** 편람이 비공무원 예외허용을 허용하면서도, 그 범위를 애초 채용된 목적과 맡은 업무 안으로 제한해 두기 때문이다.",
+      "kind": "faq",
+      "isRaw": false,
+      "degreeIn": 2,
+      "degreeOut": 5,
+      "degree": 7
     },
     {
       "id": "faq-추서승진은-어떤-경우-가능한가.md",
@@ -2133,6 +2245,20 @@
       "degreeIn": 4,
       "degreeOut": 12,
       "degree": 16
+    },
+    {
+      "id": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "path": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "slug": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나",
+      "file": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "title": "FAQ — 특별승진질문은 어떤 순서로 나눠 봐야 하나",
+      "summary": "특별승진 질문은",
+      "preview": "특별승진 질문은\n어떤 경우 가능한가 → 일반승진과 뭐가 다른가 → 절차는 어떻게 가나 → 공적설명절차는 무엇인가 → 사전예고 예외와 30% 운영기준은 어떻게 읽나 순으로 나누면 가장 빠르다.\n• newcomer가 특별승진은 누가 대상인지, 절차가 어떻게 되는지, 공적설명절차·사전예고예외·30% 기준은 어디서 갈라지는지를 한 번에 묻는 상황에서 첫 분기 entry를 제공한다.\n• 특별승진, 특별승진 절차, 공적설명절차, 사전예고 예외, 30% 운영기준 사이를 질문 순서대로 연결한다.\n• 기존 승진축의 특별승진 lower-level note로 정확히 내려보내는 canonical answer 역할을 한다.\n**한 줄 답:** 먼저 특별승진이 어떤 경우 가능한가를 보고, 그다음 일반승진과 다른 별도 트랙이라는 점을 잡은 뒤, 절차와 세부 운영기준으로 내려가면 된다.",
+      "kind": "faq",
+      "isRaw": false,
+      "degreeIn": 0,
+      "degreeOut": 9,
+      "degree": 9
     },
     {
       "id": "faq-행정구역-note는-행안부-어느-조직과-연결되나.md",
@@ -2242,9 +2368,9 @@
       "preview": "휴직과 승진경력 인정 질문만 따로 떼어,\n한 줄 답 + 연결 note 구조로 정리한 소형 FAQ다.\n• 휴직하면 승진에서 손해만 보는가라는 newcomer 질문을 빠르게 정리한다.\n• 휴직 / 경력평정 / 승진후보자명부 / 승진 note 사이를 질문 기준으로 연결한다.\n**한 줄 답:** 아니다. 휴직 종류와 경력 인정 규칙에 따라 승진경력 반영 방식이 달라진다.\n• concept-공무원-휴직과승진경력인정.md",
       "kind": "faq",
       "isRaw": false,
-      "degreeIn": 4,
+      "degreeIn": 8,
       "degreeOut": 9,
-      "degree": 13
+      "degree": 17
     },
     {
       "id": "faq-AI적응과업무시스템은-행안부-어느-조직과-가까운가.md",
@@ -2340,9 +2466,9 @@
       "preview": "• type: hub\n• institution: 행정안전부\n• based on:\n• source-정부조직법-행정안전부.md\n• source-행정안전부-직제.md\n• source-행정안전부-직제-시행규칙.md",
       "kind": "hub",
       "isRaw": false,
-      "degreeIn": 45,
+      "degreeIn": 47,
       "degreeOut": 104,
-      "degree": 149
+      "degree": 151
     },
     {
       "id": "link-manifest-행정안전부-인사혁신처-기획재정부-2026-04.md",
@@ -2424,9 +2550,9 @@
       "preview": "신규공무원이 문서처리에서 자주 헷갈리는 묶음 중 하나는\n누가 기안할 수 있는가와 결재 화면의 서명은 무엇인가다.\n이 path는 공무직·임기제의 기안 가능 범위와 전자문자서명 질문을 한 번에 분류해 준다.\n임기제공무원은 공무원으로서 기안할 수 있나?\n공무직은 원칙적으로 왜 기안이 안 되고, 어떤 경우에 예외가 가능한가?\n비공무원 계정에는 왜 접근기간·권한범위·보안서약서가 붙나?",
       "kind": "path",
       "isRaw": false,
-      "degreeIn": 5,
-      "degreeOut": 23,
-      "degree": 28
+      "degreeIn": 7,
+      "degreeOut": 33,
+      "degree": 40
     },
     {
       "id": "newcomer-path-첫문서처리질문-2026-04.md",
@@ -2466,9 +2592,9 @@
       "preview": "신규공무원이 복귀를 처음 떠올릴 때 가장 헷갈리는 것은\n자동으로 돌아가는지, 무슨 절차와 서류가 필요한지, 복귀 후 경력·승진·직무가 어떻게 이어지는지다.\n이 path는 그 질문을 어느 note부터 읽어야 하는지 바로 정해준다.\n휴직 사유가 끝나면 자동으로 복귀되는가?\n복직 신청은 무엇을 기준으로 보고 준비해야 하는가?\n질병이나 공무상 재해 이후의 복귀는 일반 복직과 어떻게 이어지는가?",
       "kind": "path",
       "isRaw": false,
-      "degreeIn": 6,
-      "degreeOut": 6,
-      "degree": 12
+      "degreeIn": 7,
+      "degreeOut": 8,
+      "degree": 15
     },
     {
       "id": "newcomer-path-첫승진질문-2026-04.md",
@@ -2480,9 +2606,9 @@
       "preview": "신규공무원이 승진을 처음 떠올릴 때 가장 헷갈리는 것은\n자동인지, 무엇이 반영되는지, 가점은 무엇으로 붙는지, 명부와 심사가 어떻게 이어지는지, 역량평가는 언제 중요해지는지다.\n이 path는 그 질문을 어느 note부터 읽어야 하는지 바로 정해준다.\n승진은 연차가 차면 자동으로 되는가?\n근무성적평가·경력평정·가점은 승진과 어떻게 연결되는가?\n자격증·전문직위·특수지 근무 같은 가점은 어떻게 붙는가?",
       "kind": "path",
       "isRaw": false,
-      "degreeIn": 11,
-      "degreeOut": 25,
-      "degree": 36
+      "degreeIn": 13,
+      "degreeOut": 27,
+      "degree": 40
     },
     {
       "id": "newcomer-path-첫연금질문-2026-04.md",
@@ -2551,8 +2677,8 @@
       "kind": "path",
       "isRaw": false,
       "degreeIn": 6,
-      "degreeOut": 16,
-      "degree": 22
+      "degreeOut": 19,
+      "degree": 25
     },
     {
       "id": "next-atomization-order-인사축-2026-04.md",
@@ -2620,9 +2746,9 @@
       "preview": "• type: process\n• derived from:\n• concept-공무원-특별승진.md\n• parent source notes:\n• source-인사혁신처-2024-공무원인사실무.md\n• source-인사혁신처-2025-신규공무원-안내서.md",
       "kind": "process",
       "isRaw": false,
-      "degreeIn": 20,
+      "degreeIn": 21,
       "degreeOut": 14,
-      "degree": 34
+      "degree": 35
     },
     {
       "id": "process-국민신문고-민원상담에서민원신청까지.md",
@@ -2858,9 +2984,9 @@
       "preview": "• type: process\n• derived from:\n• section-국가인재원-신규자과정-보고서작성.md\n• process-행정문서-기안에서결재까지.md\n• parent source notes:\n• source-행정안전부-2025-행정업무운영-편람.md",
       "kind": "process",
       "isRaw": false,
-      "degreeIn": 27,
+      "degreeIn": 28,
       "degreeOut": 9,
-      "degree": 36
+      "degree": 37
     },
     {
       "id": "process-행정문서-기안에서결재까지.md",
@@ -3782,9 +3908,9 @@
       "preview": "• capture date: 2026-04-14\n• parent source note:\n• source-행정안전부-2025-행정업무운영-편람.md\n• source page:\n• https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878\n• upstream raw files:",
       "kind": "raw",
       "isRaw": true,
-      "degreeIn": 1,
+      "degreeIn": 2,
       "degreeOut": 2,
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "raw/2026-04-14-mois-ai-government/인공지능정부실_AI데이터디지털서비스_rules.md",
@@ -3936,9 +4062,9 @@
       "preview": "• source page: https://www.mois.go.kr/frt/sub/a06/b06/localAdministrationMainBis/screen.do\n• page title: 자치혁신실 > 주요업무\n• parent institution: 행정안전부\n• 상위 실: 자치혁신실\n• 직접 노출된 주요 업무/세부 서비스:\n• 공무원 노사관계",
       "kind": "raw",
       "isRaw": true,
-      "degreeIn": 10,
+      "degreeIn": 11,
       "degreeOut": 0,
-      "degree": 10
+      "degree": 11
     },
     {
       "id": "raw/2026-04-14-mois-main-business/행정안전부_지방재정경제실_주요업무_page.md",
@@ -4006,9 +4132,9 @@
       "preview": "• capture date: 2026-04-14\n• parent source note:\n• source-행정안전부-2025-행정업무운영-편람.md\n• parent derived notes:\n• concept-행정문서-공무직과임기제-기안가능범위.md\n• concept-행정문서-비공무원-계정부여와보안조치.md",
       "kind": "raw",
       "isRaw": true,
-      "degreeIn": 1,
+      "degreeIn": 2,
       "degreeOut": 3,
-      "degree": 4
+      "degree": 5
     },
     {
       "id": "raw/2026-04-14-mpm-grade5-total-vacancies/5급_승진심사_총결원_pages.md",
@@ -4538,9 +4664,9 @@
       "preview": "• source page: https://www.mois.go.kr/frt/sub/a06/b06/specialAreaDev/screen.do\n• page title: 행정안전부 > 업무안내 > 자치혁신실 > 지역발전지원 > 특수상황지역 개발\n• parent institution: 행정안전부\n• capture basis: 2026-04-15 확인 기준 공식 page\n• 상위 branch: 지역발전지원\n• left-menu에서 직접 확인되는 child page:",
       "kind": "raw",
       "isRaw": true,
-      "degreeIn": 3,
+      "degreeIn": 4,
       "degreeOut": 0,
-      "degree": 3
+      "degree": 4
     },
     {
       "id": "README.md",
@@ -4549,7 +4675,7 @@
       "file": "README.md",
       "title": "신규공무원 적응 위키",
       "summary": "🌐 **웹 관문**: https://hosungseo.github.io/newcomer-onboarding-wiki/",
-      "preview": "🌐 **웹 관문**: https://hosungseo.github.io/newcomer-onboarding-wiki/\n공공에 공개된 기관 소개, 법령, 업무계획, 보도자료, 평가자료, 통계를 바탕으로 신입·전입 공무원이 조직과 업무 맥락을 빠르게 익히도록 돕는 **public-data-first onboarding wiki**.\n• 공개 자료는 많지만 흩어져 있어 처음 들어온 사람이 읽기 어렵다.\n• 신입은 문서 제목보다 **무엇을 먼저 읽어야 하는지**가 더 필요하다.\n• 전입자는 규정은 찾아도 실제 정책 맥락과 용어 체계를 이해하는 데 시간이 걸린다.\n• 기관 소개 자료는 있어도, 신규 적응 관점에서 다시 엮인 지식층은 거의 없다.",
+      "preview": "🌐 **웹 관문**: https://hosungseo.github.io/newcomer-onboarding-wiki/\n공공에 공개된 기관 소개, 법령, 업무계획, 보도자료, 평가자료, 통계를 바탕으로 신입·전입 공무원이 조직과 업무 맥락을 빠르게 익히도록 돕는 **public-data-first onboarding wiki**.\n최근 작업은 신규·전입자가 자주 부딪히는 공통 행정업무를 **상황 → 업무축 → FAQ/path → 근거자료 → 실행경계 체크리스트** 순서로 찾도록 정리하는 방향으로 확장했습니다.\n• 주요 업무축: 정보공개·기록관리, 협업회의운영, 계약조달, 조직정원, 예산대응, 민원대응, 감사대응, 국회대응, 홍보대응, 법령대응\n• 핵심 원칙: 공개자료 기반으로 설명하고, 개인정보·비공개 내부검토·미확정 정책안·인사/감사/수사/보안/업체 민감정보는 제외\n• 읽는 방법: 먼저 웹 관문에서 상황을 고른 뒤, 관련 FAQ/path와 checklist로 내려가고 마지막에 source note로 근거를 대조",
       "kind": "readme",
       "isRaw": false,
       "degreeIn": 1,
@@ -4958,9 +5084,9 @@
       "preview": "• type: source\n• institution: 인사혁신처\n• document title: 2024 공무원 인사실무\n• source page: https://www.mpm.go.kr/mpm/comm/pblcateList/?boardId=bbs_0000000000000036&mode=view&cntId=901&category=&pageIdx=\n• raw path: raw/2026-04-13-common-onboarding/2024_공무원_인사실무.pdf\n• reference year: 2024",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 45,
+      "degreeIn": 46,
       "degreeOut": 0,
-      "degree": 45
+      "degree": 46
     },
     {
       "id": "source-인사혁신처-2025-공무원보수-등의-업무지침.md",
@@ -4986,9 +5112,9 @@
       "preview": "• type: source\n• institution: 인사혁신처\n• document title: 2025 공직을 여행하는 신규 공무원을 위한 안내서\n• source page: https://www.mpm.go.kr/mpm/comm/pblcateList/?boardId=bbs_0000000000000036&mode=view&cntId=919&category=&pageIdx=\n• raw path: raw/2026-04-13-common-core-priority-a/2025_신규공무원_안내서.pdf\n• reference year: 2025",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 43,
+      "degreeIn": 44,
       "degreeOut": 0,
-      "degree": 43
+      "degree": 44
     },
     {
       "id": "source-인사혁신처-공무원-여비-100문100답.md",
@@ -5014,9 +5140,9 @@
       "preview": "• type: source\n• institution: 인사혁신처\n• document title: (인사혁신기획과) 공무원 육아휴직 전 기간, 승진경력 인정？\n• source page: https://www.korea.kr/briefing/pressReleaseView.do?newsId=156668524&call_from=openData\n• raw path: raw/2026-04-14-mpm-promotion-live/공무원_육아휴직_승진경력_인정_press.md\n• reference year: 2024-12-31",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 6,
+      "degreeIn": 7,
       "degreeOut": 8,
-      "degree": 14
+      "degree": 15
     },
     {
       "id": "source-인사혁신처-공무원-책임보험-제도.md",
@@ -5364,9 +5490,9 @@
       "preview": "• type: source\n• institution: 행정안전부\n• document title: 2025 행정업무운영 편람\n• source page: https://www.mois.go.kr/frt/bbs/type001/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000012&nttId=122878\n• raw paths:\n• raw/2026-04-13-mois-pilot/2025_행정업무운영_편람.pdf",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 44,
+      "degreeIn": 48,
       "degreeOut": 8,
-      "degree": 52
+      "degree": 56
     },
     {
       "id": "source-행정안전부-다중운집인파-안전관리.md",
@@ -5504,9 +5630,9 @@
       "preview": "• type: source\n• institution: 행정안전부\n• document title: 자치혁신실 주요업무\n• source page: https://www.mois.go.kr/frt/sub/a06/b06/localAdministrationMainBis/screen.do\n• raw paths:\n• raw/2026-04-14-mois-main-business/행정안전부_자치혁신실_주요업무_page.md",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 14,
+      "degreeIn": 16,
       "degreeOut": 15,
-      "degree": 29
+      "degree": 31
     },
     {
       "id": "source-행정안전부-재난대비훈련.md",
@@ -5672,9 +5798,9 @@
       "preview": "• type: source\n• institution: 행정안전부\n• document title: 지방소멸대응\n• source page: https://www.mois.go.kr/frt/sub/a06/b06/populationDecline/screen.do\n• raw paths:\n• raw/2026-04-15-mois-local-child-pages/행정안전부_지방소멸대응_인구감소지역지정_page.md",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 7,
+      "degreeIn": 8,
       "degreeOut": 6,
-      "degree": 13
+      "degree": 14
     },
     {
       "id": "source-행정안전부-지방자치제도.md",
@@ -5714,9 +5840,9 @@
       "preview": "• type: source\n• institution: 행정안전부\n• document title: 지역발전지원\n• representative source page: https://www.mois.go.kr/frt/sub/a06/b06/specialAreaDev/screen.do\n• raw paths:\n• raw/2026-04-15-mois-local-child-pages/행정안전부_지역발전지원_특수상황지역개발_page.md",
       "kind": "source",
       "isRaw": false,
-      "degreeIn": 7,
+      "degreeIn": 8,
       "degreeOut": 6,
-      "degree": 13
+      "degree": 14
     },
     {
       "id": "source-행정안전부-직제-시행규칙.md",
@@ -12397,6 +12523,114 @@
       ]
     },
     {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "concept-행정문서-비공무원-계정부여와보안조치.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-계정부여와보안조치.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "concept-행정문서-비공무원-계정접근기간과권한범위.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-계정접근기간과권한범위.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "concept-행정문서-보안서약서.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-보안서약서.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "source-행정안전부-2025-행정업무운영-편람.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-2025-행정업무운영-편람.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "raw/2026-04-14-mois-account-scope/비공무원_계정_접근기간_권한범위_rules.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`raw/2026-04-14-mois-account-scope/비공무원_계정_접근기간_권한범위_rules.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "raw/2026-04-14-mois-security-pledge/보안서약서_rules.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`raw/2026-04-14-mois-security-pledge/보안서약서_rules.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "faq-접근기간과-권한범위는-왜-따로-정하나.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-접근기간과-권한범위는-왜-따로-정하나.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "faq-보안서약서는-왜-필요한가.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-보안서약서는-왜-필요한가.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "target": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`newcomer-path-첫기안자격과전자서명질문-2026-04.md`"
+        }
+      ]
+    },
+    {
       "source": "concept-행정문서-성립과효력.md",
       "target": "process-행정문서-기안에서결재까지.md",
       "type": "backtick-ref",
@@ -14457,6 +14691,90 @@
         {
           "type": "backtick-ref",
           "refText": "`newcomer-path-첫문서처리질문-2026-04.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "target": "concept-행정안전부-지역발전지원-업무축.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정안전부-지역발전지원-업무축.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "target": "concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정안전부-자치혁신실-지방자치주민균형발전연결축.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "target": "hub-행정안전부.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`hub-행정안전부.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "target": "source-행정안전부-지역발전지원.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-지역발전지원.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "target": "source-행정안전부-자치혁신실-주요업무.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-자치혁신실-주요업무.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "target": "raw/2026-04-15-mois-local-child-pages/행정안전부_지역발전지원_특수상황지역개발_page.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`raw/2026-04-15-mois-local-child-pages/행정안전부_지역발전지원_특수상황지역개발_page.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "target": "raw/2026-04-14-mois-main-business/행정안전부_자치혁신실_주요업무_page.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`raw/2026-04-14-mois-main-business/행정안전부_자치혁신실_주요업무_page.md`"
         }
       ]
     },
@@ -16837,6 +17155,30 @@
       ]
     },
     {
+      "source": "concept-행정안전부-지역발전지원-child-두께현황-2026-04.md",
+      "target": "concept-행정안전부-지역발전지원-업무축.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정안전부-지역발전지원-업무축.md`"
+        }
+      ]
+    },
+    {
+      "source": "concept-행정안전부-지역발전지원-child-두께현황-2026-04.md",
+      "target": "concept-행정안전부-공여구역주변지역지원-업무축.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정안전부-공여구역주변지역지원-업무축.md`"
+        }
+      ]
+    },
+    {
       "source": "concept-행정안전부-참여혁신조직실-문서민원정보공개연결축.md",
       "target": "concept-행정안전부-기능과조직단위-연결축.md",
       "type": "backtick-ref",
@@ -17941,6 +18283,126 @@
       ]
     },
     {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-행정문서-기안자격과전자문자서명-구분.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-기안자격과전자문자서명-구분.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-행정문서-공무직과임기제-기안가능범위.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-공무직과임기제-기안가능범위.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "faq-임기제공무원도-기안할-수-있나.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-임기제공무원도-기안할-수-있나.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "faq-공무직도-기안할-수-있나.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-공무직도-기안할-수-있나.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-채용목적에-따른-업무범위는-어떻게-읽나.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-행정문서-비공무원-계정부여와보안조치.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-계정부여와보안조치.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-행정문서-비공무원-계정접근기간과권한범위.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-계정접근기간과권한범위.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-행정문서-보안서약서.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-보안서약서.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`newcomer-path-첫기안자격과전자서명질문-2026-04.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "source-행정안전부-2025-행정업무운영-편람.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-2025-행정업무운영-편람.md`"
+        }
+      ]
+    },
+    {
       "source": "faq-명부조정은-언제-이뤄지나.md",
       "target": "concept-공무원-명부조정.md",
       "type": "backtick-ref",
@@ -18278,6 +18740,18 @@
     },
     {
       "source": "faq-보안서약서는-왜-필요한가.md",
+      "target": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-보안조치-묶음구조.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-보안서약서는-왜-필요한가.md",
       "target": "concept-행정문서-비공무원-계정부여와보안조치.md",
       "type": "backtick-ref",
       "count": 4,
@@ -18333,6 +18807,126 @@
         {
           "type": "backtick-ref",
           "refText": "`concept-공무원-특별승진.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "concept-공무원-휴직과승진경력인정.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-휴직과승진경력인정.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "concept-공무원-승진후보자명부.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-승진후보자명부.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "concept-공무원-승진.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-승진.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "source-인사혁신처-공무원-육아휴직-승진경력-인정.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-인사혁신처-공무원-육아휴직-승진경력-인정.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "concept-공무원-근무성적평가.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-근무성적평가.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "concept-공무원-경력평정.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-경력평정.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "concept-공무원-가점평정.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-가점평정.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "faq-휴직은-승진경력에-어떻게-반영되나.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-휴직은-승진경력에-어떻게-반영되나.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "newcomer-path-첫복귀질문-2026-04.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`newcomer-path-첫복귀질문-2026-04.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "target": "newcomer-path-첫승진질문-2026-04.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`newcomer-path-첫승진질문-2026-04.md`"
         }
       ]
     },
@@ -21289,6 +21883,66 @@
       ]
     },
     {
+      "source": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "target": "concept-행정안전부-지방소멸대응-업무축.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정안전부-지방소멸대응-업무축.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "target": "faq-지방소멸대응-note는-행안부-어느-조직과-연결되나.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-지방소멸대응-note는-행안부-어느-조직과-연결되나.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "target": "source-행정안전부-자치혁신실-주요업무.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-자치혁신실-주요업무.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "target": "source-행정안전부-지방소멸대응.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-지방소멸대응.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-인구감소지역-지원-특별법-note는-행안부-어느-조직과-연결되나.md",
+      "target": "hub-행정안전부.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`hub-행정안전부.md`"
+        }
+      ]
+    },
+    {
       "source": "faq-인증관리센터는-무엇을-하나.md",
       "target": "concept-행정문서-인증관리센터.md",
       "type": "backtick-ref",
@@ -22069,6 +22723,54 @@
       ]
     },
     {
+      "source": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "target": "concept-행정문서-비공무원-계정접근기간과권한범위.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-계정접근기간과권한범위.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "target": "faq-접근기간과-권한범위는-왜-따로-정하나.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-접근기간과-권한범위는-왜-따로-정하나.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "target": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-보안조치-묶음구조.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "target": "source-행정안전부-2025-행정업무운영-편람.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-2025-행정업무운영-편람.md`"
+        }
+      ]
+    },
+    {
       "source": "faq-접근기간과-권한범위는-왜-따로-정하나.md",
       "target": "concept-행정문서-비공무원-계정접근기간과권한범위.md",
       "type": "backtick-ref",
@@ -22513,6 +23215,66 @@
       ]
     },
     {
+      "source": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "target": "concept-행정문서-공무직과임기제-기안가능범위.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-공무직과임기제-기안가능범위.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "target": "concept-행정문서-비공무원-계정부여와보안조치.md",
+      "type": "backtick-ref",
+      "count": 5,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-계정부여와보안조치.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "target": "process-행정문서-기안.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`process-행정문서-기안.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "target": "source-행정안전부-2025-행정업무운영-편람.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-행정안전부-2025-행정업무운영-편람.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
+      "target": "faq-공무직도-기안할-수-있나.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-공무직도-기안할-수-있나.md`"
+        }
+      ]
+    },
+    {
       "source": "faq-추서승진은-어떤-경우-가능한가.md",
       "target": "concept-공무원-추서승진.md",
       "type": "backtick-ref",
@@ -22941,6 +23703,114 @@
         {
           "type": "backtick-ref",
           "refText": "`faq-보고서-작성은-승진에서-왜-붙나.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-공무원-특별승진.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-특별승진.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "process-공무원-특별승진-절차.md",
+      "type": "backtick-ref",
+      "count": 5,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`process-공무원-특별승진-절차.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-공무원-특별승진-공적설명절차.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-특별승진-공적설명절차.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-공무원-특별승진-사전예고예외.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-특별승진-사전예고예외.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-공무원-특별승진-30퍼센트운영기준.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-특별승진-30퍼센트운영기준.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "concept-공무원-승진.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-승진.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "newcomer-path-첫승진질문-2026-04.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`newcomer-path-첫승진질문-2026-04.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "source-인사혁신처-2024-공무원인사실무.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-인사혁신처-2024-공무원인사실무.md`"
+        }
+      ]
+    },
+    {
+      "source": "faq-특별승진질문은-어떤-순서로-나눠-봐야-하나.md",
+      "target": "source-인사혁신처-2025-신규공무원-안내서.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`source-인사혁신처-2025-신규공무원-안내서.md`"
         }
       ]
     },
@@ -27626,9 +28496,21 @@
     },
     {
       "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-기안자격-질문은-어떤-순서로-나눠-봐야-하나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
       "target": "concept-행정문서-공무직과임기제-기안가능범위.md",
       "type": "backtick-ref",
-      "count": 5,
+      "count": 4,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -27638,13 +28520,13 @@
     },
     {
       "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
-      "target": "concept-행정문서-전자문자서명.md",
+      "target": "faq-임기제공무원도-기안할-수-있나.md",
       "type": "backtick-ref",
-      "count": 5,
+      "count": 2,
       "evidence": [
         {
           "type": "backtick-ref",
-          "refText": "`concept-행정문서-전자문자서명.md`"
+          "refText": "`faq-임기제공무원도-기안할-수-있나.md`"
         }
       ]
     },
@@ -27662,9 +28544,45 @@
     },
     {
       "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-공무직도-기안할-수-있나.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-공무직도-기안할-수-있나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-공무직에게-업무관리시스템-계정을-줄-수-있나.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-공무직에게-업무관리시스템-계정을-줄-수-있나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-접근기간과-권한범위는-왜-기관책임-문제이기도-한가.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
       "target": "concept-행정문서-비공무원-계정부여와보안조치.md",
       "type": "backtick-ref",
-      "count": 4,
+      "count": 6,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -27674,25 +28592,61 @@
     },
     {
       "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
-      "target": "concept-행정문서-비공무원-계정접근기간과권한범위.md",
+      "target": "concept-행정문서-보안서약서.md",
       "type": "backtick-ref",
-      "count": 2,
+      "count": 4,
       "evidence": [
         {
           "type": "backtick-ref",
-          "refText": "`concept-행정문서-비공무원-계정접근기간과권한범위.md`"
+          "refText": "`concept-행정문서-보안서약서.md`"
         }
       ]
     },
     {
       "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
-      "target": "concept-행정문서-보안서약서.md",
+      "target": "faq-채용목적에-따른-업무범위는-어떻게-읽나.md",
       "type": "backtick-ref",
-      "count": 3,
+      "count": 2,
       "evidence": [
         {
           "type": "backtick-ref",
-          "refText": "`concept-행정문서-보안서약서.md`"
+          "refText": "`faq-채용목적에-따른-업무범위는-어떻게-읽나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "concept-행정문서-비공무원-보안조치-묶음구조.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-보안조치-묶음구조.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "concept-행정문서-전자문자서명.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-전자문자서명.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-전자문자서명은-무엇인가.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-전자문자서명은-무엇인가.md`"
         }
       ]
     },
@@ -27712,7 +28666,7 @@
       "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
       "target": "concept-행정문서-전자문자서명과행정전자서명-차이.md",
       "type": "backtick-ref",
-      "count": 3,
+      "count": 2,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -27729,6 +28683,90 @@
         {
           "type": "backtick-ref",
           "refText": "`concept-행정문서-행정전자서명.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "concept-행정문서-전자정부법시행령-제28조와제29조-관계.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-전자정부법시행령-제28조와제29조-관계.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "concept-행정문서-인증관리센터.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-인증관리센터.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-인증관리센터와-인증기관은-무엇이-다른가.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-인증관리센터와-인증기관은-무엇이-다른가.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-전자정부법-시행령-제28조와-제29조는-무엇이-다른가.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-전자정부법-시행령-제28조와-제29조는-무엇이-다른가.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "concept-행정문서-전자이미지서명.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-전자이미지서명.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "concept-행정문서-비공무원-계정접근기간과권한범위.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-행정문서-비공무원-계정접근기간과권한범위.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
+      "target": "faq-전자문자서명과-행정전자서명은-무엇이-다른가.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-전자문자서명과-행정전자서명은-무엇이-다른가.md`"
         }
       ]
     },
@@ -27806,42 +28844,6 @@
     },
     {
       "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
-      "target": "faq-임기제공무원도-기안할-수-있나.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`faq-임기제공무원도-기안할-수-있나.md`"
-        }
-      ]
-    },
-    {
-      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
-      "target": "faq-공무직도-기안할-수-있나.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`faq-공무직도-기안할-수-있나.md`"
-        }
-      ]
-    },
-    {
-      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
-      "target": "faq-전자문자서명은-무엇인가.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`faq-전자문자서명은-무엇인가.md`"
-        }
-      ]
-    },
-    {
-      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
       "target": "faq-전자문자서명으로도-문서는-성립하나.md",
       "type": "backtick-ref",
       "count": 1,
@@ -27849,18 +28851,6 @@
         {
           "type": "backtick-ref",
           "refText": "`faq-전자문자서명으로도-문서는-성립하나.md`"
-        }
-      ]
-    },
-    {
-      "source": "newcomer-path-첫기안자격과전자서명질문-2026-04.md",
-      "target": "faq-전자문자서명과-행정전자서명은-무엇이-다른가.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`faq-전자문자서명과-행정전자서명은-무엇이-다른가.md`"
         }
       ]
     },
@@ -28420,7 +29410,7 @@
       "source": "newcomer-path-첫복귀질문-2026-04.md",
       "target": "concept-공무원-휴직.md",
       "type": "backtick-ref",
-      "count": 11,
+      "count": 9,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -28454,9 +29444,21 @@
     },
     {
       "source": "newcomer-path-첫복귀질문-2026-04.md",
+      "target": "faq-휴직은-승진경력에-어떻게-반영되나.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-휴직은-승진경력에-어떻게-반영되나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫복귀질문-2026-04.md",
       "target": "concept-공무원-휴직과승진경력인정.md",
       "type": "backtick-ref",
-      "count": 2,
+      "count": 4,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -28473,6 +29475,18 @@
         {
           "type": "backtick-ref",
           "refText": "`newcomer-path-첫승진질문-2026-04.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫복귀질문-2026-04.md",
+      "target": "faq-육아휴직-소급인정은-어디까지-되나.md",
+      "type": "backtick-ref",
+      "count": 2,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-육아휴직-소급인정은-어디까지-되나.md`"
         }
       ]
     },
@@ -28504,7 +29518,7 @@
       "source": "newcomer-path-첫승진질문-2026-04.md",
       "target": "concept-공무원-경력평정.md",
       "type": "backtick-ref",
-      "count": 7,
+      "count": 6,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -28552,7 +29566,7 @@
       "source": "newcomer-path-첫승진질문-2026-04.md",
       "target": "concept-공무원-승진후보자명부.md",
       "type": "backtick-ref",
-      "count": 10,
+      "count": 9,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -28598,9 +29612,45 @@
     },
     {
       "source": "newcomer-path-첫승진질문-2026-04.md",
-      "target": "concept-공무원-휴직과승진경력인정.md",
+      "target": "faq-휴직은-승진경력에-어떻게-반영되나.md",
       "type": "backtick-ref",
       "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-휴직은-승진경력에-어떻게-반영되나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫승진질문-2026-04.md",
+      "target": "faq-승진경력-인정과-자동승진은-왜-다른가.md",
+      "type": "backtick-ref",
+      "count": 3,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-승진경력-인정과-자동승진은-왜-다른가.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫승진질문-2026-04.md",
+      "target": "faq-육아휴직-소급인정은-어디까지-되나.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-육아휴직-소급인정은-어디까지-되나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫승진질문-2026-04.md",
+      "target": "concept-공무원-휴직과승진경력인정.md",
+      "type": "backtick-ref",
+      "count": 5,
       "evidence": [
         {
           "type": "backtick-ref",
@@ -28701,18 +29751,6 @@
         {
           "type": "backtick-ref",
           "refText": "`concept-공무원-특별승진-사전예고예외.md`"
-        }
-      ]
-    },
-    {
-      "source": "newcomer-path-첫승진질문-2026-04.md",
-      "target": "faq-육아휴직-소급인정은-어디까지-되나.md",
-      "type": "backtick-ref",
-      "count": 1,
-      "evidence": [
-        {
-          "type": "backtick-ref",
-          "refText": "`faq-육아휴직-소급인정은-어디까지-되나.md`"
         }
       ]
     },
@@ -29198,6 +30236,18 @@
     },
     {
       "source": "newcomer-path-첫휴직승진출장교육질문-2026-04.md",
+      "target": "concept-공무원-휴직과승진경력인정.md",
+      "type": "backtick-ref",
+      "count": 4,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`concept-공무원-휴직과승진경력인정.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫휴직승진출장교육질문-2026-04.md",
       "target": "concept-공무원-승진.md",
       "type": "backtick-ref",
       "count": 4,
@@ -29289,6 +30339,30 @@
         {
           "type": "backtick-ref",
           "refText": "`concept-정부업무시스템-e사람.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫휴직승진출장교육질문-2026-04.md",
+      "target": "faq-휴직은-승진경력에-어떻게-반영되나.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-휴직은-승진경력에-어떻게-반영되나.md`"
+        }
+      ]
+    },
+    {
+      "source": "newcomer-path-첫휴직승진출장교육질문-2026-04.md",
+      "target": "faq-육아휴직-소급인정은-어디까지-되나.md",
+      "type": "backtick-ref",
+      "count": 1,
+      "evidence": [
+        {
+          "type": "backtick-ref",
+          "refText": "`faq-육아휴직-소급인정은-어디까지-되나.md`"
         }
       ]
     },
